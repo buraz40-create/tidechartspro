@@ -1,7 +1,6 @@
 'use client'
 
 import { useState, useEffect, useRef, useCallback, useMemo, Suspense } from 'react'
-import Image from 'next/image'
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -1208,7 +1207,8 @@ function PabloCreekEntranceContent() {
       }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 20px', height: 52, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
           <a href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
-            <Image src="/logo.png" alt="TideCharts Pro" width={200} height={52} style={{ objectFit: 'contain', height: 42, width: 'auto' }} priority />
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img src="/logo.png" alt="TideCharts Pro" style={{ height: 44, width: 'auto', objectFit: 'contain' }} />
           </a>
           <div style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
             {(['dark', 'light', 'red'] as Mode[]).map(m => (
