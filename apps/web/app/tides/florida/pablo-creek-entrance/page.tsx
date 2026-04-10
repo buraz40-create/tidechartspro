@@ -305,7 +305,7 @@ function drawTideChart(
   const ctx = canvas.getContext('2d')!
   ctx.scale(dpr, dpr)
 
-  const PAD = { top: 18, right: 18, bottom: 36, left: 48 }
+  const PAD = { top: 52, right: 18, bottom: 36, left: 48 }
   const cw = W - PAD.left - PAD.right
   const ch = H - PAD.top  - PAD.bottom
 
