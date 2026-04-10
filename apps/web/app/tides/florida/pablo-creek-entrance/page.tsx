@@ -1068,19 +1068,25 @@ function PabloCreekEntranceContent() {
         ])
       })
       .then(([hrData, dayData]) => {
-        const hourly: WxHour[] = hrData.properties.periods.slice(0, 24).map((p: {
+        // Start from current hour (keep any period that hasn't fully ended), take next 24
+        const nowMs = Date.now()
+        type RawPeriod = {
           startTime: string; temperature: number; windSpeed: string; windDirection: string;
           probabilityOfPrecipitation?: { value: number | null };
           shortForecast: string
-        }) => ({
-          time:      new Date(p.startTime).toLocaleTimeString('en-US', { hour: 'numeric' }),
-          hour:      new Date(p.startTime).getHours(),
-          temp:      p.temperature,
-          windSpeed: parseInt(p.windSpeed) || 0,
-          windDir:   p.windDirection,
-          precip:    p.probabilityOfPrecipitation?.value ?? 0,
-          condition: p.shortForecast,
-        }))
+        }
+        const hourly: WxHour[] = (hrData.properties.periods as RawPeriod[])
+          .filter(p => new Date(p.startTime).getTime() + 3600000 > nowMs)
+          .slice(0, 24)
+          .map(p => ({
+            time:      new Date(p.startTime).toLocaleTimeString('en-US', { hour: 'numeric' }),
+            hour:      new Date(p.startTime).getHours(),
+            temp:      p.temperature,
+            windSpeed: parseInt(p.windSpeed) || 0,
+            windDir:   p.windDirection,
+            precip:    p.probabilityOfPrecipitation?.value ?? 0,
+            condition: p.shortForecast,
+          }))
         setWxHourly(hourly)
 
         const periods: Array<{
