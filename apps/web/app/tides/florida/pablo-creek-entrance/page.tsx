@@ -596,6 +596,127 @@ function drawCoeff30(canvas: HTMLCanvasElement, t: Theme, dpr: number) {
   ctx.fill()
 }
 
+// ─── Calendar helpers ────────────────────────────────────────────────────────
+
+interface CalTide {
+  time: string
+  height: number
+  type: 'high' | 'low'
+}
+
+interface CalDay {
+  date: Date
+  dayNum: number
+  dayName: string
+  moonPhase: number
+  moonEmoji: string
+  sunrise: string
+  sunset: string
+  tides: CalTide[]
+  coefficient: number
+  coeffLabel: string
+  coeffColor: string
+  solunarScore: number
+  isToday: boolean
+  isWeekend: boolean
+}
+
+function calMoonPhase(date: Date): number {
+  const Y = date.getFullYear(), M = date.getMonth() + 1, D = date.getDate()
+  const JD = 367*Y - Math.floor(7*(Y+Math.floor((M+9)/12))/4) + Math.floor(275*M/9) + D + 1721013.5
+  let p = ((JD - 2451550.1) % 29.53058867) / 29.53058867
+  if (p < 0) p += 1
+  return p
+}
+
+function calMoonEmoji(p: number): string {
+  return ['🌑','🌒','🌓','🌔','🌕','🌖','🌗','🌘'][Math.floor(((p + 0.0625) % 1) * 8)]
+}
+
+function calFmtHour(h: number): string {
+  h = ((h % 24) + 24) % 24
+  let hInt = Math.floor(h), mins = Math.round((h - hInt) * 60)
+  if (mins === 60) { mins = 0; hInt = (hInt + 1) % 24 }
+  const h12 = hInt % 12 === 0 ? 12 : hInt % 12
+  return `${h12}:${String(mins).padStart(2,'0')} ${hInt < 12 ? 'am' : 'pm'}`
+}
+
+function calSunTimes(doy: number): { sunrise: string; sunset: string } {
+  const LAT = (30.4 * Math.PI) / 180
+  const decl = -23.45 * Math.cos((360/365*(doy+10)*Math.PI)/180)
+  const HA = (Math.acos(Math.max(-1, Math.min(1, -Math.tan(LAT)*Math.tan(decl*Math.PI/180)))) * 180) / Math.PI
+  const corr = (75-81.7)/15 + 1  // EDT + longitude offset
+  return { sunrise: calFmtHour(12 - HA/15 + corr), sunset: calFmtHour(12 + HA/15 + corr) }
+}
+
+function calDayOfYear(date: Date): number {
+  return Math.floor((date.getTime() - new Date(date.getFullYear(),0,0).getTime()) / 86400000)
+}
+
+const CAL_REF = new Date(2026, 3, 10)
+
+function calGenerateTides(date: Date): CalTide[] {
+  const dayOff = (date.getTime() - CAL_REF.getTime()) / 86400000
+  const M2 = 12.4206
+  const lag = ((dayOff * 0.7176) % M2 + M2) % M2
+  const high1 = (6.70 + lag) % 24
+  const low1  = (0.23 + lag + M2) % 24
+  const high2 = (high1 + M2) % 24
+  const low2  = (low1  + M2) % 24
+  const phase = calMoonPhase(date)
+  const amp   = 2.1 + 0.6 * Math.cos(2 * Math.PI * phase)
+  const hH    = Math.round((2.75 + amp) * 10) / 10
+  const lH    = Math.round(Math.max(0.1, 2.75 - amp*0.85) * 10) / 10
+  const hH2   = Math.round(Math.max(0.5, hH - 0.15 + 0.3*Math.sin(dayOff*0.9)) * 10) / 10
+  const lH2   = Math.round(Math.max(0.1, lH  + 0.1  - 0.1*Math.sin(dayOff*1.1)) * 10) / 10
+  return [
+    { hour: high1, type: 'high' as const, height: hH  },
+    { hour: low1,  type: 'low'  as const, height: lH  },
+    { hour: high2, type: 'high' as const, height: hH2 },
+    { hour: low2,  type: 'low'  as const, height: lH2 },
+  ].sort((a,b) => a.hour - b.hour)
+   .map(e => ({ time: calFmtHour(e.hour), height: e.height, type: e.type }))
+}
+
+function calCoeff(phase: number, doy: number): number {
+  return Math.round(Math.max(20, Math.min(110, 70 + 30*Math.cos(4*Math.PI*phase) + 3*Math.sin(doy*0.7))))
+}
+function calCoeffLabel(c: number): string {
+  return c >= 90 ? 'very high' : c >= 75 ? 'high' : c >= 55 ? 'average' : c >= 40 ? 'low' : 'very low'
+}
+function calCoeffColor(c: number): string {
+  return c >= 90 ? '#22c55e' : c >= 75 ? '#84cc16' : c >= 55 ? '#eab308' : c >= 40 ? '#f97316' : '#ef4444'
+}
+function calSolunar(c: number): 1|2|3|4 {
+  return c >= 90 ? 4 : c >= 75 ? 3 : c >= 55 ? 2 : 1
+}
+
+function generateCalMonth(year: number, month: number): CalDay[] {
+  const dim   = new Date(year, month+1, 0).getDate()
+  const today = new Date()
+  return Array.from({ length: dim }, (_, i) => {
+    const date  = new Date(year, month, i+1)
+    const doy   = calDayOfYear(date)
+    const phase = calMoonPhase(date)
+    const c     = calCoeff(phase, doy)
+    const { sunrise, sunset } = calSunTimes(doy)
+    return {
+      date, dayNum: i+1,
+      dayName:  date.toLocaleDateString('en-US', { weekday: 'short' }),
+      moonPhase: phase,
+      moonEmoji: calMoonEmoji(phase),
+      sunrise, sunset,
+      tides:        calGenerateTides(date),
+      coefficient:  c,
+      coeffLabel:   calCoeffLabel(c),
+      coeffColor:   calCoeffColor(c),
+      solunarScore: calSolunar(c),
+      isToday:   date.toDateString() === today.toDateString(),
+      isWeekend: date.getDay() === 0 || date.getDay() === 6,
+    }
+  })
+}
+
 // ─── Score breakdown data ─────────────────────────────────────────────────────
 
 const SCORE_FACTORS = [
@@ -612,6 +733,12 @@ const SCORE_FACTORS = [
 export default function PabloCreekEntrancePage() {
   const [mode, setMode] = useState<Mode>('dark')
   const t = THEMES[mode]
+
+  const [currentMonth, setCurrentMonth] = useState<Date>(() => {
+    const n = new Date(); return new Date(n.getFullYear(), n.getMonth(), 1)
+  })
+  const calDays    = generateCalMonth(currentMonth.getFullYear(), currentMonth.getMonth())
+  const monthLabel = currentMonth.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
 
   const tideRef    = useRef<HTMLCanvasElement>(null)
   const pressRef   = useRef<HTMLCanvasElement>(null)
@@ -1086,6 +1213,114 @@ export default function PabloCreekEntrancePage() {
                   </div>
                 )
               })}
+            </div>
+          </>
+        )}
+
+        {/* ── 30-Day Tide Calendar ── */}
+        {card(
+          <>
+            {sectionTitle('30-Day Tide Calendar', `${monthLabel} · Pablo Creek Entrance`)}
+
+            {/* Month nav */}
+            <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 14 }}>
+              <button
+                onClick={() => setCurrentMonth(d => new Date(d.getFullYear(), d.getMonth() - 1, 1))}
+                style={{ background: t.surfaceAlt, border: `1px solid ${t.border}`, color: t.text, padding: '4px 12px', borderRadius: 7, fontSize: 13, cursor: 'pointer', fontFamily: 'inherit' }}>
+                ◀
+              </button>
+              <span style={{ fontSize: 15, fontWeight: 700, flex: 1, textAlign: 'center' }}>{monthLabel}</span>
+              <button
+                onClick={() => setCurrentMonth(d => new Date(d.getFullYear(), d.getMonth() + 1, 1))}
+                style={{ background: t.surfaceAlt, border: `1px solid ${t.border}`, color: t.text, padding: '4px 12px', borderRadius: 7, fontSize: 13, cursor: 'pointer', fontFamily: 'inherit' }}>
+                ▶
+              </button>
+            </div>
+
+            {/* Table */}
+            <div style={{ overflowX: 'auto', borderRadius: 8, border: `1px solid ${t.border}` }}>
+              <div style={{ display: 'grid', gridTemplateColumns: '58px 34px 112px repeat(4, minmax(82px, 1fr)) 104px 92px', minWidth: 860 }}>
+
+                {/* Header */}
+                {['Day','','Sunrise / Sunset','1st Tide','2nd Tide','3rd Tide','4th Tide','Coefficient','Solunar'].map((h, ci) => (
+                  <div key={ci} style={{
+                    padding: '7px 9px 8px',
+                    fontSize: 9, fontWeight: 700, letterSpacing: '0.07em', textTransform: 'uppercase',
+                    color: t.textFaint, background: t.surfaceAlt,
+                    borderBottom: `2px solid ${t.border}`,
+                  }}>{h}</div>
+                ))}
+
+                {/* Rows */}
+                {calDays.flatMap(day => {
+                  const rowBg = day.isToday ? t.accentFaint : day.isWeekend ? t.surfaceAlt : t.surface
+                  const cell = (extra?: React.CSSProperties): React.CSSProperties => ({
+                    background: rowBg, borderTop: `1px solid ${t.border}`,
+                    padding: '8px 9px', display: 'flex', flexDirection: 'column', justifyContent: 'center',
+                    ...extra,
+                  })
+                  return [
+                    // DAY
+                    <div key={`${day.dayNum}-d`} style={cell({ borderLeft: day.isToday ? `3px solid ${t.accent}` : '3px solid transparent' })}>
+                      <span style={{ fontSize: 15, fontWeight: 700, color: day.isToday ? t.accent : t.text, lineHeight: 1 }}>{day.dayNum}</span>
+                      <span style={{ fontSize: 10, color: t.textMuted, marginTop: 2 }}>{day.dayName}</span>
+                    </div>,
+                    // MOON
+                    <div key={`${day.dayNum}-m`} style={cell({ alignItems: 'center', justifyContent: 'center' })}>
+                      <span style={{ fontSize: 26, lineHeight: 1 }} title={`${(day.moonPhase*100).toFixed(0)}% cycle`}>{day.moonEmoji}</span>
+                    </div>,
+                    // SUNRISE/SUNSET
+                    <div key={`${day.dayNum}-s`} style={cell()}>
+                      <span style={{ fontSize: 11, color: t.textMuted, whiteSpace: 'nowrap' }}>
+                        <span style={{ color: t.canvasSunLine }}>↑</span> {day.sunrise}
+                      </span>
+                      <span style={{ fontSize: 11, color: t.textMuted, marginTop: 3, whiteSpace: 'nowrap' }}>
+                        <span style={{ color: '#f97316' }}>↓</span> {day.sunset}
+                      </span>
+                    </div>,
+                    // TIDES 0–3
+                    ...[0,1,2,3].map(ti => {
+                      const tide = day.tides[ti]
+                      return (
+                        <div key={`${day.dayNum}-t${ti}`} style={cell()}>
+                          {tide ? (
+                            <>
+                              <span style={{ fontSize: 12, fontWeight: 600, whiteSpace: 'nowrap' }}>{tide.time}</span>
+                              <span style={{ fontSize: 11, color: tide.type === 'high' ? t.accent : t.textMuted, marginTop: 2, whiteSpace: 'nowrap' }}>
+                                {tide.type === 'high' ? '▲' : '▼'} {tide.height.toFixed(1)} ft
+                              </span>
+                            </>
+                          ) : <span style={{ color: t.textFaint }}>—</span>}
+                        </div>
+                      )
+                    }),
+                    // COEFFICIENT
+                    <div key={`${day.dayNum}-c`} style={cell()}>
+                      <span style={{ fontSize: 17, fontWeight: 800, color: day.coeffColor, lineHeight: 1 }}>{day.coefficient}</span>
+                      <span style={{ marginTop: 4, fontSize: 9, fontWeight: 700, color: day.coeffColor, background: `${day.coeffColor}22`, padding: '2px 5px', borderRadius: 3, textTransform: 'uppercase' as const, letterSpacing: '0.05em', whiteSpace: 'nowrap' as const }}>{day.coeffLabel}</span>
+                    </div>,
+                    // SOLUNAR
+                    <div key={`${day.dayNum}-sol`} style={cell({ flexDirection: 'row', alignItems: 'center', flexWrap: 'wrap', gap: 1 })}>
+                      {[0,1,2,3].map(fi => (
+                        <span key={fi} style={{ fontSize: 14, opacity: fi < day.solunarScore ? 1 : 0.15, filter: fi < day.solunarScore ? 'none' : 'grayscale(1)' }}>🐟</span>
+                      ))}
+                    </div>,
+                  ]
+                })}
+              </div>
+            </div>
+
+            {/* Legend */}
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 12, marginTop: 10, fontSize: 11, color: t.textFaint }}>
+              <span style={{ fontWeight: 600 }}>CF:</span>
+              {[['very high','#22c55e','≥90'],['high','#84cc16','75–89'],['average','#eab308','55–74'],['low','#f97316','40–54'],['very low','#ef4444','<40']].map(([l,c,r]) => (
+                <span key={l} style={{ display: 'flex', alignItems: 'center', gap: 4 }}>
+                  <span style={{ width: 7, height: 7, borderRadius: '50%', background: c, display: 'inline-block' }}/>
+                  <span style={{ color: c, fontWeight: 600 }}>{l}</span>
+                  <span>{r}</span>
+                </span>
+              ))}
+              <span style={{ marginLeft: 8 }}>🐟🐟🐟🐟 = peak solunar · ▲ high · ▼ low</span>
             </div>
           </>
         )}
