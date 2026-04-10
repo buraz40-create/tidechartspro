@@ -1834,21 +1834,26 @@ function PabloCreekEntranceContent() {
         {/* Swell chart */}
         {card(
           <>
-            {sectionTitle('Swell & Wave Conditions', 'Hourly offshore data · direction arrows show wave propagation')}
-            <canvas
-              ref={swellRef}
-              style={{ width: '100%', height: 110, display: 'block', borderRadius: 4, marginBottom: 10 }}
-            />
-            <div style={{ display: 'flex', gap: 20, fontSize: 12, flexWrap: 'wrap' }}>
+            {sectionTitle('Swell & Wave Conditions', 'Offshore conditions · Jacksonville nearshore buoy')}
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 10 }}>
               {[
-                { k: 'Avg Height', v: '1.8 ft' },
-                { k: 'Peak Period', v: '7 sec' },
-                { k: 'Primary Dir', v: 'ESE 115°' },
-                { k: 'Surf Quality', v: 'Flat / Calm' },
+                { icon: '🌊', label: 'Wave Height', v: '1.8 ft', sub: 'Flat / Calm', color: '#22c55e' },
+                { icon: '⏱', label: 'Peak Period', v: '7 sec', sub: 'between waves', color: t.accent },
+                { icon: '🧭', label: 'Direction', v: 'ESE', sub: '115° — out of southeast', color: '#f97316' },
+                { icon: '🎣', label: 'Fishing Impact', v: 'Good', sub: 'Calm = easy casting', color: '#22c55e' },
               ].map(s => (
-                <div key={s.k}>
-                  <span style={{ color: t.textFaint }}>{s.k}: </span>
-                  <span style={{ fontWeight: 500 }}>{s.v}</span>
+                <div key={s.label} style={{
+                  padding: '12px 14px',
+                  background: t.surfaceAlt,
+                  border: `1px solid ${t.border}`,
+                  borderTop: `3px solid ${s.color}`,
+                  borderRadius: 10,
+                }}>
+                  <div style={{ fontSize: 10, fontWeight: 700, color: t.textFaint, textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 6 }}>
+                    <span style={{ marginRight: 4 }}>{s.icon}</span>{s.label}
+                  </div>
+                  <div style={{ fontSize: 20, fontWeight: 800, color: t.text, marginBottom: 3 }}>{s.v}</div>
+                  <div style={{ fontSize: 11, color: t.textMuted }}>{s.sub}</div>
                 </div>
               ))}
             </div>
