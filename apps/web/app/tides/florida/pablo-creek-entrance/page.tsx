@@ -290,6 +290,7 @@ function drawTideChart(
   canvas: HTMLCanvasElement,
   t: Theme,
   dpr: number,
+  hover?: { hour: number; height: number } | null,
 ) {
   const W = canvas.clientWidth
   const H = canvas.clientHeight
@@ -460,6 +461,26 @@ function drawTideChart(
       ctx.fillText('🐟', x + 18, cy + 4)
     }
   })
+
+  // ── Hover crosshair
+  if (hover) {
+    const hx = toX(hover.hour)
+    const hy = toY(hover.height)
+    // vertical dashed line
+    ctx.strokeStyle = t.textMuted + '66'
+    ctx.lineWidth   = 1
+    ctx.setLineDash([4, 3])
+    ctx.beginPath(); ctx.moveTo(hx, PAD.top); ctx.lineTo(hx, PAD.top + ch); ctx.stroke()
+    ctx.setLineDash([])
+    // horizontal guide
+    ctx.strokeStyle = t.textFaint + '44'
+    ctx.lineWidth   = 0.5
+    ctx.beginPath(); ctx.moveTo(PAD.left, hy); ctx.lineTo(W - PAD.right, hy); ctx.stroke()
+    // glowing dot on curve
+    ctx.beginPath(); ctx.arc(hx, hy, 5, 0, Math.PI * 2)
+    ctx.fillStyle   = t.canvasWater; ctx.fill()
+    ctx.strokeStyle = '#ffffff'; ctx.lineWidth = 2; ctx.stroke()
+  }
 }
 
 function drawPressureSparkline(canvas: HTMLCanvasElement, t: Theme, dpr: number) {
@@ -802,6 +823,27 @@ export default function PabloCreekEntrancePage() {
     if (coeffRef.current) drawCoeff30(coeffRef.current, t, dpr)
   }, [t])
 
+  const [tooltip, setTooltip] = useState<{ x: number; y: number; hour: number; height: number } | null>(null)
+
+  const handleTideMouseMove = useCallback((e: React.MouseEvent<HTMLCanvasElement>) => {
+    const canvas = tideRef.current
+    if (!canvas) return
+    const rect  = canvas.getBoundingClientRect()
+    const mx    = e.clientX - rect.left
+    const my    = e.clientY - rect.top
+    const cw    = rect.width - 48 - 18   // PAD.left=48, PAD.right=18
+    const hour  = Math.max(0, Math.min(24, (mx - 48) / cw * 24))
+    const idx   = Math.min(288, Math.round((hour / 24) * 288))
+    const height = TIDE_CURVE[idx]
+    setTooltip({ x: mx, y: my, hour, height })
+    drawTideChart(canvas, t, window.devicePixelRatio || 1, { hour, height })
+  }, [t])
+
+  const handleTideMouseLeave = useCallback(() => {
+    setTooltip(null)
+    if (tideRef.current) drawTideChart(tideRef.current, t, window.devicePixelRatio || 1, null)
+  }, [t])
+
   useEffect(() => {
     repaint()
     const ro = new ResizeObserver(repaint)
@@ -1092,10 +1134,36 @@ export default function PabloCreekEntrancePage() {
         {card(
           <>
             {sectionTitle("Today's Tide Chart", "Thursday, April 10, 2026 · NOAA predicted + observed")}
-            <canvas
-              ref={tideRef}
-              style={{ width: '100%', height: 220, display: 'block', borderRadius: 6 }}
-            />
+            <div style={{ position: 'relative' }}>
+              <canvas
+                ref={tideRef}
+                onMouseMove={handleTideMouseMove}
+                onMouseLeave={handleTideMouseLeave}
+                style={{ width: '100%', height: 220, display: 'block', borderRadius: 6, cursor: 'crosshair' }}
+              />
+              {tooltip && (
+                <div style={{
+                  position: 'absolute',
+                  left: tooltip.x > 300 ? tooltip.x - 118 : tooltip.x + 14,
+                  top: Math.max(4, tooltip.y - 60),
+                  pointerEvents: 'none',
+                  background: t.surface,
+                  border: `1px solid ${t.accent}`,
+                  borderRadius: 8,
+                  padding: '7px 12px',
+                  boxShadow: '0 4px 16px rgba(0,0,0,0.45)',
+                  zIndex: 10,
+                  whiteSpace: 'nowrap',
+                }}>
+                  <div style={{ fontWeight: 800, fontSize: 16, color: t.text, lineHeight: 1 }}>
+                    {tooltip.height.toFixed(2)} ft
+                  </div>
+                  <div style={{ fontSize: 11, color: t.textMuted, marginTop: 4 }}>
+                    {calFmtHour(tooltip.hour)}
+                  </div>
+                </div>
+              )}
+            </div>
             <div style={{ display: 'flex', gap: 20, marginTop: 12, flexWrap: 'wrap' }}>
               {TIDE_EVENTS.map(ev => (
                 <div key={ev.time} style={{ fontSize: 12 }}>
