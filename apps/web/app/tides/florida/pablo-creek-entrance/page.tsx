@@ -850,7 +850,6 @@ interface WxHour {
   time: string
   hour: number
   temp: number
-  feelsLike: number
   windSpeed: number
   windDir: string
   precip: number
@@ -1072,13 +1071,11 @@ function PabloCreekEntranceContent() {
         const hourly: WxHour[] = hrData.properties.periods.slice(0, 24).map((p: {
           startTime: string; temperature: number; windSpeed: string; windDirection: string;
           probabilityOfPrecipitation?: { value: number | null };
-          apparentTemperature?: { value: number | null };
           shortForecast: string
         }) => ({
           time:      new Date(p.startTime).toLocaleTimeString('en-US', { hour: 'numeric' }),
           hour:      new Date(p.startTime).getHours(),
           temp:      p.temperature,
-          feelsLike: p.apparentTemperature?.value != null ? Math.round(p.apparentTemperature.value) : p.temperature,
           windSpeed: parseInt(p.windSpeed) || 0,
           windDir:   p.windDirection,
           precip:    p.probabilityOfPrecipitation?.value ?? 0,
@@ -1563,8 +1560,8 @@ function PabloCreekEntranceContent() {
             {wxTab === 'hourly' && wxError   && <div style={{ color: t.textFaint, fontSize: 12, padding: '20px 0', textAlign: 'center' }}>Weather data unavailable</div>}
             {wxTab === 'hourly' && !wxLoading && !wxError && (
               <div style={{ overflowX: 'auto' }}>
-                <div style={{ display: 'grid', gridTemplateColumns: '68px 72px 58px 30px 1fr 1fr 1fr 1fr 1fr', marginBottom: 4 }}>
-                  {['Time','Tide','Solunar','','Temp','Feels Like','Wind','Precip','Conditions'].map((h, ci) => (
+                <div style={{ display: 'grid', gridTemplateColumns: '68px 72px 58px 30px 1fr 1fr 1fr 1fr', marginBottom: 4 }}>
+                  {['Time','Tide','Solunar','','Temp','Wind','Precip','Conditions'].map((h, ci) => (
                     <div key={ci} style={{ fontSize: 9, fontWeight: 700, color: t.textFaint, textTransform: 'uppercase' as const, letterSpacing: '0.07em', padding: '0 6px' }}>{h}</div>
                   ))}
                 </div>
@@ -1579,7 +1576,7 @@ function PabloCreekEntranceContent() {
                   const solPeriod   = selSolunar.find(s => h.hour >= s.start && h.hour < s.start + s.dur)
                   return (
                     <div key={i} style={{
-                      display: 'grid', gridTemplateColumns: '68px 72px 58px 30px 1fr 1fr 1fr 1fr 1fr',
+                      display: 'grid', gridTemplateColumns: '68px 72px 58px 30px 1fr 1fr 1fr 1fr',
                       background: isNow ? t.accentFaint : i % 2 === 0 ? t.surface : t.surfaceAlt,
                       borderLeft: isNow ? `3px solid ${t.accent}` : '3px solid transparent',
                       borderRadius: 4, marginBottom: 1, alignItems: 'center',
@@ -1598,9 +1595,6 @@ function PabloCreekEntranceContent() {
                         {conditionEmoji(h.condition)}
                       </div>
                       <div style={{ padding: '6px 6px', fontSize: 13, fontWeight: 700, color: '#facc15' }}>{h.temp}°</div>
-                      <div style={{ padding: '6px 6px', fontSize: 12, color: t.textMuted }}>
-                        {h.feelsLike !== h.temp ? `${h.feelsLike}°` : '—'}
-                      </div>
                       <div style={{ padding: '6px 6px', fontSize: 12, color: windColor, display: 'flex', alignItems: 'center', gap: 4, whiteSpace: 'nowrap' as const }}>
                         <span style={{ display: 'inline-block', transform: `rotate(${windDirDeg(h.windDir)}deg)`, fontSize: 12, lineHeight: 1 }}>↑</span>
                         {h.windDir} {h.windSpeed} mph
