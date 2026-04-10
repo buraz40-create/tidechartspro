@@ -740,6 +740,55 @@ export default function PabloCreekEntrancePage() {
   const calDays    = generateCalMonth(currentMonth.getFullYear(), currentMonth.getMonth())
   const monthLabel = currentMonth.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
 
+  // ── Live clock ──
+  const [now, setNow] = useState<Date>(() => new Date())
+  useEffect(() => {
+    const id = setInterval(() => setNow(new Date()), 1000)
+    return () => clearInterval(id)
+  }, [])
+
+  // ── Derived tide status ──
+  const nowHour    = now.getHours() + now.getMinutes() / 60 + now.getSeconds() / 3600
+  const curveIdx   = Math.min(288, Math.round((nowHour / 24) * 288))
+  const pastIdx    = Math.max(0, curveIdx - 12)   // ~1 hr ago (12 pts = 1 hr)
+  const curHeight  = TIDE_CURVE[curveIdx]
+  const pastHeight = TIDE_CURVE[pastIdx]
+  const isRising   = curHeight >= pastHeight
+  const ratePerHr  = Math.abs(curHeight - pastHeight)   // ft in last hour
+
+  // Next tide event
+  const nextEvent  = TIDE_EVENTS.find(e => e.hour > nowHour) ?? TIDE_EVENTS[0]
+  const minsUntil  = Math.max(0, Math.round((nextEvent.hour - nowHour) * 60))
+  const cntHrs     = Math.floor(minsUntil / 60)
+  const cntMins    = minsUntil % 60
+  const cntStr     = cntHrs > 0 ? `${cntHrs}h ${cntMins}m` : `${cntMins} min`
+
+  // Slack water: within 25 min of a high or low
+  const nearSlack  = TIDE_EVENTS.some(e => Math.abs(e.hour - nowHour) < 0.42)
+  const tideSpeed  = Math.min(100, Math.round((ratePerHr / 1.2) * 100))   // % of max rate
+
+  // Best window: major solunar + tide moving
+  const majorPeriods = SOLUNAR.filter(s => s.type === 'major')
+  const activeMajor  = majorPeriods.find(s => nowHour >= s.start && nowHour < s.start + s.dur)
+  const nextMajor    = majorPeriods.find(s => s.start > nowHour)
+  const bestWindow   = activeMajor ?? nextMajor ?? majorPeriods[0]
+  const bwActive     = !!activeMajor
+  const bwMinsUntil  = bwActive ? 0 : Math.max(0, Math.round((bestWindow.start - nowHour) * 60))
+  const bwEndsIn     = bwActive ? Math.max(0, Math.round((bestWindow.start + bestWindow.dur - nowHour) * 60)) : 0
+  const bwHrs        = Math.floor(bwMinsUntil / 60)
+  const bwMins       = bwMinsUntil % 60
+  const bwStr        = bwActive
+    ? `ends in ${bwEndsIn} min`
+    : bwHrs > 0 ? `in ${bwHrs}h ${bwMins}m` : `in ${bwMins} min`
+
+  // Best window end time label
+  const bwEndHour    = bestWindow.start + bestWindow.dur
+  const bwEndLabel   = `${bwEndHour % 12 === 0 ? 12 : Math.floor(bwEndHour % 12)}:${String(Math.round((bwEndHour % 1) * 60)).padStart(2,'0')} ${bwEndHour < 12 ? 'AM' : 'PM'}`
+  const bwStartLabel = bestWindow.label
+
+  // Live clock string
+  const clockStr = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', second: '2-digit' })
+
   const tideRef    = useRef<HTMLCanvasElement>(null)
   const pressRef   = useRef<HTMLCanvasElement>(null)
   const swellRef   = useRef<HTMLCanvasElement>(null)
@@ -874,6 +923,170 @@ export default function PabloCreekEntrancePage() {
 
       {/* ── Main grid ── */}
       <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 20px 40px', display: 'grid', gridTemplateColumns: '1fr', gap: 16 }}>
+
+        {/* ── NOW Panel ── */}
+        <div style={{
+          background: t.surface,
+          border: `1px solid ${t.border}`,
+          borderRadius: 14,
+          overflow: 'hidden',
+          boxShadow: bwActive ? `0 0 0 2px ${t.accent}55` : undefined,
+        }}>
+          {/* Header bar */}
+          <div style={{
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            padding: '10px 18px',
+            borderBottom: `1px solid ${t.border}`,
+            background: t.surfaceAlt,
+          }}>
+            <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
+              <span style={{
+                display: 'inline-block', width: 7, height: 7, borderRadius: '50%',
+                background: '#22c55e',
+                boxShadow: '0 0 6px #22c55e',
+                animation: 'pulse 2s infinite',
+              }}/>
+              <span style={{ fontSize: 11, fontWeight: 700, letterSpacing: '0.08em', textTransform: 'uppercase', color: t.textMuted }}>
+                Live Conditions
+              </span>
+            </div>
+            <span style={{ fontSize: 12, fontWeight: 600, color: t.textFaint, fontVariantNumeric: 'tabular-nums' }}>
+              {clockStr}
+            </span>
+          </div>
+
+          {/* 4-column grid */}
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 0 }}>
+
+            {/* ① Tide now */}
+            <div style={{ padding: '16px 18px', borderRight: `1px solid ${t.border}` }}>
+              <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.07em', textTransform: 'uppercase', color: t.textFaint, marginBottom: 8 }}>
+                Tide Now
+              </div>
+              <div style={{ display: 'flex', alignItems: 'baseline', gap: 6, marginBottom: 4 }}>
+                <span style={{ fontSize: 28, fontWeight: 800, color: isRising ? t.accent : '#818cf8', lineHeight: 1 }}>
+                  {isRising ? '↑' : '↓'}
+                </span>
+                <span style={{ fontSize: 22, fontWeight: 800, color: t.text, lineHeight: 1 }}>
+                  {curHeight.toFixed(1)} ft
+                </span>
+              </div>
+              <div style={{ fontSize: 12, color: t.textMuted, marginBottom: 10 }}>
+                {isRising ? 'Rising' : 'Falling'} · {ratePerHr.toFixed(1)} ft/hr
+              </div>
+              {/* Tide speed bar */}
+              <div style={{ marginBottom: 4 }}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 3 }}>
+                  <span style={{ fontSize: 10, color: t.textFaint }}>Tide speed</span>
+                  <span style={{ fontSize: 10, color: nearSlack ? '#f97316' : '#22c55e', fontWeight: 600 }}>
+                    {nearSlack ? 'Slack water' : tideSpeed > 60 ? 'Strong' : 'Moderate'}
+                  </span>
+                </div>
+                <div style={{ height: 4, borderRadius: 2, background: t.border }}>
+                  <div style={{
+                    height: '100%', borderRadius: 2,
+                    width: `${tideSpeed}%`,
+                    background: nearSlack ? '#f97316' : tideSpeed > 60 ? '#22c55e' : '#84cc16',
+                    transition: 'width 1s ease',
+                  }}/>
+                </div>
+              </div>
+            </div>
+
+            {/* ② Next event */}
+            <div style={{ padding: '16px 18px', borderRight: `1px solid ${t.border}` }}>
+              <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.07em', textTransform: 'uppercase', color: t.textFaint, marginBottom: 8 }}>
+                Next Event
+              </div>
+              <div style={{ fontSize: 13, fontWeight: 700, color: nextEvent.label === 'High' ? t.accent : '#818cf8', marginBottom: 4 }}>
+                {nextEvent.label === 'High' ? '▲' : '▼'} {nextEvent.label} Tide
+              </div>
+              <div style={{ fontSize: 26, fontWeight: 800, color: t.text, lineHeight: 1, marginBottom: 6, fontVariantNumeric: 'tabular-nums' }}>
+                {cntStr}
+              </div>
+              <div style={{ fontSize: 12, color: t.textMuted }}>
+                {nextEvent.height} ft at {nextEvent.time}
+              </div>
+              <div style={{ marginTop: 8, fontSize: 11, color: t.textFaint }}>
+                {nextEvent.label === 'Low'
+                  ? '🎣 Creek mouth action peaks near low'
+                  : '🌿 Marsh edges productive on incoming'}
+              </div>
+            </div>
+
+            {/* ③ Best window */}
+            <div style={{
+              padding: '16px 18px',
+              borderRight: `1px solid ${t.border}`,
+              background: bwActive ? `${t.accent}0d` : 'transparent',
+            }}>
+              <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.07em', textTransform: 'uppercase', color: bwActive ? t.accent : t.textFaint, marginBottom: 8 }}>
+                {bwActive ? '🔥 Best Window — Active Now' : '🔥 Best Window'}
+              </div>
+              <div style={{ fontSize: 18, fontWeight: 800, color: bwActive ? t.accent : t.text, lineHeight: 1.2, marginBottom: 4 }}>
+                {bwStartLabel}–{bwEndLabel}
+              </div>
+              <div style={{
+                display: 'inline-block',
+                fontSize: 11, fontWeight: 700,
+                padding: '2px 8px', borderRadius: 5,
+                background: bwActive ? `${t.accent}33` : t.badge,
+                color: bwActive ? t.accent : t.textMuted,
+                marginBottom: 8,
+              }}>
+                {bwStr}
+              </div>
+              <div style={{ fontSize: 11, color: t.textFaint, lineHeight: 1.5 }}>
+                Major solunar · {isRising ? 'Incoming tide' : 'Outgoing tide'}<br/>
+                {nearSlack ? 'Wait for tide to move' : 'Tide actively moving ✓'}
+              </div>
+            </div>
+
+            {/* ④ Conditions snapshot */}
+            <div style={{ padding: '16px 18px' }}>
+              <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.07em', textTransform: 'uppercase', color: t.textFaint, marginBottom: 8 }}>
+                Conditions
+              </div>
+              {[
+                { icon: '🌡️', label: 'Water', val: '68°F', sub: 'Optimal for redfish' },
+                { icon: '📊', label: 'Pressure', val: '1016 mb', sub: '↗ Rising — fish active' },
+                { icon: '💨', label: 'Wind',     val: 'SE 8 kt', sub: 'Light — good visibility' },
+                { icon: '🌙', label: 'Solunar',  val: 'Major 8:45', sub: '2-hour window' },
+              ].map(row => (
+                <div key={row.label} style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 7 }}>
+                  <span style={{ fontSize: 14, width: 20, textAlign: 'center' }}>{row.icon}</span>
+                  <div>
+                    <span style={{ fontSize: 12, fontWeight: 600, color: t.text }}>{row.val}</span>
+                    <span style={{ fontSize: 10, color: t.textFaint, marginLeft: 6 }}>{row.sub}</span>
+                  </div>
+                </div>
+              ))}
+            </div>
+
+          </div>
+
+          {/* Bottom: full-width tide gauge bar */}
+          <div style={{ padding: '10px 18px 12px', borderTop: `1px solid ${t.border}`, background: t.surfaceAlt }}>
+            <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
+              <span style={{ fontSize: 10, color: t.textFaint }}>0 ft (MLLW)</span>
+              <span style={{ fontSize: 10, color: t.textFaint, fontWeight: 600 }}>
+                Current: {curHeight.toFixed(2)} ft
+              </span>
+              <span style={{ fontSize: 10, color: t.textFaint }}>6 ft (approx. MHHW)</span>
+            </div>
+            <div style={{ height: 8, borderRadius: 4, background: t.border, overflow: 'hidden' }}>
+              <div style={{
+                height: '100%',
+                borderRadius: 4,
+                width: `${Math.min(100, (curHeight / 6) * 100)}%`,
+                background: `linear-gradient(90deg, #818cf8, ${t.accent})`,
+                transition: 'width 1s ease',
+              }}/>
+            </div>
+          </div>
+        </div>
 
         {/* Tide chart */}
         {card(
