@@ -1248,14 +1248,27 @@ function PabloCreekEntranceContent() {
         </div>
 
         {/* info stat cards */}
+        {(() => {
+          const eventsFromNow = isViewingToday ? selEvents.filter(e => e.hour > nowHour) : selEvents
+          const nextHigh = eventsFromNow.find(e => e.label === 'High') ?? selEvents.find(e => e.label === 'High')
+          const nextLow  = eventsFromNow.find(e => e.label === 'Low')  ?? selEvents.find(e => e.label === 'Low')
+          const hiHeights = selEvents.filter(e => e.label === 'High').map(e => e.height)
+          const loHeights = selEvents.filter(e => e.label === 'Low').map(e => e.height)
+          const tidalRange = hiHeights.length && loHeights.length
+            ? (Math.max(...hiHeights) - Math.min(...loHeights)).toFixed(1) + ' ft' : '—'
+          const nextSol = (isViewingToday
+            ? selSolunar.find(s => s.type === 'major' && s.start > nowHour)
+            : selSolunar.find(s => s.type === 'major')) ?? selSolunar.find(s => s.type === 'major')
+          const statCards = [
+            { icon: '▲', label: 'Next High', v: nextHigh ? `${nextHigh.time}  ${nextHigh.height} ft` : '—', color: t.accent },
+            { icon: '▼', label: 'Next Low',  v: nextLow  ? `${nextLow.time}  ${nextLow.height} ft`  : '—', color: '#818cf8' },
+            { icon: '🌡', label: 'Water Temp', v: waterTemp ?? WEATHER.waterTemp, color: '#f97316' },
+            { icon: '↕', label: 'Tidal Range', v: tidalRange, color: '#22c55e' },
+            { icon: '🐟', label: 'Solunar', v: nextSol ? `Major ${nextSol.label}` : 'No major today', color: '#eab308' },
+          ]
+          return (
         <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginBottom: 20 }}>
-          {[
-            { icon: '▲', label: 'Next High', v: '7:33 PM  5.1 ft', color: t.accent },
-            { icon: '▼', label: 'Next Low',  v: '1:18 PM  0.5 ft', color: '#818cf8' },
-            { icon: '🌡', label: 'Water Temp', v: '68°F', color: '#f97316' },
-            { icon: '↕', label: 'Tidal Range', v: '4.8 ft', color: '#22c55e' },
-            { icon: '🐟', label: 'Solunar', v: 'Major 8:45 AM', color: '#eab308' },
-          ].map(b => (
+          {statCards.map(b => (
             <div key={b.label} style={{
               background: t.surface,
               border: `1px solid ${t.border}`,
@@ -1272,6 +1285,8 @@ function PabloCreekEntranceContent() {
             </div>
           ))}
         </div>
+          )
+        })()}
       </div>
 
       {/* ── Main grid ── */}
