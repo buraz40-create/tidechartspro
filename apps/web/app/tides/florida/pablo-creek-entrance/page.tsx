@@ -1862,71 +1862,48 @@ function PabloCreekEntranceContent() {
           {/* Solunar */}
           {card(
             <>
-              {sectionTitle('Solunar Activity', 'Lunar transit periods · align with tide for best results')}
-              <div style={{ position: 'relative', height: 44, background: t.surfaceAlt, borderRadius: 8, marginBottom: 16, overflow: 'hidden', border: `1px solid ${t.border}` }}>
+              {sectionTitle('Solunar Activity', 'Best feeding windows based on lunar & solar transit')}
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 10 }}>
                 {selSolunar.map(s => {
-                  const left  = (s.start / 24) * 100
-                  const width = (s.dur   / 24) * 100
+                  const endHour = s.start + s.dur
+                  const isActive = nowHour >= s.start && nowHour < endHour
+                  const isPast   = nowHour >= endHour
+                  const isMajor  = s.type === 'major'
+                  const accentCol = isMajor ? t.accent : '#a78bfa'
+                  const statusLabel = isActive ? '🟢 Active now' : isPast ? 'Passed' : `in ${Math.floor(s.start - nowHour)}h ${Math.round(((s.start - nowHour) % 1) * 60)}m`
+                  const statusColor = isActive ? '#22c55e' : isPast ? t.textFaint : t.textMuted
                   return (
                     <div key={s.label} style={{
-                      position: 'absolute',
-                      left:   `${left}%`,
-                      width:  `${width}%`,
-                      top:    s.type === 'major' ? 6 : 14,
-                      height: s.type === 'major' ? 32 : 16,
-                      borderRadius: 4,
-                      background: s.type === 'major'
-                        ? `${t.accent}55`
-                        : `${t.accent}28`,
-                      border: `1px solid ${t.accent}88`,
-                      display: 'flex',
-                      alignItems: 'center',
-                      justifyContent: 'center',
-                      overflow: 'hidden',
+                      padding: '14px 16px',
+                      background: isActive ? `${accentCol}18` : t.surfaceAlt,
+                      border: `1px solid ${isActive ? accentCol + '66' : t.border}`,
+                      borderTop: `3px solid ${isPast ? t.border : accentCol}`,
+                      borderRadius: 10,
+                      opacity: isPast ? 0.5 : 1,
                     }}>
-                      <span style={{ fontSize: 9, color: t.accent, fontWeight: 600, whiteSpace: 'nowrap', padding: '0 3px' }}>
-                        {s.type === 'major' ? '●' : '○'}
-                      </span>
+                      {/* Badge row */}
+                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 8 }}>
+                        <span style={{
+                          fontSize: 10, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em',
+                          color: accentCol, background: `${accentCol}22`, padding: '2px 8px', borderRadius: 4,
+                        }}>
+                          {isMajor ? '★ Major' : '◆ Minor'}
+                        </span>
+                        <span style={{ fontSize: 10, color: t.textFaint }}>{s.dur}h window</span>
+                      </div>
+                      {/* Time */}
+                      <div style={{ fontSize: 22, fontWeight: 800, color: isPast ? t.textMuted : t.text, letterSpacing: '-0.02em', marginBottom: 4 }}>
+                        {s.label}
+                      </div>
+                      {/* Description */}
+                      <div style={{ fontSize: 11, color: t.textMuted, marginBottom: 8 }}>
+                        {isMajor ? 'Peak feeding period — fish most active' : 'Secondary feeding period'}
+                      </div>
+                      {/* Status */}
+                      <div style={{ fontSize: 11, fontWeight: 600, color: statusColor }}>{statusLabel}</div>
                     </div>
                   )
                 })}
-                {/* now indicator */}
-                <div style={{
-                  position: 'absolute',
-                  left: `${(nowHour / 24) * 100}%`,
-                  top: 0, bottom: 0,
-                  width: 1.5,
-                  background: t.canvasNowLine,
-                }}/>
-              </div>
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 8 }}>
-                {selSolunar.map(s => (
-                  <div key={s.label} style={{
-                    display: 'flex',
-                    alignItems: 'center',
-                    justifyContent: 'space-between',
-                    padding: '8px 12px',
-                    background: t.surfaceAlt,
-                    border: `1px solid ${t.border}`,
-                    borderRadius: 8,
-                    borderLeft: `3px solid ${s.type === 'major' ? t.accent : t.textFaint}`,
-                  }}>
-                    <div>
-                      <span style={{ fontSize: 12, fontWeight: 600, textTransform: 'capitalize' }}>{s.type}</span>
-                      <span style={{ fontSize: 11, color: t.textMuted, marginLeft: 8 }}>{s.label}</span>
-                    </div>
-                    <span style={{
-                      fontSize: 10,
-                      padding: '2px 8px',
-                      borderRadius: 4,
-                      background: s.type === 'major' ? t.accentFaint : t.badge,
-                      color: s.type === 'major' ? t.accent : t.textFaint,
-                      fontWeight: 600,
-                    }}>
-                      {s.type === 'major' ? `${s.dur}h window` : `${s.dur}h window`}
-                    </span>
-                  </div>
-                ))}
               </div>
             </>
           )}
