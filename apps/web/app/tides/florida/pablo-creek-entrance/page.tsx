@@ -1250,7 +1250,7 @@ function PabloCreekEntranceContent() {
               Pablo Creek Entrance
             </h1>
             <div style={{ fontSize: 13, color: t.textMuted, marginTop: 4 }}>
-              NOAA Station 8720218 · Jacksonville, FL · 30.37°N 81.45°W
+              Station 8720218 · Jacksonville, FL · 30.37°N 81.45°W
             </div>
           </div>
           <div style={{ textAlign: 'right' }}>
@@ -1510,7 +1510,7 @@ function PabloCreekEntranceContent() {
                   {isViewingToday ? "Today's Tide Chart" : `Tide Chart · ${selectedDate.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })}`}
                 </div>
                 <div style={{ fontSize: 11, color: t.textFaint, marginTop: 2 }}>
-                  {selectedDate.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' })} · NOAA predicted
+                  {selectedDate.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric', year: 'numeric' })} · Predicted tides
                 </div>
               </div>
               {!isViewingToday && (
@@ -1582,7 +1582,7 @@ function PabloCreekEntranceContent() {
             <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 14 }}>
               <div>
                 <div style={{ fontSize: 13, fontWeight: 600, color: t.text, letterSpacing: '0.02em' }}>Weather Forecast</div>
-                <div style={{ fontSize: 11, color: t.textFaint, marginTop: 2 }}>Live NOAA · Jacksonville, FL</div>
+                <div style={{ fontSize: 11, color: t.textFaint, marginTop: 2 }}>Live data · Jacksonville, FL</div>
               </div>
               <div style={{ display: 'flex', gap: 4 }}>
                 {(['hourly', '7day', 'radar'] as const).map(tab => (
@@ -1600,7 +1600,7 @@ function PabloCreekEntranceContent() {
             </div>
 
             {/* ── Hourly tab ── */}
-            {wxTab === 'hourly' && wxLoading && <div style={{ color: t.textFaint, fontSize: 12, padding: '20px 0', textAlign: 'center' }}>Loading NOAA weather…</div>}
+            {wxTab === 'hourly' && wxLoading && <div style={{ color: t.textFaint, fontSize: 12, padding: '20px 0', textAlign: 'center' }}>Loading weather data…</div>}
             {wxTab === 'hourly' && wxError   && <div style={{ color: t.textFaint, fontSize: 12, padding: '20px 0', textAlign: 'center' }}>Weather data unavailable</div>}
             {wxTab === 'hourly' && !wxLoading && !wxError && (
               <div style={{ overflowX: 'auto' }}>
@@ -2197,7 +2197,7 @@ function PabloCreekEntranceContent() {
             Tide<span style={{ color: t.accent }}>Charts</span>Pro
           </div>
           <div style={{ fontSize: 11, color: t.textFaint }}>
-            Data: NOAA CO-OPS station 8720218 · Predicted tides · Updated every 6 min
+            Station 8720218 · Predicted tides · Updated every 6 min
           </div>
           <div style={{ display: 'flex', gap: 16, fontSize: 11, color: t.textFaint }}>
             <a href="/tides" style={{ color: t.textFaint, textDecoration: 'none' }}>Tides</a>
