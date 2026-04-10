@@ -1052,6 +1052,7 @@ function PabloCreekEntranceContent() {
 
   // ── NOAA live weather ──
   const [wxHourly,  setWxHourly]  = useState<WxHour[]>([])
+  const [wxHourPage, setWxHourPage] = useState(0)
   const [wxDaily,   setWxDaily]   = useState<WxDay[]>([])
   const [wxLoading, setWxLoading] = useState(true)
   const [wxError,   setWxError]   = useState(false)
@@ -1077,7 +1078,7 @@ function PabloCreekEntranceContent() {
         }
         const hourly: WxHour[] = (hrData.properties.periods as RawPeriod[])
           .filter(p => new Date(p.startTime).getTime() + 3600000 > nowMs)
-          .slice(0, 24)
+          .slice(0, 72)
           .map(p => ({
             time:      new Date(p.startTime).toLocaleTimeString('en-US', { hour: 'numeric' }),
             hour:      new Date(p.startTime).getHours(),
@@ -1571,8 +1572,8 @@ function PabloCreekEntranceContent() {
                     <div key={ci} style={{ fontSize: 9, fontWeight: 700, color: t.textFaint, textTransform: 'uppercase' as const, letterSpacing: '0.07em', padding: '0 6px' }}>{h}</div>
                   ))}
                 </div>
-                {wxHourly.map((h, i) => {
-                  const isNow       = h.hour === Math.floor(nowHour)
+                {wxHourly.slice(wxHourPage * 24, wxHourPage * 24 + 24).map((h, i) => {
+                  const isNow       = wxHourPage === 0 && h.hour === Math.floor(nowHour)
                   const windColor   = h.windSpeed >= 20 ? '#ef4444' : h.windSpeed >= 12 ? '#eab308' : '#22c55e'
                   const precipColor = h.precip >= 60 ? '#60a5fa' : h.precip >= 30 ? '#93c5fd' : t.textMuted
                   const tideIdx     = Math.min(288, Math.round((h.hour / 24) * 288))
@@ -1616,6 +1617,28 @@ function PabloCreekEntranceContent() {
                     </div>
                   )
                 })}
+                {/* Pagination */}
+                {wxHourly.length > 24 && (
+                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 10, gap: 8 }}>
+                    <button
+                      onClick={() => setWxHourPage(p => Math.max(0, p - 1))}
+                      disabled={wxHourPage === 0}
+                      style={{ padding: '6px 14px', fontSize: 12, fontWeight: 600, borderRadius: 6, border: `1px solid ${t.border}`, background: wxHourPage === 0 ? t.surfaceAlt : t.surface, color: wxHourPage === 0 ? t.textFaint : t.text, cursor: wxHourPage === 0 ? 'default' : 'pointer' }}
+                    >← Prev 24 hrs</button>
+                    <div style={{ display: 'flex', gap: 6 }}>
+                      {Array.from({ length: Math.ceil(wxHourly.length / 24) }).map((_, pi) => (
+                        <button key={pi} onClick={() => setWxHourPage(pi)} style={{ width: 28, height: 28, borderRadius: 6, border: `1px solid ${pi === wxHourPage ? t.accent : t.border}`, background: pi === wxHourPage ? t.accentFaint : t.surface, color: pi === wxHourPage ? t.accent : t.textMuted, fontSize: 11, fontWeight: 700, cursor: 'pointer' }}>
+                          {pi + 1}
+                        </button>
+                      ))}
+                    </div>
+                    <button
+                      onClick={() => setWxHourPage(p => Math.min(Math.ceil(wxHourly.length / 24) - 1, p + 1))}
+                      disabled={wxHourPage >= Math.ceil(wxHourly.length / 24) - 1}
+                      style={{ padding: '6px 14px', fontSize: 12, fontWeight: 600, borderRadius: 6, border: `1px solid ${t.border}`, background: wxHourPage >= Math.ceil(wxHourly.length / 24) - 1 ? t.surfaceAlt : t.surface, color: wxHourPage >= Math.ceil(wxHourly.length / 24) - 1 ? t.textFaint : t.text, cursor: wxHourPage >= Math.ceil(wxHourly.length / 24) - 1 ? 'default' : 'pointer' }}
+                    >Next 24 hrs →</button>
+                  </div>
+                )}
               </div>
             )}
 
