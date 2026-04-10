@@ -296,6 +296,7 @@ function drawTideChart(
   sunsetH: number,
   nowH: number | null,
   hover?: { hour: number; height: number } | null,
+  solunar?: Array<{ start: number; dur: number; type: string }>,
 ) {
   const W = canvas.clientWidth
   const H = canvas.clientHeight
@@ -425,6 +426,25 @@ function drawTideChart(
     ctx.fillText('NOW', nowX, PAD.top + 11)
   }
 
+  // ── solunar fish strip along bottom
+  if (solunar) {
+    const fishY = PAD.top + ch + 24
+    solunar.forEach(s => {
+      const isMajor = s.type === 'major'
+      const fishCount = isMajor ? 3 : 1
+      const midX = toX(s.start + s.dur / 2)
+      ctx.font = isMajor ? '14px system-ui' : '11px system-ui'
+      ctx.textAlign = 'center'
+      const spacing = isMajor ? 16 : 12
+      const startX = midX - ((fishCount - 1) * spacing) / 2
+      for (let f = 0; f < fishCount; f++) {
+        ctx.globalAlpha = isMajor ? 1.0 : 0.6
+        ctx.fillText('🐟', startX + f * spacing, fishY)
+      }
+      ctx.globalAlpha = 1.0
+    })
+  }
+
   // ── teardrop pins for high/low events
   events.forEach(ev => {
     const x  = toX(ev.hour)
@@ -437,36 +457,34 @@ function drawTideChart(
     ctx.lineWidth   = 1.5
     ctx.beginPath()
     ctx.moveTo(x, y)
-    ctx.lineTo(x, isHigh ? y - 28 : y + 28)
+    ctx.lineTo(x, isHigh ? y - 24 : y + 24)
     ctx.stroke()
 
-    // teardrop circle
-    const cy = isHigh ? y - 36 : y + 36
+    // circle
+    const cy = isHigh ? y - 30 : y + 30
     ctx.beginPath()
-    ctx.arc(x, cy, 12, 0, Math.PI * 2)
+    ctx.arc(x, cy, 10, 0, Math.PI * 2)
     ctx.fillStyle   = pinColor
     ctx.fill()
     ctx.strokeStyle = t.canvasBg
-    ctx.lineWidth   = 1
+    ctx.lineWidth   = 1.5
     ctx.stroke()
 
-    // label inside pin
-    ctx.fillStyle  = t.canvasBg
-    ctx.font       = 'bold 7px system-ui'
-    ctx.textAlign  = 'center'
-    ctx.fillText(ev.height.toFixed(1), x, cy + 2.5)
+    // ▲ / ▼ symbol inside circle
+    ctx.fillStyle = t.canvasBg
+    ctx.font      = 'bold 9px system-ui'
+    ctx.textAlign = 'center'
+    ctx.fillText(isHigh ? '▲' : '▼', x, cy + 3)
 
-    // time above/below pin
-    ctx.fillStyle  = t.canvasPinText
-    ctx.font       = '9px system-ui'
-    ctx.fillText(ev.time, x, isHigh ? cy - 16 : cy + 24)
+    // height — bold, outside circle
+    ctx.fillStyle = pinColor
+    ctx.font      = 'bold 10px system-ui'
+    ctx.fillText(`${ev.height.toFixed(1)} ft`, x, isHigh ? cy - 14 : cy + 22)
 
-    // fish icon near low tides
-    if (!isHigh) {
-      ctx.font      = '13px system-ui'
-      ctx.textAlign = 'center'
-      ctx.fillText('🐟', x + 18, cy + 4)
-    }
+    // time — smaller, further out
+    ctx.fillStyle = t.canvasPinText
+    ctx.font      = '9px system-ui'
+    ctx.fillText(ev.time, x, isHigh ? cy - 25 : cy + 33)
   })
 
   // ── Hover crosshair
@@ -951,8 +969,8 @@ function PabloCreekEntranceContent() {
   const selForecast = useMemo(() => forecastForDate(selectedDate),   [selectedDate])
 
   // Ref so hover handlers always see latest sel data without being in deps
-  const selDataRef = useRef({ curve: selCurve, events: selEvents, sunH: selSunH, isViewingToday })
-  selDataRef.current = { curve: selCurve, events: selEvents, sunH: selSunH, isViewingToday }
+  const selDataRef = useRef({ curve: selCurve, events: selEvents, sunH: selSunH, isViewingToday, solunar: selSolunar })
+  selDataRef.current = { curve: selCurve, events: selEvents, sunH: selSunH, isViewingToday, solunar: selSolunar }
 
   // ── Live clock ──
   const [now, setNow] = useState<Date>(() => new Date())
@@ -1010,13 +1028,13 @@ function PabloCreekEntranceContent() {
 
   const repaint = useCallback(() => {
     const dpr = window.devicePixelRatio || 1
-    const { curve, events, sunH, isViewingToday: ivt } = selDataRef.current
+    const { curve, events, sunH, isViewingToday: ivt, solunar } = selDataRef.current
     const nh  = ivt ? (() => { const n = new Date(); return n.getHours() + n.getMinutes()/60 + n.getSeconds()/3600 })() : null
-    if (tideRef.current)  drawTideChart(tideRef.current, t, dpr, curve, events, sunH.sunrise, sunH.sunset, nh)
+    if (tideRef.current)  drawTideChart(tideRef.current, t, dpr, curve, events, sunH.sunrise, sunH.sunset, nh, null, solunar)
     if (pressRef.current) drawPressureSparkline(pressRef.current, t, dpr)
     if (swellRef.current) drawSwellChart(swellRef.current, t, dpr)
     if (coeffRef.current) drawCoeff30(coeffRef.current, t, dpr)
-  }, [t, selCurve, selEvents, selSunH, isViewingToday])
+  }, [t, selCurve, selEvents, selSunH, selSolunar, isViewingToday])
 
   const [tooltip, setTooltip] = useState<{ x: number; y: number; hour: number; height: number } | null>(null)
 
@@ -1033,14 +1051,14 @@ function PabloCreekEntranceContent() {
     const height = curve[idx]
     const nh     = ivt ? (() => { const n = new Date(); return n.getHours() + n.getMinutes()/60 + n.getSeconds()/3600 })() : null
     setTooltip({ x: mx, y: my, hour, height })
-    drawTideChart(canvas, t, window.devicePixelRatio || 1, curve, events, sunH.sunrise, sunH.sunset, nh, { hour, height })
+    drawTideChart(canvas, t, window.devicePixelRatio || 1, curve, events, sunH.sunrise, sunH.sunset, nh, { hour, height }, selDataRef.current.solunar)
   }, [t])
 
   const handleTideMouseLeave = useCallback(() => {
     setTooltip(null)
-    const { curve, events, sunH, isViewingToday: ivt } = selDataRef.current
+    const { curve, events, sunH, isViewingToday: ivt, solunar } = selDataRef.current
     const nh = ivt ? (() => { const n = new Date(); return n.getHours() + n.getMinutes()/60 + n.getSeconds()/3600 })() : null
-    if (tideRef.current) drawTideChart(tideRef.current, t, window.devicePixelRatio || 1, curve, events, sunH.sunrise, sunH.sunset, nh, null)
+    if (tideRef.current) drawTideChart(tideRef.current, t, window.devicePixelRatio || 1, curve, events, sunH.sunrise, sunH.sunset, nh, null, solunar)
   }, [t])
 
   useEffect(() => {
