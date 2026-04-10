@@ -1832,33 +1832,6 @@ function PabloCreekEntranceContent() {
         </div>
 
         {/* Swell chart */}
-        {card(
-          <>
-            {sectionTitle('Swell & Wave Conditions', 'Offshore conditions · Jacksonville nearshore buoy')}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 10 }}>
-              {[
-                { icon: '🌊', label: 'Wave Height', v: '1.8 ft', sub: 'Flat / Calm', color: '#22c55e' },
-                { icon: '⏱', label: 'Peak Period', v: '7 sec', sub: 'between waves', color: t.accent },
-                { icon: '🧭', label: 'Direction', v: 'ESE', sub: '115° — out of southeast', color: '#f97316' },
-                { icon: '🎣', label: 'Fishing Impact', v: 'Good', sub: 'Calm = easy casting', color: '#22c55e' },
-              ].map(s => (
-                <div key={s.label} style={{
-                  padding: '12px 14px',
-                  background: t.surfaceAlt,
-                  border: `1px solid ${t.border}`,
-                  borderTop: `3px solid ${s.color}`,
-                  borderRadius: 10,
-                }}>
-                  <div style={{ fontSize: 10, fontWeight: 700, color: t.textFaint, textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 6 }}>
-                    <span style={{ marginRight: 4 }}>{s.icon}</span>{s.label}
-                  </div>
-                  <div style={{ fontSize: 20, fontWeight: 800, color: t.text, marginBottom: 3 }}>{s.v}</div>
-                  <div style={{ fontSize: 11, color: t.textMuted }}>{s.sub}</div>
-                </div>
-              ))}
-            </div>
-          </>
-        )}
 
         <div id="solunar"/>
         {/* Solunar + Species — two column */}
