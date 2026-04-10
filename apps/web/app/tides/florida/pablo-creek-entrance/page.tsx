@@ -1247,24 +1247,28 @@ function PabloCreekEntranceContent() {
           </div>
         </div>
 
-        {/* info badges */}
-        <div style={{ display: 'flex', gap: 8, flexWrap: 'wrap', marginBottom: 20 }}>
+        {/* info stat cards */}
+        <div style={{ display: 'flex', gap: 10, flexWrap: 'wrap', marginBottom: 20 }}>
           {[
-            { k: 'Next High', v: '7:33 PM  5.1 ft' },
-            { k: 'Next Low',  v: '1:18 PM  0.5 ft' },
-            { k: 'Water Temp', v: '68°F' },
-            { k: 'Tidal Range', v: '4.8 ft' },
-            { k: 'Solunar', v: 'Major 8:45 AM' },
+            { icon: '▲', label: 'Next High', v: '7:33 PM  5.1 ft', color: t.accent },
+            { icon: '▼', label: 'Next Low',  v: '1:18 PM  0.5 ft', color: '#818cf8' },
+            { icon: '🌡', label: 'Water Temp', v: '68°F', color: '#f97316' },
+            { icon: '↕', label: 'Tidal Range', v: '4.8 ft', color: '#22c55e' },
+            { icon: '🐟', label: 'Solunar', v: 'Major 8:45 AM', color: '#eab308' },
           ].map(b => (
-            <div key={b.k} style={{
+            <div key={b.label} style={{
               background: t.surface,
               border: `1px solid ${t.border}`,
-              borderRadius: 8,
-              padding: '5px 12px',
-              fontSize: 12,
+              borderTop: `3px solid ${b.color}`,
+              borderRadius: 10,
+              padding: '10px 16px',
+              minWidth: 110,
+              flex: '1 1 auto',
             }}>
-              <span style={{ color: t.textFaint }}>{b.k}: </span>
-              <span style={{ color: t.text, fontWeight: 500 }}>{b.v}</span>
+              <div style={{ fontSize: 10, fontWeight: 700, color: t.textFaint, textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 5 }}>
+                <span style={{ color: b.color, marginRight: 4 }}>{b.icon}</span>{b.label}
+              </div>
+              <div style={{ fontSize: 15, fontWeight: 700, color: t.text, letterSpacing: '-0.01em' }}>{b.v}</div>
             </div>
           ))}
         </div>
