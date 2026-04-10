@@ -847,6 +847,7 @@ const SCORE_FACTORS = [
 // ─── Weather types + helpers ──────────────────────────────────────────────────
 
 interface WxHour {
+  dateStr: string  // "YYYY-MM-DD" for date filtering
   time: string
   hour: number
   temp: number
@@ -939,9 +940,10 @@ function PabloCreekEntranceContent() {
     return () => window.removeEventListener('popstate', handlePop)
   }, [])
 
-  // Keep calendar month in sync with selected date
+  // Keep calendar month in sync with selected date; reset weather page
   useEffect(() => {
     setCurrentMonth(new Date(selectedDate.getFullYear(), selectedDate.getMonth(), 1))
+    setWxHourPage(0)
   }, [selectedDate])
 
   const selCurve   = useMemo(() => tideCurveForDate(selectedDate),   [selectedDate])
@@ -1078,16 +1080,19 @@ function PabloCreekEntranceContent() {
         }
         const hourly: WxHour[] = (hrData.properties.periods as RawPeriod[])
           .filter(p => new Date(p.startTime).getTime() + 3600000 > nowMs)
-          .slice(0, 72)
-          .map(p => ({
-            time:      new Date(p.startTime).toLocaleTimeString('en-US', { hour: 'numeric' }),
-            hour:      new Date(p.startTime).getHours(),
-            temp:      p.temperature,
-            windSpeed: parseInt(p.windSpeed) || 0,
-            windDir:   p.windDirection,
-            precip:    p.probabilityOfPrecipitation?.value ?? 0,
-            condition: p.shortForecast,
-          }))
+          .map(p => {
+            const d = new Date(p.startTime)
+            return {
+              dateStr:   `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`,
+              time:      d.toLocaleTimeString('en-US', { hour: 'numeric' }),
+              hour:      d.getHours(),
+              temp:      p.temperature,
+              windSpeed: parseInt(p.windSpeed) || 0,
+              windDir:   p.windDirection,
+              precip:    p.probabilityOfPrecipitation?.value ?? 0,
+              condition: p.shortForecast,
+            }
+          })
         setWxHourly(hourly)
 
         const periods: Array<{
@@ -1565,15 +1570,29 @@ function PabloCreekEntranceContent() {
             {/* ── Hourly tab ── */}
             {wxTab === 'hourly' && wxLoading && <div style={{ color: t.textFaint, fontSize: 12, padding: '20px 0', textAlign: 'center' }}>Loading NOAA weather…</div>}
             {wxTab === 'hourly' && wxError   && <div style={{ color: t.textFaint, fontSize: 12, padding: '20px 0', textAlign: 'center' }}>Weather data unavailable</div>}
-            {wxTab === 'hourly' && !wxLoading && !wxError && (
+            {wxTab === 'hourly' && !wxLoading && !wxError && (() => {
+              const selDateStr = `${selectedDate.getFullYear()}-${String(selectedDate.getMonth()+1).padStart(2,'0')}-${String(selectedDate.getDate()).padStart(2,'0')}`
+              const wxForDate = wxHourly.filter(h => h.dateStr === selDateStr)
+              // Today: start from current hour; future dates: all hours; past/out-of-range: empty
+              const wxFiltered = isViewingToday
+                ? wxForDate.filter(h => h.hour >= Math.floor(nowHour))
+                : wxForDate
+              const wxPage = wxFiltered.slice(wxHourPage * 24, wxHourPage * 24 + 24)
+              return (
               <div style={{ overflowX: 'auto' }}>
+                {wxFiltered.length === 0 && (
+                  <div style={{ color: t.textFaint, fontSize: 12, padding: '20px 0', textAlign: 'center' }}>
+                    {isViewingToday ? 'No forecast data' : 'Hourly forecast only available for the next 7 days'}
+                  </div>
+                )}
+                {wxFiltered.length > 0 && <>
                 <div style={{ display: 'grid', gridTemplateColumns: '68px 1fr 56px 1fr 56px 72px 64px', marginBottom: 4 }}>
                   {['Time','Conditions','Temp','Wind','Precip','Tide','Solunar'].map((h, ci) => (
                     <div key={ci} style={{ fontSize: 9, fontWeight: 700, color: t.textFaint, textTransform: 'uppercase' as const, letterSpacing: '0.07em', padding: '0 6px' }}>{h}</div>
                   ))}
                 </div>
-                {wxHourly.slice(wxHourPage * 24, wxHourPage * 24 + 24).map((h, i) => {
-                  const isNow       = wxHourPage === 0 && h.hour === Math.floor(nowHour)
+                {wxPage.map((h, i) => {
+                  const isNow       = isViewingToday && h.hour === Math.floor(nowHour)
                   const windColor   = h.windSpeed >= 20 ? '#ef4444' : h.windSpeed >= 12 ? '#eab308' : '#22c55e'
                   const precipColor = h.precip >= 60 ? '#60a5fa' : h.precip >= 30 ? '#93c5fd' : t.textMuted
                   const tideIdx     = Math.min(288, Math.round((h.hour / 24) * 288))
@@ -1618,7 +1637,7 @@ function PabloCreekEntranceContent() {
                   )
                 })}
                 {/* Pagination */}
-                {wxHourly.length > 24 && (
+                {wxFiltered.length > 24 && (
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 10, gap: 8 }}>
                     <button
                       onClick={() => setWxHourPage(p => Math.max(0, p - 1))}
@@ -1626,21 +1645,23 @@ function PabloCreekEntranceContent() {
                       style={{ padding: '6px 14px', fontSize: 12, fontWeight: 600, borderRadius: 6, border: `1px solid ${t.border}`, background: wxHourPage === 0 ? t.surfaceAlt : t.surface, color: wxHourPage === 0 ? t.textFaint : t.text, cursor: wxHourPage === 0 ? 'default' : 'pointer' }}
                     >← Prev 24 hrs</button>
                     <div style={{ display: 'flex', gap: 6 }}>
-                      {Array.from({ length: Math.ceil(wxHourly.length / 24) }).map((_, pi) => (
+                      {Array.from({ length: Math.ceil(wxFiltered.length / 24) }).map((_, pi) => (
                         <button key={pi} onClick={() => setWxHourPage(pi)} style={{ width: 28, height: 28, borderRadius: 6, border: `1px solid ${pi === wxHourPage ? t.accent : t.border}`, background: pi === wxHourPage ? t.accentFaint : t.surface, color: pi === wxHourPage ? t.accent : t.textMuted, fontSize: 11, fontWeight: 700, cursor: 'pointer' }}>
                           {pi + 1}
                         </button>
                       ))}
                     </div>
                     <button
-                      onClick={() => setWxHourPage(p => Math.min(Math.ceil(wxHourly.length / 24) - 1, p + 1))}
-                      disabled={wxHourPage >= Math.ceil(wxHourly.length / 24) - 1}
-                      style={{ padding: '6px 14px', fontSize: 12, fontWeight: 600, borderRadius: 6, border: `1px solid ${t.border}`, background: wxHourPage >= Math.ceil(wxHourly.length / 24) - 1 ? t.surfaceAlt : t.surface, color: wxHourPage >= Math.ceil(wxHourly.length / 24) - 1 ? t.textFaint : t.text, cursor: wxHourPage >= Math.ceil(wxHourly.length / 24) - 1 ? 'default' : 'pointer' }}
+                      onClick={() => setWxHourPage(p => Math.min(Math.ceil(wxFiltered.length / 24) - 1, p + 1))}
+                      disabled={wxHourPage >= Math.ceil(wxFiltered.length / 24) - 1}
+                      style={{ padding: '6px 14px', fontSize: 12, fontWeight: 600, borderRadius: 6, border: `1px solid ${t.border}`, background: wxHourPage >= Math.ceil(wxFiltered.length / 24) - 1 ? t.surfaceAlt : t.surface, color: wxHourPage >= Math.ceil(wxFiltered.length / 24) - 1 ? t.textFaint : t.text, cursor: wxHourPage >= Math.ceil(wxFiltered.length / 24) - 1 ? 'default' : 'pointer' }}
                     >Next 24 hrs →</button>
                   </div>
                 )}
+                </>}
               </div>
-            )}
+              )
+            })()}
 
             {/* ── 7-Day tab ── */}
             {wxTab === '7day' && wxLoading && <div style={{ color: t.textFaint, fontSize: 12, padding: '20px 0', textAlign: 'center' }}>Loading forecast…</div>}
