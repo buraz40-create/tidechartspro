@@ -2145,27 +2145,6 @@ function PabloCreekEntranceContent() {
           </>
         )}
 
-        {/* Tidal coefficient sparkline */}
-        {card(
-          <>
-            <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'flex-start', marginBottom: 10 }}>
-              {sectionTitle('30-Day Tidal Coefficient', 'Higher = stronger tides, better water movement')}
-              <div style={{ textAlign: 'right' }}>
-                <div style={{ fontSize: 22, fontWeight: 700, color: t.accent }}>82</div>
-                <div style={{ fontSize: 10, color: t.textFaint }}>today</div>
-              </div>
-            </div>
-            <canvas
-              ref={coeffRef}
-              style={{ width: '100%', height: 60, display: 'block', borderRadius: 4 }}
-            />
-            <div style={{ display: 'flex', justifyContent: 'space-between', marginTop: 6, fontSize: 10, color: t.textFaint }}>
-              <span>Apr 10</span>
-              <span style={{ color: '#22c55e' }}>High coeff = better fishing</span>
-              <span>May 9</span>
-            </div>
-          </>
-        )}
 
         {/* Nearby stations */}
         {card(
