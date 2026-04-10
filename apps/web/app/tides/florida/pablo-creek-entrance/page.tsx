@@ -1560,8 +1560,8 @@ function PabloCreekEntranceContent() {
             {wxTab === 'hourly' && wxError   && <div style={{ color: t.textFaint, fontSize: 12, padding: '20px 0', textAlign: 'center' }}>Weather data unavailable</div>}
             {wxTab === 'hourly' && !wxLoading && !wxError && (
               <div style={{ overflowX: 'auto' }}>
-                <div style={{ display: 'grid', gridTemplateColumns: '68px 72px 58px 30px 1fr 1fr 1fr 1fr', marginBottom: 4 }}>
-                  {['Time','Tide','Solunar','','Temp','Wind','Precip','Conditions'].map((h, ci) => (
+                <div style={{ display: 'grid', gridTemplateColumns: '68px 56px 1fr 56px 72px 64px 1fr', marginBottom: 4 }}>
+                  {['Time','Temp','Wind','Precip','Tide','Solunar','Conditions'].map((h, ci) => (
                     <div key={ci} style={{ fontSize: 9, fontWeight: 700, color: t.textFaint, textTransform: 'uppercase' as const, letterSpacing: '0.07em', padding: '0 6px' }}>{h}</div>
                   ))}
                 </div>
@@ -1576,31 +1576,37 @@ function PabloCreekEntranceContent() {
                   const solPeriod   = selSolunar.find(s => h.hour >= s.start && h.hour < s.start + s.dur)
                   return (
                     <div key={i} style={{
-                      display: 'grid', gridTemplateColumns: '68px 72px 58px 30px 1fr 1fr 1fr 1fr',
+                      display: 'grid', gridTemplateColumns: '68px 56px 1fr 56px 72px 64px 1fr',
                       background: isNow ? t.accentFaint : i % 2 === 0 ? t.surface : t.surfaceAlt,
                       borderLeft: isNow ? `3px solid ${t.accent}` : '3px solid transparent',
                       borderRadius: 4, marginBottom: 1, alignItems: 'center',
                     }}>
+                      {/* Time */}
                       <div style={{ padding: '6px 6px', fontSize: 12, fontWeight: isNow ? 700 : 400, color: isNow ? t.accent : t.text, whiteSpace: 'nowrap' as const }}>
                         {isNow ? '▶ ' : ''}{h.time}
                       </div>
-                      <div style={{ padding: '6px 6px', fontSize: 12, fontWeight: 600, color: tideColor, display: 'flex', alignItems: 'center', gap: 3 }}>
-                        <span style={{ fontSize: 10 }}>{tideRising ? '▲' : '▼'}</span>{tideHt.toFixed(1)} ft
-                      </div>
-                      <div style={{ padding: '6px 6px', fontSize: 12 }}>
-                        {solPeriod ? <span title={`${solPeriod.type} period`}>{solPeriod.type === 'major' ? '🐟🐟' : '🐟'}</span> : <span style={{ color: t.textFaint }}>—</span>}
-                      </div>
-                      {/* Rain icon */}
-                      <div style={{ padding: '6px 2px', fontSize: 15, textAlign: 'center' as const }}>
-                        {conditionEmoji(h.condition)}
-                      </div>
+                      {/* Temp */}
                       <div style={{ padding: '6px 6px', fontSize: 13, fontWeight: 700, color: '#facc15' }}>{h.temp}°</div>
+                      {/* Wind */}
                       <div style={{ padding: '6px 6px', fontSize: 12, color: windColor, display: 'flex', alignItems: 'center', gap: 4, whiteSpace: 'nowrap' as const }}>
                         <span style={{ display: 'inline-block', transform: `rotate(${windDirDeg(h.windDir)}deg)`, fontSize: 12, lineHeight: 1 }}>↑</span>
                         {h.windDir} {h.windSpeed} mph
                       </div>
+                      {/* Precip */}
                       <div style={{ padding: '6px 6px', fontSize: 12, fontWeight: 600, color: precipColor }}>{h.precip}%</div>
-                      <div style={{ padding: '6px 6px', fontSize: 11, color: t.textMuted, whiteSpace: 'nowrap' as const, overflow: 'hidden', textOverflow: 'ellipsis' }}>{h.condition}</div>
+                      {/* Tide */}
+                      <div style={{ padding: '6px 6px', fontSize: 12, fontWeight: 600, color: tideColor, display: 'flex', alignItems: 'center', gap: 3 }}>
+                        <span style={{ fontSize: 10 }}>{tideRising ? '▲' : '▼'}</span>{tideHt.toFixed(1)} ft
+                      </div>
+                      {/* Solunar */}
+                      <div style={{ padding: '6px 6px', fontSize: 18 }}>
+                        {solPeriod ? <span title={`${solPeriod.type} period`}>{solPeriod.type === 'major' ? '🐟🐟' : '🐟'}</span> : <span style={{ color: t.textFaint, fontSize: 12 }}>—</span>}
+                      </div>
+                      {/* Conditions */}
+                      <div style={{ padding: '6px 6px', fontSize: 11, color: t.textMuted, display: 'flex', alignItems: 'center', gap: 6 }}>
+                        <span style={{ fontSize: 20 }}>{conditionEmoji(h.condition)}</span>
+                        <span style={{ whiteSpace: 'nowrap' as const, overflow: 'hidden', textOverflow: 'ellipsis' }}>{h.condition}</span>
+                      </div>
                     </div>
                   )
                 })}
