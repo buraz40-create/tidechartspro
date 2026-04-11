@@ -1,0 +1,808 @@
+// AUTO-GENERATED — do not edit by hand.
+// Source: NOAA CO-OPS tide prediction stations, Rhode Island
+// Regenerate: node apps/web/scripts/generate-all-states.mjs
+
+import type { StationConfig, NearbyStation, Species } from './florida-stations'
+export type { StationConfig, NearbyStation, Species }
+
+export const RHODE_ISLAND_STATIONS: StationConfig[] = [
+  {
+    id: "8450768", waterTempId: "8450768",
+    name: "Sakonnet", slug: "sakonnet",
+    state: "rhode-island", city: "Sakonnet, RI", region: "Rhode Island Sound",
+    lat: 41.465, lon: -71.1933, latDisplay: "41.47°N", lonDisplay: "71.19°W",
+    sunLat: 41.47, sunMeridian: 75, sunLon: 71.19, utcOffset: 1,
+    sunriseRef: 6.51, sunsetRef: 20.26,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Sachuest, Flint Point", lat: 41.4867, lon: -71.2383, slug: "sachuest-flint-point" },
+    { name: "The Glen", lat: 41.5583, lon: -71.2367, slug: "the-glen" },
+    { name: "NEWPORT", lat: 41.5043333, lon: -71.3261389, slug: "newport" },
+    { name: "Castle Hill", lat: 41.4633, lon: -71.3617, slug: "castle-hill" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8450898", waterTempId: "8450898",
+    name: "North End, Bay Oil pier", slug: "north-end-bay-oil-pier",
+    state: "rhode-island", city: "North End, Bay Oil pier, RI", region: "Rhode Island Sound",
+    lat: 41.6517, lon: -71.21, latDisplay: "41.65°N", lonDisplay: "71.21°W",
+    sunLat: 41.65, sunMeridian: 75, sunLon: 71.21, utcOffset: 1,
+    sunriseRef: 6.5, sunsetRef: 20.27,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Anthony Point", lat: 41.6383, lon: -71.2117, slug: "anthony-point" },
+    { name: "Nannaquaket Neck", lat: 41.6183, lon: -71.2033, slug: "nannaquaket-neck" },
+    { name: "Bristol Ferry", lat: 41.6367, lon: -71.255, slug: "bristol-ferry" },
+    { name: "Bristol, Bristol Harbor", lat: 41.6683, lon: -71.28, slug: "bristol-bristol-harbor" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8450948", waterTempId: "8450948",
+    name: "Anthony Point", slug: "anthony-point",
+    state: "rhode-island", city: "Anthony Point, RI", region: "Rhode Island Sound",
+    lat: 41.6383, lon: -71.2117, latDisplay: "41.64°N", lonDisplay: "71.21°W",
+    sunLat: 41.64, sunMeridian: 75, sunLon: 71.21, utcOffset: 1,
+    sunriseRef: 6.5, sunsetRef: 20.27,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "North End, Bay Oil pier", lat: 41.6517, lon: -71.21, slug: "north-end-bay-oil-pier" },
+    { name: "Nannaquaket Neck", lat: 41.6183, lon: -71.2033, slug: "nannaquaket-neck" },
+    { name: "Bristol Ferry", lat: 41.6367, lon: -71.255, slug: "bristol-ferry" },
+    { name: "Bristol, Bristol Harbor", lat: 41.6683, lon: -71.28, slug: "bristol-bristol-harbor" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8450954", waterTempId: "8450954",
+    name: "Nannaquaket Neck", slug: "nannaquaket-neck",
+    state: "rhode-island", city: "Nannaquaket Neck, RI", region: "Rhode Island Sound",
+    lat: 41.6183, lon: -71.2033, latDisplay: "41.62°N", lonDisplay: "71.20°W",
+    sunLat: 41.62, sunMeridian: 75, sunLon: 71.2, utcOffset: 1,
+    sunriseRef: 6.5, sunsetRef: 20.26,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Anthony Point", lat: 41.6383, lon: -71.2117, slug: "anthony-point" },
+    { name: "North End, Bay Oil pier", lat: 41.6517, lon: -71.21, slug: "north-end-bay-oil-pier" },
+    { name: "Bristol Ferry", lat: 41.6367, lon: -71.255, slug: "bristol-ferry" },
+    { name: "The Glen", lat: 41.5583, lon: -71.2367, slug: "the-glen" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8451301", waterTempId: "8451301",
+    name: "The Glen", slug: "the-glen",
+    state: "rhode-island", city: "The Glen, RI", region: "Rhode Island Sound",
+    lat: 41.5583, lon: -71.2367, latDisplay: "41.56°N", lonDisplay: "71.24°W",
+    sunLat: 41.56, sunMeridian: 75, sunLon: 71.24, utcOffset: 1,
+    sunriseRef: 6.51, sunsetRef: 20.26,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Nannaquaket Neck", lat: 41.6183, lon: -71.2033, slug: "nannaquaket-neck" },
+    { name: "Prudence Island, (south end)", lat: 41.58, lon: -71.3217, slug: "prudence-island-south-end" },
+    { name: "Sachuest, Flint Point", lat: 41.4867, lon: -71.2383, slug: "sachuest-flint-point" },
+    { name: "Bristol Ferry", lat: 41.6367, lon: -71.255, slug: "bristol-ferry" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8451351", waterTempId: "8451351",
+    name: "Sachuest, Flint Point", slug: "sachuest-flint-point",
+    state: "rhode-island", city: "Sachuest, Flint Point, RI", region: "Rhode Island Sound",
+    lat: 41.4867, lon: -71.2383, latDisplay: "41.49°N", lonDisplay: "71.24°W",
+    sunLat: 41.49, sunMeridian: 75, sunLon: 71.24, utcOffset: 1,
+    sunriseRef: 6.51, sunsetRef: 20.26,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Sakonnet", lat: 41.465, lon: -71.1933, slug: "sakonnet" },
+    { name: "NEWPORT", lat: 41.5043333, lon: -71.3261389, slug: "newport" },
+    { name: "The Glen", lat: 41.5583, lon: -71.2367, slug: "the-glen" },
+    { name: "Castle Hill", lat: 41.4633, lon: -71.3617, slug: "castle-hill" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8451552", waterTempId: "8451552",
+    name: "Bristol Ferry", slug: "bristol-ferry",
+    state: "rhode-island", city: "Bristol Ferry, RI", region: "Rhode Island Sound",
+    lat: 41.6367, lon: -71.255, latDisplay: "41.64°N", lonDisplay: "71.25°W",
+    sunLat: 41.64, sunMeridian: 75, sunLon: 71.26, utcOffset: 1,
+    sunriseRef: 6.5, sunsetRef: 20.27,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Anthony Point", lat: 41.6383, lon: -71.2117, slug: "anthony-point" },
+    { name: "Bristol, Bristol Harbor", lat: 41.6683, lon: -71.28, slug: "bristol-bristol-harbor" },
+    { name: "North End, Bay Oil pier", lat: 41.6517, lon: -71.21, slug: "north-end-bay-oil-pier" },
+    { name: "Nannaquaket Neck", lat: 41.6183, lon: -71.2033, slug: "nannaquaket-neck" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8451929", waterTempId: "8451929",
+    name: "Bristol, Bristol Harbor", slug: "bristol-bristol-harbor",
+    state: "rhode-island", city: "Bristol, Bristol Harbor, RI", region: "Rhode Island Sound",
+    lat: 41.6683, lon: -71.28, latDisplay: "41.67°N", lonDisplay: "71.28°W",
+    sunLat: 41.67, sunMeridian: 75, sunLon: 71.28, utcOffset: 1,
+    sunriseRef: 6.5, sunsetRef: 20.27,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Bristol Highlands", lat: 41.69670104980469, lon: -71.29329681396484, slug: "bristol-highlands" },
+    { name: "Bristol Ferry", lat: 41.6367, lon: -71.255, slug: "bristol-ferry" },
+    { name: "KICKAMUIT RIVER", lat: 41.707801818847656, lon: -71.24169921875, slug: "kickamuit-river" },
+    { name: "North End, Bay Oil pier", lat: 41.6517, lon: -71.21, slug: "north-end-bay-oil-pier" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8452154", waterTempId: "8452154",
+    name: "Bristol Highlands", slug: "bristol-highlands",
+    state: "rhode-island", city: "Bristol Highlands, RI", region: "Rhode Island Sound",
+    lat: 41.69670104980469, lon: -71.29329681396484, latDisplay: "41.70°N", lonDisplay: "71.29°W",
+    sunLat: 41.7, sunMeridian: 75, sunLon: 71.29, utcOffset: 1,
+    sunriseRef: 6.5, sunsetRef: 20.27,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Bristol, Bristol Harbor", lat: 41.6683, lon: -71.28, slug: "bristol-bristol-harbor" },
+    { name: "KICKAMUIT RIVER", lat: 41.707801818847656, lon: -71.24169921875, slug: "kickamuit-river" },
+    { name: "Conimicut Light", lat: 41.71670150756836, lon: -71.34329986572266, slug: "conimicut-light" },
+    { name: "Bristol Ferry", lat: 41.6367, lon: -71.255, slug: "bristol-ferry" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8452555", waterTempId: "8452555",
+    name: "Prudence Island, (south end)", slug: "prudence-island-south-end",
+    state: "rhode-island", city: "Prudence Island, (south end), RI", region: "Rhode Island Sound",
+    lat: 41.58, lon: -71.3217, latDisplay: "41.58°N", lonDisplay: "71.32°W",
+    sunLat: 41.58, sunMeridian: 75, sunLon: 71.32, utcOffset: 1,
+    sunriseRef: 6.51, sunsetRef: 20.26,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Conanicut Point", lat: 41.5733, lon: -71.3717, slug: "conanicut-point" },
+    { name: "Quonset Point", lat: 41.58679962158203, lon: -71.41100311279297, slug: "quonset-point" },
+    { name: "The Glen", lat: 41.5583, lon: -71.2367, slug: "the-glen" },
+    { name: "Bristol Ferry", lat: 41.6367, lon: -71.255, slug: "bristol-ferry" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8452660", waterTempId: "8452660",
+    name: "NEWPORT", slug: "newport",
+    state: "rhode-island", city: "NEWPORT, RI", region: "Rhode Island Sound",
+    lat: 41.5043333, lon: -71.3261389, latDisplay: "41.50°N", lonDisplay: "71.33°W",
+    sunLat: 41.5, sunMeridian: 75, sunLon: 71.33, utcOffset: 1,
+    sunriseRef: 6.51, sunsetRef: 20.26,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "West Jamestown, Dutch Island Harbor", lat: 41.4967, lon: -71.3867, slug: "west-jamestown-dutch-island-harbor" },
+    { name: "Castle Hill", lat: 41.4633, lon: -71.3617, slug: "castle-hill" },
+    { name: "Sachuest, Flint Point", lat: 41.4867, lon: -71.2383, slug: "sachuest-flint-point" },
+    { name: "Prudence Island, (south end)", lat: 41.58, lon: -71.3217, slug: "prudence-island-south-end" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8452944", waterTempId: "8452944",
+    name: "Conimicut Light", slug: "conimicut-light",
+    state: "rhode-island", city: "Conimicut Light, RI", region: "Narragansett Bay",
+    lat: 41.71670150756836, lon: -71.34329986572266, latDisplay: "41.72°N", lonDisplay: "71.34°W",
+    sunLat: 41.72, sunMeridian: 75, sunLon: 71.34, utcOffset: 1,
+    sunriseRef: 6.5, sunsetRef: 20.27,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Bay Spring, Bullock Cove", lat: 41.75170135498047, lon: -71.35169982910156, slug: "bay-spring-bullock-cove" },
+    { name: "Bristol Highlands", lat: 41.69670104980469, lon: -71.29329681396484, slug: "bristol-highlands" },
+    { name: "Pawtuxet, Pawtuxet Cove", lat: 41.76169967651367, lon: -71.38829803466797, slug: "pawtuxet-pawtuxet-cove" },
+    { name: "WARWICK POINT", lat: 41.6667, lon: -71.3783, slug: "warwick-point" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8453033", waterTempId: "8453033",
+    name: "Bay Spring, Bullock Cove", slug: "bay-spring-bullock-cove",
+    state: "rhode-island", city: "Bay Spring, Bullock Cove, RI", region: "Narragansett Bay",
+    lat: 41.75170135498047, lon: -71.35169982910156, latDisplay: "41.75°N", lonDisplay: "71.35°W",
+    sunLat: 41.75, sunMeridian: 75, sunLon: 71.35, utcOffset: 1,
+    sunriseRef: 6.49, sunsetRef: 20.27,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Pawtuxet, Pawtuxet Cove", lat: 41.76169967651367, lon: -71.38829803466797, slug: "pawtuxet-pawtuxet-cove" },
+    { name: "Conimicut Light", lat: 41.71670150756836, lon: -71.34329986572266, slug: "conimicut-light" },
+    { name: "Providence, State Pier no.1", lat: 41.80716666666667, lon: -71.40066666666667, slug: "providence-state-pier-no1" },
+    { name: "Bristol Highlands", lat: 41.69670104980469, lon: -71.29329681396484, slug: "bristol-highlands" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8453201", waterTempId: "8453201",
+    name: "Castle Hill", slug: "castle-hill",
+    state: "rhode-island", city: "Castle Hill, RI", region: "Rhode Island Sound",
+    lat: 41.4633, lon: -71.3617, latDisplay: "41.46°N", lonDisplay: "71.36°W",
+    sunLat: 41.46, sunMeridian: 75, sunLon: 71.36, utcOffset: 1,
+    sunriseRef: 6.51, sunsetRef: 20.26,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Beavertail Point", lat: 41.4517, lon: -71.4017, slug: "beavertail-point" },
+    { name: "West Jamestown, Dutch Island Harbor", lat: 41.4967, lon: -71.3867, slug: "west-jamestown-dutch-island-harbor" },
+    { name: "NEWPORT", lat: 41.5043333, lon: -71.3261389, slug: "newport" },
+    { name: "Watson Pier, Boston Neck", lat: 41.46, lon: -71.4283, slug: "watson-pier-boston-neck" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8453433", waterTempId: "8453433",
+    name: "Rumford, Seekonk River", slug: "rumford-seekonk-river",
+    state: "rhode-island", city: "Rumford, Seekonk River, RI", region: "Narragansett Bay",
+    lat: 41.84000015258789, lon: -71.37329864501953, latDisplay: "41.84°N", lonDisplay: "71.37°W",
+    sunLat: 41.84, sunMeridian: 75, sunLon: 71.37, utcOffset: 1,
+    sunriseRef: 6.49, sunsetRef: 20.27,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Pawtucket, Seekonk River", lat: 41.8683, lon: -71.38, slug: "pawtucket-seekonk-river" },
+    { name: "Providence, State Pier no.1", lat: 41.80716666666667, lon: -71.40066666666667, slug: "providence-state-pier-no1" },
+    { name: "Pawtuxet, Pawtuxet Cove", lat: 41.76169967651367, lon: -71.38829803466797, slug: "pawtuxet-pawtuxet-cove" },
+    { name: "Bay Spring, Bullock Cove", lat: 41.75170135498047, lon: -71.35169982910156, slug: "bay-spring-bullock-cove" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8453465", waterTempId: "8453465",
+    name: "Conanicut Point", slug: "conanicut-point",
+    state: "rhode-island", city: "Conanicut Point, RI", region: "Rhode Island Sound",
+    lat: 41.5733, lon: -71.3717, latDisplay: "41.57°N", lonDisplay: "71.37°W",
+    sunLat: 41.57, sunMeridian: 75, sunLon: 71.37, utcOffset: 1,
+    sunriseRef: 6.51, sunsetRef: 20.26,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Quonset Point", lat: 41.58679962158203, lon: -71.41100311279297, slug: "quonset-point" },
+    { name: "Prudence Island, (south end)", lat: 41.58, lon: -71.3217, slug: "prudence-island-south-end" },
+    { name: "Wickford", lat: 41.5717, lon: -71.445, slug: "wickford" },
+    { name: "NEWPORT", lat: 41.5043333, lon: -71.3261389, slug: "newport" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8453611", waterTempId: "8453611",
+    name: "Pawtucket, Seekonk River", slug: "pawtucket-seekonk-river",
+    state: "rhode-island", city: "Pawtucket, Seekonk River, RI", region: "Narragansett Bay",
+    lat: 41.8683, lon: -71.38, latDisplay: "41.87°N", lonDisplay: "71.38°W",
+    sunLat: 41.87, sunMeridian: 75, sunLon: 71.38, utcOffset: 1,
+    sunriseRef: 6.49, sunsetRef: 20.27,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Rumford, Seekonk River", lat: 41.84000015258789, lon: -71.37329864501953, slug: "rumford-seekonk-river" },
+    { name: "Providence, State Pier no.1", lat: 41.80716666666667, lon: -71.40066666666667, slug: "providence-state-pier-no1" },
+    { name: "Pawtuxet, Pawtuxet Cove", lat: 41.76169967651367, lon: -71.38829803466797, slug: "pawtuxet-pawtuxet-cove" },
+    { name: "Bay Spring, Bullock Cove", lat: 41.75170135498047, lon: -71.35169982910156, slug: "bay-spring-bullock-cove" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8453742", waterTempId: "8453742",
+    name: "West Jamestown, Dutch Island Harbor", slug: "west-jamestown-dutch-island-harbor",
+    state: "rhode-island", city: "West Jamestown, Dutch Island Harbor, RI", region: "Rhode Island Sound",
+    lat: 41.4967, lon: -71.3867, latDisplay: "41.50°N", lonDisplay: "71.39°W",
+    sunLat: 41.5, sunMeridian: 75, sunLon: 71.39, utcOffset: 1,
+    sunriseRef: 6.51, sunsetRef: 20.26,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Castle Hill", lat: 41.4633, lon: -71.3617, slug: "castle-hill" },
+    { name: "NEWPORT", lat: 41.5043333, lon: -71.3261389, slug: "newport" },
+    { name: "Beavertail Point", lat: 41.4517, lon: -71.4017, slug: "beavertail-point" },
+    { name: "Watson Pier, Boston Neck", lat: 41.46, lon: -71.4283, slug: "watson-pier-boston-neck" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8453767", waterTempId: "8453767",
+    name: "Pawtuxet, Pawtuxet Cove", slug: "pawtuxet-pawtuxet-cove",
+    state: "rhode-island", city: "Pawtuxet, Pawtuxet Cove, RI", region: "Narragansett Bay",
+    lat: 41.76169967651367, lon: -71.38829803466797, latDisplay: "41.76°N", lonDisplay: "71.39°W",
+    sunLat: 41.76, sunMeridian: 75, sunLon: 71.39, utcOffset: 1,
+    sunriseRef: 6.49, sunsetRef: 20.27,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Bay Spring, Bullock Cove", lat: 41.75170135498047, lon: -71.35169982910156, slug: "bay-spring-bullock-cove" },
+    { name: "Providence, State Pier no.1", lat: 41.80716666666667, lon: -71.40066666666667, slug: "providence-state-pier-no1" },
+    { name: "Conimicut Light", lat: 41.71670150756836, lon: -71.34329986572266, slug: "conimicut-light" },
+    { name: "Rumford, Seekonk River", lat: 41.84000015258789, lon: -71.37329864501953, slug: "rumford-seekonk-river" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8453999", waterTempId: "8453999",
+    name: "Beavertail Point", slug: "beavertail-point",
+    state: "rhode-island", city: "Beavertail Point, RI", region: "Rhode Island Sound",
+    lat: 41.4517, lon: -71.4017, latDisplay: "41.45°N", lonDisplay: "71.40°W",
+    sunLat: 41.45, sunMeridian: 75, sunLon: 71.4, utcOffset: 1,
+    sunriseRef: 6.51, sunsetRef: 20.26,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Watson Pier, Boston Neck", lat: 41.46, lon: -71.4283, slug: "watson-pier-boston-neck" },
+    { name: "Castle Hill", lat: 41.4633, lon: -71.3617, slug: "castle-hill" },
+    { name: "West Jamestown, Dutch Island Harbor", lat: 41.4967, lon: -71.3867, slug: "west-jamestown-dutch-island-harbor" },
+    { name: "Narragansett Pier", lat: 41.4217, lon: -71.455, slug: "narragansett-pier" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8454000", waterTempId: "8454000",
+    name: "Providence, State Pier no.1", slug: "providence-state-pier-no1",
+    state: "rhode-island", city: "Providence, State Pier no.1, RI", region: "Narragansett Bay",
+    lat: 41.80716666666667, lon: -71.40066666666667, latDisplay: "41.81°N", lonDisplay: "71.40°W",
+    sunLat: 41.81, sunMeridian: 75, sunLon: 71.4, utcOffset: 1,
+    sunriseRef: 6.49, sunsetRef: 20.27,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Rumford, Seekonk River", lat: 41.84000015258789, lon: -71.37329864501953, slug: "rumford-seekonk-river" },
+    { name: "Pawtuxet, Pawtuxet Cove", lat: 41.76169967651367, lon: -71.38829803466797, slug: "pawtuxet-pawtuxet-cove" },
+    { name: "Pawtucket, Seekonk River", lat: 41.8683, lon: -71.38, slug: "pawtucket-seekonk-river" },
+    { name: "Bay Spring, Bullock Cove", lat: 41.75170135498047, lon: -71.35169982910156, slug: "bay-spring-bullock-cove" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8454049", waterTempId: "8454049",
+    name: "Quonset Point", slug: "quonset-point",
+    state: "rhode-island", city: "Quonset Point, RI", region: "Rhode Island Sound",
+    lat: 41.58679962158203, lon: -71.41100311279297, latDisplay: "41.59°N", lonDisplay: "71.41°W",
+    sunLat: 41.59, sunMeridian: 75, sunLon: 71.41, utcOffset: 1,
+    sunriseRef: 6.5, sunsetRef: 20.26,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Wickford", lat: 41.5717, lon: -71.445, slug: "wickford" },
+    { name: "Conanicut Point", lat: 41.5733, lon: -71.3717, slug: "conanicut-point" },
+    { name: "Prudence Island, (south end)", lat: 41.58, lon: -71.3217, slug: "prudence-island-south-end" },
+    { name: "East Greenwich", lat: 41.665000915527344, lon: -71.44499969482422, slug: "east-greenwich" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8454341", waterTempId: "8454341",
+    name: "Watson Pier, Boston Neck", slug: "watson-pier-boston-neck",
+    state: "rhode-island", city: "Watson Pier, Boston Neck, RI", region: "Rhode Island Sound",
+    lat: 41.46, lon: -71.4283, latDisplay: "41.46°N", lonDisplay: "71.43°W",
+    sunLat: 41.46, sunMeridian: 75, sunLon: 71.43, utcOffset: 1,
+    sunriseRef: 6.51, sunsetRef: 20.26,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Beavertail Point", lat: 41.4517, lon: -71.4017, slug: "beavertail-point" },
+    { name: "Narragansett Pier", lat: 41.4217, lon: -71.455, slug: "narragansett-pier" },
+    { name: "West Jamestown, Dutch Island Harbor", lat: 41.4967, lon: -71.3867, slug: "west-jamestown-dutch-island-harbor" },
+    { name: "Castle Hill", lat: 41.4633, lon: -71.3617, slug: "castle-hill" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8454538", waterTempId: "8454538",
+    name: "Wickford", slug: "wickford",
+    state: "rhode-island", city: "Wickford, RI", region: "Rhode Island Sound",
+    lat: 41.5717, lon: -71.445, latDisplay: "41.57°N", lonDisplay: "71.44°W",
+    sunLat: 41.57, sunMeridian: 75, sunLon: 71.44, utcOffset: 1,
+    sunriseRef: 6.51, sunsetRef: 20.26,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Quonset Point", lat: 41.58679962158203, lon: -71.41100311279297, slug: "quonset-point" },
+    { name: "Conanicut Point", lat: 41.5733, lon: -71.3717, slug: "conanicut-point" },
+    { name: "West Jamestown, Dutch Island Harbor", lat: 41.4967, lon: -71.3867, slug: "west-jamestown-dutch-island-harbor" },
+    { name: "Prudence Island, (south end)", lat: 41.58, lon: -71.3217, slug: "prudence-island-south-end" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8454578", waterTempId: "8454578",
+    name: "East Greenwich", slug: "east-greenwich",
+    state: "rhode-island", city: "East Greenwich, RI", region: "Rhode Island Sound",
+    lat: 41.665000915527344, lon: -71.44499969482422, latDisplay: "41.67°N", lonDisplay: "71.44°W",
+    sunLat: 41.67, sunMeridian: 75, sunLon: 71.44, utcOffset: 1,
+    sunriseRef: 6.5, sunsetRef: 20.27,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "WARWICK POINT", lat: 41.6667, lon: -71.3783, slug: "warwick-point" },
+    { name: "Quonset Point", lat: 41.58679962158203, lon: -71.41100311279297, slug: "quonset-point" },
+    { name: "Conimicut Light", lat: 41.71670150756836, lon: -71.34329986572266, slug: "conimicut-light" },
+    { name: "Wickford", lat: 41.5717, lon: -71.445, slug: "wickford" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8454658", waterTempId: "8454658",
+    name: "Narragansett Pier", slug: "narragansett-pier",
+    state: "rhode-island", city: "Narragansett Pier, RI", region: "Rhode Island Sound",
+    lat: 41.4217, lon: -71.455, latDisplay: "41.42°N", lonDisplay: "71.45°W",
+    sunLat: 41.42, sunMeridian: 75, sunLon: 71.46, utcOffset: 1,
+    sunriseRef: 6.51, sunsetRef: 20.26,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Watson Pier, Boston Neck", lat: 41.46, lon: -71.4283, slug: "watson-pier-boston-neck" },
+    { name: "Beavertail Point", lat: 41.4517, lon: -71.4017, slug: "beavertail-point" },
+    { name: "Point Judith, Harbor of Refuge", lat: 41.3633, lon: -71.49, slug: "point-judith-harbor-of-refuge" },
+    { name: "Castle Hill", lat: 41.4633, lon: -71.3617, slug: "castle-hill" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8455083", waterTempId: "8455083",
+    name: "Point Judith, Harbor of Refuge", slug: "point-judith-harbor-of-refuge",
+    state: "rhode-island", city: "Point Judith, Harbor of Refuge, RI", region: "Rhode Island Sound",
+    lat: 41.3633, lon: -71.49, latDisplay: "41.36°N", lonDisplay: "71.49°W",
+    sunLat: 41.36, sunMeridian: 75, sunLon: 71.49, utcOffset: 1,
+    sunriseRef: 6.52, sunsetRef: 20.25,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Narragansett Pier", lat: 41.4217, lon: -71.455, slug: "narragansett-pier" },
+    { name: "Watson Pier, Boston Neck", lat: 41.46, lon: -71.4283, slug: "watson-pier-boston-neck" },
+    { name: "Beavertail Point", lat: 41.4517, lon: -71.4017, slug: "beavertail-point" },
+    { name: "Castle Hill", lat: 41.4633, lon: -71.3617, slug: "castle-hill" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8455137", waterTempId: "8455137",
+    name: "KICKAMUIT RIVER", slug: "kickamuit-river",
+    state: "rhode-island", city: "KICKAMUIT RIVER, RI", region: "Narragansett Bay",
+    lat: 41.707801818847656, lon: -71.24169921875, latDisplay: "41.71°N", lonDisplay: "71.24°W",
+    sunLat: 41.71, sunMeridian: 75, sunLon: 71.24, utcOffset: 1,
+    sunriseRef: 6.5, sunsetRef: 20.27,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Bristol Highlands", lat: 41.69670104980469, lon: -71.29329681396484, slug: "bristol-highlands" },
+    { name: "Bristol, Bristol Harbor", lat: 41.6683, lon: -71.28, slug: "bristol-bristol-harbor" },
+    { name: "North End, Bay Oil pier", lat: 41.6517, lon: -71.21, slug: "north-end-bay-oil-pier" },
+    { name: "Bristol Ferry", lat: 41.6367, lon: -71.255, slug: "bristol-ferry" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8455189", waterTempId: "8455189",
+    name: "Westerly, Pawcatuck River", slug: "westerly-pawcatuck-river",
+    state: "rhode-island", city: "Westerly, Pawcatuck River, RI", region: "Rhode Island Sound",
+    lat: 41.3817, lon: -71.8317, latDisplay: "41.38°N", lonDisplay: "71.83°W",
+    sunLat: 41.38, sunMeridian: 75, sunLon: 71.83, utcOffset: 1,
+    sunriseRef: 6.52, sunsetRef: 20.26,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Weekapaug Point, Block Island Sound", lat: 41.3283, lon: -71.7617, slug: "weekapaug-point-block-island-sound" },
+    { name: "Watch Hill Point", lat: 41.305, lon: -71.86, slug: "watch-hill-point" },
+    { name: "SANDY POINT, BLOCK IS, SOUND", lat: 41.2283, lon: -71.58, slug: "sandy-point-block-is-sound" },
+    { name: "Point Judith, Harbor of Refuge", lat: 41.3633, lon: -71.49, slug: "point-judith-harbor-of-refuge" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8458022", waterTempId: "8458022",
+    name: "Weekapaug Point, Block Island Sound", slug: "weekapaug-point-block-island-sound",
+    state: "rhode-island", city: "Weekapaug Point, Block Island Sound, RI", region: "Rhode Island Sound",
+    lat: 41.3283, lon: -71.7617, latDisplay: "41.33°N", lonDisplay: "71.76°W",
+    sunLat: 41.33, sunMeridian: 75, sunLon: 71.76, utcOffset: 1,
+    sunriseRef: 6.52, sunsetRef: 20.25,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Westerly, Pawcatuck River", lat: 41.3817, lon: -71.8317, slug: "westerly-pawcatuck-river" },
+    { name: "Watch Hill Point", lat: 41.305, lon: -71.86, slug: "watch-hill-point" },
+    { name: "SANDY POINT, BLOCK IS, SOUND", lat: 41.2283, lon: -71.58, slug: "sandy-point-block-is-sound" },
+    { name: "Southwest Point, Block Island", lat: 41.1633, lon: -71.61, slug: "southwest-point-block-island" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8458694", waterTempId: "8458694",
+    name: "Watch Hill Point", slug: "watch-hill-point",
+    state: "rhode-island", city: "Watch Hill Point, RI", region: "Rhode Island Sound",
+    lat: 41.305, lon: -71.86, latDisplay: "41.30°N", lonDisplay: "71.86°W",
+    sunLat: 41.31, sunMeridian: 75, sunLon: 71.86, utcOffset: 1,
+    sunriseRef: 6.52, sunsetRef: 20.25,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Weekapaug Point, Block Island Sound", lat: 41.3283, lon: -71.7617, slug: "weekapaug-point-block-island-sound" },
+    { name: "Westerly, Pawcatuck River", lat: 41.3817, lon: -71.8317, slug: "westerly-pawcatuck-river" },
+    { name: "SANDY POINT, BLOCK IS, SOUND", lat: 41.2283, lon: -71.58, slug: "sandy-point-block-is-sound" },
+    { name: "Southwest Point, Block Island", lat: 41.1633, lon: -71.61, slug: "southwest-point-block-island" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8459338", waterTempId: "8459338",
+    name: "Block Island (Old Harbor)", slug: "block-island-old-harbor",
+    state: "rhode-island", city: "Block Island (Old Harbor), RI", region: "Rhode Island Sound",
+    lat: 41.1733, lon: -71.5567, latDisplay: "41.17°N", lonDisplay: "71.56°W",
+    sunLat: 41.17, sunMeridian: 75, sunLon: 71.56, utcOffset: 1,
+    sunriseRef: 6.53, sunsetRef: 20.25,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "VAILS BEACH, BLOCK IS. SOUND", lat: 41.1483, lon: -71.575, slug: "vails-beach-block-is-sound" },
+    { name: "Southwest Point, Block Island", lat: 41.1633, lon: -71.61, slug: "southwest-point-block-island" },
+    { name: "SANDY POINT, BLOCK IS, SOUND", lat: 41.2283, lon: -71.58, slug: "sandy-point-block-is-sound" },
+    { name: "Point Judith, Harbor of Refuge", lat: 41.3633, lon: -71.49, slug: "point-judith-harbor-of-refuge" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8459681", waterTempId: "8459681",
+    name: "Southwest Point, Block Island", slug: "southwest-point-block-island",
+    state: "rhode-island", city: "Southwest Point, Block Island, RI", region: "Rhode Island Sound",
+    lat: 41.1633, lon: -71.61, latDisplay: "41.16°N", lonDisplay: "71.61°W",
+    sunLat: 41.16, sunMeridian: 75, sunLon: 71.61, utcOffset: 1,
+    sunriseRef: 6.53, sunsetRef: 20.25,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "VAILS BEACH, BLOCK IS. SOUND", lat: 41.1483, lon: -71.575, slug: "vails-beach-block-is-sound" },
+    { name: "Block Island (Old Harbor)", lat: 41.1733, lon: -71.5567, slug: "block-island-old-harbor" },
+    { name: "SANDY POINT, BLOCK IS, SOUND", lat: 41.2283, lon: -71.58, slug: "sandy-point-block-is-sound" },
+    { name: "Weekapaug Point, Block Island Sound", lat: 41.3283, lon: -71.7617, slug: "weekapaug-point-block-island-sound" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8453572", waterTempId: "8453572",
+    name: "WARWICK POINT", slug: "warwick-point",
+    state: "rhode-island", city: "WARWICK POINT, RI", region: "Rhode Island Sound",
+    lat: 41.6667, lon: -71.3783, latDisplay: "41.67°N", lonDisplay: "71.38°W",
+    sunLat: 41.67, sunMeridian: 75, sunLon: 71.38, utcOffset: 1,
+    sunriseRef: 6.5, sunsetRef: 20.27,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "East Greenwich", lat: 41.665000915527344, lon: -71.44499969482422, slug: "east-greenwich" },
+    { name: "Conimicut Light", lat: 41.71670150756836, lon: -71.34329986572266, slug: "conimicut-light" },
+    { name: "Bristol Highlands", lat: 41.69670104980469, lon: -71.29329681396484, slug: "bristol-highlands" },
+    { name: "Bristol, Bristol Harbor", lat: 41.6683, lon: -71.28, slug: "bristol-bristol-harbor" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8459449", waterTempId: "8459449",
+    name: "VAILS BEACH, BLOCK IS. SOUND", slug: "vails-beach-block-is-sound",
+    state: "rhode-island", city: "VAILS BEACH, BLOCK IS. SOUND, RI", region: "Rhode Island Sound",
+    lat: 41.1483, lon: -71.575, latDisplay: "41.15°N", lonDisplay: "71.58°W",
+    sunLat: 41.15, sunMeridian: 75, sunLon: 71.58, utcOffset: 1,
+    sunriseRef: 6.53, sunsetRef: 20.25,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Block Island (Old Harbor)", lat: 41.1733, lon: -71.5567, slug: "block-island-old-harbor" },
+    { name: "Southwest Point, Block Island", lat: 41.1633, lon: -71.61, slug: "southwest-point-block-island" },
+    { name: "SANDY POINT, BLOCK IS, SOUND", lat: 41.2283, lon: -71.58, slug: "sandy-point-block-is-sound" },
+    { name: "Point Judith, Harbor of Refuge", lat: 41.3633, lon: -71.49, slug: "point-judith-harbor-of-refuge" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+  {
+    id: "8459479", waterTempId: "8459479",
+    name: "SANDY POINT, BLOCK IS, SOUND", slug: "sandy-point-block-is-sound",
+    state: "rhode-island", city: "SANDY POINT, BLOCK IS, SOUND, RI", region: "Rhode Island Sound",
+    lat: 41.2283, lon: -71.58, latDisplay: "41.23°N", lonDisplay: "71.58°W",
+    sunLat: 41.23, sunMeridian: 75, sunLon: 71.58, utcOffset: 1,
+    sunriseRef: 6.53, sunsetRef: 20.25,
+    tidalType: 'semidiurnal', meanRange: 3.5, waterTempDefault: '53°F',
+    nearby: [
+    { name: "Block Island (Old Harbor)", lat: 41.1733, lon: -71.5567, slug: "block-island-old-harbor" },
+    { name: "Southwest Point, Block Island", lat: 41.1633, lon: -71.61, slug: "southwest-point-block-island" },
+    { name: "VAILS BEACH, BLOCK IS. SOUND", lat: 41.1483, lon: -71.575, slug: "vails-beach-block-is-sound" },
+    { name: "Point Judith, Harbor of Refuge", lat: 41.3633, lon: -71.49, slug: "point-judith-harbor-of-refuge" }
+    ],
+    species: [
+    { name: 'Striped Bass',       icon: '🎣', color: '#38bdf8', bait: 'Live bunker, swim shad, live eel',      regulation: '28″ min · check season', when: 'Moving tide — rips, inlets & structure' },
+    { name: 'Bluefish',           icon: '🐟', color: '#60a5fa', bait: 'Metal jig, popper, live bunker',         regulation: '10″ min · 10/day',       when: 'Moving tide — surface action, inlets' },
+    { name: 'Summer Flounder',    icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, bucktail, spearing',       regulation: '14″ min · 10/day',       when: 'Incoming tide near channels & drop-offs' },
+    { name: 'Tautog (Blackfish)', icon: '🐡', color: '#a78bfa', bait: 'Green crab, fiddler crab',               regulation: '16″ min · varies',       when: 'Slack water — wrecks, rocks, jetties' },
+    { name: 'Scup (Porgy)',       icon: '🐡', color: '#facc15', bait: 'Sandworm, clam, small jig',              regulation: '9″ min · 30/day',        when: 'Incoming tide — nearshore & structure' },
+  ],
+  },
+]
+
+export function getStationBySlug(slug: string): StationConfig | undefined {
+  return RHODE_ISLAND_STATIONS.find(s => s.slug === slug)
+}
+export function getAllSlugs(): string[] {
+  return RHODE_ISLAND_STATIONS.map(s => s.slug)
+}

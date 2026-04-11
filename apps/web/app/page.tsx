@@ -3,11 +3,29 @@
 import { useState } from 'react'
 import dynamic from 'next/dynamic'
 import type { MapStation } from './HomeMap'
-import { FLORIDA_STATIONS } from '@/lib/florida-stations'
-import { ALABAMA_STATIONS } from '@/lib/alabama-stations'
-import { MISSISSIPPI_STATIONS } from '@/lib/mississippi-stations'
-import { LOUISIANA_STATIONS } from '@/lib/louisiana-stations'
-import { TEXAS_STATIONS } from '@/lib/texas-stations'
+import { FLORIDA_STATIONS }        from '@/lib/florida-stations'
+import { ALABAMA_STATIONS }        from '@/lib/alabama-stations'
+import { MISSISSIPPI_STATIONS }    from '@/lib/mississippi-stations'
+import { LOUISIANA_STATIONS }      from '@/lib/louisiana-stations'
+import { TEXAS_STATIONS }          from '@/lib/texas-stations'
+import { GEORGIA_STATIONS }        from '@/lib/georgia-stations'
+import { SOUTH_CAROLINA_STATIONS } from '@/lib/south-carolina-stations'
+import { NORTH_CAROLINA_STATIONS } from '@/lib/north-carolina-stations'
+import { VIRGINIA_STATIONS }       from '@/lib/virginia-stations'
+import { MARYLAND_STATIONS }       from '@/lib/maryland-stations'
+import { DELAWARE_STATIONS }       from '@/lib/delaware-stations'
+import { NEW_JERSEY_STATIONS }     from '@/lib/new-jersey-stations'
+import { NEW_YORK_STATIONS }       from '@/lib/new-york-stations'
+import { CONNECTICUT_STATIONS }    from '@/lib/connecticut-stations'
+import { RHODE_ISLAND_STATIONS }   from '@/lib/rhode-island-stations'
+import { MASSACHUSETTS_STATIONS }  from '@/lib/massachusetts-stations'
+import { NEW_HAMPSHIRE_STATIONS }  from '@/lib/new-hampshire-stations'
+import { MAINE_STATIONS }          from '@/lib/maine-stations'
+import { CALIFORNIA_STATIONS }     from '@/lib/california-stations'
+import { OREGON_STATIONS }         from '@/lib/oregon-stations'
+import { WASHINGTON_STATIONS }     from '@/lib/washington-stations'
+import { ALASKA_STATIONS }         from '@/lib/alaska-stations'
+import { HAWAII_STATIONS }         from '@/lib/hawaii-stations'
 
 const HomeMap = dynamic(() => import('./HomeMap'), { ssr: false })
 
@@ -50,57 +68,44 @@ const THEMES = {
   },
 }
 
-// Live stations by state
+// Map stations per state (slug = full path for non-FL states)
+const mkPins = (abbr: string, slug: string, arr: typeof FLORIDA_STATIONS): MapStation[] =>
+  arr.map(s => ({ name: `${s.name}, ${abbr}`, lat: s.lat, lon: s.lon, slug: `/tides/${slug}/${s.slug}`, live: true }))
+
 const FL_MAP_STATIONS: MapStation[] = FLORIDA_STATIONS.map(s => ({
   name: `${s.name}, FL`, lat: s.lat, lon: s.lon, slug: s.slug, live: true,
 }))
-const AL_MAP_STATIONS: MapStation[] = ALABAMA_STATIONS.map(s => ({
-  name: `${s.name}, AL`, lat: s.lat, lon: s.lon, slug: `/tides/alabama/${s.slug}`, live: true,
-}))
-const MS_MAP_STATIONS: MapStation[] = MISSISSIPPI_STATIONS.map(s => ({
-  name: `${s.name}, MS`, lat: s.lat, lon: s.lon, slug: `/tides/mississippi/${s.slug}`, live: true,
-}))
-const LA_MAP_STATIONS: MapStation[] = LOUISIANA_STATIONS.map(s => ({
-  name: `${s.name}, LA`, lat: s.lat, lon: s.lon, slug: `/tides/louisiana/${s.slug}`, live: true,
-}))
-const TX_MAP_STATIONS: MapStation[] = TEXAS_STATIONS.map(s => ({
-  name: `${s.name}, TX`, lat: s.lat, lon: s.lon, slug: `/tides/texas/${s.slug}`, live: true,
-}))
 
-// Other US coasts — coming soon
-const OTHER_STATIONS: MapStation[] = [
-  { name: 'Charleston, SC',         lat: 32.7765, lon: -79.9311,  slug: 'charleston' },
-  { name: 'Myrtle Beach, SC',       lat: 33.6891, lon: -78.8867,  slug: 'myrtle-beach' },
-  { name: 'Wilmington, NC',         lat: 34.2257, lon: -77.9447,  slug: 'wilmington' },
-  { name: 'Virginia Beach, VA',     lat: 36.8529, lon: -75.9780,  slug: 'virginia-beach' },
-  { name: 'Chesapeake Bay, VA',     lat: 37.0299, lon: -76.3452,  slug: 'chesapeake-bay' },
-  { name: 'Ocean City, MD',         lat: 38.3365, lon: -75.0849,  slug: 'ocean-city' },
-  { name: 'Atlantic City, NJ',      lat: 39.3643, lon: -74.4229,  slug: 'atlantic-city' },
-  { name: 'New York Harbor, NY',    lat: 40.6892, lon: -74.0445,  slug: 'new-york-harbor' },
-  { name: 'Montauk, NY',            lat: 41.0534, lon: -71.9566,  slug: 'montauk' },
-  { name: 'Cape Cod, MA',           lat: 41.6688, lon: -69.9794,  slug: 'cape-cod' },
-  { name: 'Boston Harbor, MA',      lat: 42.3601, lon: -71.0589,  slug: 'boston-harbor' },
-  { name: 'Portland, ME',           lat: 43.6591, lon: -70.2568,  slug: 'portland-me' },
-  { name: 'San Diego, CA',          lat: 32.7157, lon: -117.1611, slug: 'san-diego' },
-  { name: 'Los Angeles, CA',        lat: 33.7701, lon: -118.1937, slug: 'los-angeles' },
-  { name: 'San Francisco, CA',      lat: 37.8044, lon: -122.2712, slug: 'san-francisco' },
-  { name: 'Monterey, CA',           lat: 36.6002, lon: -121.8947, slug: 'monterey' },
-  { name: 'Seattle, WA',            lat: 47.6062, lon: -122.3321, slug: 'seattle' },
-  { name: 'Portland, OR',           lat: 45.5051, lon: -122.6750, slug: 'portland-or' },
-  { name: 'Astoria, OR',            lat: 46.1879, lon: -123.8313, slug: 'astoria' },
-  { name: 'Juneau, AK',             lat: 58.3005, lon: -134.4197, slug: 'juneau' },
-  { name: 'Ketchikan, AK',          lat: 55.3422, lon: -131.6461, slug: 'ketchikan' },
-  { name: 'Honolulu, HI',           lat: 21.3069, lon: -157.8583, slug: 'honolulu' },
-]
-
+// Continental US stations for home map (AK/HI excluded for performance)
 const STATIONS: MapStation[] = [
   ...FL_MAP_STATIONS,
-  ...AL_MAP_STATIONS,
-  ...MS_MAP_STATIONS,
-  ...LA_MAP_STATIONS,
-  ...TX_MAP_STATIONS,
-  ...OTHER_STATIONS,
+  ...mkPins('AL', 'alabama',        ALABAMA_STATIONS),
+  ...mkPins('MS', 'mississippi',    MISSISSIPPI_STATIONS),
+  ...mkPins('LA', 'louisiana',      LOUISIANA_STATIONS),
+  ...mkPins('TX', 'texas',          TEXAS_STATIONS),
+  ...mkPins('GA', 'georgia',        GEORGIA_STATIONS),
+  ...mkPins('SC', 'south-carolina', SOUTH_CAROLINA_STATIONS),
+  ...mkPins('NC', 'north-carolina', NORTH_CAROLINA_STATIONS),
+  ...mkPins('VA', 'virginia',       VIRGINIA_STATIONS),
+  ...mkPins('MD', 'maryland',       MARYLAND_STATIONS),
+  ...mkPins('DE', 'delaware',       DELAWARE_STATIONS),
+  ...mkPins('NJ', 'new-jersey',     NEW_JERSEY_STATIONS),
+  ...mkPins('NY', 'new-york',       NEW_YORK_STATIONS),
+  ...mkPins('CT', 'connecticut',    CONNECTICUT_STATIONS),
+  ...mkPins('RI', 'rhode-island',   RHODE_ISLAND_STATIONS),
+  ...mkPins('MA', 'massachusetts',  MASSACHUSETTS_STATIONS),
+  ...mkPins('NH', 'new-hampshire',  NEW_HAMPSHIRE_STATIONS),
+  ...mkPins('ME', 'maine',          MAINE_STATIONS),
+  ...mkPins('CA', 'california',     CALIFORNIA_STATIONS),
+  ...mkPins('OR', 'oregon',         OREGON_STATIONS),
+  ...mkPins('WA', 'washington',     WASHINGTON_STATIONS),
 ]
+
+// AL_MAP_STATIONS kept for the station grid section below
+const AL_MAP_STATIONS = mkPins('AL', 'alabama',     ALABAMA_STATIONS)
+const MS_MAP_STATIONS = mkPins('MS', 'mississippi', MISSISSIPPI_STATIONS)
+const LA_MAP_STATIONS = mkPins('LA', 'louisiana',   LOUISIANA_STATIONS)
+const TX_MAP_STATIONS = mkPins('TX', 'texas',       TEXAS_STATIONS)
 
 const FEATURES = [
   { icon: '🌊', title: 'Live tide charts',       desc: 'Real-time water level plotted on predicted curve. See exactly where the tide is right now.' },
@@ -112,16 +117,29 @@ const FEATURES = [
 ]
 
 const STATES = [
-  { name: 'Florida',       count: `${FLORIDA_STATIONS.length} stations`,     slug: 'florida',     live: true },
-  { name: 'Alabama',       count: `${ALABAMA_STATIONS.length} stations`,     slug: 'alabama',     live: true },
-  { name: 'Mississippi',   count: `${MISSISSIPPI_STATIONS.length} stations`, slug: 'mississippi', live: true },
-  { name: 'Louisiana',     count: `${LOUISIANA_STATIONS.length} stations`,   slug: 'louisiana',   live: true },
-  { name: 'Texas',         count: `${TEXAS_STATIONS.length} stations`,       slug: 'texas',       live: true },
-  { name: 'California',    count: 'coming soon', slug: 'california',    live: false },
-  { name: 'New York',      count: 'coming soon', slug: 'new-york',      live: false },
-  { name: 'Virginia',      count: 'coming soon', slug: 'virginia',      live: false },
-  { name: 'Massachusetts', count: 'coming soon', slug: 'massachusetts', live: false },
-  { name: 'Washington',    count: 'coming soon', slug: 'washington',    live: false },
+  { name: 'Florida',        count: `${FLORIDA_STATIONS.length} stations`,        slug: 'florida',        live: true },
+  { name: 'Alabama',        count: `${ALABAMA_STATIONS.length} stations`,        slug: 'alabama',        live: true },
+  { name: 'Mississippi',    count: `${MISSISSIPPI_STATIONS.length} stations`,    slug: 'mississippi',    live: true },
+  { name: 'Louisiana',      count: `${LOUISIANA_STATIONS.length} stations`,      slug: 'louisiana',      live: true },
+  { name: 'Texas',          count: `${TEXAS_STATIONS.length} stations`,          slug: 'texas',          live: true },
+  { name: 'Georgia',        count: `${GEORGIA_STATIONS.length} stations`,        slug: 'georgia',        live: true },
+  { name: 'South Carolina', count: `${SOUTH_CAROLINA_STATIONS.length} stations`, slug: 'south-carolina', live: true },
+  { name: 'North Carolina', count: `${NORTH_CAROLINA_STATIONS.length} stations`, slug: 'north-carolina', live: true },
+  { name: 'Virginia',       count: `${VIRGINIA_STATIONS.length} stations`,       slug: 'virginia',       live: true },
+  { name: 'Maryland',       count: `${MARYLAND_STATIONS.length} stations`,       slug: 'maryland',       live: true },
+  { name: 'Delaware',       count: `${DELAWARE_STATIONS.length} stations`,       slug: 'delaware',       live: true },
+  { name: 'New Jersey',     count: `${NEW_JERSEY_STATIONS.length} stations`,     slug: 'new-jersey',     live: true },
+  { name: 'New York',       count: `${NEW_YORK_STATIONS.length} stations`,       slug: 'new-york',       live: true },
+  { name: 'Connecticut',    count: `${CONNECTICUT_STATIONS.length} stations`,    slug: 'connecticut',    live: true },
+  { name: 'Rhode Island',   count: `${RHODE_ISLAND_STATIONS.length} stations`,   slug: 'rhode-island',   live: true },
+  { name: 'Massachusetts',  count: `${MASSACHUSETTS_STATIONS.length} stations`,  slug: 'massachusetts',  live: true },
+  { name: 'New Hampshire',  count: `${NEW_HAMPSHIRE_STATIONS.length} stations`,  slug: 'new-hampshire',  live: true },
+  { name: 'Maine',          count: `${MAINE_STATIONS.length} stations`,          slug: 'maine',          live: true },
+  { name: 'California',     count: `${CALIFORNIA_STATIONS.length} stations`,     slug: 'california',     live: true },
+  { name: 'Oregon',         count: `${OREGON_STATIONS.length} stations`,         slug: 'oregon',         live: true },
+  { name: 'Washington',     count: `${WASHINGTON_STATIONS.length} stations`,     slug: 'washington',     live: true },
+  { name: 'Alaska',         count: `${ALASKA_STATIONS.length} stations`,         slug: 'alaska',         live: true },
+  { name: 'Hawaii',         count: `${HAWAII_STATIONS.length} stations`,         slug: 'hawaii',         live: true },
 ]
 
 export default function Home() {
@@ -201,7 +219,7 @@ export default function Home() {
           <span style={{ color: t.accent }}>serious anglers</span>
         </h1>
         <p style={{ color: t.textMuted, fontSize: 16, maxWidth: 520, margin: '0 auto 28px', lineHeight: 1.6 }}>
-          Real-time tides, solunar periods, species bite times, and fishing forecasts for 3,000+ locations across the US coast.
+          Real-time tides, solunar periods, species bite times, and fishing forecasts for 3,300+ locations across all US coastal states.
         </p>
         <div style={{ display: 'flex', maxWidth: 460, margin: '0 auto 16px', borderRadius: 12, overflow: 'hidden', border: `1px solid ${t.border}` }}>
           <input
@@ -256,7 +274,7 @@ export default function Home() {
       <section style={{ borderTop: `1px solid ${t.border}`, borderBottom: `1px solid ${t.border}`, background: t.surface }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '28px 20px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: 20, textAlign: 'center' }}>
           {[
-            { n: '3,200+', l: 'Tide stations' },
+            { n: '3,300+', l: 'Tide stations' },
             { n: '6 min',  l: 'Update frequency' },
             { n: '25+',    l: 'Species tracked' },
             { n: '50',     l: 'US states covered' },
@@ -370,7 +388,7 @@ export default function Home() {
       <section style={{ background: t.surface, borderTop: `1px solid ${t.border}` }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '48px 20px' }}>
           <h2 style={{ fontSize: 22, fontWeight: 700, textAlign: 'center', marginBottom: 6 }}>Browse tide charts by state</h2>
-          <p style={{ color: t.textMuted, fontSize: 13, textAlign: 'center', marginBottom: 28 }}>Live: FL · AL · MS · LA · TX &nbsp;·&nbsp; More states coming soon</p>
+          <p style={{ color: t.textMuted, fontSize: 13, textAlign: 'center', marginBottom: 28 }}>All 23 US coastal states — live tide charts &amp; fishing forecasts</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: 10 }}>
             {STATES.map(s => (
               <a key={s.name} href={s.live ? `/tides/${s.slug}` : '#'} style={{

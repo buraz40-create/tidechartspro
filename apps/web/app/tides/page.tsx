@@ -1,11 +1,29 @@
 'use client'
 
 import { useState, useEffect, useRef } from 'react'
-import { FLORIDA_STATIONS }     from '@/lib/florida-stations'
-import { ALABAMA_STATIONS }     from '@/lib/alabama-stations'
-import { MISSISSIPPI_STATIONS } from '@/lib/mississippi-stations'
-import { LOUISIANA_STATIONS }   from '@/lib/louisiana-stations'
-import { TEXAS_STATIONS }       from '@/lib/texas-stations'
+import { FLORIDA_STATIONS }        from '@/lib/florida-stations'
+import { ALABAMA_STATIONS }        from '@/lib/alabama-stations'
+import { MISSISSIPPI_STATIONS }    from '@/lib/mississippi-stations'
+import { LOUISIANA_STATIONS }      from '@/lib/louisiana-stations'
+import { TEXAS_STATIONS }          from '@/lib/texas-stations'
+import { GEORGIA_STATIONS }        from '@/lib/georgia-stations'
+import { SOUTH_CAROLINA_STATIONS } from '@/lib/south-carolina-stations'
+import { NORTH_CAROLINA_STATIONS } from '@/lib/north-carolina-stations'
+import { VIRGINIA_STATIONS }       from '@/lib/virginia-stations'
+import { MARYLAND_STATIONS }       from '@/lib/maryland-stations'
+import { DELAWARE_STATIONS }       from '@/lib/delaware-stations'
+import { NEW_JERSEY_STATIONS }     from '@/lib/new-jersey-stations'
+import { NEW_YORK_STATIONS }       from '@/lib/new-york-stations'
+import { CONNECTICUT_STATIONS }    from '@/lib/connecticut-stations'
+import { RHODE_ISLAND_STATIONS }   from '@/lib/rhode-island-stations'
+import { MASSACHUSETTS_STATIONS }  from '@/lib/massachusetts-stations'
+import { NEW_HAMPSHIRE_STATIONS }  from '@/lib/new-hampshire-stations'
+import { MAINE_STATIONS }          from '@/lib/maine-stations'
+import { CALIFORNIA_STATIONS }     from '@/lib/california-stations'
+import { OREGON_STATIONS }         from '@/lib/oregon-stations'
+import { WASHINGTON_STATIONS }     from '@/lib/washington-stations'
+import { ALASKA_STATIONS }         from '@/lib/alaska-stations'
+import { HAWAII_STATIONS }         from '@/lib/hawaii-stations'
 
 // ─── Live state configs ───────────────────────────────────────────────────────
 
@@ -45,41 +63,150 @@ const LIVE_STATES = [
     mapCenter: [28.5, -97.0] as [number, number], mapZoom: 6,
     blurb: 'Galveston Bay, Matagorda Bay, Corpus Christi and the Lower Laguna Madre.',
   },
-]
-
-// ─── Coming-soon states ───────────────────────────────────────────────────────
-
-const COMING_SOON = [
-  { name: 'Georgia',        abbr: 'GA', coast: 'Atlantic Coast',  blurb: 'Savannah, Brunswick and Golden Isles.' },
-  { name: 'South Carolina', abbr: 'SC', coast: 'Atlantic Coast',  blurb: 'Charleston, Hilton Head and Myrtle Beach.' },
-  { name: 'North Carolina', abbr: 'NC', coast: 'Atlantic Coast',  blurb: 'Outer Banks, Wilmington and Beaufort.' },
-  { name: 'Virginia',       abbr: 'VA', coast: 'Atlantic Coast',  blurb: 'Chesapeake Bay, Virginia Beach and Hampton Roads.' },
-  { name: 'Maryland',       abbr: 'MD', coast: 'Atlantic Coast',  blurb: 'Chesapeake Bay, Annapolis and Ocean City.' },
-  { name: 'New Jersey',     abbr: 'NJ', coast: 'Atlantic Coast',  blurb: 'Cape May, Atlantic City and Sandy Hook.' },
-  { name: 'New York',       abbr: 'NY', coast: 'Atlantic Coast',  blurb: 'New York Harbor, Long Island and Montauk.' },
-  { name: 'Massachusetts',  abbr: 'MA', coast: 'Atlantic Coast',  blurb: 'Cape Cod, Boston Harbor and Nantucket.' },
-  { name: 'Maine',          abbr: 'ME', coast: 'Atlantic Coast',  blurb: 'Portland, Bar Harbor and Acadia.' },
-  { name: 'California',     abbr: 'CA', coast: 'Pacific Coast',   blurb: 'San Diego, Los Angeles, San Francisco and Monterey.' },
-  { name: 'Oregon',         abbr: 'OR', coast: 'Pacific Coast',   blurb: 'Astoria, Newport and Coos Bay.' },
-  { name: 'Washington',     abbr: 'WA', coast: 'Pacific Coast',   blurb: 'Puget Sound, Seattle and the San Juan Islands.' },
-  { name: 'Alaska',         abbr: 'AK', coast: 'Pacific Coast',   blurb: 'Juneau, Ketchikan, Anchorage and Kodiak.' },
-  { name: 'Hawaii',         abbr: 'HI', coast: 'Pacific Coast',   blurb: 'Honolulu, Maui, Kona and Hilo.' },
+  {
+    name: 'Georgia', abbr: 'GA', slug: 'georgia', coast: 'Atlantic Coast',
+    stations: GEORGIA_STATIONS,
+    regions: ['Savannah / Tybee Island', 'Golden Isles / Brunswick', 'St. Marys / Cumberland Island'],
+    mapCenter: [31.5, -81.3] as [number, number], mapZoom: 7,
+    blurb: 'Savannah, Brunswick, Golden Isles and Cumberland Island.',
+  },
+  {
+    name: 'South Carolina', abbr: 'SC', slug: 'south-carolina', coast: 'Atlantic Coast',
+    stations: SOUTH_CAROLINA_STATIONS,
+    regions: ['Grand Strand / Myrtle Beach', 'Charleston / Lowcountry', 'Beaufort / Sea Islands'],
+    mapCenter: [33.0, -80.2] as [number, number], mapZoom: 7,
+    blurb: 'Charleston, Hilton Head, Myrtle Beach and the Sea Islands.',
+  },
+  {
+    name: 'North Carolina', abbr: 'NC', slug: 'north-carolina', coast: 'Atlantic Coast',
+    stations: NORTH_CAROLINA_STATIONS,
+    regions: ['Outer Banks / Pamlico Sound', 'Albemarle Sound', 'New Bern / Crystal Coast', 'Cape Fear / Wilmington'],
+    mapCenter: [35.0, -77.5] as [number, number], mapZoom: 7,
+    blurb: 'Outer Banks, Wilmington, Cape Fear and Pamlico Sound.',
+  },
+  {
+    name: 'Virginia', abbr: 'VA', slug: 'virginia', coast: 'Atlantic Coast',
+    stations: VIRGINIA_STATIONS,
+    regions: ['Virginia Coast / Eastern Shore', 'Lower Chesapeake Bay / Hampton Roads', 'Virginia Beach / Currituck Sound', 'Upper Chesapeake Bay'],
+    mapCenter: [37.5, -76.0] as [number, number], mapZoom: 7,
+    blurb: 'Chesapeake Bay, Virginia Beach, Hampton Roads and the Eastern Shore.',
+  },
+  {
+    name: 'Maryland', abbr: 'MD', slug: 'maryland', coast: 'Atlantic Coast',
+    stations: MARYLAND_STATIONS,
+    regions: ['Maryland Ocean Shore', 'Lower Chesapeake Bay / Potomac', 'Middle Chesapeake Bay', 'Upper Chesapeake Bay'],
+    mapCenter: [38.5, -76.0] as [number, number], mapZoom: 7,
+    blurb: 'Chesapeake Bay, Annapolis, Ocean City and the Potomac River.',
+  },
+  {
+    name: 'Delaware', abbr: 'DE', slug: 'delaware', coast: 'Atlantic Coast',
+    stations: DELAWARE_STATIONS,
+    regions: ['Delaware Bay', 'Delaware Ocean Shore'],
+    mapCenter: [39.0, -75.5] as [number, number], mapZoom: 8,
+    blurb: 'Delaware Bay, Lewes, Rehoboth Beach and the Delaware Seashore.',
+  },
+  {
+    name: 'New Jersey', abbr: 'NJ', slug: 'new-jersey', coast: 'Atlantic Coast',
+    stations: NEW_JERSEY_STATIONS,
+    regions: ['New York Harbor / Raritan Bay', 'Jersey Shore North', 'Jersey Shore South', 'Delaware Bay NJ'],
+    mapCenter: [39.5, -74.5] as [number, number], mapZoom: 7,
+    blurb: 'Jersey Shore, Cape May, Atlantic City and Sandy Hook.',
+  },
+  {
+    name: 'New York', abbr: 'NY', slug: 'new-york', coast: 'Atlantic Coast',
+    stations: NEW_YORK_STATIONS,
+    regions: ['New York Harbor / East River', 'Eastern Long Island', 'Long Island Sound'],
+    mapCenter: [41.0, -73.5] as [number, number], mapZoom: 7,
+    blurb: 'New York Harbor, Long Island, Montauk and Long Island Sound.',
+  },
+  {
+    name: 'Connecticut', abbr: 'CT', slug: 'connecticut', coast: 'Atlantic Coast',
+    stations: CONNECTICUT_STATIONS,
+    regions: ['Eastern Long Island Sound', 'Central Long Island Sound', 'Western Long Island Sound'],
+    mapCenter: [41.4, -72.5] as [number, number], mapZoom: 8,
+    blurb: 'Long Island Sound from Greenwich to the Thames River.',
+  },
+  {
+    name: 'Rhode Island', abbr: 'RI', slug: 'rhode-island', coast: 'Atlantic Coast',
+    stations: RHODE_ISLAND_STATIONS,
+    regions: ['Rhode Island Sound', 'Narragansett Bay'],
+    mapCenter: [41.5, -71.5] as [number, number], mapZoom: 9,
+    blurb: "Narragansett Bay, Newport, Block Island and Rhode Island Sound.",
+  },
+  {
+    name: 'Massachusetts', abbr: 'MA', slug: 'massachusetts', coast: 'Atlantic Coast',
+    stations: MASSACHUSETTS_STATIONS,
+    regions: ['Boston Harbor / South Shore', 'Buzzards Bay / South Coast', 'Cape Cod Bay', 'Cape Cod & Islands'],
+    mapCenter: [41.9, -70.5] as [number, number], mapZoom: 7,
+    blurb: "Cape Cod, Boston Harbor, Martha's Vineyard and Nantucket.",
+  },
+  {
+    name: 'New Hampshire', abbr: 'NH', slug: 'new-hampshire', coast: 'Atlantic Coast',
+    stations: NEW_HAMPSHIRE_STATIONS,
+    regions: ['New Hampshire Seacoast'],
+    mapCenter: [43.0, -70.8] as [number, number], mapZoom: 9,
+    blurb: 'Portsmouth, Rye Harbor, Hampton Beach and the Seacoast.',
+  },
+  {
+    name: 'Maine', abbr: 'ME', slug: 'maine', coast: 'Atlantic Coast',
+    stations: MAINE_STATIONS,
+    regions: ['Downeast Maine / Acadia', 'Midcoast Maine', 'Casco Bay / Portland', 'York County / Southern Maine'],
+    mapCenter: [44.5, -69.0] as [number, number], mapZoom: 7,
+    blurb: 'Portland, Bar Harbor, Acadia and Downeast Maine.',
+  },
+  {
+    name: 'California', abbr: 'CA', slug: 'california', coast: 'Pacific Coast',
+    stations: CALIFORNIA_STATIONS,
+    regions: ['San Diego', 'Los Angeles / Orange County', 'Santa Barbara / Ventura', 'Central California', 'San Francisco Bay Area', 'North Coast California'],
+    mapCenter: [37.0, -122.0] as [number, number], mapZoom: 6,
+    blurb: 'San Diego, Los Angeles, San Francisco and the California coast.',
+  },
+  {
+    name: 'Oregon', abbr: 'OR', slug: 'oregon', coast: 'Pacific Coast',
+    stations: OREGON_STATIONS,
+    regions: ['Southern Oregon Coast', 'Central Oregon Coast', 'Columbia River / Astoria'],
+    mapCenter: [44.5, -124.0] as [number, number], mapZoom: 7,
+    blurb: 'Astoria, Newport, Coos Bay and the Oregon coast.',
+  },
+  {
+    name: 'Washington', abbr: 'WA', slug: 'washington', coast: 'Pacific Coast',
+    stations: WASHINGTON_STATIONS,
+    regions: ['Columbia River WA', 'Washington Ocean Coast', 'South Puget Sound', 'North Puget Sound', 'Central Puget Sound / Seattle', 'San Juan Islands / Strait of Juan de Fuca'],
+    mapCenter: [47.5, -122.5] as [number, number], mapZoom: 7,
+    blurb: 'Puget Sound, Seattle, San Juan Islands and the Strait of Juan de Fuca.',
+  },
+  {
+    name: 'Alaska', abbr: 'AK', slug: 'alaska', coast: 'Pacific Coast',
+    stations: ALASKA_STATIONS,
+    regions: ['Southeast Alaska', 'Gulf of Alaska', 'Cook Inlet / Prince William Sound', 'Kodiak Island', 'Western Alaska / Aleutians'],
+    mapCenter: [60.0, -150.0] as [number, number], mapZoom: 4,
+    blurb: 'Juneau, Ketchikan, Anchorage, Kodiak and the Aleutians.',
+  },
+  {
+    name: 'Hawaii', abbr: 'HI', slug: 'hawaii', coast: 'Pacific Coast',
+    stations: HAWAII_STATIONS,
+    regions: ['Kauai / Niihau', 'Oahu', 'Maui / Molokai', 'Hawaii (Big Island)'],
+    mapCenter: [20.5, -157.0] as [number, number], mapZoom: 7,
+    blurb: 'Honolulu, Maui, Kona, Hilo and the Hawaiian island chain.',
+  },
 ]
 
 const COASTS = ['All Coasts', 'Gulf & Atlantic', 'Gulf Coast', 'Atlantic Coast', 'Pacific Coast']
 
 const totalLive = LIVE_STATES.reduce((n, s) => n + s.stations.length, 0)
 
-// ─── All map pins (live stations) ────────────────────────────────────────────
+// ─── All map pins (live stations — continental US only for performance) ───────
 
-const ALL_PINS = LIVE_STATES.flatMap(state =>
-  state.stations.map(s => ({
-    lat: s.lat, lon: s.lon,
-    name: s.name,
-    stateSlug: state.slug,
-    slug: s.slug,
-  }))
-)
+const ALL_PINS = LIVE_STATES
+  .filter(state => state.abbr !== 'AK' && state.abbr !== 'HI')
+  .flatMap(state =>
+    state.stations.map(s => ({
+      lat: s.lat, lon: s.lon,
+      name: s.name,
+      stateSlug: state.slug,
+      slug: s.slug,
+    }))
+  )
 
 export default function TidesHubPage() {
   const [coast, setCoast]   = useState('All Coasts')
@@ -97,8 +224,8 @@ export default function TidesHubPage() {
       import('leaflet/dist/leaflet.css')
 
       const map = L.map(mapRef.current, {
-        center: [30.0, -90.0],
-        zoom: 5,
+        center: [37.5, -91.0],
+        zoom: 4,
         zoomControl: true,
       })
 
@@ -107,23 +234,11 @@ export default function TidesHubPage() {
         attribution: '© <a href="https://openstreetmap.org">OSM</a>',
       }).addTo(map)
 
-      // State region outline rectangles (approximate bounding boxes)
-      const STATE_BOUNDS: Record<string, [[number,number],[number,number]]> = {
-        florida:     [[24.4, -87.6], [31.0, -79.9]],
-        alabama:     [[30.1, -88.5], [31.0, -87.0]],
-        mississippi: [[30.1, -89.6], [30.6, -88.4]],
-        louisiana:   [[28.8, -94.1], [31.0, -88.8]],
-        texas:       [[25.8, -97.7], [30.4, -93.5]],
-      }
-      Object.values(STATE_BOUNDS).forEach(bounds => {
-        L.rectangle(bounds, { color: '#38bdf8', weight: 1, opacity: 0.2, fillOpacity: 0.03, dashArray: '4 4' }).addTo(map)
-      })
-
       // Station pins
       ALL_PINS.forEach(p => {
         const icon = L.divIcon({
-          html: `<div style="width:8px;height:8px;border-radius:50%;background:#38bdf8;border:1.5px solid white;box-shadow:0 0 6px rgba(56,189,248,0.5);"></div>`,
-          className: '', iconSize: [8, 8], iconAnchor: [4, 4], popupAnchor: [0, -6],
+          html: `<div style="width:7px;height:7px;border-radius:50%;background:#38bdf8;border:1.5px solid white;box-shadow:0 0 4px rgba(56,189,248,0.5);"></div>`,
+          className: '', iconSize: [7, 7], iconAnchor: [3, 3], popupAnchor: [0, -5],
         })
         const popup = `<div style="font-family:system-ui;font-size:12px;min-width:130px">
           <div style="font-weight:700;margin-bottom:4px">${p.name}</div>
@@ -145,14 +260,9 @@ export default function TidesHubPage() {
   const q = search.trim().toLowerCase()
 
   const filteredLive = LIVE_STATES.filter(s => {
-    const coastMatch  = coast === 'All Coasts' || s.coast === coast || s.coast.includes(coast.replace(' Coast','').replace(' & Atlantic',''))
+    const coastMatch  = coast === 'All Coasts' || s.coast === coast ||
+      (coast === 'Gulf & Atlantic' && (s.coast === 'Gulf Coast' || s.coast === 'Atlantic Coast' || s.coast === 'Gulf & Atlantic'))
     const searchMatch = !q || s.name.toLowerCase().includes(q) || s.blurb.toLowerCase().includes(q)
-    return coastMatch && searchMatch
-  })
-
-  const filteredSoon = COMING_SOON.filter(s => {
-    const coastMatch  = coast === 'All Coasts' || s.coast === coast
-    const searchMatch = !q || s.name.toLowerCase().includes(q)
     return coastMatch && searchMatch
   })
 
@@ -181,7 +291,7 @@ export default function TidesHubPage() {
             Tide Charts by State
           </h1>
           <p style={{ color: '#94a3b8', fontSize: 14, maxWidth: 520, lineHeight: 1.6, margin: 0 }}>
-            Live tide charts, tides for fishing, solunar periods and hourly forecasts — Gulf Coast fully live, more states coming soon.
+            Live tide charts, tides for fishing, solunar periods and hourly forecasts for every US coastal state.
           </p>
         </div>
 
@@ -190,7 +300,7 @@ export default function TidesHubPage() {
           <span style={{ position: 'absolute', left: 12, top: '50%', transform: 'translateY(-50%)', color: '#475569', fontSize: 14, pointerEvents: 'none' }}>🔍</span>
           <input
             type="text"
-            placeholder="Search states or locations…"
+            placeholder="Search states…"
             value={search}
             onChange={e => setSearch(e.target.value)}
             style={{ width: '100%', padding: '10px 12px 10px 34px', background: '#111827', border: '1px solid #1e2d45', borderRadius: 10, color: '#f1f5f9', fontSize: 13, outline: 'none', boxSizing: 'border-box' }}
@@ -205,7 +315,7 @@ export default function TidesHubPage() {
       <div style={{ position: 'relative', height: 400, background: '#0f172a', borderTop: '1px solid #1e2d45', borderBottom: '1px solid #1e2d45' }}>
         <div ref={mapRef} style={{ width: '100%', height: '100%' }} />
         <div style={{ position: 'absolute', bottom: 10, left: 12, zIndex: 1000, fontSize: 11, color: '#94a3b8', background: 'rgba(10,14,26,0.85)', padding: '4px 10px', borderRadius: 6, pointerEvents: 'none' }}>
-          {totalLive.toLocaleString()} live stations across {LIVE_STATES.length} states · click any marker
+          {ALL_PINS.length.toLocaleString()} stations shown (continental US) · click any marker
         </div>
       </div>
 
@@ -231,87 +341,50 @@ export default function TidesHubPage() {
 
       <div style={{ maxWidth: 1200, margin: '0 auto', padding: '28px 20px 60px' }}>
 
-        {/* Live states */}
-        {filteredLive.length > 0 && (
-          <div style={{ marginBottom: 40 }}>
-            <div style={{ fontSize: 11, fontWeight: 700, color: '#38bdf8', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
-              <span style={{ display: 'inline-block', width: 8, height: 8, borderRadius: '50%', background: '#38bdf8', boxShadow: '0 0 8px #38bdf8' }} />
-              Live — Full tide charts available
-            </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 14 }}>
-              {filteredLive.map(state => (
-                <a
-                  key={state.slug}
-                  href={`/tides/${state.slug}`}
-                  style={{ display: 'block', background: '#111827', border: '1px solid #1e2d45', borderRadius: 12, padding: '18px 20px', textDecoration: 'none', transition: 'border-color 0.15s, background 0.15s', position: 'relative', overflow: 'hidden' }}
-                >
-                  {/* Accent bar */}
-                  <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 3, background: 'linear-gradient(90deg, #38bdf8, #3b82f6)' }} />
+        {filteredLive.length > 0 ? (
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(300px, 1fr))', gap: 14 }}>
+            {filteredLive.map(state => (
+              <a
+                key={state.slug}
+                href={`/tides/${state.slug}`}
+                style={{ display: 'block', background: '#111827', border: '1px solid #1e2d45', borderRadius: 12, padding: '18px 20px', textDecoration: 'none', transition: 'border-color 0.15s', position: 'relative', overflow: 'hidden' }}
+              >
+                {/* Accent bar */}
+                <div style={{ position: 'absolute', top: 0, left: 0, right: 0, height: 3, background: 'linear-gradient(90deg, #38bdf8, #3b82f6)' }} />
 
-                  <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 10 }}>
-                    <div>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
-                        <span style={{ fontSize: 22, fontWeight: 800, color: '#f1f5f9', lineHeight: 1 }}>{state.abbr}</span>
-                        <span style={{ fontSize: 16, fontWeight: 700, color: '#f1f5f9' }}>{state.name}</span>
-                      </div>
-                      <div style={{ fontSize: 11, color: '#475569' }}>{state.coast}</div>
+                <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 10 }}>
+                  <div>
+                    <div style={{ display: 'flex', alignItems: 'center', gap: 8, marginBottom: 4 }}>
+                      <span style={{ fontSize: 22, fontWeight: 800, color: '#f1f5f9', lineHeight: 1 }}>{state.abbr}</span>
+                      <span style={{ fontSize: 16, fontWeight: 700, color: '#f1f5f9' }}>{state.name}</span>
                     </div>
-                    <div style={{ textAlign: 'right', flexShrink: 0 }}>
-                      <div style={{ fontSize: 20, fontWeight: 800, color: '#38bdf8', lineHeight: 1 }}>{state.stations.length}</div>
-                      <div style={{ fontSize: 10, color: '#475569', marginTop: 2 }}>stations</div>
-                    </div>
+                    <div style={{ fontSize: 11, color: '#475569' }}>{state.coast}</div>
                   </div>
-
-                  <p style={{ fontSize: 12, color: '#94a3b8', margin: '0 0 12px', lineHeight: 1.5 }}>{state.blurb}</p>
-
-                  {/* Region pills */}
-                  <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5, marginBottom: 14 }}>
-                    {state.regions.slice(0, 4).map(r => (
-                      <span key={r} style={{ fontSize: 10, background: '#1e2d45', color: '#94a3b8', padding: '2px 8px', borderRadius: 20 }}>{r}</span>
-                    ))}
-                    {state.regions.length > 4 && (
-                      <span style={{ fontSize: 10, color: '#475569', padding: '2px 0' }}>+{state.regions.length - 4} more</span>
-                    )}
+                  <div style={{ textAlign: 'right', flexShrink: 0 }}>
+                    <div style={{ fontSize: 20, fontWeight: 800, color: '#38bdf8', lineHeight: 1 }}>{state.stations.length}</div>
+                    <div style={{ fontSize: 10, color: '#475569', marginTop: 2 }}>stations</div>
                   </div>
-
-                  <div style={{ fontSize: 12, fontWeight: 700, color: '#38bdf8' }}>
-                    View {state.name} tide charts →
-                  </div>
-                </a>
-              ))}
-            </div>
-          </div>
-        )}
-
-        {/* Coming soon states */}
-        {filteredSoon.length > 0 && (
-          <div>
-            <div style={{ fontSize: 11, fontWeight: 700, color: '#475569', textTransform: 'uppercase', letterSpacing: '0.08em', marginBottom: 16, display: 'flex', alignItems: 'center', gap: 8 }}>
-              <span style={{ display: 'inline-block', width: 8, height: 8, borderRadius: '50%', background: '#475569' }} />
-              Coming soon
-            </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))', gap: 10 }}>
-              {filteredSoon.map(state => (
-                <div
-                  key={state.abbr}
-                  style={{ background: '#0f172a', border: '1px solid #1e2d45', borderRadius: 10, padding: '14px 16px', opacity: 0.6 }}
-                >
-                  <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 6 }}>
-                    <div style={{ display: 'flex', alignItems: 'center', gap: 8 }}>
-                      <span style={{ fontSize: 16, fontWeight: 800, color: '#94a3b8' }}>{state.abbr}</span>
-                      <span style={{ fontSize: 14, fontWeight: 600, color: '#94a3b8' }}>{state.name}</span>
-                    </div>
-                    <span style={{ fontSize: 10, fontWeight: 700, background: '#1e2d45', color: '#475569', padding: '2px 8px', borderRadius: 20, letterSpacing: '0.04em' }}>SOON</span>
-                  </div>
-                  <div style={{ fontSize: 11, color: '#475569', marginBottom: 4 }}>{state.coast}</div>
-                  <div style={{ fontSize: 11, color: '#334155', lineHeight: 1.4 }}>{state.blurb}</div>
                 </div>
-              ))}
-            </div>
-          </div>
-        )}
 
-        {filteredLive.length === 0 && filteredSoon.length === 0 && (
+                <p style={{ fontSize: 12, color: '#94a3b8', margin: '0 0 12px', lineHeight: 1.5 }}>{state.blurb}</p>
+
+                {/* Region pills */}
+                <div style={{ display: 'flex', flexWrap: 'wrap', gap: 5, marginBottom: 14 }}>
+                  {state.regions.slice(0, 4).map(r => (
+                    <span key={r} style={{ fontSize: 10, background: '#1e2d45', color: '#94a3b8', padding: '2px 8px', borderRadius: 20 }}>{r}</span>
+                  ))}
+                  {state.regions.length > 4 && (
+                    <span style={{ fontSize: 10, color: '#475569', padding: '2px 0' }}>+{state.regions.length - 4} more</span>
+                  )}
+                </div>
+
+                <div style={{ fontSize: 12, fontWeight: 700, color: '#38bdf8' }}>
+                  View {state.name} tide charts →
+                </div>
+              </a>
+            ))}
+          </div>
+        ) : (
           <div style={{ textAlign: 'center', padding: '60px 0', color: '#475569' }}>
             No states found.{' '}
             <button onClick={() => { setSearch(''); setCoast('All Coasts') }} style={{ background: 'none', border: 'none', color: '#38bdf8', cursor: 'pointer', fontSize: 'inherit' }}>
