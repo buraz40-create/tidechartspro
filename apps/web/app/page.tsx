@@ -459,8 +459,11 @@ export default function Home() {
             style={{ height: 49, width: 120, objectFit: 'fill', display: 'block', borderRadius: 4 }}
           />
           <div style={{ display: 'flex', gap: 20 }}>
-            {['Tides', 'Fishing', 'Map', 'Privacy'].map(l => (
-              <a key={l} href={`/${l.toLowerCase()}`} style={{ fontSize: 12, color: t.textFaint, textDecoration: 'none' }}>{l}</a>
+            {[
+              { label: 'Tide Charts', href: '/tides' },
+              { label: 'Privacy Policy', href: '/privacy' },
+            ].map(l => (
+              <a key={l.label} href={l.href} style={{ fontSize: 12, color: t.textFaint, textDecoration: 'none' }}>{l.label}</a>
             ))}
           </div>
           <div style={{ fontSize: 11, color: t.textFaint }}>© 2026 TideChartsPro</div>
