@@ -13,8 +13,29 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "TideChartsPro — Tide Charts & Fishing Times",
-  description: "Tide predictions, solunar fishing periods, and hourly weather for fishing locations across the US.",
+  title: "Tide Charts for Fishing | Tides for Fishing | TideChartsPro",
+  description: "Tide charts for fishing with live tides, solunar periods, species bite times and fishing forecasts for 3,300+ US coastal locations across all 23 coastal states.",
+  keywords: [
+    "tide charts for fishing",
+    "tides for fishing",
+    "tide chart for fishing",
+    "fishing tide chart",
+    "live tide charts",
+    "solunar periods",
+    "fishing forecast",
+    "US tide charts",
+    "tide predictions",
+  ],
+  openGraph: {
+    title: "Tide Charts for Fishing | Tides for Fishing | TideChartsPro",
+    description: "Live tide charts, solunar periods, species bite times and fishing forecasts for 3,300+ US coastal locations.",
+    url: "https://tidechartspro.com",
+    siteName: "TideChartsPro",
+    type: "website",
+  },
+  alternates: {
+    canonical: "https://tidechartspro.com",
+  },
 };
 
 export default function RootLayout({
