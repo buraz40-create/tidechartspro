@@ -2360,20 +2360,18 @@ export default function TideLocationPage({ station }: { station: StationConfig }
         padding: '20px',
       }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 10 }}>
-          <a href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
+          <a href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', flexShrink: 0 }}>
+            {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={mode === 'light' ? '/logo_light.webp' : mode === 'red' ? '/logo_red.webp' : '/logo.webp'}
               alt="TideChartsPro"
-              style={{ height: 49, width: 120, objectFit: 'fill', display: 'block', borderRadius: 4 }}
+              style={{ height: 44, width: 'auto', objectFit: 'contain', display: 'block', borderRadius: 4 }}
             />
           </a>
-          <div style={{ fontSize: 11, color: t.textFaint }}>
-            © 2026 TideChartsPro
-          </div>
-          <div style={{ display: 'flex', gap: 16, fontSize: 11, color: t.textFaint }}>
-            <a href="/tides" style={{ color: t.textFaint, textDecoration: 'none' }}>Tides</a>
-            <a href="/fishing" style={{ color: t.textFaint, textDecoration: 'none' }}>Fishing</a>
-            <a href="/map" style={{ color: t.textFaint, textDecoration: 'none' }}>Map</a>
+          <div style={{ fontSize: 11, color: t.textFaint }}>© 2026 TideChartsPro</div>
+          <div style={{ display: 'flex', gap: 16, fontSize: 11 }}>
+            <a href="/tides" style={{ color: t.textFaint, textDecoration: 'none' }}>Tide Charts</a>
+            <a href="/privacy" style={{ color: t.textFaint, textDecoration: 'none' }}>Privacy Policy</a>
           </div>
         </div>
       </footer>
