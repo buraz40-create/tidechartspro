@@ -13,7 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Tide Charts for Fishing | Tides for Fishing | TideChartsPro",
+  title: "Tide Charts for Fishing | Tides for Fishing | Fishing Tide Charts",
   description: "Tide charts for fishing with live tides, solunar periods, species bite times and fishing forecasts for 3,300+ US coastal locations across all 23 coastal states.",
   keywords: [
     "tide charts for fishing",
@@ -27,7 +27,7 @@ export const metadata: Metadata = {
     "tide predictions",
   ],
   openGraph: {
-    title: "Tide Charts for Fishing | Tides for Fishing | TideChartsPro",
+    title: "Tide Charts for Fishing | Tides for Fishing | Fishing Tide Charts",
     description: "Live tide charts, solunar periods, species bite times and fishing forecasts for 3,300+ US coastal locations.",
     url: "https://tidechartspro.com",
     siteName: "TideChartsPro",
