@@ -1,6 +1,6 @@
 'use client'
 
-import { useState } from 'react'
+import { useState, useMemo, useRef } from 'react'
 import dynamic from 'next/dynamic'
 import type { MapStation } from './HomeMap'
 import { FLORIDA_STATIONS }        from '@/lib/florida-stations'
@@ -107,6 +107,29 @@ const MS_MAP_STATIONS = mkPins('MS', 'mississippi', MISSISSIPPI_STATIONS)
 const LA_MAP_STATIONS = mkPins('LA', 'louisiana',   LOUISIANA_STATIONS)
 const TX_MAP_STATIONS = mkPins('TX', 'texas',       TEXAS_STATIONS)
 
+// Full search pool (all 23 states including AK/HI)
+const SEARCH_POOL = [
+  ...STATIONS,
+  ...mkPins('AK', 'alaska', ALASKA_STATIONS),
+  ...mkPins('HI', 'hawaii', HAWAII_STATIONS),
+]
+
+// State chips for the hero quick-nav
+const STATE_CHIPS = [
+  { abbr: 'FL', slug: 'florida' },        { abbr: 'AL', slug: 'alabama' },
+  { abbr: 'MS', slug: 'mississippi' },    { abbr: 'LA', slug: 'louisiana' },
+  { abbr: 'TX', slug: 'texas' },          { abbr: 'GA', slug: 'georgia' },
+  { abbr: 'SC', slug: 'south-carolina' }, { abbr: 'NC', slug: 'north-carolina' },
+  { abbr: 'VA', slug: 'virginia' },       { abbr: 'MD', slug: 'maryland' },
+  { abbr: 'DE', slug: 'delaware' },       { abbr: 'NJ', slug: 'new-jersey' },
+  { abbr: 'NY', slug: 'new-york' },       { abbr: 'CT', slug: 'connecticut' },
+  { abbr: 'RI', slug: 'rhode-island' },   { abbr: 'MA', slug: 'massachusetts' },
+  { abbr: 'NH', slug: 'new-hampshire' },  { abbr: 'ME', slug: 'maine' },
+  { abbr: 'CA', slug: 'california' },     { abbr: 'OR', slug: 'oregon' },
+  { abbr: 'WA', slug: 'washington' },     { abbr: 'AK', slug: 'alaska' },
+  { abbr: 'HI', slug: 'hawaii' },
+]
+
 const FEATURES = [
   { icon: '🌊', title: 'Live tide charts',       desc: 'Real-time water level plotted on predicted curve. See exactly where the tide is right now.' },
   { icon: '🎣', title: 'Fishing score',           desc: 'Daily A–F grade combining tide phase, pressure trend, solunar periods, and water temp.' },
@@ -143,7 +166,16 @@ const STATES = [
 ]
 
 export default function Home() {
-  const [mode, setMode] = useState<'dark' | 'light' | 'red'>('dark')
+  const [mode, setMode]       = useState<'dark' | 'light' | 'red'>('dark')
+  const [query, setQuery]     = useState('')
+  const [dropOpen, setDropOpen] = useState(false)
+  const searchRef = useRef<HTMLDivElement>(null)
+
+  const searchResults = useMemo(() => {
+    const q = query.trim().toLowerCase()
+    if (!q) return []
+    return SEARCH_POOL.filter(s => s.name.toLowerCase().includes(q)).slice(0, 8)
+  }, [query])
   const t = THEMES[mode]
 
   const modeBtn = (m: 'dark' | 'light' | 'red', label: string, icon: string) => (
@@ -221,28 +253,72 @@ export default function Home() {
         <p style={{ color: t.textMuted, fontSize: 16, maxWidth: 520, margin: '0 auto 28px', lineHeight: 1.6 }}>
           Real-time tides, solunar periods, species bite times, and fishing forecasts for 3,300+ locations across all US coastal states.
         </p>
-        <div style={{ display: 'flex', maxWidth: 460, margin: '0 auto 16px', borderRadius: 12, overflow: 'hidden', border: `1px solid ${t.border}` }}>
-          <input
-            type="text"
-            placeholder="Search city, inlet, beach..."
-            style={{
-              flex: 1, background: t.surface, border: 'none', outline: 'none',
-              padding: '12px 16px', fontSize: 14, color: t.text,
-            }}
-          />
-          <button style={{ background: t.accent, border: 'none', padding: '12px 20px', fontSize: 14, fontWeight: 600, color: '#fff', cursor: 'pointer' }}>
-            Search
-          </button>
-        </div>
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8, justifyContent: 'center' }}>
-          {['Jacksonville FL', 'Miami Beach', 'Tampa Bay', 'Chesapeake VA', 'Cape Cod MA', 'Galveston TX'].map(loc => (
-            <button key={loc} style={{
-              background: t.surface, border: `1px solid ${t.border}`,
-              color: t.textMuted, borderRadius: 20, padding: '5px 14px',
-              fontSize: 12, cursor: 'pointer',
-            }}>
-              {loc}
+        {/* Search with live dropdown */}
+        <div ref={searchRef} style={{ position: 'relative', maxWidth: 460, margin: '0 auto 20px' }}>
+          <div style={{ display: 'flex', borderRadius: 12, overflow: 'hidden', border: `1px solid ${dropOpen && searchResults.length ? t.accent : t.border}`, transition: 'border-color 0.15s' }}>
+            <input
+              type="text"
+              placeholder="Search station, inlet, city…"
+              value={query}
+              onChange={e => { setQuery(e.target.value); setDropOpen(true) }}
+              onFocus={() => setDropOpen(true)}
+              onBlur={() => setTimeout(() => setDropOpen(false), 150)}
+              onKeyDown={e => {
+                if (e.key === 'Enter' && searchResults.length) {
+                  const r = searchResults[0]
+                  window.location.href = r.slug.startsWith('/') ? r.slug : `/tides/florida/${r.slug}`
+                }
+              }}
+              style={{ flex: 1, background: t.surface, border: 'none', outline: 'none', padding: '12px 16px', fontSize: 14, color: t.text }}
+            />
+            {query && (
+              <button onClick={() => { setQuery(''); setDropOpen(false) }} style={{ background: t.surface, border: 'none', padding: '0 12px', color: t.textFaint, cursor: 'pointer', fontSize: 18, lineHeight: 1 }}>×</button>
+            )}
+            <button
+              onClick={() => { if (searchResults.length) { const r = searchResults[0]; window.location.href = r.slug.startsWith('/') ? r.slug : `/tides/florida/${r.slug}` } }}
+              style={{ background: t.accent, border: 'none', padding: '12px 20px', fontSize: 14, fontWeight: 600, color: '#fff', cursor: 'pointer', flexShrink: 0 }}
+            >
+              Search
             </button>
+          </div>
+
+          {/* Dropdown results */}
+          {dropOpen && searchResults.length > 0 && (
+            <div style={{ position: 'absolute', top: '100%', left: 0, right: 0, background: t.surface, border: `1px solid ${t.border}`, borderTop: 'none', borderRadius: '0 0 12px 12px', zIndex: 500, overflow: 'hidden', boxShadow: '0 8px 24px rgba(0,0,0,0.3)' }}>
+              {searchResults.map((r, i) => {
+                const href = r.slug.startsWith('/') ? r.slug : `/tides/florida/${r.slug}`
+                const parts = r.name.split(', ')
+                const abbr = parts[parts.length - 1]
+                const label = parts.slice(0, -1).join(', ')
+                return (
+                  <a
+                    key={i}
+                    href={href}
+                    style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px 16px', textDecoration: 'none', borderTop: i > 0 ? `1px solid ${t.border}` : 'none', transition: 'background 0.1s' }}
+                    onMouseEnter={e => (e.currentTarget.style.background = t.accentFaint)}
+                    onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
+                  >
+                    <span style={{ fontSize: 13, color: t.text, fontWeight: 500 }}>{label}</span>
+                    <span style={{ fontSize: 11, color: t.accent, fontWeight: 700, flexShrink: 0, marginLeft: 8 }}>{abbr}</span>
+                  </a>
+                )
+              })}
+            </div>
+          )}
+        </div>
+
+        {/* State chips */}
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, justifyContent: 'center', maxWidth: 560, margin: '0 auto' }}>
+          {STATE_CHIPS.map(s => (
+            <a
+              key={s.abbr}
+              href={`/tides/${s.slug}`}
+              style={{ background: t.surface, border: `1px solid ${t.border}`, color: t.textMuted, borderRadius: 20, padding: '4px 13px', fontSize: 12, fontWeight: 600, textDecoration: 'none', transition: 'border-color 0.15s, color 0.15s' }}
+              onMouseEnter={e => { e.currentTarget.style.borderColor = t.accent; e.currentTarget.style.color = t.accent }}
+              onMouseLeave={e => { e.currentTarget.style.borderColor = t.border; e.currentTarget.style.color = t.textMuted }}
+            >
+              {s.abbr}
+            </a>
           ))}
         </div>
       </section>
