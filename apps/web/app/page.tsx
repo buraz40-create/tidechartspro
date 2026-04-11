@@ -223,7 +223,7 @@ export default function Home() {
             <img
               src={mode === 'light' ? '/logo_light.webp' : mode === 'red' ? '/logo_red.webp' : '/logo.webp'}
               alt="TideChartsPro"
-              style={{ height: 72, width: 177, objectFit: 'fill', display: 'block', borderRadius: 6 }}
+              style={{ height: 52, width: 'auto', display: 'block', borderRadius: 6 }}
             />
           </a>
 
@@ -456,7 +456,7 @@ export default function Home() {
           <img
             src={mode === 'light' ? '/logo_light.webp' : mode === 'red' ? '/logo_red.webp' : '/logo.webp'}
             alt="TideChartsPro"
-            style={{ height: 49, width: 120, objectFit: 'fill', display: 'block', borderRadius: 4 }}
+            style={{ height: 44, width: 'auto', display: 'block', borderRadius: 4 }}
           />
           <div style={{ display: 'flex', gap: 20 }}>
             {[
