@@ -167,8 +167,9 @@ const STATES = [
 
 export default function Home() {
   const [mode, setMode]       = useState<'dark' | 'light' | 'red'>('dark')
-  const [query, setQuery]     = useState('')
+  const [query, setQuery]       = useState('')
   const [dropOpen, setDropOpen] = useState(false)
+  const [openState, setOpenState] = useState<string | null>(null)
   const searchRef = useRef<HTMLDivElement>(null)
 
   const searchResults = useMemo(() => {
@@ -337,11 +338,7 @@ export default function Home() {
         <div style={{ display: 'flex', gap: 16, marginTop: 12, justifyContent: 'center', flexWrap: 'wrap' }}>
           <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, color: t.textMuted }}>
             <div style={{ width: 10, height: 10, borderRadius: '50%', background: t.accent, border: '2px solid white', boxShadow: `0 0 0 3px ${t.accent}44` }} />
-            Live data available
-          </div>
-          <div style={{ display: 'flex', alignItems: 'center', gap: 6, fontSize: 12, color: t.textMuted }}>
-            <div style={{ width: 8, height: 8, borderRadius: '50%', background: '#6b7280', border: '2px solid white' }} />
-            Coming soon
+            Live tide data · 3,300+ stations
           </div>
         </div>
       </section>
@@ -353,7 +350,7 @@ export default function Home() {
             { n: '3,300+', l: 'Tide stations' },
             { n: '6 min',  l: 'Update frequency' },
             { n: '25+',    l: 'Species tracked' },
-            { n: '50',     l: 'US states covered' },
+            { n: '23',     l: 'Coastal states' },
           ].map(s => (
             <div key={s.l}>
               <div style={{ fontSize: 24, fontWeight: 700, color: t.accent }}>{s.n}</div>
@@ -363,19 +360,32 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Browse by state */}
+      <section style={{ background: t.surface, borderTop: `1px solid ${t.border}` }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '48px 20px' }}>
+          <h2 style={{ fontSize: 22, fontWeight: 700, textAlign: 'center', marginBottom: 6 }}>Browse tide charts by state</h2>
+          <p style={{ color: t.textMuted, fontSize: 13, textAlign: 'center', marginBottom: 28 }}>All 23 US coastal states — live tide charts &amp; fishing forecasts</p>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: 10 }}>
+            {STATES.map(s => (
+              <a key={s.name} href={`/tides/${s.slug}`} style={{
+                display: 'block', background: t.surfaceAlt, border: `1px solid ${t.border}`,
+                borderRadius: 10, padding: '16px', textAlign: 'center', textDecoration: 'none',
+              }}>
+                <div style={{ fontSize: 14, fontWeight: 600, color: t.text }}>{s.name}</div>
+                <div style={{ fontSize: 11, color: t.accent, marginTop: 4, fontWeight: 600 }}>{s.count}</div>
+              </a>
+            ))}
+          </div>
+        </div>
+      </section>
+
       {/* Features */}
       <section style={{ maxWidth: 1200, margin: '0 auto', padding: '56px 20px' }}>
         <h2 style={{ fontSize: 22, fontWeight: 700, textAlign: 'center', marginBottom: 8 }}>Everything you need on the water</h2>
         <p style={{ color: t.textMuted, textAlign: 'center', fontSize: 14, marginBottom: 36 }}>Built for anglers, by anglers — not just a tide table</p>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(240px, 1fr))', gap: 16 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: 16 }}>
           {FEATURES.map(f => (
-            <div key={f.title} style={{
-              background: t.surface,
-              border: `1px solid ${t.border}`,
-              borderRadius: 12,
-              padding: '20px',
-              transition: 'border-color 0.15s',
-            }}>
+            <div key={f.title} style={{ background: t.surface, border: `1px solid ${t.border}`, borderRadius: 12, padding: '20px' }}>
               <div style={{ fontSize: 26, marginBottom: 10 }}>{f.icon}</div>
               <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 6 }}>{f.title}</div>
               <div style={{ fontSize: 13, color: t.textMuted, lineHeight: 1.6 }}>{f.desc}</div>
@@ -384,105 +394,58 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Florida Stations — live links */}
+      {/* Station accordion */}
       <section style={{ borderTop: `1px solid ${t.border}` }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '48px 20px' }}>
-          <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', flexWrap: 'wrap', gap: 8, marginBottom: 28 }}>
-            <div>
-              <h2 style={{ fontSize: 22, fontWeight: 700, marginBottom: 4 }}>Florida Tide Charts</h2>
-              <p style={{ color: t.textMuted, fontSize: 13 }}>Live tides for fishing · Atlantic coast, Gulf, Keys & Panhandle</p>
-            </div>
-            <a href="/tides/florida" style={{ fontSize: 13, color: t.accent, textDecoration: 'none', fontWeight: 600, whiteSpace: 'nowrap' }}>
-              View all Florida →
-            </a>
-          </div>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: 8 }}>
-            {FL_MAP_STATIONS.map(s => (
-              <a
-                key={s.slug}
-                href={`/tides/florida/${s.slug}`}
+          <h2 style={{ fontSize: 22, fontWeight: 700, marginBottom: 6 }}>Explore stations by state</h2>
+          <p style={{ color: t.textMuted, fontSize: 13, marginBottom: 24 }}>Click any state to browse all tide chart locations</p>
+          {([
+            { name: 'Florida',     slug: 'florida',     sub: 'Atlantic coast, Gulf Coast, Keys & Panhandle', stations: FL_MAP_STATIONS,  suffix: 'FL' },
+            { name: 'Alabama',     slug: 'alabama',     sub: 'Mobile Bay, Gulf Shores & Dauphin Island',      stations: AL_MAP_STATIONS,  suffix: 'AL' },
+            { name: 'Mississippi', slug: 'mississippi', sub: 'Mississippi Sound, Biloxi & Gulfport',          stations: MS_MAP_STATIONS,  suffix: 'MS' },
+            { name: 'Louisiana',   slug: 'louisiana',   sub: 'New Orleans, Grand Isle & Vermilion Bay',       stations: LA_MAP_STATIONS,  suffix: 'LA' },
+            { name: 'Texas',       slug: 'texas',       sub: 'Galveston Bay, Corpus Christi & Lower Laguna Madre', stations: TX_MAP_STATIONS, suffix: 'TX' },
+          ] as const).map(({ name, slug, sub, stations, suffix }) => (
+            <div key={slug} style={{ borderBottom: `1px solid ${t.border}` }}>
+              {/* Accordion header */}
+              <button
+                onClick={() => setOpenState(openState === slug ? null : slug)}
                 style={{
-                  display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                  background: t.surface, border: `1px solid ${t.border}`,
-                  borderRadius: 8, padding: '11px 14px', textDecoration: 'none',
-                  transition: 'border-color 0.15s',
+                  width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                  background: 'none', border: 'none', padding: '16px 0', cursor: 'pointer', textAlign: 'left',
                 }}
               >
                 <div>
-                  <div style={{ fontSize: 13, fontWeight: 600, color: t.text }}>{s.name.replace(', FL', '')}</div>
-                  <div style={{ fontSize: 10, color: t.textFaint, marginTop: 2 }}>Florida tide chart</div>
+                  <span style={{ fontSize: 15, fontWeight: 700, color: t.text }}>{name} Tide Charts</span>
+                  <span style={{ fontSize: 12, color: t.textMuted, marginLeft: 12 }}>{sub}</span>
                 </div>
-                <span style={{ fontSize: 11, color: t.accent, fontWeight: 700 }}>→</span>
-              </a>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Gulf Coast States — station grids */}
-      {([
-        { label: 'Alabama Tide Charts', sub: 'Mobile Bay, Gulf Shores, Orange Beach & Dauphin Island', href: '/tides/alabama', stations: AL_MAP_STATIONS, suffix: 'AL', stateSlug: 'alabama' },
-        { label: 'Mississippi Tide Charts', sub: 'Mississippi Sound, Biloxi, Gulfport & Pascagoula', href: '/tides/mississippi', stations: MS_MAP_STATIONS, suffix: 'MS', stateSlug: 'mississippi' },
-        { label: 'Louisiana Tide Charts', sub: 'New Orleans, Grand Isle, Cameron & Vermilion Bay', href: '/tides/louisiana', stations: LA_MAP_STATIONS, suffix: 'LA', stateSlug: 'louisiana' },
-        { label: 'Texas Tide Charts', sub: 'Galveston, Corpus Christi, Matagorda Bay & Lower Laguna Madre', href: '/tides/texas', stations: TX_MAP_STATIONS, suffix: 'TX', stateSlug: 'texas' },
-      ] as const).map(({ label, sub, href, stations, suffix, stateSlug }) => (
-        <section key={stateSlug} style={{ borderTop: `1px solid ${t.border}` }}>
-          <div style={{ maxWidth: 1200, margin: '0 auto', padding: '48px 20px' }}>
-            <div style={{ display: 'flex', alignItems: 'baseline', justifyContent: 'space-between', flexWrap: 'wrap', gap: 8, marginBottom: 28 }}>
-              <div>
-                <h2 style={{ fontSize: 22, fontWeight: 700, marginBottom: 4 }}>{label}</h2>
-                <p style={{ color: t.textMuted, fontSize: 13 }}>Live tides for fishing · {sub}</p>
-              </div>
-              <a href={href} style={{ fontSize: 13, color: t.accent, textDecoration: 'none', fontWeight: 600, whiteSpace: 'nowrap' }}>
-                View all {suffix === 'AL' ? 'Alabama' : suffix === 'MS' ? 'Mississippi' : suffix === 'LA' ? 'Louisiana' : 'Texas'} →
-              </a>
-            </div>
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: 8 }}>
-              {stations.map(s => (
-                <a
-                  key={s.slug}
-                  href={s.slug}
-                  style={{
-                    display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                    background: t.surface, border: `1px solid ${t.border}`,
-                    borderRadius: 8, padding: '11px 14px', textDecoration: 'none',
-                  }}
-                >
-                  <div>
-                    <div style={{ fontSize: 13, fontWeight: 600, color: t.text }}>{s.name.replace(`, ${suffix}`, '')}</div>
-                    <div style={{ fontSize: 10, color: t.textFaint, marginTop: 2 }}>{suffix === 'AL' ? 'Alabama' : suffix === 'MS' ? 'Mississippi' : suffix === 'LA' ? 'Louisiana' : 'Texas'} tide chart</div>
+                <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexShrink: 0 }}>
+                  <span style={{ fontSize: 11, color: t.accent, fontWeight: 600 }}>{stations.length} stations</span>
+                  <span style={{ fontSize: 16, color: t.textMuted, transform: openState === slug ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s', display: 'inline-block' }}>▾</span>
+                </div>
+              </button>
+              {/* Expanded grid */}
+              {openState === slug && (
+                <div style={{ paddingBottom: 24 }}>
+                  <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: 12 }}>
+                    <a href={`/tides/${slug}`} style={{ fontSize: 12, color: t.accent, textDecoration: 'none', fontWeight: 600 }}>View full {name} page →</a>
                   </div>
-                  <span style={{ fontSize: 11, color: t.accent, fontWeight: 700 }}>→</span>
-                </a>
-              ))}
+                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: 8 }}>
+                    {stations.map(s => (
+                      <a
+                        key={s.slug}
+                        href={s.slug.startsWith('/') ? s.slug : `/tides/florida/${s.slug}`}
+                        style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: t.surface, border: `1px solid ${t.border}`, borderRadius: 8, padding: '10px 14px', textDecoration: 'none' }}
+                      >
+                        <span style={{ fontSize: 13, fontWeight: 600, color: t.text }}>{s.name.replace(`, ${suffix}`, '')}</span>
+                        <span style={{ fontSize: 11, color: t.accent, fontWeight: 700 }}>→</span>
+                      </a>
+                    ))}
+                  </div>
+                </div>
+              )}
             </div>
-          </div>
-        </section>
-      ))}
-
-      {/* Browse by state */}
-      <section style={{ background: t.surface, borderTop: `1px solid ${t.border}` }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '48px 20px' }}>
-          <h2 style={{ fontSize: 22, fontWeight: 700, textAlign: 'center', marginBottom: 6 }}>Browse tide charts by state</h2>
-          <p style={{ color: t.textMuted, fontSize: 13, textAlign: 'center', marginBottom: 28 }}>All 23 US coastal states — live tide charts &amp; fishing forecasts</p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(160px, 1fr))', gap: 10 }}>
-            {STATES.map(s => (
-              <a key={s.name} href={s.live ? `/tides/${s.slug}` : '#'} style={{
-                display: 'block',
-                background: t.surfaceAlt,
-                border: `1px solid ${s.live ? t.border : t.border}`,
-                borderRadius: 10,
-                padding: '16px',
-                textAlign: 'center',
-                textDecoration: 'none',
-                opacity: s.live ? 1 : 0.5,
-                cursor: s.live ? 'pointer' : 'default',
-              }}>
-                <div style={{ fontSize: 14, fontWeight: 600, color: t.text }}>{s.name}</div>
-                <div style={{ fontSize: 11, color: s.live ? t.accent : t.textFaint, marginTop: 4, fontWeight: s.live ? 600 : 400 }}>{s.count}</div>
-              </a>
-            ))}
-          </div>
+          ))}
         </div>
       </section>
 
