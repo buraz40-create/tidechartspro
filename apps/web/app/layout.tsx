@@ -29,6 +29,7 @@ export default function RootLayout({
     >
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <meta name="google-site-verification" content="riEUbWlY7TBJfYqju0PWtKopx20MU6NlJCvJNBjIc1g" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJJQB4NW02" />
         <script dangerouslySetInnerHTML={{ __html: `
           window.dataLayer = window.dataLayer || [];
