@@ -1,0 +1,42 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(node --input-type=module)",
+      "Bash(npx tsc:*)",
+      "Bash(npx next:*)",
+      "WebFetch(domain:tides4fishing.com)",
+      "Bash(./node_modules/.bin/tsc --noEmit)",
+      "Bash(node_modules/.bin/tsc --noEmit)",
+      "Bash(node node_modules/typescript/bin/tsc --noEmit)",
+      "Bash(gh run:*)",
+      "Bash(node node_modules/typescript/bin/tsc --noEmit --skipLibCheck)",
+      "Bash(powershell.exe -Command \"cd 'D:\\\\tidechartspro.com\\\\apps\\\\web'; node_modules\\\\.bin\\\\next build 2>&1\")",
+      "Bash(vercel --prod)",
+      "Bash(git add:*)",
+      "Bash(git commit:*)",
+      "Bash(git push:*)",
+      "Bash(echo \"EXIT:$?\")",
+      "Bash(npx sharp-cli:*)",
+      "Bash(ls -lh d:/tidechartspro.com/apps/web/public/logo*.webp d:/tidechartspro.com/apps/web/public/logo*.png)",
+      "Bash(node -e ':*)",
+      "Bash(node -e:*)",
+      "Bash(grep -v \"^$\")",
+      "Bash(python3 -c ':*)",
+      "Bash(identify logo.webp logo_light.webp logo_red.webp)",
+      "Bash(file logo*.webp)",
+      "WebFetch(domain:api.tidesandcurrents.noaa.gov)",
+      "Bash(curl -s \"https://api.tidesandcurrents.noaa.gov/mdapi/prod/webapi/stations.json?type=tidepredictions&units=english\")",
+      "Read(//tmp/**)",
+      "Bash(python3)",
+      "Read(//c/Users/buraz/**)",
+      "Bash(node scripts/generate-florida-stations.mjs)",
+      "Bash(node scripts/audit-links.mjs)",
+      "Bash(node scripts/generate-gulf-stations.mjs)"
+    ],
+    "additionalDirectories": [
+      "D:\\tidechartspro.com\\apps\\web\\app\\tides\\florida",
+      "\\tmp",
+      "d:\\tidechartspro.com\\apps\\web\\app\\tides\\alabama"
+    ]
+  }
+}

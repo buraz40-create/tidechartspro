@@ -1,6 +1,9 @@
 'use client'
 
 import { useState, useEffect, useRef, useCallback, useMemo, Suspense } from 'react'
+import dynamic from 'next/dynamic'
+
+const TideMap = dynamic(() => import('./TideMap'), { ssr: false })
 
 // ─── Types ───────────────────────────────────────────────────────────────────
 
@@ -120,41 +123,64 @@ const THEMES: Record<Mode, Theme> = {
   },
 }
 
-// ─── Static Data ─────────────────────────────────────────────────────────────
+// ─── Station Config ───────────────────────────────────────────────────────────
+// ONE place to edit when copying this file for a new station.
 
-// Today's tide curve — hours 0–24, heights in feet (semi-diurnal)
-function tideCurve(): number[] {
-  const pts: number[] = []
-  for (let i = 0; i <= 288; i++) {
-    const t = (i / 288) * 24
-    const h =
-      2.75 +
-      2.1 * Math.cos(((t - 6.7) * 2 * Math.PI) / 12.42) +
-      0.35 * Math.cos(((t - 6.7) * 4 * Math.PI) / 12.42) +
-      0.12 * Math.sin(((t - 3) * 2 * Math.PI) / 24)
-    pts.push(Math.max(0, h))
-  }
-  return pts
+const STATION = {
+  // NOAA identifiers
+  id:              '8720218',       // CO-OPS tide station
+  waterTempId:     '8720503',       // CO-OPS water temp station (nearest)
+  // Identity
+  name:            'Pablo Creek Entrance',
+  slug:            'pablo-creek-entrance',
+  state:           'florida',
+  city:            'Jacksonville, FL',
+  // Coordinates — used for weather API and display
+  lat:              30.3953,
+  lon:             -81.4316,
+  latDisplay:      '30.37°N',
+  lonDisplay:      '81.45°W',
+  // Harmonic model calibration date (keep fixed — reference epoch for tide math)
+  calRef:          new Date(2026, 3, 10),
+  // Sun calculation parameters (latitude degrees, standard meridian, UTC offset)
+  sunLat:           30.4,
+  sunMeridian:      75,             // Eastern standard meridian
+  sunLon:           81.7,           // Station longitude (positive west)
+  utcOffset:        1,              // EDT = UTC-4 → +1 correction from standard
+  // Fallback sun times for initial render (decimal hours, computed for Apr 10)
+  sunriseRef:       7.08,
+  sunsetRef:       19.92,
+  // Water temp fallback before live data loads
+  waterTempDefault: '68°F',
+  // Map tile (zoom 7, OSM tile CX/CY centered on Jacksonville area)
+  mapTile:          { z: 7, cx: 35, cy: 52 },
+  // Marker pixel offset within the 3×3 tile grid (as % of grid width/height)
+  mapMarker:        { left: '39.56%', top: '55.3%' },
+  // Nearby stations — lat/lon used for map markers + distance calc
+  nearby: [
+    { name: 'Mayport Naval Station',    lat: 30.4,    lon: -81.4133, slug: 'mayport-naval-station-water-treatment-dock' },
+    { name: 'Mayport (Ferry Depot)',    lat: 30.3933, lon: -81.4317, slug: 'mayport-ferry-depot' },
+    { name: 'Sisters Creek',            lat: 30.4167, lon: -81.4533, slug: 'sisters-creek' },
+    { name: 'Atlantic Beach',           lat: 30.335,  lon: -81.395,  slug: 'atlantic-beach' },
+    { name: 'Jacksonville Beach',       lat: 30.2833, lon: -81.3867, slug: 'jacksonville-beach' },
+  ],
+  // Local species — bait suggestions, FL regulations, typical bite timing
+  species: [
+    { name: 'Redfish',          icon: '🎣', color: '#f97316', bait: 'Mullet chunk, DOA shrimp',    regulation: 'Slot 18–27″ · 1/day',   when: 'Dawn & dusk outgoing tide' },
+    { name: 'Spotted Seatrout', icon: '🐟', color: '#60a5fa', bait: 'Mirrolure, live shrimp',      regulation: 'Slot 15–19″ · 3/day',   when: 'Early morning flats' },
+    { name: 'Black Drum',       icon: '🐟', color: '#a78bfa', bait: 'Blue crab, fiddler crab, shrimp', regulation: '14″ min · 5/day',   when: 'Incoming tide · bridges & channels' },
+    { name: 'Flounder',         icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, mud minnow',    regulation: '12″ min · 10/day',      when: 'Incoming tide near drop-offs' },
+    { name: 'Sheepshead',       icon: '🐡', color: '#facc15', bait: 'Fiddler crab, barnacle',      regulation: '12″ min · 8/day',       when: 'Structure — bridges & pilings' },
+  ],
 }
 
-const TIDE_CURVE = tideCurve()
+// ─── Static Data ─────────────────────────────────────────────────────────────
 
 const TIDE_EVENTS = [
   { label: 'Low',  time: '12:14 AM', height: 0.3, hour: 0.23 },
   { label: 'High', time: '6:42 AM',  height: 4.8, hour: 6.70 },
   { label: 'Low',  time: '1:18 PM',  height: 0.5, hour: 13.30 },
   { label: 'High', time: '7:33 PM',  height: 5.1, hour: 19.55 },
-]
-
-// Reference sunrise/sunset kept for initial render before selectedDate is set
-const SUNRISE_HOUR_REF = 7.08
-const SUNSET_HOUR_REF  = 19.92
-
-// Pressure sparkline — 24 hourly readings (mb)
-const PRESSURE_DATA = [
-  1016, 1016, 1015, 1015, 1014, 1014, 1013, 1013,
-  1013, 1012, 1012, 1011, 1011, 1012, 1012, 1013,
-  1013, 1014, 1014, 1015, 1015, 1016, 1016, 1017,
 ]
 
 // Swell data — hourly direction (degrees) and height (ft)
@@ -173,63 +199,6 @@ const SOLUNAR = [
   { start: 21.2, dur: 2.0, type: 'major', label: '9:10 PM' },
 ]
 
-// Species bite windows
-const SPECIES = [
-  {
-    name: 'Redfish',
-    icon: '🎣',
-    grade: 'A',
-    windows: [
-      { start: 6.5,  end: 9.0,  label: '6:30–9:00 AM', hot: true },
-      { start: 18.5, end: 20.5, label: '6:30–8:30 PM', hot: false },
-    ],
-    bait: 'Mullet chunk, DOA shrimp',
-    regulation: 'Slot 18–27″ · 1/day',
-  },
-  {
-    name: 'Spotted Seatrout',
-    icon: '🐟',
-    grade: 'B',
-    windows: [
-      { start: 7.0,  end: 9.5,  label: '7:00–9:30 AM', hot: true },
-      { start: 16.0, end: 18.0, label: '4:00–6:00 PM', hot: false },
-    ],
-    bait: 'Mirrolure, live shrimp',
-    regulation: 'Slot 15–19″ · 3/day',
-  },
-  {
-    name: 'Snook',
-    icon: '🐠',
-    grade: 'B+',
-    windows: [
-      { start: 19.5, end: 22.0, label: '7:30–10:00 PM', hot: true },
-    ],
-    bait: 'Live pilchard, Zara Spook',
-    regulation: 'Slot 28–33″ · Closed Jul–Aug',
-  },
-  {
-    name: 'Flounder',
-    icon: '🦈',
-    grade: 'C',
-    windows: [
-      { start: 12.5, end: 14.5, label: '12:30–2:30 PM', hot: false },
-    ],
-    bait: 'Gulp! shrimp, mud minnow',
-    regulation: '12″ min · 10/day',
-  },
-  {
-    name: 'Sheepshead',
-    icon: '🐡',
-    grade: 'A-',
-    windows: [
-      { start: 6.0,  end: 8.5,  label: '6:00–8:30 AM', hot: true },
-      { start: 17.0, end: 19.0, label: '5:00–7:00 PM', hot: false },
-    ],
-    bait: 'Fiddler crab, barnacle',
-    regulation: '12″ min · 8/day',
-  },
-]
-
 // 7-day forecast
 const FORECAST = [
   { day: 'Thu', date: 'Apr 10', score: 'A',  high: 78, low: 62, icon: '☀️', wind: 'SE 8', bestTide: '7:01 AM', coeff: 82 },
@@ -241,21 +210,21 @@ const FORECAST = [
   { day: 'Wed', date: 'Apr 16', score: 'A',  high: 81, low: 65, icon: '☀️', wind: 'SE 7',  bestTide: '11:30 AM', coeff: 88 },
 ]
 
+// Haversine distance in miles between two lat/lon points
+function haversineMi(lat1: number, lon1: number, lat2: number, lon2: number): number {
+  const R = 3958.8
+  const dLat = (lat2 - lat1) * Math.PI / 180
+  const dLon = (lon2 - lon1) * Math.PI / 180
+  const a = Math.sin(dLat / 2) ** 2
+    + Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * Math.sin(dLon / 2) ** 2
+  return R * 2 * Math.asin(Math.sqrt(a))
+}
+
 // 30-day tidal coefficient sparkline
 const COEFF_30 = [
   72, 68, 63, 58, 54, 51, 55, 61, 68, 74,
   79, 84, 88, 90, 89, 85, 80, 74, 68, 63,
   59, 55, 53, 57, 63, 70, 77, 83, 87, 89,
-]
-
-// Nearby stations
-const NEARBY = [
-  'St. Johns River Entrance',
-  'Mayport (Naval Station)',
-  'Fort George Inlet',
-  'Ponte Vedra Beach',
-  'Nassau Sound',
-  'Sisters Creek',
 ]
 
 // Weather
@@ -268,7 +237,7 @@ const WEATHER = {
   visibility: '10 mi',
   cloudCover: '15%',
   uvIndex: '6',
-  waterTemp: '68°F',
+  waterTemp: STATION.waterTempDefault,
   dewPoint: '63°F',
   pressure: '1016 mb',
   pressureTrend: 'rising',
@@ -508,44 +477,6 @@ function drawTideChart(
   }
 }
 
-function drawPressureSparkline(canvas: HTMLCanvasElement, t: Theme, dpr: number) {
-  const W = canvas.clientWidth
-  const H = canvas.clientHeight
-  canvas.width  = W * dpr
-  canvas.height = H * dpr
-  const ctx = canvas.getContext('2d')!
-  ctx.scale(dpr, dpr)
-
-  ctx.fillStyle = t.canvasBg
-  ctx.fillRect(0, 0, W, H)
-
-  const min = Math.min(...PRESSURE_DATA) - 1
-  const max = Math.max(...PRESSURE_DATA) + 1
-  const toX = (i: number) => (i / (PRESSURE_DATA.length - 1)) * W
-  const toY = (v: number) => H - ((v - min) / (max - min)) * H * 0.8 - H * 0.1
-
-  // fill
-  ctx.beginPath()
-  PRESSURE_DATA.forEach((v, i) => {
-    if (i === 0) ctx.moveTo(toX(i), toY(v))
-    else ctx.lineTo(toX(i), toY(v))
-  })
-  ctx.lineTo(W, H)
-  ctx.lineTo(0, H)
-  ctx.closePath()
-  ctx.fillStyle = t.accentFaint
-  ctx.fill()
-
-  // line
-  ctx.beginPath()
-  ctx.strokeStyle = t.accent
-  ctx.lineWidth   = 1.5
-  PRESSURE_DATA.forEach((v, i) => {
-    if (i === 0) ctx.moveTo(toX(i), toY(v))
-    else ctx.lineTo(toX(i), toY(v))
-  })
-  ctx.stroke()
-}
 
 function drawSwellChart(canvas: HTMLCanvasElement, t: Theme, dpr: number) {
   const W = canvas.clientWidth
@@ -688,10 +619,10 @@ function calFmtHour(h: number): string {
 }
 
 function calSunTimes(doy: number): { sunrise: string; sunset: string } {
-  const LAT = (30.4 * Math.PI) / 180
+  const LAT = (STATION.sunLat * Math.PI) / 180
   const decl = -23.45 * Math.cos((360/365*(doy+10)*Math.PI)/180)
   const HA = (Math.acos(Math.max(-1, Math.min(1, -Math.tan(LAT)*Math.tan(decl*Math.PI/180)))) * 180) / Math.PI
-  const corr = (75-81.7)/15 + 1  // EDT + longitude offset
+  const corr = (STATION.sunMeridian - STATION.sunLon) / 15 + STATION.utcOffset
   return { sunrise: calFmtHour(12 - HA/15 + corr), sunset: calFmtHour(12 + HA/15 + corr) }
 }
 
@@ -699,10 +630,8 @@ function calDayOfYear(date: Date): number {
   return Math.floor((date.getTime() - new Date(date.getFullYear(),0,0).getTime()) / 86400000)
 }
 
-const CAL_REF = new Date(2026, 3, 10)
-
 function calGenerateTides(date: Date): CalTide[] {
-  const dayOff = (date.getTime() - CAL_REF.getTime()) / 86400000
+  const dayOff = (date.getTime() - STATION.calRef.getTime()) / 86400000
   const M2 = 12.4206
   const lag = ((dayOff * 0.7176) % M2 + M2) % M2
   const high1 = (6.70 + lag) % 24
@@ -767,7 +696,7 @@ function generateCalMonth(year: number, month: number): CalDay[] {
 
 /** Generate 289-point tide curve for any date. */
 function tideCurveForDate(date: Date): number[] {
-  const dayOff = (date.getTime() - CAL_REF.getTime()) / 86400000
+  const dayOff = (date.getTime() - STATION.calRef.getTime()) / 86400000
   const M2     = 12.4206
   const lag    = ((dayOff * 0.7176) % M2 + M2) % M2
   const phase  = calMoonPhase(date)
@@ -788,11 +717,11 @@ function tideCurveForDate(date: Date): number[] {
 /** Sunrise/sunset as decimal hours for any date. */
 function sunTimesHoursForDate(date: Date): { sunrise: number; sunset: number } {
   const doy   = calDayOfYear(date)
-  const LAT   = (30.4 * Math.PI) / 180
+  const LAT   = (STATION.sunLat * Math.PI) / 180
   const decl  = -23.45 * Math.cos((360 / 365 * (doy + 10) * Math.PI) / 180)
   const cosHA = -Math.tan(LAT) * Math.tan(decl * Math.PI / 180)
   const HA    = (Math.acos(Math.max(-1, Math.min(1, cosHA))) * 180) / Math.PI
-  const corr  = (75 - 81.7) / 15 + 1
+  const corr  = (STATION.sunMeridian - STATION.sunLon) / 15 + STATION.utcOffset
   return { sunrise: 12 - HA / 15 + corr, sunset: 12 + HA / 15 + corr }
 }
 
@@ -809,7 +738,7 @@ function tideEventsForDate(date: Date): typeof TIDE_EVENTS {
 
 /** Solunar periods for any date (sorted by start hour). */
 function solunarForDate(date: Date): typeof SOLUNAR {
-  const dayOff = (date.getTime() - CAL_REF.getTime()) / 86400000
+  const dayOff = (date.getTime() - STATION.calRef.getTime()) / 86400000
   const major1 = (((8.75 + dayOff * (50 / 60)) % 24) + 24) % 24
   const major2 = (major1 + 12.42) % 24
   const minor1 = ((major1 - 6.21) % 24 + 24) % 24
@@ -850,17 +779,6 @@ function forecastForDate(startDate: Date) {
 function gradeFromCoeff(c: number): string {
   return c >= 90 ? 'A' : c >= 80 ? 'A-' : c >= 70 ? 'B+' : c >= 60 ? 'B' : c >= 50 ? 'C+' : c >= 40 ? 'C' : 'D'
 }
-
-// ─── Score breakdown data ─────────────────────────────────────────────────────
-
-const SCORE_FACTORS = [
-  { label: 'Tide phase',       value: 88, note: 'Moving outgoing, near low — excellent' },
-  { label: 'Solunar strength', value: 82, note: 'Major period in 25 min' },
-  { label: 'Pressure trend',   value: 74, note: 'Rising slowly, stable' },
-  { label: 'Wind & chop',      value: 90, note: 'SE 8 kt, minimal wave action' },
-  { label: 'Water temp',       value: 72, note: '68°F — within optimal range' },
-  { label: 'Moon phase',       value: 65, note: 'Waxing gibbous 71%' },
-]
 
 // ─── Weather types + helpers ──────────────────────────────────────────────────
 
@@ -935,10 +853,10 @@ function PabloCreekEntranceContent() {
     setSelectedDate(d)
     const today = new Date()
     if (d.toDateString() === today.toDateString()) {
-      window.history.pushState(null, '', '/tides/florida/pablo-creek-entrance')
+      window.history.pushState(null, '', `/tides/${STATION.state}/${STATION.slug}`)
     } else {
       const iso = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`
-      window.history.pushState(null, '', `/tides/florida/pablo-creek-entrance?date=${iso}`)
+      window.history.pushState(null, '', `/tides/${STATION.state}/${STATION.slug}?date=${iso}`)
     }
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [])
@@ -962,11 +880,98 @@ function PabloCreekEntranceContent() {
     setCurrentMonth(new Date(selectedDate.getFullYear(), selectedDate.getMonth(), 1))
   }, [selectedDate])
 
-  const selCurve   = useMemo(() => tideCurveForDate(selectedDate),   [selectedDate])
-  const selEvents  = useMemo(() => tideEventsForDate(selectedDate),  [selectedDate])
+  const harmonicSelCurve   = useMemo(() => tideCurveForDate(selectedDate),   [selectedDate])
+  const harmonicSelEvents  = useMemo(() => tideEventsForDate(selectedDate),  [selectedDate])
   const selSunH    = useMemo(() => sunTimesHoursForDate(selectedDate), [selectedDate])
   const selSolunar = useMemo(() => solunarForDate(selectedDate),     [selectedDate])
-  const selForecast = useMemo(() => forecastForDate(selectedDate),   [selectedDate])
+  const selForecastBase = useMemo(() => forecastForDate(selectedDate),   [selectedDate])
+
+  // ── NOAA live tide state ──
+  const [liveToday,   setLiveToday]   = useState<number[] | null>(null)
+  const [liveHilo,    setLiveHilo]    = useState<Map<string, {label:'High'|'Low', time:string, height:number, hour:number}[]> | null>(null)
+
+  // ── NOAA tide fetch ──
+  useEffect(() => {
+    const BASE   = 'https://api.tidesandcurrents.noaa.gov/api/prod/datagetter'
+    const COMMON = `&datum=MLLW&station=${STATION.id}&time_zone=lst_ldt&units=english&format=json&application=TideChartsPro`
+    const pad    = (n: number) => String(n).padStart(2, '0')
+    const fmt    = (d: Date) => `${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`
+    const today  = new Date()
+    const plus7  = new Date(today); plus7.setDate(today.getDate() + 7)
+
+    // 6-min curve for today
+    fetch(`${BASE}?product=predictions&interval=6&begin_date=${fmt(today)}&end_date=${fmt(today)}${COMMON}`)
+      .then(r => r.json())
+      .then((d: { predictions?: {t:string, v:string}[] }) => {
+        const raw = d.predictions
+        if (!raw || raw.length < 10) return
+        // Resample 240 NOAA points → 289-point array (linear interpolation)
+        const curve = Array.from({ length: 289 }, (_, i) => {
+          const ri  = (i / 288) * (raw.length - 1)
+          const lo  = Math.floor(ri), hi = Math.min(raw.length - 1, lo + 1)
+          return parseFloat(raw[lo].v) * (1 - (ri - lo)) + parseFloat(raw[hi].v) * (ri - lo)
+        })
+        setLiveToday(curve)
+      })
+      .catch(() => {})
+
+    // Hilo events for today + 7 days
+    fetch(`${BASE}?product=predictions&interval=hilo&begin_date=${fmt(today)}&end_date=${fmt(plus7)}${COMMON}`)
+      .then(r => r.json())
+      .then((d: { predictions?: {t:string, v:string, type:string}[] }) => {
+        const raw = d.predictions
+        if (!raw || raw.length < 2) return
+        const map = new Map<string, {label:'High'|'Low', time:string, height:number, hour:number}[]>()
+        for (const p of raw) {
+          const dateKey  = p.t.slice(0, 10)
+          const [, time] = p.t.split(' ')
+          const [hh, mm] = time.split(':').map(Number)
+          const hour     = hh + mm / 60
+          const h12      = hh % 12 === 0 ? 12 : hh % 12
+          const timeStr  = `${h12}:${pad(mm)} ${hh < 12 ? 'am' : 'pm'}`
+          const ev       = { label: (p.type === 'H' ? 'High' : 'Low') as 'High'|'Low', time: timeStr, height: parseFloat(p.v), hour }
+          if (!map.has(dateKey)) map.set(dateKey, [])
+          map.get(dateKey)!.push(ev)
+        }
+        setLiveHilo(map)
+      })
+      .catch(() => {})
+  }, [])
+
+  // Date-key helper (stable across renders)
+  const dateKey = (d: Date) => {
+    const p = (n: number) => String(n).padStart(2, '0')
+    return `${d.getFullYear()}-${p(d.getMonth()+1)}-${p(d.getDate())}`
+  }
+
+  // Derived: live overrides harmonic, harmonic is always the fallback
+  const selDateKey = dateKey(selectedDate)
+  const selCurve   = (isViewingToday && liveToday) ? liveToday : harmonicSelCurve
+  const selEvents  = liveHilo?.get(selDateKey) ?? harmonicSelEvents
+  const selForecast = useMemo(() => {
+    if (!liveHilo) return selForecastBase
+    return selForecastBase.map((fd, i) => {
+      const d    = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate() + i)
+      const evs  = liveHilo.get(dateKey(d))
+      if (!evs || evs.length < 2) return fd
+      const highs = evs.filter(e => e.label === 'High').map(e => e.height)
+      const lows  = evs.filter(e => e.label === 'Low').map(e => e.height)
+      if (!highs.length || !lows.length) return fd
+      const range = Math.max(...highs) - Math.min(...lows)
+      const coeff = Math.round(Math.max(20, Math.min(110, (range / 5.5) * 110)))
+      return { ...fd, score: gradeFromCoeff(coeff), coeff }
+    })
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [selForecastBase, liveHilo])
+
+  // ── Responsive breakpoint ──
+  const [isMobile, setIsMobile] = useState(false)
+  useEffect(() => {
+    const check = () => setIsMobile(window.innerWidth < 640)
+    check()
+    window.addEventListener('resize', check)
+    return () => window.removeEventListener('resize', check)
+  }, [])
 
   // Ref so hover handlers always see latest sel data without being in deps
   const selDataRef = useRef({ curve: selCurve, events: selEvents, sunH: selSunH, isViewingToday, solunar: selSolunar })
@@ -979,28 +984,37 @@ function PabloCreekEntranceContent() {
     return () => clearInterval(id)
   }, [])
 
+  // ── Today's computed curves (always real-time, regardless of selected date) ──
+  const harmonicTodayCurve   = useMemo(() => tideCurveForDate(new Date()),   [])
+  const harmonicTodayEvents  = useMemo(() => tideEventsForDate(new Date()),  [])
+  const todaySolunar = useMemo(() => solunarForDate(new Date()),     [])
+  const harmonicTomorrowEvents = useMemo(() => { const d = new Date(); d.setDate(d.getDate() + 1); return tideEventsForDate(d) }, [])
+  const todayCurve     = liveToday ?? harmonicTodayCurve
+  const todayEvents    = liveHilo?.get(dateKey(new Date())) ?? harmonicTodayEvents
+  const tomorrowEvents = (() => { const d = new Date(); d.setDate(d.getDate()+1); return liveHilo?.get(dateKey(d)) ?? harmonicTomorrowEvents })()
+
   // ── Derived tide status ──
   const nowHour    = now.getHours() + now.getMinutes() / 60 + now.getSeconds() / 3600
   const curveIdx   = Math.min(288, Math.round((nowHour / 24) * 288))
   const pastIdx    = Math.max(0, curveIdx - 12)   // ~1 hr ago (12 pts = 1 hr)
-  const curHeight  = TIDE_CURVE[curveIdx]
-  const pastHeight = TIDE_CURVE[pastIdx]
+  const curHeight  = todayCurve[curveIdx]
+  const pastHeight = todayCurve[pastIdx]
   const isRising   = curHeight >= pastHeight
   const ratePerHr  = Math.abs(curHeight - pastHeight)   // ft in last hour
 
   // Next tide event
-  const nextEvent  = TIDE_EVENTS.find(e => e.hour > nowHour) ?? TIDE_EVENTS[0]
+  const nextEvent  = todayEvents.find(e => e.hour > nowHour) ?? { ...tomorrowEvents[0], hour: tomorrowEvents[0].hour + 24 }
   const minsUntil  = Math.max(0, Math.round((nextEvent.hour - nowHour) * 60))
   const cntHrs     = Math.floor(minsUntil / 60)
   const cntMins    = minsUntil % 60
   const cntStr     = cntHrs > 0 ? `${cntHrs}h ${cntMins}m` : `${cntMins} min`
 
   // Slack water: within 25 min of a high or low
-  const nearSlack  = TIDE_EVENTS.some(e => Math.abs(e.hour - nowHour) < 0.42)
+  const nearSlack  = todayEvents.some(e => Math.abs(e.hour - nowHour) < 0.42)
   const tideSpeed  = Math.min(100, Math.round((ratePerHr / 1.2) * 100))   // % of max rate
 
-  // Best window: major solunar + tide moving
-  const majorPeriods = SOLUNAR.filter(s => s.type === 'major')
+  // Best window: major solunar + tide moving (Fix 2: use todaySolunar not static SOLUNAR)
+  const majorPeriods = todaySolunar.filter(s => s.type === 'major')
   const activeMajor  = majorPeriods.find(s => nowHour >= s.start && nowHour < s.start + s.dur)
   const nextMajor    = majorPeriods.find(s => s.start > nowHour)
   const bestWindow   = activeMajor ?? nextMajor ?? majorPeriods[0]
@@ -1022,7 +1036,6 @@ function PabloCreekEntranceContent() {
   const clockStr = now.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit', second: '2-digit' })
 
   const tideRef    = useRef<HTMLCanvasElement>(null)
-  const pressRef   = useRef<HTMLCanvasElement>(null)
   const swellRef   = useRef<HTMLCanvasElement>(null)
   const coeffRef   = useRef<HTMLCanvasElement>(null)
 
@@ -1031,7 +1044,6 @@ function PabloCreekEntranceContent() {
     const { curve, events, sunH, isViewingToday: ivt, solunar } = selDataRef.current
     const nh  = ivt ? (() => { const n = new Date(); return n.getHours() + n.getMinutes()/60 + n.getSeconds()/3600 })() : null
     if (tideRef.current)  drawTideChart(tideRef.current, t, dpr, curve, events, sunH.sunrise, sunH.sunset, nh, null, solunar)
-    if (pressRef.current) drawPressureSparkline(pressRef.current, t, dpr)
     if (swellRef.current) drawSwellChart(swellRef.current, t, dpr)
     if (coeffRef.current) drawCoeff30(coeffRef.current, t, dpr)
   }, [t, selCurve, selEvents, selSunH, selSolunar, isViewingToday])
@@ -1064,7 +1076,7 @@ function PabloCreekEntranceContent() {
   useEffect(() => {
     repaint()
     const ro = new ResizeObserver(repaint)
-    ;[tideRef, pressRef, swellRef, coeffRef].forEach(r => r.current && ro.observe(r.current))
+    ;[tideRef, swellRef, coeffRef].forEach(r => r.current && ro.observe(r.current))
     return () => ro.disconnect()
   }, [repaint])
 
@@ -1077,7 +1089,7 @@ function PabloCreekEntranceContent() {
 
   useEffect(() => {
     const UA = { 'User-Agent': 'TideChartsPro/1.0 (tidechartspro.com)' }
-    fetch('https://api.weather.gov/points/30.3953,-81.4316', { headers: UA })
+    fetch(`https://api.weather.gov/points/${STATION.lat},${STATION.lon}`, { headers: UA })
       .then(r => r.json())
       .then(meta => {
         const { forecastHourly, forecast } = meta.properties
@@ -1138,7 +1150,7 @@ function PabloCreekEntranceContent() {
   // ── Live water temp (NOAA CO-OPS station 8720503) ──
   const [waterTemp, setWaterTemp] = useState<string | null>(null)
   useEffect(() => {
-    fetch('https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?station=8720503&product=water_temperature&time_zone=LST_LDT&interval=h&units=english&application=TideChartsPro&format=json&range=2')
+    fetch(`https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?station=${STATION.waterTempId}&product=water_temperature&time_zone=LST_LDT&interval=h&units=english&application=TideChartsPro&format=json&range=2`)
       .then(r => r.json())
       .then((d: { data?: Array<{ v: string }> }) => {
         const last = d.data?.at(-1)
@@ -1182,7 +1194,7 @@ function PabloCreekEntranceContent() {
       background: t.surface,
       border: `1px solid ${t.border}`,
       borderRadius: 12,
-      padding: '18px 20px',
+      padding: isMobile ? '14px 12px' : '18px 20px',
       ...extraStyle,
     }}>
       {children}
@@ -1208,11 +1220,110 @@ function PabloCreekEntranceContent() {
     transition: 'all 0.15s',
   })
 
-  const overallGrade = 'A'
-  const bestDayIdx   = FORECAST.findIndex(d => d.score === 'A' && d.day !== 'Thu') || 6
+  // ── Fix 3: Compute fishing score factors from live data ──
+  const moonPhase      = calMoonPhase(new Date())
+  // Moon score: peaks at new moon (0) and full moon (0.5), lower in between
+  const moonScore      = Math.round(80 - 30 * Math.sin(moonPhase * 2 * Math.PI) ** 2)
+  const moonPct        = Math.round(moonPhase <= 0.5 ? moonPhase * 2 * 100 : (1 - moonPhase) * 2 * 100)
+  const moonEmoji      = calMoonEmoji(moonPhase)
+
+  // Tide phase score: fast-moving tide = better fishing; slack = worse
+  const tidePhaseScore = nearSlack ? 35 : Math.max(40, tideSpeed)
+  const tidePhaseNote  = nearSlack
+    ? 'Near slack water — fish less active'
+    : tideSpeed >= 75 ? 'Fast-moving tide — prime window'
+    : tideSpeed >= 50 ? 'Moderate tide flow — good activity'
+    : 'Slow tide — moderate activity'
+
+  // Solunar score: active major = 95, within 30 min of major = 85, minor = 70, nothing = 50
+  const solunarScore   = activeMajor ? 95
+    : bwMinsUntil <= 30 ? 85
+    : todaySolunar.some(s => nowHour >= s.start && nowHour < s.start + s.dur) ? 70
+    : 50
+  const solunarNote    = activeMajor ? 'Major period active now — peak bite'
+    : bwMinsUntil <= 30 ? `Major period in ${bwMinsUntil} min — prepare`
+    : bestWindow ? `Next major: ${bwHrs > 0 ? `${bwHrs}h ${bwMins}m` : `${bwMins} min`} away`
+    : 'No active solunar period'
+
+  // Wind score: calm = great, moderate = ok, strong = poor
+  const curWind        = wxHourly[0]?.windSpeed ?? 0
+  const windScore      = curWind >= 25 ? 30 : curWind >= 20 ? 50 : curWind >= 15 ? 65 : curWind >= 10 ? 80 : 90
+  const windNote       = curWind >= 25 ? `${wxHourly[0]?.windDir ?? ''} ${curWind} mph — rough, avoid`
+    : curWind >= 20 ? `${wxHourly[0]?.windDir ?? ''} ${curWind} mph — choppy conditions`
+    : curWind >= 15 ? `${wxHourly[0]?.windDir ?? ''} ${curWind} mph — manageable chop`
+    : curWind >= 10 ? `${wxHourly[0]?.windDir ?? ''} ${curWind} mph — light chop`
+    : curWind > 0 ? `${wxHourly[0]?.windDir ?? ''} ${curWind} mph — calm, ideal`
+    : 'Wind data loading…'
+
+  // Water temp score: 65–75°F optimal for most inshore species
+  const wTempNum       = waterTemp ? parseInt(waterTemp) : null
+  const waterTempScore = wTempNum == null ? 70
+    : wTempNum >= 65 && wTempNum <= 75 ? 90
+    : wTempNum >= 60 && wTempNum < 65  ? 75
+    : wTempNum > 75 && wTempNum <= 82  ? 75
+    : wTempNum >= 55 && wTempNum < 60  ? 55
+    : 40
+  const waterTempNote  = wTempNum == null ? 'Loading water temp…'
+    : wTempNum >= 65 && wTempNum <= 75 ? `${wTempNum}°F — optimal inshore range`
+    : wTempNum >= 60 && wTempNum < 65  ? `${wTempNum}°F — slightly cool, fish slower`
+    : wTempNum > 75 && wTempNum <= 82  ? `${wTempNum}°F — warm, fish deeper`
+    : `${wTempNum}°F — outside optimal range`
+
+  // Pressure: no live data yet — use neutral placeholder
+  const pressureScore  = 74
+  const pressureNote   = 'Stable — no rapid changes detected'
+
+  const SCORE_FACTORS = [
+    { label: 'Tide phase',       value: tidePhaseScore, note: tidePhaseNote },
+    { label: 'Solunar strength', value: solunarScore,   note: solunarNote },
+    { label: 'Pressure trend',   value: pressureScore,  note: pressureNote },
+    { label: 'Wind & chop',      value: windScore,      note: windNote },
+    { label: 'Water temp',       value: waterTempScore, note: waterTempNote },
+    { label: 'Moon phase',       value: moonScore,      note: `${moonEmoji} ${moonPct}% illuminated` },
+  ]
+
+  const compositeScore = Math.round(SCORE_FACTORS.reduce((s, f) => s + f.value, 0) / SCORE_FACTORS.length)
+  const overallGrade   = compositeScore >= 85 ? 'A' : compositeScore >= 75 ? 'B+' : compositeScore >= 65 ? 'B' : compositeScore >= 55 ? 'C+' : compositeScore >= 45 ? 'C' : 'D'
+  const overallLabel   = compositeScore >= 85 ? 'Excellent' : compositeScore >= 75 ? 'Very Good' : compositeScore >= 65 ? 'Good' : compositeScore >= 55 ? 'Fair' : 'Poor'
+
+  const bestDayIdx     = FORECAST.findIndex(d => d.score === 'A' && d.day !== 'Thu') || 6
 
   return (
     <div style={{ background: t.bg, color: t.text, minHeight: '100vh', fontFamily: 'system-ui, -apple-system, sans-serif' }}>
+      <style>{`
+        @media (max-width: 639px) {
+          /* Live conditions panel */
+          .tcp-live-grid                       { grid-template-columns: repeat(2,1fr) !important; }
+          .tcp-live-grid > div                 { padding: 12px !important; border-right: none !important; }
+          .tcp-live-grid > div:nth-child(odd)  { border-right: 1px solid rgba(255,255,255,0.08) !important; }
+          .tcp-live-grid > div:nth-child(1),
+          .tcp-live-grid > div:nth-child(2)    { border-bottom: 1px solid rgba(255,255,255,0.08) !important; }
+
+          /* Quick nav links — stack into 2 per row */
+          .tcp-quick-links { gap: 6px !important; }
+          .tcp-quick-links a { font-size: 10px !important; padding: 4px 8px !important; }
+
+          /* Section grids */
+          .tcp-solunar       { grid-template-columns: repeat(2,1fr) !important; }
+          .tcp-two-col       { grid-template-columns: 1fr !important; }
+          .tcp-wx-stats      { grid-template-columns: 1fr 1fr !important; }
+          .tcp-map-layout    { grid-template-columns: 1fr !important; }
+          .tcp-coord-row     { grid-template-columns: 1fr 1fr !important; }
+          .tcp-species       { grid-template-columns: 1fr 1fr !important; }
+          .tcp-card          { padding: 14px 12px !important; }
+
+          /* Scale down large numbers inside live grid */
+          .tcp-live-grid .tcp-live-big   { font-size: 20px !important; }
+          .tcp-live-grid .tcp-live-arrow { font-size: 20px !important; }
+          .tcp-live-grid .tcp-bw-time    { font-size: 14px !important; }
+
+          /* Hero */
+          .tcp-hero-h1       { font-size: 20px !important; }
+
+          /* Nav mode buttons emoji-only on mobile */
+          .tcp-mode-label { display: none !important; }
+        }
+      `}</style>
 
       {/* ── Nav ── */}
       <nav style={{
@@ -1223,14 +1334,24 @@ function PabloCreekEntranceContent() {
         top: 0,
         zIndex: 50,
       }}>
-        <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 20px', height: 52, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
-          <a href="/" style={{ fontSize: 16, fontWeight: 600, color: t.text, textDecoration: 'none' }}>
-            Tide<span style={{ color: t.accent }}>Charts</span>Pro
+        {/* Preload all 3 logos so mode switching is instant — hidden imgs, no layout impact */}
+        <div style={{ position: 'absolute', width: 0, height: 0, overflow: 'hidden', pointerEvents: 'none' }} aria-hidden="true">
+          <img src="/logo.webp" alt="" />
+          <img src="/logo_light.webp" alt="" />
+          <img src="/logo_red.webp" alt="" />
+        </div>
+        <div style={{ maxWidth: 1100, margin: '0 auto', padding: `0 ${isMobile ? 12 : 20}px`, height: isMobile ? 60 : 80, display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+          <a href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
+            <img
+              src={mode === 'light' ? '/logo_light.webp' : mode === 'red' ? '/logo_red.webp' : '/logo.webp'}
+              alt="TideChartsPro"
+              style={{ height: isMobile ? 48 : 72, width: isMobile ? 'auto' : 177, objectFit: 'fill', display: 'block', borderRadius: 6 }}
+            />
           </a>
           <div style={{ display: 'flex', gap: 6, alignItems: 'center' }}>
             {(['dark', 'light', 'red'] as Mode[]).map(m => (
               <button key={m} onClick={() => setMode(m)} style={modeBtnStyle(m)}>
-                {m === 'dark' ? '🌑 Dark' : m === 'light' ? '☀️ Light' : '🔴 Night'}
+                {m === 'dark' ? <><span>🌑</span><span className="tcp-mode-label"> Dark</span></> : m === 'light' ? <><span>☀️</span><span className="tcp-mode-label"> Light</span></> : <><span>🔴</span><span className="tcp-mode-label"> Night</span></>}
               </button>
             ))}
           </div>
@@ -1238,19 +1359,19 @@ function PabloCreekEntranceContent() {
       </nav>
 
       {/* ── Hero header ── */}
-      <div style={{ maxWidth: 1100, margin: '0 auto', padding: '28px 20px 0' }}>
-        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', flexWrap: 'wrap', gap: 12, marginBottom: 8 }}>
+      <div style={{ maxWidth: 1100, margin: '0 auto', padding: `${isMobile ? 16 : 28}px ${isMobile ? 12 : 20}px 0` }}>
+        <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', flexWrap: 'wrap', gap: 8, marginBottom: 8, flexDirection: isMobile ? 'row' : 'row' }}>
           <div>
             <div style={{ fontSize: 11, color: t.textFaint, marginBottom: 4 }}>
               <a href="/tides/florida" style={{ color: t.textFaint, textDecoration: 'none' }}>Florida</a>
               <span style={{ margin: '0 6px' }}>/</span>
-              <span style={{ color: t.textMuted }}>Pablo Creek Entrance</span>
+              <span style={{ color: t.textMuted }}>{STATION.name}</span>
             </div>
-            <h1 style={{ fontSize: 26, fontWeight: 700, margin: 0, lineHeight: 1.2 }}>
-              Pablo Creek Entrance
+            <h1 className="tcp-hero-h1" style={{ fontSize: 26, fontWeight: 700, margin: 0, lineHeight: 1.2 }}>
+              {STATION.name}
             </h1>
             <div style={{ fontSize: 13, color: t.textMuted, marginTop: 4 }}>
-              Station 8720218 · Jacksonville, FL · 30.37°N 81.45°W
+              {STATION.city} · {STATION.latDisplay} {STATION.lonDisplay}
             </div>
           </div>
           <div style={{ textAlign: 'right' }}>
@@ -1261,7 +1382,7 @@ function PabloCreekEntranceContent() {
               color: gradeColor(overallGrade, t),
               lineHeight: 1,
             }}>{overallGrade}</div>
-            <div style={{ fontSize: 11, color: t.textMuted }}>Excellent conditions</div>
+            <div style={{ fontSize: 11, color: t.textMuted }}>{overallLabel} conditions</div>
           </div>
         </div>
 
@@ -1308,7 +1429,7 @@ function PabloCreekEntranceContent() {
       </div>
 
       {/* ── Main grid ── */}
-      <div style={{ maxWidth: 1100, margin: '0 auto', padding: '0 20px 40px', display: 'grid', gridTemplateColumns: '1fr', gap: 16 }}>
+      <div style={{ maxWidth: 1100, margin: '0 auto', padding: `0 ${isMobile ? 12 : 20}px 40px`, display: 'grid', gridTemplateColumns: 'minmax(0, 1fr)', gap: 16 }}>
 
         {/* ── NOW Panel ── */}
         <div style={{
@@ -1344,18 +1465,18 @@ function PabloCreekEntranceContent() {
           </div>
 
           {/* 4-column grid */}
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 1fr)', gap: 0 }}>
+          <div style={{ display: 'grid', gridTemplateColumns: isMobile ? 'repeat(2, minmax(0,1fr))' : 'repeat(4, minmax(0,1fr))', gap: 0 }}>
 
             {/* ① Tide now */}
-            <div style={{ padding: '16px 18px', borderRight: `1px solid ${t.border}` }}>
+            <div style={{ padding: isMobile ? '12px' : '16px 18px', borderRight: `1px solid ${t.border}`, borderBottom: isMobile ? `1px solid ${t.border}` : 'none' }}>
               <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.07em', textTransform: 'uppercase', color: t.textFaint, marginBottom: 8 }}>
                 Tide Now
               </div>
               <div style={{ display: 'flex', alignItems: 'baseline', gap: 6, marginBottom: 4 }}>
-                <span style={{ fontSize: 28, fontWeight: 800, color: isRising ? t.accent : '#818cf8', lineHeight: 1 }}>
+                <span style={{ fontSize: isMobile ? 20 : 28, fontWeight: 800, color: isRising ? t.accent : '#818cf8', lineHeight: 1 }}>
                   {isRising ? '↑' : '↓'}
                 </span>
-                <span style={{ fontSize: 22, fontWeight: 800, color: t.text, lineHeight: 1 }}>
+                <span style={{ fontSize: isMobile ? 18 : 22, fontWeight: 800, color: t.text, lineHeight: 1 }}>
                   {curHeight.toFixed(1)} ft
                 </span>
               </div>
@@ -1382,14 +1503,14 @@ function PabloCreekEntranceContent() {
             </div>
 
             {/* ② Next event */}
-            <div style={{ padding: '16px 18px', borderRight: `1px solid ${t.border}` }}>
+            <div style={{ padding: isMobile ? '12px' : '16px 18px', borderRight: isMobile ? 'none' : `1px solid ${t.border}`, borderBottom: isMobile ? `1px solid ${t.border}` : 'none' }}>
               <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.07em', textTransform: 'uppercase', color: t.textFaint, marginBottom: 8 }}>
                 Next Event
               </div>
               <div style={{ fontSize: 13, fontWeight: 700, color: nextEvent.label === 'High' ? t.accent : '#818cf8', marginBottom: 4 }}>
                 {nextEvent.label === 'High' ? '▲' : '▼'} {nextEvent.label} Tide
               </div>
-              <div style={{ fontSize: 26, fontWeight: 800, color: t.text, lineHeight: 1, marginBottom: 6, fontVariantNumeric: 'tabular-nums' }}>
+              <div style={{ fontSize: isMobile ? 20 : 26, fontWeight: 800, color: t.text, lineHeight: 1, marginBottom: 6, fontVariantNumeric: 'tabular-nums' }}>
                 {cntStr}
               </div>
               <div style={{ fontSize: 12, color: t.textMuted }}>
@@ -1404,14 +1525,14 @@ function PabloCreekEntranceContent() {
 
             {/* ③ Best window */}
             <div style={{
-              padding: '16px 18px',
+              padding: isMobile ? '12px' : '16px 18px',
               borderRight: `1px solid ${t.border}`,
               background: bwActive ? `${t.accent}0d` : 'transparent',
             }}>
               <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.07em', textTransform: 'uppercase', color: bwActive ? t.accent : t.textFaint, marginBottom: 8 }}>
                 {bwActive ? '🔥 Best Window — Active Now' : '🔥 Best Window'}
               </div>
-              <div style={{ fontSize: 18, fontWeight: 800, color: bwActive ? t.accent : t.text, lineHeight: 1.2, marginBottom: 4 }}>
+              <div style={{ fontSize: isMobile ? 13 : 18, fontWeight: 800, color: bwActive ? t.accent : t.text, lineHeight: 1.2, marginBottom: 4 }}>
                 {bwStartLabel}–{bwEndLabel}
               </div>
               <div style={{
@@ -1431,7 +1552,7 @@ function PabloCreekEntranceContent() {
             </div>
 
             {/* ④ Conditions snapshot */}
-            <div style={{ padding: '16px 18px' }}>
+            <div style={{ padding: isMobile ? '12px' : '16px 18px' }}>
               <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.07em', textTransform: 'uppercase', color: t.textFaint, marginBottom: 8 }}>
                 Conditions
               </div>
@@ -1463,7 +1584,7 @@ function PabloCreekEntranceContent() {
           </div>
 
           {/* Quick links */}
-          <div style={{ padding: '8px 18px', borderTop: `1px solid ${t.border}`, display: 'flex', gap: 8, flexWrap: 'wrap' as const }}>
+          <div className="tcp-quick-links" style={{ padding: '8px 18px', borderTop: `1px solid ${t.border}`, display: 'flex', gap: 8, flexWrap: 'wrap' as const }}>
             {[
               { label: '↓ Full tide chart', href: '#tide-chart' },
               { label: '↓ Hourly weather', href: '#weather' },
@@ -1582,7 +1703,7 @@ function PabloCreekEntranceContent() {
             <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 14 }}>
               <div>
                 <div style={{ fontSize: 13, fontWeight: 600, color: t.text, letterSpacing: '0.02em' }}>Weather Forecast</div>
-                <div style={{ fontSize: 11, color: t.textFaint, marginTop: 2 }}>Live data · Jacksonville, FL</div>
+                <div style={{ fontSize: 11, color: t.textFaint, marginTop: 2 }}>Live data · {STATION.city}</div>
               </div>
               <div style={{ display: 'flex', gap: 4 }}>
                 {(['hourly', '7day', 'radar'] as const).map(tab => (
@@ -1603,57 +1724,95 @@ function PabloCreekEntranceContent() {
             {wxTab === 'hourly' && wxLoading && <div style={{ color: t.textFaint, fontSize: 12, padding: '20px 0', textAlign: 'center' }}>Loading weather data…</div>}
             {wxTab === 'hourly' && wxError   && <div style={{ color: t.textFaint, fontSize: 12, padding: '20px 0', textAlign: 'center' }}>Weather data unavailable</div>}
             {wxTab === 'hourly' && !wxLoading && !wxError && (
-              <div style={{ overflowX: 'auto' }}>
-                <div style={{ display: 'grid', gridTemplateColumns: '68px 1fr 56px 1fr 56px 72px 64px', marginBottom: 4 }}>
-                  {['Time','Conditions','Temp','Wind','Precip','Tide','Solunar'].map((h, ci) => (
-                    <div key={ci} style={{ fontSize: 9, fontWeight: 700, color: t.textFaint, textTransform: 'uppercase' as const, letterSpacing: '0.07em', padding: '0 6px' }}>{h}</div>
-                  ))}
-                </div>
-                {wxHourly.slice(wxHourPage * 24, wxHourPage * 24 + 24).map((h, i) => {
-                  const isNow       = wxHourPage === 0 && h.hour === Math.floor(nowHour)
-                  const windColor   = h.windSpeed >= 20 ? '#ef4444' : h.windSpeed >= 12 ? '#eab308' : '#22c55e'
-                  const precipColor = h.precip >= 60 ? '#60a5fa' : h.precip >= 30 ? '#93c5fd' : t.textMuted
-                  const tideIdx     = Math.min(288, Math.round((h.hour / 24) * 288))
-                  const tideHt      = selCurve[tideIdx]
-                  const tideRising  = selCurve[tideIdx] >= selCurve[Math.max(0, tideIdx - 12)]
-                  const tideColor   = tideHt >= 3.5 ? t.accent : tideHt >= 2 ? t.textMuted : t.textFaint
-                  const solPeriod   = selSolunar.find(s => h.hour >= s.start && h.hour < s.start + s.dur)
-                  return (
-                    <div key={i} style={{
-                      display: 'grid', gridTemplateColumns: '68px 1fr 56px 1fr 56px 72px 64px',
-                      background: isNow ? t.accentFaint : i % 2 === 0 ? t.surface : t.surfaceAlt,
-                      borderLeft: isNow ? `3px solid ${t.accent}` : '3px solid transparent',
-                      borderRadius: 4, marginBottom: 1, alignItems: 'center',
-                    }}>
-                      {/* Time */}
-                      <div style={{ padding: '6px 6px', fontSize: 12, fontWeight: isNow ? 700 : 400, color: isNow ? t.accent : t.text, whiteSpace: 'nowrap' as const }}>
-                        {isNow ? '▶ ' : ''}{h.time}
-                      </div>
-                      {/* Conditions */}
-                      <div style={{ padding: '6px 6px', fontSize: 11, color: t.textMuted, display: 'flex', alignItems: 'center', gap: 6 }}>
-                        <span style={{ fontSize: 20, flexShrink: 0 }}>{conditionEmoji(h.condition)}</span>
-                        <span style={{ whiteSpace: 'nowrap' as const, overflow: 'hidden', textOverflow: 'ellipsis' }}>{h.condition}</span>
-                      </div>
-                      {/* Temp */}
-                      <div style={{ padding: '6px 6px', fontSize: 13, fontWeight: 700, color: '#facc15' }}>{h.temp}°</div>
-                      {/* Wind */}
-                      <div style={{ padding: '6px 6px', fontSize: 12, color: windColor, display: 'flex', alignItems: 'center', gap: 4, whiteSpace: 'nowrap' as const }}>
-                        <span style={{ display: 'inline-block', transform: `rotate(${windDirDeg(h.windDir)}deg)`, fontSize: 12, lineHeight: 1 }}>↑</span>
-                        {h.windDir} {h.windSpeed} mph
-                      </div>
-                      {/* Precip */}
-                      <div style={{ padding: '6px 6px', fontSize: 12, fontWeight: 600, color: precipColor }}>{h.precip}%</div>
-                      {/* Tide */}
-                      <div style={{ padding: '6px 6px', fontSize: 12, fontWeight: 600, color: tideColor, display: 'flex', alignItems: 'center', gap: 3 }}>
-                        <span style={{ fontSize: 10 }}>{tideRising ? '▲' : '▼'}</span>{tideHt.toFixed(1)} ft
-                      </div>
-                      {/* Solunar */}
-                      <div style={{ padding: '6px 6px', fontSize: 18 }}>
-                        {solPeriod ? <span title={`${solPeriod.type} period`}>{solPeriod.type === 'major' ? '🐟🐟' : '🐟'}</span> : <span style={{ color: t.textFaint, fontSize: 12 }}>—</span>}
-                      </div>
+              <div>
+                {isMobile ? (
+                  /* ── Mobile: 6-col compact table ── */
+                  <>
+                    <div style={{ display: 'grid', gridTemplateColumns: '48px 26px 38px 1fr 40px 44px', marginBottom: 4 }}>
+                      {['Time','','Temp','Wind','Rain','Tide'].map((h, ci) => (
+                        <div key={ci} style={{ fontSize: 9, fontWeight: 700, color: t.textFaint, textTransform: 'uppercase' as const, letterSpacing: '0.07em', padding: '0 3px' }}>{h}</div>
+                      ))}
                     </div>
-                  )
-                })}
+                    {wxHourly.slice(wxHourPage * 24, wxHourPage * 24 + 24).map((h, i) => {
+                      const isNow       = wxHourPage === 0 && h.hour === Math.floor(nowHour)
+                      const windColor   = h.windSpeed >= 20 ? '#ef4444' : h.windSpeed >= 12 ? '#eab308' : '#22c55e'
+                      const precipColor = h.precip >= 60 ? '#60a5fa' : h.precip >= 30 ? '#93c5fd' : t.textMuted
+                      const tideIdx     = Math.min(288, Math.round((h.hour / 24) * 288))
+                      const tideHt      = selCurve[tideIdx]
+                      const tideRising  = selCurve[tideIdx] >= selCurve[Math.max(0, tideIdx - 12)]
+                      const tideColor   = tideHt >= 3.5 ? t.accent : tideHt >= 2 ? t.textMuted : t.textFaint
+                      return (
+                        <div key={i} style={{
+                          display: 'grid', gridTemplateColumns: '48px 26px 38px 1fr 40px 44px',
+                          background: isNow ? t.accentFaint : i % 2 === 0 ? t.surface : t.surfaceAlt,
+                          borderLeft: isNow ? `3px solid ${t.accent}` : '3px solid transparent',
+                          borderRadius: 4, marginBottom: 1, alignItems: 'center',
+                        }}>
+                          <div style={{ padding: '6px 3px', fontSize: 11, fontWeight: isNow ? 700 : 400, color: isNow ? t.accent : t.text, whiteSpace: 'nowrap' as const }}>
+                            {isNow ? '▶' : ''}{h.time}
+                          </div>
+                          <div style={{ padding: '6px 2px', fontSize: 16, lineHeight: 1 }}>{conditionEmoji(h.condition)}</div>
+                          <div style={{ padding: '6px 3px', fontSize: 13, fontWeight: 700, color: '#facc15' }}>{h.temp}°</div>
+                          <div style={{ padding: '6px 3px', fontSize: 11, color: windColor, display: 'flex', alignItems: 'center', gap: 3 }}>
+                            <span style={{ display: 'inline-block', transform: `rotate(${windDirDeg(h.windDir)}deg)`, fontSize: 11, lineHeight: 1, flexShrink: 0 }}>↑</span>
+                            {h.windDir} {h.windSpeed}
+                          </div>
+                          <div style={{ padding: '6px 3px', fontSize: 11, fontWeight: 600, color: precipColor }}>{h.precip}%</div>
+                          <div style={{ padding: '6px 3px', fontSize: 11, fontWeight: 600, color: tideColor }}>
+                            {tideRising ? '▲' : '▼'}{tideHt.toFixed(1)}
+                          </div>
+                        </div>
+                      )
+                    })}
+                  </>
+                ) : (
+                  /* ── Desktop: full 7-col table ── */
+                  <div style={{ overflowX: 'auto', width: '100%' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: '68px 1fr 56px 1fr 56px 72px 64px', marginBottom: 4 }}>
+                      {['Time','Conditions','Temp','Wind','Precip','Tide','Solunar'].map((h, ci) => (
+                        <div key={ci} style={{ fontSize: 9, fontWeight: 700, color: t.textFaint, textTransform: 'uppercase' as const, letterSpacing: '0.07em', padding: '0 6px' }}>{h}</div>
+                      ))}
+                    </div>
+                    {wxHourly.slice(wxHourPage * 24, wxHourPage * 24 + 24).map((h, i) => {
+                      const isNow       = wxHourPage === 0 && h.hour === Math.floor(nowHour)
+                      const windColor   = h.windSpeed >= 20 ? '#ef4444' : h.windSpeed >= 12 ? '#eab308' : '#22c55e'
+                      const precipColor = h.precip >= 60 ? '#60a5fa' : h.precip >= 30 ? '#93c5fd' : t.textMuted
+                      const tideIdx     = Math.min(288, Math.round((h.hour / 24) * 288))
+                      const tideHt      = selCurve[tideIdx]
+                      const tideRising  = selCurve[tideIdx] >= selCurve[Math.max(0, tideIdx - 12)]
+                      const tideColor   = tideHt >= 3.5 ? t.accent : tideHt >= 2 ? t.textMuted : t.textFaint
+                      const solPeriod   = selSolunar.find(s => h.hour >= s.start && h.hour < s.start + s.dur)
+                      return (
+                        <div key={i} style={{
+                          display: 'grid', gridTemplateColumns: '68px 1fr 56px 1fr 56px 72px 64px',
+                          background: isNow ? t.accentFaint : i % 2 === 0 ? t.surface : t.surfaceAlt,
+                          borderLeft: isNow ? `3px solid ${t.accent}` : '3px solid transparent',
+                          borderRadius: 4, marginBottom: 1, alignItems: 'center',
+                        }}>
+                          <div style={{ padding: '6px 6px', fontSize: 12, fontWeight: isNow ? 700 : 400, color: isNow ? t.accent : t.text, whiteSpace: 'nowrap' as const }}>
+                            {isNow ? '▶ ' : ''}{h.time}
+                          </div>
+                          <div style={{ padding: '6px 6px', fontSize: 11, color: t.textMuted, display: 'flex', alignItems: 'center', gap: 6 }}>
+                            <span style={{ fontSize: 20, flexShrink: 0 }}>{conditionEmoji(h.condition)}</span>
+                            <span style={{ whiteSpace: 'nowrap' as const, overflow: 'hidden', textOverflow: 'ellipsis' }}>{h.condition}</span>
+                          </div>
+                          <div style={{ padding: '6px 6px', fontSize: 13, fontWeight: 700, color: '#facc15' }}>{h.temp}°</div>
+                          <div style={{ padding: '6px 6px', fontSize: 12, color: windColor, display: 'flex', alignItems: 'center', gap: 4, whiteSpace: 'nowrap' as const }}>
+                            <span style={{ display: 'inline-block', transform: `rotate(${windDirDeg(h.windDir)}deg)`, fontSize: 12, lineHeight: 1 }}>↑</span>
+                            {h.windDir} {h.windSpeed} mph
+                          </div>
+                          <div style={{ padding: '6px 6px', fontSize: 12, fontWeight: 600, color: precipColor }}>{h.precip}%</div>
+                          <div style={{ padding: '6px 6px', fontSize: 12, fontWeight: 600, color: tideColor, display: 'flex', alignItems: 'center', gap: 3 }}>
+                            <span style={{ fontSize: 10 }}>{tideRising ? '▲' : '▼'}</span>{tideHt.toFixed(1)} ft
+                          </div>
+                          <div style={{ padding: '6px 6px', fontSize: 18 }}>
+                            {solPeriod ? <span title={`${solPeriod.type} period`}>{solPeriod.type === 'major' ? '🐟🐟' : '🐟'}</span> : <span style={{ color: t.textFaint, fontSize: 12 }}>—</span>}
+                          </div>
+                        </div>
+                      )
+                    })}
+                  </div>
+                )}
                 {/* Pagination */}
                 {wxHourly.length > 24 && (
                   <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginTop: 10, gap: 8 }}>
@@ -1682,36 +1841,38 @@ function PabloCreekEntranceContent() {
             {/* ── 7-Day tab ── */}
             {wxTab === '7day' && wxLoading && <div style={{ color: t.textFaint, fontSize: 12, padding: '20px 0', textAlign: 'center' }}>Loading forecast…</div>}
             {wxTab === '7day' && !wxLoading && (
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 8 }}>
-                {(wxDaily.length > 0 ? wxDaily : selForecast.map(d => ({ day: d.day, date: d.date, high: d.high, low: d.low, icon: d.icon, wind: d.wind, precip: null as number | null }))).map((day, i) => {
-                  const fd = selForecast[i]
-                  const isToday = i === 0
-                  const isBest = fd?.score === 'A' || fd?.score === 'A-'
-                  return (
-                    <div key={i} style={{
-                      padding: '10px 6px', borderRadius: 10, textAlign: 'center', position: 'relative',
-                      background: isBest && !isToday ? t.accentFaint : t.surfaceAlt,
-                      border: `1px solid ${isBest && !isToday ? t.accent + '66' : t.border}`,
-                    }}>
-                      {isToday && <div style={{ position: 'absolute', top: -8, left: '50%', transform: 'translateX(-50%)', fontSize: 9, fontWeight: 700, color: t.canvasNowLine, background: t.bg, padding: '1px 6px', borderRadius: 4, border: `1px solid ${t.canvasNowLine}55` }}>TODAY</div>}
-                      {isBest && !isToday && <div style={{ position: 'absolute', top: -8, left: '50%', transform: 'translateX(-50%)', fontSize: 9, fontWeight: 700, color: t.accent, background: t.bg, padding: '1px 6px', borderRadius: 4, border: `1px solid ${t.accent}55` }}>BEST</div>}
-                      <div style={{ fontSize: 11, fontWeight: 700, color: t.text }}>{day.day}</div>
-                      <div style={{ fontSize: 9, color: t.textFaint, marginBottom: 6 }}>{day.date}</div>
-                      <div style={{ fontSize: 22, marginBottom: 4 }}>{day.icon}</div>
-                      <div style={{ fontSize: 12, fontWeight: 700, color: t.text }}>{day.high}°</div>
-                      <div style={{ fontSize: 11, color: t.textFaint }}>{day.low ?? '—'}°</div>
-                      {fd && <div style={{ fontSize: 18, fontWeight: 800, color: gradeColor(fd.score, t), marginTop: 4 }}>{fd.score}</div>}
-                      <div style={{ fontSize: 9, color: t.textFaint, marginTop: 3 }}>{day.wind}</div>
-                      {'precip' in day && day.precip != null && <div style={{ fontSize: 9, color: '#93c5fd', marginTop: 2 }}>💧 {day.precip}%</div>}
-                    </div>
-                  )
-                })}
+              <div style={{ overflowX: 'auto', width: '100%', paddingTop: 10 }}>
+                <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 8, minWidth: 480 }}>
+                  {(wxDaily.length > 0 ? wxDaily : selForecast.map(d => ({ day: d.day, date: d.date, high: d.high, low: d.low, icon: d.icon, wind: d.wind, precip: null as number | null }))).map((day, i) => {
+                    const fd = selForecast[i]
+                    const isToday = i === 0
+                    const isBest = fd?.score === 'A' || fd?.score === 'A-'
+                    return (
+                      <div key={i} style={{
+                        padding: '10px 6px', borderRadius: 10, textAlign: 'center', position: 'relative',
+                        background: isBest && !isToday ? t.accentFaint : t.surfaceAlt,
+                        border: `1px solid ${isBest && !isToday ? t.accent + '66' : t.border}`,
+                      }}>
+                        {isToday && <div style={{ position: 'absolute', top: -8, left: '50%', transform: 'translateX(-50%)', fontSize: 9, fontWeight: 700, color: t.canvasNowLine, background: t.bg, padding: '1px 6px', borderRadius: 4, border: `1px solid ${t.canvasNowLine}55` }}>TODAY</div>}
+                        {isBest && !isToday && <div style={{ position: 'absolute', top: -8, left: '50%', transform: 'translateX(-50%)', fontSize: 9, fontWeight: 700, color: t.accent, background: t.bg, padding: '1px 6px', borderRadius: 4, border: `1px solid ${t.accent}55` }}>BEST</div>}
+                        <div style={{ fontSize: 11, fontWeight: 700, color: t.text }}>{day.day}</div>
+                        <div style={{ fontSize: 9, color: t.textFaint, marginBottom: 6 }}>{day.date}</div>
+                        <div style={{ fontSize: 22, marginBottom: 4 }}>{day.icon}</div>
+                        <div style={{ fontSize: 12, fontWeight: 700, color: t.text }}>{day.high}°</div>
+                        <div style={{ fontSize: 11, color: t.textFaint }}>{day.low ?? '—'}°</div>
+                        {fd && <div style={{ fontSize: 18, fontWeight: 800, color: gradeColor(fd.score, t), marginTop: 4 }}>{fd.score}</div>}
+                        <div style={{ fontSize: 9, color: t.textFaint, marginTop: 3 }}>{day.wind}</div>
+                        {'precip' in day && day.precip != null && <div style={{ fontSize: 9, color: '#93c5fd', marginTop: 2 }}>💧 {day.precip}%</div>}
+                      </div>
+                    )
+                  })}
+                </div>
               </div>
             )}
 
             {/* ── Radar tab ── */}
             {wxTab === 'radar' && (() => {
-              const Z = 7, CX = 35, CY = 52   // z=7 tiles centered on Jacksonville, FL
+              const Z = STATION.mapTile.z, CX = STATION.mapTile.cx, CY = STATION.mapTile.cy
               const offsets = [-1, 0, 1]
               const frame = radarFrames[radarIdx] ?? ''
               const tsMatch = frame.match(/\/(\d+)\//)
@@ -1720,7 +1881,7 @@ function PabloCreekEntranceContent() {
                 <div>
                   {/* Map */}
                   <div style={{ position: 'relative', width: '100%', borderRadius: 8, overflow: 'hidden', background: '#1a2535' }}>
-                    <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr 1fr' }}>
+                    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(3, minmax(0,1fr))' }}>
                       {offsets.flatMap(dy => offsets.map(dx => {
                         const tx = CX + dx, ty = CY + dy
                         return (
@@ -1743,10 +1904,10 @@ function PabloCreekEntranceContent() {
                         )
                       }))}
                     </div>
-                    {/* Pablo Creek Entrance marker — lat 30.365°N lon -81.408°W in z=7 grid */}
-                    <div style={{ position: 'absolute', left: '39.56%', top: '55.3%', transform: 'translate(-50%,-50%)', pointerEvents: 'none', zIndex: 10 }}>
+                    {/* Station marker */}
+                    <div style={{ position: 'absolute', left: STATION.mapMarker.left, top: STATION.mapMarker.top, transform: 'translate(-50%,-50%)', pointerEvents: 'none', zIndex: 10 }}>
                       <div style={{ width: 12, height: 12, borderRadius: '50%', background: '#f97316', border: '2px solid white', boxShadow: '0 0 10px rgba(0,0,0,0.9), 0 0 0 5px rgba(249,115,22,0.4)' }}/>
-                      <div style={{ position: 'absolute', top: 16, left: '50%', transform: 'translateX(-50%)', background: 'rgba(0,0,0,0.85)', color: '#fff', fontSize: 9, fontWeight: 700, padding: '2px 6px', borderRadius: 3, whiteSpace: 'nowrap' as const }}>Pablo Creek</div>
+                      <div style={{ position: 'absolute', top: 16, left: '50%', transform: 'translateX(-50%)', background: 'rgba(0,0,0,0.85)', color: '#fff', fontSize: 9, fontWeight: 700, padding: '2px 6px', borderRadius: 3, whiteSpace: 'nowrap' as const }}>{STATION.name.split(' ').slice(0,2).join(' ')}</div>
                     </div>
                     {/* Timestamp */}
                     {tsLabel && (
@@ -1785,7 +1946,7 @@ function PabloCreekEntranceContent() {
         )}
 
         {/* Fishing score + Weather — two column */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,1fr)', gap: 16 }}>
+        <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'minmax(0,1fr) minmax(0,1fr)', gap: 16 }}>
 
           {/* Fishing score card */}
           {card(
@@ -1802,9 +1963,9 @@ function PabloCreekEntranceContent() {
                   {overallGrade}
                 </div>
                 <div>
-                  <div style={{ fontSize: 14, fontWeight: 600 }}>Excellent</div>
+                  <div style={{ fontSize: 14, fontWeight: 600 }}>{overallLabel}</div>
                   <div style={{ fontSize: 11, color: t.textMuted, marginTop: 2 }}>
-                    Rising tide + major solunar period aligns 8:45 AM
+                    {solunarNote}
                   </div>
                 </div>
               </div>
@@ -1835,7 +1996,7 @@ function PabloCreekEntranceContent() {
           {card(
             <>
               {sectionTitle('Current Conditions', 'Updated 10:20 AM')}
-              <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: 10, marginBottom: 16 }}>
+              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, minmax(0,1fr))', gap: 10, marginBottom: 16 }}>
                 {Object.entries(WEATHER).filter(([k]) => k !== 'pressureTrend').map(([k, v]) => (
                   <div key={k} style={{
                     background: t.surfaceAlt,
@@ -1850,16 +2011,6 @@ function PabloCreekEntranceContent() {
                   </div>
                 ))}
               </div>
-              <div style={{ marginTop: 4 }}>
-                <div style={{ fontSize: 11, color: t.textMuted, marginBottom: 6, display: 'flex', justifyContent: 'space-between' }}>
-                  <span>Pressure (24h)</span>
-                  <span style={{ color: '#22c55e' }}>↗ Rising · {WEATHER.pressureTrend}</span>
-                </div>
-                <canvas
-                  ref={pressRef}
-                  style={{ width: '100%', height: 50, display: 'block', borderRadius: 4 }}
-                />
-              </div>
             </>
           )}
         </div>
@@ -1867,113 +2018,106 @@ function PabloCreekEntranceContent() {
         {/* Swell chart */}
 
         <div id="solunar"/>
-        {/* Solunar + Species — two column */}
-        <div style={{ display: 'grid', gridTemplateColumns: 'minmax(0,1fr) minmax(0,1.4fr)', gap: 16 }}>
-
-          {/* Solunar */}
-          {card(
-            <>
-              {sectionTitle('Solunar Activity', 'Best feeding windows based on lunar & solar transit')}
-              <div style={{ display: 'grid', gridTemplateColumns: 'repeat(2, 1fr)', gap: 10 }}>
-                {selSolunar.map(s => {
-                  const endHour = s.start + s.dur
-                  const isActive = nowHour >= s.start && nowHour < endHour
-                  const isPast   = nowHour >= endHour
-                  const isMajor  = s.type === 'major'
-                  const accentCol = isMajor ? t.accent : '#a78bfa'
-                  const statusLabel = isActive ? '🟢 Active now' : isPast ? 'Passed' : `in ${Math.floor(s.start - nowHour)}h ${Math.round(((s.start - nowHour) % 1) * 60)}m`
-                  const statusColor = isActive ? '#22c55e' : isPast ? t.textFaint : t.textMuted
-                  return (
-                    <div key={s.label} style={{
-                      padding: '14px 16px',
-                      background: isActive ? `${accentCol}18` : t.surfaceAlt,
-                      border: `1px solid ${isActive ? accentCol + '66' : t.border}`,
-                      borderTop: `3px solid ${isPast ? t.border : accentCol}`,
-                      borderRadius: 10,
-                      opacity: isPast ? 0.5 : 1,
-                    }}>
-                      {/* Badge row */}
-                      <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 8 }}>
-                        <span style={{
-                          fontSize: 10, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em',
-                          color: accentCol, background: `${accentCol}22`, padding: '2px 8px', borderRadius: 4,
-                        }}>
-                          {isMajor ? '★ Major' : '◆ Minor'}
-                        </span>
-                        <span style={{ fontSize: 10, color: t.textFaint }}>{s.dur}h window</span>
-                      </div>
-                      {/* Time */}
-                      <div style={{ fontSize: 22, fontWeight: 800, color: isPast ? t.textMuted : t.text, letterSpacing: '-0.02em', marginBottom: 4 }}>
-                        {s.label}
-                      </div>
-                      {/* Description */}
-                      <div style={{ fontSize: 11, color: t.textMuted, marginBottom: 8 }}>
-                        {isMajor ? 'Peak feeding period — fish most active' : 'Secondary feeding period'}
-                      </div>
-                      {/* Status */}
-                      <div style={{ fontSize: 11, fontWeight: 600, color: statusColor }}>{statusLabel}</div>
-                    </div>
-                  )
-                })}
-              </div>
-            </>
-          )}
-
-          {/* Species bite times */}
-          {card(
-            <>
-              {sectionTitle('Species Bite Windows', 'Location-specific for Pablo Creek Entrance area')}
-              <div style={{ display: 'flex', flexDirection: 'column', gap: 10 }}>
-                {SPECIES.map(sp => (
-                  <div key={sp.name} style={{
-                    padding: '10px 12px',
-                    background: t.surfaceAlt,
-                    border: `1px solid ${t.border}`,
-                    borderRadius: 9,
+        {/* Solunar — full width */}
+        {card(
+          <>
+            {sectionTitle('Solunar Activity', 'Best feeding windows based on lunar & solar transit')}
+            <div style={{ display: 'grid', gridTemplateColumns: isMobile ? 'repeat(2, minmax(0,1fr))' : 'repeat(4, minmax(0,1fr))', gap: 10 }}>
+              {selSolunar.map(s => {
+                const endHour   = s.start + s.dur
+                const isActive  = nowHour >= s.start && nowHour < endHour
+                const isPast    = nowHour >= endHour
+                const isMajor   = s.type === 'major'
+                const accentCol = isMajor ? t.accent : '#a78bfa'
+                const statusLabel = isActive ? '🟢 Active now' : isPast ? 'Passed' : `in ${Math.floor(s.start - nowHour)}h ${Math.round(((s.start - nowHour) % 1) * 60)}m`
+                const statusColor = isActive ? '#22c55e' : isPast ? t.textFaint : t.textMuted
+                return (
+                  <div key={s.label} style={{
+                    padding: '14px 16px',
+                    background: isActive ? `${accentCol}18` : t.surfaceAlt,
+                    border: `1px solid ${isActive ? accentCol + '66' : t.border}`,
+                    borderTop: `3px solid ${isPast ? t.border : accentCol}`,
+                    borderRadius: 10,
+                    opacity: isPast ? 0.5 : 1,
                   }}>
-                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 5 }}>
-                      <div style={{ display: 'flex', alignItems: 'center', gap: 7 }}>
-                        <span style={{ fontSize: 16 }}>{sp.icon}</span>
-                        <span style={{ fontSize: 13, fontWeight: 600 }}>{sp.name}</span>
-                      </div>
+                    <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', marginBottom: 8 }}>
                       <span style={{
-                        fontSize: 13, fontWeight: 700,
-                        color: gradeColor(sp.grade, t),
-                        background: `${gradeColor(sp.grade, t)}22`,
-                        padding: '1px 7px', borderRadius: 4,
-                      }}>{sp.grade}</span>
+                        fontSize: 10, fontWeight: 800, textTransform: 'uppercase', letterSpacing: '0.08em',
+                        color: accentCol, background: `${accentCol}22`, padding: '2px 8px', borderRadius: 4,
+                      }}>
+                        {isMajor ? '★ Major' : '◆ Minor'}
+                      </span>
+                      <span style={{ fontSize: 10, color: t.textFaint }}>{s.dur}h window</span>
                     </div>
-                    <div style={{ display: 'flex', gap: 6, flexWrap: 'wrap', marginBottom: 5 }}>
-                      {sp.windows.map(w => (
-                        <span key={w.label} style={{
-                          fontSize: 11,
-                          padding: '2px 8px',
-                          borderRadius: 4,
-                          background: w.hot ? t.accentFaint : t.badge,
-                          color: w.hot ? t.accent : t.textMuted,
-                          border: `1px solid ${w.hot ? t.accent + '55' : t.border}`,
-                          fontWeight: 500,
-                        }}>
-                          {w.hot ? '🔥 ' : ''}{w.label}
-                        </span>
-                      ))}
+                    <div style={{ fontSize: 22, fontWeight: 800, color: isPast ? t.textMuted : t.text, letterSpacing: '-0.02em', marginBottom: 4 }}>
+                      {s.label}
                     </div>
-                    <div style={{ fontSize: 10, color: t.textFaint }}>
-                      <span style={{ color: t.textMuted }}>Bait: </span>{sp.bait}
-                      <span style={{ marginLeft: 8, color: t.textFaint }}>· {sp.regulation}</span>
+                    <div style={{ fontSize: 11, color: t.textMuted, marginBottom: 8 }}>
+                      {isMajor ? 'Peak feeding period — fish most active' : 'Secondary feeding period'}
+                    </div>
+                    <div style={{ fontSize: 11, fontWeight: 600, color: statusColor }}>{statusLabel}</div>
+                  </div>
+                )
+              })}
+            </div>
+          </>
+        )}
+
+        {/* Species reference */}
+        {card(
+          <>
+            {sectionTitle('Local Species', `${STATION.name} area · FL regulations`)}
+            <div style={{ display: 'grid', gridTemplateColumns: isMobile ? 'repeat(2, minmax(0,1fr))' : 'repeat(auto-fill, minmax(180px, 1fr))', gap: 8 }}>
+              {STATION.species.map(sp => (
+                <div key={sp.name} style={{
+                  background: t.surface,
+                  border: `1px solid ${t.border}`,
+                  borderLeft: `4px solid ${sp.color}`,
+                  borderRadius: 10,
+                  padding: '14px 16px',
+                  display: 'flex',
+                  flexDirection: 'column',
+                  gap: 9,
+                }}>
+                  {/* Icon + name */}
+                  <div style={{ display: 'flex', alignItems: 'center', gap: 10 }}>
+                    <div style={{
+                      width: 38, height: 38, borderRadius: 9, flexShrink: 0,
+                      background: `${sp.color}20`,
+                      display: 'flex', alignItems: 'center', justifyContent: 'center',
+                      fontSize: 20,
+                    }}>{sp.icon}</div>
+                    <div>
+                      <div style={{ fontSize: 14, fontWeight: 700, color: t.text, lineHeight: 1.2 }}>{sp.name}</div>
+                      <div style={{ fontSize: 10, color: t.textFaint, marginTop: 2 }}>{sp.regulation}</div>
                     </div>
                   </div>
-                ))}
-              </div>
-            </>
-          )}
-        </div>
+                  {/* When badge */}
+                  <div style={{
+                    fontSize: 10, fontWeight: 700,
+                    color: sp.color,
+                    background: `${sp.color}18`,
+                    border: `1px solid ${sp.color}33`,
+                    padding: '3px 10px', borderRadius: 20,
+                    alignSelf: 'flex-start',
+                    lineHeight: 1.6,
+                  }}>{sp.when}</div>
+                  {/* Bait */}
+                  <div style={{ fontSize: 11, color: t.textMuted, lineHeight: 1.4 }}>
+                    <span style={{ color: t.textFaint }}>Bait: </span>{sp.bait}
+                  </div>
+                </div>
+              ))}
+            </div>
+          </>
+        )}
 
         {/* 7-day forecast */}
         {card(
           <>
             {sectionTitle('7-Day Forecast', 'Fishing conditions · best day highlighted')}
-            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 8 }}>
+            <div style={{ overflowX: 'auto', width: '100%', paddingTop: 10 }}>
+            <div style={{ display: 'grid', gridTemplateColumns: 'repeat(7, 1fr)', gap: 8, minWidth: 480 }}>
               {selForecast.map((day, i) => {
                 const isBest = day.score === 'A' || day.score === 'A-'
                 const isToday = i === 0
@@ -2041,6 +2185,7 @@ function PabloCreekEntranceContent() {
                 )
               })}
             </div>
+            </div>
           </>
         )}
 
@@ -2048,7 +2193,7 @@ function PabloCreekEntranceContent() {
         {/* ── 30-Day Tide Calendar ── */}
         {card(
           <>
-            {sectionTitle('30-Day Tide Calendar', `${monthLabel} · Pablo Creek Entrance`)}
+            {sectionTitle('30-Day Tide Calendar', `${monthLabel} · ${STATION.name}`)}
 
             {/* Month nav */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 14 }}>
@@ -2066,7 +2211,7 @@ function PabloCreekEntranceContent() {
             </div>
 
             {/* Table */}
-            <div style={{ overflowX: 'auto', borderRadius: 8, border: `1px solid ${t.border}` }}>
+            <div style={{ overflowX: 'auto', width: '100%', borderRadius: 8, border: `1px solid ${t.border}` }}>
               <div style={{ display: 'grid', gridTemplateColumns: '58px 34px 112px repeat(4, minmax(82px, 1fr)) 104px 92px', minWidth: 860 }}>
 
                 {/* Header */}
@@ -2157,30 +2302,81 @@ function PabloCreekEntranceContent() {
         )}
 
 
-        {/* Nearby stations */}
+        {/* Location & Map */}
         {card(
           <>
-            {sectionTitle('Nearby Stations', 'Northeast Florida · St. Johns River area')}
-            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
-              {NEARBY.map(s => (
-                <a key={s}
-                  href={`/tides/florida/${s.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`}
-                  style={{
-                    padding: '6px 14px',
-                    background: t.chip,
-                    border: `1px solid ${t.border}`,
-                    borderRadius: 20,
-                    fontSize: 12,
-                    color: t.chipText,
-                    textDecoration: 'none',
-                    transition: 'all 0.15s',
-                    display: 'inline-flex',
-                    alignItems: 'center',
-                    gap: 6,
-                  }}>
-                  <span style={{ fontSize: 10 }}>📍</span> {s}
-                </a>
+            {sectionTitle('Location & Map', 'Interactive — click markers for nearby stations')}
+
+            {/* Coord row */}
+            <div style={{ display: 'grid', gridTemplateColumns: isMobile ? 'repeat(2, minmax(0,1fr))' : 'repeat(4, minmax(0,1fr))', marginBottom: 16, borderRadius: 8, overflow: 'hidden', border: `1px solid ${t.border}` }}>
+              {[
+                { label: 'Latitude',  value: STATION.latDisplay },
+                { label: 'Longitude', value: STATION.lonDisplay },
+                { label: 'State',     value: 'Florida' },
+                { label: 'City',      value: STATION.city.split(',')[0] },
+              ].map((item, i) => (
+                <div key={item.label} style={{
+                  padding: '10px 14px',
+                  background: i % 2 === 0 ? t.surfaceAlt : t.surface,
+                  borderRight: i < 3 ? `1px solid ${t.border}` : 'none',
+                }}>
+                  <div style={{ fontSize: 10, color: t.textFaint, textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 3 }}>{item.label}</div>
+                  <div style={{ fontSize: 13, fontWeight: 600, color: t.text }}>{item.value}</div>
+                </div>
               ))}
+            </div>
+
+            {/* Map + nearby list */}
+            <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'minmax(0, 1.8fr) minmax(0, 1fr)', gap: 16, alignItems: 'start' }}>
+
+              {/* Map */}
+              <div style={{ borderRadius: 10, overflow: 'hidden', border: `1px solid ${t.border}`, height: 340 }}>
+                <TideMap
+                  lat={STATION.lat}
+                  lon={STATION.lon}
+                  name={STATION.name}
+                  mode={mode}
+                  accent={t.accent}
+                  nearby={STATION.nearby.map(s => ({
+                    ...s,
+                    distMi: haversineMi(STATION.lat, STATION.lon, s.lat, s.lon),
+                  }))}
+                />
+              </div>
+
+              {/* Nearby list */}
+              <div>
+                <div style={{ fontSize: 11, fontWeight: 700, color: t.textFaint, textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 10 }}>Nearby Stations</div>
+                <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
+                  {STATION.nearby
+                    .map(s => ({ ...s, distMi: haversineMi(STATION.lat, STATION.lon, s.lat, s.lon) }))
+                    .sort((a, b) => a.distMi - b.distMi)
+                    .map(s => (
+                      <a key={s.slug}
+                        href={`/tides/${STATION.state}/${s.slug}`}
+                        style={{
+                          display: 'flex', alignItems: 'center', gap: 10,
+                          padding: '8px 10px',
+                          borderRadius: 7,
+                          background: t.surfaceAlt,
+                          border: `1px solid ${t.border}`,
+                          textDecoration: 'none',
+                          transition: 'border-color 0.15s',
+                        }}>
+                        <span style={{
+                          fontSize: 10, fontWeight: 700, color: '#60a5fa',
+                          background: 'rgba(96,165,250,0.12)',
+                          padding: '2px 6px', borderRadius: 4,
+                          minWidth: 42, textAlign: 'center', flexShrink: 0,
+                        }}>
+                          {s.distMi.toFixed(1)} mi
+                        </span>
+                        <span style={{ fontSize: 12, color: t.text, lineHeight: 1.3 }}>{s.name}</span>
+                      </a>
+                    ))
+                  }
+                </div>
+              </div>
             </div>
           </>
         )}
@@ -2193,11 +2389,15 @@ function PabloCreekEntranceContent() {
         padding: '20px',
       }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 10 }}>
-          <div style={{ fontSize: 13, fontWeight: 600 }}>
-            Tide<span style={{ color: t.accent }}>Charts</span>Pro
-          </div>
+          <a href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
+            <img
+              src={mode === 'light' ? '/logo_light.webp' : mode === 'red' ? '/logo_red.webp' : '/logo.webp'}
+              alt="TideChartsPro"
+              style={{ height: 49, width: 120, objectFit: 'fill', display: 'block', borderRadius: 4 }}
+            />
+          </a>
           <div style={{ fontSize: 11, color: t.textFaint }}>
-            Station 8720218 · Predicted tides · Updated every 6 min
+            © 2026 TideChartsPro
           </div>
           <div style={{ display: 'flex', gap: 16, fontSize: 11, color: t.textFaint }}>
             <a href="/tides" style={{ color: t.textFaint, textDecoration: 'none' }}>Tides</a>
