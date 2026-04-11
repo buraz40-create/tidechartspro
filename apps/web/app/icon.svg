@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32">
+  <rect width="32" height="32" rx="7" fill="#0a0e1a"/>
+  <!-- Main wave -->
+  <path d="M2 15 Q5.5 10 9 15 Q12.5 20 16 15 Q19.5 10 23 15 Q26.5 20 30 15"
+        stroke="#38bdf8" stroke-width="2.8" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- Second wave -->
+  <path d="M2 21 Q5.5 16 9 21 Q12.5 26 16 21 Q19.5 16 23 21 Q26.5 26 30 21"
+        stroke="#38bdf8" stroke-width="1.8" fill="none" stroke-linecap="round" stroke-linejoin="round" opacity="0.45"/>
+</svg>
