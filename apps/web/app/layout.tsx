@@ -51,6 +51,14 @@ export default function RootLayout({
       <head>
         <meta name="viewport" content="width=device-width, initial-scale=1" />
         <meta name="google-site-verification" content="riEUbWlY7TBJfYqju0PWtKopx20MU6NlJCvJNBjIc1g" />
+        {/* PWA */}
+        <link rel="manifest" href="/manifest.json" />
+        <meta name="mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+        <meta name="apple-mobile-web-app-title" content="TideCharts" />
+        <meta name="theme-color" content="#0a0e1a" />
+        <link rel="apple-touch-icon" href="/favicon.png" />
         <script async src="https://www.googletagmanager.com/gtag/js?id=G-KJJQB4NW02" />
         <script dangerouslySetInnerHTML={{ __html: `
           window.dataLayer = window.dataLayer || [];

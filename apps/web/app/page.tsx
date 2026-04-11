@@ -218,17 +218,17 @@ export default function Home() {
       }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '0 20px', height: 80, display: 'flex', alignItems: 'center', justifyContent: 'space-between', gap: 16 }}>
           {/* Logo */}
-          <a href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none' }}>
+          <a href="/" style={{ display: 'flex', alignItems: 'center', textDecoration: 'none', flexShrink: 0 }}>
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={mode === 'light' ? '/logo_light.webp' : mode === 'red' ? '/logo_red.webp' : '/logo.webp'}
               alt="TideChartsPro"
-              style={{ height: 52, width: 'auto', display: 'block', borderRadius: 6 }}
+              style={{ height: 52, width: 'auto', maxWidth: 180, objectFit: 'contain', display: 'block', borderRadius: 6 }}
             />
           </a>
 
           {/* Mode buttons */}
-          <div style={{ display: 'flex', gap: 6 }}>
+          <div style={{ display: 'flex', gap: 6, flexShrink: 0 }}>
             {modeBtn('dark', 'Dark', '🌙')}
             {modeBtn('light', 'Light', '☀️')}
             {modeBtn('red', 'Night', '🔴')}

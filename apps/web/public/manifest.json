@@ -1,0 +1,35 @@
+{
+  "name": "TideChartsPro",
+  "short_name": "TideCharts",
+  "description": "Tide charts for fishing — live tides, solunar periods and fishing forecasts for 3,300+ US locations.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0a0e1a",
+  "theme_color": "#0a0e1a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "/favicon.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/favicon.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ],
+  "categories": ["sports", "weather", "navigation"],
+  "screenshots": [],
+  "shortcuts": [
+    {
+      "name": "Tide Charts",
+      "short_name": "Tides",
+      "description": "Browse tide charts by state",
+      "url": "/tides",
+      "icons": [{ "src": "/favicon.png", "sizes": "192x192" }]
+    }
+  ]
+}
