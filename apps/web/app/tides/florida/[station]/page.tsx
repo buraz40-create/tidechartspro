@@ -81,8 +81,9 @@ function buildJsonLd(slug: string) {
   const city = s.city.replace(/, FL$/, '')
   const url = `https://tidechartspro.com/tides/florida/${slug}`
 
-  const webPage = {
-    '@type': 'WebPage',
+  // FAQPage is a subtype of WebPage — merge into one object to avoid "Duplicate field" error
+  const faqPage = {
+    '@type': 'FAQPage',
     '@id': url,
     url,
     name: `${city} Tide Chart | Tides for Fishing`,
@@ -98,28 +99,6 @@ function buildJsonLd(slug: string) {
         { '@type': 'ListItem', position: 4, name: s.name,    item: url },
       ],
     },
-  }
-
-  const dataset = {
-    '@type': 'Dataset',
-    name: `${city} Tide Predictions`,
-    description: `Hourly tide predictions, high/low tide times, and fishing solunar data for ${s.city}.`,
-    url,
-    creator: { '@type': 'Organization', name: 'TideChartsPro', url: 'https://tidechartspro.com' },
-    spatialCoverage: {
-      '@type': 'Place',
-      name: s.city,
-      geo: { '@type': 'GeoCoordinates', latitude: s.lat, longitude: s.lon },
-    },
-    variableMeasured: [
-      { '@type': 'PropertyValue', name: 'Tide Height', unitText: 'feet' },
-      { '@type': 'PropertyValue', name: 'High Tide Time', unitText: 'hours' },
-      { '@type': 'PropertyValue', name: 'Low Tide Time', unitText: 'hours' },
-    ],
-  }
-
-  const faq = {
-    '@type': 'FAQPage',
     mainEntity: [
       {
         '@type': 'Question',
@@ -148,9 +127,27 @@ function buildJsonLd(slug: string) {
     ],
   }
 
+  const dataset = {
+    '@type': 'Dataset',
+    name: `${city} Tide Predictions`,
+    description: `Hourly tide predictions, high/low tide times, and fishing solunar data for ${s.city}.`,
+    url,
+    creator: { '@type': 'Organization', name: 'TideChartsPro', url: 'https://tidechartspro.com' },
+    spatialCoverage: {
+      '@type': 'Place',
+      name: s.city,
+      geo: { '@type': 'GeoCoordinates', latitude: s.lat, longitude: s.lon },
+    },
+    variableMeasured: [
+      { '@type': 'PropertyValue', name: 'Tide Height', unitText: 'feet' },
+      { '@type': 'PropertyValue', name: 'High Tide Time', unitText: 'hours' },
+      { '@type': 'PropertyValue', name: 'Low Tide Time', unitText: 'hours' },
+    ],
+  }
+
   return {
     '@context': 'https://schema.org',
-    '@graph': [webPage, dataset, faq],
+    '@graph': [faqPage, dataset],
   }
 }
 
