@@ -56,7 +56,7 @@ const THEMES: Record<Mode, Theme> = {
     canvasGrid: '#1e2d45',
     canvasWater: '#0ea5e9',
     canvasWaterFill: 'rgba(14,165,233,0.18)',
-    canvasDayBg: 'rgba(56,189,248,0.04)',
+    canvasDayBg: 'rgba(250,204,21,0.07)',
     canvasNightBg: 'rgba(15,23,42,0.7)',
     canvasSunLine: '#fbbf24',
     canvasNowLine: '#f43f5e',
@@ -220,6 +220,24 @@ function latlonToRadarMap(lat: number, lon: number, z = 7) {
   return { z, cx, cy, left, top }
 }
 
+// ─── Curve builder from hi/lo events (cosine interpolation) ──────────────────
+function buildCurveFromHilo(
+  pts: { hour: number; height: number }[],
+): number[] {
+  const sorted = [...pts].sort((a, b) => a.hour - b.hour)
+  if (sorted.length < 2) return new Array(289).fill(0)
+  return Array.from({ length: 289 }, (_, i) => {
+    const hour = (i / 288) * 24
+    const ni = sorted.findIndex(e => e.hour >= hour)
+    if (ni === -1) return sorted[sorted.length - 1].height  // after last event
+    if (ni === 0)  return sorted[0].height                  // before first event
+    if (ni >= sorted.length) return sorted[sorted.length - 1].height
+    const prev = sorted[ni - 1], next = sorted[ni]
+    const frac = (hour - prev.hour) / (next.hour - prev.hour)
+    return Math.max(0, (prev.height + next.height) / 2 - (next.height - prev.height) / 2 * Math.cos(frac * Math.PI))
+  })
+}
+
 // ─── Canvas Painters ──────────────────────────────────────────────────────────
 
 function drawTideChart(
@@ -241,11 +259,13 @@ function drawTideChart(
   const ctx = canvas.getContext('2d')!
   ctx.scale(dpr, dpr)
 
-  const PAD = { top: 52, right: 18, bottom: 36, left: 48 }
+  const PAD = { top: 80, right: 18, bottom: 52, left: 48 }
   const cw = W - PAD.left - PAD.right
   const ch = H - PAD.top  - PAD.bottom
 
-  const maxH   = 6.0
+  // Dynamic Y-axis: scale to actual tide range so pins never clip the top
+  const maxTide = events.length ? Math.max(...events.map(e => e.height)) : 6
+  const maxH    = Math.max(6, Math.ceil(maxTide / 0.65))
   const toX    = (hour: number) => PAD.left + (hour / 24) * cw
   const toY    = (ht: number)   => PAD.top  + ch - (ht / maxH) * ch
 
@@ -268,11 +288,13 @@ function drawTideChart(
     ((sunsetH - sunriseH) / 24) * cw, ch,
   )
 
-  // ── grid lines (height)
+  // ── grid lines (height) — step size adapts to dynamic maxH
+  const gridStep = maxH <= 8 ? 1 : maxH <= 14 ? 2 : 3
   ctx.strokeStyle = t.canvasGrid
   ctx.lineWidth   = 0.5
-  for (let h = 0; h <= 6; h++) {
+  for (let h = 0; h <= maxH; h += gridStep) {
     const y = toY(h)
+    if (y < PAD.top - 2) break
     ctx.beginPath()
     ctx.moveTo(PAD.left, y)
     ctx.lineTo(W - PAD.right, y)
@@ -387,40 +409,77 @@ function drawTideChart(
     const y  = toY(ev.height)
     const isHigh = ev.label === 'High'
     const pinColor = isHigh ? t.canvasHighPin : t.canvasLowPin
+    const r   = 22      // bubble radius
+    const gap = 8       // gap between curve and bottom of bubble
+    const ptW = 7       // half-width of teardrop point base
 
-    // stem
-    ctx.strokeStyle = pinColor
-    ctx.lineWidth   = 1.5
+    // Circle sits ABOVE the curve; clamp so it never clips the top padding
+    const cyIdeal = y - gap - r
+    const cy = Math.max(PAD.top + r + 2, cyIdeal)
+
+    // Teardrop triangle from curve point up to bubble bottom (drawn first, under the dot)
     ctx.beginPath()
     ctx.moveTo(x, y)
-    ctx.lineTo(x, isHigh ? y - 24 : y + 24)
-    ctx.stroke()
-
-    // circle
-    const cy = isHigh ? y - 30 : y + 30
-    ctx.beginPath()
-    ctx.arc(x, cy, 10, 0, Math.PI * 2)
-    ctx.fillStyle   = pinColor
+    ctx.lineTo(x - ptW, cy + r - 4)
+    ctx.lineTo(x + ptW, cy + r - 4)
+    ctx.closePath()
+    ctx.fillStyle = pinColor
     ctx.fill()
-    ctx.strokeStyle = t.canvasBg
+
+    // Bubble circle
+    ctx.beginPath()
+    ctx.arc(x, cy, r, 0, Math.PI * 2)
+    ctx.fillStyle = pinColor
+    ctx.fill()
+
+    // Dot ON the tide curve — drawn last so it sits visibly on the line
+    ctx.beginPath()
+    ctx.arc(x, y, 5, 0, Math.PI * 2)
+    ctx.fillStyle = pinColor
+    ctx.fill()
+    ctx.beginPath()
+    ctx.arc(x, y, 3, 0, Math.PI * 2)
+    ctx.strokeStyle = '#ffffff'
     ctx.lineWidth   = 1.5
     ctx.stroke()
-
-    // ▲ / ▼ symbol inside circle
-    ctx.fillStyle = t.canvasBg
-    ctx.font      = 'bold 9px system-ui'
-    ctx.textAlign = 'center'
-    ctx.fillText(isHigh ? '▲' : '▼', x, cy + 3)
-
-    // height — bold, outside circle
     ctx.fillStyle = pinColor
-    ctx.font      = 'bold 10px system-ui'
-    ctx.fillText(`${ev.height.toFixed(1)} ft`, x, isHigh ? cy - 14 : cy + 22)
+    ctx.fill()
 
-    // time — smaller, further out
-    ctx.fillStyle = t.canvasPinText
-    ctx.font      = '9px system-ui'
-    ctx.fillText(ev.time, x, isHigh ? cy - 25 : cy + 33)
+    // Height value inside bubble
+    ctx.fillStyle    = '#ffffff'
+    ctx.font         = 'bold 16px system-ui'
+    ctx.textAlign    = 'center'
+    ctx.textBaseline = 'middle'
+    ctx.fillText(`${ev.height.toFixed(1)}`, x, cy)
+    ctx.textBaseline = 'alphabetic'
+
+    // Time pill: above circle for High (if room), below curve point for Low
+    ctx.font = 'bold 10px system-ui'
+    const timeW = ctx.measureText(ev.time).width
+    const pillW = timeW + 12
+    const pillH = 16
+    const pillR = 4
+    const pillX = x - pillW / 2
+    // Pill always below the bubble — consistent for highs and lows
+    const pillY = cy + r + 5
+
+    ctx.fillStyle = pinColor
+    ctx.beginPath()
+    ctx.moveTo(pillX + pillR, pillY)
+    ctx.lineTo(pillX + pillW - pillR, pillY)
+    ctx.arcTo(pillX + pillW, pillY, pillX + pillW, pillY + pillH, pillR)
+    ctx.lineTo(pillX + pillW, pillY + pillH - pillR)
+    ctx.arcTo(pillX + pillW, pillY + pillH, pillX + pillW - pillR, pillY + pillH, pillR)
+    ctx.lineTo(pillX + pillR, pillY + pillH)
+    ctx.arcTo(pillX, pillY + pillH, pillX, pillY + pillH - pillR, pillR)
+    ctx.lineTo(pillX, pillY + pillR)
+    ctx.arcTo(pillX, pillY, pillX + pillR, pillY, pillR)
+    ctx.closePath()
+    ctx.fill()
+    ctx.fillStyle    = '#ffffff'
+    ctx.textBaseline = 'middle'
+    ctx.fillText(ev.time, x, pillY + pillH / 2)
+    ctx.textBaseline = 'alphabetic'
   })
 
   // ── Hover crosshair
@@ -868,6 +927,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
     const pad    = (n: number) => String(n).padStart(2, '0')
     const fmt    = (d: Date) => `${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`
     const today  = new Date()
+    const yest   = new Date(today); yest.setDate(today.getDate() - 1)
     const plus7  = new Date(today); plus7.setDate(today.getDate() + 7)
 
     // 6-min curve for today
@@ -886,8 +946,8 @@ export default function TideLocationPage({ station }: { station: StationConfig }
       })
       .catch(() => {})
 
-    // Hilo events for today + 7 days
-    fetch(`${BASE}?product=predictions&interval=hilo&begin_date=${fmt(today)}&end_date=${fmt(plus7)}${COMMON}`)
+    // Hilo events yesterday → +7 days (yesterday needed to anchor curve start-of-day)
+    fetch(`${BASE}?product=predictions&interval=hilo&begin_date=${fmt(yest)}&end_date=${fmt(plus7)}${COMMON}`)
       .then(r => r.json())
       .then((d: { predictions?: {t:string, v:string, type:string}[] }) => {
         const raw = d.predictions
@@ -915,9 +975,26 @@ export default function TideLocationPage({ station }: { station: StationConfig }
     return `${d.getFullYear()}-${p(d.getMonth()+1)}-${p(d.getDate())}`
   }
 
-  // Derived: live overrides harmonic, harmonic is always the fallback
+  // Derived: live 6-min → hilo-interpolated → harmonic fallback
   const selDateKey = dateKey(selectedDate)
-  const selCurve   = (isViewingToday && liveToday) ? liveToday : harmonicSelCurve
+
+  // Build interpolated curve from hilo events when 6-min data is unavailable
+  const hiloSelCurve = useMemo(() => {
+    const todayEvts = liveHilo?.get(selDateKey)
+    if (!todayEvts || todayEvts.length < 2) return null
+    const dPrev = new Date(selectedDate); dPrev.setDate(selectedDate.getDate() - 1)
+    const dNext = new Date(selectedDate); dNext.setDate(selectedDate.getDate() + 1)
+    const prevEvts = liveHilo?.get(dateKey(dPrev)) ?? []
+    const nextEvts = liveHilo?.get(dateKey(dNext)) ?? []
+    const all = [
+      ...prevEvts.map(e => ({ hour: e.hour - 24, height: e.height })),
+      ...todayEvts.map(e => ({ hour: e.hour, height: e.height })),
+      ...nextEvts.map(e => ({ hour: e.hour + 24, height: e.height })),
+    ]
+    return buildCurveFromHilo(all)
+  }, [liveHilo, selDateKey, selectedDate])
+
+  const selCurve   = (isViewingToday && liveToday) ? liveToday : (hiloSelCurve ?? harmonicSelCurve)
   const selEvents  = liveHilo?.get(selDateKey) ?? harmonicSelEvents
   const selForecast = useMemo(() => {
     if (!liveHilo) return selForecastBase
@@ -960,7 +1037,22 @@ export default function TideLocationPage({ station }: { station: StationConfig }
   const harmonicTodayEvents  = useMemo(() => tideEventsForDate(new Date()),  [])
   const todaySolunar = useMemo(() => solunarForDate(new Date()),     [])
   const harmonicTomorrowEvents = useMemo(() => { const d = new Date(); d.setDate(d.getDate() + 1); return tideEventsForDate(d) }, [])
-  const todayCurve     = liveToday ?? harmonicTodayCurve
+  const hiloTodayCurve = useMemo(() => {
+    const todayKey = dateKey(new Date())
+    const todayEvts = liveHilo?.get(todayKey)
+    if (!todayEvts || todayEvts.length < 2) return null
+    const dPrev = new Date(); dPrev.setDate(dPrev.getDate() - 1)
+    const dNext = new Date(); dNext.setDate(dNext.getDate() + 1)
+    const prevEvts = liveHilo?.get(dateKey(dPrev)) ?? []
+    const nextEvts = liveHilo?.get(dateKey(dNext)) ?? []
+    const all = [
+      ...prevEvts.map(e => ({ hour: e.hour - 24, height: e.height })),
+      ...todayEvts.map(e => ({ hour: e.hour, height: e.height })),
+      ...nextEvts.map(e => ({ hour: e.hour + 24, height: e.height })),
+    ]
+    return buildCurveFromHilo(all)
+  }, [liveHilo])
+  const todayCurve     = liveToday ?? hiloTodayCurve ?? harmonicTodayCurve
   const todayEvents    = liveHilo?.get(dateKey(new Date())) ?? harmonicTodayEvents
   const tomorrowEvents = (() => { const d = new Date(); d.setDate(d.getDate()+1); return liveHilo?.get(dateKey(d)) ?? harmonicTomorrowEvents })()
 
@@ -1057,66 +1149,91 @@ export default function TideLocationPage({ station }: { station: StationConfig }
   const [wxDaily,   setWxDaily]   = useState<WxDay[]>([])
   const [wxLoading, setWxLoading] = useState(true)
   const [wxError,   setWxError]   = useState(false)
+  const [wxRetry,   setWxRetry]   = useState(0)
 
   useEffect(() => {
-    const UA = { 'User-Agent': 'TideChartsPro/1.0 (tidechartspro.com)' }
-    fetch(`https://api.weather.gov/points/${station.lat},${station.lon}`, { headers: UA })
-      .then(r => r.json())
-      .then(meta => {
-        const { forecastHourly, forecast } = meta.properties
-        return Promise.all([
-          fetch(forecastHourly, { headers: UA }).then(r => r.json()),
-          fetch(forecast,       { headers: UA }).then(r => r.json()),
-        ])
-      })
-      .then(([hrData, dayData]) => {
-        // Start from current hour (keep any period that hasn't fully ended), take next 24
-        const nowMs = Date.now()
-        type RawPeriod = {
-          startTime: string; temperature: number; windSpeed: string; windDirection: string;
-          probabilityOfPrecipitation?: { value: number | null };
-          shortForecast: string
-        }
-        const hourly: WxHour[] = (hrData.properties.periods as RawPeriod[])
-          .filter(p => new Date(p.startTime).getTime() + 3600000 > nowMs)
-          .slice(0, 72)
-          .map(p => ({
-            time:      new Date(p.startTime).toLocaleTimeString('en-US', { hour: 'numeric' }),
-            hour:      new Date(p.startTime).getHours(),
-            temp:      p.temperature,
-            windSpeed: parseInt(p.windSpeed) || 0,
-            windDir:   p.windDirection,
-            precip:    p.probabilityOfPrecipitation?.value ?? 0,
-            condition: p.shortForecast,
-          }))
-        setWxHourly(hourly)
+    setWxLoading(true)
+    setWxError(false)
 
-        const periods: Array<{
-          isDaytime: boolean; startTime: string; temperature: number;
-          windSpeed: string; windDirection: string; shortForecast: string;
-          probabilityOfPrecipitation?: { value: number | null }
-        }> = dayData.properties.periods
-        const days: WxDay[] = []
-        for (let i = 0; i < periods.length && days.length < 7; i++) {
-          const p = periods[i]
-          if (p.isDaytime) {
-            const night = periods[i + 1]
-            days.push({
-              day:    new Date(p.startTime).toLocaleDateString('en-US', { weekday: 'short' }),
-              date:   new Date(p.startTime).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
-              high:   p.temperature,
-              low:    night ? night.temperature : null,
-              icon:   conditionEmoji(p.shortForecast),
-              wind:   `${p.windDirection} ${parseInt(p.windSpeed) || 0}`,
-              precip: p.probabilityOfPrecipitation?.value ?? 0,
-            })
-          }
+    const WX_CACHE_KEY = `noaa_wx_urls_${station.lat}_${station.lon}`
+
+    type RawPeriod = {
+      startTime: string; temperature: number; windSpeed: string; windDirection: string;
+      probabilityOfPrecipitation?: { value: number | null };
+      shortForecast: string
+    }
+
+    function parseAndSet([hrData, dayData]: [{ properties: { periods: RawPeriod[] } }, { properties: { periods: (RawPeriod & { isDaytime: boolean })[] } }]) {
+      const nowMs = Date.now()
+      const hourly: WxHour[] = hrData.properties.periods
+        .filter(p => new Date(p.startTime).getTime() + 3600000 > nowMs)
+        .slice(0, 72)
+        .map(p => ({
+          time:      new Date(p.startTime).toLocaleTimeString('en-US', { hour: 'numeric' }),
+          hour:      new Date(p.startTime).getHours(),
+          temp:      p.temperature,
+          windSpeed: parseInt(p.windSpeed) || 0,
+          windDir:   p.windDirection,
+          precip:    p.probabilityOfPrecipitation?.value ?? 0,
+          condition: p.shortForecast,
+        }))
+      setWxHourly(hourly)
+
+      const days: WxDay[] = []
+      for (let i = 0; i < dayData.properties.periods.length && days.length < 7; i++) {
+        const p = dayData.properties.periods[i]
+        if (p.isDaytime) {
+          const night = dayData.properties.periods[i + 1]
+          days.push({
+            day:    new Date(p.startTime).toLocaleDateString('en-US', { weekday: 'short' }),
+            date:   new Date(p.startTime).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+            high:   p.temperature,
+            low:    night ? night.temperature : null,
+            icon:   conditionEmoji(p.shortForecast),
+            wind:   `${p.windDirection} ${parseInt(p.windSpeed) || 0}`,
+            precip: p.probabilityOfPrecipitation?.value ?? 0,
+          })
         }
-        setWxDaily(days)
-        setWxLoading(false)
-      })
-      .catch(() => { setWxError(true); setWxLoading(false) })
-  }, [])
+      }
+      setWxDaily(days)
+      setWxLoading(false)
+    }
+
+    function fetchFromUrls(hourlyUrl: string, forecastUrl: string): Promise<void> {
+      return Promise.all([
+        fetch(hourlyUrl).then(r => { if (!r.ok) throw new Error(String(r.status)); return r.json() }),
+        fetch(forecastUrl).then(r => { if (!r.ok) throw new Error(String(r.status)); return r.json() }),
+      ]).then(parseAndSet)
+    }
+
+    function fetchFromPoints(): Promise<void> {
+      return fetch(`https://api.weather.gov/points/${station.lat},${station.lon}`)
+        .then(r => { if (!r.ok) throw new Error(String(r.status)); return r.json() })
+        .then(meta => {
+          const { forecastHourly, forecast } = meta.properties
+          try { localStorage.setItem(WX_CACHE_KEY, JSON.stringify({ h: forecastHourly, f: forecast })) } catch {}
+          return fetchFromUrls(forecastHourly, forecast)
+        })
+    }
+
+    // Try cached gridpoint URLs first — skip the flaky /points/ lookup
+    let started = false
+    try {
+      const raw = localStorage.getItem(WX_CACHE_KEY)
+      if (raw) {
+        const { h, f } = JSON.parse(raw)
+        if (h && f) {
+          started = true
+          fetchFromUrls(h, f).catch(() => fetchFromPoints().catch(() => { setWxError(true); setWxLoading(false) }))
+        }
+      }
+    } catch {}
+
+    if (!started) {
+      fetchFromPoints().catch(() => { setWxError(true); setWxLoading(false) })
+    }
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [wxRetry])
 
   // ── Live water temp (NOAA CO-OPS station 8720503) ──
   const [waterTemp, setWaterTemp] = useState<string | null>(null)
@@ -1623,7 +1740,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
                 ref={tideRef}
                 onMouseMove={handleTideMouseMove}
                 onMouseLeave={handleTideMouseLeave}
-                style={{ width: '100%', height: 220, display: 'block', borderRadius: 6, cursor: 'crosshair' }}
+                style={{ width: '100%', height: 340, display: 'block', borderRadius: 6, cursor: 'crosshair' }}
               />
               {tooltip && (
                 <div style={{
@@ -1693,7 +1810,14 @@ export default function TideLocationPage({ station }: { station: StationConfig }
 
             {/* ── Hourly tab ── */}
             {wxTab === 'hourly' && wxLoading && <div style={{ color: t.textFaint, fontSize: 12, padding: '20px 0', textAlign: 'center' }}>Loading weather data…</div>}
-            {wxTab === 'hourly' && wxError   && <div style={{ color: t.textFaint, fontSize: 12, padding: '20px 0', textAlign: 'center' }}>Weather data unavailable</div>}
+            {wxTab === 'hourly' && wxError   && (
+              <div style={{ textAlign: 'center', padding: '24px 0' }}>
+                <div style={{ color: t.textFaint, fontSize: 12, marginBottom: 10 }}>Weather data unavailable</div>
+                <button onClick={() => { try { localStorage.removeItem(`noaa_wx_urls_${station.lat}_${station.lon}`) } catch {} setWxRetry(n => n + 1) }} style={{ padding: '6px 18px', fontSize: 12, fontWeight: 600, borderRadius: 6, border: `1px solid ${t.accent}`, background: t.accentFaint, color: t.accent, cursor: 'pointer', fontFamily: 'inherit' }}>
+                  Retry
+                </button>
+              </div>
+            )}
             {wxTab === 'hourly' && !wxLoading && !wxError && (
               <div>
                 {isMobile ? (

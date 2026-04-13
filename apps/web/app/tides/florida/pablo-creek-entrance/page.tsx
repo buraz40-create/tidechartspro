@@ -1086,66 +1086,90 @@ function PabloCreekEntranceContent() {
   const [wxDaily,   setWxDaily]   = useState<WxDay[]>([])
   const [wxLoading, setWxLoading] = useState(true)
   const [wxError,   setWxError]   = useState(false)
+  const [wxRetry,   setWxRetry]   = useState(0)
 
   useEffect(() => {
-    const UA = { 'User-Agent': 'TideChartsPro/1.0 (tidechartspro.com)' }
-    fetch(`https://api.weather.gov/points/${STATION.lat},${STATION.lon}`, { headers: UA })
-      .then(r => r.json())
-      .then(meta => {
-        const { forecastHourly, forecast } = meta.properties
-        return Promise.all([
-          fetch(forecastHourly, { headers: UA }).then(r => r.json()),
-          fetch(forecast,       { headers: UA }).then(r => r.json()),
-        ])
-      })
-      .then(([hrData, dayData]) => {
-        // Start from current hour (keep any period that hasn't fully ended), take next 24
-        const nowMs = Date.now()
-        type RawPeriod = {
-          startTime: string; temperature: number; windSpeed: string; windDirection: string;
-          probabilityOfPrecipitation?: { value: number | null };
-          shortForecast: string
-        }
-        const hourly: WxHour[] = (hrData.properties.periods as RawPeriod[])
-          .filter(p => new Date(p.startTime).getTime() + 3600000 > nowMs)
-          .slice(0, 72)
-          .map(p => ({
-            time:      new Date(p.startTime).toLocaleTimeString('en-US', { hour: 'numeric' }),
-            hour:      new Date(p.startTime).getHours(),
-            temp:      p.temperature,
-            windSpeed: parseInt(p.windSpeed) || 0,
-            windDir:   p.windDirection,
-            precip:    p.probabilityOfPrecipitation?.value ?? 0,
-            condition: p.shortForecast,
-          }))
-        setWxHourly(hourly)
+    setWxLoading(true)
+    setWxError(false)
 
-        const periods: Array<{
-          isDaytime: boolean; startTime: string; temperature: number;
-          windSpeed: string; windDirection: string; shortForecast: string;
-          probabilityOfPrecipitation?: { value: number | null }
-        }> = dayData.properties.periods
-        const days: WxDay[] = []
-        for (let i = 0; i < periods.length && days.length < 7; i++) {
-          const p = periods[i]
-          if (p.isDaytime) {
-            const night = periods[i + 1]
-            days.push({
-              day:    new Date(p.startTime).toLocaleDateString('en-US', { weekday: 'short' }),
-              date:   new Date(p.startTime).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
-              high:   p.temperature,
-              low:    night ? night.temperature : null,
-              icon:   conditionEmoji(p.shortForecast),
-              wind:   `${p.windDirection} ${parseInt(p.windSpeed) || 0}`,
-              precip: p.probabilityOfPrecipitation?.value ?? 0,
-            })
-          }
+    const WX_CACHE_KEY = `noaa_wx_urls_${STATION.lat}_${STATION.lon}`
+
+    type RawPeriod = {
+      startTime: string; temperature: number; windSpeed: string; windDirection: string;
+      probabilityOfPrecipitation?: { value: number | null };
+      shortForecast: string
+    }
+
+    function parseAndSet([hrData, dayData]: [{ properties: { periods: RawPeriod[] } }, { properties: { periods: (RawPeriod & { isDaytime: boolean })[] } }]) {
+      const nowMs = Date.now()
+      const hourly: WxHour[] = hrData.properties.periods
+        .filter(p => new Date(p.startTime).getTime() + 3600000 > nowMs)
+        .slice(0, 72)
+        .map(p => ({
+          time:      new Date(p.startTime).toLocaleTimeString('en-US', { hour: 'numeric' }),
+          hour:      new Date(p.startTime).getHours(),
+          temp:      p.temperature,
+          windSpeed: parseInt(p.windSpeed) || 0,
+          windDir:   p.windDirection,
+          precip:    p.probabilityOfPrecipitation?.value ?? 0,
+          condition: p.shortForecast,
+        }))
+      setWxHourly(hourly)
+
+      const days: WxDay[] = []
+      for (let i = 0; i < dayData.properties.periods.length && days.length < 7; i++) {
+        const p = dayData.properties.periods[i]
+        if (p.isDaytime) {
+          const night = dayData.properties.periods[i + 1]
+          days.push({
+            day:    new Date(p.startTime).toLocaleDateString('en-US', { weekday: 'short' }),
+            date:   new Date(p.startTime).toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
+            high:   p.temperature,
+            low:    night ? night.temperature : null,
+            icon:   conditionEmoji(p.shortForecast),
+            wind:   `${p.windDirection} ${parseInt(p.windSpeed) || 0}`,
+            precip: p.probabilityOfPrecipitation?.value ?? 0,
+          })
         }
-        setWxDaily(days)
-        setWxLoading(false)
-      })
-      .catch(() => { setWxError(true); setWxLoading(false) })
-  }, [])
+      }
+      setWxDaily(days)
+      setWxLoading(false)
+    }
+
+    function fetchFromUrls(hourlyUrl: string, forecastUrl: string): Promise<void> {
+      return Promise.all([
+        fetch(hourlyUrl).then(r => { if (!r.ok) throw new Error(String(r.status)); return r.json() }),
+        fetch(forecastUrl).then(r => { if (!r.ok) throw new Error(String(r.status)); return r.json() }),
+      ]).then(parseAndSet)
+    }
+
+    function fetchFromPoints(): Promise<void> {
+      return fetch(`https://api.weather.gov/points/${STATION.lat},${STATION.lon}`)
+        .then(r => { if (!r.ok) throw new Error(String(r.status)); return r.json() })
+        .then(meta => {
+          const { forecastHourly, forecast } = meta.properties
+          try { localStorage.setItem(WX_CACHE_KEY, JSON.stringify({ h: forecastHourly, f: forecast })) } catch {}
+          return fetchFromUrls(forecastHourly, forecast)
+        })
+    }
+
+    // Try cached gridpoint URLs first — skip the flaky /points/ lookup
+    let started = false
+    try {
+      const raw = localStorage.getItem(WX_CACHE_KEY)
+      if (raw) {
+        const { h, f } = JSON.parse(raw)
+        if (h && f) {
+          started = true
+          fetchFromUrls(h, f).catch(() => fetchFromPoints().catch(() => { setWxError(true); setWxLoading(false) }))
+        }
+      }
+    } catch {}
+
+    if (!started) {
+      fetchFromPoints().catch(() => { setWxError(true); setWxLoading(false) })
+    }
+  }, [wxRetry])
 
   // ── Live water temp (NOAA CO-OPS station 8720503) ──
   const [waterTemp, setWaterTemp] = useState<string | null>(null)
@@ -1722,7 +1746,14 @@ function PabloCreekEntranceContent() {
 
             {/* ── Hourly tab ── */}
             {wxTab === 'hourly' && wxLoading && <div style={{ color: t.textFaint, fontSize: 12, padding: '20px 0', textAlign: 'center' }}>Loading weather data…</div>}
-            {wxTab === 'hourly' && wxError   && <div style={{ color: t.textFaint, fontSize: 12, padding: '20px 0', textAlign: 'center' }}>Weather data unavailable</div>}
+            {wxTab === 'hourly' && wxError   && (
+              <div style={{ textAlign: 'center', padding: '24px 0' }}>
+                <div style={{ color: t.textFaint, fontSize: 12, marginBottom: 10 }}>Weather data unavailable</div>
+                <button onClick={() => { try { localStorage.removeItem(`noaa_wx_urls_${STATION.lat}_${STATION.lon}`) } catch {} setWxRetry(n => n + 1) }} style={{ padding: '6px 18px', fontSize: 12, fontWeight: 600, borderRadius: 6, border: `1px solid ${t.accent}`, background: t.accentFaint, color: t.accent, cursor: 'pointer', fontFamily: 'inherit' }}>
+                  Retry
+                </button>
+              </div>
+            )}
             {wxTab === 'hourly' && !wxLoading && !wxError && (
               <div>
                 {isMobile ? (
