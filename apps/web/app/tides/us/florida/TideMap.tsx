@@ -18,9 +18,10 @@ interface TideMapProps {
   nearby: NearbyStation[]
   accent: string
   mode: 'dark' | 'light' | 'red'
+  stateSlug: string
 }
 
-export default function TideMap({ lat, lon, name, nearby, accent, mode }: TideMapProps) {
+export default function TideMap({ lat, lon, name, nearby, accent, mode, stateSlug }: TideMapProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   // eslint-disable-next-line @typescript-eslint/no-explicit-any
   const mapRef = useRef<any>(null)
@@ -72,10 +73,11 @@ export default function TideMap({ lat, lon, name, nearby, accent, mode }: TideMa
           iconAnchor: [5, 5],
           popupAnchor:[0, -8],
         })
-        const dist = s.distMi != null ? `<br><span style="color:#666">${s.distMi.toFixed(1)} mi away</span>` : ''
+        const dist = s.distMi != null ? `<br><span style="color:#888;font-weight:400">${s.distMi.toFixed(1)} mi away</span>` : ''
+        const url = `/tides/us/${stateSlug}/${s.slug}`
         L.marker([s.lat, s.lon], { icon: nearbyIcon })
           .addTo(map)
-          .bindPopup(`<div style="font-family:system-ui;font-size:12px;font-weight:700;line-height:1.4">${s.name}${dist}</div>`)
+          .bindPopup(`<div style="font-family:system-ui;font-size:12px;line-height:1.5;min-width:140px"><div style="font-weight:700;margin-bottom:4px">${s.name}</div><div style="color:#888;font-size:11px;margin-bottom:8px">${dist ? dist.replace('<br>', '') : ''}</div><a href="${url}" style="display:block;background:#3b82f6;color:#fff;text-decoration:none;text-align:center;padding:5px 10px;border-radius:5px;font-size:11px;font-weight:700">View Tides &rarr;</a></div>`)
       })
 
       mapRef.current = map

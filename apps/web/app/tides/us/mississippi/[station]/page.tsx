@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { getStationBySlug, getAllSlugs } from '@/lib/mississippi-stations'
-import TideLocationPage from '@/app/tides/florida/TideLocationPage'
+import { getStationBySlug, getAllSlugs, MISSISSIPPI_STATIONS } from '@/lib/mississippi-stations'
+import { computeNearby } from '@/lib/nearby-utils'
+import TideLocationPage from '@/app/tides/us/florida/TideLocationPage'
 
 interface Props {
   params: Promise<{ station: string }>
@@ -25,7 +26,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     `and hourly fishing forecast. ${city} tide level chart updated every 6 minutes. ` +
     `Best fishing tides for ${city} today.`
 
-  const url = `https://tidechartspro.com/tides/mississippi/${slug}`
+  const url = `https://tidechartspro.com/tides/us/mississippi/${slug}`
   const ogImage = `https://tidechartspro.com/og/tides/mississippi/${slug}.png`
 
   return {
@@ -64,7 +65,7 @@ function buildJsonLd(slug: string) {
   const s = getStationBySlug(slug)
   if (!s) return null
   const city = s.city.replace(/, MS$/, '')
-  const url = `https://tidechartspro.com/tides/mississippi/${slug}`
+  const url = `https://tidechartspro.com/tides/us/mississippi/${slug}`
   return {
     '@context': 'https://schema.org',
     '@graph': [
@@ -79,7 +80,7 @@ function buildJsonLd(slug: string) {
           itemListElement: [
             { '@type': 'ListItem', position: 1, name: 'Home',        item: 'https://tidechartspro.com' },
             { '@type': 'ListItem', position: 2, name: 'Tides',       item: 'https://tidechartspro.com/tides' },
-            { '@type': 'ListItem', position: 3, name: 'Mississippi', item: 'https://tidechartspro.com/tides/mississippi' },
+            { '@type': 'ListItem', position: 3, name: 'Mississippi', item: 'https://tidechartspro.com/tides/us/mississippi' },
             { '@type': 'ListItem', position: 4, name: s.name,        item: url },
           ],
         },
@@ -132,7 +133,7 @@ export default async function StationPage({ params }: Props) {
   return (
     <>
       {jsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />}
-      <TideLocationPage station={station} />
+      <TideLocationPage station={{ ...station!, nearby: computeNearby(station!, MISSISSIPPI_STATIONS) }} />
     </>
   )
 }

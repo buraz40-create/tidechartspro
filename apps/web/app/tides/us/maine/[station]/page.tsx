@@ -1,7 +1,8 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { getStationBySlug, getAllSlugs } from '@/lib/maine-stations'
-import TideLocationPage from '@/app/tides/florida/TideLocationPage'
+import { getStationBySlug, getAllSlugs, MAINE_STATIONS } from '@/lib/maine-stations'
+import { computeNearby } from '@/lib/nearby-utils'
+import TideLocationPage from '@/app/tides/us/florida/TideLocationPage'
 
 interface Props { params: Promise<{ station: string }> }
 
@@ -16,7 +17,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const city = s.city.replace(/, ME$/, '')
   const title = `${city} Tide Chart | Tides for Fishing | TideChartsPro`
   const description = `${s.city} tide chart with live tide levels, tides for fishing, solunar periods and hourly fishing forecast. ${city} tide level chart updated every 6 minutes. Best fishing tides for ${city} today.`
-  const url = `https://tidechartspro.com/tides/maine/${slug}`
+  const url = `https://tidechartspro.com/tides/us/maine/${slug}`
   return {
     title, description,
     keywords: [`${city.toLowerCase()} tide chart`, `${city.toLowerCase()} tides for fishing`, `${city.toLowerCase()} fishing tides`, 'maine tide chart', 'tides for fishing'],
@@ -31,7 +32,7 @@ function buildJsonLd(slug: string) {
   const s = getStationBySlug(slug)
   if (!s) return null
   const city = s.city.replace(/, ME$/, '')
-  const url = `https://tidechartspro.com/tides/maine/${slug}`
+  const url = `https://tidechartspro.com/tides/us/maine/${slug}`
   return {
     '@context': 'https://schema.org',
     '@graph': [
@@ -42,7 +43,7 @@ function buildJsonLd(slug: string) {
         breadcrumb: { '@type': 'BreadcrumbList', itemListElement: [
           { '@type': 'ListItem', position: 1, name: 'Home',             item: 'https://tidechartspro.com' },
           { '@type': 'ListItem', position: 2, name: 'Tides',            item: 'https://tidechartspro.com/tides' },
-          { '@type': 'ListItem', position: 3, name: 'Maine', item: 'https://tidechartspro.com/tides/maine' },
+          { '@type': 'ListItem', position: 3, name: 'Maine', item: 'https://tidechartspro.com/tides/us/maine' },
           { '@type': 'ListItem', position: 4, name: s.name,             item: url },
         ]},
       },
@@ -72,7 +73,7 @@ export default async function StationPage({ params }: Props) {
   return (
     <>
       {jsonLd && <script type="application/ld+json" dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }} />}
-      <TideLocationPage station={station} />
+      <TideLocationPage station={{ ...station!, nearby: computeNearby(station!, MAINE_STATIONS) }} />
     </>
   )
 }

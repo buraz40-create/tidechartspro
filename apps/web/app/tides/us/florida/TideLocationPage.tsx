@@ -265,7 +265,7 @@ function drawTideChart(
 
   // Dynamic Y-axis: scale to actual tide range so pins never clip the top
   const maxTide = events.length ? Math.max(...events.map(e => e.height)) : 6
-  const maxH    = Math.max(6, Math.ceil(maxTide / 0.65))
+  const maxH    = Math.max(Math.ceil(maxTide + 0.5), Math.ceil(maxTide / 0.65))
   const toX    = (hour: number) => PAD.left + (hour / 24) * cw
   const toY    = (ht: number)   => PAD.top  + ch - (ht / maxH) * ch
 
@@ -413,18 +413,20 @@ function drawTideChart(
     const gap = 8       // gap between curve and bottom of bubble
     const ptW = 7       // half-width of teardrop point base
 
-    // Circle sits ABOVE the curve; clamp so it never clips the top padding
-    const cyIdeal = y - gap - r
-    const cy = Math.max(PAD.top + r + 2, cyIdeal)
+    // HIGH: bubble floats above the peak; LOW: bubble centers on the curve point
+    const cyIdeal = isHigh ? y - gap - r : y
+    const cy = isHigh ? Math.max(PAD.top + r + 2, cyIdeal) : cyIdeal
 
-    // Teardrop triangle from curve point up to bubble bottom (drawn first, under the dot)
-    ctx.beginPath()
-    ctx.moveTo(x, y)
-    ctx.lineTo(x - ptW, cy + r - 4)
-    ctx.lineTo(x + ptW, cy + r - 4)
-    ctx.closePath()
-    ctx.fillStyle = pinColor
-    ctx.fill()
+    // Teardrop triangle — only for high tide pins (low pins sit on the curve directly)
+    if (isHigh) {
+      ctx.beginPath()
+      ctx.moveTo(x, y)
+      ctx.lineTo(x - ptW, cy + r - 4)
+      ctx.lineTo(x + ptW, cy + r - 4)
+      ctx.closePath()
+      ctx.fillStyle = pinColor
+      ctx.fill()
+    }
 
     // Bubble circle
     ctx.beginPath()
@@ -887,10 +889,10 @@ export default function TideLocationPage({ station }: { station: StationConfig }
     setSelectedDate(d)
     const today = new Date()
     if (d.toDateString() === today.toDateString()) {
-      window.history.pushState(null, '', `/tides/${station.state}/${station.slug}`)
+      window.history.pushState(null, '', `/tides/us/${station.state}/${station.slug}`)
     } else {
       const iso = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`
-      window.history.pushState(null, '', `/tides/${station.state}/${station.slug}?date=${iso}`)
+      window.history.pushState(null, '', `/tides/us/${station.state}/${station.slug}?date=${iso}`)
     }
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [])
@@ -1455,7 +1457,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
         <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', flexWrap: 'wrap', gap: 8, marginBottom: 8, flexDirection: isMobile ? 'row' : 'row' }}>
           <div>
             <div style={{ fontSize: 11, color: t.textFaint, marginBottom: 4 }}>
-              <a href="/tides/florida" style={{ color: t.textFaint, textDecoration: 'none' }}>Florida</a>
+              <a href="/tides/us/florida" style={{ color: t.textFaint, textDecoration: 'none' }}>Florida</a>
               <span style={{ margin: '0 6px' }}>/</span>
               <span style={{ color: t.textMuted }}>{station.name}</span>
             </div>
@@ -2436,6 +2438,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
                   name={station.name}
                   mode={mode}
                   accent={t.accent}
+                  stateSlug={station.state}
                   nearby={station.nearby.map(s => ({
                     ...s,
                     distMi: haversineMi(station.lat, station.lon, s.lat, s.lon),
@@ -2452,7 +2455,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
                     .sort((a, b) => a.distMi - b.distMi)
                     .map(s => (
                       <a key={s.slug}
-                        href={`/tides/${station.state}/${s.slug}`}
+                        href={`/tides/us/${station.state}/${s.slug}`}
                         style={{
                           display: 'flex', alignItems: 'center', gap: 10,
                           padding: '8px 10px',
@@ -2532,7 +2535,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
                   {station.nearby.map(s => (
                     <a
                       key={s.slug}
-                      href={`/tides/${station.state}/${s.slug}`}
+                      href={`/tides/us/${station.state}/${s.slug}`}
                       style={{
                         fontSize: 13, color: t.accent, textDecoration: 'none',
                         background: t.surfaceAlt, border: `1px solid ${t.border}`,

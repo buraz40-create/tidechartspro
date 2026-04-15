@@ -1,6 +1,7 @@
 import type { Metadata } from 'next'
 import { notFound } from 'next/navigation'
-import { getStationBySlug, getAllSlugs } from '@/lib/florida-stations'
+import { getStationBySlug, getAllSlugs, FLORIDA_STATIONS } from '@/lib/florida-stations'
+import { computeNearby } from '@/lib/nearby-utils'
 import TideLocationPage from '../TideLocationPage'
 
 interface Props {
@@ -28,7 +29,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
     `and hourly fishing forecast. ${city} tide level chart updated every 6 minutes. ` +
     `Best fishing tides for ${city} today.`
 
-  const url = `https://tidechartspro.com/tides/florida/${slug}`
+  const url = `https://tidechartspro.com/tides/us/florida/${slug}`
   const ogImage = `https://tidechartspro.com/og/tides/florida/${slug}.png`
 
   return {
@@ -79,7 +80,7 @@ function buildJsonLd(slug: string) {
   if (!s) return null
 
   const city = s.city.replace(/, FL$/, '')
-  const url = `https://tidechartspro.com/tides/florida/${slug}`
+  const url = `https://tidechartspro.com/tides/us/florida/${slug}`
 
   // FAQPage is a subtype of WebPage — merge into one object to avoid "Duplicate field" error
   const faqPage = {
@@ -95,7 +96,7 @@ function buildJsonLd(slug: string) {
       itemListElement: [
         { '@type': 'ListItem', position: 1, name: 'Home',    item: 'https://tidechartspro.com' },
         { '@type': 'ListItem', position: 2, name: 'Tides',   item: 'https://tidechartspro.com/tides' },
-        { '@type': 'ListItem', position: 3, name: 'Florida', item: 'https://tidechartspro.com/tides/florida' },
+        { '@type': 'ListItem', position: 3, name: 'Florida', item: 'https://tidechartspro.com/tides/us/florida' },
         { '@type': 'ListItem', position: 4, name: s.name,    item: url },
       ],
     },
@@ -167,7 +168,7 @@ export default async function StationPage({ params }: Props) {
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
         />
       )}
-      <TideLocationPage station={station} />
+      <TideLocationPage station={{ ...station!, nearby: computeNearby(station!, FLORIDA_STATIONS) }} />
     </>
   )
 }
