@@ -18,6 +18,7 @@ import {
 import { grade, type Colors } from '../lib/theme'
 import { useTheme } from '../lib/ThemeContext'
 import { useStation } from '../lib/StationContext'
+import { STATIONS } from '../data/stations'
 
 const W = Dimensions.get('window').width
 
@@ -66,6 +67,15 @@ function buildCurveFromHilo(events: TideExtreme[], startMs: number, endMs: numbe
 }
 
 
+function haversineMi(lat1: number, lon1: number, lat2: number, lon2: number): number {
+  const R = 3958.8
+  const dLat = (lat2 - lat1) * Math.PI / 180
+  const dLon = (lon2 - lon1) * Math.PI / 180
+  const a = Math.sin(dLat / 2) ** 2
+    + Math.cos(lat1 * Math.PI / 180) * Math.cos(lat2 * Math.PI / 180) * Math.sin(dLon / 2) ** 2
+  return R * 2 * Math.atan2(Math.sqrt(a), Math.sqrt(1 - a))
+}
+
 function windDirDeg(dir: string): number {
   const map: Record<string, number> = {
     N:0, NNE:22, NE:45, ENE:67, E:90, ESE:112, SE:135, SSE:157,
@@ -86,18 +96,7 @@ function conditionEmoji(s: string): string {
   return '☀️'
 }
 
-const NEARBY_STATIONS: Array<{ dist: string; station: StationType }> = [
-  { dist: '0.1 mi',  station: { name: 'Mayport (Ferry Dock)',       city: 'Mayport, FL',            noaaId: '8720218', waterTempId: '8720218', lat: 30.3990, lon: -81.4320, meanRange: 4.8, species: ['Redfish','Flounder','Speckled Trout','Bluefish'] } },
-  { dist: '1.1 mi',  station: { name: 'Mayport Naval Station',      city: 'Mayport, FL',            noaaId: '8720218', waterTempId: '8720218', lat: 30.3930, lon: -81.4220, meanRange: 4.8, species: ['Redfish','Flounder','Sheepshead','Jack Crevalle'] } },
-  { dist: '2.0 mi',  station: { name: 'Sisters Creek',              city: 'Jacksonville, FL',       noaaId: '8720232', waterTempId: '8720503', lat: 30.4140, lon: -81.4340, meanRange: 4.6, species: ['Redfish','Flounder','Speckled Trout','Sheepshead'] } },
-  { dist: '4.7 mi',  station: { name: 'Atlantic Beach',             city: 'Atlantic Beach, FL',     noaaId: '8720218', waterTempId: '8720218', lat: 30.3349, lon: -81.3994, meanRange: 4.7, species: ['Pompano','Redfish','Whiting','Bluefish'] } },
-  { dist: '5.3 mi',  station: { name: 'Fort George River',          city: 'Fort George, FL',        noaaId: '8720218', waterTempId: '8720503', lat: 30.4520, lon: -81.4190, meanRange: 4.6, species: ['Redfish','Flounder','Black Drum','Sheepshead'] } },
-  { dist: '8.2 mi',  station: { name: 'Jacksonville Beach',         city: 'Jacksonville Beach, FL', noaaId: '8720291', waterTempId: '8720291', lat: 30.2919, lon: -81.3956, meanRange: 4.6, species: ['Pompano','Redfish','Whiting','Spanish Mackerel'] } },
-  { dist: '9.5 mi',  station: { name: 'Neptune Beach',              city: 'Neptune Beach, FL',      noaaId: '8720291', waterTempId: '8720291', lat: 30.3106, lon: -81.3964, meanRange: 4.6, species: ['Pompano','Flounder','Bluefish','Whiting'] } },
-  { dist: '11.3 mi', station: { name: 'Ponte Vedra Beach',          city: 'Ponte Vedra, FL',        noaaId: '8720291', waterTempId: '8720291', lat: 30.2390, lon: -81.3840, meanRange: 4.5, species: ['Redfish','Speckled Trout','Pompano','Spanish Mackerel'] } },
-  { dist: '14.8 mi', station: { name: 'Talbot Island State Park',   city: 'Talbot Island, FL',      noaaId: '8720030', waterTempId: '8720030', lat: 30.4840, lon: -81.4070, meanRange: 5.0, species: ['Redfish','Flounder','Black Drum','Sheepshead'] } },
-  { dist: '22.5 mi', station: { name: 'Fernandina Beach',           city: 'Fernandina Beach, FL',   noaaId: '8720030', waterTempId: '8720030', lat: 30.6680, lon: -81.4630, meanRange: 5.2, species: ['Redfish','Flounder','Sheepshead','Black Drum','Whiting'] } },
-]
+// Nearby stations computed dynamically per station — see nearbyStations useMemo below
 
 interface WxHour {
   time: string; hour: number; temp: number
@@ -142,7 +141,7 @@ const SPECIES_DATA = [
   },
 ]
 
-function buildMapHtml(station: StationType, nearby: typeof NEARBY_STATIONS): string {
+function buildMapHtml(station: StationType, nearby: Array<{ dist: string; station: StationType }>): string {
   const nearbyJs = nearby.map(e => {
     const payload = JSON.stringify({ name: e.station.name, noaaId: e.station.noaaId, waterTempId: e.station.waterTempId, lat: e.station.lat, lon: e.station.lon, city: e.station.city, meanRange: e.station.meanRange, species: e.station.species })
     const escapedPayload = JSON.stringify(payload).replace(/'/g, "\\'")
@@ -196,6 +195,22 @@ export default function TidesScreen() {
   const { station: contextStation } = useStation()
   const [stationOverride, setStationOverride] = useState<StationType | null>(null)
   const STATION = stationOverride ?? contextStation ?? DEFAULT_STATION
+
+  // Compute 10 nearest stations from all STATIONS data
+  const nearbyStations = useMemo((): Array<{ dist: string; station: StationType }> => {
+    const allStations: Array<{ id: string; name: string; lat: number; lon: number }> = []
+    Object.values(STATIONS).forEach(arr => arr.forEach(s => allStations.push(s)))
+    return allStations
+      .filter(s => s.id !== STATION.noaaId)
+      .map(s => ({ s, mi: haversineMi(STATION.lat, STATION.lon, s.lat, s.lon) }))
+      .sort((a, b) => a.mi - b.mi)
+      .slice(0, 10)
+      .map(({ s, mi }) => ({
+        dist: mi < 1 ? `${(mi * 5280).toFixed(0)} ft` : `${mi.toFixed(1)} mi`,
+        station: { name: s.name, city: s.name, noaaId: s.id, waterTempId: s.id, lat: s.lat, lon: s.lon, meanRange: 0, species: [] },
+      }))
+  }, [STATION.noaaId, STATION.lat, STATION.lon])
+
   const [now, setNow] = useState(Date.now())
   const [wxHourly,   setWxHourly]   = useState<WxHour[]>([])
   const [wxLoading,  setWxLoading]  = useState(true)
@@ -838,10 +853,11 @@ export default function TidesScreen() {
           {/* Live Leaflet map */}
           <View style={s.mapWrap}>
             <WebView
+              key={STATION.noaaId}
               style={s.mapWebView}
               originWhitelist={['*']}
               javaScriptEnabled
-              source={{ html: buildMapHtml(STATION, NEARBY_STATIONS) }}
+              source={{ html: buildMapHtml(STATION, nearbyStations) }}
               scrollEnabled={false}
               onMessage={e => {
                 try {
@@ -860,10 +876,10 @@ export default function TidesScreen() {
 
           {/* Nearby stations */}
           <Text style={s.nearbyTitle}>NEARBY STATIONS</Text>
-          {NEARBY_STATIONS.map((entry, i) => (
+          {nearbyStations.map((entry, i) => (
             <TouchableOpacity
-              key={i}
-              style={[s.nearbyRow, i < NEARBY_STATIONS.length - 1 && { borderBottomWidth: 1, borderBottomColor: colors.border }]}
+              key={entry.station.noaaId}
+              style={[s.nearbyRow, i < nearbyStations.length - 1 && { borderBottomWidth: 1, borderBottomColor: colors.border }]}
               activeOpacity={0.7}
               onPress={() => { setStationOverride(entry.station); scrollRef.current?.scrollTo({ y: 0, animated: true }) }}
             >
