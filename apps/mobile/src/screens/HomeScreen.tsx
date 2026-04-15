@@ -2,7 +2,8 @@
 import React, { useState, useMemo, useCallback, useEffect } from 'react'
 import {
   View, Text, TextInput, TouchableOpacity,
-  FlatList, ActivityIndicator, StyleSheet, Dimensions, ListRenderItem, ScrollView,
+  FlatList, ActivityIndicator, StyleSheet, Dimensions,
+  ListRenderItem, BackHandler, ScrollView,
 } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { WebView } from 'react-native-webview'
@@ -15,7 +16,6 @@ import { STATIONS, REGIONS, type BStation } from '../data/stations'
 
 const W = Dimensions.get('window').width
 
-// ── Coastal US states ──────────────────────────────────────────────────────────
 const COASTAL_STATES = [
   { code: 'ME', name: 'Maine',          emoji: '🎣', lat: 44.5, lon: -69.2 },
   { code: 'NH', name: 'New Hampshire',  emoji: '🎣', lat: 43.7, lon: -71.5 },
@@ -42,8 +42,9 @@ const COASTAL_STATES = [
   { code: 'HI', name: 'Hawaii',         emoji: '🎣', lat: 21.3, lon: -157.8 },
 ]
 
-// Alphabetical order for display
 const SORTED_STATES = [...COASTAL_STATES].sort((a, b) => a.name.localeCompare(b.name))
+
+type AppView = 'home' | 'regions' | 'stations'
 
 function buildUSMapHtml(markers: { lat: number; lon: number; name: string; code: string }[]): string {
   const markersJson = JSON.stringify(markers)
@@ -108,9 +109,10 @@ export default function HomeScreen({ navigation }: { navigation: any }) {
   const { setStation } = useStation()
   const s = useMemo(() => makeStyles(colors), [colors])
 
+  const [view, setView]                   = useState<AppView>('home')
   const [query, setQuery]                 = useState('')
   const [selectedState, setSelectedState] = useState<typeof COASTAL_STATES[0] | null>(null)
-  const [activeRegion, setActiveRegion]   = useState<string | null>(null)
+  const [selectedRegion, setSelectedRegion] = useState<string | null>(null)
   const [mapReady, setMapReady]           = useState(false)
 
   useEffect(() => {
@@ -118,17 +120,47 @@ export default function HomeScreen({ navigation }: { navigation: any }) {
     return () => clearTimeout(t)
   }, [])
 
-  // Regions for the selected state
-  const stateRegions = useMemo(() => {
-    if (!selectedState) return []
-    return REGIONS[selectedState.code] ?? []
-  }, [selectedState])
+  // Android back button
+  useEffect(() => {
+    const handler = BackHandler.addEventListener('hardwareBackPress', () => {
+      if (view === 'stations') { setView('regions'); setSelectedRegion(null); return true }
+      if (view === 'regions')  { setView('home');    setSelectedState(null);  return true }
+      return false
+    })
+    return () => handler.remove()
+  }, [view])
 
-  // Station list — filtered by region (or all if no region selected)
+  const goBack = useCallback(() => {
+    if (view === 'stations') { setView('regions'); setSelectedRegion(null) }
+    else if (view === 'regions') { setView('home'); setSelectedState(null) }
+  }, [view])
+
+  const onStatePress = useCallback((st: typeof COASTAL_STATES[0]) => {
+    setQuery('')
+    setSelectedState(st)
+    setSelectedRegion(null)
+    setView('regions')
+  }, [])
+
+  const onRegionPress = useCallback((region: string) => {
+    setSelectedRegion(region)
+    setView('stations')
+  }, [])
+
+  const onAllStationsPress = useCallback(() => {
+    setSelectedRegion(null)
+    setView('stations')
+  }, [])
+
+  const onStationPress = useCallback((station: BStation, code: string) => {
+    setStation(asStation(station, code))
+    navigation.navigate('Tides')
+  }, [setStation, navigation])
+
+  // Stations for current view
   const displayStations: BStation[] = useMemo(() => {
     const q = query.trim().toLowerCase()
     if (q) {
-      // Global search across all states
       const all: BStation[] = []
       for (const list of Object.values(STATIONS)) all.push(...list)
       return all
@@ -138,26 +170,14 @@ export default function HomeScreen({ navigation }: { navigation: any }) {
     }
     if (!selectedState) return []
     const list = STATIONS[selectedState.code] ?? []
-    const filtered = activeRegion
-      ? list.filter(st => st.region === activeRegion)
-      : list
+    const filtered = selectedRegion ? list.filter(st => st.region === selectedRegion) : list
     return [...filtered].sort((a, b) => a.name.localeCompare(b.name))
-  }, [query, selectedState, activeRegion])
+  }, [query, selectedState, selectedRegion])
 
-  const onStatePress = useCallback((st: typeof COASTAL_STATES[0]) => {
-    setQuery('')
-    setSelectedState(st)
-    setActiveRegion(null)
-  }, [])
-
-  const onRegionPress = useCallback((region: string | null) => {
-    setActiveRegion(region)
-  }, [])
-
-  const onStationPress = useCallback((station: BStation, code: string) => {
-    setStation(asStation(station, code))
-    navigation.navigate('Tides')
-  }, [setStation, navigation])
+  const stateRegions = useMemo(() => {
+    if (!selectedState) return []
+    return REGIONS[selectedState.code] ?? []
+  }, [selectedState])
 
   const renderStation: ListRenderItem<BStation> = useCallback(({ item }) => (
     <TouchableOpacity
@@ -168,124 +188,28 @@ export default function HomeScreen({ navigation }: { navigation: any }) {
       <View style={s.stationDot} />
       <View style={{ flex: 1 }}>
         <Text style={s.stationName}>{item.name}</Text>
-        <Text style={s.stationSub}>{item.region} · ID {item.id}</Text>
+        <Text style={s.stationSub}>{item.region}</Text>
       </View>
       <Ionicons name="chevron-forward" size={14} color={colors.textFaint} />
     </TouchableOpacity>
   ), [s, colors, onStationPress, selectedState])
 
-  // FlatList header: map + state grid + region pills + list title
-  // TextInput lives OUTSIDE this so the keyboard never dismisses on query change
-  const ListHeader = useMemo(() => (
-    <View style={{ paddingHorizontal: 16, paddingBottom: 0 }}>
-      {/* Map + state grid — hidden while searching */}
-      {!query && (
-        <>
-          <View style={s.mapCard}>
-            <Text style={s.cardTitle}>Coastal Stations</Text>
-            <Text style={s.cardSub}>Tap a state below to browse tide stations</Text>
-            <View style={s.mapWrap}>
-              {mapReady ? (
-                <WebView
-                  source={{ html: MAP_HTML }}
-                  style={s.map}
-                  scrollEnabled={false}
-                  javaScriptEnabled
-                  domStorageEnabled
-                  cacheEnabled
-                  originWhitelist={['*']}
-                  onError={() => {}}
-                  onMessage={e => {
-                    try {
-                      const data = JSON.parse(e.nativeEvent.data)
-                      if (data.code) {
-                        const st = COASTAL_STATES.find(cs => cs.code === data.code)
-                        if (st) onStatePress(st)
-                      }
-                    } catch {}
-                  }}
-                />
-              ) : (
-                <View style={[s.map, { alignItems: 'center', justifyContent: 'center', backgroundColor: colors.surface }]}>
-                  <ActivityIndicator color={colors.accent} />
-                </View>
-              )}
-            </View>
-          </View>
-
-          {/* State grid — alphabetical */}
-          <Text style={s.sectionLabel}>SELECT A STATE</Text>
-          <View style={s.stateGrid}>
-            {SORTED_STATES.map(st => (
-              <TouchableOpacity
-                key={st.code}
-                style={[s.stateCard, selectedState?.code === st.code && { borderColor: colors.accent, backgroundColor: colors.accentFaint }]}
-                onPress={() => onStatePress(st)}
-              >
-                <Text style={s.stateEmoji}>{st.emoji}</Text>
-                <Text style={s.stateCode}>{st.code}</Text>
-                <Text style={s.stateName} numberOfLines={1}>{st.name}</Text>
-                <Text style={s.stateCount}>{(STATIONS[st.code]?.length ?? 0)}</Text>
-              </TouchableOpacity>
-            ))}
-          </View>
-
-          {/* Region filter pills — shown when a state is selected and has multiple regions */}
-          {selectedState && stateRegions.length > 1 && (
-            <>
-              <Text style={s.sectionLabel}>{selectedState.name} — Browse by Region</Text>
-              <ScrollView
-                horizontal
-                showsHorizontalScrollIndicator={false}
-                style={{ marginBottom: 12 }}
-                contentContainerStyle={{ gap: 8, paddingRight: 8 }}
-              >
-                <TouchableOpacity
-                  style={[s.regionPill, !activeRegion && s.regionPillActive]}
-                  onPress={() => onRegionPress(null)}
-                >
-                  <Text style={[s.regionPillText, !activeRegion && s.regionPillTextActive]}>
-                    All ({STATIONS[selectedState.code]?.length ?? 0})
-                  </Text>
-                </TouchableOpacity>
-                {stateRegions.map(r => (
-                  <TouchableOpacity
-                    key={r}
-                    style={[s.regionPill, activeRegion === r && s.regionPillActive]}
-                    onPress={() => onRegionPress(r)}
-                  >
-                    <Text style={[s.regionPillText, activeRegion === r && s.regionPillTextActive]}>
-                      {r} ({(STATIONS[selectedState.code] ?? []).filter(st => st.region === r).length})
-                    </Text>
-                  </TouchableOpacity>
-                ))}
-              </ScrollView>
-            </>
-          )}
-        </>
-      )}
-
-      {/* Results header */}
-      {displayStations.length > 0 && (
-        <View style={[s.card, { marginTop: 8 }]}>
-          <Text style={s.cardTitle}>
-            {query
-              ? `Results for "${query}"`
-              : activeRegion
-                ? `${activeRegion}`
-                : `${selectedState?.name} Stations`}
-          </Text>
-          <Text style={s.cardSub}>{displayStations.length} stations · tap to view tides</Text>
-        </View>
-      )}
-    </View>
-  // eslint-disable-next-line react-hooks/exhaustive-deps
-  ), [query, mapReady, selectedState, activeRegion, stateRegions, displayStations.length, colors, s, onStatePress, onRegionPress])
+  // ── Search results (overlays all views when query is active)
+  const isSearching = query.trim().length > 0
 
   return (
     <SafeAreaView style={s.safe} edges={[]}>
-      {/* Search bar lives OUTSIDE FlatList — never remounts, keyboard stays open */}
+
+      {/* Search bar — always visible, outside FlatList */}
       <View style={s.searchContainer}>
+        {(view !== 'home' && !isSearching) && (
+          <TouchableOpacity style={s.backBtn} onPress={goBack}>
+            <Ionicons name="chevron-back" size={20} color={colors.accent} />
+            <Text style={s.backText}>
+              {view === 'stations' && selectedRegion ? selectedRegion : selectedState?.name ?? 'Back'}
+            </Text>
+          </TouchableOpacity>
+        )}
         <View style={s.searchWrap}>
           <Ionicons name="search" size={16} color={colors.textMuted} style={s.searchIcon} />
           <TextInput
@@ -306,37 +230,172 @@ export default function HomeScreen({ navigation }: { navigation: any }) {
         </View>
       </View>
 
-      <FlatList
-        data={displayStations}
-        keyExtractor={item => item.id}
-        renderItem={renderStation}
-        ListHeaderComponent={ListHeader}
-        ListFooterComponent={<View style={{ height: 32 }} />}
-        ListEmptyComponent={
-          selectedState && !query ? (
+      {/* ── SEARCH RESULTS (overrides everything) */}
+      {isSearching && (
+        <FlatList
+          data={displayStations}
+          keyExtractor={item => item.id}
+          renderItem={renderStation}
+          ListHeaderComponent={
+            <View style={[s.screenHeader, { marginHorizontal: 16 }]}>
+              <Text style={s.screenTitle}>Search results</Text>
+              <Text style={s.screenSub}>{displayStations.length} stations found</Text>
+            </View>
+          }
+          ListEmptyComponent={
+            <View style={s.emptyWrap}>
+              <Text style={s.emptyText}>No stations found for "{query}"</Text>
+            </View>
+          }
+          initialNumToRender={15}
+          maxToRenderPerBatch={20}
+          windowSize={5}
+          removeClippedSubviews
+          keyboardShouldPersistTaps="handled"
+          contentContainerStyle={{ paddingBottom: 32 }}
+        />
+      )}
+
+      {/* ── HOME VIEW: map + state grid */}
+      {!isSearching && view === 'home' && (
+        <ScrollView contentContainerStyle={{ paddingBottom: 32 }}>
+          <View style={{ padding: 16 }}>
+            <View style={s.mapCard}>
+              <Text style={s.cardTitle}>Coastal Stations</Text>
+              <Text style={s.cardSub}>Tap a state on the map or grid below</Text>
+              <View style={s.mapWrap}>
+                {mapReady ? (
+                  <WebView
+                    source={{ html: MAP_HTML }}
+                    style={s.map}
+                    scrollEnabled={false}
+                    javaScriptEnabled
+                    domStorageEnabled
+                    cacheEnabled
+                    originWhitelist={['*']}
+                    onError={() => {}}
+                    onMessage={e => {
+                      try {
+                        const data = JSON.parse(e.nativeEvent.data)
+                        if (data.code) {
+                          const st = COASTAL_STATES.find(cs => cs.code === data.code)
+                          if (st) onStatePress(st)
+                        }
+                      } catch {}
+                    }}
+                  />
+                ) : (
+                  <View style={[s.map, { alignItems: 'center', justifyContent: 'center', backgroundColor: colors.surface }]}>
+                    <ActivityIndicator color={colors.accent} />
+                  </View>
+                )}
+              </View>
+            </View>
+
+            <Text style={s.sectionLabel}>SELECT A STATE</Text>
+            <View style={s.stateGrid}>
+              {SORTED_STATES.map(st => (
+                <TouchableOpacity
+                  key={st.code}
+                  style={s.stateCard}
+                  onPress={() => onStatePress(st)}
+                  activeOpacity={0.7}
+                >
+                  <Text style={s.stateEmoji}>{st.emoji}</Text>
+                  <Text style={s.stateCode}>{st.code}</Text>
+                  <Text style={s.stateName} numberOfLines={1}>{st.name}</Text>
+                  <Text style={s.stateCount}>{(STATIONS[st.code]?.length ?? 0)}</Text>
+                </TouchableOpacity>
+              ))}
+            </View>
+          </View>
+        </ScrollView>
+      )}
+
+      {/* ── REGIONS VIEW: list of regions for selected state */}
+      {!isSearching && view === 'regions' && selectedState && (
+        <ScrollView contentContainerStyle={{ paddingHorizontal: 16, paddingBottom: 32 }}>
+          <View style={s.screenHeader}>
+            <Text style={s.screenTitle}>{selectedState.name}</Text>
+            <Text style={s.screenSub}>Select a region to browse tide stations</Text>
+          </View>
+
+          {/* All stations shortcut */}
+          <TouchableOpacity style={s.regionCard} onPress={onAllStationsPress} activeOpacity={0.7}>
+            <View style={s.regionCardLeft}>
+              <Text style={s.regionCardIcon}>🗺️</Text>
+              <View>
+                <Text style={s.regionCardName}>All Stations</Text>
+                <Text style={s.regionCardCount}>{STATIONS[selectedState.code]?.length ?? 0} stations total</Text>
+              </View>
+            </View>
+            <Ionicons name="chevron-forward" size={18} color={colors.accent} />
+          </TouchableOpacity>
+
+          <Text style={[s.sectionLabel, { marginTop: 16 }]}>REGIONS</Text>
+          {stateRegions.map(region => {
+            const count = (STATIONS[selectedState.code] ?? []).filter(st => st.region === region).length
+            return (
+              <TouchableOpacity
+                key={region}
+                style={s.regionCard}
+                onPress={() => onRegionPress(region)}
+                activeOpacity={0.7}
+              >
+                <View style={s.regionCardLeft}>
+                  <Text style={s.regionCardIcon}>📍</Text>
+                  <View>
+                    <Text style={s.regionCardName}>{region}</Text>
+                    <Text style={s.regionCardCount}>{count} stations</Text>
+                  </View>
+                </View>
+                <Ionicons name="chevron-forward" size={18} color={colors.accent} />
+              </TouchableOpacity>
+            )
+          })}
+        </ScrollView>
+      )}
+
+      {/* ── STATIONS VIEW: station list for selected region (or all) */}
+      {!isSearching && view === 'stations' && (
+        <FlatList
+          data={displayStations}
+          keyExtractor={item => item.id}
+          renderItem={renderStation}
+          ListHeaderComponent={
+            <View style={[s.screenHeader, { marginHorizontal: 16 }]}>
+              <Text style={s.screenTitle}>
+                {selectedRegion ?? `All ${selectedState?.name} Stations`}
+              </Text>
+              <Text style={s.screenSub}>{displayStations.length} stations · tap to view tides</Text>
+            </View>
+          }
+          ListEmptyComponent={
             <View style={s.emptyWrap}>
               <Text style={s.emptyText}>No stations found.</Text>
             </View>
-          ) : null
-        }
-        initialNumToRender={15}
-        maxToRenderPerBatch={20}
-        windowSize={5}
-        removeClippedSubviews
-        keyboardShouldPersistTaps="handled"
-        contentContainerStyle={{ paddingBottom: 16 }}
-      />
+          }
+          initialNumToRender={15}
+          maxToRenderPerBatch={20}
+          windowSize={5}
+          removeClippedSubviews
+          keyboardShouldPersistTaps="handled"
+          contentContainerStyle={{ paddingBottom: 32 }}
+        />
+      )}
+
     </SafeAreaView>
   )
 }
 
 const makeStyles = (colors: Colors) => StyleSheet.create({
-  safe:       { flex: 1, backgroundColor: colors.bg },
+  safe: { flex: 1, backgroundColor: colors.bg },
 
-  searchContainer: {
-    paddingHorizontal: 16, paddingTop: 16, paddingBottom: 8,
-    backgroundColor: colors.bg,
-  },
+  searchContainer: { paddingHorizontal: 16, paddingTop: 16, paddingBottom: 8, backgroundColor: colors.bg },
+
+  backBtn: { flexDirection: 'row', alignItems: 'center', gap: 4, marginBottom: 10 },
+  backText: { fontSize: 14, fontWeight: '600', color: colors.accent },
+
   searchWrap: {
     flexDirection: 'row', alignItems: 'center',
     backgroundColor: colors.surface, borderRadius: 14, borderWidth: 2,
@@ -348,17 +407,15 @@ const makeStyles = (colors: Colors) => StyleSheet.create({
   searchInput: { flex: 1, height: 50, fontSize: 15, color: colors.text, fontWeight: '500' },
   searchClear: { padding: 4 },
 
-  card:      { backgroundColor: colors.surface, borderRadius: 16, paddingHorizontal: 16, paddingVertical: 12, marginHorizontal: 16, marginBottom: 4, borderWidth: 1, borderColor: colors.border },
+  mapCard:   { backgroundColor: colors.surface, borderRadius: 16, padding: 16, marginBottom: 16, borderWidth: 1, borderColor: colors.border },
   cardTitle: { fontSize: 15, fontWeight: '700', color: colors.text, marginBottom: 2 },
   cardSub:   { fontSize: 11, color: colors.textMuted },
-
-  mapCard:   { backgroundColor: colors.surface, borderRadius: 16, padding: 16, marginBottom: 16, borderWidth: 1, borderColor: colors.border },
   mapWrap:   { borderRadius: 12, overflow: 'hidden', marginTop: 8, height: 200 },
   map:       { flex: 1, backgroundColor: colors.bg },
 
   sectionLabel: { fontSize: 10, fontWeight: '700', letterSpacing: 1, color: colors.textMuted, textTransform: 'uppercase', marginBottom: 10 },
 
-  stateGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 8, marginBottom: 16 },
+  stateGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
   stateCard: {
     width: (W - 32 - 24) / 4,
     backgroundColor: colors.surface, borderRadius: 12, borderWidth: 1,
@@ -369,19 +426,22 @@ const makeStyles = (colors: Colors) => StyleSheet.create({
   stateName:  { fontSize: 9, color: colors.textMuted, marginTop: 1, textAlign: 'center' },
   stateCount: { fontSize: 9, color: colors.accent, marginTop: 2, fontWeight: '600' },
 
-  regionPill: {
-    paddingHorizontal: 14, paddingVertical: 7,
-    borderRadius: 20, borderWidth: 1,
-    borderColor: colors.border, backgroundColor: colors.surface,
-  },
-  regionPillActive: {
-    borderColor: colors.accent, backgroundColor: colors.accentFaint,
-  },
-  regionPillText: { fontSize: 12, fontWeight: '600', color: colors.textMuted },
-  regionPillTextActive: { color: colors.accent },
+  screenHeader: { paddingVertical: 16 },
+  screenTitle:  { fontSize: 22, fontWeight: '800', color: colors.text },
+  screenSub:    { fontSize: 12, color: colors.textMuted, marginTop: 3 },
 
-  emptyWrap:  { paddingHorizontal: 16, paddingTop: 8 },
-  emptyText:  { fontSize: 13, color: colors.textMuted },
+  regionCard: {
+    flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
+    backgroundColor: colors.surface, borderRadius: 14, borderWidth: 1,
+    borderColor: colors.border, padding: 16, marginBottom: 10,
+  },
+  regionCardLeft:  { flexDirection: 'row', alignItems: 'center', gap: 14 },
+  regionCardIcon:  { fontSize: 28 },
+  regionCardName:  { fontSize: 15, fontWeight: '700', color: colors.text },
+  regionCardCount: { fontSize: 12, color: colors.textMuted, marginTop: 2 },
+
+  emptyWrap: { paddingHorizontal: 16, paddingTop: 24, alignItems: 'center' },
+  emptyText: { fontSize: 13, color: colors.textMuted },
 
   stationRow: {
     flexDirection: 'row', alignItems: 'center', gap: 12,
