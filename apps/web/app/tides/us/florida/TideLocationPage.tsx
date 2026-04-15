@@ -2428,10 +2428,10 @@ export default function TideLocationPage({ station }: { station: StationConfig }
             </div>
 
             {/* Map + nearby list */}
-            <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'minmax(0, 1.8fr) minmax(0, 1fr)', gap: 16, alignItems: 'start' }}>
+            <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : 'minmax(0, 1.8fr) minmax(0, 1fr)', gap: 16, alignItems: 'stretch' }}>
 
               {/* Map */}
-              <div style={{ borderRadius: 10, overflow: 'hidden', border: `1px solid ${t.border}`, height: 340 }}>
+              <div style={{ borderRadius: 10, overflow: 'hidden', border: `1px solid ${t.border}`, minHeight: 340 }}>
                 <TideMap
                   lat={station.lat}
                   lon={station.lon}

@@ -94,5 +94,5 @@ export default function TideMap({ lat, lon, name, nearby, accent, mode, stateSlu
   }, [])
 
 
-  return <div ref={containerRef} style={{ width: '100%', height: '100%', minHeight: 320 }} />
+  return <div ref={containerRef} style={{ width: '100%', height: '100%', minHeight: 340 }} />
 }
