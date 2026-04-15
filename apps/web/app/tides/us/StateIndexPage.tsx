@@ -79,11 +79,13 @@ export default function StateIndexPage({
   // ── Filter logic ─────────────────────────────────────────────────────────────
   const filtered = useMemo(() => {
     const q = search.trim().toLowerCase()
-    return stations.filter(s => {
-      const regionMatch = activeRegion === 'All' || s.region === activeRegion
-      const searchMatch = !q || s.name.toLowerCase().includes(q) || s.city.toLowerCase().includes(q)
-      return regionMatch && searchMatch
-    })
+    return stations
+      .filter(s => {
+        const regionMatch = activeRegion === 'All' || s.region === activeRegion
+        const searchMatch = !q || s.name.toLowerCase().includes(q) || s.city.toLowerCase().includes(q)
+        return regionMatch && searchMatch
+      })
+      .sort((a, b) => a.name.localeCompare(b.name))
   }, [stations, search, activeRegion])
 
   const regionCounts = useMemo(() => {
@@ -215,7 +217,7 @@ export default function StateIndexPage({
             </div>
           ) : (
             regions.map(region => {
-              const rs = stations.filter(s => s.region === region)
+              const rs = stations.filter(s => s.region === region).sort((a, b) => a.name.localeCompare(b.name))
               if (!rs.length) return null
               return (
                 <div key={region} style={{ marginBottom: 36 }}>

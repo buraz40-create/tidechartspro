@@ -2,7 +2,6 @@
 
 import { useState, useEffect, useRef, useCallback, useMemo, Suspense } from 'react'
 import dynamic from 'next/dynamic'
-import type { StationConfig } from '@/lib/florida-stations'
 
 const TideMap = dynamic(() => import('./TideMap'), { ssr: false })
 
@@ -56,7 +55,7 @@ const THEMES: Record<Mode, Theme> = {
     canvasGrid: '#1e2d45',
     canvasWater: '#0ea5e9',
     canvasWaterFill: 'rgba(14,165,233,0.18)',
-    canvasDayBg: 'rgba(250,204,21,0.07)',
+    canvasDayBg: 'rgba(56,189,248,0.04)',
     canvasNightBg: 'rgba(15,23,42,0.7)',
     canvasSunLine: '#fbbf24',
     canvasNowLine: '#f43f5e',
@@ -124,8 +123,56 @@ const THEMES: Record<Mode, Theme> = {
   },
 }
 
-// ─── Shared reference epoch for harmonic model ───────────────────────────────
-const CAL_REF = new Date(2026, 3, 10)
+// ─── Station Config ───────────────────────────────────────────────────────────
+// ONE place to edit when copying this file for a new station.
+
+const STATION = {
+  // NOAA identifiers
+  id:              '8720218',       // CO-OPS tide station
+  waterTempId:     '8720503',       // CO-OPS water temp station (nearest)
+  // Identity
+  name:            'Pablo Creek Entrance',
+  slug:            'pablo-creek-entrance',
+  state:           'florida',
+  city:            'Jacksonville, FL',
+  // Coordinates — used for weather API and display
+  lat:              30.3953,
+  lon:             -81.4316,
+  latDisplay:      '30.37°N',
+  lonDisplay:      '81.45°W',
+  // Harmonic model calibration date (keep fixed — reference epoch for tide math)
+  calRef:          new Date(2026, 3, 10),
+  // Sun calculation parameters (latitude degrees, standard meridian, UTC offset)
+  sunLat:           30.4,
+  sunMeridian:      75,             // Eastern standard meridian
+  sunLon:           81.7,           // Station longitude (positive west)
+  utcOffset:        1,              // EDT = UTC-4 → +1 correction from standard
+  // Fallback sun times for initial render (decimal hours, computed for Apr 10)
+  sunriseRef:       7.08,
+  sunsetRef:       19.92,
+  // Water temp fallback before live data loads
+  waterTempDefault: '68°F',
+  // Map tile (zoom 7, OSM tile CX/CY centered on Jacksonville area)
+  mapTile:          { z: 7, cx: 35, cy: 52 },
+  // Marker pixel offset within the 3×3 tile grid (as % of grid width/height)
+  mapMarker:        { left: '39.56%', top: '55.3%' },
+  // Nearby stations — lat/lon used for map markers + distance calc
+  nearby: [
+    { name: 'Mayport Naval Station',    lat: 30.4,    lon: -81.4133, slug: 'mayport-naval-station-water-treatment-dock' },
+    { name: 'Mayport (Ferry Depot)',    lat: 30.3933, lon: -81.4317, slug: 'mayport-ferry-depot' },
+    { name: 'Sisters Creek',            lat: 30.4167, lon: -81.4533, slug: 'sisters-creek' },
+    { name: 'Atlantic Beach',           lat: 30.335,  lon: -81.395,  slug: 'atlantic-beach' },
+    { name: 'Jacksonville Beach',       lat: 30.2833, lon: -81.3867, slug: 'jacksonville-beach' },
+  ],
+  // Local species — bait suggestions, FL regulations, typical bite timing
+  species: [
+    { name: 'Redfish',          icon: '🎣', color: '#f97316', bait: 'Mullet chunk, DOA shrimp',    regulation: 'Slot 18–27″ · 1/day',   when: 'Dawn & dusk outgoing tide' },
+    { name: 'Spotted Seatrout', icon: '🐟', color: '#60a5fa', bait: 'Mirrolure, live shrimp',      regulation: 'Slot 15–19″ · 3/day',   when: 'Early morning flats' },
+    { name: 'Black Drum',       icon: '🐟', color: '#a78bfa', bait: 'Blue crab, fiddler crab, shrimp', regulation: '14″ min · 5/day',   when: 'Incoming tide · bridges & channels' },
+    { name: 'Flounder',         icon: '🐡', color: '#34d399', bait: 'Gulp! shrimp, mud minnow',    regulation: '12″ min · 10/day',      when: 'Incoming tide near drop-offs' },
+    { name: 'Sheepshead',       icon: '🐡', color: '#facc15', bait: 'Fiddler crab, barnacle',      regulation: '12″ min · 8/day',       when: 'Structure — bridges & pilings' },
+  ],
+}
 
 // ─── Static Data ─────────────────────────────────────────────────────────────
 
@@ -181,8 +228,7 @@ const COEFF_30 = [
 ]
 
 // Weather
-// WEATHER default — waterTemp is overridden at runtime with station.waterTempDefault
-const WEATHER_DEFAULT = {
+const WEATHER = {
   temp: '74°F',
   feelsLike: '76°F',
   humidity: '72%',
@@ -191,7 +237,7 @@ const WEATHER_DEFAULT = {
   visibility: '10 mi',
   cloudCover: '15%',
   uvIndex: '6',
-  waterTemp: '—',
+  waterTemp: STATION.waterTempDefault,
   dewPoint: '63°F',
   pressure: '1016 mb',
   pressureTrend: 'rising',
@@ -205,37 +251,6 @@ function gradeColor(grade: string, t: Theme): string {
   if (g === 'C') return '#eab308'
   if (g === 'D') return '#f97316'
   return '#ef4444'
-}
-
-// ─── Tile helper — compute OSM tile coords + marker position from lat/lon ────
-
-function latlonToRadarMap(lat: number, lon: number, z = 7) {
-  const scale = Math.pow(2, z)
-  const x = (lon + 180) / 360 * scale
-  const y = (1 - Math.log(Math.tan(Math.PI / 4 + lat * Math.PI / 360)) / Math.PI) / 2 * scale
-  const cx = Math.floor(x)
-  const cy = Math.floor(y)
-  const left = `${((x - (cx - 1)) / 3 * 100).toFixed(2)}%`
-  const top  = `${((y - (cy - 1)) / 3 * 100).toFixed(2)}%`
-  return { z, cx, cy, left, top }
-}
-
-// ─── Curve builder from hi/lo events (cosine interpolation) ──────────────────
-function buildCurveFromHilo(
-  pts: { hour: number; height: number }[],
-): number[] {
-  const sorted = [...pts].sort((a, b) => a.hour - b.hour)
-  if (sorted.length < 2) return new Array(289).fill(0)
-  return Array.from({ length: 289 }, (_, i) => {
-    const hour = (i / 288) * 24
-    const ni = sorted.findIndex(e => e.hour >= hour)
-    if (ni === -1) return sorted[sorted.length - 1].height  // after last event
-    if (ni === 0)  return sorted[0].height                  // before first event
-    if (ni >= sorted.length) return sorted[sorted.length - 1].height
-    const prev = sorted[ni - 1], next = sorted[ni]
-    const frac = (hour - prev.hour) / (next.hour - prev.hour)
-    return Math.max(0, (prev.height + next.height) / 2 - (next.height - prev.height) / 2 * Math.cos(frac * Math.PI))
-  })
 }
 
 // ─── Canvas Painters ──────────────────────────────────────────────────────────
@@ -273,7 +288,7 @@ function drawTideChart(
   ctx.fillStyle = t.canvasBg
   ctx.fillRect(0, 0, W, H)
 
-  // ── night shading (left block 0→sunrise, right block sunset→24)
+  // ── night shading (left block 0->sunrise, right block sunset->24)
   ctx.fillStyle = t.canvasNightBg
   ctx.fillRect(PAD.left, PAD.top, (sunriseH / 24) * cw, ch)
   ctx.fillRect(
@@ -288,7 +303,7 @@ function drawTideChart(
     ((sunsetH - sunriseH) / 24) * cw, ch,
   )
 
-  // ── grid lines (height) — step size adapts to dynamic maxH
+  // ── grid lines (height) - step size adapts to dynamic maxH
   const gridStep = maxH <= 8 ? 1 : maxH <= 14 ? 2 : 3
   ctx.strokeStyle = t.canvasGrid
   ctx.lineWidth   = 0.5
@@ -432,7 +447,7 @@ function drawTideChart(
     ctx.fillStyle = pinColor
     ctx.fill()
 
-    // Dot ON the tide curve — drawn last so it sits visibly on the line
+    // Dot ON the tide curve - drawn last so it sits visibly on the line
     ctx.beginPath()
     ctx.arc(x, y, 5, 0, Math.PI * 2)
     ctx.fillStyle = pinColor
@@ -453,14 +468,13 @@ function drawTideChart(
     ctx.fillText(`${ev.height.toFixed(1)}`, x, cy)
     ctx.textBaseline = 'alphabetic'
 
-    // Time pill: above circle for High (if room), below curve point for Low
+    // Time pill below the bubble - consistent for highs and lows
     ctx.font = 'bold 10px system-ui'
     const timeW = ctx.measureText(ev.time).width
     const pillW = timeW + 12
     const pillH = 16
     const pillR = 4
     const pillX = x - pillW / 2
-    // Pill always below the bubble — consistent for highs and lows
     const pillY = cy + r + 5
 
     ctx.fillStyle = pinColor
@@ -644,11 +658,11 @@ function calFmtHour(h: number): string {
   return `${h12}:${String(mins).padStart(2,'0')} ${hInt < 12 ? 'am' : 'pm'}`
 }
 
-function calSunTimes(doy: number, cfg: { sunLat: number; sunMeridian: number; sunLon: number; utcOffset: number }): { sunrise: string; sunset: string } {
-  const LAT = (cfg.sunLat * Math.PI) / 180
+function calSunTimes(doy: number): { sunrise: string; sunset: string } {
+  const LAT = (STATION.sunLat * Math.PI) / 180
   const decl = -23.45 * Math.cos((360/365*(doy+10)*Math.PI)/180)
   const HA = (Math.acos(Math.max(-1, Math.min(1, -Math.tan(LAT)*Math.tan(decl*Math.PI/180)))) * 180) / Math.PI
-  const corr = (cfg.sunMeridian - cfg.sunLon) / 15 + cfg.utcOffset
+  const corr = (STATION.sunMeridian - STATION.sunLon) / 15 + STATION.utcOffset
   return { sunrise: calFmtHour(12 - HA/15 + corr), sunset: calFmtHour(12 + HA/15 + corr) }
 }
 
@@ -656,8 +670,8 @@ function calDayOfYear(date: Date): number {
   return Math.floor((date.getTime() - new Date(date.getFullYear(),0,0).getTime()) / 86400000)
 }
 
-function calGenerateTides(date: Date, meanRange?: number): CalTide[] {
-  const dayOff = (date.getTime() - CAL_REF.getTime()) / 86400000
+function calGenerateTides(date: Date): CalTide[] {
+  const dayOff = (date.getTime() - STATION.calRef.getTime()) / 86400000
   const M2 = 12.4206
   const lag = ((dayOff * 0.7176) % M2 + M2) % M2
   const high1 = (6.70 + lag) % 24
@@ -692,9 +706,7 @@ function calSolunar(c: number): 1|2|3|4 {
   return c >= 90 ? 4 : c >= 75 ? 3 : c >= 55 ? 2 : 1
 }
 
-type SunCfg = { sunLat: number; sunMeridian: number; sunLon: number; utcOffset: number }
-
-function generateCalMonth(year: number, month: number, cfg: SunCfg): CalDay[] {
+function generateCalMonth(year: number, month: number): CalDay[] {
   const dim   = new Date(year, month+1, 0).getDate()
   const today = new Date()
   return Array.from({ length: dim }, (_, i) => {
@@ -702,7 +714,7 @@ function generateCalMonth(year: number, month: number, cfg: SunCfg): CalDay[] {
     const doy   = calDayOfYear(date)
     const phase = calMoonPhase(date)
     const c     = calCoeff(phase, doy)
-    const { sunrise, sunset } = calSunTimes(doy, cfg)
+    const { sunrise, sunset } = calSunTimes(doy)
     return {
       date, dayNum: i+1,
       dayName:  date.toLocaleDateString('en-US', { weekday: 'short' }),
@@ -724,7 +736,7 @@ function generateCalMonth(year: number, month: number, cfg: SunCfg): CalDay[] {
 
 /** Generate 289-point tide curve for any date. */
 function tideCurveForDate(date: Date): number[] {
-  const dayOff = (date.getTime() - CAL_REF.getTime()) / 86400000
+  const dayOff = (date.getTime() - STATION.calRef.getTime()) / 86400000
   const M2     = 12.4206
   const lag    = ((dayOff * 0.7176) % M2 + M2) % M2
   const phase  = calMoonPhase(date)
@@ -743,13 +755,13 @@ function tideCurveForDate(date: Date): number[] {
 }
 
 /** Sunrise/sunset as decimal hours for any date. */
-function sunTimesHoursForDate(date: Date, cfg: SunCfg): { sunrise: number; sunset: number } {
+function sunTimesHoursForDate(date: Date): { sunrise: number; sunset: number } {
   const doy   = calDayOfYear(date)
-  const LAT   = (cfg.sunLat * Math.PI) / 180
+  const LAT   = (STATION.sunLat * Math.PI) / 180
   const decl  = -23.45 * Math.cos((360 / 365 * (doy + 10) * Math.PI) / 180)
   const cosHA = -Math.tan(LAT) * Math.tan(decl * Math.PI / 180)
   const HA    = (Math.acos(Math.max(-1, Math.min(1, cosHA))) * 180) / Math.PI
-  const corr  = (cfg.sunMeridian - cfg.sunLon) / 15 + cfg.utcOffset
+  const corr  = (STATION.sunMeridian - STATION.sunLon) / 15 + STATION.utcOffset
   return { sunrise: 12 - HA / 15 + corr, sunset: 12 + HA / 15 + corr }
 }
 
@@ -766,7 +778,7 @@ function tideEventsForDate(date: Date): typeof TIDE_EVENTS {
 
 /** Solunar periods for any date (sorted by start hour). */
 function solunarForDate(date: Date): typeof SOLUNAR {
-  const dayOff = (date.getTime() - CAL_REF.getTime()) / 86400000
+  const dayOff = (date.getTime() - STATION.calRef.getTime()) / 86400000
   const major1 = (((8.75 + dayOff * (50 / 60)) % 24) + 24) % 24
   const major2 = (major1 + 12.42) % 24
   const minor1 = ((major1 - 6.21) % 24 + 24) % 24
@@ -851,16 +863,18 @@ function conditionEmoji(s: string): string {
 
 // ─── Component ────────────────────────────────────────────────────────────────
 
-export default function TideLocationPage({ station }: { station: StationConfig }) {
-  const [mode, setMode] = useState<Mode>('dark')
+function PabloCreekEntranceContent() {
+  const [mode, setMode] = useState<Mode>(() => {
+    if (typeof window !== 'undefined') return (localStorage.getItem('tcpMode') as Mode) || 'dark'
+    return 'dark'
+  })
+  useEffect(() => { localStorage.setItem('tcpMode', mode) }, [mode])
   const t = THEMES[mode]
-
-  const WEATHER = { ...WEATHER_DEFAULT, waterTemp: station.waterTempDefault }
 
   const [currentMonth, setCurrentMonth] = useState<Date>(() => {
     const n = new Date(); return new Date(n.getFullYear(), n.getMonth(), 1)
   })
-  const calDays    = generateCalMonth(currentMonth.getFullYear(), currentMonth.getMonth(), station)
+  const calDays    = generateCalMonth(currentMonth.getFullYear(), currentMonth.getMonth())
   const monthLabel = currentMonth.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
 
   // ── Selected date (for charts) — useState + native history API ──
@@ -883,10 +897,10 @@ export default function TideLocationPage({ station }: { station: StationConfig }
     setSelectedDate(d)
     const today = new Date()
     if (d.toDateString() === today.toDateString()) {
-      window.history.pushState(null, '', `/tides/${station.state}/${station.slug}`)
+      window.history.pushState(null, '', `/tides/${STATION.state}/${STATION.slug}`)
     } else {
       const iso = `${d.getFullYear()}-${String(d.getMonth()+1).padStart(2,'0')}-${String(d.getDate()).padStart(2,'0')}`
-      window.history.pushState(null, '', `/tides/${station.state}/${station.slug}?date=${iso}`)
+      window.history.pushState(null, '', `/tides/${STATION.state}/${STATION.slug}?date=${iso}`)
     }
     window.scrollTo({ top: 0, behavior: 'smooth' })
   }, [])
@@ -912,7 +926,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
 
   const harmonicSelCurve   = useMemo(() => tideCurveForDate(selectedDate),   [selectedDate])
   const harmonicSelEvents  = useMemo(() => tideEventsForDate(selectedDate),  [selectedDate])
-  const selSunH    = useMemo(() => sunTimesHoursForDate(selectedDate, station), [selectedDate, station])
+  const selSunH    = useMemo(() => sunTimesHoursForDate(selectedDate), [selectedDate])
   const selSolunar = useMemo(() => solunarForDate(selectedDate),     [selectedDate])
   const selForecastBase = useMemo(() => forecastForDate(selectedDate),   [selectedDate])
 
@@ -923,11 +937,10 @@ export default function TideLocationPage({ station }: { station: StationConfig }
   // ── NOAA tide fetch ──
   useEffect(() => {
     const BASE   = 'https://api.tidesandcurrents.noaa.gov/api/prod/datagetter'
-    const COMMON = `&datum=MLLW&station=${station.id}&time_zone=lst_ldt&units=english&format=json&application=TideChartsPro`
+    const COMMON = `&datum=MLLW&station=${STATION.id}&time_zone=lst_ldt&units=english&format=json&application=TideChartsPro`
     const pad    = (n: number) => String(n).padStart(2, '0')
     const fmt    = (d: Date) => `${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`
     const today  = new Date()
-    const yest   = new Date(today); yest.setDate(today.getDate() - 1)
     const plus7  = new Date(today); plus7.setDate(today.getDate() + 7)
 
     // 6-min curve for today
@@ -946,8 +959,8 @@ export default function TideLocationPage({ station }: { station: StationConfig }
       })
       .catch(() => {})
 
-    // Hilo events yesterday → +7 days (yesterday needed to anchor curve start-of-day)
-    fetch(`${BASE}?product=predictions&interval=hilo&begin_date=${fmt(yest)}&end_date=${fmt(plus7)}${COMMON}`)
+    // Hilo events for today + 7 days
+    fetch(`${BASE}?product=predictions&interval=hilo&begin_date=${fmt(today)}&end_date=${fmt(plus7)}${COMMON}`)
       .then(r => r.json())
       .then((d: { predictions?: {t:string, v:string, type:string}[] }) => {
         const raw = d.predictions
@@ -975,26 +988,9 @@ export default function TideLocationPage({ station }: { station: StationConfig }
     return `${d.getFullYear()}-${p(d.getMonth()+1)}-${p(d.getDate())}`
   }
 
-  // Derived: live 6-min → hilo-interpolated → harmonic fallback
+  // Derived: live overrides harmonic, harmonic is always the fallback
   const selDateKey = dateKey(selectedDate)
-
-  // Build interpolated curve from hilo events when 6-min data is unavailable
-  const hiloSelCurve = useMemo(() => {
-    const todayEvts = liveHilo?.get(selDateKey)
-    if (!todayEvts || todayEvts.length < 2) return null
-    const dPrev = new Date(selectedDate); dPrev.setDate(selectedDate.getDate() - 1)
-    const dNext = new Date(selectedDate); dNext.setDate(selectedDate.getDate() + 1)
-    const prevEvts = liveHilo?.get(dateKey(dPrev)) ?? []
-    const nextEvts = liveHilo?.get(dateKey(dNext)) ?? []
-    const all = [
-      ...prevEvts.map(e => ({ hour: e.hour - 24, height: e.height })),
-      ...todayEvts.map(e => ({ hour: e.hour, height: e.height })),
-      ...nextEvts.map(e => ({ hour: e.hour + 24, height: e.height })),
-    ]
-    return buildCurveFromHilo(all)
-  }, [liveHilo, selDateKey, selectedDate])
-
-  const selCurve   = (isViewingToday && liveToday) ? liveToday : (hiloSelCurve ?? harmonicSelCurve)
+  const selCurve   = (isViewingToday && liveToday) ? liveToday : harmonicSelCurve
   const selEvents  = liveHilo?.get(selDateKey) ?? harmonicSelEvents
   const selForecast = useMemo(() => {
     if (!liveHilo) return selForecastBase
@@ -1037,22 +1033,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
   const harmonicTodayEvents  = useMemo(() => tideEventsForDate(new Date()),  [])
   const todaySolunar = useMemo(() => solunarForDate(new Date()),     [])
   const harmonicTomorrowEvents = useMemo(() => { const d = new Date(); d.setDate(d.getDate() + 1); return tideEventsForDate(d) }, [])
-  const hiloTodayCurve = useMemo(() => {
-    const todayKey = dateKey(new Date())
-    const todayEvts = liveHilo?.get(todayKey)
-    if (!todayEvts || todayEvts.length < 2) return null
-    const dPrev = new Date(); dPrev.setDate(dPrev.getDate() - 1)
-    const dNext = new Date(); dNext.setDate(dNext.getDate() + 1)
-    const prevEvts = liveHilo?.get(dateKey(dPrev)) ?? []
-    const nextEvts = liveHilo?.get(dateKey(dNext)) ?? []
-    const all = [
-      ...prevEvts.map(e => ({ hour: e.hour - 24, height: e.height })),
-      ...todayEvts.map(e => ({ hour: e.hour, height: e.height })),
-      ...nextEvts.map(e => ({ hour: e.hour + 24, height: e.height })),
-    ]
-    return buildCurveFromHilo(all)
-  }, [liveHilo])
-  const todayCurve     = liveToday ?? hiloTodayCurve ?? harmonicTodayCurve
+  const todayCurve     = liveToday ?? harmonicTodayCurve
   const todayEvents    = liveHilo?.get(dateKey(new Date())) ?? harmonicTodayEvents
   const tomorrowEvents = (() => { const d = new Date(); d.setDate(d.getDate()+1); return liveHilo?.get(dateKey(d)) ?? harmonicTomorrowEvents })()
 
@@ -1155,7 +1136,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
     setWxLoading(true)
     setWxError(false)
 
-    const WX_CACHE_KEY = `noaa_wx_urls_${station.lat}_${station.lon}`
+    const WX_CACHE_KEY = `noaa_wx_urls_${STATION.lat}_${STATION.lon}`
 
     type RawPeriod = {
       startTime: string; temperature: number; windSpeed: string; windDirection: string;
@@ -1207,7 +1188,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
     }
 
     function fetchFromPoints(): Promise<void> {
-      return fetch(`https://api.weather.gov/points/${station.lat},${station.lon}`)
+      return fetch(`https://api.weather.gov/points/${STATION.lat},${STATION.lon}`)
         .then(r => { if (!r.ok) throw new Error(String(r.status)); return r.json() })
         .then(meta => {
           const { forecastHourly, forecast } = meta.properties
@@ -1232,13 +1213,12 @@ export default function TideLocationPage({ station }: { station: StationConfig }
     if (!started) {
       fetchFromPoints().catch(() => { setWxError(true); setWxLoading(false) })
     }
-  // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [wxRetry])
 
   // ── Live water temp (NOAA CO-OPS station 8720503) ──
   const [waterTemp, setWaterTemp] = useState<string | null>(null)
   useEffect(() => {
-    fetch(`https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?station=${station.waterTempId}&product=water_temperature&time_zone=LST_LDT&interval=h&units=english&application=TideChartsPro&format=json&range=2`)
+    fetch(`https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?station=${STATION.waterTempId}&product=water_temperature&time_zone=LST_LDT&interval=h&units=english&application=TideChartsPro&format=json&range=2`)
       .then(r => r.json())
       .then((d: { data?: Array<{ v: string }> }) => {
         const last = d.data?.at(-1)
@@ -1453,13 +1433,13 @@ export default function TideLocationPage({ station }: { station: StationConfig }
             <div style={{ fontSize: 11, color: t.textFaint, marginBottom: 4 }}>
               <a href="/tides/florida" style={{ color: t.textFaint, textDecoration: 'none' }}>Florida</a>
               <span style={{ margin: '0 6px' }}>/</span>
-              <span style={{ color: t.textMuted }}>{station.name}</span>
+              <span style={{ color: t.textMuted }}>{STATION.name}</span>
             </div>
             <h1 className="tcp-hero-h1" style={{ fontSize: 26, fontWeight: 700, margin: 0, lineHeight: 1.2 }}>
-              {station.name}
+              {STATION.name}
             </h1>
             <div style={{ fontSize: 13, color: t.textMuted, marginTop: 4 }}>
-              {station.city} · {station.latDisplay} {station.lonDisplay}
+              {STATION.city} · {STATION.latDisplay} {STATION.lonDisplay}
             </div>
           </div>
           <div style={{ textAlign: 'right' }}>
@@ -1791,7 +1771,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
             <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', marginBottom: 14 }}>
               <div>
                 <div style={{ fontSize: 13, fontWeight: 600, color: t.text, letterSpacing: '0.02em' }}>Weather Forecast</div>
-                <div style={{ fontSize: 11, color: t.textFaint, marginTop: 2 }}>Live data · {station.city}</div>
+                <div style={{ fontSize: 11, color: t.textFaint, marginTop: 2 }}>Live data · {STATION.city}</div>
               </div>
               <div style={{ display: 'flex', gap: 4 }}>
                 {(['hourly', '7day', 'radar'] as const).map(tab => (
@@ -1813,7 +1793,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
             {wxTab === 'hourly' && wxError   && (
               <div style={{ textAlign: 'center', padding: '24px 0' }}>
                 <div style={{ color: t.textFaint, fontSize: 12, marginBottom: 10 }}>Weather data unavailable</div>
-                <button onClick={() => { try { localStorage.removeItem(`noaa_wx_urls_${station.lat}_${station.lon}`) } catch {} setWxRetry(n => n + 1) }} style={{ padding: '6px 18px', fontSize: 12, fontWeight: 600, borderRadius: 6, border: `1px solid ${t.accent}`, background: t.accentFaint, color: t.accent, cursor: 'pointer', fontFamily: 'inherit' }}>
+                <button onClick={() => { try { localStorage.removeItem(`noaa_wx_urls_${STATION.lat}_${STATION.lon}`) } catch {} setWxRetry(n => n + 1) }} style={{ padding: '6px 18px', fontSize: 12, fontWeight: 600, borderRadius: 6, border: `1px solid ${t.accent}`, background: t.accentFaint, color: t.accent, cursor: 'pointer', fontFamily: 'inherit' }}>
                   Retry
                 </button>
               </div>
@@ -1967,7 +1947,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
 
             {/* ── Radar tab ── */}
             {wxTab === 'radar' && (() => {
-              const { z: Z, cx: CX, cy: CY, left: markerLeft, top: markerTop } = latlonToRadarMap(station.lat, station.lon)
+              const Z = STATION.mapTile.z, CX = STATION.mapTile.cx, CY = STATION.mapTile.cy
               const offsets = [-1, 0, 1]
               const frame = radarFrames[radarIdx] ?? ''
               const tsMatch = frame.match(/\/(\d+)\//)
@@ -2000,9 +1980,9 @@ export default function TideLocationPage({ station }: { station: StationConfig }
                       }))}
                     </div>
                     {/* Station marker */}
-                    <div style={{ position: 'absolute', left: markerLeft, top: markerTop, transform: 'translate(-50%,-50%)', pointerEvents: 'none', zIndex: 10 }}>
+                    <div style={{ position: 'absolute', left: STATION.mapMarker.left, top: STATION.mapMarker.top, transform: 'translate(-50%,-50%)', pointerEvents: 'none', zIndex: 10 }}>
                       <div style={{ width: 12, height: 12, borderRadius: '50%', background: '#f97316', border: '2px solid white', boxShadow: '0 0 10px rgba(0,0,0,0.9), 0 0 0 5px rgba(249,115,22,0.4)' }}/>
-                      <div style={{ position: 'absolute', top: 16, left: '50%', transform: 'translateX(-50%)', background: 'rgba(0,0,0,0.85)', color: '#fff', fontSize: 9, fontWeight: 700, padding: '2px 6px', borderRadius: 3, whiteSpace: 'nowrap' as const }}>{station.name.split(' ').slice(0,2).join(' ')}</div>
+                      <div style={{ position: 'absolute', top: 16, left: '50%', transform: 'translateX(-50%)', background: 'rgba(0,0,0,0.85)', color: '#fff', fontSize: 9, fontWeight: 700, padding: '2px 6px', borderRadius: 3, whiteSpace: 'nowrap' as const }}>{STATION.name.split(' ').slice(0,2).join(' ')}</div>
                     </div>
                     {/* Timestamp */}
                     {tsLabel && (
@@ -2161,9 +2141,9 @@ export default function TideLocationPage({ station }: { station: StationConfig }
         {/* Species reference */}
         {card(
           <>
-            {sectionTitle('Local Species', `${station.name} area · FL regulations`)}
+            {sectionTitle('Local Species', `${STATION.name} area · FL regulations`)}
             <div style={{ display: 'grid', gridTemplateColumns: isMobile ? 'repeat(2, minmax(0,1fr))' : 'repeat(auto-fill, minmax(180px, 1fr))', gap: 8 }}>
-              {station.species.map(sp => (
+              {STATION.species.map(sp => (
                 <div key={sp.name} style={{
                   background: t.surface,
                   border: `1px solid ${t.border}`,
@@ -2288,7 +2268,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
         {/* ── 30-Day Tide Calendar ── */}
         {card(
           <>
-            {sectionTitle('30-Day Tide Calendar', `${monthLabel} · ${station.name}`)}
+            {sectionTitle('30-Day Tide Calendar', `${monthLabel} · ${STATION.name}`)}
 
             {/* Month nav */}
             <div style={{ display: 'flex', alignItems: 'center', gap: 16, marginBottom: 14 }}>
@@ -2405,10 +2385,10 @@ export default function TideLocationPage({ station }: { station: StationConfig }
             {/* Coord row */}
             <div style={{ display: 'grid', gridTemplateColumns: isMobile ? 'repeat(2, minmax(0,1fr))' : 'repeat(4, minmax(0,1fr))', marginBottom: 16, borderRadius: 8, overflow: 'hidden', border: `1px solid ${t.border}` }}>
               {[
-                { label: 'Latitude',  value: station.latDisplay },
-                { label: 'Longitude', value: station.lonDisplay },
+                { label: 'Latitude',  value: STATION.latDisplay },
+                { label: 'Longitude', value: STATION.lonDisplay },
                 { label: 'State',     value: 'Florida' },
-                { label: 'City',      value: station.city.split(',')[0] },
+                { label: 'City',      value: STATION.city.split(',')[0] },
               ].map((item, i) => (
                 <div key={item.label} style={{
                   padding: '10px 14px',
@@ -2427,14 +2407,14 @@ export default function TideLocationPage({ station }: { station: StationConfig }
               {/* Map */}
               <div style={{ borderRadius: 10, overflow: 'hidden', border: `1px solid ${t.border}`, height: 340 }}>
                 <TideMap
-                  lat={station.lat}
-                  lon={station.lon}
-                  name={station.name}
+                  lat={STATION.lat}
+                  lon={STATION.lon}
+                  name={STATION.name}
                   mode={mode}
                   accent={t.accent}
-                  nearby={station.nearby.map(s => ({
+                  nearby={STATION.nearby.map(s => ({
                     ...s,
-                    distMi: haversineMi(station.lat, station.lon, s.lat, s.lon),
+                    distMi: haversineMi(STATION.lat, STATION.lon, s.lat, s.lon),
                   }))}
                 />
               </div>
@@ -2443,12 +2423,12 @@ export default function TideLocationPage({ station }: { station: StationConfig }
               <div>
                 <div style={{ fontSize: 11, fontWeight: 700, color: t.textFaint, textTransform: 'uppercase', letterSpacing: '0.06em', marginBottom: 10 }}>Nearby Stations</div>
                 <div style={{ display: 'flex', flexDirection: 'column', gap: 2 }}>
-                  {station.nearby
-                    .map(s => ({ ...s, distMi: haversineMi(station.lat, station.lon, s.lat, s.lon) }))
+                  {STATION.nearby
+                    .map(s => ({ ...s, distMi: haversineMi(STATION.lat, STATION.lon, s.lat, s.lon) }))
                     .sort((a, b) => a.distMi - b.distMi)
                     .map(s => (
                       <a key={s.slug}
-                        href={`/tides/${station.state}/${s.slug}`}
+                        href={`/tides/${STATION.state}/${s.slug}`}
                         style={{
                           display: 'flex', alignItems: 'center', gap: 10,
                           padding: '8px 10px',
@@ -2478,24 +2458,84 @@ export default function TideLocationPage({ station }: { station: StationConfig }
 
       </div>
 
+      {/* SEO: About this station */}
+      <div style={{ maxWidth: 1100, margin: '0 auto', padding: isMobile ? '0 12px 24px' : '0 20px 32px' }}>
+        {card(
+          <>
+            {sectionTitle('About Tides at Pablo Creek Entrance', 'Northeast Florida inshore fishing guide')}
+
+            <p style={{ fontSize: 14, color: t.textMuted, lineHeight: 1.8, marginBottom: 16, margin: '0 0 16px' }}>
+              Pablo Creek Entrance is a tidal waterway in Northeast Florida near Jacksonville Beach and Mayport.
+              Tides here are <strong style={{ color: t.text }}>semidiurnal</strong> - two high tides and two low tides each day -
+              with a mean tidal range of approximately <strong style={{ color: t.text }}>4.5 feet</strong>.
+              The strong tidal movement through Pablo Creek makes this one of the most productive inshore fishing
+              spots in the Jacksonville area, particularly during moving tides.
+            </p>
+
+            <div style={{ fontSize: 13, fontWeight: 600, color: t.text, marginBottom: 8, marginTop: 20 }}>Best Fishing Tides</div>
+            <p style={{ fontSize: 14, color: t.textMuted, lineHeight: 1.8, margin: '0 0 16px' }}>
+              The best fishing at Pablo Creek Entrance is typically the <strong style={{ color: t.text }}>2 hours before
+              and after each high or low tide</strong>, when currents push bait through the creek mouth and channel edges.
+              Redfish and Spotted Seatrout concentrate near the entrance on outgoing tides, while Flounder and
+              Black Drum favor the incoming tide along drop-offs and bridge structure. Sheepshead hold on
+              pilings and dock structure throughout the tidal cycle.
+            </p>
+
+            <div style={{ fontSize: 13, fontWeight: 600, color: t.text, marginBottom: 8, marginTop: 20 }}>Target Species</div>
+            <p style={{ fontSize: 14, color: t.textMuted, lineHeight: 1.8, margin: '0 0 20px' }}>
+              Common inshore species at Pablo Creek include <strong style={{ color: t.text }}>Redfish</strong>,{' '}
+              <strong style={{ color: t.text }}>Spotted Seatrout</strong>, <strong style={{ color: t.text }}>Black Drum</strong>,{' '}
+              <strong style={{ color: t.text }}>Flounder</strong>, and <strong style={{ color: t.text }}>Sheepshead</strong>.
+              The creek connects to the Intracoastal Waterway and the St. Johns River system, giving anglers
+              access to grass flats, oyster bars, and tidal channels.
+            </p>
+
+            <div style={{ fontSize: 13, fontWeight: 600, color: t.text, marginBottom: 10, marginTop: 20 }}>Nearby Tide Stations</div>
+            <div style={{ display: 'flex', flexWrap: 'wrap', gap: 8 }}>
+              {[
+                { name: 'Mayport Ferry Depot', slug: 'mayport-ferry-depot' },
+                { name: 'Sisters Creek', slug: 'sisters-creek' },
+                { name: 'Jacksonville Beach', slug: 'jacksonville-beach' },
+                { name: 'Atlantic Beach', slug: 'atlantic-beach' },
+                { name: 'Pablo Creek - ICWW Bridge', slug: 'pablo-creek-icww-bridge' },
+              ].map(s => (
+                <a
+                  key={s.slug}
+                  href={`/tides/florida/${s.slug}`}
+                  style={{
+                    fontSize: 13, color: t.accent, textDecoration: 'none',
+                    background: t.surfaceAlt, border: `1px solid ${t.border}`,
+                    borderRadius: 6, padding: '5px 12px',
+                  }}
+                >
+                  {s.name}
+                </a>
+              ))}
+            </div>
+          </>
+        )}
+      </div>
+
       {/* Footer */}
       <footer style={{
         borderTop: `1px solid ${t.border}`,
         padding: '20px',
       }}>
         <div style={{ maxWidth: 1100, margin: '0 auto', display: 'flex', justifyContent: 'space-between', alignItems: 'center', flexWrap: 'wrap', gap: 10 }}>
-          <a href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center', flexShrink: 0 }}>
-            {/* eslint-disable-next-line @next/next/no-img-element */}
+          <a href="/" style={{ textDecoration: 'none', display: 'flex', alignItems: 'center' }}>
             <img
               src={mode === 'light' ? '/logo_light.webp' : mode === 'red' ? '/logo_red.webp' : '/logo.webp'}
               alt="TideChartsPro"
-              style={{ height: 44, width: 'auto', objectFit: 'contain', display: 'block', borderRadius: 4 }}
+              style={{ height: 49, width: 120, objectFit: 'fill', display: 'block', borderRadius: 4 }}
             />
           </a>
-          <div style={{ fontSize: 11, color: t.textFaint }}>© 2026 TideChartsPro</div>
-          <div style={{ display: 'flex', gap: 16, fontSize: 11 }}>
-            <a href="/tides" style={{ color: t.textFaint, textDecoration: 'none' }}>Tide Charts</a>
-            <a href="/privacy" style={{ color: t.textFaint, textDecoration: 'none' }}>Privacy Policy</a>
+          <div style={{ fontSize: 11, color: t.textFaint }}>
+            © 2026 TideChartsPro
+          </div>
+          <div style={{ display: 'flex', gap: 16, fontSize: 11, color: t.textFaint }}>
+            <a href="/tides" style={{ color: t.textFaint, textDecoration: 'none' }}>Tides</a>
+            <a href="/fishing" style={{ color: t.textFaint, textDecoration: 'none' }}>Fishing</a>
+            <a href="/map" style={{ color: t.textFaint, textDecoration: 'none' }}>Map</a>
           </div>
         </div>
       </footer>
@@ -2504,3 +2544,10 @@ export default function TideLocationPage({ station }: { station: StationConfig }
   )
 }
 
+export default function PabloCreekEntrancePage() {
+  return (
+    <Suspense>
+      <PabloCreekEntranceContent />
+    </Suspense>
+  )
+}
