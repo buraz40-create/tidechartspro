@@ -274,7 +274,7 @@ function drawTideChart(
   const ctx = canvas.getContext('2d')!
   ctx.scale(dpr, dpr)
 
-  const PAD = { top: 80, right: 18, bottom: 70, left: 48 }
+  const PAD = { top: 80, right: 18, bottom: 110, left: 48 }
   const cw = W - PAD.left - PAD.right
   const ch = H - PAD.top  - PAD.bottom
 
@@ -404,7 +404,7 @@ function drawTideChart(
 
   // ── solunar fish strip along bottom
   if (solunar) {
-    const fishY = PAD.top + ch + 24
+    const fishY = PAD.top + ch + 60
     solunar.forEach(s => {
       const isMajor = s.type === 'major'
       const fishCount = isMajor ? 3 : 1
@@ -1723,7 +1723,7 @@ function PabloCreekEntranceContent() {
                 ref={tideRef}
                 onMouseMove={handleTideMouseMove}
                 onMouseLeave={handleTideMouseLeave}
-                style={{ width: '100%', height: 380, display: 'block', borderRadius: 6, cursor: 'crosshair' }}
+                style={{ width: '100%', height: 440, display: 'block', borderRadius: 6, cursor: 'crosshair' }}
               />
               {tooltip && (
                 <div style={{
