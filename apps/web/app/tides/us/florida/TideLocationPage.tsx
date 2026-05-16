@@ -234,7 +234,7 @@ function buildCurveFromHilo(
     if (ni >= sorted.length) return sorted[sorted.length - 1].height
     const prev = sorted[ni - 1], next = sorted[ni]
     const frac = (hour - prev.hour) / (next.hour - prev.hour)
-    return Math.max(0, (prev.height + next.height) / 2 - (next.height - prev.height) / 2 * Math.cos(frac * Math.PI))
+    return (prev.height + next.height) / 2 - (next.height - prev.height) / 2 * Math.cos(frac * Math.PI)
   })
 }
 
@@ -742,7 +742,7 @@ function tideCurveForDate(date: Date): number[] {
       amp * Math.cos((ts * 2 * Math.PI) / M2) +
       (amp * 0.167) * Math.cos((ts * 4 * Math.PI) / M2) +
       0.12 * Math.sin(((t - 3) * 2 * Math.PI) / 24)
-    pts.push(Math.max(0, h))
+    pts.push(h)
   }
   return pts
 }

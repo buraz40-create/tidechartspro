@@ -752,7 +752,7 @@ function tideCurveForDate(date: Date): number[] {
       amp * Math.cos((ts * 2 * Math.PI) / M2) +
       (amp * 0.167) * Math.cos((ts * 4 * Math.PI) / M2) +
       0.12 * Math.sin(((t - 3) * 2 * Math.PI) / 24)
-    pts.push(Math.max(0, h))
+    pts.push(h)
   }
   return pts
 }
