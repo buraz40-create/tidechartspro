@@ -274,18 +274,15 @@ function drawTideChart(
   const ctx = canvas.getContext('2d')!
   ctx.scale(dpr, dpr)
 
-  const PAD = { top: 80, right: 18, bottom: 70, left: 48 }
+  const PAD = { top: 80, right: 18, bottom: 52, left: 48 }
   const cw = W - PAD.left - PAD.right
   const ch = H - PAD.top  - PAD.bottom
 
-  // Dynamic Y-axis: scale to actual tide range so pins never clip top or bottom
+  // Dynamic Y-axis: scale to actual tide range so pins never clip the top
   const maxTide = events.length ? Math.max(...events.map(e => e.height)) : 6
-  const minTide = events.length ? Math.min(...events.map(e => e.height), 0) : 0
   const maxH    = Math.max(6, Math.ceil(maxTide / 0.65))
-  const minH    = Math.min(0, Math.floor(minTide - 0.3))
-  const rangeH  = maxH - minH
   const toX    = (hour: number) => PAD.left + (hour / 24) * cw
-  const toY    = (ht: number)   => PAD.top  + ch - ((ht - minH) / rangeH) * ch
+  const toY    = (ht: number)   => PAD.top  + ch - (ht / maxH) * ch
 
   // ── background
   ctx.fillStyle = t.canvasBg
@@ -306,11 +303,11 @@ function drawTideChart(
     ((sunsetH - sunriseH) / 24) * cw, ch,
   )
 
-  // ── grid lines (height) - step size adapts to dynamic range
-  const gridStep = rangeH <= 8 ? 1 : rangeH <= 14 ? 2 : 3
+  // ── grid lines (height) - step size adapts to dynamic maxH
+  const gridStep = maxH <= 8 ? 1 : maxH <= 14 ? 2 : 3
   ctx.strokeStyle = t.canvasGrid
   ctx.lineWidth   = 0.5
-  for (let h = minH; h <= maxH; h += gridStep) {
+  for (let h = 0; h <= maxH; h += gridStep) {
     const y = toY(h)
     if (y < PAD.top - 2) break
     ctx.beginPath()
@@ -348,8 +345,8 @@ function drawTideChart(
     if (i === 0) ctx.moveTo(x, y)
     else ctx.lineTo(x, y)
   })
-  ctx.lineTo(toX(24), toY(minH))
-  ctx.lineTo(toX(0),  toY(minH))
+  ctx.lineTo(toX(24), toY(0))
+  ctx.lineTo(toX(0),  toY(0))
   ctx.closePath()
   ctx.fillStyle = t.canvasWaterFill
   ctx.fill()
@@ -1723,7 +1720,7 @@ function PabloCreekEntranceContent() {
                 ref={tideRef}
                 onMouseMove={handleTideMouseMove}
                 onMouseLeave={handleTideMouseLeave}
-                style={{ width: '100%', height: 380, display: 'block', borderRadius: 6, cursor: 'crosshair' }}
+                style={{ width: '100%', height: 340, display: 'block', borderRadius: 6, cursor: 'crosshair' }}
               />
               {tooltip && (
                 <div style={{
