@@ -406,27 +406,26 @@ function drawTideChart(
   // ── teardrop pins for high/low events
   events.forEach(ev => {
     const x  = toX(ev.hour)
-    const y  = toY(ev.height)
+    // Clamp so dot stays inside chart area even when event height is negative
+    const y  = Math.min(PAD.top + ch - 4, toY(ev.height))
     const isHigh = ev.label === 'High'
     const pinColor = isHigh ? t.canvasHighPin : t.canvasLowPin
     const r   = 22      // bubble radius
     const gap = 8       // gap between curve and bottom of bubble
     const ptW = 7       // half-width of teardrop point base
 
-    // HIGH: bubble floats above the peak; LOW: bubble centers on the curve point
-    const cyIdeal = isHigh ? y - gap - r : y
-    const cy = isHigh ? Math.max(PAD.top + r + 2, cyIdeal) : cyIdeal
+    // Bubble always floats above the curve; clamp so it never clips top padding
+    const cyIdeal = y - gap - r
+    const cy = Math.max(PAD.top + r + 2, cyIdeal)
 
-    // Teardrop triangle — only for high tide pins (low pins sit on the curve directly)
-    if (isHigh) {
-      ctx.beginPath()
-      ctx.moveTo(x, y)
-      ctx.lineTo(x - ptW, cy + r - 4)
-      ctx.lineTo(x + ptW, cy + r - 4)
-      ctx.closePath()
-      ctx.fillStyle = pinColor
-      ctx.fill()
-    }
+    // Teardrop triangle from curve point up to bubble bottom
+    ctx.beginPath()
+    ctx.moveTo(x, y)
+    ctx.lineTo(x - ptW, cy + r - 4)
+    ctx.lineTo(x + ptW, cy + r - 4)
+    ctx.closePath()
+    ctx.fillStyle = pinColor
+    ctx.fill()
 
     // Bubble circle
     ctx.beginPath()
