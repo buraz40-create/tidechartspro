@@ -6,13 +6,13 @@ import { fileURLToPath } from 'node:url'
 const __dirname = path.dirname(fileURLToPath(import.meta.url))
 const libDir = path.resolve(__dirname, '..', 'lib')
 
-const tempData = JSON.parse(fs.readFileSync(path.resolve(__dirname, '..', '..', '..', 'noaa-temp-stations.json'), 'utf8'))
+const tempData = JSON.parse(fs.readFileSync(path.resolve(__dirname, '..', '..', '..', 'noaa-temp-stations-live.json'), 'utf8'))
 const tempStations = tempData.stations.map(s => ({
   id: s.id,
   name: s.name,
   state: s.state,
-  lat: parseFloat(s.lat),
-  lon: parseFloat(s.lng),
+  lat: s.lat,
+  lon: s.lon,
 })).filter(s => Number.isFinite(s.lat) && Number.isFinite(s.lon))
 
 function haversine(lat1, lon1, lat2, lon2) {

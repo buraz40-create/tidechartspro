@@ -2559,7 +2559,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638863", waterTempId: "8638901",
+    id: "8638863", waterTempId: "8638610",
     name: "CHESAPEAKE BAY BRIDGE TUNNEL", slug: "chesapeake-bay-bridge-tunnel",
     state: "virginia", city: "CHESAPEAKE BAY BRIDGE TUNNEL, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.96670150756836, lon: -76.11329650878906, latDisplay: "36.97°N", lonDisplay: "76.11°W",
@@ -2581,7 +2581,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638867", waterTempId: "8638901",
+    id: "8638867", waterTempId: "8638610",
     name: "Bayville", slug: "bayville",
     state: "virginia", city: "Bayville, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.8933, lon: -76.105, latDisplay: "36.89°N", lonDisplay: "76.11°W",
@@ -2603,7 +2603,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638888", waterTempId: "8638901",
+    id: "8638888", waterTempId: "8638610",
     name: "Lynnhaven Inlet, Virginia Pilots Dock", slug: "lynnhaven-inlet-virginia-pilots-dock",
     state: "virginia", city: "Lynnhaven Inlet, Virginia Pilots Dock, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9067, lon: -76.09, latDisplay: "36.91°N", lonDisplay: "76.09°W",
@@ -2625,7 +2625,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638901", waterTempId: "8638901",
+    id: "8638901", waterTempId: "8632200",
     name: "CBBT, CHESAPEAKE CHANNEL", slug: "cbbt-chesapeake-channel",
     state: "virginia", city: "CBBT, CHESAPEAKE CHANNEL, VA", region: "Virginia Beach / Currituck Sound",
     lat: 37.032901763916016, lon: -76.08329772949219, latDisplay: "37.03°N", lonDisplay: "76.08°W",
@@ -2647,7 +2647,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638916", waterTempId: "8638901",
+    id: "8638916", waterTempId: "8638610",
     name: "Long Creek", slug: "long-creek",
     state: "virginia", city: "Long Creek, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9033, lon: -76.07, latDisplay: "36.90°N", lonDisplay: "76.07°W",
@@ -2669,7 +2669,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638922", waterTempId: "8638901",
+    id: "8638922", waterTempId: "8639348",
     name: "Brown Cove", slug: "brown-cove",
     state: "virginia", city: "Brown Cove, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.875, lon: -76.0617, latDisplay: "36.88°N", lonDisplay: "76.06°W",
@@ -2691,7 +2691,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638923", waterTempId: "8638901",
+    id: "8638923", waterTempId: "8638610",
     name: "Broad Bay Canal", slug: "broad-bay-canal",
     state: "virginia", city: "Broad Bay Canal, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9017, lon: -76.0617, latDisplay: "36.90°N", lonDisplay: "76.06°W",
@@ -2713,7 +2713,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638999", waterTempId: "8638901",
+    id: "8638999", waterTempId: "8632200",
     name: "Cape Henry", slug: "cape-henry",
     state: "virginia", city: "Cape Henry, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.93000030517578, lon: -76.00666809082031, latDisplay: "36.93°N", lonDisplay: "76.01°W",
@@ -2735,7 +2735,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8639168", waterTempId: "8638901",
+    id: "8639168", waterTempId: "8639348",
     name: "Virginia Beach", slug: "virginia-beach",
     state: "virginia", city: "Virginia Beach, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.8433, lon: -75.9717, latDisplay: "36.84°N", lonDisplay: "75.97°W",
@@ -2757,7 +2757,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8639207", waterTempId: "8638901",
+    id: "8639207", waterTempId: "8639348",
     name: "Rudee Inlet, interior channel", slug: "rudee-inlet-interior-channel",
     state: "virginia", city: "Rudee Inlet, interior channel, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.8317, lon: -75.9733, latDisplay: "36.83°N", lonDisplay: "75.97°W",
@@ -2779,7 +2779,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8639208", waterTempId: "8638901",
+    id: "8639208", waterTempId: "8639348",
     name: "Rudee Inlet entrance", slug: "rudee-inlet-entrance",
     state: "virginia", city: "Rudee Inlet entrance, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.8317, lon: -75.9683, latDisplay: "36.83°N", lonDisplay: "75.97°W",
@@ -2801,7 +2801,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8639214", waterTempId: "8638901",
+    id: "8639214", waterTempId: "8639348",
     name: "Rudee Heights, Lake Wesley", slug: "rudee-heights-lake-wesley",
     state: "virginia", city: "Rudee Heights, Lake Wesley, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.825, lon: -75.975, latDisplay: "36.83°N", lonDisplay: "75.97°W",
@@ -2823,7 +2823,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8639219", waterTempId: "8638901",
+    id: "8639219", waterTempId: "8639348",
     name: "Lake Rudee, south end", slug: "lake-rudee-south-end",
     state: "virginia", city: "Lake Rudee, south end, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.825, lon: -75.9817, latDisplay: "36.83°N", lonDisplay: "75.98°W",
@@ -3131,7 +3131,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638864", waterTempId: "8638901",
+    id: "8638864", waterTempId: "8638610",
     name: "EDL GAGE  CHES BAY BR TUNNEL  TEST", slug: "edl-gage-ches-bay-br-tunnel-test",
     state: "virginia", city: "EDL GAGE  CHES BAY BR TUNNEL  TEST, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9667, lon: -76.1133, latDisplay: "36.97°N", lonDisplay: "76.11°W",
@@ -3153,7 +3153,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638865", waterTempId: "8638901",
+    id: "8638865", waterTempId: "8638610",
     name: "CHES. BAY TEST FACILITY", slug: "ches-bay-test-facility",
     state: "virginia", city: "CHES. BAY TEST FACILITY, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9667, lon: -76.1133, latDisplay: "36.97°N", lonDisplay: "76.11°W",
@@ -3175,7 +3175,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638866", waterTempId: "8638901",
+    id: "8638866", waterTempId: "8638610",
     name: "CHES BAY BR TEST FAC (BACKUP)", slug: "ches-bay-br-test-fac-backup",
     state: "virginia", city: "CHES BAY BR TEST FAC (BACKUP), VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9667, lon: -76.1133, latDisplay: "36.97°N", lonDisplay: "76.11°W",
@@ -3197,7 +3197,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638868", waterTempId: "8638901",
+    id: "8638868", waterTempId: "8638610",
     name: "WELL D, CHES BAY BR TUNNEL TEST", slug: "well-d-ches-bay-br-tunnel-test",
     state: "virginia", city: "WELL D, CHES BAY BR TUNNEL TEST, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9667, lon: -76.1133, latDisplay: "36.97°N", lonDisplay: "76.11°W",
@@ -3219,7 +3219,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638869", waterTempId: "8638901",
+    id: "8638869", waterTempId: "8638610",
     name: "WELL J, CHES BAY BR TUNNEL TEST", slug: "well-j-ches-bay-br-tunnel-test",
     state: "virginia", city: "WELL J, CHES BAY BR TUNNEL TEST, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9667, lon: -76.1133, latDisplay: "36.97°N", lonDisplay: "76.11°W",
@@ -3241,7 +3241,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638905", waterTempId: "8638901",
+    id: "8638905", waterTempId: "8638610",
     name: "LYNNHAVEN FISHING PIER", slug: "lynnhaven-fishing-pier",
     state: "virginia", city: "LYNNHAVEN FISHING PIER, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9167, lon: -76.0783, latDisplay: "36.92°N", lonDisplay: "76.08°W",
@@ -3263,7 +3263,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638942", waterTempId: "8638901",
+    id: "8638942", waterTempId: "8638610",
     name: "CARTERS POINT #1", slug: "carters-point-1",
     state: "virginia", city: "CARTERS POINT #1, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.905, lon: -76.0367, latDisplay: "36.91°N", lonDisplay: "76.04°W",
@@ -3285,7 +3285,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638946", waterTempId: "8638901",
+    id: "8638946", waterTempId: "8638610",
     name: "CARTERS POINT #2", slug: "carters-point-2",
     state: "virginia", city: "CARTERS POINT #2, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9033, lon: -76.0467, latDisplay: "36.90°N", lonDisplay: "76.05°W",
@@ -3307,7 +3307,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638978", waterTempId: "8638901",
+    id: "8638978", waterTempId: "8639348",
     name: "CAVALIER YACHT CLUB,LINKHORN BAY", slug: "cavalier-yacht-clublinkhorn-bay",
     state: "virginia", city: "CAVALIER YACHT CLUB,LINKHORN BAY, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.8683, lon: -76.005, latDisplay: "36.87°N", lonDisplay: "76.00°W",
@@ -3329,7 +3329,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638979", waterTempId: "8638901",
+    id: "8638979", waterTempId: "8632200",
     name: "Chesapeake Light", slug: "chesapeake-light",
     state: "virginia", city: "Chesapeake Light, VA", region: "Virginia Coast / Eastern Shore",
     lat: 36.905, lon: -75.6967, latDisplay: "36.91°N", lonDisplay: "75.70°W",

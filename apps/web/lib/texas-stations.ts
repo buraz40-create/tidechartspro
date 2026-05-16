@@ -183,7 +183,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8770653", waterTempId: "8770733",
+    id: "8770653", waterTempId: "8770613",
     name: "Cypress, San Jacinto River", slug: "cypress-san-jacinto-river",
     state: "texas", city: "Cypress, San Jacinto River, TX", region: "Galveston Bay",
     lat: 29.84670066833496, lon: -95.08830261230469, latDisplay: "29.85°N", lonDisplay: "95.09°W",
@@ -205,7 +205,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8770733", waterTempId: "8770733",
+    id: "8770733", waterTempId: "8770613",
     name: "Lynchburg Landing, San Jacinto River", slug: "lynchburg-landing-san-jacinto-river",
     state: "texas", city: "Lynchburg Landing, San Jacinto River, TX", region: "Galveston Bay",
     lat: 29.765, lon: -95.0783, latDisplay: "29.77°N", lonDisplay: "95.08°W",
@@ -227,7 +227,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8770743", waterTempId: "8770733",
+    id: "8770743", waterTempId: "8770613",
     name: "Battleship Texas State Park", slug: "battleship-texas-state-park",
     state: "texas", city: "Battleship Texas State Park, TX", region: "Galveston Bay",
     lat: 29.75670051574707, lon: -95.08999633789062, latDisplay: "29.76°N", lonDisplay: "95.09°W",
@@ -887,7 +887,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8773037", waterTempId: "8773037",
+    id: "8773037", waterTempId: "8774230",
     name: "Seadrift", slug: "seadrift",
     state: "texas", city: "Seadrift, TX", region: "Aransas / Corpus Christi",
     lat: 28.40690040588379, lon: -96.71240234375, latDisplay: "28.41°N", lonDisplay: "96.71°W",
@@ -1019,7 +1019,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8773896", waterTempId: "8773037",
+    id: "8773896", waterTempId: "8773701",
     name: "Shoalwater Flats, Espiritu Santo Bay", slug: "shoalwater-flats-espiritu-santo-bay",
     state: "texas", city: "Shoalwater Flats, Espiritu Santo Bay, TX", region: "Aransas / Corpus Christi",
     lat: 28.364500045776367, lon: -96.5802993774414, latDisplay: "28.36°N", lonDisplay: "96.58°W",
@@ -1261,7 +1261,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8775241", waterTempId: "8775241",
+    id: "8775241", waterTempId: "8775237",
     name: "Aransas, Aransas Pass", slug: "aransas-aransas-pass",
     state: "texas", city: "Aransas, Aransas Pass, TX", region: "Aransas / Corpus Christi",
     lat: 27.836599349975586, lon: -97.03910064697266, latDisplay: "27.84°N", lonDisplay: "97.04°W",
@@ -1305,7 +1305,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8775270", waterTempId: "8775241",
+    id: "8775270", waterTempId: "8775237",
     name: "Port Aransas (H. Caldwell Pier)", slug: "port-aransas-h-caldwell-pier",
     state: "texas", city: "Port Aransas (H. Caldwell Pier), TX", region: "Aransas / Corpus Christi",
     lat: 27.82670021057129, lon: -97.05000305175781, latDisplay: "27.83°N", lonDisplay: "97.05°W",
@@ -1327,7 +1327,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8775283", waterTempId: "8775283",
+    id: "8775283", waterTempId: "8775132",
     name: "Enbridge, Ingleside", slug: "enbridge-ingleside",
     state: "texas", city: "Enbridge, Ingleside, TX", region: "Aransas / Corpus Christi",
     lat: 27.81861111111111, lon: -97.20894444444444, latDisplay: "27.82°N", lonDisplay: "97.21°W",
@@ -1459,7 +1459,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8779280", waterTempId: "8779280",
+    id: "8779280", waterTempId: "8779770",
     name: "Realitos Pennisula, Laguna Madre", slug: "realitos-pennisula-laguna-madre",
     state: "texas", city: "Realitos Pennisula, Laguna Madre, TX", region: "Aransas / Corpus Christi",
     lat: 26.262399673461914, lon: -97.2853012084961, latDisplay: "26.26°N", lonDisplay: "97.29°W",
@@ -1657,7 +1657,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8770501", waterTempId: "8770733",
+    id: "8770501", waterTempId: "8770613",
     name: "ANNIE'S LANDING, SAN JACINTO RIVER", slug: "annies-landing-san-jacinto-river",
     state: "texas", city: "ANNIE'S LANDING, SAN JACINTO RIVER, TX", region: "Galveston Bay",
     lat: 29.8183, lon: -95.0783, latDisplay: "29.82°N", lonDisplay: "95.08°W",
@@ -1855,7 +1855,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8775238", waterTempId: "8775241",
+    id: "8775238", waterTempId: "8775237",
     name: "PORT ARANSAS (SPECIAL PROJECT)", slug: "port-aransas-special-project",
     state: "texas", city: "PORT ARANSAS (SPECIAL PROJECT), TX", region: "Aransas / Corpus Christi",
     lat: 27.8383, lon: -97.0517, latDisplay: "27.84°N", lonDisplay: "97.05°W",
@@ -1943,7 +1943,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8779040", waterTempId: "8779280",
+    id: "8779040", waterTempId: "8778490",
     name: "GREEN IS #1, WEST SIDE", slug: "green-is-1-west-side",
     state: "texas", city: "GREEN IS #1, WEST SIDE, TX", region: "Aransas / Corpus Christi",
     lat: 26.3617, lon: -97.3183, latDisplay: "26.36°N", lonDisplay: "97.32°W",

@@ -45,7 +45,7 @@ export interface StationConfig {
 
 export const FLORIDA_STATIONS: StationConfig[] = [
   {
-    id: "8720001", waterTempId: "8720030",
+    id: "8720001", waterTempId: "8720219",
     name: "Kings Ferry", slug: "kings-ferry",
     state: 'florida', city: "Kings Ferry, FL", region: "Northeast Florida",
     lat: 30.7867, lon: -81.84, latDisplay: "30.79°N", lonDisplay: "81.84°W",
@@ -67,7 +67,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720004", waterTempId: "8720030",
+    id: "8720004", waterTempId: "8720219",
     name: "Crandall", slug: "crandall",
     state: 'florida', city: "Crandall, FL", region: "Northeast Florida",
     lat: 30.7217, lon: -81.6217, latDisplay: "30.72°N", lonDisplay: "81.62°W",
@@ -89,7 +89,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720006", waterTempId: "8720030",
+    id: "8720006", waterTempId: "8720219",
     name: "Little St. Marys River", slug: "little-st-marys-river",
     state: 'florida', city: "Little St. Marys River, FL", region: "Northeast Florida",
     lat: 30.7317, lon: -81.7267, latDisplay: "30.73°N", lonDisplay: "81.73°W",
@@ -111,7 +111,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720007", waterTempId: "8720030",
+    id: "8720007", waterTempId: "8720219",
     name: "Roses Bluff - Bells River", slug: "roses-bluff-bells-river",
     state: 'florida', city: "Roses Bluff - Bells River, FL", region: "Northeast Florida",
     lat: 30.7033, lon: -81.5767, latDisplay: "30.70°N", lonDisplay: "81.58°W",
@@ -133,7 +133,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720011", waterTempId: "8720030",
+    id: "8720011", waterTempId: "8720218",
     name: "CUT 1N FRONT RANGE - ST MARYS RIVER ENTR", slug: "cut-1n-front-range-st-marys-river-entr",
     state: 'florida', city: "CUT 1N FRONT RANGE - ST MARYS RIVER ENTR, FL", region: "Northeast Florida",
     lat: 30.7083, lon: -81.465, latDisplay: "30.71°N", lonDisplay: "81.47°W",
@@ -155,7 +155,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720023", waterTempId: "8720030",
+    id: "8720023", waterTempId: "8720219",
     name: "Chester - Bells River", slug: "chester-bells-river",
     state: 'florida', city: "Chester - Bells River, FL", region: "Northeast Florida",
     lat: 30.6833, lon: -81.5333, latDisplay: "30.68°N", lonDisplay: "81.53°W",
@@ -177,7 +177,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720030", waterTempId: "8720030",
+    id: "8720030", waterTempId: "8720218",
     name: "Fernandina Beach - Amelia River", slug: "fernandina-beach-amelia-river",
     state: 'florida', city: "Fernandina Beach - Amelia River, FL", region: "Northeast Florida",
     lat: 30.67135555555556, lon: -81.46584166666666, latDisplay: "30.67°N", lonDisplay: "81.47°W",
@@ -199,7 +199,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720051", waterTempId: "8720030",
+    id: "8720051", waterTempId: "8720219",
     name: "Lofton - Lanceford Creek", slug: "lofton-lanceford-creek",
     state: 'florida', city: "Lofton - Lanceford Creek, FL", region: "Northeast Florida",
     lat: 30.6433, lon: -81.5233, latDisplay: "30.64°N", lonDisplay: "81.52°W",
@@ -221,7 +221,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720058", waterTempId: "8720030",
+    id: "8720058", waterTempId: "8720218",
     name: "Kingsley Creek - RR. bridge", slug: "kingsley-creek-rr-bridge",
     state: 'florida', city: "Kingsley Creek - RR. bridge, FL", region: "Northeast Florida",
     lat: 30.6317, lon: -81.4767, latDisplay: "30.63°N", lonDisplay: "81.48°W",
@@ -243,7 +243,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720059", waterTempId: "8720030",
+    id: "8720059", waterTempId: "8720219",
     name: "Vaughns Landing", slug: "vaughns-landing",
     state: 'florida', city: "Vaughns Landing, FL", region: "Northeast Florida",
     lat: 30.63, lon: -81.5767, latDisplay: "30.63°N", lonDisplay: "81.58°W",
@@ -265,7 +265,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720084", waterTempId: "8720030",
+    id: "8720084", waterTempId: "8720219",
     name: "Boggy Creek - 2 mi. above entrance", slug: "boggy-creek-2-mi-above-entrance",
     state: 'florida', city: "Boggy Creek - 2 mi. above entrance, FL", region: "Northeast Florida",
     lat: 30.5883, lon: -81.6633, latDisplay: "30.59°N", lonDisplay: "81.66°W",
@@ -287,7 +287,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720086", waterTempId: "8720030",
+    id: "8720086", waterTempId: "8720218",
     name: "Amelia City - South Amelia River", slug: "amelia-city-south-amelia-river",
     state: 'florida', city: "Amelia City - South Amelia River, FL", region: "Northeast Florida",
     lat: 30.5867, lon: -81.4633, latDisplay: "30.59°N", lonDisplay: "81.46°W",
@@ -309,7 +309,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720093", waterTempId: "8720030",
+    id: "8720093", waterTempId: "8720219",
     name: "Halfmoon Island - highway bridge", slug: "halfmoon-island-highway-bridge",
     state: 'florida', city: "Halfmoon Island - highway bridge, FL", region: "Northeast Florida",
     lat: 30.5767, lon: -81.6083, latDisplay: "30.58°N", lonDisplay: "81.61°W",
@@ -331,7 +331,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720097", waterTempId: "8720030",
+    id: "8720097", waterTempId: "8720219",
     name: "Cuno - Lofton Creek", slug: "cuno-lofton-creek",
     state: 'florida', city: "Cuno - Lofton Creek, FL", region: "Northeast Florida",
     lat: 30.5767, lon: -81.5717, latDisplay: "30.58°N", lonDisplay: "81.57°W",
@@ -353,7 +353,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720098", waterTempId: "8720030",
+    id: "8720098", waterTempId: "8720219",
     name: "Nassauville", slug: "nassauville",
     state: 'florida', city: "Nassauville, FL", region: "Northeast Florida",
     lat: 30.5683, lon: -81.515, latDisplay: "30.57°N", lonDisplay: "81.52°W",
@@ -9241,7 +9241,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726537", waterTempId: "8726607",
+    id: "8726537", waterTempId: "8726671",
     name: "APOLLO BEACH - HILLSBOROUGH BAY", slug: "apollo-beach-hillsborough-bay",
     state: 'florida', city: "APOLLO BEACH - HILLSBOROUGH BAY, FL", region: "Tampa Bay",
     lat: 27.786699295043945, lon: -82.42669677734375, latDisplay: "27.79°N", lonDisplay: "82.43°W",
@@ -9307,7 +9307,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726607", waterTempId: "8726607",
+    id: "8726607", waterTempId: "8726671",
     name: "Old Port Tampa", slug: "old-port-tampa",
     state: 'florida', city: "Old Port Tampa, FL", region: "Tampa Bay",
     lat: 27.857799530029297, lon: -82.55280303955078, latDisplay: "27.86°N", lonDisplay: "82.55°W",
@@ -9373,7 +9373,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726641", waterTempId: "8726607",
+    id: "8726641", waterTempId: "8726671",
     name: "Gandy Bridge - Old Tampa Bay", slug: "gandy-bridge-old-tampa-bay",
     state: 'florida', city: "Gandy Bridge - Old Tampa Bay, FL", region: "Tampa Bay",
     lat: 27.8933, lon: -82.5383, latDisplay: "27.89°N", lonDisplay: "82.54°W",

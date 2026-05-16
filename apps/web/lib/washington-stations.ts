@@ -183,7 +183,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9440563", waterTempId: "9439040",
+    id: "9440563", waterTempId: "9440422",
     name: "Hungry Harbor, Wash.", slug: "hungry-harbor-wash",
     state: "washington", city: "Hungry Harbor, Wash., WA", region: "Columbia River WA",
     lat: 46.2583, lon: -123.848, latDisplay: "46.26°N", lonDisplay: "123.85°W",
@@ -205,7 +205,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9440569", waterTempId: "9439040",
+    id: "9440569", waterTempId: "9440422",
     name: "Skamokawa", slug: "skamokawa",
     state: "washington", city: "Skamokawa, WA", region: "Columbia River WA",
     lat: 46.27030555555555, lon: -123.4565, latDisplay: "46.27°N", lonDisplay: "123.46°W",
@@ -227,7 +227,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9440572", waterTempId: "9439040",
+    id: "9440572", waterTempId: "9441102",
     name: "Fort Canby, Jetty 'A', Wash.", slug: "fort-canby-jetty-a-wash",
     state: "washington", city: "Fort Canby, Jetty 'A', Wash., WA", region: "Washington Ocean Coast",
     lat: 46.2683, lon: -124.037, latDisplay: "46.27°N", lonDisplay: "124.04°W",
@@ -249,7 +249,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9440573", waterTempId: "9439040",
+    id: "9440573", waterTempId: "9441102",
     name: "Chinook, Baker Bay, Wash.", slug: "chinook-baker-bay-wash",
     state: "washington", city: "Chinook, Baker Bay, Wash., WA", region: "Columbia River WA",
     lat: 46.2717, lon: -123.948, latDisplay: "46.27°N", lonDisplay: "123.95°W",
@@ -271,7 +271,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9440574", waterTempId: "9439040",
+    id: "9440574", waterTempId: "9441102",
     name: "Columbia River entrance (N. Jetty)", slug: "columbia-river-entrance-n-jetty",
     state: "washington", city: "Columbia River entrance (N. Jetty), WA", region: "Washington Ocean Coast",
     lat: 46.2733, lon: -124.072, latDisplay: "46.27°N", lonDisplay: "124.07°W",
@@ -293,7 +293,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9440581", waterTempId: "9439040",
+    id: "9440581", waterTempId: "9441102",
     name: "Cape Disappointment", slug: "cape-disappointment",
     state: "washington", city: "Cape Disappointment, WA", region: "Washington Ocean Coast",
     lat: 46.28102777777778, lon: -124.0462777777778, latDisplay: "46.28°N", lonDisplay: "124.05°W",
@@ -315,7 +315,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9440597", waterTempId: "9439040",
+    id: "9440597", waterTempId: "9441102",
     name: "Ilwaco, Baker Bay, Wash.", slug: "ilwaco-baker-bay-wash",
     state: "washington", city: "Ilwaco, Baker Bay, Wash., WA", region: "Washington Ocean Coast",
     lat: 46.3033, lon: -124.04, latDisplay: "46.30°N", lonDisplay: "124.04°W",
@@ -337,7 +337,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9440650", waterTempId: "9439040",
+    id: "9440650", waterTempId: "9441102",
     name: "Greenhead Slough", slug: "greenhead-slough",
     state: "washington", city: "Greenhead Slough, WA", region: "Columbia River WA",
     lat: 46.37220001220703, lon: -123.95030212402344, latDisplay: "46.37°N", lonDisplay: "123.95°W",
@@ -359,7 +359,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9440662", waterTempId: "9439040",
+    id: "9440662", waterTempId: "9441102",
     name: "Naselle River, 4 miles above swing bridge", slug: "naselle-river-4-miles-above-swing-bridge",
     state: "washington", city: "Naselle River, 4 miles above swing bridge, WA", region: "Columbia River WA",
     lat: 46.3883, lon: -123.84, latDisplay: "46.39°N", lonDisplay: "123.84°W",
@@ -381,7 +381,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9440691", waterTempId: "9439040",
+    id: "9440691", waterTempId: "9441102",
     name: "Naselle River, swing bridge", slug: "naselle-river-swing-bridge",
     state: "washington", city: "Naselle River, swing bridge, WA", region: "Columbia River WA",
     lat: 46.43, lon: -123.903, latDisplay: "46.43°N", lonDisplay: "123.90°W",
@@ -403,7 +403,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9440723", waterTempId: "9440910",
+    id: "9440723", waterTempId: "9441102",
     name: "Paradise Point, Long Island", slug: "paradise-point-long-island",
     state: "washington", city: "Paradise Point, Long Island, WA", region: "Columbia River WA",
     lat: 46.4683, lon: -123.945, latDisplay: "46.47°N", lonDisplay: "123.94°W",
@@ -425,7 +425,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9440747", waterTempId: "9440910",
+    id: "9440747", waterTempId: "9441102",
     name: "Nahcotta", slug: "nahcotta",
     state: "washington", city: "Nahcotta, WA", region: "Washington Ocean Coast",
     lat: 46.5017, lon: -124.023, latDisplay: "46.50°N", lonDisplay: "124.02°W",
@@ -447,7 +447,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9440813", waterTempId: "9440910",
+    id: "9440813", waterTempId: "9441102",
     name: "Palix River, south fork", slug: "palix-river-south-fork",
     state: "washington", city: "Palix River, south fork, WA", region: "South Puget Sound",
     lat: 46.5867, lon: -123.91, latDisplay: "46.59°N", lonDisplay: "123.91°W",
@@ -469,7 +469,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9440846", waterTempId: "9440910",
+    id: "9440846", waterTempId: "9441102",
     name: "Bay Center, Palix River", slug: "bay-center-palix-river",
     state: "washington", city: "Bay Center, Palix River, WA", region: "South Puget Sound",
     lat: 46.6233, lon: -123.945, latDisplay: "46.62°N", lonDisplay: "123.94°W",
@@ -491,7 +491,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9440875", waterTempId: "9440910",
+    id: "9440875", waterTempId: "9441102",
     name: "South Bend, Willapa River", slug: "south-bend-willapa-river",
     state: "washington", city: "South Bend, Willapa River, WA", region: "South Puget Sound",
     lat: 46.6633, lon: -123.798, latDisplay: "46.66°N", lonDisplay: "123.80°W",
@@ -513,7 +513,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9440886", waterTempId: "9440910",
+    id: "9440886", waterTempId: "9441102",
     name: "Raymond, Willapa River", slug: "raymond-willapa-river",
     state: "washington", city: "Raymond, Willapa River, WA", region: "South Puget Sound",
     lat: 46.6833, lon: -123.755, latDisplay: "46.68°N", lonDisplay: "123.75°W",
@@ -535,7 +535,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9440910", waterTempId: "9440910",
+    id: "9440910", waterTempId: "9441102",
     name: "Toke Point", slug: "toke-point",
     state: "washington", city: "Toke Point, WA", region: "South Puget Sound",
     lat: 46.7075, lon: -123.9669444, latDisplay: "46.71°N", lonDisplay: "123.97°W",
@@ -997,7 +997,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9444555", waterTempId: "9444900",
+    id: "9444555", waterTempId: "9444090",
     name: "Sequim Bay entrance", slug: "sequim-bay-entrance",
     state: "washington", city: "Sequim Bay entrance, WA", region: "North Puget Sound",
     lat: 48.0817, lon: -123.043, latDisplay: "48.08°N", lonDisplay: "123.04°W",
@@ -1019,7 +1019,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9444705", waterTempId: "9444900",
+    id: "9444705", waterTempId: "9444090",
     name: "Gardiner, Discovery Bay", slug: "gardiner-discovery-bay",
     state: "washington", city: "Gardiner, Discovery Bay, WA", region: "North Puget Sound",
     lat: 48.0583, lon: -122.917, latDisplay: "48.06°N", lonDisplay: "122.92°W",
@@ -1041,7 +1041,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9444900", waterTempId: "9444900",
+    id: "9444900", waterTempId: "9444090",
     name: "PORT TOWNSEND", slug: "port-townsend",
     state: "washington", city: "PORT TOWNSEND, WA", region: "North Puget Sound",
     lat: 48.11122222222222, lon: -122.7596777777778, latDisplay: "48.11°N", lonDisplay: "122.76°W",
@@ -1063,7 +1063,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9444971", waterTempId: "9444900",
+    id: "9444971", waterTempId: "9444090",
     name: "Mystery Bay, Marrowstone Island", slug: "mystery-bay-marrowstone-island",
     state: "washington", city: "Mystery Bay, Marrowstone Island, WA", region: "North Puget Sound",
     lat: 48.0583, lon: -122.692, latDisplay: "48.06°N", lonDisplay: "122.69°W",
@@ -1085,7 +1085,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9444972", waterTempId: "9444900",
+    id: "9444972", waterTempId: "9449880",
     name: "Marrowstone Point", slug: "marrowstone-point",
     state: "washington", city: "Marrowstone Point, WA", region: "North Puget Sound",
     lat: 48.0917, lon: -122.69, latDisplay: "48.09°N", lonDisplay: "122.69°W",
@@ -1107,7 +1107,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445016", waterTempId: "9444900",
+    id: "9445016", waterTempId: "9444090",
     name: "Foulweather Bluff", slug: "foulweather-bluff",
     state: "washington", city: "Foulweather Bluff, WA", region: "North Puget Sound",
     lat: 47.9267, lon: -122.617, latDisplay: "47.93°N", lonDisplay: "122.62°W",
@@ -1129,7 +1129,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445017", waterTempId: "9444900",
+    id: "9445017", waterTempId: "9444090",
     name: "Port Ludlow", slug: "port-ludlow",
     state: "washington", city: "Port Ludlow, WA", region: "North Puget Sound",
     lat: 47.925, lon: -122.68, latDisplay: "47.92°N", lonDisplay: "122.68°W",
@@ -1151,7 +1151,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445059", waterTempId: "9444900",
+    id: "9445059", waterTempId: "9446484",
     name: "Port Gamble", slug: "port-gamble",
     state: "washington", city: "Port Gamble, WA", region: "North Puget Sound",
     lat: 47.8583, lon: -122.58, latDisplay: "47.86°N", lonDisplay: "122.58°W",
@@ -1173,7 +1173,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445088", waterTempId: "9447130",
+    id: "9445088", waterTempId: "9446484",
     name: "Lofall", slug: "lofall",
     state: "washington", city: "Lofall, WA", region: "North Puget Sound",
     lat: 47.815, lon: -122.657, latDisplay: "47.81°N", lonDisplay: "122.66°W",
@@ -1195,7 +1195,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445133", waterTempId: "9447130",
+    id: "9445133", waterTempId: "9446484",
     name: "Bangor Wharf", slug: "bangor-wharf",
     state: "washington", city: "Bangor Wharf, WA", region: "Central Puget Sound / Seattle",
     lat: 47.7483, lon: -122.727, latDisplay: "47.75°N", lonDisplay: "122.73°W",
@@ -1217,7 +1217,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445246", waterTempId: "9444900",
+    id: "9445246", waterTempId: "9444090",
     name: "Whitney Point, Dabob Bay", slug: "whitney-point-dabob-bay",
     state: "washington", city: "Whitney Point, Dabob Bay, WA", region: "Central Puget Sound / Seattle",
     lat: 47.7617, lon: -122.85, latDisplay: "47.76°N", lonDisplay: "122.85°W",
@@ -1239,7 +1239,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445269", waterTempId: "9447130",
+    id: "9445269", waterTempId: "9446484",
     name: "Zelatched Point, Dabob Bay", slug: "zelatched-point-dabob-bay",
     state: "washington", city: "Zelatched Point, Dabob Bay, WA", region: "Central Puget Sound / Seattle",
     lat: 47.7117, lon: -122.822, latDisplay: "47.71°N", lonDisplay: "122.82°W",
@@ -1261,7 +1261,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445272", waterTempId: "9444900",
+    id: "9445272", waterTempId: "9444090",
     name: "Quilcene, Quilcene Bay, Dabob Bay", slug: "quilcene-quilcene-bay-dabob-bay",
     state: "washington", city: "Quilcene, Quilcene Bay, Dabob Bay, WA", region: "North Puget Sound",
     lat: 47.8, lon: -122.858, latDisplay: "47.80°N", lonDisplay: "122.86°W",
@@ -1283,7 +1283,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445293", waterTempId: "9447130",
+    id: "9445293", waterTempId: "9446484",
     name: "Pleasant Harbor", slug: "pleasant-harbor",
     state: "washington", city: "Pleasant Harbor, WA", region: "Central Puget Sound / Seattle",
     lat: 47.665, lon: -122.912, latDisplay: "47.66°N", lonDisplay: "122.91°W",
@@ -1305,7 +1305,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445303", waterTempId: "9447130",
+    id: "9445303", waterTempId: "9446484",
     name: "Seabeck, Seabeck Bay", slug: "seabeck-seabeck-bay",
     state: "washington", city: "Seabeck, Seabeck Bay, WA", region: "Central Puget Sound / Seattle",
     lat: 47.6417, lon: -122.828, latDisplay: "47.64°N", lonDisplay: "122.83°W",
@@ -1327,7 +1327,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445326", waterTempId: "9447130",
+    id: "9445326", waterTempId: "9446484",
     name: "Triton Head", slug: "triton-head",
     state: "washington", city: "Triton Head, WA", region: "Central Puget Sound / Seattle",
     lat: 47.6033, lon: -122.982, latDisplay: "47.60°N", lonDisplay: "122.98°W",
@@ -1349,7 +1349,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445388", waterTempId: "9447130",
+    id: "9445388", waterTempId: "9446484",
     name: "Ayock Point", slug: "ayock-point",
     state: "washington", city: "Ayock Point, WA", region: "Central Puget Sound / Seattle",
     lat: 47.5083, lon: -123.052, latDisplay: "47.51°N", lonDisplay: "123.05°W",
@@ -1415,7 +1415,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445526", waterTempId: "9444900",
+    id: "9445526", waterTempId: "9444090",
     name: "Hansville", slug: "hansville",
     state: "washington", city: "Hansville, WA", region: "North Puget Sound",
     lat: 47.9183, lon: -122.545, latDisplay: "47.92°N", lonDisplay: "122.55°W",
@@ -1437,7 +1437,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445639", waterTempId: "9447130",
+    id: "9445639", waterTempId: "9446484",
     name: "Kingston, Appletree Cove", slug: "kingston-appletree-cove",
     state: "washington", city: "Kingston, Appletree Cove, WA", region: "Central Puget Sound / Seattle",
     lat: 47.7967, lon: -122.493, latDisplay: "47.80°N", lonDisplay: "122.49°W",
@@ -1459,7 +1459,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445683", waterTempId: "9447130",
+    id: "9445683", waterTempId: "9446484",
     name: "Port Jefferson", slug: "port-jefferson",
     state: "washington", city: "Port Jefferson, WA", region: "Central Puget Sound / Seattle",
     lat: 47.7467, lon: -122.477, latDisplay: "47.75°N", lonDisplay: "122.48°W",
@@ -1481,7 +1481,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445719", waterTempId: "9447130",
+    id: "9445719", waterTempId: "9446484",
     name: "Poulsbo, Liberty Bay", slug: "poulsbo-liberty-bay",
     state: "washington", city: "Poulsbo, Liberty Bay, WA", region: "Central Puget Sound / Seattle",
     lat: 47.725, lon: -122.638, latDisplay: "47.73°N", lonDisplay: "122.64°W",
@@ -1503,7 +1503,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445753", waterTempId: "9447130",
+    id: "9445753", waterTempId: "9446484",
     name: "Port Madison", slug: "port-madison",
     state: "washington", city: "Port Madison, WA", region: "Central Puget Sound / Seattle",
     lat: 47.705, lon: -122.525, latDisplay: "47.70°N", lonDisplay: "122.53°W",
@@ -1525,7 +1525,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445832", waterTempId: "9447130",
+    id: "9445832", waterTempId: "9446484",
     name: "Brownsville, Port Orchard", slug: "brownsville-port-orchard",
     state: "washington", city: "Brownsville, Port Orchard, WA", region: "Central Puget Sound / Seattle",
     lat: 47.6517, lon: -122.615, latDisplay: "47.65°N", lonDisplay: "122.61°W",
@@ -1547,7 +1547,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445882", waterTempId: "9447130",
+    id: "9445882", waterTempId: "9446484",
     name: "Eagle Harbor, Bainbridge Island", slug: "eagle-harbor-bainbridge-island",
     state: "washington", city: "Eagle Harbor, Bainbridge Island, WA", region: "Central Puget Sound / Seattle",
     lat: 47.62, lon: -122.515, latDisplay: "47.62°N", lonDisplay: "122.52°W",
@@ -1569,7 +1569,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445901", waterTempId: "9447130",
+    id: "9445901", waterTempId: "9446484",
     name: "Tracyton, Dyes Inlet", slug: "tracyton-dyes-inlet",
     state: "washington", city: "Tracyton, Dyes Inlet, WA", region: "Central Puget Sound / Seattle",
     lat: 47.61, lon: -122.66, latDisplay: "47.61°N", lonDisplay: "122.66°W",
@@ -1591,7 +1591,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445913", waterTempId: "9447130",
+    id: "9445913", waterTempId: "9446484",
     name: "Port Blakely", slug: "port-blakely",
     state: "washington", city: "Port Blakely, WA", region: "Central Puget Sound / Seattle",
     lat: 47.5967, lon: -122.51, latDisplay: "47.60°N", lonDisplay: "122.51°W",
@@ -1613,7 +1613,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445938", waterTempId: "9447130",
+    id: "9445938", waterTempId: "9446484",
     name: "Clam Bay, Rich Passage", slug: "clam-bay-rich-passage",
     state: "washington", city: "Clam Bay, Rich Passage, WA", region: "Central Puget Sound / Seattle",
     lat: 47.5733, lon: -122.543, latDisplay: "47.57°N", lonDisplay: "122.54°W",
@@ -1635,7 +1635,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445958", waterTempId: "9447130",
+    id: "9445958", waterTempId: "9446484",
     name: "Bremerton, Sinclair Inlet, Port Orchard", slug: "bremerton-sinclair-inlet-port-orchard",
     state: "washington", city: "Bremerton, Sinclair Inlet, Port Orchard, WA", region: "Central Puget Sound / Seattle",
     lat: 47.56169891357422, lon: -122.62300109863281, latDisplay: "47.56°N", lonDisplay: "122.62°W",
@@ -1657,7 +1657,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445993", waterTempId: "9447130",
+    id: "9445993", waterTempId: "9446484",
     name: "Harper, Yukon Harbor", slug: "harper-yukon-harbor",
     state: "washington", city: "Harper, Yukon Harbor, WA", region: "Central Puget Sound / Seattle",
     lat: 47.5233, lon: -122.517, latDisplay: "47.52°N", lonDisplay: "122.52°W",
@@ -1679,7 +1679,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9446025", waterTempId: "9447130",
+    id: "9446025", waterTempId: "9446484",
     name: "Point Vashon, Vashon Island", slug: "point-vashon-vashon-island",
     state: "washington", city: "Point Vashon, Vashon Island, WA", region: "Central Puget Sound / Seattle",
     lat: 47.5117, lon: -122.463, latDisplay: "47.51°N", lonDisplay: "122.46°W",
@@ -2295,7 +2295,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447029", waterTempId: "9447130",
+    id: "9447029", waterTempId: "9446484",
     name: "Duwamish Waterway, Eighth Ave. South", slug: "duwamish-waterway-eighth-ave-south",
     state: "washington", city: "Duwamish Waterway, Eighth Ave. South, WA", region: "Central Puget Sound / Seattle",
     lat: 47.535, lon: -122.322, latDisplay: "47.53°N", lonDisplay: "122.32°W",
@@ -2317,7 +2317,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447110", waterTempId: "9447130",
+    id: "9447110", waterTempId: "9446484",
     name: "Lockheed Shipyard, Harbor Island", slug: "lockheed-shipyard-harbor-island",
     state: "washington", city: "Lockheed Shipyard, Harbor Island, WA", region: "Central Puget Sound / Seattle",
     lat: 47.585, lon: -122.362, latDisplay: "47.59°N", lonDisplay: "122.36°W",
@@ -2339,7 +2339,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447130", waterTempId: "9447130",
+    id: "9447130", waterTempId: "9446484",
     name: "SEATTLE (Madison St.), Elliott Bay", slug: "seattle-madison-st-elliott-bay",
     state: "washington", city: "SEATTLE (Madison St.), Elliott Bay, WA", region: "Central Puget Sound / Seattle",
     lat: 47.60263888888889, lon: -122.3393055555556, latDisplay: "47.60°N", lonDisplay: "122.34°W",
@@ -2361,7 +2361,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447265", waterTempId: "9447130",
+    id: "9447265", waterTempId: "9446484",
     name: "Meadow Point, Shilshole Bay", slug: "meadow-point-shilshole-bay",
     state: "washington", city: "Meadow Point, Shilshole Bay, WA", region: "Central Puget Sound / Seattle",
     lat: 47.6883, lon: -122.403, latDisplay: "47.69°N", lonDisplay: "122.40°W",
@@ -2383,7 +2383,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447427", waterTempId: "9447130",
+    id: "9447427", waterTempId: "9446484",
     name: "Edmonds", slug: "edmonds",
     state: "washington", city: "Edmonds, WA", region: "North Puget Sound",
     lat: 47.8133, lon: -122.383, latDisplay: "47.81°N", lonDisplay: "122.38°W",
@@ -2405,7 +2405,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447659", waterTempId: "9444900",
+    id: "9447659", waterTempId: "9446484",
     name: "Everett", slug: "everett",
     state: "washington", city: "Everett, WA", region: "North Puget Sound",
     lat: 47.98, lon: -122.223, latDisplay: "47.98°N", lonDisplay: "122.22°W",
@@ -2427,7 +2427,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447717", waterTempId: "9444900",
+    id: "9447717", waterTempId: "9449880",
     name: "Priest Point", slug: "priest-point",
     state: "washington", city: "Priest Point, WA", region: "North Puget Sound",
     lat: 48.03494444444444, lon: -122.2271944444445, latDisplay: "48.03°N", lonDisplay: "122.23°W",
@@ -2449,7 +2449,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447773", waterTempId: "9444900",
+    id: "9447773", waterTempId: "9449880",
     name: "Tulalip", slug: "tulalip",
     state: "washington", city: "Tulalip, WA", region: "North Puget Sound",
     lat: 48.065, lon: -122.288, latDisplay: "48.06°N", lonDisplay: "122.29°W",
@@ -2471,7 +2471,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447814", waterTempId: "9444900",
+    id: "9447814", waterTempId: "9446484",
     name: "Glendale, Whidbey Island", slug: "glendale-whidbey-island",
     state: "washington", city: "Glendale, Whidbey Island, WA", region: "North Puget Sound",
     lat: 47.94, lon: -122.357, latDisplay: "47.94°N", lonDisplay: "122.36°W",
@@ -2493,7 +2493,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447854", waterTempId: "9444900",
+    id: "9447854", waterTempId: "9444090",
     name: "Bush Point, Whidbey Island", slug: "bush-point-whidbey-island",
     state: "washington", city: "Bush Point, Whidbey Island, WA", region: "North Puget Sound",
     lat: 48.0333, lon: -122.607, latDisplay: "48.03°N", lonDisplay: "122.61°W",
@@ -2515,7 +2515,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447855", waterTempId: "9444900",
+    id: "9447855", waterTempId: "9449880",
     name: "Holly Farms Harbor, Holmes Harbor, Whidbey I.", slug: "holly-farms-harbor-holmes-harbor-whidbey-i",
     state: "washington", city: "Holly Farms Harbor, Holmes Harbor, Whidbey I., WA", region: "North Puget Sound",
     lat: 48.0267, lon: -122.535, latDisplay: "48.03°N", lonDisplay: "122.53°W",
@@ -2537,7 +2537,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447856", waterTempId: "9444900",
+    id: "9447856", waterTempId: "9449880",
     name: "Sandy Point, Whidbey Island", slug: "sandy-point-whidbey-island",
     state: "washington", city: "Sandy Point, Whidbey Island, WA", region: "North Puget Sound",
     lat: 48.035, lon: -122.377, latDisplay: "48.03°N", lonDisplay: "122.38°W",
@@ -2559,7 +2559,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447883", waterTempId: "9444900",
+    id: "9447883", waterTempId: "9449880",
     name: "Greenbank, Whidbey Island", slug: "greenbank-whidbey-island",
     state: "washington", city: "Greenbank, Whidbey Island, WA", region: "North Puget Sound",
     lat: 48.105, lon: -122.57, latDisplay: "48.10°N", lonDisplay: "122.57°W",
@@ -2581,7 +2581,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447905", waterTempId: "9444900",
+    id: "9447905", waterTempId: "9449880",
     name: "Admiralty Head", slug: "admiralty-head",
     state: "washington", city: "Admiralty Head, WA", region: "North Puget Sound",
     lat: 48.1583, lon: -122.668, latDisplay: "48.16°N", lonDisplay: "122.67°W",
@@ -2603,7 +2603,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447929", waterTempId: "9444900",
+    id: "9447929", waterTempId: "9449880",
     name: "Coupeville, Penn Cove, Whidbey Island", slug: "coupeville-penn-cove-whidbey-island",
     state: "washington", city: "Coupeville, Penn Cove, Whidbey Island, WA", region: "North Puget Sound",
     lat: 48.2233, lon: -122.69, latDisplay: "48.22°N", lonDisplay: "122.69°W",
@@ -2625,7 +2625,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447934", waterTempId: "9444900",
+    id: "9447934", waterTempId: "9449880",
     name: "Point Partridge, Whidbey Island", slug: "point-partridge-whidbey-island",
     state: "washington", city: "Point Partridge, Whidbey Island, WA", region: "North Puget Sound",
     lat: 48.2317, lon: -122.765, latDisplay: "48.23°N", lonDisplay: "122.77°W",
@@ -2647,7 +2647,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447951", waterTempId: "9444900",
+    id: "9447951", waterTempId: "9449880",
     name: "Sunset Beach, Whidbey Island", slug: "sunset-beach-whidbey-island",
     state: "washington", city: "Sunset Beach, Whidbey Island, WA", region: "North Puget Sound",
     lat: 48.2833, lon: -122.728, latDisplay: "48.28°N", lonDisplay: "122.73°W",
@@ -2669,7 +2669,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447952", waterTempId: "9444900",
+    id: "9447952", waterTempId: "9449880",
     name: "Crescent Harbor, N. Whidbey Island", slug: "crescent-harbor-n-whidbey-island",
     state: "washington", city: "Crescent Harbor, N. Whidbey Island, WA", region: "North Puget Sound",
     lat: 48.2867, lon: -122.617, latDisplay: "48.29°N", lonDisplay: "122.62°W",
@@ -2691,7 +2691,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447973", waterTempId: "9444900",
+    id: "9447973", waterTempId: "9449880",
     name: "NAS Whidbey Island", slug: "nas-whidbey-island",
     state: "washington", city: "NAS Whidbey Island, WA", region: "North Puget Sound",
     lat: 48.34280014038086, lon: -122.68579864501953, latDisplay: "48.34°N", lonDisplay: "122.69°W",
@@ -2713,7 +2713,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447985", waterTempId: "9444900",
+    id: "9447985", waterTempId: "9449880",
     name: "Smith Island", slug: "smith-island",
     state: "washington", city: "Smith Island, WA", region: "North Puget Sound",
     lat: 48.3167, lon: -122.837, latDisplay: "48.32°N", lonDisplay: "122.84°W",
@@ -2735,7 +2735,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447993", waterTempId: "9444900",
+    id: "9447993", waterTempId: "9449880",
     name: "Ala Spit, Whidbey Island", slug: "ala-spit-whidbey-island",
     state: "washington", city: "Ala Spit, Whidbey Island, WA", region: "North Puget Sound",
     lat: 48.3967, lon: -122.587, latDisplay: "48.40°N", lonDisplay: "122.59°W",
@@ -2779,7 +2779,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9448009", waterTempId: "9444900",
+    id: "9448009", waterTempId: "9449880",
     name: "Spee-Bi-Dah", slug: "spee-bi-dah",
     state: "washington", city: "Spee-Bi-Dah, WA", region: "North Puget Sound",
     lat: 48.08825, lon: -122.3223333333333, latDisplay: "48.09°N", lonDisplay: "122.32°W",
@@ -2801,7 +2801,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9448043", waterTempId: "9444900",
+    id: "9448043", waterTempId: "9449880",
     name: "Tulare Beach, Port Susan", slug: "tulare-beach-port-susan",
     state: "washington", city: "Tulare Beach, Port Susan, WA", region: "North Puget Sound",
     lat: 48.10680555555555, lon: -122.3472777777778, latDisplay: "48.11°N", lonDisplay: "122.35°W",
@@ -2823,7 +2823,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9448094", waterTempId: "9444900",
+    id: "9448094", waterTempId: "9449880",
     name: "Kayak Point", slug: "kayak-point",
     state: "washington", city: "Kayak Point, WA", region: "North Puget Sound",
     lat: 48.1367, lon: -122.367, latDisplay: "48.14°N", lonDisplay: "122.37°W",
@@ -2845,7 +2845,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9448558", waterTempId: "9444900",
+    id: "9448558", waterTempId: "9449880",
     name: "La Conner, Swinomish Channel", slug: "la-conner-swinomish-channel",
     state: "washington", city: "La Conner, Swinomish Channel, WA", region: "North Puget Sound",
     lat: 48.3917, lon: -122.497, latDisplay: "48.39°N", lonDisplay: "122.50°W",
@@ -2867,7 +2867,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9448576", waterTempId: "9444900",
+    id: "9448576", waterTempId: "9449880",
     name: "Sneeoosh Point", slug: "sneeoosh-point",
     state: "washington", city: "Sneeoosh Point, WA", region: "San Juan Islands / Strait of Juan de Fuca",
     lat: 48.4, lon: -122.548, latDisplay: "48.40°N", lonDisplay: "122.55°W",
@@ -3087,7 +3087,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9449161", waterTempId: "9449424",
+    id: "9449161", waterTempId: "9449880",
     name: "Village Point, Lummi Island", slug: "village-point-lummi-island",
     state: "washington", city: "Village Point, Lummi Island, WA", region: "San Juan Islands / Strait of Juan de Fuca",
     lat: 48.7167, lon: -122.708, latDisplay: "48.72°N", lonDisplay: "122.71°W",
@@ -3109,7 +3109,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9449184", waterTempId: "9449424",
+    id: "9449184", waterTempId: "9449880",
     name: "Gooseberry Point", slug: "gooseberry-point",
     state: "washington", city: "Gooseberry Point, WA", region: "San Juan Islands / Strait of Juan de Fuca",
     lat: 48.73, lon: -122.67, latDisplay: "48.73°N", lonDisplay: "122.67°W",
@@ -3131,7 +3131,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9449211", waterTempId: "9449424",
+    id: "9449211", waterTempId: "9449880",
     name: "Bellingham", slug: "bellingham",
     state: "washington", city: "Bellingham, WA", region: "San Juan Islands / Strait of Juan de Fuca",
     lat: 48.745, lon: -122.495, latDisplay: "48.74°N", lonDisplay: "122.50°W",
@@ -3153,7 +3153,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9449292", waterTempId: "9449424",
+    id: "9449292", waterTempId: "9449880",
     name: "Sandy Point, Lummi Bay", slug: "sandy-point-lummi-bay",
     state: "washington", city: "Sandy Point, Lummi Bay, WA", region: "San Juan Islands / Strait of Juan de Fuca",
     lat: 48.79, lon: -122.708, latDisplay: "48.79°N", lonDisplay: "122.71°W",
@@ -3175,7 +3175,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9449424", waterTempId: "9449424",
+    id: "9449424", waterTempId: "9449880",
     name: "CHERRY POINT", slug: "cherry-point",
     state: "washington", city: "CHERRY POINT, WA", region: "San Juan Islands / Strait of Juan de Fuca",
     lat: 48.86271666666666, lon: -122.7585833333333, latDisplay: "48.86°N", lonDisplay: "122.76°W",
@@ -3197,7 +3197,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9449639", waterTempId: "9449424",
+    id: "9449639", waterTempId: "9449880",
     name: "POINT ROBERTS, PUGET SOUND", slug: "point-roberts-puget-sound",
     state: "washington", city: "POINT ROBERTS, PUGET SOUND, WA", region: "San Juan Islands / Strait of Juan de Fuca",
     lat: 48.974998474121094, lon: -123.08300018310547, latDisplay: "48.97°N", lonDisplay: "123.08°W",
@@ -3219,7 +3219,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9449679", waterTempId: "9449424",
+    id: "9449679", waterTempId: "9449880",
     name: "Blaine, Semiahmoo Bay", slug: "blaine-semiahmoo-bay",
     state: "washington", city: "Blaine, Semiahmoo Bay, WA", region: "San Juan Islands / Strait of Juan de Fuca",
     lat: 48.9917, lon: -122.765, latDisplay: "48.99°N", lonDisplay: "122.77°W",
@@ -3241,7 +3241,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9449704", waterTempId: "9449424",
+    id: "9449704", waterTempId: "9449880",
     name: "Patos Island Wharf", slug: "patos-island-wharf",
     state: "washington", city: "Patos Island Wharf, WA", region: "San Juan Islands / Strait of Juan de Fuca",
     lat: 48.7867, lon: -122.97, latDisplay: "48.79°N", lonDisplay: "122.97°W",
@@ -3263,7 +3263,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9449712", waterTempId: "9449424",
+    id: "9449712", waterTempId: "9449880",
     name: "Echo Bay, Sucia Islands", slug: "echo-bay-sucia-islands",
     state: "washington", city: "Echo Bay, Sucia Islands, WA", region: "San Juan Islands / Strait of Juan de Fuca",
     lat: 48.7567, lon: -122.897, latDisplay: "48.76°N", lonDisplay: "122.90°W",
@@ -3593,7 +3593,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9440521", waterTempId: "9439040",
+    id: "9440521", waterTempId: "9440422",
     name: "CATHLAMET, COLUMBIA RIVER", slug: "cathlamet-columbia-river",
     state: "washington", city: "CATHLAMET, COLUMBIA RIVER, WA", region: "Columbia River WA",
     lat: 46.2017, lon: -123.385, latDisplay: "46.20°N", lonDisplay: "123.39°W",
@@ -3615,7 +3615,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9440571", waterTempId: "9439040",
+    id: "9440571", waterTempId: "9440422",
     name: "ALTOONA, COLUMBIA RIVER", slug: "altoona-columbia-river",
     state: "washington", city: "ALTOONA, COLUMBIA RIVER, WA", region: "Columbia River WA",
     lat: 46.265, lon: -123.653, latDisplay: "46.27°N", lonDisplay: "123.65°W",
@@ -3637,7 +3637,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9440575", waterTempId: "9439040",
+    id: "9440575", waterTempId: "9440422",
     name: "KNAPPTON", slug: "knappton",
     state: "washington", city: "KNAPPTON, WA", region: "Columbia River WA",
     lat: 46.2683, lon: -123.827, latDisplay: "46.27°N", lonDisplay: "123.83°W",
@@ -3681,7 +3681,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9445296", waterTempId: "9447130",
+    id: "9445296", waterTempId: "9446484",
     name: "SEABECK, HOOD CANAL", slug: "seabeck-hood-canal",
     state: "washington", city: "SEABECK, HOOD CANAL, WA", region: "Central Puget Sound / Seattle",
     lat: 47.6417, lon: -122.828, latDisplay: "47.64°N", lonDisplay: "122.83°W",
@@ -3725,7 +3725,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447111", waterTempId: "9447130",
+    id: "9447111", waterTempId: "9446484",
     name: "LOCKHEED SHIPYARD TEST SITE", slug: "lockheed-shipyard-test-site",
     state: "washington", city: "LOCKHEED SHIPYARD TEST SITE, WA", region: "Central Puget Sound / Seattle",
     lat: 47.585, lon: -122.36, latDisplay: "47.59°N", lonDisplay: "122.36°W",
@@ -3747,7 +3747,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447112", waterTempId: "9447130",
+    id: "9447112", waterTempId: "9446484",
     name: "LOCKHEED SHIPYRD, 6 IN TEST WELL", slug: "lockheed-shipyrd-6-in-test-well",
     state: "washington", city: "LOCKHEED SHIPYRD, 6 IN TEST WELL, WA", region: "Central Puget Sound / Seattle",
     lat: 47.585, lon: -122.36, latDisplay: "47.59°N", lonDisplay: "122.36°W",
@@ -3769,7 +3769,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447113", waterTempId: "9447130",
+    id: "9447113", waterTempId: "9446484",
     name: "LOCKHEED SHIPYARD,4 IN TEST WELL", slug: "lockheed-shipyard4-in-test-well",
     state: "washington", city: "LOCKHEED SHIPYARD,4 IN TEST WELL, WA", region: "Central Puget Sound / Seattle",
     lat: 47.585, lon: -122.36, latDisplay: "47.59°N", lonDisplay: "122.36°W",
@@ -3791,7 +3791,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447114", waterTempId: "9447130",
+    id: "9447114", waterTempId: "9446484",
     name: "LOCKHEED SHIPYARD (BACKUP)", slug: "lockheed-shipyard-backup",
     state: "washington", city: "LOCKHEED SHIPYARD (BACKUP), WA", region: "Central Puget Sound / Seattle",
     lat: 47.585, lon: -122.36, latDisplay: "47.59°N", lonDisplay: "122.36°W",
@@ -3813,7 +3813,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447115", waterTempId: "9447130",
+    id: "9447115", waterTempId: "9446484",
     name: "LOCKHEED SHIPYARD", slug: "lockheed-shipyard",
     state: "washington", city: "LOCKHEED SHIPYARD, WA", region: "Central Puget Sound / Seattle",
     lat: 47.58, lon: -122.357, latDisplay: "47.58°N", lonDisplay: "122.36°W",
@@ -3835,7 +3835,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447239", waterTempId: "9447130",
+    id: "9447239", waterTempId: "9446484",
     name: "Sand Point", slug: "sand-point",
     state: "washington", city: "Sand Point, WA", region: "Central Puget Sound / Seattle",
     lat: 47.6883, lon: -122.258, latDisplay: "47.69°N", lonDisplay: "122.26°W",
@@ -3857,7 +3857,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9447729", waterTempId: "9444900",
+    id: "9447729", waterTempId: "9449880",
     name: "Marysville", slug: "marysville",
     state: "washington", city: "Marysville, WA", region: "North Puget Sound",
     lat: 48.04, lon: -122.168, latDisplay: "48.04°N", lonDisplay: "122.17°W",
@@ -3879,7 +3879,7 @@ export const WASHINGTON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9448233", waterTempId: "9444900",
+    id: "9448233", waterTempId: "9449880",
     name: "MADRONNA BEACH, CAMANO ISLAND", slug: "madronna-beach-camano-island",
     state: "washington", city: "MADRONNA BEACH, CAMANO ISLAND, WA", region: "North Puget Sound",
     lat: 48.2117, lon: -122.537, latDisplay: "48.21°N", lonDisplay: "122.54°W",

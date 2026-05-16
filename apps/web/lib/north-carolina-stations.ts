@@ -51,7 +51,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8652226", waterTempId: "8652226",
+    id: "8652226", waterTempId: "8652587",
     name: "Jennettes Pier, Nags Head (ocean)", slug: "jennettes-pier-nags-head-ocean",
     state: "north-carolina", city: "Jennettes Pier, Nags Head (ocean), NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.91, lon: -75.59169444444444, latDisplay: "35.91°N", lonDisplay: "75.59°W",
@@ -73,7 +73,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8652247", waterTempId: "8652226",
+    id: "8652247", waterTempId: "8652587",
     name: "Manns Harbor, Croatan Sound", slug: "manns-harbor-croatan-sound",
     state: "north-carolina", city: "Manns Harbor, Croatan Sound, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.9033, lon: -75.77, latDisplay: "35.90°N", lonDisplay: "75.77°W",
@@ -95,7 +95,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8652437", waterTempId: "8652226",
+    id: "8652437", waterTempId: "8652587",
     name: "Oyster Creek, Croatan Sound", slug: "oyster-creek-croatan-sound",
     state: "north-carolina", city: "Oyster Creek, Croatan Sound, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.845, lon: -75.655, latDisplay: "35.84°N", lonDisplay: "75.66°W",
@@ -1503,7 +1503,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8652232", waterTempId: "8652226",
+    id: "8652232", waterTempId: "8652587",
     name: "MANTEO, SHALLOWBAG BAY", slug: "manteo-shallowbag-bay",
     state: "north-carolina", city: "MANTEO, SHALLOWBAG BAY, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.91, lon: -75.67, latDisplay: "35.91°N", lonDisplay: "75.67°W",
@@ -1547,7 +1547,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8652827", waterTempId: "8652226",
+    id: "8652827", waterTempId: "8652587",
     name: "North Fork Alligator River NC 94", slug: "north-fork-alligator-river-nc-94",
     state: "north-carolina", city: "North Fork Alligator River NC 94, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.7215, lon: -76.1934, latDisplay: "35.72°N", lonDisplay: "76.19°W",

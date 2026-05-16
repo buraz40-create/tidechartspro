@@ -73,7 +73,7 @@ export const DELAWARE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8551201", waterTempId: "8551910",
+    id: "8551201", waterTempId: "8540433",
     name: "New Castle, Delaware", slug: "new-castle-delaware",
     state: "delaware", city: "New Castle, Delaware, DE", region: "Delaware Bay",
     lat: 39.6567, lon: -75.5617, latDisplay: "39.66°N", lonDisplay: "75.56°W",
@@ -95,7 +95,7 @@ export const DELAWARE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8551702", waterTempId: "8551910",
+    id: "8551702", waterTempId: "8573927",
     name: "Pea Patch Island, Bulkhead Shoal Channel, Del.", slug: "pea-patch-island-bulkhead-shoal-channel-del",
     state: "delaware", city: "Pea Patch Island, Bulkhead Shoal Channel, Del., DE", region: "Delaware Bay",
     lat: 39.5833, lon: -75.5733, latDisplay: "39.58°N", lonDisplay: "75.57°W",
@@ -117,7 +117,7 @@ export const DELAWARE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8551762", waterTempId: "8551910",
+    id: "8551762", waterTempId: "8573927",
     name: "Delaware City", slug: "delaware-city",
     state: "delaware", city: "Delaware City, DE", region: "Delaware Bay",
     lat: 39.58219444444445, lon: -75.58897222222222, latDisplay: "39.58°N", lonDisplay: "75.59°W",
@@ -139,7 +139,7 @@ export const DELAWARE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8551851", waterTempId: "8551910",
+    id: "8551851", waterTempId: "8573927",
     name: "Delaware City Branch Channel bridge", slug: "delaware-city-branch-channel-bridge",
     state: "delaware", city: "Delaware City Branch Channel bridge, DE", region: "Delaware Bay",
     lat: 39.57, lon: -75.59, latDisplay: "39.57°N", lonDisplay: "75.59°W",
@@ -161,7 +161,7 @@ export const DELAWARE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8551910", waterTempId: "8551910",
+    id: "8551910", waterTempId: "8573927",
     name: "REEDY POINT", slug: "reedy-point",
     state: "delaware", city: "REEDY POINT, DE", region: "Delaware Bay",
     lat: 39.5583333, lon: -75.5719444, latDisplay: "39.56°N", lonDisplay: "75.57°W",
@@ -183,7 +183,7 @@ export const DELAWARE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8551973", waterTempId: "8551910",
+    id: "8551973", waterTempId: "8573927",
     name: "St. Georges, Delaware", slug: "st-georges-delaware",
     state: "delaware", city: "St. Georges, Delaware, DE", region: "Delaware Bay",
     lat: 39.555, lon: -75.6483, latDisplay: "39.55°N", lonDisplay: "75.65°W",
@@ -227,7 +227,7 @@ export const DELAWARE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8553069", waterTempId: "8551910",
+    id: "8553069", waterTempId: "8537121",
     name: "Taylors Bridge, Blackbird Creek, Del.", slug: "taylors-bridge-blackbird-creek-del",
     state: "delaware", city: "Taylors Bridge, Blackbird Creek, Del., DE", region: "Delaware Bay",
     lat: 39.405, lon: -75.5983, latDisplay: "39.41°N", lonDisplay: "75.60°W",

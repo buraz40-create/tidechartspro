@@ -3659,7 +3659,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537614", waterTempId: "8551910",
+    id: "8537614", waterTempId: "8537121",
     name: "Artificial Island, Salem Nuclear Plant, N.J.", slug: "artificial-island-salem-nuclear-plant-nj",
     state: "new-jersey", city: "Artificial Island, Salem Nuclear Plant, N.J., NJ", region: "Jersey Shore South",
     lat: 39.46, lon: -75.5317, latDisplay: "39.46°N", lonDisplay: "75.53°W",
@@ -3681,7 +3681,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537667", waterTempId: "8551910",
+    id: "8537667", waterTempId: "8537121",
     name: "Hope Creek, 0.6 n.mi. above entrance, N.J.", slug: "hope-creek-06-nmi-above-entrance-nj",
     state: "new-jersey", city: "Hope Creek, 0.6 n.mi. above entrance, N.J., NJ", region: "Jersey Shore South",
     lat: 39.4583, lon: -75.495, latDisplay: "39.46°N", lonDisplay: "75.50°W",
@@ -3703,7 +3703,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537731", waterTempId: "8551910",
+    id: "8537731", waterTempId: "8537121",
     name: "0.8 n.mi. above entrance", slug: "08-nmi-above-entrance",
     state: "new-jersey", city: "0.8 n.mi. above entrance, NJ", region: "Jersey Shore South",
     lat: 39.4967, lon: -75.5167, latDisplay: "39.50°N", lonDisplay: "75.52°W",
@@ -3725,7 +3725,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537753", waterTempId: "8551910",
+    id: "8537753", waterTempId: "8537121",
     name: "2.5 n.mi. above entrance", slug: "25-nmi-above-entrance",
     state: "new-jersey", city: "2.5 n.mi. above entrance, NJ", region: "Jersey Shore South",
     lat: 39.505, lon: -75.4833, latDisplay: "39.51°N", lonDisplay: "75.48°W",
@@ -3747,7 +3747,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537774", waterTempId: "8551910",
+    id: "8537774", waterTempId: "8537121",
     name: "Abbots Meadow", slug: "abbots-meadow",
     state: "new-jersey", city: "Abbots Meadow, NJ", region: "Jersey Shore South",
     lat: 39.5117, lon: -75.4933, latDisplay: "39.51°N", lonDisplay: "75.49°W",
@@ -3769,7 +3769,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537779", waterTempId: "8551910",
+    id: "8537779", waterTempId: "8537121",
     name: "Coopers Creek bridge", slug: "coopers-creek-bridge",
     state: "new-jersey", city: "Coopers Creek bridge, NJ", region: "Jersey Shore South",
     lat: 39.5133, lon: -75.4467, latDisplay: "39.51°N", lonDisplay: "75.45°W",
@@ -3791,7 +3791,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537889", waterTempId: "8551910",
+    id: "8537889", waterTempId: "8537121",
     name: "Quinton", slug: "quinton",
     state: "new-jersey", city: "Quinton, NJ", region: "Jersey Shore South",
     lat: 39.5483, lon: -75.415, latDisplay: "39.55°N", lonDisplay: "75.42°W",
@@ -3813,7 +3813,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537961", waterTempId: "8551910",
+    id: "8537961", waterTempId: "8573927",
     name: "Sinnickson Landing", slug: "sinnickson-landing",
     state: "new-jersey", city: "Sinnickson Landing, NJ", region: "Jersey Shore South",
     lat: 39.57, lon: -75.4983, latDisplay: "39.57°N", lonDisplay: "75.50°W",
@@ -3835,7 +3835,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537979", waterTempId: "8551910",
+    id: "8537979", waterTempId: "8540433",
     name: "Salem", slug: "salem",
     state: "new-jersey", city: "Salem, NJ", region: "Jersey Shore South",
     lat: 39.5767, lon: -75.4767, latDisplay: "39.58°N", lonDisplay: "75.48°W",
@@ -3857,7 +3857,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538231", waterTempId: "8551910",
+    id: "8538231", waterTempId: "8540433",
     name: "Salem Canal entrance, N.J.", slug: "salem-canal-entrance-nj",
     state: "new-jersey", city: "Salem Canal entrance, N.J., NJ", region: "Jersey Shore South",
     lat: 39.6833, lon: -75.51, latDisplay: "39.68°N", lonDisplay: "75.51°W",
@@ -4935,7 +4935,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537589", waterTempId: "8551910",
+    id: "8537589", waterTempId: "8537121",
     name: "SILVER LAKE FORK", slug: "silver-lake-fork",
     state: "new-jersey", city: "SILVER LAKE FORK, NJ", region: "Jersey Shore South",
     lat: 39.4533, lon: -75.455, latDisplay: "39.45°N", lonDisplay: "75.45°W",
@@ -4957,7 +4957,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537689", waterTempId: "8551910",
+    id: "8537689", waterTempId: "8537121",
     name: "UPPER HOPE CREEK", slug: "upper-hope-creek",
     state: "new-jersey", city: "UPPER HOPE CREEK, NJ", region: "Jersey Shore South",
     lat: 39.485, lon: -75.4933, latDisplay: "39.48°N", lonDisplay: "75.49°W",
@@ -4979,7 +4979,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538055", waterTempId: "8551910",
+    id: "8538055", waterTempId: "8540433",
     name: "MILL CREEK, PENNSNECK", slug: "mill-creek-pennsneck",
     state: "new-jersey", city: "MILL CREEK, PENNSNECK, NJ", region: "Jersey Shore South",
     lat: 39.61, lon: -75.52, latDisplay: "39.61°N", lonDisplay: "75.52°W",
@@ -5001,7 +5001,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538086", waterTempId: "8551910",
+    id: "8538086", waterTempId: "8540433",
     name: "KATES CREEK MEADOW", slug: "kates-creek-meadow",
     state: "new-jersey", city: "KATES CREEK MEADOW, NJ", region: "Jersey Shore South",
     lat: 39.62, lon: -75.4533, latDisplay: "39.62°N", lonDisplay: "75.45°W",
@@ -5023,7 +5023,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538095", waterTempId: "8551910",
+    id: "8538095", waterTempId: "8540433",
     name: "WINSLOW FARMS, SALEM R.", slug: "winslow-farms-salem-r",
     state: "new-jersey", city: "WINSLOW FARMS, SALEM R., NJ", region: "Jersey Shore South",
     lat: 39.6283, lon: -75.4817, latDisplay: "39.63°N", lonDisplay: "75.48°W",

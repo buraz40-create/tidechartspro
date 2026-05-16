@@ -689,7 +689,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8446121", waterTempId: "8447435",
+    id: "8446121", waterTempId: "8447930",
     name: "Provincetown", slug: "provincetown",
     state: "massachusetts", city: "Provincetown, MA", region: "Buzzards Bay / South Coast",
     lat: 42.04959166666666, lon: -70.18215833333333, latDisplay: "42.05°N", lonDisplay: "70.18°W",
@@ -755,7 +755,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8446613", waterTempId: "8447435",
+    id: "8446613", waterTempId: "8447930",
     name: "Wellfleet", slug: "wellfleet",
     state: "massachusetts", city: "Wellfleet, MA", region: "Cape Cod Bay",
     lat: 41.93, lon: -70.0417, latDisplay: "41.93°N", lonDisplay: "70.04°W",
@@ -843,7 +843,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447241", waterTempId: "8447435",
+    id: "8447241", waterTempId: "8447930",
     name: "Sesuit Harbor, East Dennis", slug: "sesuit-harbor-east-dennis",
     state: "massachusetts", city: "Sesuit Harbor, East Dennis, MA", region: "Cape Cod Bay",
     lat: 41.7517, lon: -70.155, latDisplay: "41.75°N", lonDisplay: "70.16°W",
@@ -953,7 +953,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447291", waterTempId: "8447435",
+    id: "8447291", waterTempId: "8449130",
     name: "Pleasant Bay", slug: "pleasant-bay",
     state: "massachusetts", city: "Pleasant Bay, MA", region: "Cape Cod & Islands",
     lat: 41.7367, lon: -69.9817, latDisplay: "41.74°N", lonDisplay: "69.98°W",
@@ -997,7 +997,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447335", waterTempId: "8447435",
+    id: "8447335", waterTempId: "8447930",
     name: "Barnstable Harbor, Beach Point", slug: "barnstable-harbor-beach-point",
     state: "massachusetts", city: "Barnstable Harbor, Beach Point, MA", region: "Cape Cod Bay",
     lat: 41.7217, lon: -70.285, latDisplay: "41.72°N", lonDisplay: "70.28°W",
@@ -1129,7 +1129,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447435", waterTempId: "8447435",
+    id: "8447435", waterTempId: "8449130",
     name: "Chatham Harbor, Aunt Lydias Cove", slug: "chatham-harbor-aunt-lydias-cove",
     state: "massachusetts", city: "Chatham Harbor, Aunt Lydias Cove, MA", region: "Cape Cod & Islands",
     lat: 41.688499450683594, lon: -69.95110321044922, latDisplay: "41.69°N", lonDisplay: "69.95°W",
@@ -1151,7 +1151,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447436", waterTempId: "8447435",
+    id: "8447436", waterTempId: "8449130",
     name: "Georges Shoal, Texas Tower", slug: "georges-shoal-texas-tower",
     state: "massachusetts", city: "Georges Shoal, Texas Tower, MA", region: "Cape Cod & Islands",
     lat: 41.6883, lon: -67.76, latDisplay: "41.69°N", lonDisplay: "67.76°W",
@@ -1173,7 +1173,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447495", waterTempId: "8447435",
+    id: "8447495", waterTempId: "8449130",
     name: "Saquatucket Harbor", slug: "saquatucket-harbor",
     state: "massachusetts", city: "Saquatucket Harbor, MA", region: "Cape Cod Bay",
     lat: 41.6683, lon: -70.0567, latDisplay: "41.67°N", lonDisplay: "70.06°W",
@@ -1195,7 +1195,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447504", waterTempId: "8447435",
+    id: "8447504", waterTempId: "8449130",
     name: "South Yarmouth, Bass River", slug: "south-yarmouth-bass-river",
     state: "massachusetts", city: "South Yarmouth, Bass River, MA", region: "Cape Cod Bay",
     lat: 41.665, lon: -70.1833, latDisplay: "41.66°N", lonDisplay: "70.18°W",
@@ -1217,7 +1217,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447505", waterTempId: "8447435",
+    id: "8447505", waterTempId: "8449130",
     name: "Chatham, Stage Harbor", slug: "chatham-stage-harbor",
     state: "massachusetts", city: "Chatham, Stage Harbor, MA", region: "Cape Cod & Islands",
     lat: 41.6667, lon: -69.9667, latDisplay: "41.67°N", lonDisplay: "69.97°W",
@@ -1239,7 +1239,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447506", waterTempId: "8447435",
+    id: "8447506", waterTempId: "8449130",
     name: "Wychmere Harbor", slug: "wychmere-harbor",
     state: "massachusetts", city: "Wychmere Harbor, MA", region: "Cape Cod Bay",
     lat: 41.665000915527344, lon: -70.06500244140625, latDisplay: "41.67°N", lonDisplay: "70.07°W",
@@ -1261,7 +1261,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447525", waterTempId: "8447435",
+    id: "8447525", waterTempId: "8449130",
     name: "Dennisport", slug: "dennisport",
     state: "massachusetts", city: "Dennisport, MA", region: "Cape Cod Bay",
     lat: 41.6583, lon: -70.115, latDisplay: "41.66°N", lonDisplay: "70.11°W",
@@ -1305,7 +1305,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447605", waterTempId: "8447435",
+    id: "8447605", waterTempId: "8447930",
     name: "Hyannis Port", slug: "hyannis-port",
     state: "massachusetts", city: "Hyannis Port, MA", region: "Cape Cod Bay",
     lat: 41.6317, lon: -70.3, latDisplay: "41.63°N", lonDisplay: "70.30°W",
@@ -1965,7 +1965,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447819", waterTempId: "8447435",
+    id: "8447819", waterTempId: "8449130",
     name: "Monomoy Island - East", slug: "monomoy-island-east",
     state: "massachusetts", city: "Monomoy Island - East, MA", region: "Cape Cod & Islands",
     lat: 41.56, lon: -69.99, latDisplay: "41.56°N", lonDisplay: "69.99°W",

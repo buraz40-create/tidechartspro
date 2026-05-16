@@ -249,7 +249,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8760742", waterTempId: "8761305",
+    id: "8760742", waterTempId: "8747437",
     name: "Comfort Island", slug: "comfort-island",
     state: "louisiana", city: "Comfort Island, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.8233, lon: -89.27, latDisplay: "29.82°N", lonDisplay: "89.27°W",
@@ -381,7 +381,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761108", waterTempId: "8761305",
+    id: "8761108", waterTempId: "8761724",
     name: "Bay Gardene", slug: "bay-gardene",
     state: "louisiana", city: "Bay Gardene, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.5983, lon: -89.6183, latDisplay: "29.60°N", lonDisplay: "89.62°W",
@@ -469,7 +469,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761305", waterTempId: "8761305",
+    id: "8761305", waterTempId: "8761955",
     name: "Shell Beach, Lake Borgne", slug: "shell-beach-lake-borgne",
     state: "louisiana", city: "Shell Beach, Lake Borgne, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.86811111111111, lon: -89.67325, latDisplay: "29.87°N", lonDisplay: "89.67°W",
@@ -491,7 +491,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761402", waterTempId: "8761305",
+    id: "8761402", waterTempId: "8761927",
     name: "The Rigolets, U.S. Highway 90", slug: "the-rigolets-us-highway-90",
     state: "louisiana", city: "The Rigolets, U.S. Highway 90, LA", region: "Breton Sound / Mississippi Delta",
     lat: 30.1667, lon: -89.7367, latDisplay: "30.17°N", lonDisplay: "89.74°W",
@@ -513,7 +513,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761431", waterTempId: "8761305",
+    id: "8761431", waterTempId: "8761724",
     name: "Rat Bayou", slug: "rat-bayou",
     state: "louisiana", city: "Rat Bayou, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.56669444444444, lon: -89.76336111111111, latDisplay: "29.57°N", lonDisplay: "89.76°W",
@@ -579,7 +579,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761487", waterTempId: "8761305",
+    id: "8761487", waterTempId: "8761927",
     name: "Chef Menteur, Chef Menteur Pass", slug: "chef-menteur-chef-menteur-pass",
     state: "louisiana", city: "Chef Menteur, Chef Menteur Pass, LA", region: "Breton Sound / Mississippi Delta",
     lat: 30.065, lon: -89.8, latDisplay: "30.07°N", lonDisplay: "89.80°W",
@@ -601,7 +601,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761529", waterTempId: "8761305",
+    id: "8761529", waterTempId: "8761927",
     name: "MARTELLO CASTLE, LAKE BORGNE", slug: "martello-castle-lake-borgne",
     state: "louisiana", city: "MARTELLO CASTLE, LAKE BORGNE, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.945, lon: -89.835, latDisplay: "29.95°N", lonDisplay: "89.83°W",
@@ -1745,7 +1745,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8767095", waterTempId: "8768094",
+    id: "8767095", waterTempId: "8767816",
     name: "Catfish Point, Mermentau River", slug: "catfish-point-mermentau-river",
     state: "louisiana", city: "Catfish Point, Mermentau River, LA", region: "Cameron",
     lat: 29.862899780273438, lon: -92.8488998413086, latDisplay: "29.86°N", lonDisplay: "92.85°W",
@@ -1767,7 +1767,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8767403", waterTempId: "8768094",
+    id: "8767403", waterTempId: "8767816",
     name: "Mermentau River, Grand Chenier", slug: "mermentau-river-grand-chenier",
     state: "louisiana", city: "Mermentau River, Grand Chenier, LA", region: "Cameron",
     lat: 29.774999618530273, lon: -93.00830078125, latDisplay: "29.77°N", lonDisplay: "93.01°W",
@@ -1855,7 +1855,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8768094", waterTempId: "8768094",
+    id: "8768094", waterTempId: "8767961",
     name: "Calcasieu Pass", slug: "calcasieu-pass",
     state: "louisiana", city: "Calcasieu Pass, LA", region: "Cameron",
     lat: 29.76816666666667, lon: -93.3428888888889, latDisplay: "29.77°N", lonDisplay: "93.34°W",
@@ -2075,7 +2075,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761385", waterTempId: "8761305",
+    id: "8761385", waterTempId: "8761927",
     name: "VICINITY OF UNO CHEF MENTEUR", slug: "vicinity-of-uno-chef-menteur",
     state: "louisiana", city: "VICINITY OF UNO CHEF MENTEUR, LA", region: "Breton Sound / Mississippi Delta",
     lat: 30.06875, lon: -89.802086, latDisplay: "30.07°N", lonDisplay: "89.80°W",
@@ -2119,7 +2119,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761426", waterTempId: "8761305",
+    id: "8761426", waterTempId: "8761927",
     name: "GREENS DITCH, LAKE ST. CATHERINE", slug: "greens-ditch-lake-st-catherine",
     state: "louisiana", city: "GREENS DITCH, LAKE ST. CATHERINE, LA", region: "Breton Sound / Mississippi Delta",
     lat: 30.1117, lon: -89.76, latDisplay: "30.11°N", lonDisplay: "89.76°W",
@@ -2163,7 +2163,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761494", waterTempId: "8761305",
+    id: "8761494", waterTempId: "8761724",
     name: "WEST POINT A LA HACHE, MISS. RIVER", slug: "west-point-a-la-hache-miss-river",
     state: "louisiana", city: "WEST POINT A LA HACHE, MISS. RIVER, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.5733, lon: -89.805, latDisplay: "29.57°N", lonDisplay: "89.81°W",
