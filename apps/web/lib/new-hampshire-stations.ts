@@ -7,7 +7,7 @@ export type { StationConfig, NearbyStation, Species }
 
 export const NEW_HAMPSHIRE_STATIONS: StationConfig[] = [
   {
-    id: "8420411", waterTempId: "8420411",
+    id: "8420411", waterTempId: "8419870",
     name: "Dover, Cocheco River", slug: "dover-cocheco-river",
     state: "new-hampshire", city: "Dover, Cocheco River, NH", region: "New Hampshire Seacoast",
     lat: 43.1983, lon: -70.8683, latDisplay: "43.20°N", lonDisplay: "70.87°W",
@@ -29,7 +29,7 @@ export const NEW_HAMPSHIRE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8421897", waterTempId: "8421897",
+    id: "8421897", waterTempId: "8419870",
     name: "Dover Point", slug: "dover-point",
     state: "new-hampshire", city: "Dover Point, NH", region: "New Hampshire Seacoast",
     lat: 43.1217, lon: -70.8333, latDisplay: "43.12°N", lonDisplay: "70.83°W",
@@ -51,7 +51,7 @@ export const NEW_HAMPSHIRE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8422687", waterTempId: "8422687",
+    id: "8422687", waterTempId: "8419870",
     name: "Squamscott River RR. Bridge", slug: "squamscott-river-rr-bridge",
     state: "new-hampshire", city: "Squamscott River RR. Bridge, NH", region: "New Hampshire Seacoast",
     lat: 43.0533, lon: -70.9133, latDisplay: "43.05°N", lonDisplay: "70.91°W",
@@ -73,7 +73,7 @@ export const NEW_HAMPSHIRE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8423635", waterTempId: "8423635",
+    id: "8423635", waterTempId: "8419870",
     name: "Atlantic Heights", slug: "atlantic-heights",
     state: "new-hampshire", city: "Atlantic Heights, NH", region: "New Hampshire Seacoast",
     lat: 43.09, lon: -70.7633, latDisplay: "43.09°N", lonDisplay: "70.76°W",
@@ -95,7 +95,7 @@ export const NEW_HAMPSHIRE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8423745", waterTempId: "8423745",
+    id: "8423745", waterTempId: "8419870",
     name: "Portsmouth", slug: "portsmouth",
     state: "new-hampshire", city: "Portsmouth, NH", region: "New Hampshire Seacoast",
     lat: 43.0783, lon: -70.7517, latDisplay: "43.08°N", lonDisplay: "70.75°W",
@@ -117,7 +117,7 @@ export const NEW_HAMPSHIRE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8423898", waterTempId: "8423898",
+    id: "8423898", waterTempId: "8419870",
     name: "Fort Point", slug: "fort-point",
     state: "new-hampshire", city: "Fort Point, NH", region: "New Hampshire Seacoast",
     lat: 43.07170104980469, lon: -70.71170043945312, latDisplay: "43.07°N", lonDisplay: "70.71°W",
@@ -139,7 +139,7 @@ export const NEW_HAMPSHIRE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8424601", waterTempId: "8424601",
+    id: "8424601", waterTempId: "8419870",
     name: "Jaffrey Point", slug: "jaffrey-point",
     state: "new-hampshire", city: "Jaffrey Point, NH", region: "New Hampshire Seacoast",
     lat: 43.0567, lon: -70.7133, latDisplay: "43.06°N", lonDisplay: "70.71°W",
@@ -161,7 +161,7 @@ export const NEW_HAMPSHIRE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8427031", waterTempId: "8427031",
+    id: "8427031", waterTempId: "8419870",
     name: "Gosport Harbor, Isles of Shoals", slug: "gosport-harbor-isles-of-shoals",
     state: "new-hampshire", city: "Gosport Harbor, Isles of Shoals, NH", region: "New Hampshire Seacoast",
     lat: 42.9783, lon: -70.615, latDisplay: "42.98°N", lonDisplay: "70.61°W",
@@ -183,7 +183,7 @@ export const NEW_HAMPSHIRE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8429489", waterTempId: "8429489",
+    id: "8429489", waterTempId: "8419870",
     name: "Hampton Harbor", slug: "hampton-harbor",
     state: "new-hampshire", city: "Hampton Harbor, NH", region: "New Hampshire Seacoast",
     lat: 42.895, lon: -70.8167, latDisplay: "42.90°N", lonDisplay: "70.82°W",
@@ -205,7 +205,7 @@ export const NEW_HAMPSHIRE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8422272", waterTempId: "8422272",
+    id: "8422272", waterTempId: "8419870",
     name: "ADAMS POINT, DURHAM", slug: "adams-point-durham",
     state: "new-hampshire", city: "ADAMS POINT, DURHAM, NH", region: "New Hampshire Seacoast",
     lat: 43.0933, lon: -70.8633, latDisplay: "43.09°N", lonDisplay: "70.86°W",
@@ -227,7 +227,7 @@ export const NEW_HAMPSHIRE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8422301", waterTempId: "8422301",
+    id: "8422301", waterTempId: "8419870",
     name: "BRACKETTS POINT", slug: "bracketts-point",
     state: "new-hampshire", city: "BRACKETTS POINT, NH", region: "New Hampshire Seacoast",
     lat: 43.06, lon: -70.8683, latDisplay: "43.06°N", lonDisplay: "70.87°W",
@@ -249,7 +249,7 @@ export const NEW_HAMPSHIRE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8423005", waterTempId: "8423005",
+    id: "8423005", waterTempId: "8419870",
     name: "ATLANTIC TERMINALS  T14A", slug: "atlantic-terminals-t14a",
     state: "new-hampshire", city: "ATLANTIC TERMINALS  T14A, NH", region: "New Hampshire Seacoast",
     lat: 43.1167, lon: -70.8117, latDisplay: "43.12°N", lonDisplay: "70.81°W",

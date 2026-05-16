@@ -7,7 +7,7 @@ export type { StationConfig, NearbyStation, Species }
 
 export const MARYLAND_STATIONS: StationConfig[] = [
   {
-    id: "8570255", waterTempId: "8570255",
+    id: "8570255", waterTempId: "8570283",
     name: "Keydash, Isle of Wight Bay", slug: "keydash-isle-of-wight-bay",
     state: "maryland", city: "Keydash, Isle of Wight Bay, MD", region: "Maryland Ocean Shore",
     lat: 38.3417, lon: -75.085, latDisplay: "38.34°N", lonDisplay: "75.08°W",
@@ -29,7 +29,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8570280", waterTempId: "8570280",
+    id: "8570280", waterTempId: "8570283",
     name: "OCEAN CITY (FISHING PIER)", slug: "ocean-city-fishing-pier",
     state: "maryland", city: "OCEAN CITY (FISHING PIER), MD", region: "Maryland Ocean Shore",
     lat: 38.3267, lon: -75.0833, latDisplay: "38.33°N", lonDisplay: "75.08°W",
@@ -51,7 +51,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8570282", waterTempId: "8570282",
+    id: "8570282", waterTempId: "8570283",
     name: "Ocean City (Isle of Wight Bay)", slug: "ocean-city-isle-of-wight-bay",
     state: "maryland", city: "Ocean City (Isle of Wight Bay), MD", region: "Maryland Ocean Shore",
     lat: 38.3317, lon: -75.09, latDisplay: "38.33°N", lonDisplay: "75.09°W",
@@ -95,7 +95,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8570536", waterTempId: "8570536",
+    id: "8570536", waterTempId: "8570283",
     name: "South Point, Sinepuxent Neck", slug: "south-point-sinepuxent-neck",
     state: "maryland", city: "South Point, Sinepuxent Neck, MD", region: "Maryland Ocean Shore",
     lat: 38.215, lon: -75.1917, latDisplay: "38.22°N", lonDisplay: "75.19°W",
@@ -117,7 +117,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8570649", waterTempId: "8570649",
+    id: "8570649", waterTempId: "8570283",
     name: "Public Landing", slug: "public-landing",
     state: "maryland", city: "Public Landing, MD", region: "Maryland Ocean Shore",
     lat: 38.1483, lon: -75.285, latDisplay: "38.15°N", lonDisplay: "75.28°W",
@@ -139,7 +139,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8570691", waterTempId: "8570691",
+    id: "8570691", waterTempId: "8570283",
     name: "Buntings Bridge", slug: "buntings-bridge",
     state: "maryland", city: "Buntings Bridge, MD", region: "Maryland Ocean Shore",
     lat: 38.13894444444445, lon: -75.18352777777778, latDisplay: "38.14°N", lonDisplay: "75.18°W",
@@ -161,7 +161,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571072", waterTempId: "8571072",
+    id: "8571072", waterTempId: "8571421",
     name: "Ape Hole Creek, Pocomoke Sound", slug: "ape-hole-creek-pocomoke-sound",
     state: "maryland", city: "Ape Hole Creek, Pocomoke Sound, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 37.96169, lon: -75.82169, latDisplay: "37.96°N", lonDisplay: "75.82°W",
@@ -183,7 +183,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571091", waterTempId: "8571091",
+    id: "8571091", waterTempId: "8571421",
     name: "Crisfield, Little Annemessex River", slug: "crisfield-little-annemessex-river",
     state: "maryland", city: "Crisfield, Little Annemessex River, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 37.9767, lon: -75.8633, latDisplay: "37.98°N", lonDisplay: "75.86°W",
@@ -205,7 +205,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571097", waterTempId: "8571097",
+    id: "8571097", waterTempId: "8631044",
     name: "Shelltown", slug: "shelltown",
     state: "maryland", city: "Shelltown, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 37.98, lon: -75.6383, latDisplay: "37.98°N", lonDisplay: "75.64°W",
@@ -227,7 +227,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571117", waterTempId: "8571117",
+    id: "8571117", waterTempId: "8571421",
     name: "Ewell, Smith Island", slug: "ewell-smith-island",
     state: "maryland", city: "Ewell, Smith Island, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 37.995, lon: -76.0317, latDisplay: "37.99°N", lonDisplay: "76.03°W",
@@ -249,7 +249,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571181", waterTempId: "8571181",
+    id: "8571181", waterTempId: "8571421",
     name: "Colburn Creek, Big Annemessex River", slug: "colburn-creek-big-annemessex-river",
     state: "maryland", city: "Colburn Creek, Big Annemessex River, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.0483, lon: -75.8033, latDisplay: "38.05°N", lonDisplay: "75.80°W",
@@ -271,7 +271,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571201", waterTempId: "8571201",
+    id: "8571201", waterTempId: "8571421",
     name: "Long Point, Big Annemessex River", slug: "long-point-big-annemessex-river",
     state: "maryland", city: "Long Point, Big Annemessex River, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.0567, lon: -75.8033, latDisplay: "38.06°N", lonDisplay: "75.80°W",
@@ -293,7 +293,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571214", waterTempId: "8571214",
+    id: "8571214", waterTempId: "8571421",
     name: "Holland Island Bar Light", slug: "holland-island-bar-light",
     state: "maryland", city: "Holland Island Bar Light, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.0683, lon: -76.0967, latDisplay: "38.07°N", lonDisplay: "76.10°W",
@@ -315,7 +315,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571269", waterTempId: "8571269",
+    id: "8571269", waterTempId: "8571421",
     name: "Teague Creek, Manokin River", slug: "teague-creek-manokin-river",
     state: "maryland", city: "Teague Creek, Manokin River, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.1083, lon: -75.8383, latDisplay: "38.11°N", lonDisplay: "75.84°W",
@@ -337,7 +337,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571351", waterTempId: "8571351",
+    id: "8571351", waterTempId: "8571421",
     name: "Chance", slug: "chance",
     state: "maryland", city: "Chance, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.1717, lon: -75.945, latDisplay: "38.17°N", lonDisplay: "75.94°W",
@@ -359,7 +359,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571359", waterTempId: "8571359",
+    id: "8571359", waterTempId: "8570283",
     name: "Snowhill, city park", slug: "snowhill-city-park",
     state: "maryland", city: "Snowhill, city park, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.17833, lon: -75.39666666666666, latDisplay: "38.18°N", lonDisplay: "75.40°W",
@@ -381,7 +381,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571396", waterTempId: "8571396",
+    id: "8571396", waterTempId: "8571421",
     name: "Sharkfin Shoal Light", slug: "sharkfin-shoal-light",
     state: "maryland", city: "Sharkfin Shoal Light, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.2017, lon: -75.9867, latDisplay: "38.20°N", lonDisplay: "75.99°W",
@@ -403,7 +403,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571402", waterTempId: "8571402",
+    id: "8571402", waterTempId: "8571421",
     name: "Hooper Strait Light", slug: "hooper-strait-light",
     state: "maryland", city: "Hooper Strait Light, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.2267, lon: -76.0767, latDisplay: "38.23°N", lonDisplay: "76.08°W",
@@ -425,7 +425,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571416", waterTempId: "8571416",
+    id: "8571416", waterTempId: "8571421",
     name: "Great Shoals Light, Monie Bay", slug: "great-shoals-light-monie-bay",
     state: "maryland", city: "Great Shoals Light, Monie Bay, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.2167, lon: -75.8833, latDisplay: "38.22°N", lonDisplay: "75.88°W",
@@ -469,7 +469,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571476", waterTempId: "8571476",
+    id: "8571476", waterTempId: "8571421",
     name: "Roaring Point", slug: "roaring-point",
     state: "maryland", city: "Roaring Point, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.2617, lon: -75.92, latDisplay: "38.26°N", lonDisplay: "75.92°W",
@@ -491,7 +491,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571485", waterTempId: "8571485",
+    id: "8571485", waterTempId: "8571421",
     name: "Whitehaven", slug: "whitehaven",
     state: "maryland", city: "Whitehaven, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.2683, lon: -75.7883, latDisplay: "38.27°N", lonDisplay: "75.79°W",
@@ -513,7 +513,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571519", waterTempId: "8571519",
+    id: "8571519", waterTempId: "8571421",
     name: "Middle Hooper Island", slug: "middle-hooper-island",
     state: "maryland", city: "Middle Hooper Island, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.2967, lon: -76.205, latDisplay: "38.30°N", lonDisplay: "76.20°W",
@@ -535,7 +535,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571559", waterTempId: "8571559",
+    id: "8571559", waterTempId: "8571421",
     name: "McCready's Creek, Fishing Bay", slug: "mccreadys-creek-fishing-bay",
     state: "maryland", city: "McCready's Creek, Fishing Bay, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.29999923706055, lon: -76.00499725341797, latDisplay: "38.30°N", lonDisplay: "76.00°W",
@@ -557,7 +557,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571579", waterTempId: "8571579",
+    id: "8571579", waterTempId: "8577330",
     name: "Barren Island", slug: "barren-island",
     state: "maryland", city: "Barren Island, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.3417, lon: -76.265, latDisplay: "38.34°N", lonDisplay: "76.27°W",
@@ -579,7 +579,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571616", waterTempId: "8571616",
+    id: "8571616", waterTempId: "8571421",
     name: "Salisbury, Wicomico River", slug: "salisbury-wicomico-river",
     state: "maryland", city: "Salisbury, Wicomico River, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.3650016784668, lon: -75.60669708251953, latDisplay: "38.37°N", lonDisplay: "75.61°W",
@@ -601,7 +601,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571702", waterTempId: "8571702",
+    id: "8571702", waterTempId: "8571892",
     name: "Smithville Road Bridge, Beaverdam Creek", slug: "smithville-road-bridge-beaverdam-creek",
     state: "maryland", city: "Smithville Road Bridge, Beaverdam Creek, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.42833, lon: -76.23666666666666, latDisplay: "38.43°N", lonDisplay: "76.24°W",
@@ -623,7 +623,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571752", waterTempId: "8571752",
+    id: "8571752", waterTempId: "8577330",
     name: "Taylors Island, Slaughter Creek", slug: "taylors-island-slaughter-creek",
     state: "maryland", city: "Taylors Island, Slaughter Creek, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.4667, lon: -76.295, latDisplay: "38.47°N", lonDisplay: "76.30°W",
@@ -645,7 +645,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571773", waterTempId: "8571773",
+    id: "8571773", waterTempId: "8571892",
     name: "Vienna", slug: "vienna",
     state: "maryland", city: "Vienna, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.48333, lon: -75.81833333333333, latDisplay: "38.48°N", lonDisplay: "75.82°W",
@@ -667,7 +667,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571807", waterTempId: "8571807",
+    id: "8571807", waterTempId: "8571892",
     name: "Woolford, Church Creek", slug: "woolford-church-creek",
     state: "maryland", city: "Woolford, Church Creek, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.5067, lon: -76.1733, latDisplay: "38.51°N", lonDisplay: "76.17°W",
@@ -689,7 +689,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571858", waterTempId: "8571858",
+    id: "8571858", waterTempId: "8571892",
     name: "Sharptown", slug: "sharptown",
     state: "maryland", city: "Sharptown, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.54499816894531, lon: -75.72329711914062, latDisplay: "38.54°N", lonDisplay: "75.72°W",
@@ -711,7 +711,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571881", waterTempId: "8571881",
+    id: "8571881", waterTempId: "8571892",
     name: "Cherry Island, Beckwiths Creek", slug: "cherry-island-beckwiths-creek",
     state: "maryland", city: "Cherry Island, Beckwiths Creek, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.5617, lon: -76.2083, latDisplay: "38.56°N", lonDisplay: "76.21°W",
@@ -755,7 +755,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571901", waterTempId: "8571901",
+    id: "8571901", waterTempId: "8571892",
     name: "Avalon, Dogwood Harbor", slug: "avalon-dogwood-harbor",
     state: "maryland", city: "Avalon, Dogwood Harbor, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.71, lon: -76.335, latDisplay: "38.71°N", lonDisplay: "76.33°W",
@@ -777,7 +777,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571944", waterTempId: "8571944",
+    id: "8571944", waterTempId: "8571892",
     name: "Dover Bridge", slug: "dover-bridge",
     state: "maryland", city: "Dover Bridge, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.7567, lon: -75.9983, latDisplay: "38.76°N", lonDisplay: "76.00°W",
@@ -799,7 +799,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571979", waterTempId: "8571979",
+    id: "8571979", waterTempId: "8575512",
     name: "Tilghman Island, Ferry Cove, Eastern Bay", slug: "tilghman-island-ferry-cove-eastern-bay",
     state: "maryland", city: "Tilghman Island, Ferry Cove, Eastern Bay, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.765, lon: -76.3283, latDisplay: "38.77°N", lonDisplay: "76.33°W",
@@ -821,7 +821,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8572108", waterTempId: "8572108",
+    id: "8572108", waterTempId: "8571892",
     name: "Oxford", slug: "oxford",
     state: "maryland", city: "Oxford, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.6933, lon: -76.1733, latDisplay: "38.69°N", lonDisplay: "76.17°W",
@@ -843,7 +843,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8572204", waterTempId: "8572204",
+    id: "8572204", waterTempId: "8571892",
     name: "Deep Neck Point, Broad Creek", slug: "deep-neck-point-broad-creek",
     state: "maryland", city: "Deep Neck Point, Broad Creek, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.7317, lon: -76.235, latDisplay: "38.73°N", lonDisplay: "76.23°W",
@@ -865,7 +865,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8572271", waterTempId: "8572271",
+    id: "8572271", waterTempId: "8575512",
     name: "Poplar Island", slug: "poplar-island",
     state: "maryland", city: "Poplar Island, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.75833333333333, lon: -76.375, latDisplay: "38.76°N", lonDisplay: "76.38°W",
@@ -887,7 +887,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8572296", waterTempId: "8572296",
+    id: "8572296", waterTempId: "8571892",
     name: "Easton Point", slug: "easton-point",
     state: "maryland", city: "Easton Point, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.7683, lon: -76.095, latDisplay: "38.77°N", lonDisplay: "76.09°W",
@@ -909,7 +909,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8572313", waterTempId: "8572313",
+    id: "8572313", waterTempId: "8571892",
     name: "St. Michaels, San Domingo Creek", slug: "st-michaels-san-domingo-creek",
     state: "maryland", city: "St. Michaels, San Domingo Creek, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.775, lon: -76.2333, latDisplay: "38.77°N", lonDisplay: "76.23°W",
@@ -931,7 +931,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8572342", waterTempId: "8572342",
+    id: "8572342", waterTempId: "8571892",
     name: "St. Michaels, Miles River", slug: "st-michaels-miles-river",
     state: "maryland", city: "St. Michaels, Miles River, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.7867, lon: -76.2217, latDisplay: "38.79°N", lonDisplay: "76.22°W",
@@ -953,7 +953,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8572467", waterTempId: "8572467",
+    id: "8572467", waterTempId: "8575512",
     name: "Kent Point Marina", slug: "kent-point-marina",
     state: "maryland", city: "Kent Point Marina, MD", region: "Middle Chesapeake Bay",
     lat: 38.8367, lon: -76.3733, latDisplay: "38.84°N", lonDisplay: "76.37°W",
@@ -975,7 +975,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8572468", waterTempId: "8572468",
+    id: "8572468", waterTempId: "8575512",
     name: "Claiborne, Eastern Bay", slug: "claiborne-eastern-bay",
     state: "maryland", city: "Claiborne, Eastern Bay, MD", region: "Middle Chesapeake Bay",
     lat: 38.8367, lon: -76.28, latDisplay: "38.84°N", lonDisplay: "76.28°W",
@@ -997,7 +997,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8572669", waterTempId: "8572669",
+    id: "8572669", waterTempId: "8571892",
     name: "Hillsboro, Tuckahoe Creek", slug: "hillsboro-tuckahoe-creek",
     state: "maryland", city: "Hillsboro, Tuckahoe Creek, MD", region: "Middle Chesapeake Bay",
     lat: 38.9167, lon: -75.945, latDisplay: "38.92°N", lonDisplay: "75.94°W",
@@ -1019,7 +1019,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8572770", waterTempId: "8572770",
+    id: "8572770", waterTempId: "8575512",
     name: "Matapeake, Kent Island", slug: "matapeake-kent-island",
     state: "maryland", city: "Matapeake, Kent Island, MD", region: "Middle Chesapeake Bay",
     lat: 38.9567, lon: -76.355, latDisplay: "38.96°N", lonDisplay: "76.36°W",
@@ -1041,7 +1041,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8572792", waterTempId: "8572792",
+    id: "8572792", waterTempId: "8575512",
     name: "Kent Island Narrows", slug: "kent-island-narrows",
     state: "maryland", city: "Kent Island Narrows, MD", region: "Middle Chesapeake Bay",
     lat: 38.9667, lon: -76.2433, latDisplay: "38.97°N", lonDisplay: "76.24°W",
@@ -1063,7 +1063,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8572867", waterTempId: "8572867",
+    id: "8572867", waterTempId: "8573364",
     name: "Queenstown", slug: "queenstown",
     state: "maryland", city: "Queenstown, MD", region: "Middle Chesapeake Bay",
     lat: 38.9967, lon: -76.1583, latDisplay: "39.00°N", lonDisplay: "76.16°W",
@@ -1085,7 +1085,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8572955", waterTempId: "8572955",
+    id: "8572955", waterTempId: "8575512",
     name: "Love Point", slug: "love-point",
     state: "maryland", city: "Love Point, MD", region: "Middle Chesapeake Bay",
     lat: 39.0317, lon: -76.3017, latDisplay: "39.03°N", lonDisplay: "76.30°W",
@@ -1107,7 +1107,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8573006", waterTempId: "8573006",
+    id: "8573006", waterTempId: "8573364",
     name: "Centreville Landing, Corsica River", slug: "centreville-landing-corsica-river",
     state: "maryland", city: "Centreville Landing, Corsica River, MD", region: "Middle Chesapeake Bay",
     lat: 39.0533, lon: -76.075, latDisplay: "39.05°N", lonDisplay: "76.08°W",
@@ -1129,7 +1129,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8573125", waterTempId: "8573125",
+    id: "8573125", waterTempId: "8573364",
     name: "Cliffs Point", slug: "cliffs-point",
     state: "maryland", city: "Cliffs Point, MD", region: "Middle Chesapeake Bay",
     lat: 39.1067, lon: -76.1417, latDisplay: "39.11°N", lonDisplay: "76.14°W",
@@ -1151,7 +1151,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8573137", waterTempId: "8573137",
+    id: "8573137", waterTempId: "8573364",
     name: "Cliffs Wharf", slug: "cliffs-wharf",
     state: "maryland", city: "Cliffs Wharf, MD", region: "Middle Chesapeake Bay",
     lat: 39.11, lon: -76.1383, latDisplay: "39.11°N", lonDisplay: "76.14°W",
@@ -1173,7 +1173,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8573211", waterTempId: "8573211",
+    id: "8573211", waterTempId: "8573364",
     name: "Deep Landing, Swan Creek", slug: "deep-landing-swan-creek",
     state: "maryland", city: "Deep Landing, Swan Creek, MD", region: "Middle Chesapeake Bay",
     lat: 39.145, lon: -76.26, latDisplay: "39.15°N", lonDisplay: "76.26°W",
@@ -1195,7 +1195,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8573343", waterTempId: "8573343",
+    id: "8573343", waterTempId: "8573364",
     name: "Chestertown", slug: "chestertown",
     state: "maryland", city: "Chestertown, MD", region: "Upper Chesapeake Bay",
     lat: 39.2067, lon: -76.0633, latDisplay: "39.21°N", lonDisplay: "76.06°W",
@@ -1217,7 +1217,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8573349", waterTempId: "8573349",
+    id: "8573349", waterTempId: "8573364",
     name: "Crumpton", slug: "crumpton",
     state: "maryland", city: "Crumpton, MD", region: "Upper Chesapeake Bay",
     lat: 39.245, lon: -75.925, latDisplay: "39.24°N", lonDisplay: "75.92°W",
@@ -1261,7 +1261,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8573442", waterTempId: "8573442",
+    id: "8573442", waterTempId: "8573364",
     name: "Worton Creek entrance", slug: "worton-creek-entrance",
     state: "maryland", city: "Worton Creek entrance, MD", region: "Upper Chesapeake Bay",
     lat: 39.2967, lon: -76.1717, latDisplay: "39.30°N", lonDisplay: "76.17°W",
@@ -1283,7 +1283,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8573704", waterTempId: "8573704",
+    id: "8573704", waterTempId: "8573364",
     name: "Sassafras River, Betterton", slug: "sassafras-river-betterton",
     state: "maryland", city: "Sassafras River, Betterton, MD", region: "Upper Chesapeake Bay",
     lat: 39.3717, lon: -76.0633, latDisplay: "39.37°N", lonDisplay: "76.06°W",
@@ -1305,7 +1305,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8573903", waterTempId: "8573903",
+    id: "8573903", waterTempId: "8573927",
     name: "Town Point Wharf", slug: "town-point-wharf",
     state: "maryland", city: "Town Point Wharf, MD", region: "Upper Chesapeake Bay",
     lat: 39.5033, lon: -75.9167, latDisplay: "39.50°N", lonDisplay: "75.92°W",
@@ -1349,7 +1349,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8573968", waterTempId: "8573968",
+    id: "8573968", waterTempId: "8573927",
     name: "Charlestown, Northeast River", slug: "charlestown-northeast-river",
     state: "maryland", city: "Charlestown, Northeast River, MD", region: "Upper Chesapeake Bay",
     lat: 39.5733, lon: -75.97, latDisplay: "39.57°N", lonDisplay: "75.97°W",
@@ -1371,7 +1371,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8573969", waterTempId: "8573969",
+    id: "8573969", waterTempId: "8573927",
     name: "Old Frenchtown Wharf", slug: "old-frenchtown-wharf",
     state: "maryland", city: "Old Frenchtown Wharf, MD", region: "Upper Chesapeake Bay",
     lat: 39.575, lon: -75.8433, latDisplay: "39.58°N", lonDisplay: "75.84°W",
@@ -1393,7 +1393,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8574008", waterTempId: "8574008",
+    id: "8574008", waterTempId: "8573927",
     name: "Port Deposit", slug: "port-deposit",
     state: "maryland", city: "Port Deposit, MD", region: "Upper Chesapeake Bay",
     lat: 39.6033, lon: -76.1133, latDisplay: "39.60°N", lonDisplay: "76.11°W",
@@ -1415,7 +1415,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8574070", waterTempId: "8574070",
+    id: "8574070", waterTempId: "8573927",
     name: "Havre de Grace", slug: "havre-de-grace",
     state: "maryland", city: "Havre de Grace, MD", region: "Upper Chesapeake Bay",
     lat: 39.5367, lon: -76.09, latDisplay: "39.54°N", lonDisplay: "76.09°W",
@@ -1437,7 +1437,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8574459", waterTempId: "8574459",
+    id: "8574459", waterTempId: "8573364",
     name: "Pond Point, Bush River", slug: "pond-point-bush-river",
     state: "maryland", city: "Pond Point, Bush River, MD", region: "Upper Chesapeake Bay",
     lat: 39.3883, lon: -76.255, latDisplay: "39.39°N", lonDisplay: "76.25°W",
@@ -1481,7 +1481,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8574683", waterTempId: "8574683",
+    id: "8574683", waterTempId: "8574680",
     name: "Fort McHenry Marsh", slug: "fort-mchenry-marsh",
     state: "maryland", city: "Fort McHenry Marsh, MD", region: "Upper Chesapeake Bay",
     lat: 39.2617, lon: -76.585, latDisplay: "39.26°N", lonDisplay: "76.58°W",
@@ -1503,7 +1503,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8574821", waterTempId: "8574821",
+    id: "8574821", waterTempId: "8574680",
     name: "Hawkins Point", slug: "hawkins-point",
     state: "maryland", city: "Hawkins Point, MD", region: "Upper Chesapeake Bay",
     lat: 39.2083, lon: -76.5333, latDisplay: "39.21°N", lonDisplay: "76.53°W",
@@ -1525,7 +1525,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8574857", waterTempId: "8574857",
+    id: "8574857", waterTempId: "8574680",
     name: "North Point", slug: "north-point",
     state: "maryland", city: "North Point, MD", region: "Middle Chesapeake Bay",
     lat: 39.1967, lon: -76.445, latDisplay: "39.20°N", lonDisplay: "76.44°W",
@@ -1547,7 +1547,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8574931", waterTempId: "8574931",
+    id: "8574931", waterTempId: "8574680",
     name: "Stony Creek", slug: "stony-creek",
     state: "maryland", city: "Stony Creek, MD", region: "Middle Chesapeake Bay",
     lat: 39.1633, lon: -76.5267, latDisplay: "39.16°N", lonDisplay: "76.53°W",
@@ -1569,7 +1569,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8575109", waterTempId: "8575109",
+    id: "8575109", waterTempId: "8575512",
     name: "Cornfield Creek, Magothy River", slug: "cornfield-creek-magothy-river",
     state: "maryland", city: "Cornfield Creek, Magothy River, MD", region: "Middle Chesapeake Bay",
     lat: 39.1, lon: -76.445, latDisplay: "39.10°N", lonDisplay: "76.44°W",
@@ -1591,7 +1591,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8575229", waterTempId: "8575229",
+    id: "8575229", waterTempId: "8575512",
     name: "Mountain Point, Magothy River", slug: "mountain-point-magothy-river",
     state: "maryland", city: "Mountain Point, Magothy River, MD", region: "Middle Chesapeake Bay",
     lat: 39.0617, lon: -76.4333, latDisplay: "39.06°N", lonDisplay: "76.43°W",
@@ -1613,7 +1613,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8575331", waterTempId: "8575331",
+    id: "8575331", waterTempId: "8575512",
     name: "Brewer Point", slug: "brewer-point",
     state: "maryland", city: "Brewer Point, MD", region: "Middle Chesapeake Bay",
     lat: 39.0267, lon: -76.5333, latDisplay: "39.03°N", lonDisplay: "76.53°W",
@@ -1657,7 +1657,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8575550", waterTempId: "8575550",
+    id: "8575550", waterTempId: "8575512",
     name: "Gingerville Creek, South River", slug: "gingerville-creek-south-river",
     state: "maryland", city: "Gingerville Creek, South River, MD", region: "Middle Chesapeake Bay",
     lat: 38.9583, lon: -76.555, latDisplay: "38.96°N", lonDisplay: "76.56°W",
@@ -1679,7 +1679,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8575579", waterTempId: "8575579",
+    id: "8575579", waterTempId: "8575512",
     name: "Edgewater, South River", slug: "edgewater-south-river",
     state: "maryland", city: "Edgewater, South River, MD", region: "Middle Chesapeake Bay",
     lat: 38.95, lon: -76.55, latDisplay: "38.95°N", lonDisplay: "76.55°W",
@@ -1701,7 +1701,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8575737", waterTempId: "8575737",
+    id: "8575737", waterTempId: "8575512",
     name: "Thomas Point Shoal Light", slug: "thomas-point-shoal-light",
     state: "maryland", city: "Thomas Point Shoal Light, MD", region: "Middle Chesapeake Bay",
     lat: 38.9, lon: -76.4333, latDisplay: "38.90°N", lonDisplay: "76.43°W",
@@ -1723,7 +1723,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8575787", waterTempId: "8575787",
+    id: "8575787", waterTempId: "8575512",
     name: "Rhode River (County Wharf)", slug: "rhode-river-county-wharf",
     state: "maryland", city: "Rhode River (County Wharf), MD", region: "Middle Chesapeake Bay",
     lat: 38.8867, lon: -76.54, latDisplay: "38.89°N", lonDisplay: "76.54°W",
@@ -1745,7 +1745,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8575923", waterTempId: "8575923",
+    id: "8575923", waterTempId: "8575512",
     name: "Galesville, West River", slug: "galesville-west-river",
     state: "maryland", city: "Galesville, West River, MD", region: "Middle Chesapeake Bay",
     lat: 38.8417, lon: -76.54, latDisplay: "38.84°N", lonDisplay: "76.54°W",
@@ -1767,7 +1767,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8576256", waterTempId: "8576256",
+    id: "8576256", waterTempId: "8575512",
     name: "Rose Haven", slug: "rose-haven",
     state: "maryland", city: "Rose Haven, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.725, lon: -76.5417, latDisplay: "38.73°N", lonDisplay: "76.54°W",
@@ -1789,7 +1789,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8576363", waterTempId: "8576363",
+    id: "8576363", waterTempId: "8575512",
     name: "Chesapeake Beach", slug: "chesapeake-beach",
     state: "maryland", city: "Chesapeake Beach, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.7, lon: -76.5333, latDisplay: "38.70°N", lonDisplay: "76.53°W",
@@ -1811,7 +1811,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8577004", waterTempId: "8577004",
+    id: "8577004", waterTempId: "8577330",
     name: "Long Beach", slug: "long-beach",
     state: "maryland", city: "Long Beach, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.465, lon: -76.4733, latDisplay: "38.47°N", lonDisplay: "76.47°W",
@@ -1833,7 +1833,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8577123", waterTempId: "8577123",
+    id: "8577123", waterTempId: "8577330",
     name: "Broomes Island", slug: "broomes-island",
     state: "maryland", city: "Broomes Island, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.415, lon: -76.545, latDisplay: "38.41°N", lonDisplay: "76.55°W",
@@ -1855,7 +1855,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8577188", waterTempId: "8577188",
+    id: "8577188", waterTempId: "8577330",
     name: "Cove Point", slug: "cove-point",
     state: "maryland", city: "Cove Point, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.3917, lon: -76.3983, latDisplay: "38.39°N", lonDisplay: "76.40°W",
@@ -1899,7 +1899,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8577940", waterTempId: "8577940",
+    id: "8577940", waterTempId: "8635750",
     name: "Cornfield Harbor, Md.", slug: "cornfield-harbor-md",
     state: "maryland", city: "Cornfield Harbor, Md., MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.06, lon: -76.3617, latDisplay: "38.06°N", lonDisplay: "76.36°W",
@@ -1921,7 +1921,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8578002", waterTempId: "8578002",
+    id: "8578002", waterTempId: "8635750",
     name: "Point Lookout", slug: "point-lookout",
     state: "maryland", city: "Point Lookout, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.04, lon: -76.3233, latDisplay: "38.04°N", lonDisplay: "76.32°W",
@@ -1943,7 +1943,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8578240", waterTempId: "8578240",
+    id: "8578240", waterTempId: "8635750",
     name: "Piney Point, Md.", slug: "piney-point-md",
     state: "maryland", city: "Piney Point, Md., MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.1333333, lon: -76.5333333, latDisplay: "38.13°N", lonDisplay: "76.53°W",
@@ -1965,7 +1965,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8578465", waterTempId: "8578465",
+    id: "8578465", waterTempId: "8635027",
     name: "Colton Point, Md.", slug: "colton-point-md",
     state: "maryland", city: "Colton Point, Md., MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.2233, lon: -76.7483, latDisplay: "38.22°N", lonDisplay: "76.75°W",
@@ -1987,7 +1987,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8578551", waterTempId: "8578551",
+    id: "8578551", waterTempId: "8635027",
     name: "Mills Point (south of), Wicomico Riv., Md.", slug: "mills-point-south-of-wicomico-riv-md",
     state: "maryland", city: "Mills Point (south of), Wicomico Riv., Md., MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.3267, lon: -76.8333, latDisplay: "38.33°N", lonDisplay: "76.83°W",
@@ -2009,7 +2009,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8578693", waterTempId: "8578693",
+    id: "8578693", waterTempId: "8635027",
     name: "Lower Cedar Point, Md.", slug: "lower-cedar-point-md",
     state: "maryland", city: "Lower Cedar Point, Md., MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.3417, lon: -76.9767, latDisplay: "38.34°N", lonDisplay: "76.98°W",
@@ -2031,7 +2031,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8578769", waterTempId: "8578769",
+    id: "8578769", waterTempId: "8635027",
     name: "Goose Creek, Port Tobacco River, Md.", slug: "goose-creek-port-tobacco-river-md",
     state: "maryland", city: "Goose Creek, Port Tobacco River, Md., MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.4533, lon: -77.0533, latDisplay: "38.45°N", lonDisplay: "77.05°W",
@@ -2053,7 +2053,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8578853", waterTempId: "8578853",
+    id: "8578853", waterTempId: "8635027",
     name: "Riverside, Md.", slug: "riverside-md",
     state: "maryland", city: "Riverside, Md., MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.3867, lon: -77.145, latDisplay: "38.39°N", lonDisplay: "77.14°W",
@@ -2075,7 +2075,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8578984", waterTempId: "8578984",
+    id: "8578984", waterTempId: "8635027",
     name: "Liverpool Point, Md.", slug: "liverpool-point-md",
     state: "maryland", city: "Liverpool Point, Md., MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.46, lon: -77.27, latDisplay: "38.46°N", lonDisplay: "77.27°W",
@@ -2097,7 +2097,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8579135", waterTempId: "8579135",
+    id: "8579135", waterTempId: "8577330",
     name: "Benedict", slug: "benedict",
     state: "maryland", city: "Benedict, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.5133, lon: -76.67, latDisplay: "38.51°N", lonDisplay: "76.67°W",
@@ -2119,7 +2119,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8579381", waterTempId: "8579381",
+    id: "8579381", waterTempId: "8594900",
     name: "Indian Head, Md.", slug: "indian-head-md",
     state: "maryland", city: "Indian Head, Md., MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.6017, lon: -77.185, latDisplay: "38.60°N", lonDisplay: "77.19°W",
@@ -2141,7 +2141,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8579542", waterTempId: "8579542",
+    id: "8579542", waterTempId: "8594900",
     name: "Lower Marlboro", slug: "lower-marlboro",
     state: "maryland", city: "Lower Marlboro, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.655, lon: -76.68333333333334, latDisplay: "38.66°N", lonDisplay: "76.68°W",
@@ -2163,7 +2163,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8579629", waterTempId: "8579629",
+    id: "8579629", waterTempId: "8594900",
     name: "Marshall Hall, Md.", slug: "marshall-hall-md",
     state: "maryland", city: "Marshall Hall, Md., MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.6867, lon: -77.1017, latDisplay: "38.69°N", lonDisplay: "77.10°W",
@@ -2185,7 +2185,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8579997", waterTempId: "8579997",
+    id: "8579997", waterTempId: "8594900",
     name: "Bladensburg, Md.", slug: "bladensburg-md",
     state: "maryland", city: "Bladensburg, Md., MD", region: "Middle Chesapeake Bay",
     lat: 38.9333, lon: -76.9383, latDisplay: "38.93°N", lonDisplay: "76.94°W",
@@ -2207,7 +2207,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8570435", waterTempId: "8570435",
+    id: "8570435", waterTempId: "8570283",
     name: "NPS #1, SINEPUXENT BAY", slug: "nps-1-sinepuxent-bay",
     state: "maryland", city: "NPS #1, SINEPUXENT BAY, MD", region: "Maryland Ocean Shore",
     lat: 38.265, lon: -75.13, latDisplay: "38.27°N", lonDisplay: "75.13°W",
@@ -2229,7 +2229,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8570509", waterTempId: "8570509",
+    id: "8570509", waterTempId: "8570283",
     name: "OLD FERRY LANDING", slug: "old-ferry-landing",
     state: "maryland", city: "OLD FERRY LANDING, MD", region: "Maryland Ocean Shore",
     lat: 38.2033, lon: -75.1633, latDisplay: "38.20°N", lonDisplay: "75.16°W",
@@ -2251,7 +2251,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8570616", waterTempId: "8570616",
+    id: "8570616", waterTempId: "8570283",
     name: "NPS #2, SINEPUXENT BAY", slug: "nps-2-sinepuxent-bay",
     state: "maryland", city: "NPS #2, SINEPUXENT BAY, MD", region: "Maryland Ocean Shore",
     lat: 38.1883, lon: -75.1917, latDisplay: "38.19°N", lonDisplay: "75.19°W",
@@ -2273,7 +2273,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8570819", waterTempId: "8570819",
+    id: "8570819", waterTempId: "8570283",
     name: "NPS #3, CHINCOTEAGUE BAY", slug: "nps-3-chincoteague-bay",
     state: "maryland", city: "NPS #3, CHINCOTEAGUE BAY, MD", region: "Maryland Ocean Shore",
     lat: 38.1017, lon: -75.2217, latDisplay: "38.10°N", lonDisplay: "75.22°W",
@@ -2295,7 +2295,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571073", waterTempId: "8571073",
+    id: "8571073", waterTempId: "8571421",
     name: "DAYMARKER #2, SMITH ISLAND", slug: "daymarker-2-smith-island",
     state: "maryland", city: "DAYMARKER #2, SMITH ISLAND, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 37.9717, lon: -75.985, latDisplay: "37.97°N", lonDisplay: "75.98°W",
@@ -2317,7 +2317,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571266", waterTempId: "8571266",
+    id: "8571266", waterTempId: "8571421",
     name: "RUMBLEY, MANOKIN RIVER", slug: "rumbley-manokin-river",
     state: "maryland", city: "RUMBLEY, MANOKIN RIVER, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.0917, lon: -75.8617, latDisplay: "38.09°N", lonDisplay: "75.86°W",
@@ -2339,7 +2339,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571289", waterTempId: "8571289",
+    id: "8571289", waterTempId: "8571421",
     name: "CHANNEL LIGHT #6,LITTLE DEAL IS", slug: "channel-light-6little-deal-is",
     state: "maryland", city: "CHANNEL LIGHT #6,LITTLE DEAL IS, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.125, lon: -75.9467, latDisplay: "38.13°N", lonDisplay: "75.95°W",
@@ -2361,7 +2361,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571477", waterTempId: "8571477",
+    id: "8571477", waterTempId: "8571421",
     name: "NANTICOKE", slug: "nanticoke",
     state: "maryland", city: "NANTICOKE, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.27, lon: -75.9133, latDisplay: "38.27°N", lonDisplay: "75.91°W",
@@ -2383,7 +2383,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8571890", waterTempId: "8571890",
+    id: "8571890", waterTempId: "8571892",
     name: "CAMBRIDGE", slug: "cambridge-8571890",
     state: "maryland", city: "CAMBRIDGE, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.575, lon: -76.0717, latDisplay: "38.58°N", lonDisplay: "76.07°W",
@@ -2405,7 +2405,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8574071", waterTempId: "8574071",
+    id: "8574071", waterTempId: "8573927",
     name: "HARVE DE GRACE (BACKUP)", slug: "harve-de-grace-backup",
     state: "maryland", city: "HARVE DE GRACE (BACKUP), MD", region: "Upper Chesapeake Bay",
     lat: 39.5367, lon: -76.09, latDisplay: "39.54°N", lonDisplay: "76.09°W",
@@ -2427,7 +2427,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8574726", waterTempId: "8574726",
+    id: "8574726", waterTempId: "8574680",
     name: "BEAR CREEK MARINA", slug: "bear-creek-marina",
     state: "maryland", city: "BEAR CREEK MARINA, MD", region: "Upper Chesapeake Bay",
     lat: 39.25, lon: -76.49, latDisplay: "39.25°N", lonDisplay: "76.49°W",
@@ -2449,7 +2449,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8574848", waterTempId: "8574848",
+    id: "8574848", waterTempId: "8574680",
     name: "CURTIS CREEK (OPR 514)", slug: "curtis-creek-opr-514",
     state: "maryland", city: "CURTIS CREEK (OPR 514), MD", region: "Middle Chesapeake Bay",
     lat: 39.195, lon: -76.5767, latDisplay: "39.20°N", lonDisplay: "76.58°W",
@@ -2471,7 +2471,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8575510", waterTempId: "8575510",
+    id: "8575510", waterTempId: "8575512",
     name: "ANNAPOLIS, NAVAL RADIO STATION", slug: "annapolis-naval-radio-station",
     state: "maryland", city: "ANNAPOLIS, NAVAL RADIO STATION, MD", region: "Middle Chesapeake Bay",
     lat: 38.975, lon: -76.4567, latDisplay: "38.98°N", lonDisplay: "76.46°W",
@@ -2493,7 +2493,7 @@ export const MARYLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8577385", waterTempId: "8577385",
+    id: "8577385", waterTempId: "8577330",
     name: "NAVY SEAPLANE BASIN BOATHOUSE", slug: "navy-seaplane-basin-boathouse",
     state: "maryland", city: "NAVY SEAPLANE BASIN BOATHOUSE, MD", region: "Lower Chesapeake Bay / Potomac",
     lat: 38.2717, lon: -76.3967, latDisplay: "38.27°N", lonDisplay: "76.40°W",

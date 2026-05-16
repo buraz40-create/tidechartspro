@@ -7,7 +7,7 @@ export type { StationConfig, NearbyStation, Species }
 
 export const CONNECTICUT_STATIONS: StationConfig[] = [
   {
-    id: "8460751", waterTempId: "8460751",
+    id: "8460751", waterTempId: "8461490",
     name: "WEST MYSTIC, MYSTIC RIVER", slug: "west-mystic-mystic-river",
     state: "connecticut", city: "WEST MYSTIC, MYSTIC RIVER, CT", region: "Eastern Long Island Sound",
     lat: 41.343299865722656, lon: -71.9749984741211, latDisplay: "41.34°N", lonDisplay: "71.97°W",
@@ -29,7 +29,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8461392", waterTempId: "8461392",
+    id: "8461392", waterTempId: "8461490",
     name: "Norwich", slug: "norwich",
     state: "connecticut", city: "Norwich, CT", region: "Central Long Island Sound",
     lat: 41.5233, lon: -72.0783, latDisplay: "41.52°N", lonDisplay: "72.08°W",
@@ -51,7 +51,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8461467", waterTempId: "8461467",
+    id: "8461467", waterTempId: "8461490",
     name: "Yale boathouse", slug: "yale-boathouse",
     state: "connecticut", city: "Yale boathouse, CT", region: "Central Long Island Sound",
     lat: 41.43, lon: -72.0933, latDisplay: "41.43°N", lonDisplay: "72.09°W",
@@ -95,7 +95,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8461925", waterTempId: "8461925",
+    id: "8461925", waterTempId: "8461490",
     name: "Niantic, Niantic River", slug: "niantic-niantic-river",
     state: "connecticut", city: "Niantic, Niantic River, CT", region: "Central Long Island Sound",
     lat: 41.325, lon: -72.1867, latDisplay: "41.33°N", lonDisplay: "72.19°W",
@@ -117,7 +117,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8462723", waterTempId: "8462723",
+    id: "8462723", waterTempId: "8461490",
     name: "Saybrook Jetty", slug: "saybrook-jetty",
     state: "connecticut", city: "Saybrook Jetty, CT", region: "Central Long Island Sound",
     lat: 41.2633, lon: -72.3433, latDisplay: "41.26°N", lonDisplay: "72.34°W",
@@ -139,7 +139,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8462752", waterTempId: "8462752",
+    id: "8462752", waterTempId: "8461490",
     name: "Saybrook Point", slug: "saybrook-point",
     state: "connecticut", city: "Saybrook Point, CT", region: "Central Long Island Sound",
     lat: 41.2833, lon: -72.35, latDisplay: "41.28°N", lonDisplay: "72.35°W",
@@ -161,7 +161,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8462764", waterTempId: "8462764",
+    id: "8462764", waterTempId: "8461490",
     name: "Lyme, highway bridge", slug: "lyme-highway-bridge",
     state: "connecticut", city: "Lyme, highway bridge, CT", region: "Central Long Island Sound",
     lat: 41.3217, lon: -72.35, latDisplay: "41.32°N", lonDisplay: "72.35°W",
@@ -183,7 +183,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8462925", waterTempId: "8462925",
+    id: "8462925", waterTempId: "8461490",
     name: "Essex", slug: "essex",
     state: "connecticut", city: "Essex, CT", region: "Central Long Island Sound",
     lat: 41.3483, lon: -72.385, latDisplay: "41.35°N", lonDisplay: "72.39°W",
@@ -205,7 +205,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8463155", waterTempId: "8463155",
+    id: "8463155", waterTempId: "8461490",
     name: "Hadlyme", slug: "hadlyme",
     state: "connecticut", city: "Hadlyme, CT", region: "Central Long Island Sound",
     lat: 41.42, lon: -72.4283, latDisplay: "41.42°N", lonDisplay: "72.43°W",
@@ -227,7 +227,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8463348", waterTempId: "8463348",
+    id: "8463348", waterTempId: "8461490",
     name: "Tylerville", slug: "tylerville",
     state: "connecticut", city: "Tylerville, CT", region: "Central Long Island Sound",
     lat: 41.4517, lon: -72.465, latDisplay: "41.45°N", lonDisplay: "72.47°W",
@@ -249,7 +249,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8463409", waterTempId: "8463409",
+    id: "8463409", waterTempId: "8461490",
     name: "Westbrook, Duck Island Roads", slug: "westbrook-duck-island-roads",
     state: "connecticut", city: "Westbrook, Duck Island Roads, CT", region: "Central Long Island Sound",
     lat: 41.2733, lon: -72.475, latDisplay: "41.27°N", lonDisplay: "72.47°W",
@@ -271,7 +271,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8463582", waterTempId: "8463582",
+    id: "8463582", waterTempId: "8461490",
     name: "Haddam", slug: "haddam",
     state: "connecticut", city: "Haddam, CT", region: "Central Long Island Sound",
     lat: 41.4817, lon: -72.5067, latDisplay: "41.48°N", lonDisplay: "72.51°W",
@@ -293,7 +293,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8463701", waterTempId: "8463701",
+    id: "8463701", waterTempId: "8465705",
     name: "Clinton Harbor", slug: "clinton-harbor",
     state: "connecticut", city: "Clinton Harbor, CT", region: "Central Long Island Sound",
     lat: 41.2683, lon: -72.5317, latDisplay: "41.27°N", lonDisplay: "72.53°W",
@@ -315,7 +315,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8463827", waterTempId: "8463827",
+    id: "8463827", waterTempId: "8465705",
     name: "Maromas", slug: "maromas",
     state: "connecticut", city: "Maromas, CT", region: "Central Long Island Sound",
     lat: 41.5417, lon: -72.5517, latDisplay: "41.54°N", lonDisplay: "72.55°W",
@@ -337,7 +337,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8463836", waterTempId: "8463836",
+    id: "8463836", waterTempId: "8465705",
     name: "Higganum Creek", slug: "higganum-creek",
     state: "connecticut", city: "Higganum Creek, CT", region: "Central Long Island Sound",
     lat: 41.5033, lon: -72.5533, latDisplay: "41.50°N", lonDisplay: "72.55°W",
@@ -359,7 +359,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8464041", waterTempId: "8464041",
+    id: "8464041", waterTempId: "8465705",
     name: "Madison", slug: "madison",
     state: "connecticut", city: "Madison, CT", region: "Central Long Island Sound",
     lat: 41.27, lon: -72.59, latDisplay: "41.27°N", lonDisplay: "72.59°W",
@@ -381,7 +381,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8464255", waterTempId: "8464255",
+    id: "8464255", waterTempId: "8465705",
     name: "Rocky Hill", slug: "rocky-hill",
     state: "connecticut", city: "Rocky Hill, CT", region: "Central Long Island Sound",
     lat: 41.6633, lon: -72.63, latDisplay: "41.66°N", lonDisplay: "72.63°W",
@@ -403,7 +403,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8464336", waterTempId: "8464336",
+    id: "8464336", waterTempId: "8465705",
     name: "Middletown", slug: "middletown",
     state: "connecticut", city: "Middletown, CT", region: "Central Long Island Sound",
     lat: 41.56, lon: -72.645, latDisplay: "41.56°N", lonDisplay: "72.64°W",
@@ -425,7 +425,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8464418", waterTempId: "8464418",
+    id: "8464418", waterTempId: "8465705",
     name: "South Hartford", slug: "south-hartford",
     state: "connecticut", city: "South Hartford, CT", region: "Central Long Island Sound",
     lat: 41.755, lon: -72.6583, latDisplay: "41.76°N", lonDisplay: "72.66°W",
@@ -447,7 +447,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8464445", waterTempId: "8464445",
+    id: "8464445", waterTempId: "8465705",
     name: "Guilford Harbor", slug: "guilford-harbor",
     state: "connecticut", city: "Guilford Harbor, CT", region: "Central Long Island Sound",
     lat: 41.2717, lon: -72.6667, latDisplay: "41.27°N", lonDisplay: "72.67°W",
@@ -469,7 +469,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8464464", waterTempId: "8464464",
+    id: "8464464", waterTempId: "8465705",
     name: "Hartford", slug: "hartford",
     state: "connecticut", city: "Hartford, CT", region: "Central Long Island Sound",
     lat: 41.77, lon: -72.6683, latDisplay: "41.77°N", lonDisplay: "72.67°W",
@@ -491,7 +491,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8464687", waterTempId: "8464687",
+    id: "8464687", waterTempId: "8465705",
     name: "Sachem Head", slug: "sachem-head",
     state: "connecticut", city: "Sachem Head, CT", region: "Central Long Island Sound",
     lat: 41.245, lon: -72.7083, latDisplay: "41.24°N", lonDisplay: "72.71°W",
@@ -513,7 +513,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8465233", waterTempId: "8465233",
+    id: "8465233", waterTempId: "8465705",
     name: "Branford, Branford River", slug: "branford-branford-river",
     state: "connecticut", city: "Branford, Branford River, CT", region: "Western Long Island Sound",
     lat: 41.2617, lon: -72.8183, latDisplay: "41.26°N", lonDisplay: "72.82°W",
@@ -535,7 +535,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8465692", waterTempId: "8465692",
+    id: "8465692", waterTempId: "8465705",
     name: "Lighthouse Point, New Haven Harbor", slug: "lighthouse-point-new-haven-harbor",
     state: "connecticut", city: "Lighthouse Point, New Haven Harbor, CT", region: "Western Long Island Sound",
     lat: 41.2517, lon: -72.905, latDisplay: "41.25°N", lonDisplay: "72.91°W",
@@ -579,7 +579,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8466375", waterTempId: "8466375",
+    id: "8466375", waterTempId: "8467150",
     name: "Gulf Beach", slug: "gulf-beach",
     state: "connecticut", city: "Gulf Beach, CT", region: "Western Long Island Sound",
     lat: 41.205, lon: -73.0417, latDisplay: "41.20°N", lonDisplay: "73.04°W",
@@ -601,7 +601,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8466442", waterTempId: "8466442",
+    id: "8466442", waterTempId: "8467150",
     name: "Milford Harbor", slug: "milford-harbor",
     state: "connecticut", city: "Milford Harbor, CT", region: "Western Long Island Sound",
     lat: 41.2183, lon: -73.055, latDisplay: "41.22°N", lonDisplay: "73.06°W",
@@ -623,7 +623,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8466573", waterTempId: "8466573",
+    id: "8466573", waterTempId: "8465705",
     name: "Shelton", slug: "shelton",
     state: "connecticut", city: "Shelton, CT", region: "Western Long Island Sound",
     lat: 41.3017, lon: -73.0717, latDisplay: "41.30°N", lonDisplay: "73.07°W",
@@ -645,7 +645,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8466664", waterTempId: "8466664",
+    id: "8466664", waterTempId: "8467150",
     name: "Long Hill", slug: "long-hill",
     state: "connecticut", city: "Long Hill, CT", region: "Western Long Island Sound",
     lat: 41.275, lon: -73.0883, latDisplay: "41.27°N", lonDisplay: "73.09°W",
@@ -667,7 +667,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8466791", waterTempId: "8466791",
+    id: "8466791", waterTempId: "8467150",
     name: "Sniffens Point", slug: "sniffens-point",
     state: "connecticut", city: "Sniffens Point, CT", region: "Western Long Island Sound",
     lat: 41.1867, lon: -73.1133, latDisplay: "41.19°N", lonDisplay: "73.11°W",
@@ -689,7 +689,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8466797", waterTempId: "8466797",
+    id: "8466797", waterTempId: "8467150",
     name: "Stratford, I-95 bridge", slug: "stratford-i-95-bridge",
     state: "connecticut", city: "Stratford, I-95 bridge, CT", region: "Western Long Island Sound",
     lat: 41.2033, lon: -73.1117, latDisplay: "41.20°N", lonDisplay: "73.11°W",
@@ -733,7 +733,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8467373", waterTempId: "8467373",
+    id: "8467373", waterTempId: "8467150",
     name: "Black Rock Harbor", slug: "black-rock-harbor",
     state: "connecticut", city: "Black Rock Harbor, CT", region: "Western Long Island Sound",
     lat: 41.1567, lon: -73.2133, latDisplay: "41.16°N", lonDisplay: "73.21°W",
@@ -755,7 +755,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8467726", waterTempId: "8467726",
+    id: "8467726", waterTempId: "8467150",
     name: "Southport, Southport Harbor", slug: "southport-southport-harbor",
     state: "connecticut", city: "Southport, Southport Harbor, CT", region: "Western Long Island Sound",
     lat: 41.1333, lon: -73.2833, latDisplay: "41.13°N", lonDisplay: "73.28°W",
@@ -777,7 +777,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8468191", waterTempId: "8468191",
+    id: "8468191", waterTempId: "8467150",
     name: "SAUGATUCK, SAUGATUCK RIVER", slug: "saugatuck-saugatuck-river",
     state: "connecticut", city: "SAUGATUCK, SAUGATUCK RIVER, CT", region: "Western Long Island Sound",
     lat: 41.119998931884766, lon: -73.36830139160156, latDisplay: "41.12°N", lonDisplay: "73.37°W",
@@ -799,7 +799,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8468448", waterTempId: "8468448",
+    id: "8468448", waterTempId: "8467150",
     name: "South Norwalk", slug: "south-norwalk",
     state: "connecticut", city: "South Norwalk, CT", region: "Western Long Island Sound",
     lat: 41.0967, lon: -73.415, latDisplay: "41.10°N", lonDisplay: "73.42°W",
@@ -821,7 +821,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8468609", waterTempId: "8468609",
+    id: "8468609", waterTempId: "8467150",
     name: "Rowayton, Fivemile River", slug: "rowayton-fivemile-river",
     state: "connecticut", city: "Rowayton, Fivemile River, CT", region: "Western Long Island Sound",
     lat: 41.065, lon: -73.445, latDisplay: "41.06°N", lonDisplay: "73.44°W",
@@ -843,7 +843,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8468799", waterTempId: "8468799",
+    id: "8468799", waterTempId: "8467150",
     name: "Long Neck Point", slug: "long-neck-point",
     state: "connecticut", city: "Long Neck Point, CT", region: "Western Long Island Sound",
     lat: 41.0383, lon: -73.48, latDisplay: "41.04°N", lonDisplay: "73.48°W",
@@ -865,7 +865,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8469198", waterTempId: "8469198",
+    id: "8469198", waterTempId: "8516945",
     name: "Stamford", slug: "stamford",
     state: "connecticut", city: "Stamford, CT", region: "Western Long Island Sound",
     lat: 41.0383, lon: -73.5467, latDisplay: "41.04°N", lonDisplay: "73.55°W",
@@ -887,7 +887,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8469549", waterTempId: "8469549",
+    id: "8469549", waterTempId: "8516945",
     name: "Cos Cob Harbor", slug: "cos-cob-harbor",
     state: "connecticut", city: "Cos Cob Harbor, CT", region: "Western Long Island Sound",
     lat: 41.0167, lon: -73.5967, latDisplay: "41.02°N", lonDisplay: "73.60°W",
@@ -909,7 +909,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8465748", waterTempId: "8465748",
+    id: "8465748", waterTempId: "8465705",
     name: "NEW HAVEN", slug: "new-haven",
     state: "connecticut", city: "NEW HAVEN, CT", region: "Western Long Island Sound",
     lat: 41.2933, lon: -72.9167, latDisplay: "41.29°N", lonDisplay: "72.92°W",
@@ -931,7 +931,7 @@ export const CONNECTICUT_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8469057", waterTempId: "8469057",
+    id: "8469057", waterTempId: "8516945",
     name: "Mianus", slug: "mianus",
     state: "connecticut", city: "Mianus, CT", region: "Western Long Island Sound",
     lat: 41.039196, lon: -73.592026, latDisplay: "41.04°N", lonDisplay: "73.59°W",

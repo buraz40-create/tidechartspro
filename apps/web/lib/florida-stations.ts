@@ -45,7 +45,7 @@ export interface StationConfig {
 
 export const FLORIDA_STATIONS: StationConfig[] = [
   {
-    id: "8720001", waterTempId: "8720001",
+    id: "8720001", waterTempId: "8720030",
     name: "Kings Ferry", slug: "kings-ferry",
     state: 'florida', city: "Kings Ferry, FL", region: "Northeast Florida",
     lat: 30.7867, lon: -81.84, latDisplay: "30.79°N", lonDisplay: "81.84°W",
@@ -67,7 +67,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720004", waterTempId: "8720004",
+    id: "8720004", waterTempId: "8720030",
     name: "Crandall", slug: "crandall",
     state: 'florida', city: "Crandall, FL", region: "Northeast Florida",
     lat: 30.7217, lon: -81.6217, latDisplay: "30.72°N", lonDisplay: "81.62°W",
@@ -89,7 +89,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720006", waterTempId: "8720006",
+    id: "8720006", waterTempId: "8720030",
     name: "Little St. Marys River", slug: "little-st-marys-river",
     state: 'florida', city: "Little St. Marys River, FL", region: "Northeast Florida",
     lat: 30.7317, lon: -81.7267, latDisplay: "30.73°N", lonDisplay: "81.73°W",
@@ -111,7 +111,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720007", waterTempId: "8720007",
+    id: "8720007", waterTempId: "8720030",
     name: "Roses Bluff - Bells River", slug: "roses-bluff-bells-river",
     state: 'florida', city: "Roses Bluff - Bells River, FL", region: "Northeast Florida",
     lat: 30.7033, lon: -81.5767, latDisplay: "30.70°N", lonDisplay: "81.58°W",
@@ -133,7 +133,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720011", waterTempId: "8720011",
+    id: "8720011", waterTempId: "8720030",
     name: "CUT 1N FRONT RANGE - ST MARYS RIVER ENTR", slug: "cut-1n-front-range-st-marys-river-entr",
     state: 'florida', city: "CUT 1N FRONT RANGE - ST MARYS RIVER ENTR, FL", region: "Northeast Florida",
     lat: 30.7083, lon: -81.465, latDisplay: "30.71°N", lonDisplay: "81.47°W",
@@ -155,7 +155,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720023", waterTempId: "8720023",
+    id: "8720023", waterTempId: "8720030",
     name: "Chester - Bells River", slug: "chester-bells-river",
     state: 'florida', city: "Chester - Bells River, FL", region: "Northeast Florida",
     lat: 30.6833, lon: -81.5333, latDisplay: "30.68°N", lonDisplay: "81.53°W",
@@ -199,7 +199,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720051", waterTempId: "8720051",
+    id: "8720051", waterTempId: "8720030",
     name: "Lofton - Lanceford Creek", slug: "lofton-lanceford-creek",
     state: 'florida', city: "Lofton - Lanceford Creek, FL", region: "Northeast Florida",
     lat: 30.6433, lon: -81.5233, latDisplay: "30.64°N", lonDisplay: "81.52°W",
@@ -221,7 +221,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720058", waterTempId: "8720058",
+    id: "8720058", waterTempId: "8720030",
     name: "Kingsley Creek - RR. bridge", slug: "kingsley-creek-rr-bridge",
     state: 'florida', city: "Kingsley Creek - RR. bridge, FL", region: "Northeast Florida",
     lat: 30.6317, lon: -81.4767, latDisplay: "30.63°N", lonDisplay: "81.48°W",
@@ -243,7 +243,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720059", waterTempId: "8720059",
+    id: "8720059", waterTempId: "8720030",
     name: "Vaughns Landing", slug: "vaughns-landing",
     state: 'florida', city: "Vaughns Landing, FL", region: "Northeast Florida",
     lat: 30.63, lon: -81.5767, latDisplay: "30.63°N", lonDisplay: "81.58°W",
@@ -265,7 +265,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720084", waterTempId: "8720084",
+    id: "8720084", waterTempId: "8720030",
     name: "Boggy Creek - 2 mi. above entrance", slug: "boggy-creek-2-mi-above-entrance",
     state: 'florida', city: "Boggy Creek - 2 mi. above entrance, FL", region: "Northeast Florida",
     lat: 30.5883, lon: -81.6633, latDisplay: "30.59°N", lonDisplay: "81.66°W",
@@ -287,7 +287,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720086", waterTempId: "8720086",
+    id: "8720086", waterTempId: "8720030",
     name: "Amelia City - South Amelia River", slug: "amelia-city-south-amelia-river",
     state: 'florida', city: "Amelia City - South Amelia River, FL", region: "Northeast Florida",
     lat: 30.5867, lon: -81.4633, latDisplay: "30.59°N", lonDisplay: "81.46°W",
@@ -309,7 +309,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720093", waterTempId: "8720093",
+    id: "8720093", waterTempId: "8720030",
     name: "Halfmoon Island - highway bridge", slug: "halfmoon-island-highway-bridge",
     state: 'florida', city: "Halfmoon Island - highway bridge, FL", region: "Northeast Florida",
     lat: 30.5767, lon: -81.6083, latDisplay: "30.58°N", lonDisplay: "81.61°W",
@@ -331,7 +331,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720097", waterTempId: "8720097",
+    id: "8720097", waterTempId: "8720030",
     name: "Cuno - Lofton Creek", slug: "cuno-lofton-creek",
     state: 'florida', city: "Cuno - Lofton Creek, FL", region: "Northeast Florida",
     lat: 30.5767, lon: -81.5717, latDisplay: "30.58°N", lonDisplay: "81.57°W",
@@ -353,7 +353,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720098", waterTempId: "8720098",
+    id: "8720098", waterTempId: "8720030",
     name: "Nassauville", slug: "nassauville",
     state: 'florida', city: "Nassauville, FL", region: "Northeast Florida",
     lat: 30.5683, lon: -81.515, latDisplay: "30.57°N", lonDisplay: "81.52°W",
@@ -375,7 +375,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720119", waterTempId: "8720119",
+    id: "8720119", waterTempId: "8720219",
     name: "Mink Creek entrance", slug: "mink-creek-entrance",
     state: 'florida', city: "Mink Creek entrance, FL", region: "Northeast Florida",
     lat: 30.5367, lon: -81.5817, latDisplay: "30.54°N", lonDisplay: "81.58°W",
@@ -397,7 +397,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720135", waterTempId: "8720135",
+    id: "8720135", waterTempId: "8720218",
     name: "Nassau River Entrance", slug: "nassau-river-entrance",
     state: 'florida', city: "Nassau River Entrance, FL", region: "Northeast Florida",
     lat: 30.518299102783203, lon: -81.45330047607422, latDisplay: "30.52°N", lonDisplay: "81.45°W",
@@ -419,7 +419,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720137", waterTempId: "8720137",
+    id: "8720137", waterTempId: "8720218",
     name: "Sawpit Creek entrance - bridge", slug: "sawpit-creek-entrance-bridge",
     state: 'florida', city: "Sawpit Creek entrance - bridge, FL", region: "Northeast Florida",
     lat: 30.5133, lon: -81.4567, latDisplay: "30.51°N", lonDisplay: "81.46°W",
@@ -441,7 +441,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720143", waterTempId: "8720143",
+    id: "8720143", waterTempId: "8720218",
     name: "Sawpit Creek - 1 mi. above entrance", slug: "sawpit-creek-1-mi-above-entrance",
     state: 'florida', city: "Sawpit Creek - 1 mi. above entrance, FL", region: "Northeast Florida",
     lat: 30.5033, lon: -81.4717, latDisplay: "30.50°N", lonDisplay: "81.47°W",
@@ -463,7 +463,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720145", waterTempId: "8720145",
+    id: "8720145", waterTempId: "8720219",
     name: "Edwards Creek - 1 mi. above entrance", slug: "edwards-creek-1-mi-above-entrance",
     state: 'florida', city: "Edwards Creek - 1 mi. above entrance, FL", region: "Northeast Florida",
     lat: 30.5017, lon: -81.5417, latDisplay: "30.50°N", lonDisplay: "81.54°W",
@@ -485,7 +485,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720148", waterTempId: "8720148",
+    id: "8720148", waterTempId: "8720218",
     name: "Tiger Point - Pumpkin Hill Creek", slug: "tiger-point-pumpkin-hill-creek",
     state: 'florida', city: "Tiger Point - Pumpkin Hill Creek, FL", region: "Northeast Florida",
     lat: 30.5017, lon: -81.495, latDisplay: "30.50°N", lonDisplay: "81.50°W",
@@ -507,7 +507,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720168", waterTempId: "8720168",
+    id: "8720168", waterTempId: "8720218",
     name: "Simpson Creek - A1A highway bridge", slug: "simpson-creek-a1a-highway-bridge",
     state: 'florida', city: "Simpson Creek - A1A highway bridge, FL", region: "Northeast Florida",
     lat: 30.465, lon: -81.4317, latDisplay: "30.46°N", lonDisplay: "81.43°W",
@@ -529,7 +529,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720186", waterTempId: "8720186",
+    id: "8720186", waterTempId: "8720218",
     name: "Fort George Island - Fort George River", slug: "fort-george-island-fort-george-river",
     state: 'florida', city: "Fort George Island - Fort George River, FL", region: "Northeast Florida",
     lat: 30.44, lon: -81.4383, latDisplay: "30.44°N", lonDisplay: "81.44°W",
@@ -551,7 +551,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720189", waterTempId: "8720189",
+    id: "8720189", waterTempId: "8720245",
     name: "Cedar Heights - Broward River", slug: "cedar-heights-broward-river",
     state: 'florida', city: "Cedar Heights - Broward River, FL", region: "Northeast Florida",
     lat: 30.4367, lon: -81.6417, latDisplay: "30.44°N", lonDisplay: "81.64°W",
@@ -573,7 +573,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720194", waterTempId: "8720194",
+    id: "8720194", waterTempId: "8720218",
     name: "Little Talbot Island - ocean", slug: "little-talbot-island-ocean",
     state: 'florida', city: "Little Talbot Island - ocean, FL", region: "Northeast Florida",
     lat: 30.43, lon: -81.405, latDisplay: "30.43°N", lonDisplay: "81.41°W",
@@ -595,7 +595,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720196", waterTempId: "8720196",
+    id: "8720196", waterTempId: "8720218",
     name: "Sisters Creek", slug: "sisters-creek",
     state: 'florida', city: "Sisters Creek, FL", region: "Northeast Florida",
     lat: 30.4167, lon: -81.4533, latDisplay: "30.42°N", lonDisplay: "81.45°W",
@@ -617,7 +617,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720198", waterTempId: "8720198",
+    id: "8720198", waterTempId: "8720219",
     name: "Clapboard Creek - Pelotes Island", slug: "clapboard-creek-pelotes-island",
     state: 'florida', city: "Clapboard Creek - Pelotes Island, FL", region: "Northeast Florida",
     lat: 30.4067, lon: -81.51, latDisplay: "30.41°N", lonDisplay: "81.51°W",
@@ -639,7 +639,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720203", waterTempId: "8720203",
+    id: "8720203", waterTempId: "8720219",
     name: "Blount Island Bridge", slug: "blount-island-bridge",
     state: 'florida', city: "Blount Island Bridge, FL", region: "Northeast Florida",
     lat: 30.4133, lon: -81.545, latDisplay: "30.41°N", lonDisplay: "81.55°W",
@@ -661,7 +661,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720211", waterTempId: "8720211",
+    id: "8720211", waterTempId: "8720218",
     name: "Mayport Naval Station - Water Treatment Dock", slug: "mayport-naval-station-water-treatment-dock",
     state: 'florida', city: "Mayport Naval Station - Water Treatment Dock, FL", region: "Northeast Florida",
     lat: 30.4, lon: -81.4133, latDisplay: "30.40°N", lonDisplay: "81.41°W",
@@ -683,7 +683,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720213", waterTempId: "8720213",
+    id: "8720213", waterTempId: "8720245",
     name: "Sherwood Forest", slug: "sherwood-forest",
     state: 'florida', city: "Sherwood Forest, FL", region: "Northeast Florida",
     lat: 30.42, lon: -81.7283, latDisplay: "30.42°N", lonDisplay: "81.73°W",
@@ -705,7 +705,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720214", waterTempId: "8720214",
+    id: "8720214", waterTempId: "8720218",
     name: "Mayport Naval Station - Degausing Structure", slug: "mayport-naval-station-degausing-structure",
     state: 'florida', city: "Mayport Naval Station - Degausing Structure, FL", region: "Northeast Florida",
     lat: 30.3967, lon: -81.395, latDisplay: "30.40°N", lonDisplay: "81.39°W",
@@ -727,7 +727,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720215", waterTempId: "8720215",
+    id: "8720215", waterTempId: "8720245",
     name: "Jacksonville - Navy Fuel Depot", slug: "jacksonville-navy-fuel-depot",
     state: 'florida', city: "Jacksonville - Navy Fuel Depot, FL", region: "Northeast Florida",
     lat: 30.4, lon: -81.6267, latDisplay: "30.40°N", lonDisplay: "81.63°W",
@@ -749,7 +749,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720216", waterTempId: "8720216",
+    id: "8720216", waterTempId: "8720245",
     name: "Lake Forest - Ribault River", slug: "lake-forest-ribault-river",
     state: 'florida', city: "Lake Forest - Ribault River, FL", region: "Northeast Florida",
     lat: 30.3983, lon: -81.6983, latDisplay: "30.40°N", lonDisplay: "81.70°W",
@@ -771,7 +771,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720217", waterTempId: "8720217",
+    id: "8720217", waterTempId: "8720245",
     name: "Moncrief Creek entrance", slug: "moncrief-creek-entrance",
     state: 'florida', city: "Moncrief Creek entrance, FL", region: "Northeast Florida",
     lat: 30.3917, lon: -81.6617, latDisplay: "30.39°N", lonDisplay: "81.66°W",
@@ -837,7 +837,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720220", waterTempId: "8720220",
+    id: "8720220", waterTempId: "8720218",
     name: "Mayport (Ferry Depot)", slug: "mayport-ferry-depot",
     state: 'florida', city: "Mayport (Ferry Depot), FL", region: "Northeast Florida",
     lat: 30.3933, lon: -81.4317, latDisplay: "30.39°N", lonDisplay: "81.43°W",
@@ -859,7 +859,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720221", waterTempId: "8720221",
+    id: "8720221", waterTempId: "8720219",
     name: "Fulton", slug: "fulton",
     state: 'florida', city: "Fulton, FL", region: "Northeast Florida",
     lat: 30.39, lon: -81.5067, latDisplay: "30.39°N", lonDisplay: "81.51°W",
@@ -881,7 +881,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720225", waterTempId: "8720225",
+    id: "8720225", waterTempId: "8720245",
     name: "Phoenix Park", slug: "phoenix-park",
     state: 'florida', city: "Phoenix Park, FL", region: "Northeast Florida",
     lat: 30.3833, lon: -81.6367, latDisplay: "30.38°N", lonDisplay: "81.64°W",
@@ -903,7 +903,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720226", waterTempId: "8720226",
+    id: "8720226", waterTempId: "8720245",
     name: "Jacksonville - Main Street Bridge", slug: "jacksonville-main-street-bridge",
     state: 'florida', city: "Jacksonville - Main Street Bridge, FL", region: "Northeast Florida",
     lat: 30.32, lon: -81.6583, latDisplay: "30.32°N", lonDisplay: "81.66°W",
@@ -925,7 +925,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720232", waterTempId: "8720232",
+    id: "8720232", waterTempId: "8720218",
     name: "Pablo Creek entrance", slug: "pablo-creek-entrance",
     state: 'florida', city: "Pablo Creek entrance, FL", region: "Northeast Florida",
     lat: 30.3767, lon: -81.4483, latDisplay: "30.38°N", lonDisplay: "81.45°W",
@@ -947,7 +947,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720242", waterTempId: "8720242",
+    id: "8720242", waterTempId: "8720245",
     name: "Jacksonville - Long Branch", slug: "jacksonville-long-branch",
     state: 'florida', city: "Jacksonville - Long Branch, FL", region: "Northeast Florida",
     lat: 30.360000610351562, lon: -81.62000274658203, latDisplay: "30.36°N", lonDisplay: "81.62°W",
@@ -969,7 +969,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720259", waterTempId: "8720259",
+    id: "8720259", waterTempId: "8720218",
     name: "Atlantic Beach", slug: "atlantic-beach",
     state: 'florida', city: "Atlantic Beach, FL", region: "Northeast Florida",
     lat: 30.335, lon: -81.395, latDisplay: "30.34°N", lonDisplay: "81.39°W",
@@ -991,7 +991,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720267", waterTempId: "8720267",
+    id: "8720267", waterTempId: "8720218",
     name: "Pablo Creek - ICWW bridge", slug: "pablo-creek-icww-bridge",
     state: 'florida', city: "Pablo Creek - ICWW bridge, FL", region: "Northeast Florida",
     lat: 30.3233, lon: -81.4383, latDisplay: "30.32°N", lonDisplay: "81.44°W",
@@ -1013,7 +1013,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720274", waterTempId: "8720274",
+    id: "8720274", waterTempId: "8720245",
     name: "Little Pottsburg Creek", slug: "little-pottsburg-creek",
     state: 'florida', city: "Little Pottsburg Creek, FL", region: "Northeast Florida",
     lat: 30.31, lon: -81.61, latDisplay: "30.31°N", lonDisplay: "81.61°W",
@@ -1035,7 +1035,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720291", waterTempId: "8720291",
+    id: "8720291", waterTempId: "8720218",
     name: "Jacksonville Beach", slug: "jacksonville-beach",
     state: 'florida', city: "Jacksonville Beach, FL", region: "Northeast Florida",
     lat: 30.2833, lon: -81.3867, latDisplay: "30.28°N", lonDisplay: "81.39°W",
@@ -1057,7 +1057,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720296", waterTempId: "8720296",
+    id: "8720296", waterTempId: "8720245",
     name: "Ortega River entrance", slug: "ortega-river-entrance",
     state: 'florida', city: "Ortega River entrance, FL", region: "Northeast Florida",
     lat: 30.2783, lon: -81.705, latDisplay: "30.28°N", lonDisplay: "81.70°W",
@@ -1079,7 +1079,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720305", waterTempId: "8720305",
+    id: "8720305", waterTempId: "8720218",
     name: "Oak Landing - ICWW", slug: "oak-landing-icww",
     state: 'florida', city: "Oak Landing - ICWW, FL", region: "Northeast Florida",
     lat: 30.2533, lon: -81.43, latDisplay: "30.25°N", lonDisplay: "81.43°W",
@@ -1101,7 +1101,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720333", waterTempId: "8720333",
+    id: "8720333", waterTempId: "8720245",
     name: "Piney Point", slug: "piney-point",
     state: 'florida', city: "Piney Point, FL", region: "Northeast Florida",
     lat: 30.2283, lon: -81.6633, latDisplay: "30.23°N", lonDisplay: "81.66°W",
@@ -1123,7 +1123,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720357", waterTempId: "8720357",
+    id: "8720357", waterTempId: "8720245",
     name: "I-295 bridge (west end)", slug: "i-295-bridge-west-end",
     state: 'florida', city: "I-295 bridge (west end), FL", region: "Northeast Florida",
     lat: 30.19241666666667, lon: -81.68888888888888, latDisplay: "30.19°N", lonDisplay: "81.69°W",
@@ -1145,7 +1145,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720374", waterTempId: "8720374",
+    id: "8720374", waterTempId: "8720245",
     name: "Orange Park Landing - Orange Park", slug: "orange-park-landing-orange-park",
     state: 'florida', city: "Orange Park Landing - Orange Park, FL", region: "Northeast Florida",
     lat: 30.16830062866211, lon: -81.69499969482422, latDisplay: "30.17°N", lonDisplay: "81.69°W",
@@ -1167,7 +1167,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720398", waterTempId: "8720398",
+    id: "8720398", waterTempId: "8720218",
     name: "Palm Valley - ICWW", slug: "palm-valley-icww",
     state: 'florida', city: "Palm Valley - ICWW, FL", region: "Northeast Florida",
     lat: 30.1333, lon: -81.3867, latDisplay: "30.13°N", lonDisplay: "81.39°W",
@@ -1189,7 +1189,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720406", waterTempId: "8720406",
+    id: "8720406", waterTempId: "8720245",
     name: "Peoria Point - Doctors Lake", slug: "peoria-point-doctors-lake",
     state: 'florida', city: "Peoria Point - Doctors Lake, FL", region: "Northeast Florida",
     lat: 30.12, lon: -81.7583, latDisplay: "30.12°N", lonDisplay: "81.76°W",
@@ -1211,7 +1211,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720409", waterTempId: "8720409",
+    id: "8720409", waterTempId: "8720245",
     name: "Julington Creek", slug: "julington-creek",
     state: 'florida', city: "Julington Creek, FL", region: "Northeast Florida",
     lat: 30.135000228881836, lon: -81.62999725341797, latDisplay: "30.14°N", lonDisplay: "81.63°W",
@@ -1233,7 +1233,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720434", waterTempId: "8720434",
+    id: "8720434", waterTempId: "8720245",
     name: "Black Creek - S.C.L. RR. bridge", slug: "black-creek-scl-rr-bridge",
     state: 'florida', city: "Black Creek - S.C.L. RR. bridge, FL", region: "Northeast Florida",
     lat: 30.079999923706055, lon: -81.76170349121094, latDisplay: "30.08°N", lonDisplay: "81.76°W",
@@ -1255,7 +1255,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720494", waterTempId: "8720494",
+    id: "8720494", waterTempId: "8720218",
     name: "Tolomato River (ICWW)", slug: "tolomato-river-icww",
     state: 'florida', city: "Tolomato River (ICWW), FL", region: "Northeast Florida",
     lat: 29.994400024414062, lon: -81.32949829101562, latDisplay: "29.99°N", lonDisplay: "81.33°W",
@@ -1277,7 +1277,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720496", waterTempId: "8720496",
+    id: "8720496", waterTempId: "8720245",
     name: "Green Cove Springs", slug: "green-cove-springs",
     state: 'florida', city: "Green Cove Springs, FL", region: "Northeast Florida",
     lat: 29.99, lon: -81.6633, latDisplay: "29.99°N", lonDisplay: "81.66°W",
@@ -1299,7 +1299,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720503", waterTempId: "8720503",
+    id: "8720503", waterTempId: "8720245",
     name: "Red Bay Point - St Johns River", slug: "red-bay-point-st-johns-river",
     state: 'florida', city: "Red Bay Point - St Johns River, FL", region: "Northeast Florida",
     lat: 29.98166666666667, lon: -81.63416666666667, latDisplay: "29.98°N", lonDisplay: "81.63°W",
@@ -1321,7 +1321,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720554", waterTempId: "8720554",
+    id: "8720554", waterTempId: "8720218",
     name: "Vilano Beach - Tolomato River", slug: "vilano-beach-tolomato-river",
     state: 'florida', city: "Vilano Beach - Tolomato River, FL", region: "Northeast Florida",
     lat: 29.9167, lon: -81.3, latDisplay: "29.92°N", lonDisplay: "81.30°W",
@@ -1343,7 +1343,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720576", waterTempId: "8720576",
+    id: "8720576", waterTempId: "8720218",
     name: "St. Augustine - city dock", slug: "st-augustine-city-dock",
     state: 'florida', city: "St. Augustine - city dock, FL", region: "Northeast Florida",
     lat: 29.8917, lon: -81.31, latDisplay: "29.89°N", lonDisplay: "81.31°W",
@@ -1365,7 +1365,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720582", waterTempId: "8720582",
+    id: "8720582", waterTempId: "8720218",
     name: "State Road 312 - Matanzas River", slug: "state-road-312-matanzas-river",
     state: 'florida', city: "State Road 312 - Matanzas River, FL", region: "Northeast Florida",
     lat: 29.8667, lon: -81.3067, latDisplay: "29.87°N", lonDisplay: "81.31°W",
@@ -1387,7 +1387,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720587", waterTempId: "8720587",
+    id: "8720587", waterTempId: "8720218",
     name: "St. Augustine Beach", slug: "st-augustine-beach",
     state: 'florida', city: "St. Augustine Beach, FL", region: "Northeast Florida",
     lat: 29.8567, lon: -81.2633, latDisplay: "29.86°N", lonDisplay: "81.26°W",
@@ -1409,7 +1409,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720596", waterTempId: "8720596",
+    id: "8720596", waterTempId: "8720245",
     name: "Tocoi", slug: "tocoi",
     state: 'florida', city: "Tocoi, FL", region: "Northeast Florida",
     lat: 29.8583, lon: -81.5533, latDisplay: "29.86°N", lonDisplay: "81.55°W",
@@ -1431,7 +1431,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720625", waterTempId: "8720625",
+    id: "8720625", waterTempId: "8720245",
     name: "Racy Point - St Johns River", slug: "racy-point-st-johns-river",
     state: 'florida', city: "Racy Point - St Johns River, FL", region: "Northeast Florida",
     lat: 29.8017, lon: -81.5483, latDisplay: "29.80°N", lonDisplay: "81.55°W",
@@ -1453,7 +1453,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720651", waterTempId: "8720651",
+    id: "8720651", waterTempId: "8720218",
     name: "Crescent Beach - Matanzas River", slug: "crescent-beach-matanzas-river",
     state: 'florida', city: "Crescent Beach - Matanzas River, FL", region: "Northeast Florida",
     lat: 29.7683, lon: -81.2583, latDisplay: "29.77°N", lonDisplay: "81.26°W",
@@ -1475,7 +1475,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720653", waterTempId: "8720653",
+    id: "8720653", waterTempId: "8720245",
     name: "Palmetto Bluff", slug: "palmetto-bluff",
     state: 'florida', city: "Palmetto Bluff, FL", region: "Northeast Florida",
     lat: 29.7633, lon: -81.5617, latDisplay: "29.76°N", lonDisplay: "81.56°W",
@@ -1497,7 +1497,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720686", waterTempId: "8720686",
+    id: "8720686", waterTempId: "8720218",
     name: "Fort Matanzas - Matanzas River - ICWW", slug: "fort-matanzas-matanzas-river-icww",
     state: 'florida', city: "Fort Matanzas - Matanzas River - ICWW, FL", region: "Northeast Florida",
     lat: 29.715, lon: -81.2383, latDisplay: "29.71°N", lonDisplay: "81.24°W",
@@ -1519,7 +1519,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720692", waterTempId: "8720692",
+    id: "8720692", waterTempId: "8720218",
     name: "Matanzas Inlet - State Road A1A Bridge", slug: "matanzas-inlet-state-road-a1a-bridge",
     state: 'florida', city: "Matanzas Inlet - State Road A1A Bridge, FL", region: "Northeast Florida",
     lat: 29.70453055555556, lon: -81.22785555555555, latDisplay: "29.70°N", lonDisplay: "81.23°W",
@@ -1541,7 +1541,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720757", waterTempId: "8720757",
+    id: "8720757", waterTempId: "8720218",
     name: "Bings Landing - Matanzas River", slug: "bings-landing-matanzas-river",
     state: 'florida', city: "Bings Landing - Matanzas River, FL", region: "Northeast Florida",
     lat: 29.615, lon: -81.205, latDisplay: "29.61°N", lonDisplay: "81.20°W",
@@ -1563,7 +1563,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720767", waterTempId: "8720767",
+    id: "8720767", waterTempId: "8720245",
     name: "Buffalo Bluff", slug: "buffalo-bluff",
     state: 'florida', city: "Buffalo Bluff, FL", region: "Northeast Florida",
     lat: 29.595, lon: -81.6817, latDisplay: "29.59°N", lonDisplay: "81.68°W",
@@ -1585,7 +1585,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720774", waterTempId: "8720774",
+    id: "8720774", waterTempId: "8720245",
     name: "Palatka", slug: "palatka",
     state: 'florida', city: "Palatka, FL", region: "Northeast Florida",
     lat: 29.6433, lon: -81.6317, latDisplay: "29.64°N", lonDisplay: "81.63°W",
@@ -1607,7 +1607,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720782", waterTempId: "8720782",
+    id: "8720782", waterTempId: "8720245",
     name: "Sutherlands Still - Dunns Creek", slug: "sutherlands-still-dunns-creek",
     state: 'florida', city: "Sutherlands Still - Dunns Creek, FL", region: "Northeast Florida",
     lat: 29.5717, lon: -81.6067, latDisplay: "29.57°N", lonDisplay: "81.61°W",
@@ -1629,7 +1629,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720793", waterTempId: "8720793",
+    id: "8720793", waterTempId: "8720245",
     name: "Piney Bluff Landing", slug: "piney-bluff-landing",
     state: 'florida', city: "Piney Bluff Landing, FL", region: "Northeast Florida",
     lat: 29.5583, lon: -81.5733, latDisplay: "29.56°N", lonDisplay: "81.57°W",
@@ -1651,7 +1651,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720832", waterTempId: "8720832",
+    id: "8720832", waterTempId: "8720245",
     name: "Welaka", slug: "welaka",
     state: 'florida', city: "Welaka, FL", region: "Northeast Florida",
     lat: 29.4767, lon: -81.675, latDisplay: "29.48°N", lonDisplay: "81.67°W",
@@ -1673,7 +1673,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720833", waterTempId: "8720833",
+    id: "8720833", waterTempId: "8720218",
     name: "Smith Creek - Flagler Beach", slug: "smith-creek-flagler-beach",
     state: 'florida', city: "Smith Creek - Flagler Beach, FL", region: "Northeast Florida",
     lat: 29.4783, lon: -81.1367, latDisplay: "29.48°N", lonDisplay: "81.14°W",
@@ -1695,7 +1695,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8720954", waterTempId: "8720954",
+    id: "8720954", waterTempId: "8721604",
     name: "Ormond Beach - Halifax River", slug: "ormond-beach-halifax-river",
     state: 'florida', city: "Ormond Beach - Halifax River, FL", region: "Northeast Florida",
     lat: 29.28499984741211, lon: -81.05329895019531, latDisplay: "29.28°N", lonDisplay: "81.05°W",
@@ -1717,7 +1717,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8721120", waterTempId: "8721120",
+    id: "8721120", waterTempId: "8721604",
     name: "Daytona Beach Shores - Sunglow Pier", slug: "daytona-beach-shores-sunglow-pier",
     state: 'florida', city: "Daytona Beach Shores - Sunglow Pier, FL", region: "East Central Florida",
     lat: 29.1467, lon: -80.9633, latDisplay: "29.15°N", lonDisplay: "80.96°W",
@@ -1739,7 +1739,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8721138", waterTempId: "8721138",
+    id: "8721138", waterTempId: "8721604",
     name: "Ponce Inlet - Halifax River", slug: "ponce-inlet-halifax-river",
     state: 'florida', city: "Ponce Inlet - Halifax River, FL", region: "East Central Florida",
     lat: 29.0817, lon: -80.9367, latDisplay: "29.08°N", lonDisplay: "80.94°W",
@@ -1761,7 +1761,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8721147", waterTempId: "8721147",
+    id: "8721147", waterTempId: "8721604",
     name: "Ponce de Leon Inlet", slug: "ponce-de-leon-inlet",
     state: 'florida', city: "Ponce de Leon Inlet, FL", region: "East Central Florida",
     lat: 29.06333333333333, lon: -80.91583333333334, latDisplay: "29.06°N", lonDisplay: "80.92°W",
@@ -1783,7 +1783,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8721164", waterTempId: "8721164",
+    id: "8721164", waterTempId: "8721604",
     name: "New Smyrna Beach", slug: "new-smyrna-beach",
     state: 'florida', city: "New Smyrna Beach, FL", region: "East Central Florida",
     lat: 29.0233, lon: -80.9183, latDisplay: "29.02°N", lonDisplay: "80.92°W",
@@ -1805,7 +1805,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8721222", waterTempId: "8721222",
+    id: "8721222", waterTempId: "8721604",
     name: "Packwood Place - Mosquito Lagoon", slug: "packwood-place-mosquito-lagoon",
     state: 'florida', city: "Packwood Place - Mosquito Lagoon, FL", region: "East Central Florida",
     lat: 28.94, lon: -80.87, latDisplay: "28.94°N", lonDisplay: "80.87°W",
@@ -1827,7 +1827,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8721223", waterTempId: "8721223",
+    id: "8721223", waterTempId: "8721604",
     name: "Turtle Mound - Mosquito Lagoon", slug: "turtle-mound-mosquito-lagoon",
     state: 'florida', city: "Turtle Mound - Mosquito Lagoon, FL", region: "East Central Florida",
     lat: 28.9267, lon: -80.825, latDisplay: "28.93°N", lonDisplay: "80.83°W",
@@ -1871,7 +1871,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8721649", waterTempId: "8721649",
+    id: "8721649", waterTempId: "8721604",
     name: "Cocoa Beach", slug: "cocoa-beach",
     state: 'florida', city: "Cocoa Beach, FL", region: "East Central Florida",
     lat: 28.3683, lon: -80.6, latDisplay: "28.37°N", lonDisplay: "80.60°W",
@@ -1893,7 +1893,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8721727", waterTempId: "8721727",
+    id: "8721727", waterTempId: "8721604",
     name: "Patrick Air Force Base", slug: "patrick-air-force-base",
     state: 'florida', city: "Patrick Air Force Base, FL", region: "East Central Florida",
     lat: 28.245, lon: -80.6, latDisplay: "28.25°N", lonDisplay: "80.60°W",
@@ -1915,7 +1915,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8721804", waterTempId: "8721804",
+    id: "8721804", waterTempId: "8721604",
     name: "Canova Beach", slug: "canova-beach",
     state: 'florida', city: "Canova Beach, FL", region: "East Central Florida",
     lat: 28.1383, lon: -80.5783, latDisplay: "28.14°N", lonDisplay: "80.58°W",
@@ -1937,7 +1937,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8721843", waterTempId: "8721843",
+    id: "8721843", waterTempId: "8721604",
     name: "Melbourne Causeway", slug: "melbourne-causeway",
     state: 'florida', city: "Melbourne Causeway, FL", region: "East Central Florida",
     lat: 28.08329963684082, lon: -80.5916976928711, latDisplay: "28.08°N", lonDisplay: "80.59°W",
@@ -1959,7 +1959,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8721994", waterTempId: "8721994",
+    id: "8721994", waterTempId: "8721604",
     name: "Micco", slug: "micco",
     state: 'florida', city: "Micco, FL", region: "East Central Florida",
     lat: 27.8733, lon: -80.4967, latDisplay: "27.87°N", lonDisplay: "80.50°W",
@@ -1981,7 +1981,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722004", waterTempId: "8722004",
+    id: "8722004", waterTempId: "8721604",
     name: "Sebastian Inlet bridge", slug: "sebastian-inlet-bridge",
     state: 'florida', city: "Sebastian Inlet bridge, FL", region: "Southeast Florida",
     lat: 27.86, lon: -80.4483, latDisplay: "27.86°N", lonDisplay: "80.45°W",
@@ -2003,7 +2003,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722029", waterTempId: "8722029",
+    id: "8722029", waterTempId: "8721604",
     name: "Sebastian", slug: "sebastian",
     state: 'florida', city: "Sebastian, FL", region: "Southeast Florida",
     lat: 27.8117, lon: -80.4633, latDisplay: "27.81°N", lonDisplay: "80.46°W",
@@ -2025,7 +2025,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722059", waterTempId: "8722059",
+    id: "8722059", waterTempId: "8721604",
     name: "Wabasso", slug: "wabasso",
     state: 'florida', city: "Wabasso, FL", region: "Southeast Florida",
     lat: 27.755, lon: -80.425, latDisplay: "27.75°N", lonDisplay: "80.42°W",
@@ -2047,7 +2047,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722105", waterTempId: "8722105",
+    id: "8722105", waterTempId: "8721604",
     name: "Vero Beach (ocean)", slug: "vero-beach-ocean",
     state: 'florida', city: "Vero Beach (ocean), FL", region: "Southeast Florida",
     lat: 27.67, lon: -80.36, latDisplay: "27.67°N", lonDisplay: "80.36°W",
@@ -2069,7 +2069,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722125", waterTempId: "8722125",
+    id: "8722125", waterTempId: "8721604",
     name: "Vero Beach", slug: "vero-beach",
     state: 'florida', city: "Vero Beach, FL", region: "Southeast Florida",
     lat: 27.6317, lon: -80.3717, latDisplay: "27.63°N", lonDisplay: "80.37°W",
@@ -2091,7 +2091,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722146", waterTempId: "8722146",
+    id: "8722146", waterTempId: "8721604",
     name: "Oslo", slug: "oslo",
     state: 'florida', city: "Oslo, FL", region: "Southeast Florida",
     lat: 27.5933, lon: -80.3567, latDisplay: "27.59°N", lonDisplay: "80.36°W",
@@ -2113,7 +2113,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722207", waterTempId: "8722207",
+    id: "8722207", waterTempId: "8722670",
     name: "St. Lucie", slug: "st-lucie",
     state: 'florida', city: "St. Lucie, FL", region: "Southeast Florida",
     lat: 27.48, lon: -80.3333, latDisplay: "27.48°N", lonDisplay: "80.33°W",
@@ -2135,7 +2135,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722208", waterTempId: "8722208",
+    id: "8722208", waterTempId: "8722670",
     name: "North Beach Causeway", slug: "north-beach-causeway",
     state: 'florida', city: "North Beach Causeway, FL", region: "Southeast Florida",
     lat: 27.4717, lon: -80.325, latDisplay: "27.47°N", lonDisplay: "80.33°W",
@@ -2157,7 +2157,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722212", waterTempId: "8722212",
+    id: "8722212", waterTempId: "8722670",
     name: "Fort Pierce Inlet - south jetty", slug: "fort-pierce-inlet-south-jetty",
     state: 'florida', city: "Fort Pierce Inlet - south jetty, FL", region: "Southeast Florida",
     lat: 27.47, lon: -80.2883, latDisplay: "27.47°N", lonDisplay: "80.29°W",
@@ -2179,7 +2179,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722213", waterTempId: "8722213",
+    id: "8722213", waterTempId: "8722670",
     name: "Fort Pierce Inlet - Binney Dock", slug: "fort-pierce-inlet-binney-dock",
     state: 'florida', city: "Fort Pierce Inlet - Binney Dock, FL", region: "Southeast Florida",
     lat: 27.4683, lon: -80.3, latDisplay: "27.47°N", lonDisplay: "80.30°W",
@@ -2201,7 +2201,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722219", waterTempId: "8722219",
+    id: "8722219", waterTempId: "8722670",
     name: "Fort Pierce - South Beach Causeway", slug: "fort-pierce-south-beach-causeway",
     state: 'florida', city: "Fort Pierce - South Beach Causeway, FL", region: "Southeast Florida",
     lat: 27.4567, lon: -80.3233, latDisplay: "27.46°N", lonDisplay: "80.32°W",
@@ -2223,7 +2223,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722274", waterTempId: "8722274",
+    id: "8722274", waterTempId: "8722670",
     name: "Ankona", slug: "ankona",
     state: 'florida', city: "Ankona, FL", region: "Southeast Florida",
     lat: 27.355, lon: -80.2733, latDisplay: "27.36°N", lonDisplay: "80.27°W",
@@ -2245,7 +2245,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722312", waterTempId: "8722312",
+    id: "8722312", waterTempId: "8722670",
     name: "Eden - Nettles Island", slug: "eden-nettles-island",
     state: 'florida', city: "Eden - Nettles Island, FL", region: "Southeast Florida",
     lat: 27.2867, lon: -80.2267, latDisplay: "27.29°N", lonDisplay: "80.23°W",
@@ -2267,7 +2267,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722329", waterTempId: "8722329",
+    id: "8722329", waterTempId: "8722670",
     name: "Jensen Beach Causeway Park", slug: "jensen-beach-causeway-park",
     state: 'florida', city: "Jensen Beach Causeway Park, FL", region: "Southeast Florida",
     lat: 27.251699447631836, lon: -80.21829986572266, latDisplay: "27.25°N", lonDisplay: "80.22°W",
@@ -2289,7 +2289,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722334", waterTempId: "8722334",
+    id: "8722334", waterTempId: "8722670",
     name: "North Fork", slug: "north-fork",
     state: 'florida', city: "North Fork, FL", region: "Southeast Florida",
     lat: 27.2433, lon: -80.3133, latDisplay: "27.24°N", lonDisplay: "80.31°W",
@@ -2311,7 +2311,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722357", waterTempId: "8722357",
+    id: "8722357", waterTempId: "8722670",
     name: "Stuart", slug: "stuart",
     state: 'florida', city: "Stuart, FL", region: "Southeast Florida",
     lat: 27.2, lon: -80.2583, latDisplay: "27.20°N", lonDisplay: "80.26°W",
@@ -2333,7 +2333,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722366", waterTempId: "8722366",
+    id: "8722366", waterTempId: "8722670",
     name: "Seminole Shores", slug: "seminole-shores",
     state: 'florida', city: "Seminole Shores, FL", region: "Southeast Florida",
     lat: 27.1833, lon: -80.1583, latDisplay: "27.18°N", lonDisplay: "80.16°W",
@@ -2355,7 +2355,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722371", waterTempId: "8722371",
+    id: "8722371", waterTempId: "8722670",
     name: "Sewall Point", slug: "sewall-point",
     state: 'florida', city: "Sewall Point, FL", region: "Southeast Florida",
     lat: 27.174999237060547, lon: -80.18830108642578, latDisplay: "27.17°N", lonDisplay: "80.19°W",
@@ -2377,7 +2377,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722375", waterTempId: "8722375",
+    id: "8722375", waterTempId: "8722670",
     name: "South Point - St. Lucie Inlet", slug: "south-point-st-lucie-inlet",
     state: 'florida', city: "South Point - St. Lucie Inlet, FL", region: "Southeast Florida",
     lat: 27.1583, lon: -80.1567, latDisplay: "27.16°N", lonDisplay: "80.16°W",
@@ -2399,7 +2399,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722376", waterTempId: "8722376",
+    id: "8722376", waterTempId: "8722670",
     name: "South Fork", slug: "south-fork",
     state: 'florida', city: "South Fork, FL", region: "Southeast Florida",
     lat: 27.165, lon: -80.255, latDisplay: "27.16°N", lonDisplay: "80.25°W",
@@ -2421,7 +2421,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722381", waterTempId: "8722381",
+    id: "8722381", waterTempId: "8722670",
     name: "Great Pocket", slug: "great-pocket",
     state: 'florida', city: "Great Pocket, FL", region: "Southeast Florida",
     lat: 27.155, lon: -80.1717, latDisplay: "27.16°N", lonDisplay: "80.17°W",
@@ -2443,7 +2443,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722383", waterTempId: "8722383",
+    id: "8722383", waterTempId: "8722670",
     name: "Port Salerno - Manatee Pocket", slug: "port-salerno-manatee-pocket",
     state: 'florida', city: "Port Salerno - Manatee Pocket, FL", region: "Southeast Florida",
     lat: 27.1517, lon: -80.195, latDisplay: "27.15°N", lonDisplay: "80.19°W",
@@ -2465,7 +2465,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722404", waterTempId: "8722404",
+    id: "8722404", waterTempId: "8722670",
     name: "Peck Lake - ICWW", slug: "peck-lake-icww",
     state: 'florida', city: "Peck Lake - ICWW, FL", region: "Southeast Florida",
     lat: 27.1133, lon: -80.145, latDisplay: "27.11°N", lonDisplay: "80.14°W",
@@ -2487,7 +2487,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722414", waterTempId: "8722414",
+    id: "8722414", waterTempId: "8722670",
     name: "Gomez - South Jupiter Narrows", slug: "gomez-south-jupiter-narrows",
     state: 'florida', city: "Gomez - South Jupiter Narrows, FL", region: "Southeast Florida",
     lat: 27.0933, lon: -80.1367, latDisplay: "27.09°N", lonDisplay: "80.14°W",
@@ -2509,7 +2509,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722429", waterTempId: "8722429",
+    id: "8722429", waterTempId: "8722670",
     name: "Hobe Sound bridge", slug: "hobe-sound-bridge",
     state: 'florida', city: "Hobe Sound bridge, FL", region: "Southeast Florida",
     lat: 27.065, lon: -80.1233, latDisplay: "27.07°N", lonDisplay: "80.12°W",
@@ -2531,7 +2531,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722445", waterTempId: "8722445",
+    id: "8722445", waterTempId: "8722670",
     name: "Hobe Sound - Jupiter Island", slug: "hobe-sound-jupiter-island",
     state: 'florida', city: "Hobe Sound - Jupiter Island, FL", region: "Southeast Florida",
     lat: 27.0367, lon: -80.1067, latDisplay: "27.04°N", lonDisplay: "80.11°W",
@@ -2553,7 +2553,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722471", waterTempId: "8722471",
+    id: "8722471", waterTempId: "8722670",
     name: "Conch Bar - Jupiter Sound", slug: "conch-bar-jupiter-sound",
     state: 'florida', city: "Conch Bar - Jupiter Sound, FL", region: "Southeast Florida",
     lat: 26.9883, lon: -80.0933, latDisplay: "26.99°N", lonDisplay: "80.09°W",
@@ -2575,7 +2575,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722472", waterTempId: "8722472",
+    id: "8722472", waterTempId: "8722670",
     name: "Boy Scout Dock", slug: "boy-scout-dock",
     state: 'florida', city: "Boy Scout Dock, FL", region: "Southeast Florida",
     lat: 26.9867, lon: -80.1417, latDisplay: "26.99°N", lonDisplay: "80.14°W",
@@ -2597,7 +2597,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722478", waterTempId: "8722478",
+    id: "8722478", waterTempId: "8722670",
     name: "North Fork - 2 miles above entrance", slug: "north-fork-2-miles-above-entrance",
     state: 'florida', city: "North Fork - 2 miles above entrance, FL", region: "Southeast Florida",
     lat: 26.975, lon: -80.1133, latDisplay: "26.98°N", lonDisplay: "80.11°W",
@@ -2619,7 +2619,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722481", waterTempId: "8722481",
+    id: "8722481", waterTempId: "8722670",
     name: "3 miles above A1A highway bridge", slug: "3-miles-above-a1a-highway-bridge",
     state: 'florida', city: "3 miles above A1A highway bridge, FL", region: "Southeast Florida",
     lat: 26.97, lon: -80.1267, latDisplay: "26.97°N", lonDisplay: "80.13°W",
@@ -2641,7 +2641,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722486", waterTempId: "8722486",
+    id: "8722486", waterTempId: "8722670",
     name: "Tequesta - North Fork", slug: "tequesta-north-fork",
     state: 'florida', city: "Tequesta - North Fork, FL", region: "Southeast Florida",
     lat: 26.96, lon: -80.105, latDisplay: "26.96°N", lonDisplay: "80.11°W",
@@ -2663,7 +2663,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722491", waterTempId: "8722491",
+    id: "8722491", waterTempId: "8722670",
     name: "Jupiter Sound - south end", slug: "jupiter-sound-south-end",
     state: 'florida', city: "Jupiter Sound - south end, FL", region: "Southeast Florida",
     lat: 26.9517, lon: -80.08, latDisplay: "26.95°N", lonDisplay: "80.08°W",
@@ -2685,7 +2685,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722492", waterTempId: "8722492",
+    id: "8722492", waterTempId: "8722670",
     name: "A1A highway bridge", slug: "a1a-highway-bridge",
     state: 'florida', city: "A1A highway bridge, FL", region: "Southeast Florida",
     lat: 26.9467, lon: -80.09, latDisplay: "26.95°N", lonDisplay: "80.09°W",
@@ -2707,7 +2707,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722494", waterTempId: "8722494",
+    id: "8722494", waterTempId: "8722670",
     name: "Southwest Fork - 0.5 mile above entrance", slug: "southwest-fork-05-mile-above-entrance",
     state: 'florida', city: "Southwest Fork - 0.5 mile above entrance, FL", region: "Southeast Florida",
     lat: 26.9433, lon: -80.12, latDisplay: "26.94°N", lonDisplay: "80.12°W",
@@ -2729,7 +2729,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722495", waterTempId: "8722495",
+    id: "8722495", waterTempId: "8722670",
     name: "Jupiter Inlet - south jetty", slug: "jupiter-inlet-south-jetty",
     state: 'florida', city: "Jupiter Inlet - south jetty, FL", region: "Southeast Florida",
     lat: 26.9433, lon: -80.0733, latDisplay: "26.94°N", lonDisplay: "80.07°W",
@@ -2751,7 +2751,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722496", waterTempId: "8722496",
+    id: "8722496", waterTempId: "8722670",
     name: "Southwest Fork (spillway)", slug: "southwest-fork-spillway",
     state: 'florida', city: "Southwest Fork (spillway), FL", region: "Southeast Florida",
     lat: 26.935, lon: -80.1433, latDisplay: "26.93°N", lonDisplay: "80.14°W",
@@ -2773,7 +2773,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722499", waterTempId: "8722499",
+    id: "8722499", waterTempId: "8722670",
     name: "Jupiter - Lake Worth Creek - ICWW", slug: "jupiter-lake-worth-creek-icww",
     state: 'florida', city: "Jupiter - Lake Worth Creek - ICWW, FL", region: "Southeast Florida",
     lat: 26.935, lon: -80.085, latDisplay: "26.93°N", lonDisplay: "80.08°W",
@@ -2795,7 +2795,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722512", waterTempId: "8722512",
+    id: "8722512", waterTempId: "8722670",
     name: "Lake Worth Creek - Day Beacon 19 - ICWW", slug: "lake-worth-creek-day-beacon-19-icww",
     state: 'florida', city: "Lake Worth Creek - Day Beacon 19 - ICWW, FL", region: "Southeast Florida",
     lat: 26.9117, lon: -80.08, latDisplay: "26.91°N", lonDisplay: "80.08°W",
@@ -2817,7 +2817,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722528", waterTempId: "8722528",
+    id: "8722528", waterTempId: "8722670",
     name: "Donald Ross Bridge - ICWW", slug: "donald-ross-bridge-icww",
     state: 'florida', city: "Donald Ross Bridge - ICWW, FL", region: "Southeast Florida",
     lat: 26.8817, lon: -80.07, latDisplay: "26.88°N", lonDisplay: "80.07°W",
@@ -2839,7 +2839,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722548", waterTempId: "8722548",
+    id: "8722548", waterTempId: "8722670",
     name: "PGA Boulevard Bridge - ICWW", slug: "pga-boulevard-bridge-icww",
     state: 'florida', city: "PGA Boulevard Bridge - ICWW, FL", region: "Southeast Florida",
     lat: 26.8433, lon: -80.0667, latDisplay: "26.84°N", lonDisplay: "80.07°W",
@@ -2861,7 +2861,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722557", waterTempId: "8722557",
+    id: "8722557", waterTempId: "8722670",
     name: "North Palm Beach", slug: "north-palm-beach",
     state: 'florida', city: "North Palm Beach, FL", region: "Southeast Florida",
     lat: 26.8267, lon: -80.055, latDisplay: "26.83°N", lonDisplay: "80.06°W",
@@ -2883,7 +2883,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722588", waterTempId: "8722588",
+    id: "8722588", waterTempId: "8722670",
     name: "Port of Palm Beach", slug: "port-of-palm-beach",
     state: 'florida', city: "Port of Palm Beach, FL", region: "Southeast Florida",
     lat: 26.77, lon: -80.0517, latDisplay: "26.77°N", lonDisplay: "80.05°W",
@@ -2905,7 +2905,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722607", waterTempId: "8722607",
+    id: "8722607", waterTempId: "8722670",
     name: "Palm Beach", slug: "palm-beach",
     state: 'florida', city: "Palm Beach, FL", region: "Southeast Florida",
     lat: 26.7333, lon: -80.0417, latDisplay: "26.73°N", lonDisplay: "80.04°W",
@@ -2927,7 +2927,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722621", waterTempId: "8722621",
+    id: "8722621", waterTempId: "8722670",
     name: "Palm Beach - Highway 704 bridge", slug: "palm-beach-highway-704-bridge",
     state: 'florida', city: "Palm Beach - Highway 704 bridge, FL", region: "Southeast Florida",
     lat: 26.705, lon: -80.045, latDisplay: "26.70°N", lonDisplay: "80.05°W",
@@ -2949,7 +2949,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722654", waterTempId: "8722654",
+    id: "8722654", waterTempId: "8722670",
     name: "West Palm Beach Canal", slug: "west-palm-beach-canal",
     state: 'florida', city: "West Palm Beach Canal, FL", region: "Southeast Florida",
     lat: 26.645, lon: -80.045, latDisplay: "26.64°N", lonDisplay: "80.05°W",
@@ -2971,7 +2971,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722669", waterTempId: "8722669",
+    id: "8722669", waterTempId: "8722670",
     name: "Lake Worth ICW", slug: "lake-worth-icw",
     state: 'florida', city: "Lake Worth ICW, FL", region: "Southeast Florida",
     lat: 26.6133, lon: -80.0467, latDisplay: "26.61°N", lonDisplay: "80.05°W",
@@ -3015,7 +3015,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722706", waterTempId: "8722706",
+    id: "8722706", waterTempId: "8722670",
     name: "Boynton Beach - Lake Worth", slug: "boynton-beach-lake-worth",
     state: 'florida', city: "Boynton Beach - Lake Worth, FL", region: "Southeast Florida",
     lat: 26.54829978942871, lon: -80.05329895019531, latDisplay: "26.55°N", lonDisplay: "80.05°W",
@@ -3037,7 +3037,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722718", waterTempId: "8722718",
+    id: "8722718", waterTempId: "8722670",
     name: "Ocean Ridge - ICWW", slug: "ocean-ridge-icww",
     state: 'florida', city: "Ocean Ridge - ICWW, FL", region: "Southeast Florida",
     lat: 26.52669906616211, lon: -80.05329895019531, latDisplay: "26.53°N", lonDisplay: "80.05°W",
@@ -3059,7 +3059,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722746", waterTempId: "8722746",
+    id: "8722746", waterTempId: "8722670",
     name: "Delray Beach - ICWW", slug: "delray-beach-icww",
     state: 'florida', city: "Delray Beach - ICWW, FL", region: "Southeast Florida",
     lat: 26.4733, lon: -80.0617, latDisplay: "26.47°N", lonDisplay: "80.06°W",
@@ -3081,7 +3081,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722761", waterTempId: "8722761",
+    id: "8722761", waterTempId: "8722670",
     name: "South Delray Beach - ICWW", slug: "south-delray-beach-icww",
     state: 'florida', city: "South Delray Beach - ICWW, FL", region: "Southeast Florida",
     lat: 26.4467, lon: -80.065, latDisplay: "26.45°N", lonDisplay: "80.06°W",
@@ -3103,7 +3103,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722784", waterTempId: "8722784",
+    id: "8722784", waterTempId: "8722670",
     name: "Yamato - ICWW", slug: "yamato-icww",
     state: 'florida', city: "Yamato - ICWW, FL", region: "Southeast Florida",
     lat: 26.4033, lon: -80.07, latDisplay: "26.40°N", lonDisplay: "80.07°W",
@@ -3125,7 +3125,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722802", waterTempId: "8722802",
+    id: "8722802", waterTempId: "8722670",
     name: "Lake Wyman - ICWW", slug: "lake-wyman-icww",
     state: 'florida', city: "Lake Wyman - ICWW, FL", region: "Southeast Florida",
     lat: 26.37, lon: -80.07, latDisplay: "26.37°N", lonDisplay: "80.07°W",
@@ -3147,7 +3147,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722816", waterTempId: "8722816",
+    id: "8722816", waterTempId: "8722956",
     name: "Boca Raton - Lake Boca Raton", slug: "boca-raton-lake-boca-raton",
     state: 'florida', city: "Boca Raton - Lake Boca Raton, FL", region: "Southeast Florida",
     lat: 26.343299865722656, lon: -80.07669830322266, latDisplay: "26.34°N", lonDisplay: "80.08°W",
@@ -3169,7 +3169,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722832", waterTempId: "8722832",
+    id: "8722832", waterTempId: "8722956",
     name: "Deerfield Beach - Hillsboro River", slug: "deerfield-beach-hillsboro-river",
     state: 'florida', city: "Deerfield Beach - Hillsboro River, FL", region: "Southeast Florida",
     lat: 26.31329917907715, lon: -80.08170318603516, latDisplay: "26.31°N", lonDisplay: "80.08°W",
@@ -3191,7 +3191,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722854", waterTempId: "8722854",
+    id: "8722854", waterTempId: "8722956",
     name: "Hillsboro Beach - ICWW", slug: "hillsboro-beach-icww",
     state: 'florida', city: "Hillsboro Beach - ICWW, FL", region: "Southeast Florida",
     lat: 26.2733, lon: -80.08, latDisplay: "26.27°N", lonDisplay: "80.08°W",
@@ -3213,7 +3213,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722859", waterTempId: "8722859",
+    id: "8722859", waterTempId: "8722956",
     name: "Hillsboro Inlet Marina", slug: "hillsboro-inlet-marina",
     state: 'florida', city: "Hillsboro Inlet Marina, FL", region: "Southeast Florida",
     lat: 26.260000228881836, lon: -80.08499908447266, latDisplay: "26.26°N", lonDisplay: "80.08°W",
@@ -3235,7 +3235,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722861", waterTempId: "8722861",
+    id: "8722861", waterTempId: "8722956",
     name: "Hillsboro Inlet - Coast Guard Light Station", slug: "hillsboro-inlet-coast-guard-light-station",
     state: 'florida', city: "Hillsboro Inlet - Coast Guard Light Station, FL", region: "Southeast Florida",
     lat: 26.2583, lon: -80.0817, latDisplay: "26.26°N", lonDisplay: "80.08°W",
@@ -3257,7 +3257,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722862", waterTempId: "8722862",
+    id: "8722862", waterTempId: "8722956",
     name: "Hillsboro Inlet (ocean)", slug: "hillsboro-inlet-ocean",
     state: 'florida', city: "Hillsboro Inlet (ocean), FL", region: "Southeast Florida",
     lat: 26.2567, lon: -80.08, latDisplay: "26.26°N", lonDisplay: "80.08°W",
@@ -3279,7 +3279,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722899", waterTempId: "8722899",
+    id: "8722899", waterTempId: "8722956",
     name: "Lauderdale-by-the-Sea - Anglin Fishing Pier", slug: "lauderdale-by-the-sea-anglin-fishing-pier",
     state: 'florida', city: "Lauderdale-by-the-Sea - Anglin Fishing Pier, FL", region: "Southeast Florida",
     lat: 26.18829917907715, lon: -80.09329986572266, latDisplay: "26.19°N", lonDisplay: "80.09°W",
@@ -3301,7 +3301,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722937", waterTempId: "8722937",
+    id: "8722937", waterTempId: "8722956",
     name: "Fort Lauderdale - Andrews Ave. Bridge", slug: "fort-lauderdale-andrews-ave-bridge",
     state: 'florida', city: "Fort Lauderdale - Andrews Ave. Bridge, FL", region: "Southeast Florida",
     lat: 26.11829948425293, lon: -80.1449966430664, latDisplay: "26.12°N", lonDisplay: "80.14°W",
@@ -3323,7 +3323,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722939", waterTempId: "8722939",
+    id: "8722939", waterTempId: "8722956",
     name: "Bahia Mar Yacht Club", slug: "bahia-mar-yacht-club",
     state: 'florida', city: "Bahia Mar Yacht Club, FL", region: "Southeast Florida",
     lat: 26.1133, lon: -80.1083, latDisplay: "26.11°N", lonDisplay: "80.11°W",
@@ -3345,7 +3345,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722946", waterTempId: "8722946",
+    id: "8722946", waterTempId: "8722956",
     name: "Mayan Lake", slug: "mayan-lake",
     state: 'florida', city: "Mayan Lake, FL", region: "Southeast Florida",
     lat: 26.1, lon: -80.1083, latDisplay: "26.10°N", lonDisplay: "80.11°W",
@@ -3367,7 +3367,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722951", waterTempId: "8722951",
+    id: "8722951", waterTempId: "8722956",
     name: "Port Everglades - Turning Basin", slug: "port-everglades-turning-basin",
     state: 'florida', city: "Port Everglades - Turning Basin, FL", region: "Southeast Florida",
     lat: 26.0917, lon: -80.1233, latDisplay: "26.09°N", lonDisplay: "80.12°W",
@@ -3411,7 +3411,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722957", waterTempId: "8722957",
+    id: "8722957", waterTempId: "8722956",
     name: "Whiskey Creek - north end", slug: "whiskey-creek-north-end",
     state: 'florida', city: "Whiskey Creek - north end, FL", region: "Southeast Florida",
     lat: 26.08, lon: -80.1117, latDisplay: "26.08°N", lonDisplay: "80.11°W",
@@ -3433,7 +3433,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722968", waterTempId: "8722968",
+    id: "8722968", waterTempId: "8722956",
     name: "Port Laudania - Dania cut-off Canal", slug: "port-laudania-dania-cut-off-canal",
     state: 'florida', city: "Port Laudania - Dania cut-off Canal, FL", region: "Southeast Florida",
     lat: 26.06, lon: -80.13, latDisplay: "26.06°N", lonDisplay: "80.13°W",
@@ -3455,7 +3455,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722971", waterTempId: "8722971",
+    id: "8722971", waterTempId: "8722956",
     name: "Whiskey Creek - south entrance - ICWW", slug: "whiskey-creek-south-entrance-icww",
     state: 'florida', city: "Whiskey Creek - south entrance - ICWW, FL", region: "Southeast Florida",
     lat: 26.055, lon: -80.1133, latDisplay: "26.05°N", lonDisplay: "80.11°W",
@@ -3477,7 +3477,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722977", waterTempId: "8722977",
+    id: "8722977", waterTempId: "8722956",
     name: "Hollywood Beach - West Lake - north end", slug: "hollywood-beach-west-lake-north-end",
     state: 'florida', city: "Hollywood Beach - West Lake - north end, FL", region: "Southeast Florida",
     lat: 26.0433, lon: -80.1267, latDisplay: "26.04°N", lonDisplay: "80.13°W",
@@ -3499,7 +3499,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722979", waterTempId: "8722979",
+    id: "8722979", waterTempId: "8722956",
     name: "Hollywood Beach", slug: "hollywood-beach",
     state: 'florida', city: "Hollywood Beach, FL", region: "Southeast Florida",
     lat: 26.04, lon: -80.115, latDisplay: "26.04°N", lonDisplay: "80.11°W",
@@ -3521,7 +3521,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8722982", waterTempId: "8722982",
+    id: "8722982", waterTempId: "8722956",
     name: "Hollywood Beach - West Lake - south end", slug: "hollywood-beach-west-lake-south-end",
     state: 'florida', city: "Hollywood Beach - West Lake - south end, FL", region: "Southeast Florida",
     lat: 26.0333, lon: -80.1233, latDisplay: "26.03°N", lonDisplay: "80.12°W",
@@ -3543,7 +3543,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723026", waterTempId: "8723026",
+    id: "8723026", waterTempId: "8722956",
     name: "Golden Beach - ICWW", slug: "golden-beach-icww",
     state: 'florida', city: "Golden Beach - ICWW, FL", region: "Florida Keys",
     lat: 25.9667, lon: -80.125, latDisplay: "25.97°N", lonDisplay: "80.13°W",
@@ -3565,7 +3565,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723044", waterTempId: "8723044",
+    id: "8723044", waterTempId: "8722956",
     name: "Dumfoundling Bay", slug: "dumfoundling-bay",
     state: 'florida', city: "Dumfoundling Bay, FL", region: "Florida Keys",
     lat: 25.9417, lon: -80.125, latDisplay: "25.94°N", lonDisplay: "80.13°W",
@@ -3587,7 +3587,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723050", waterTempId: "8723050",
+    id: "8723050", waterTempId: "8722956",
     name: "North Miami Beach - Newport Fishing Pier", slug: "north-miami-beach-newport-fishing-pier",
     state: 'florida', city: "North Miami Beach - Newport Fishing Pier, FL", region: "Florida Keys",
     lat: 25.93, lon: -80.12, latDisplay: "25.93°N", lonDisplay: "80.12°W",
@@ -3609,7 +3609,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723073", waterTempId: "8723073",
+    id: "8723073", waterTempId: "8723214",
     name: "Bakers Haulover Inlet (inside)", slug: "bakers-haulover-inlet-inside",
     state: 'florida', city: "Bakers Haulover Inlet (inside), FL", region: "Florida Keys",
     lat: 25.9033, lon: -80.125, latDisplay: "25.90°N", lonDisplay: "80.13°W",
@@ -3631,7 +3631,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723080", waterTempId: "8723080",
+    id: "8723080", waterTempId: "8723214",
     name: "Haulover Pier - N. Miami Beach", slug: "haulover-pier-n-miami-beach",
     state: 'florida', city: "Haulover Pier - N. Miami Beach, FL", region: "Florida Keys",
     lat: 25.9033, lon: -80.12, latDisplay: "25.90°N", lonDisplay: "80.12°W",
@@ -3653,7 +3653,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723087", waterTempId: "8723087",
+    id: "8723087", waterTempId: "8722956",
     name: "Sunny Isles - Biscayne Creek", slug: "sunny-isles-biscayne-creek",
     state: 'florida', city: "Sunny Isles - Biscayne Creek, FL", region: "Florida Keys",
     lat: 25.9283, lon: -80.13, latDisplay: "25.93°N", lonDisplay: "80.13°W",
@@ -3675,7 +3675,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723089", waterTempId: "8723089",
+    id: "8723089", waterTempId: "8723214",
     name: "Biscayne Creek - ICWW", slug: "biscayne-creek-icww",
     state: 'florida', city: "Biscayne Creek - ICWW, FL", region: "Florida Keys",
     lat: 25.88, lon: -80.1633, latDisplay: "25.88°N", lonDisplay: "80.16°W",
@@ -3697,7 +3697,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723094", waterTempId: "8723094",
+    id: "8723094", waterTempId: "8723214",
     name: "Indian Creek Golf Club - ICWW", slug: "indian-creek-golf-club-icww",
     state: 'florida', city: "Indian Creek Golf Club - ICWW, FL", region: "Florida Keys",
     lat: 25.875, lon: -80.1433, latDisplay: "25.88°N", lonDisplay: "80.14°W",
@@ -3719,7 +3719,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723155", waterTempId: "8723155",
+    id: "8723155", waterTempId: "8723214",
     name: "Dodge Island - Fishermans Channel", slug: "dodge-island-fishermans-channel",
     state: 'florida', city: "Dodge Island - Fishermans Channel, FL", region: "Florida Keys",
     lat: 25.77, lon: -80.1683, latDisplay: "25.77°N", lonDisplay: "80.17°W",
@@ -3741,7 +3741,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723156", waterTempId: "8723156",
+    id: "8723156", waterTempId: "8723214",
     name: "San Marino Island", slug: "san-marino-island",
     state: 'florida', city: "San Marino Island, FL", region: "Florida Keys",
     lat: 25.7933, lon: -80.1633, latDisplay: "25.79°N", lonDisplay: "80.16°W",
@@ -3763,7 +3763,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723165", waterTempId: "8723165",
+    id: "8723165", waterTempId: "8723214",
     name: "Miami Miamarina - Biscayne Bay", slug: "miami-miamarina-biscayne-bay",
     state: 'florida', city: "Miami Miamarina - Biscayne Bay, FL", region: "Florida Keys",
     lat: 25.7783, lon: -80.185, latDisplay: "25.78°N", lonDisplay: "80.19°W",
@@ -3785,7 +3785,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723170", waterTempId: "8723170",
+    id: "8723170", waterTempId: "8723214",
     name: "Miami Harbor Entrance", slug: "miami-harbor-entrance",
     state: 'florida', city: "Miami Harbor Entrance, FL", region: "Florida Keys",
     lat: 25.7683, lon: -80.1317, latDisplay: "25.77°N", lonDisplay: "80.13°W",
@@ -3807,7 +3807,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723178", waterTempId: "8723178",
+    id: "8723178", waterTempId: "8723214",
     name: "GOVERNMENT CUT - MIAMI HARBOR ENTRANCE", slug: "government-cut-miami-harbor-entrance",
     state: 'florida', city: "GOVERNMENT CUT - MIAMI HARBOR ENTRANCE, FL", region: "Florida Keys",
     lat: 25.7633, lon: -80.13, latDisplay: "25.76°N", lonDisplay: "80.13°W",
@@ -3829,7 +3829,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723205", waterTempId: "8723205",
+    id: "8723205", waterTempId: "8723214",
     name: "Dinner Key Marina", slug: "dinner-key-marina",
     state: 'florida', city: "Dinner Key Marina, FL", region: "Florida Keys",
     lat: 25.7267, lon: -80.2367, latDisplay: "25.73°N", lonDisplay: "80.24°W",
@@ -3873,7 +3873,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723232", waterTempId: "8723232",
+    id: "8723232", waterTempId: "8723214",
     name: "Key Biscayne Yacht Club - Biscayne Bay", slug: "key-biscayne-yacht-club-biscayne-bay",
     state: 'florida', city: "Key Biscayne Yacht Club - Biscayne Bay, FL", region: "Florida Keys",
     lat: 25.6983, lon: -80.17, latDisplay: "25.70°N", lonDisplay: "80.17°W",
@@ -3895,7 +3895,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723251", waterTempId: "8723251",
+    id: "8723251", waterTempId: "8723214",
     name: "Coral Shoal - Biscayne Channel", slug: "coral-shoal-biscayne-channel",
     state: 'florida', city: "Coral Shoal - Biscayne Channel, FL", region: "Florida Keys",
     lat: 25.6517, lon: -80.16, latDisplay: "25.65°N", lonDisplay: "80.16°W",
@@ -3917,7 +3917,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723289", waterTempId: "8723289",
+    id: "8723289", waterTempId: "8723214",
     name: "Cutler - Biscayne Bay", slug: "cutler-biscayne-bay",
     state: 'florida', city: "Cutler - Biscayne Bay, FL", region: "Florida Keys",
     lat: 25.615, lon: -80.305, latDisplay: "25.61°N", lonDisplay: "80.31°W",
@@ -3939,7 +3939,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723303", waterTempId: "8723303",
+    id: "8723303", waterTempId: "8723214",
     name: "Soldier Key", slug: "soldier-key",
     state: 'florida', city: "Soldier Key, FL", region: "Florida Keys",
     lat: 25.59, lon: -80.1617, latDisplay: "25.59°N", lonDisplay: "80.16°W",
@@ -3961,7 +3961,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723350", waterTempId: "8723350",
+    id: "8723350", waterTempId: "8723214",
     name: "Ragged Keys - Biscayne Bay", slug: "ragged-keys-biscayne-bay",
     state: 'florida', city: "Ragged Keys - Biscayne Bay, FL", region: "Florida Keys",
     lat: 25.5333, lon: -80.1717, latDisplay: "25.53°N", lonDisplay: "80.17°W",
@@ -3983,7 +3983,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723355", waterTempId: "8723355",
+    id: "8723355", waterTempId: "8723214",
     name: "Boca Chita Key - Biscayne Bay", slug: "boca-chita-key-biscayne-bay",
     state: 'florida', city: "Boca Chita Key - Biscayne Bay, FL", region: "Florida Keys",
     lat: 25.5233, lon: -80.175, latDisplay: "25.52°N", lonDisplay: "80.17°W",
@@ -4005,7 +4005,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723372", waterTempId: "8723372",
+    id: "8723372", waterTempId: "8723214",
     name: "Sands Key - northwest point - Biscayne Bay", slug: "sands-key-northwest-point-biscayne-bay",
     state: 'florida', city: "Sands Key - northwest point - Biscayne Bay, FL", region: "Florida Keys",
     lat: 25.5067, lon: -80.1883, latDisplay: "25.51°N", lonDisplay: "80.19°W",
@@ -4027,7 +4027,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723391", waterTempId: "8723391",
+    id: "8723391", waterTempId: "8723214",
     name: "Coon Point - Elliott Key - Biscayne Bay", slug: "coon-point-elliott-key-biscayne-bay",
     state: 'florida', city: "Coon Point - Elliott Key - Biscayne Bay, FL", region: "Florida Keys",
     lat: 25.48, lon: -80.1883, latDisplay: "25.48°N", lonDisplay: "80.19°W",
@@ -4049,7 +4049,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723393", waterTempId: "8723393",
+    id: "8723393", waterTempId: "8723214",
     name: "Sea Grape Point - Elliott Key", slug: "sea-grape-point-elliott-key",
     state: 'florida', city: "Sea Grape Point - Elliott Key, FL", region: "Florida Keys",
     lat: 25.4767, lon: -80.18, latDisplay: "25.48°N", lonDisplay: "80.18°W",
@@ -4071,7 +4071,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723409", waterTempId: "8723409",
+    id: "8723409", waterTempId: "8723214",
     name: "Elliott Key Harbor - Elliott Key - Biscayne Bay", slug: "elliott-key-harbor-elliott-key-biscayne-bay",
     state: 'florida', city: "Elliott Key Harbor - Elliott Key - Biscayne Bay, FL", region: "Florida Keys",
     lat: 25.4533, lon: -80.1967, latDisplay: "25.45°N", lonDisplay: "80.20°W",
@@ -4093,7 +4093,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723423", waterTempId: "8723423",
+    id: "8723423", waterTempId: "8723214",
     name: "Turkey Point - Biscayne Bay", slug: "turkey-point-biscayne-bay",
     state: 'florida', city: "Turkey Point - Biscayne Bay, FL", region: "Florida Keys",
     lat: 25.4367, lon: -80.33, latDisplay: "25.44°N", lonDisplay: "80.33°W",
@@ -4115,7 +4115,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723439", waterTempId: "8723439",
+    id: "8723439", waterTempId: "8723214",
     name: "Billys Point - south of - Elliott Key - Biscayne Bay", slug: "billys-point-south-of-elliott-key-biscayne-bay",
     state: 'florida', city: "Billys Point - south of - Elliott Key - Biscayne Bay, FL", region: "Florida Keys",
     lat: 25.415, lon: -80.21, latDisplay: "25.41°N", lonDisplay: "80.21°W",
@@ -4137,7 +4137,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723453", waterTempId: "8723453",
+    id: "8723453", waterTempId: "8723214",
     name: "Adams Key - south end - Biscayne Bay", slug: "adams-key-south-end-biscayne-bay",
     state: 'florida', city: "Adams Key - south end - Biscayne Bay, FL", region: "Florida Keys",
     lat: 25.3967, lon: -80.2333, latDisplay: "25.40°N", lonDisplay: "80.23°W",
@@ -4159,7 +4159,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723457", waterTempId: "8723457",
+    id: "8723457", waterTempId: "8723214",
     name: "Christmas Point - Elliott Key", slug: "christmas-point-elliott-key",
     state: 'florida', city: "Christmas Point - Elliott Key, FL", region: "Florida Keys",
     lat: 25.3917, lon: -80.23, latDisplay: "25.39°N", lonDisplay: "80.23°W",
@@ -4181,7 +4181,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723465", waterTempId: "8723465",
+    id: "8723465", waterTempId: "8723214",
     name: "East Arsenicker - Card Sound", slug: "east-arsenicker-card-sound",
     state: 'florida', city: "East Arsenicker - Card Sound, FL", region: "Florida Keys",
     lat: 25.3733, lon: -80.29, latDisplay: "25.37°N", lonDisplay: "80.29°W",
@@ -4203,7 +4203,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723467", waterTempId: "8723467",
+    id: "8723467", waterTempId: "8723214",
     name: "Totten Key - west side - Biscayne Bay", slug: "totten-key-west-side-biscayne-bay",
     state: 'florida', city: "Totten Key - west side - Biscayne Bay, FL", region: "Florida Keys",
     lat: 25.3783, lon: -80.2567, latDisplay: "25.38°N", lonDisplay: "80.26°W",
@@ -4225,7 +4225,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723491", waterTempId: "8723491",
+    id: "8723491", waterTempId: "8723214",
     name: "Card Sound - western side", slug: "card-sound-western-side",
     state: 'florida', city: "Card Sound - western side, FL", region: "Florida Keys",
     lat: 25.345, lon: -80.3317, latDisplay: "25.34°N", lonDisplay: "80.33°W",
@@ -4247,7 +4247,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723506", waterTempId: "8723506",
+    id: "8723506", waterTempId: "8723214",
     name: "Pumpkin Key - south end - Card Sound", slug: "pumpkin-key-south-end-card-sound",
     state: 'florida', city: "Pumpkin Key - south end - Card Sound, FL", region: "Florida Keys",
     lat: 25.325, lon: -80.2933, latDisplay: "25.32°N", lonDisplay: "80.29°W",
@@ -4269,7 +4269,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723518", waterTempId: "8723518",
+    id: "8723518", waterTempId: "8723214",
     name: "Wednesday Point - Key Largo - Card Sound", slug: "wednesday-point-key-largo-card-sound",
     state: 'florida', city: "Wednesday Point - Key Largo - Card Sound, FL", region: "Florida Keys",
     lat: 25.31, lon: -80.2983, latDisplay: "25.31°N", lonDisplay: "80.30°W",
@@ -4291,7 +4291,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723519", waterTempId: "8723519",
+    id: "8723519", waterTempId: "8723214",
     name: "Ocean Reef Harbor - Key Largo", slug: "ocean-reef-harbor-key-largo",
     state: 'florida', city: "Ocean Reef Harbor - Key Largo, FL", region: "Florida Keys",
     lat: 25.3083, lon: -80.2767, latDisplay: "25.31°N", lonDisplay: "80.28°W",
@@ -4313,7 +4313,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723532", waterTempId: "8723532",
+    id: "8723532", waterTempId: "8723214",
     name: "Cormorant Point - Key Largo - Card Sound", slug: "cormorant-point-key-largo-card-sound",
     state: 'florida', city: "Cormorant Point - Key Largo - Card Sound, FL", region: "Florida Keys",
     lat: 25.29, lon: -80.34, latDisplay: "25.29°N", lonDisplay: "80.34°W",
@@ -4335,7 +4335,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723534", waterTempId: "8723534",
+    id: "8723534", waterTempId: "8723214",
     name: "Little Card Sound bridge", slug: "little-card-sound-bridge",
     state: 'florida', city: "Little Card Sound bridge, FL", region: "Florida Keys",
     lat: 25.2883, lon: -80.37, latDisplay: "25.29°N", lonDisplay: "80.37°W",
@@ -4357,7 +4357,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723571", waterTempId: "8723571",
+    id: "8723571", waterTempId: "8723214",
     name: "Main Key - Barnes Sound", slug: "main-key-barnes-sound",
     state: 'florida', city: "Main Key - Barnes Sound, FL", region: "Florida Keys",
     lat: 25.24, lon: -80.4, latDisplay: "25.24°N", lonDisplay: "80.40°W",
@@ -4379,7 +4379,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723575", waterTempId: "8723575",
+    id: "8723575", waterTempId: "8723214",
     name: "Manatee Creek - Manatee Bay - Barnes Sound", slug: "manatee-creek-manatee-bay-barnes-sound",
     state: 'florida', city: "Manatee Creek - Manatee Bay - Barnes Sound, FL", region: "Florida Keys",
     lat: 25.235, lon: -80.43, latDisplay: "25.23°N", lonDisplay: "80.43°W",
@@ -4401,7 +4401,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723583", waterTempId: "8723583",
+    id: "8723583", waterTempId: "8723214",
     name: "Carysfort Reef", slug: "carysfort-reef",
     state: 'florida', city: "Carysfort Reef, FL", region: "Florida Keys",
     lat: 25.2217, lon: -80.2117, latDisplay: "25.22°N", lonDisplay: "80.21°W",
@@ -4423,7 +4423,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723622", waterTempId: "8723622",
+    id: "8723622", waterTempId: "8723214",
     name: "Garden Cove - Key Largo", slug: "garden-cove-key-largo",
     state: 'florida', city: "Garden Cove - Key Largo, FL", region: "Florida Keys",
     lat: 25.1717, lon: -80.3667, latDisplay: "25.17°N", lonDisplay: "80.37°W",
@@ -4445,7 +4445,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723644", waterTempId: "8723644",
+    id: "8723644", waterTempId: "8723970",
     name: "Flamingo - Florida Bay", slug: "flamingo-florida-bay",
     state: 'florida', city: "Flamingo - Florida Bay, FL", region: "Florida Keys",
     lat: 25.1417, lon: -80.9233, latDisplay: "25.14°N", lonDisplay: "80.92°W",
@@ -4467,7 +4467,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723651", waterTempId: "8723651",
+    id: "8723651", waterTempId: "8723214",
     name: "Largo Sound - Key Largo", slug: "largo-sound-key-largo",
     state: 'florida', city: "Largo Sound - Key Largo, FL", region: "Florida Keys",
     lat: 25.14, lon: -80.395, latDisplay: "25.14°N", lonDisplay: "80.39°W",
@@ -4489,7 +4489,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723689", waterTempId: "8723689",
+    id: "8723689", waterTempId: "8723214",
     name: "Rock Harbor - Key Largo", slug: "rock-harbor-key-largo",
     state: 'florida', city: "Rock Harbor - Key Largo, FL", region: "Florida Keys",
     lat: 25.0817, lon: -80.4467, latDisplay: "25.08°N", lonDisplay: "80.45°W",
@@ -4511,7 +4511,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723691", waterTempId: "8723691",
+    id: "8723691", waterTempId: "8723214",
     name: "Point Charles - Key Largo", slug: "point-charles-key-largo",
     state: 'florida', city: "Point Charles - Key Largo, FL", region: "Florida Keys",
     lat: 25.0817, lon: -80.45, latDisplay: "25.08°N", lonDisplay: "80.45°W",
@@ -4533,7 +4533,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723746", waterTempId: "8723746",
+    id: "8723746", waterTempId: "8723970",
     name: "Crane Keys - north side - Florida Bay", slug: "crane-keys-north-side-florida-bay",
     state: 'florida', city: "Crane Keys - north side - Florida Bay, FL", region: "Florida Keys",
     lat: 25.005, lon: -80.6183, latDisplay: "25.00°N", lonDisplay: "80.62°W",
@@ -4555,7 +4555,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723747", waterTempId: "8723747",
+    id: "8723747", waterTempId: "8723970",
     name: "Tavernier Harbor - Hawk Channel", slug: "tavernier-harbor-hawk-channel",
     state: 'florida', city: "Tavernier Harbor - Hawk Channel, FL", region: "Florida Keys",
     lat: 25.005, lon: -80.5167, latDisplay: "25.00°N", lonDisplay: "80.52°W",
@@ -4577,7 +4577,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723748", waterTempId: "8723748",
+    id: "8723748", waterTempId: "8723970",
     name: "Tavernier Creek - Hwy. 1 bridge - Hawk Channel", slug: "tavernier-creek-hwy-1-bridge-hawk-channel",
     state: 'florida', city: "Tavernier Creek - Hwy. 1 bridge - Hawk Channel, FL", region: "Florida Keys",
     lat: 25.0033, lon: -80.53, latDisplay: "25.00°N", lonDisplay: "80.53°W",
@@ -4599,7 +4599,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723752", waterTempId: "8723752",
+    id: "8723752", waterTempId: "8723970",
     name: "East Key - southern end - Florida Bay", slug: "east-key-southern-end-florida-bay",
     state: 'florida', city: "East Key - southern end - Florida Bay, FL", region: "Florida Keys",
     lat: 24.9967, lon: -80.61, latDisplay: "25.00°N", lonDisplay: "80.61°W",
@@ -4621,7 +4621,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723769", waterTempId: "8723769",
+    id: "8723769", waterTempId: "8723970",
     name: "Plantation Key - Hawk Channel", slug: "plantation-key-hawk-channel",
     state: 'florida', city: "Plantation Key - Hawk Channel, FL", region: "Florida Keys",
     lat: 24.9733, lon: -80.55, latDisplay: "24.97°N", lonDisplay: "80.55°W",
@@ -4643,7 +4643,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723776", waterTempId: "8723776",
+    id: "8723776", waterTempId: "8723970",
     name: "Yacht Harbor - Cowpens Anchorage - Plantation Key", slug: "yacht-harbor-cowpens-anchorage-plantation-key",
     state: 'florida', city: "Yacht Harbor - Cowpens Anchorage - Plantation Key, FL", region: "Florida Keys",
     lat: 24.965, lon: -80.5683, latDisplay: "24.96°N", lonDisplay: "80.57°W",
@@ -4665,7 +4665,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723786", waterTempId: "8723786",
+    id: "8723786", waterTempId: "8723970",
     name: "Snake Creek - USCG Station - Plantation Key", slug: "snake-creek-uscg-station-plantation-key",
     state: 'florida', city: "Snake Creek - USCG Station - Plantation Key, FL", region: "Florida Keys",
     lat: 24.9533, lon: -80.5867, latDisplay: "24.95°N", lonDisplay: "80.59°W",
@@ -4687,7 +4687,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723787", waterTempId: "8723787",
+    id: "8723787", waterTempId: "8723970",
     name: "Snake Creek - Hwy. 1 bridge - Windley Key", slug: "snake-creek-hwy-1-bridge-windley-key",
     state: 'florida', city: "Snake Creek - Hwy. 1 bridge - Windley Key, FL", region: "Florida Keys",
     lat: 24.9517, lon: -80.5883, latDisplay: "24.95°N", lonDisplay: "80.59°W",
@@ -4709,7 +4709,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723795", waterTempId: "8723795",
+    id: "8723795", waterTempId: "8723970",
     name: "Whale Harbor - Windley Key - Hawk Channel", slug: "whale-harbor-windley-key-hawk-channel",
     state: 'florida', city: "Whale Harbor - Windley Key - Hawk Channel, FL", region: "Florida Keys",
     lat: 24.94, lon: -80.6083, latDisplay: "24.94°N", lonDisplay: "80.61°W",
@@ -4731,7 +4731,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723797", waterTempId: "8723797",
+    id: "8723797", waterTempId: "8723970",
     name: "Whale Harbor Channel - Hwy. 1 bridge - Windley Key", slug: "whale-harbor-channel-hwy-1-bridge-windley-key",
     state: 'florida', city: "Whale Harbor Channel - Hwy. 1 bridge - Windley Key, FL", region: "Florida Keys",
     lat: 24.9383, lon: -80.61, latDisplay: "24.94°N", lonDisplay: "80.61°W",
@@ -4753,7 +4753,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723807", waterTempId: "8723807",
+    id: "8723807", waterTempId: "8723970",
     name: "Shell Key - northwest side - Lignumvitae Basin", slug: "shell-key-northwest-side-lignumvitae-basin",
     state: 'florida', city: "Shell Key - northwest side - Lignumvitae Basin, FL", region: "Florida Keys",
     lat: 24.9233, lon: -80.6717, latDisplay: "24.92°N", lonDisplay: "80.67°W",
@@ -4775,7 +4775,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723808", waterTempId: "8723808",
+    id: "8723808", waterTempId: "8723970",
     name: "Islamorada - Upper Matecumbe Key - Florida Bay", slug: "islamorada-upper-matecumbe-key-florida-bay",
     state: 'florida', city: "Islamorada - Upper Matecumbe Key - Florida Bay, FL", region: "Florida Keys",
     lat: 24.925, lon: -80.6317, latDisplay: "24.93°N", lonDisplay: "80.63°W",
@@ -4797,7 +4797,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723812", waterTempId: "8723812",
+    id: "8723812", waterTempId: "8723970",
     name: "Shell Key Channel - Florida Bay", slug: "shell-key-channel-florida-bay",
     state: 'florida', city: "Shell Key Channel - Florida Bay, FL", region: "Florida Keys",
     lat: 24.9133, lon: -80.66, latDisplay: "24.91°N", lonDisplay: "80.66°W",
@@ -4819,7 +4819,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723813", waterTempId: "8723813",
+    id: "8723813", waterTempId: "8723970",
     name: "Little Basin - Upper Matecumbe Key - Florida Bay", slug: "little-basin-upper-matecumbe-key-florida-bay",
     state: 'florida', city: "Little Basin - Upper Matecumbe Key - Florida Bay, FL", region: "Florida Keys",
     lat: 24.915, lon: -80.64, latDisplay: "24.91°N", lonDisplay: "80.64°W",
@@ -4841,7 +4841,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723814", waterTempId: "8723814",
+    id: "8723814", waterTempId: "8723970",
     name: "Upper Matecumbe Key - Hawk Channel", slug: "upper-matecumbe-key-hawk-channel",
     state: 'florida', city: "Upper Matecumbe Key - Hawk Channel, FL", region: "Florida Keys",
     lat: 24.915, lon: -80.6317, latDisplay: "24.91°N", lonDisplay: "80.63°W",
@@ -4863,7 +4863,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723824", waterTempId: "8723824",
+    id: "8723824", waterTempId: "8723970",
     name: "Lignumvitae Key - NE side - Florida Bay", slug: "lignumvitae-key-ne-side-florida-bay",
     state: 'florida', city: "Lignumvitae Key - NE side - Florida Bay, FL", region: "Florida Keys",
     lat: 24.9033, lon: -80.695, latDisplay: "24.90°N", lonDisplay: "80.69°W",
@@ -4885,7 +4885,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723825", waterTempId: "8723825",
+    id: "8723825", waterTempId: "8723970",
     name: "Lignumvitae Key - west side - Florida Bay", slug: "lignumvitae-key-west-side-florida-bay",
     state: 'florida', city: "Lignumvitae Key - west side - Florida Bay, FL", region: "Florida Keys",
     lat: 24.9, lon: -80.705, latDisplay: "24.90°N", lonDisplay: "80.70°W",
@@ -4907,7 +4907,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723828", waterTempId: "8723828",
+    id: "8723828", waterTempId: "8723970",
     name: "Upper Matecumbe Key - west end - Hawk Channel", slug: "upper-matecumbe-key-west-end-hawk-channel",
     state: 'florida', city: "Upper Matecumbe Key - west end - Hawk Channel, FL", region: "Florida Keys",
     lat: 24.8967, lon: -80.6583, latDisplay: "24.90°N", lonDisplay: "80.66°W",
@@ -4929,7 +4929,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723843", waterTempId: "8723843",
+    id: "8723843", waterTempId: "8723970",
     name: "Indian Key - Hawk Channel", slug: "indian-key-hawk-channel",
     state: 'florida', city: "Indian Key - Hawk Channel, FL", region: "Florida Keys",
     lat: 24.8767, lon: -80.6767, latDisplay: "24.88°N", lonDisplay: "80.68°W",
@@ -4951,7 +4951,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723851", waterTempId: "8723851",
+    id: "8723851", waterTempId: "8723970",
     name: "Indian Key Anchorage - Lower Matecumbe Key", slug: "indian-key-anchorage-lower-matecumbe-key",
     state: 'florida', city: "Indian Key Anchorage - Lower Matecumbe Key, FL", region: "Florida Keys",
     lat: 24.8683, lon: -80.7033, latDisplay: "24.87°N", lonDisplay: "80.70°W",
@@ -4973,7 +4973,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723852", waterTempId: "8723852",
+    id: "8723852", waterTempId: "8723970",
     name: "Matecumbe Bight - Lower Matecumbe Key - Fla. Bay", slug: "matecumbe-bight-lower-matecumbe-key-fla-bay",
     state: 'florida', city: "Matecumbe Bight - Lower Matecumbe Key - Fla. Bay, FL", region: "Florida Keys",
     lat: 24.865, lon: -80.7167, latDisplay: "24.86°N", lonDisplay: "80.72°W",
@@ -4995,7 +4995,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723861", waterTempId: "8723861",
+    id: "8723861", waterTempId: "8723970",
     name: "Alligator Reef - Hawk Channel", slug: "alligator-reef-hawk-channel",
     state: 'florida', city: "Alligator Reef - Hawk Channel, FL", region: "Florida Keys",
     lat: 24.85, lon: -80.6183, latDisplay: "24.85°N", lonDisplay: "80.62°W",
@@ -5017,7 +5017,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723862", waterTempId: "8723862",
+    id: "8723862", waterTempId: "8723970",
     name: "Matecumbe Harbor - Lower Matecumbe Key - Fla. Bay", slug: "matecumbe-harbor-lower-matecumbe-key-fla-bay",
     state: 'florida', city: "Matecumbe Harbor - Lower Matecumbe Key - Fla. Bay, FL", region: "Florida Keys",
     lat: 24.8517, lon: -80.74, latDisplay: "24.85°N", lonDisplay: "80.74°W",
@@ -5039,7 +5039,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723868", waterTempId: "8723868",
+    id: "8723868", waterTempId: "8723970",
     name: "Channel Two - east - Lower Matecumbe Key - Fla. Bay", slug: "channel-two-east-lower-matecumbe-key-fla-bay",
     state: 'florida', city: "Channel Two - east - Lower Matecumbe Key - Fla. Bay, FL", region: "Florida Keys",
     lat: 24.845, lon: -80.7483, latDisplay: "24.84°N", lonDisplay: "80.75°W",
@@ -5061,7 +5061,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723869", waterTempId: "8723869",
+    id: "8723869", waterTempId: "8723970",
     name: "Channel Two - west side - Hawk Channel", slug: "channel-two-west-side-hawk-channel",
     state: 'florida', city: "Channel Two - west side - Hawk Channel, FL", region: "Florida Keys",
     lat: 24.8417, lon: -80.7533, latDisplay: "24.84°N", lonDisplay: "80.75°W",
@@ -5083,7 +5083,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723872", waterTempId: "8723872",
+    id: "8723872", waterTempId: "8723970",
     name: "Channel Five - west side - Hawk Channel", slug: "channel-five-west-side-hawk-channel",
     state: 'florida', city: "Channel Five - west side - Hawk Channel, FL", region: "Florida Keys",
     lat: 24.84, lon: -80.78, latDisplay: "24.84°N", lonDisplay: "80.78°W",
@@ -5105,7 +5105,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723873", waterTempId: "8723873",
+    id: "8723873", waterTempId: "8723970",
     name: "Jewfish Hole - Long Key - Florida Bay", slug: "jewfish-hole-long-key-florida-bay",
     state: 'florida', city: "Jewfish Hole - Long Key - Florida Bay, FL", region: "Florida Keys",
     lat: 24.83830555555556, lon: -80.79830555555556, latDisplay: "24.84°N", lonDisplay: "80.80°W",
@@ -5127,7 +5127,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723874", waterTempId: "8723874",
+    id: "8723874", waterTempId: "8723970",
     name: "Channel Five - east side - Hawk Channel", slug: "channel-five-east-side-hawk-channel",
     state: 'florida', city: "Channel Five - east side - Hawk Channel, FL", region: "Florida Keys",
     lat: 24.8367, lon: -80.7667, latDisplay: "24.84°N", lonDisplay: "80.77°W",
@@ -5149,7 +5149,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723879", waterTempId: "8723879",
+    id: "8723879", waterTempId: "8723970",
     name: "Long Key Bight - Long Key", slug: "long-key-bight-long-key",
     state: 'florida', city: "Long Key Bight - Long Key, FL", region: "Florida Keys",
     lat: 24.8283, lon: -80.8083, latDisplay: "24.83°N", lonDisplay: "80.81°W",
@@ -5171,7 +5171,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723887", waterTempId: "8723887",
+    id: "8723887", waterTempId: "8723970",
     name: "Long Key Lake - Long Key", slug: "long-key-lake-long-key",
     state: 'florida', city: "Long Key Lake - Long Key, FL", region: "Florida Keys",
     lat: 24.82, lon: -80.8167, latDisplay: "24.82°N", lonDisplay: "80.82°W",
@@ -5193,7 +5193,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723899", waterTempId: "8723899",
+    id: "8723899", waterTempId: "8723970",
     name: "Long Key - western end", slug: "long-key-western-end",
     state: 'florida', city: "Long Key - western end, FL", region: "Florida Keys",
     lat: 24.8033, lon: -80.85, latDisplay: "24.80°N", lonDisplay: "80.85°W",
@@ -5215,7 +5215,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723906", waterTempId: "8723906",
+    id: "8723906", waterTempId: "8723970",
     name: "Conch Key - eastern end", slug: "conch-key-eastern-end",
     state: 'florida', city: "Conch Key - eastern end, FL", region: "Florida Keys",
     lat: 24.7917, lon: -80.8833, latDisplay: "24.79°N", lonDisplay: "80.88°W",
@@ -5237,7 +5237,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723912", waterTempId: "8723912",
+    id: "8723912", waterTempId: "8723970",
     name: "Toms Harbor Cut", slug: "toms-harbor-cut",
     state: 'florida', city: "Toms Harbor Cut, FL", region: "Florida Keys",
     lat: 24.7833, lon: -80.9067, latDisplay: "24.78°N", lonDisplay: "80.91°W",
@@ -5259,7 +5259,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723918", waterTempId: "8723918",
+    id: "8723918", waterTempId: "8723970",
     name: "Toms Harbor Channel - Hwy. 1 bridge", slug: "toms-harbor-channel-hwy-1-bridge",
     state: 'florida', city: "Toms Harbor Channel - Hwy. 1 bridge, FL", region: "Florida Keys",
     lat: 24.7767, lon: -80.9233, latDisplay: "24.78°N", lonDisplay: "80.92°W",
@@ -5281,7 +5281,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723921", waterTempId: "8723921",
+    id: "8723921", waterTempId: "8723970",
     name: "Grassy Key - north side - Florida Bay", slug: "grassy-key-north-side-florida-bay",
     state: 'florida', city: "Grassy Key - north side - Florida Bay, FL", region: "Florida Keys",
     lat: 24.7717, lon: -80.94, latDisplay: "24.77°N", lonDisplay: "80.94°W",
@@ -5303,7 +5303,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723927", waterTempId: "8723927",
+    id: "8723927", waterTempId: "8723970",
     name: "Duck Key - Hawk Channel", slug: "duck-key-hawk-channel",
     state: 'florida', city: "Duck Key - Hawk Channel, FL", region: "Florida Keys",
     lat: 24.765, lon: -80.9133, latDisplay: "24.77°N", lonDisplay: "80.91°W",
@@ -5325,7 +5325,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723933", waterTempId: "8723933",
+    id: "8723933", waterTempId: "8723970",
     name: "Grassy Key - south side - Hawk Channel", slug: "grassy-key-south-side-hawk-channel",
     state: 'florida', city: "Grassy Key - south side - Hawk Channel, FL", region: "Florida Keys",
     lat: 24.755, lon: -80.9583, latDisplay: "24.75°N", lonDisplay: "80.96°W",
@@ -5347,7 +5347,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723949", waterTempId: "8723949",
+    id: "8723949", waterTempId: "8723970",
     name: "Fat Deer Key - Florida Bay", slug: "fat-deer-key-florida-bay",
     state: 'florida', city: "Fat Deer Key - Florida Bay, FL", region: "Florida Keys",
     lat: 24.7333, lon: -81.0167, latDisplay: "24.73°N", lonDisplay: "81.02°W",
@@ -5369,7 +5369,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723950", waterTempId: "8723950",
+    id: "8723950", waterTempId: "8723970",
     name: "Vaca Key-Fat Deer Key bridge", slug: "vaca-key-fat-deer-key-bridge",
     state: 'florida', city: "Vaca Key-Fat Deer Key bridge, FL", region: "Florida Keys",
     lat: 24.73, lon: -81.03, latDisplay: "24.73°N", lonDisplay: "81.03°W",
@@ -5391,7 +5391,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723962", waterTempId: "8723962",
+    id: "8723962", waterTempId: "8723970",
     name: "Key Colony Beach", slug: "key-colony-beach",
     state: 'florida', city: "Key Colony Beach, FL", region: "Florida Keys",
     lat: 24.7183, lon: -81.0167, latDisplay: "24.72°N", lonDisplay: "81.02°W",
@@ -5435,7 +5435,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723971", waterTempId: "8723971",
+    id: "8723971", waterTempId: "8723970",
     name: "Boot Key Harbor bridge - Boot Key", slug: "boot-key-harbor-bridge-boot-key",
     state: 'florida', city: "Boot Key Harbor bridge - Boot Key, FL", region: "Florida Keys",
     lat: 24.7033, lon: -81.105, latDisplay: "24.70°N", lonDisplay: "81.11°W",
@@ -5457,7 +5457,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8723999", waterTempId: "8723999",
+    id: "8723999", waterTempId: "8723970",
     name: "Sombrero Key - Hawk Channel", slug: "sombrero-key-hawk-channel",
     state: 'florida', city: "Sombrero Key - Hawk Channel, FL", region: "Florida Keys",
     lat: 24.6267, lon: -81.1117, latDisplay: "24.63°N", lonDisplay: "81.11°W",
@@ -5479,7 +5479,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724008", waterTempId: "8724008",
+    id: "8724008", waterTempId: "8723970",
     name: "Knight Key Channel - Knight Key - Florida Bay", slug: "knight-key-channel-knight-key-florida-bay",
     state: 'florida', city: "Knight Key Channel - Knight Key - Florida Bay, FL", region: "Florida Keys",
     lat: 24.7067, lon: -81.125, latDisplay: "24.71°N", lonDisplay: "81.13°W",
@@ -5501,7 +5501,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724032", waterTempId: "8724032",
+    id: "8724032", waterTempId: "8723970",
     name: "Pigeon Key - south side - Hawk Channel", slug: "pigeon-key-south-side-hawk-channel",
     state: 'florida', city: "Pigeon Key - south side - Hawk Channel, FL", region: "Florida Keys",
     lat: 24.7033, lon: -81.155, latDisplay: "24.70°N", lonDisplay: "81.16°W",
@@ -5523,7 +5523,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724033", waterTempId: "8724033",
+    id: "8724033", waterTempId: "8723970",
     name: "Pigeon Key - north side - Florida Bay", slug: "pigeon-key-north-side-florida-bay",
     state: 'florida', city: "Pigeon Key - north side - Florida Bay, FL", region: "Florida Keys",
     lat: 24.705, lon: -81.1567, latDisplay: "24.70°N", lonDisplay: "81.16°W",
@@ -5545,7 +5545,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724062", waterTempId: "8724062",
+    id: "8724062", waterTempId: "8723970",
     name: "Molasses Key Channel - Molasses Keys", slug: "molasses-key-channel-molasses-keys",
     state: 'florida', city: "Molasses Key Channel - Molasses Keys, FL", region: "Florida Keys",
     lat: 24.6833, lon: -81.1917, latDisplay: "24.68°N", lonDisplay: "81.19°W",
@@ -5567,7 +5567,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724082", waterTempId: "8724082",
+    id: "8724082", waterTempId: "8723970",
     name: "Money Key", slug: "money-key",
     state: 'florida', city: "Money Key, FL", region: "Florida Keys",
     lat: 24.6833, lon: -81.2167, latDisplay: "24.68°N", lonDisplay: "81.22°W",
@@ -5589,7 +5589,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724093", waterTempId: "8724093",
+    id: "8724093", waterTempId: "8723970",
     name: "Little Duck Key - east end - Hawk Channel", slug: "little-duck-key-east-end-hawk-channel",
     state: 'florida', city: "Little Duck Key - east end - Hawk Channel, FL", region: "Florida Keys",
     lat: 24.6817, lon: -81.2283, latDisplay: "24.68°N", lonDisplay: "81.23°W",
@@ -5611,7 +5611,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724094", waterTempId: "8724094",
+    id: "8724094", waterTempId: "8723970",
     name: "East Bahia Honda Key - south end - Florida Bay", slug: "east-bahia-honda-key-south-end-florida-bay",
     state: 'florida', city: "East Bahia Honda Key - south end - Florida Bay, FL", region: "Florida Keys",
     lat: 24.775, lon: -81.2267, latDisplay: "24.77°N", lonDisplay: "81.23°W",
@@ -5633,7 +5633,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724098", waterTempId: "8724098",
+    id: "8724098", waterTempId: "8723970",
     name: "Cocoanut Key - Florida Bay", slug: "cocoanut-key-florida-bay",
     state: 'florida', city: "Cocoanut Key - Florida Bay, FL", region: "Florida Keys",
     lat: 24.745, lon: -81.2367, latDisplay: "24.75°N", lonDisplay: "81.24°W",
@@ -5655,7 +5655,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724099", waterTempId: "8724099",
+    id: "8724099", waterTempId: "8723970",
     name: "Missouri Key-Little Duck Key Channel", slug: "missouri-key-little-duck-key-channel",
     state: 'florida', city: "Missouri Key-Little Duck Key Channel, FL", region: "Florida Keys",
     lat: 24.68, lon: -81.235, latDisplay: "24.68°N", lonDisplay: "81.23°W",
@@ -5677,7 +5677,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724107", waterTempId: "8724107",
+    id: "8724107", waterTempId: "8723970",
     name: "Missouri Key-Ohio Key Channel - west side", slug: "missouri-key-ohio-key-channel-west-side",
     state: 'florida', city: "Missouri Key-Ohio Key Channel - west side, FL", region: "Florida Keys",
     lat: 24.6733, lon: -81.2433, latDisplay: "24.67°N", lonDisplay: "81.24°W",
@@ -5699,7 +5699,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724112", waterTempId: "8724112",
+    id: "8724112", waterTempId: "8723970",
     name: "Ohio Key-Bahia Honda Key Channel - west side", slug: "ohio-key-bahia-honda-key-channel-west-side",
     state: 'florida', city: "Ohio Key-Bahia Honda Key Channel - west side, FL", region: "Florida Keys",
     lat: 24.67, lon: -81.2517, latDisplay: "24.67°N", lonDisplay: "81.25°W",
@@ -5721,7 +5721,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724129", waterTempId: "8724129",
+    id: "8724129", waterTempId: "8723970",
     name: "West Bahia Honda Key", slug: "west-bahia-honda-key",
     state: 'florida', city: "West Bahia Honda Key, FL", region: "Florida Keys",
     lat: 24.78, lon: -81.2717, latDisplay: "24.78°N", lonDisplay: "81.27°W",
@@ -5743,7 +5743,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724138", waterTempId: "8724138",
+    id: "8724138", waterTempId: "8723970",
     name: "Bahia Honda Key - Bahia Honda Channel", slug: "bahia-honda-key-bahia-honda-channel",
     state: 'florida', city: "Bahia Honda Key - Bahia Honda Channel, FL", region: "Florida Keys",
     lat: 24.655, lon: -81.2817, latDisplay: "24.66°N", lonDisplay: "81.28°W",
@@ -5765,7 +5765,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724139", waterTempId: "8724139",
+    id: "8724139", waterTempId: "8723970",
     name: "Horseshoe Keys - south end", slug: "horseshoe-keys-south-end",
     state: 'florida', city: "Horseshoe Keys - south end, FL", region: "Florida Keys",
     lat: 24.7667, lon: -81.2833, latDisplay: "24.77°N", lonDisplay: "81.28°W",
@@ -5787,7 +5787,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724153", waterTempId: "8724153",
+    id: "8724153", waterTempId: "8723970",
     name: "Johnson Keys - south end", slug: "johnson-keys-south-end",
     state: 'florida', city: "Johnson Keys - south end, FL", region: "Florida Keys",
     lat: 24.7433, lon: -81.3, latDisplay: "24.74°N", lonDisplay: "81.30°W",
@@ -5809,7 +5809,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724154", waterTempId: "8724154",
+    id: "8724154", waterTempId: "8723970",
     name: "Little Pine Key - south end", slug: "little-pine-key-south-end",
     state: 'florida', city: "Little Pine Key - south end, FL", region: "Florida Keys",
     lat: 24.7133, lon: -81.3033, latDisplay: "24.71°N", lonDisplay: "81.30°W",
@@ -5831,7 +5831,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724168", waterTempId: "8724168",
+    id: "8724168", waterTempId: "8723970",
     name: "No Name Key - east side - Bahia Honda Channel", slug: "no-name-key-east-side-bahia-honda-channel",
     state: 'florida', city: "No Name Key - east side - Bahia Honda Channel, FL", region: "Florida Keys",
     lat: 24.6983, lon: -81.3183, latDisplay: "24.70°N", lonDisplay: "81.32°W",
@@ -5853,7 +5853,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724172", waterTempId: "8724172",
+    id: "8724172", waterTempId: "8723970",
     name: "Johnson Keys - north end", slug: "johnson-keys-north-end",
     state: 'florida', city: "Johnson Keys - north end, FL", region: "Florida Keys",
     lat: 24.7667, lon: -81.3233, latDisplay: "24.77°N", lonDisplay: "81.32°W",
@@ -5875,7 +5875,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724177", waterTempId: "8724177",
+    id: "8724177", waterTempId: "8723970",
     name: "Little Pine Key - north end", slug: "little-pine-key-north-end",
     state: 'florida', city: "Little Pine Key - north end, FL", region: "Florida Keys",
     lat: 24.75, lon: -81.3283, latDisplay: "24.75°N", lonDisplay: "81.33°W",
@@ -5897,7 +5897,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724178", waterTempId: "8724178",
+    id: "8724178", waterTempId: "8723970",
     name: "Big Pine Key - Spanish Harbor", slug: "big-pine-key-spanish-harbor",
     state: 'florida', city: "Big Pine Key - Spanish Harbor, FL", region: "Florida Keys",
     lat: 24.6483, lon: -81.33, latDisplay: "24.65°N", lonDisplay: "81.33°W",
@@ -5919,7 +5919,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724189", waterTempId: "8724189",
+    id: "8724189", waterTempId: "8723970",
     name: "Water Key - west end - Big Spanish Channel", slug: "water-key-west-end-big-spanish-channel",
     state: 'florida', city: "Water Key - west end - Big Spanish Channel, FL", region: "Florida Keys",
     lat: 24.74, lon: -81.3417, latDisplay: "24.74°N", lonDisplay: "81.34°W",
@@ -5941,7 +5941,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724192", waterTempId: "8724192",
+    id: "8724192", waterTempId: "8723970",
     name: "Big Pine Key - Coupon Bight", slug: "big-pine-key-coupon-bight",
     state: 'florida', city: "Big Pine Key - Coupon Bight, FL", region: "Florida Keys",
     lat: 24.6517, lon: -81.35, latDisplay: "24.65°N", lonDisplay: "81.35°W",
@@ -5963,7 +5963,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724193", waterTempId: "8724193",
+    id: "8724193", waterTempId: "8723970",
     name: "Big Pine Key - Bogie Channel Bridge", slug: "big-pine-key-bogie-channel-bridge",
     state: 'florida', city: "Big Pine Key - Bogie Channel Bridge, FL", region: "Florida Keys",
     lat: 24.6967, lon: -81.3483, latDisplay: "24.70°N", lonDisplay: "81.35°W",
@@ -5985,7 +5985,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724196", waterTempId: "8724196",
+    id: "8724196", waterTempId: "8723970",
     name: "Porpoise Key - Big Spanish Channel", slug: "porpoise-key-big-spanish-channel",
     state: 'florida', city: "Porpoise Key - Big Spanish Channel, FL", region: "Florida Keys",
     lat: 24.7183, lon: -81.3517, latDisplay: "24.72°N", lonDisplay: "81.35°W",
@@ -6007,7 +6007,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724199", waterTempId: "8724199",
+    id: "8724199", waterTempId: "8723970",
     name: "Crawl Key - Big Spanish Channel", slug: "crawl-key-big-spanish-channel",
     state: 'florida', city: "Crawl Key - Big Spanish Channel, FL", region: "Florida Keys",
     lat: 24.7567, lon: -81.3583, latDisplay: "24.76°N", lonDisplay: "81.36°W",
@@ -6029,7 +6029,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724201", waterTempId: "8724201",
+    id: "8724201", waterTempId: "8723970",
     name: "Big Pine Key - Doctors Arm - Bogie Channel", slug: "big-pine-key-doctors-arm-bogie-channel",
     state: 'florida', city: "Big Pine Key - Doctors Arm - Bogie Channel, FL", region: "Florida Keys",
     lat: 24.69, lon: -81.3567, latDisplay: "24.69°N", lonDisplay: "81.36°W",
@@ -6051,7 +6051,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724205", waterTempId: "8724205",
+    id: "8724205", waterTempId: "8723970",
     name: "Mayo Key - Big Spanish Channel", slug: "mayo-key-big-spanish-channel",
     state: 'florida', city: "Mayo Key - Big Spanish Channel, FL", region: "Florida Keys",
     lat: 24.7333, lon: -81.3617, latDisplay: "24.73°N", lonDisplay: "81.36°W",
@@ -6073,7 +6073,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724209", waterTempId: "8724209",
+    id: "8724209", waterTempId: "8723970",
     name: "Little Spanish Key - Spanish Banks", slug: "little-spanish-key-spanish-banks",
     state: 'florida', city: "Little Spanish Key - Spanish Banks, FL", region: "Florida Keys",
     lat: 24.7733, lon: -81.3683, latDisplay: "24.77°N", lonDisplay: "81.37°W",
@@ -6095,7 +6095,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724211", waterTempId: "8724211",
+    id: "8724211", waterTempId: "8723970",
     name: "Big Pine Key - Pine Channel Bridge - north side", slug: "big-pine-key-pine-channel-bridge-north-side",
     state: 'florida', city: "Big Pine Key - Pine Channel Bridge - north side, FL", region: "Florida Keys",
     lat: 24.67, lon: -81.3683, latDisplay: "24.67°N", lonDisplay: "81.37°W",
@@ -6117,7 +6117,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724213", waterTempId: "8724213",
+    id: "8724213", waterTempId: "8723970",
     name: "Big Pine Key - Pine Channel Bridge - south side", slug: "big-pine-key-pine-channel-bridge-south-side",
     state: 'florida', city: "Big Pine Key - Pine Channel Bridge - south side, FL", region: "Florida Keys",
     lat: 24.6683, lon: -81.3717, latDisplay: "24.67°N", lonDisplay: "81.37°W",
@@ -6139,7 +6139,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724215", waterTempId: "8724215",
+    id: "8724215", waterTempId: "8723970",
     name: "Big Pine Key - Newfound Harbor Channel", slug: "big-pine-key-newfound-harbor-channel",
     state: 'florida', city: "Big Pine Key - Newfound Harbor Channel, FL", region: "Florida Keys",
     lat: 24.6517, lon: -81.375, latDisplay: "24.65°N", lonDisplay: "81.38°W",
@@ -6161,7 +6161,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724223", waterTempId: "8724223",
+    id: "8724223", waterTempId: "8723970",
     name: "Little Torch Key - Pine Channel Bridge - south side", slug: "little-torch-key-pine-channel-bridge-south-side",
     state: 'florida', city: "Little Torch Key - Pine Channel Bridge - south side, FL", region: "Florida Keys",
     lat: 24.665, lon: -81.3867, latDisplay: "24.66°N", lonDisplay: "81.39°W",
@@ -6183,7 +6183,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724224", waterTempId: "8724224",
+    id: "8724224", waterTempId: "8723970",
     name: "Little Torch Key - Pine Channel Bridge - south side", slug: "little-torch-key-pine-channel-bridge-south-side-8724224",
     state: 'florida', city: "Little Torch Key - Pine Channel Bridge - south side, FL", region: "Florida Keys",
     lat: 24.665, lon: -81.3867, latDisplay: "24.66°N", lonDisplay: "81.39°W",
@@ -6205,7 +6205,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724226", waterTempId: "8724226",
+    id: "8724226", waterTempId: "8723970",
     name: "Big Pine Key - northeast shore", slug: "big-pine-key-northeast-shore",
     state: 'florida', city: "Big Pine Key - northeast shore, FL", region: "Florida Keys",
     lat: 24.7283, lon: -81.3867, latDisplay: "24.73°N", lonDisplay: "81.39°W",
@@ -6227,7 +6227,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724227", waterTempId: "8724227",
+    id: "8724227", waterTempId: "8723970",
     name: "Big Pine Key - west side - Pine Channel", slug: "big-pine-key-west-side-pine-channel",
     state: 'florida', city: "Big Pine Key - west side - Pine Channel, FL", region: "Florida Keys",
     lat: 24.69, lon: -81.3833, latDisplay: "24.69°N", lonDisplay: "81.38°W",
@@ -6249,7 +6249,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724229", waterTempId: "8724229",
+    id: "8724229", waterTempId: "8723970",
     name: "Annette Key - north end - Big Spanish Channel", slug: "annette-key-north-end-big-spanish-channel",
     state: 'florida', city: "Annette Key - north end - Big Spanish Channel, FL", region: "Florida Keys",
     lat: 24.7583, lon: -81.39, latDisplay: "24.76°N", lonDisplay: "81.39°W",
@@ -6271,7 +6271,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724231", waterTempId: "8724231",
+    id: "8724231", waterTempId: "8723970",
     name: "Big Pine Key - north end", slug: "big-pine-key-north-end",
     state: 'florida', city: "Big Pine Key - north end, FL", region: "Florida Keys",
     lat: 24.745, lon: -81.395, latDisplay: "24.75°N", lonDisplay: "81.39°W",
@@ -6293,7 +6293,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724232", waterTempId: "8724232",
+    id: "8724232", waterTempId: "8723970",
     name: "Little Torch Key - Torch Channel", slug: "little-torch-key-torch-channel",
     state: 'florida', city: "Little Torch Key - Torch Channel, FL", region: "Florida Keys",
     lat: 24.665, lon: -81.395, latDisplay: "24.66°N", lonDisplay: "81.39°W",
@@ -6315,7 +6315,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724237", waterTempId: "8724237",
+    id: "8724237", waterTempId: "8723970",
     name: "Middle Torch Key - Torch Ramrod Channel", slug: "middle-torch-key-torch-ramrod-channel",
     state: 'florida', city: "Middle Torch Key - Torch Ramrod Channel, FL", region: "Florida Keys",
     lat: 24.6617, lon: -81.4017, latDisplay: "24.66°N", lonDisplay: "81.40°W",
@@ -6337,7 +6337,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724238", waterTempId: "8724238",
+    id: "8724238", waterTempId: "8723970",
     name: "Munson Island - Newfound Harbor Channel", slug: "munson-island-newfound-harbor-channel",
     state: 'florida', city: "Munson Island - Newfound Harbor Channel, FL", region: "Florida Keys",
     lat: 24.6233, lon: -81.4033, latDisplay: "24.62°N", lonDisplay: "81.40°W",
@@ -6359,7 +6359,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724239", waterTempId: "8724239",
+    id: "8724239", waterTempId: "8723970",
     name: "Ramrod Key - Newfound Harbor", slug: "ramrod-key-newfound-harbor",
     state: 'florida', city: "Ramrod Key - Newfound Harbor, FL", region: "Florida Keys",
     lat: 24.65, lon: -81.4033, latDisplay: "24.65°N", lonDisplay: "81.40°W",
@@ -6381,7 +6381,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724243", waterTempId: "8724243",
+    id: "8724243", waterTempId: "8723970",
     name: "Howe Key - south end - Harbor Channel", slug: "howe-key-south-end-harbor-channel",
     state: 'florida', city: "Howe Key - south end - Harbor Channel, FL", region: "Florida Keys",
     lat: 24.725, lon: -81.4067, latDisplay: "24.73°N", lonDisplay: "81.41°W",
@@ -6403,7 +6403,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724246", waterTempId: "8724246",
+    id: "8724246", waterTempId: "8723970",
     name: "Big Spanish Key", slug: "big-spanish-key",
     state: 'florida', city: "Big Spanish Key, FL", region: "Florida Keys",
     lat: 24.7883, lon: -81.4117, latDisplay: "24.79°N", lonDisplay: "81.41°W",
@@ -6425,7 +6425,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724255", waterTempId: "8724255",
+    id: "8724255", waterTempId: "8723970",
     name: "Ramrod Key - Niles Channel Bridge", slug: "ramrod-key-niles-channel-bridge",
     state: 'florida', city: "Ramrod Key - Niles Channel Bridge, FL", region: "Florida Keys",
     lat: 24.66, lon: -81.4233, latDisplay: "24.66°N", lonDisplay: "81.42°W",
@@ -6447,7 +6447,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724257", waterTempId: "8724257",
+    id: "8724257", waterTempId: "8723970",
     name: "Howe Key - northwest end", slug: "howe-key-northwest-end",
     state: 'florida', city: "Howe Key - northwest end, FL", region: "Florida Keys",
     lat: 24.7583, lon: -81.4283, latDisplay: "24.76°N", lonDisplay: "81.43°W",
@@ -6469,7 +6469,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724264", waterTempId: "8724264",
+    id: "8724264", waterTempId: "8723970",
     name: "Big Torch Key - Niles Channel", slug: "big-torch-key-niles-channel",
     state: 'florida', city: "Big Torch Key - Niles Channel, FL", region: "Florida Keys",
     lat: 24.705, lon: -81.4333, latDisplay: "24.70°N", lonDisplay: "81.43°W",
@@ -6491,7 +6491,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724266", waterTempId: "8724266",
+    id: "8724266", waterTempId: "8723970",
     name: "Summerland Key - Niles Channel South", slug: "summerland-key-niles-channel-south",
     state: 'florida', city: "Summerland Key - Niles Channel South, FL", region: "Florida Keys",
     lat: 24.6517, lon: -81.435, latDisplay: "24.65°N", lonDisplay: "81.44°W",
@@ -6513,7 +6513,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724267", waterTempId: "8724267",
+    id: "8724267", waterTempId: "8723970",
     name: "Summerland Key - Niles Channel Bridge", slug: "summerland-key-niles-channel-bridge",
     state: 'florida', city: "Summerland Key - Niles Channel Bridge, FL", region: "Florida Keys",
     lat: 24.66, lon: -81.4367, latDisplay: "24.66°N", lonDisplay: "81.44°W",
@@ -6535,7 +6535,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724273", waterTempId: "8724273",
+    id: "8724273", waterTempId: "8723970",
     name: "Water Keys - south end - Harbor Channel", slug: "water-keys-south-end-harbor-channel",
     state: 'florida', city: "Water Keys - south end - Harbor Channel, FL", region: "Florida Keys",
     lat: 24.7467, lon: -81.45, latDisplay: "24.75°N", lonDisplay: "81.45°W",
@@ -6557,7 +6557,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724274", waterTempId: "8724274",
+    id: "8724274", waterTempId: "8723970",
     name: "Big Torch Key - Harbor Channel", slug: "big-torch-key-harbor-channel",
     state: 'florida', city: "Big Torch Key - Harbor Channel, FL", region: "Florida Keys",
     lat: 24.7367, lon: -81.4433, latDisplay: "24.74°N", lonDisplay: "81.44°W",
@@ -6579,7 +6579,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724276", waterTempId: "8724276",
+    id: "8724276", waterTempId: "8723970",
     name: "Summerland Key - southwest side - Kemp Channel", slug: "summerland-key-southwest-side-kemp-channel",
     state: 'florida', city: "Summerland Key - southwest side - Kemp Channel, FL", region: "Florida Keys",
     lat: 24.65, lon: -81.4467, latDisplay: "24.65°N", lonDisplay: "81.45°W",
@@ -6601,7 +6601,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724292", waterTempId: "8724292",
+    id: "8724292", waterTempId: "8724580",
     name: "Kemp Channel Viaduct", slug: "kemp-channel-viaduct",
     state: 'florida', city: "Kemp Channel Viaduct, FL", region: "Florida Keys",
     lat: 24.6617, lon: -81.4683, latDisplay: "24.66°N", lonDisplay: "81.47°W",
@@ -6623,7 +6623,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724293", waterTempId: "8724293",
+    id: "8724293", waterTempId: "8724580",
     name: "Key Lois - southeast end", slug: "key-lois-southeast-end",
     state: 'florida', city: "Key Lois - southeast end, FL", region: "Florida Keys",
     lat: 24.6067, lon: -81.47, latDisplay: "24.61°N", lonDisplay: "81.47°W",
@@ -6645,7 +6645,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724302", waterTempId: "8724302",
+    id: "8724302", waterTempId: "8723970",
     name: "Knockemdown Key - north end", slug: "knockemdown-key-north-end",
     state: 'florida', city: "Knockemdown Key - north end, FL", region: "Florida Keys",
     lat: 24.715, lon: -81.4783, latDisplay: "24.71°N", lonDisplay: "81.48°W",
@@ -6667,7 +6667,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724306", waterTempId: "8724306",
+    id: "8724306", waterTempId: "8724580",
     name: "Gopher Key - Cudjoe Bay", slug: "gopher-key-cudjoe-bay",
     state: 'florida', city: "Gopher Key - Cudjoe Bay, FL", region: "Florida Keys",
     lat: 24.6417, lon: -81.485, latDisplay: "24.64°N", lonDisplay: "81.48°W",
@@ -6689,7 +6689,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724307", waterTempId: "8724307",
+    id: "8724307", waterTempId: "8723970",
     name: "Content Keys - Content Passage", slug: "content-keys-content-passage",
     state: 'florida', city: "Content Keys - Content Passage, FL", region: "Florida Keys",
     lat: 24.79, lon: -81.4833, latDisplay: "24.79°N", lonDisplay: "81.48°W",
@@ -6711,7 +6711,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724311", waterTempId: "8724311",
+    id: "8724311", waterTempId: "8723970",
     name: "Raccoon Key - east side", slug: "raccoon-key-east-side",
     state: 'florida', city: "Raccoon Key - east side, FL", region: "Florida Keys",
     lat: 24.7417, lon: -81.4833, latDisplay: "24.74°N", lonDisplay: "81.48°W",
@@ -6733,7 +6733,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724313", waterTempId: "8724313",
+    id: "8724313", waterTempId: "8724580",
     name: "Cudjoe Key - Cudjoe Bay", slug: "cudjoe-key-cudjoe-bay",
     state: 'florida', city: "Cudjoe Key - Cudjoe Bay, FL", region: "Florida Keys",
     lat: 24.66, lon: -81.4917, latDisplay: "24.66°N", lonDisplay: "81.49°W",
@@ -6755,7 +6755,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724326", waterTempId: "8724326",
+    id: "8724326", waterTempId: "8724580",
     name: "Sugarloaf Key - Pirates Cove", slug: "sugarloaf-key-pirates-cove",
     state: 'florida', city: "Sugarloaf Key - Pirates Cove, FL", region: "Florida Keys",
     lat: 24.6533, lon: -81.515, latDisplay: "24.65°N", lonDisplay: "81.52°W",
@@ -6777,7 +6777,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724327", waterTempId: "8724327",
+    id: "8724327", waterTempId: "8724580",
     name: "Sugarloaf Key - east side - Tarpon Creek", slug: "sugarloaf-key-east-side-tarpon-creek",
     state: 'florida', city: "Sugarloaf Key - east side - Tarpon Creek, FL", region: "Florida Keys",
     lat: 24.6283, lon: -81.51, latDisplay: "24.63°N", lonDisplay: "81.51°W",
@@ -6799,7 +6799,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724328", waterTempId: "8724328",
+    id: "8724328", waterTempId: "8724580",
     name: "Cudjoe Key - north end - Kemp Channel", slug: "cudjoe-key-north-end-kemp-channel",
     state: 'florida', city: "Cudjoe Key - north end - Kemp Channel, FL", region: "Florida Keys",
     lat: 24.7, lon: -81.505, latDisplay: "24.70°N", lonDisplay: "81.50°W",
@@ -6821,7 +6821,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724332", waterTempId: "8724332",
+    id: "8724332", waterTempId: "8724580",
     name: "Cudjoe Key - Pirates Cove", slug: "cudjoe-key-pirates-cove",
     state: 'florida', city: "Cudjoe Key - Pirates Cove, FL", region: "Florida Keys",
     lat: 24.6617, lon: -81.515, latDisplay: "24.66°N", lonDisplay: "81.52°W",
@@ -6843,7 +6843,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724334", waterTempId: "8724334",
+    id: "8724334", waterTempId: "8724580",
     name: "Tarpon Creek", slug: "tarpon-creek",
     state: 'florida', city: "Tarpon Creek, FL", region: "Florida Keys",
     lat: 24.63, lon: -81.5167, latDisplay: "24.63°N", lonDisplay: "81.52°W",
@@ -6865,7 +6865,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724347", waterTempId: "8724347",
+    id: "8724347", waterTempId: "8724580",
     name: "Sugarloaf Key - northeast side - Bow Channel", slug: "sugarloaf-key-northeast-side-bow-channel",
     state: 'florida', city: "Sugarloaf Key - northeast side - Bow Channel, FL", region: "Florida Keys",
     lat: 24.6717, lon: -81.5333, latDisplay: "24.67°N", lonDisplay: "81.53°W",
@@ -6887,7 +6887,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724353", waterTempId: "8724353",
+    id: "8724353", waterTempId: "8724580",
     name: "Park Channel Bridge", slug: "park-channel-bridge",
     state: 'florida', city: "Park Channel Bridge, FL", region: "Florida Keys",
     lat: 24.655, lon: -81.54, latDisplay: "24.66°N", lonDisplay: "81.54°W",
@@ -6909,7 +6909,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724367", waterTempId: "8724367",
+    id: "8724367", waterTempId: "8724580",
     name: "North Harris Channel", slug: "north-harris-channel",
     state: 'florida', city: "North Harris Channel, FL", region: "Florida Keys",
     lat: 24.6533, lon: -81.5533, latDisplay: "24.65°N", lonDisplay: "81.55°W",
@@ -6931,7 +6931,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724368", waterTempId: "8724368",
+    id: "8724368", waterTempId: "8724580",
     name: "Sugarloaf Key - north end - Bow Channel", slug: "sugarloaf-key-north-end-bow-channel",
     state: 'florida', city: "Sugarloaf Key - north end - Bow Channel, FL", region: "Florida Keys",
     lat: 24.6933, lon: -81.555, latDisplay: "24.69°N", lonDisplay: "81.56°W",
@@ -6953,7 +6953,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724369", waterTempId: "8724369",
+    id: "8724369", waterTempId: "8724580",
     name: "Sawyer Key - inside - Cudjoe Channel", slug: "sawyer-key-inside-cudjoe-channel",
     state: 'florida', city: "Sawyer Key - inside - Cudjoe Channel, FL", region: "Florida Keys",
     lat: 24.7583, lon: -81.5617, latDisplay: "24.76°N", lonDisplay: "81.56°W",
@@ -6975,7 +6975,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724370", waterTempId: "8724370",
+    id: "8724370", waterTempId: "8724580",
     name: "Sawyer Key - outside - Cudjoe Channel", slug: "sawyer-key-outside-cudjoe-channel",
     state: 'florida', city: "Sawyer Key - outside - Cudjoe Channel, FL", region: "Florida Keys",
     lat: 24.7583, lon: -81.5617, latDisplay: "24.76°N", lonDisplay: "81.56°W",
@@ -6997,7 +6997,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724373", waterTempId: "8724373",
+    id: "8724373", waterTempId: "8724580",
     name: "Pumpkin Key - Bow Channel", slug: "pumpkin-key-bow-channel",
     state: 'florida', city: "Pumpkin Key - Bow Channel, FL", region: "Florida Keys",
     lat: 24.7167, lon: -81.5617, latDisplay: "24.72°N", lonDisplay: "81.56°W",
@@ -7019,7 +7019,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724378", waterTempId: "8724378",
+    id: "8724378", waterTempId: "8724580",
     name: "Perky", slug: "perky",
     state: 'florida', city: "Perky, FL", region: "Florida Keys",
     lat: 24.6483, lon: -81.57, latDisplay: "24.65°N", lonDisplay: "81.57°W",
@@ -7041,7 +7041,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724397", waterTempId: "8724397",
+    id: "8724397", waterTempId: "8724580",
     name: "Johnston Key - southwest end - Turkey Basin", slug: "johnston-key-southwest-end-turkey-basin",
     state: 'florida', city: "Johnston Key - southwest end - Turkey Basin, FL", region: "Florida Keys",
     lat: 24.71, lon: -81.5933, latDisplay: "24.71°N", lonDisplay: "81.59°W",
@@ -7063,7 +7063,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724405", waterTempId: "8724405",
+    id: "8724405", waterTempId: "8724580",
     name: "Saddlebunch Keys - Channel No. 3", slug: "saddlebunch-keys-channel-no-3",
     state: 'florida', city: "Saddlebunch Keys - Channel No. 3, FL", region: "Florida Keys",
     lat: 24.6233, lon: -81.6033, latDisplay: "24.62°N", lonDisplay: "81.60°W",
@@ -7085,7 +7085,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724409", waterTempId: "8724409",
+    id: "8724409", waterTempId: "8724580",
     name: "Snipe Keys - southeast end - Inner Narrows", slug: "snipe-keys-southeast-end-inner-narrows",
     state: 'florida', city: "Snipe Keys - southeast end - Inner Narrows, FL", region: "Florida Keys",
     lat: 24.6583, lon: -81.6083, latDisplay: "24.66°N", lonDisplay: "81.61°W",
@@ -7107,7 +7107,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724417", waterTempId: "8724417",
+    id: "8724417", waterTempId: "8724580",
     name: "Saddlebunch Keys - Channel No. 4", slug: "saddlebunch-keys-channel-no-4",
     state: 'florida', city: "Saddlebunch Keys - Channel No. 4, FL", region: "Florida Keys",
     lat: 24.615, lon: -81.6167, latDisplay: "24.61°N", lonDisplay: "81.62°W",
@@ -7129,7 +7129,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724422", waterTempId: "8724422",
+    id: "8724422", waterTempId: "8724580",
     name: "Saddlebunch Keys - Similar Sound", slug: "saddlebunch-keys-similar-sound",
     state: 'florida', city: "Saddlebunch Keys - Similar Sound, FL", region: "Florida Keys",
     lat: 24.6, lon: -81.6217, latDisplay: "24.60°N", lonDisplay: "81.62°W",
@@ -7151,7 +7151,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724423", waterTempId: "8724423",
+    id: "8724423", waterTempId: "8724580",
     name: "Saddlebunch Keys - Channel No. 5", slug: "saddlebunch-keys-channel-no-5",
     state: 'florida', city: "Saddlebunch Keys - Channel No. 5, FL", region: "Florida Keys",
     lat: 24.6117, lon: -81.6233, latDisplay: "24.61°N", lonDisplay: "81.62°W",
@@ -7173,7 +7173,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724427", waterTempId: "8724427",
+    id: "8724427", waterTempId: "8724580",
     name: "Snipe Keys - Middle Narrows", slug: "snipe-keys-middle-narrows",
     state: 'florida', city: "Snipe Keys - Middle Narrows, FL", region: "Florida Keys",
     lat: 24.6667, lon: -81.63, latDisplay: "24.67°N", lonDisplay: "81.63°W",
@@ -7195,7 +7195,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724436", waterTempId: "8724436",
+    id: "8724436", waterTempId: "8724580",
     name: "Bird Key - Similar Sound", slug: "bird-key-similar-sound",
     state: 'florida', city: "Bird Key - Similar Sound, FL", region: "Florida Keys",
     lat: 24.5883, lon: -81.6383, latDisplay: "24.59°N", lonDisplay: "81.64°W",
@@ -7217,7 +7217,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724438", waterTempId: "8724438",
+    id: "8724438", waterTempId: "8724580",
     name: "Shark Key - southeast end - Similar Sound", slug: "shark-key-southeast-end-similar-sound",
     state: 'florida', city: "Shark Key - southeast end - Similar Sound, FL", region: "Florida Keys",
     lat: 24.6033, lon: -81.645, latDisplay: "24.60°N", lonDisplay: "81.64°W",
@@ -7239,7 +7239,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724441", waterTempId: "8724441",
+    id: "8724441", waterTempId: "8724580",
     name: "O'Hara Key - north end - Waltz Key Basin", slug: "ohara-key-north-end-waltz-key-basin",
     state: 'florida', city: "O'Hara Key - north end - Waltz Key Basin, FL", region: "Florida Keys",
     lat: 24.6167, lon: -81.645, latDisplay: "24.62°N", lonDisplay: "81.64°W",
@@ -7261,7 +7261,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724448", waterTempId: "8724448",
+    id: "8724448", waterTempId: "8724580",
     name: "Waltz Key - Waltz Key Basin", slug: "waltz-key-waltz-key-basin",
     state: 'florida', city: "Waltz Key - Waltz Key Basin, FL", region: "Florida Keys",
     lat: 24.6467, lon: -81.6533, latDisplay: "24.65°N", lonDisplay: "81.65°W",
@@ -7283,7 +7283,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724459", waterTempId: "8724459",
+    id: "8724459", waterTempId: "8724580",
     name: "Rockland Key - Rockland Channel Bridge", slug: "rockland-key-rockland-channel-bridge",
     state: 'florida', city: "Rockland Key - Rockland Channel Bridge, FL", region: "Florida Keys",
     lat: 24.5917, lon: -81.67, latDisplay: "24.59°N", lonDisplay: "81.67°W",
@@ -7305,7 +7305,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724463", waterTempId: "8724463",
+    id: "8724463", waterTempId: "8724580",
     name: "Snipe Keys - Snipe Point", slug: "snipe-keys-snipe-point",
     state: 'florida', city: "Snipe Keys - Snipe Point, FL", region: "Florida Keys",
     lat: 24.6917, lon: -81.6733, latDisplay: "24.69°N", lonDisplay: "81.67°W",
@@ -7327,7 +7327,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724474", waterTempId: "8724474",
+    id: "8724474", waterTempId: "8724580",
     name: "Duck Key Point - Duck Key - Waltz Key Basin", slug: "duck-key-point-duck-key-waltz-key-basin",
     state: 'florida', city: "Duck Key Point - Duck Key - Waltz Key Basin, FL", region: "Florida Keys",
     lat: 24.6233, lon: -81.685, latDisplay: "24.62°N", lonDisplay: "81.69°W",
@@ -7349,7 +7349,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724485", waterTempId: "8724485",
+    id: "8724485", waterTempId: "8724580",
     name: "Boca Chica Key - Long Point", slug: "boca-chica-key-long-point",
     state: 'florida', city: "Boca Chica Key - Long Point, FL", region: "Florida Keys",
     lat: 24.6033, lon: -81.6983, latDisplay: "24.60°N", lonDisplay: "81.70°W",
@@ -7371,7 +7371,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724489", waterTempId: "8724489",
+    id: "8724489", waterTempId: "8724580",
     name: "Big Coppitt Key - northeast side - Waltz Key Basin", slug: "big-coppitt-key-northeast-side-waltz-key-basin",
     state: 'florida', city: "Big Coppitt Key - northeast side - Waltz Key Basin, FL", region: "Florida Keys",
     lat: 24.6017, lon: -81.655, latDisplay: "24.60°N", lonDisplay: "81.66°W",
@@ -7393,7 +7393,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724493", waterTempId: "8724493",
+    id: "8724493", waterTempId: "8724580",
     name: "Boca Chica Marina", slug: "boca-chica-marina",
     state: 'florida', city: "Boca Chica Marina, FL", region: "Florida Keys",
     lat: 24.575, lon: -81.7083, latDisplay: "24.57°N", lonDisplay: "81.71°W",
@@ -7415,7 +7415,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724499", waterTempId: "8724499",
+    id: "8724499", waterTempId: "8724580",
     name: "Boca Chica Key - Southwest end", slug: "boca-chica-key-southwest-end",
     state: 'florida', city: "Boca Chica Key - Southwest end, FL", region: "Florida Keys",
     lat: 24.5633, lon: -81.7133, latDisplay: "24.56°N", lonDisplay: "81.71°W",
@@ -7437,7 +7437,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724503", waterTempId: "8724503",
+    id: "8724503", waterTempId: "8724580",
     name: "Boca Chica Channel Bridge", slug: "boca-chica-channel-bridge",
     state: 'florida', city: "Boca Chica Channel Bridge, FL", region: "Florida Keys",
     lat: 24.5767, lon: -81.7217, latDisplay: "24.58°N", lonDisplay: "81.72°W",
@@ -7459,7 +7459,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724507", waterTempId: "8724507",
+    id: "8724507", waterTempId: "8724580",
     name: "Channel Key - west side", slug: "channel-key-west-side",
     state: 'florida', city: "Channel Key - west side, FL", region: "Florida Keys",
     lat: 24.6033, lon: -81.725, latDisplay: "24.60°N", lonDisplay: "81.72°W",
@@ -7481,7 +7481,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724517", waterTempId: "8724517",
+    id: "8724517", waterTempId: "8724580",
     name: "Key Haven - Stock Island Channel", slug: "key-haven-stock-island-channel",
     state: 'florida', city: "Key Haven - Stock Island Channel, FL", region: "Florida Keys",
     lat: 24.58, lon: -81.7383, latDisplay: "24.58°N", lonDisplay: "81.74°W",
@@ -7503,7 +7503,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724527", waterTempId: "8724527",
+    id: "8724527", waterTempId: "8724580",
     name: "Cow Key Channel", slug: "cow-key-channel",
     state: 'florida', city: "Cow Key Channel, FL", region: "Florida Keys",
     lat: 24.57, lon: -81.75, latDisplay: "24.57°N", lonDisplay: "81.75°W",
@@ -7525,7 +7525,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724529", waterTempId: "8724529",
+    id: "8724529", waterTempId: "8724580",
     name: "Riveria Canal - Key West", slug: "riveria-canal-key-west",
     state: 'florida', city: "Riveria Canal - Key West, FL", region: "Florida Keys",
     lat: 24.565, lon: -81.7517, latDisplay: "24.57°N", lonDisplay: "81.75°W",
@@ -7547,7 +7547,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724542", waterTempId: "8724542",
+    id: "8724542", waterTempId: "8724580",
     name: "Sigsbee Park - Garrison Bight Channel", slug: "sigsbee-park-garrison-bight-channel",
     state: 'florida', city: "Sigsbee Park - Garrison Bight Channel, FL", region: "Florida Keys",
     lat: 24.585, lon: -81.775, latDisplay: "24.59°N", lonDisplay: "81.78°W",
@@ -7569,7 +7569,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724557", waterTempId: "8724557",
+    id: "8724557", waterTempId: "8724580",
     name: "Key West - south side - White Street Pier", slug: "key-west-south-side-white-street-pier",
     state: 'florida', city: "Key West - south side - White Street Pier, FL", region: "Florida Keys",
     lat: 24.545, lon: -81.7833, latDisplay: "24.55°N", lonDisplay: "81.78°W",
@@ -7591,7 +7591,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724571", waterTempId: "8724571",
+    id: "8724571", waterTempId: "8724580",
     name: "Fleming Key - north end", slug: "fleming-key-north-end",
     state: 'florida', city: "Fleming Key - north end, FL", region: "Florida Keys",
     lat: 24.5917, lon: -81.795, latDisplay: "24.59°N", lonDisplay: "81.80°W",
@@ -7635,7 +7635,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724635", waterTempId: "8724635",
+    id: "8724635", waterTempId: "8724580",
     name: "Sand Key Lighthouse - Sand Key Channel", slug: "sand-key-lighthouse-sand-key-channel",
     state: 'florida', city: "Sand Key Lighthouse - Sand Key Channel, FL", region: "Florida Keys",
     lat: 24.4533, lon: -81.8783, latDisplay: "24.45°N", lonDisplay: "81.88°W",
@@ -7657,7 +7657,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724671", waterTempId: "8724671",
+    id: "8724671", waterTempId: "8724580",
     name: "Smith Shoal Light", slug: "smith-shoal-light",
     state: 'florida', city: "Smith Shoal Light, FL", region: "Florida Keys",
     lat: 24.71827777777778, lon: -81.92152777777778, latDisplay: "24.72°N", lonDisplay: "81.92°W",
@@ -7679,7 +7679,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724697", waterTempId: "8724697",
+    id: "8724697", waterTempId: "8724580",
     name: "Garden Key - Dry Tortugas", slug: "garden-key-dry-tortugas",
     state: 'florida', city: "Garden Key - Dry Tortugas, FL", region: "Florida Keys",
     lat: 24.6267, lon: -82.8717, latDisplay: "24.63°N", lonDisplay: "82.87°W",
@@ -7701,7 +7701,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724698", waterTempId: "8724698",
+    id: "8724698", waterTempId: "8724580",
     name: "Loggerhead Key - Dry Tortugas", slug: "loggerhead-key-dry-tortugas",
     state: 'florida', city: "Loggerhead Key - Dry Tortugas, FL", region: "Florida Keys",
     lat: 24.6317, lon: -82.92, latDisplay: "24.63°N", lonDisplay: "82.92°W",
@@ -7723,7 +7723,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724769", waterTempId: "8724769",
+    id: "8724769", waterTempId: "8723970",
     name: "Shark River entrance", slug: "shark-river-entrance",
     state: 'florida', city: "Shark River entrance, FL", region: "Florida Keys",
     lat: 25.345, lon: -81.1267, latDisplay: "25.34°N", lonDisplay: "81.13°W",
@@ -7745,7 +7745,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724842", waterTempId: "8724842",
+    id: "8724842", waterTempId: "8723970",
     name: "Lostmans River entrance", slug: "lostmans-river-entrance",
     state: 'florida', city: "Lostmans River entrance, FL", region: "Florida Keys",
     lat: 25.5533, lon: -81.2133, latDisplay: "25.55°N", lonDisplay: "81.21°W",
@@ -7767,7 +7767,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724863", waterTempId: "8724863",
+    id: "8724863", waterTempId: "8723214",
     name: "Onion Key - Lostmans River", slug: "onion-key-lostmans-river",
     state: 'florida', city: "Onion Key - Lostmans River, FL", region: "Florida Keys",
     lat: 25.6117, lon: -81.1333, latDisplay: "25.61°N", lonDisplay: "81.13°W",
@@ -7789,7 +7789,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724891", waterTempId: "8724891",
+    id: "8724891", waterTempId: "8723970",
     name: "Chatham River entrance", slug: "chatham-river-entrance",
     state: 'florida', city: "Chatham River entrance, FL", region: "Florida Keys",
     lat: 25.69, lon: -81.285, latDisplay: "25.69°N", lonDisplay: "81.28°W",
@@ -7811,7 +7811,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724919", waterTempId: "8724919",
+    id: "8724919", waterTempId: "8725520",
     name: "Chokoloskee", slug: "chokoloskee",
     state: 'florida', city: "Chokoloskee, FL", region: "Florida Keys",
     lat: 25.8133, lon: -81.3633, latDisplay: "25.81°N", lonDisplay: "81.36°W",
@@ -7833,7 +7833,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724947", waterTempId: "8724947",
+    id: "8724947", waterTempId: "8725520",
     name: "Cape Romano", slug: "cape-romano",
     state: 'florida', city: "Cape Romano, FL", region: "Florida Keys",
     lat: 25.8533, lon: -81.675, latDisplay: "25.85°N", lonDisplay: "81.67°W",
@@ -7855,7 +7855,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724963", waterTempId: "8724963",
+    id: "8724963", waterTempId: "8725520",
     name: "Pumpkin Bay", slug: "pumpkin-bay",
     state: 'florida', city: "Pumpkin Bay, FL", region: "Florida Keys",
     lat: 25.895, lon: -81.5583, latDisplay: "25.89°N", lonDisplay: "81.56°W",
@@ -7877,7 +7877,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724964", waterTempId: "8724964",
+    id: "8724964", waterTempId: "8725520",
     name: "Coon Key", slug: "coon-key",
     state: 'florida', city: "Coon Key, FL", region: "Florida Keys",
     lat: 25.8967, lon: -81.6367, latDisplay: "25.90°N", lonDisplay: "81.64°W",
@@ -7899,7 +7899,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724967", waterTempId: "8724967",
+    id: "8724967", waterTempId: "8725520",
     name: "Marco Island - Caxambas Pass", slug: "marco-island-caxambas-pass",
     state: 'florida', city: "Marco Island - Caxambas Pass, FL", region: "Florida Keys",
     lat: 25.9083, lon: -81.7283, latDisplay: "25.91°N", lonDisplay: "81.73°W",
@@ -7921,7 +7921,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724991", waterTempId: "8724991",
+    id: "8724991", waterTempId: "8725520",
     name: "Marco - Big Marco River", slug: "marco-big-marco-river",
     state: 'florida', city: "Marco - Big Marco River, FL", region: "Florida Keys",
     lat: 25.9717, lon: -81.7283, latDisplay: "25.97°N", lonDisplay: "81.73°W",
@@ -7943,7 +7943,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8724996", waterTempId: "8724996",
+    id: "8724996", waterTempId: "8725520",
     name: "McIlvaine Bay", slug: "mcilvaine-bay",
     state: 'florida', city: "McIlvaine Bay, FL", region: "Florida Keys",
     lat: 25.985, lon: -81.7017, latDisplay: "25.98°N", lonDisplay: "81.70°W",
@@ -7965,7 +7965,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725019", waterTempId: "8725019",
+    id: "8725019", waterTempId: "8725520",
     name: "Keewaydin island (inside)", slug: "keewaydin-island-inside",
     state: 'florida', city: "Keewaydin island (inside), FL", region: "Southwest Florida",
     lat: 26.025, lon: -81.7683, latDisplay: "26.02°N", lonDisplay: "81.77°W",
@@ -7987,7 +7987,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725110", waterTempId: "8725110",
+    id: "8725110", waterTempId: "8725520",
     name: "Naples (outer coast)", slug: "naples-outer-coast",
     state: 'florida', city: "Naples (outer coast), FL", region: "Southwest Florida",
     lat: 26.1316667, lon: -81.8075, latDisplay: "26.13°N", lonDisplay: "81.81°W",
@@ -8009,7 +8009,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725114", waterTempId: "8725114",
+    id: "8725114", waterTempId: "8725520",
     name: "Naples - Naples Bay - north end", slug: "naples-naples-bay-north-end",
     state: 'florida', city: "Naples - Naples Bay - north end, FL", region: "Southwest Florida",
     lat: 26.136699676513672, lon: -81.78829956054688, latDisplay: "26.14°N", lonDisplay: "81.79°W",
@@ -8031,7 +8031,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725228", waterTempId: "8725228",
+    id: "8725228", waterTempId: "8725520",
     name: "Cocohatchee River - U.S. 41 bridge", slug: "cocohatchee-river-us-41-bridge",
     state: 'florida', city: "Cocohatchee River - U.S. 41 bridge, FL", region: "Southwest Florida",
     lat: 26.2817, lon: -81.8017, latDisplay: "26.28°N", lonDisplay: "81.80°W",
@@ -8053,7 +8053,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725235", waterTempId: "8725235",
+    id: "8725235", waterTempId: "8725520",
     name: "Wiggins Pass - Cocohatchee River", slug: "wiggins-pass-cocohatchee-river",
     state: 'florida', city: "Wiggins Pass - Cocohatchee River, FL", region: "Southwest Florida",
     lat: 26.29, lon: -81.8183, latDisplay: "26.29°N", lonDisplay: "81.82°W",
@@ -8075,7 +8075,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725283", waterTempId: "8725283",
+    id: "8725283", waterTempId: "8725520",
     name: "Little Hickory Island", slug: "little-hickory-island",
     state: 'florida', city: "Little Hickory Island, FL", region: "Southwest Florida",
     lat: 26.353300094604492, lon: -81.8550033569336, latDisplay: "26.35°N", lonDisplay: "81.86°W",
@@ -8097,7 +8097,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725319", waterTempId: "8725319",
+    id: "8725319", waterTempId: "8725520",
     name: "Coconut Point", slug: "coconut-point",
     state: 'florida', city: "Coconut Point, FL", region: "Southwest Florida",
     lat: 26.4, lon: -81.8433, latDisplay: "26.40°N", lonDisplay: "81.84°W",
@@ -8119,7 +8119,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725325", waterTempId: "8725325",
+    id: "8725325", waterTempId: "8725520",
     name: "Carlos Point - Estero Bay", slug: "carlos-point-estero-bay",
     state: 'florida', city: "Carlos Point - Estero Bay, FL", region: "Southwest Florida",
     lat: 26.405000686645508, lon: -81.88500213623047, latDisplay: "26.41°N", lonDisplay: "81.89°W",
@@ -8141,7 +8141,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725346", waterTempId: "8725346",
+    id: "8725346", waterTempId: "8725520",
     name: "Estero River", slug: "estero-river",
     state: 'florida', city: "Estero River, FL", region: "Southwest Florida",
     lat: 26.43, lon: -81.8567, latDisplay: "26.43°N", lonDisplay: "81.86°W",
@@ -8163,7 +8163,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725351", waterTempId: "8725351",
+    id: "8725351", waterTempId: "8725520",
     name: "Estero Island - Estero Bay", slug: "estero-island-estero-bay",
     state: 'florida', city: "Estero Island - Estero Bay, FL", region: "Southwest Florida",
     lat: 26.4383, lon: -81.9183, latDisplay: "26.44°N", lonDisplay: "81.92°W",
@@ -8185,7 +8185,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725362", waterTempId: "8725362",
+    id: "8725362", waterTempId: "8725520",
     name: "Tarpon Bay - Sanibel Island", slug: "tarpon-bay-sanibel-island",
     state: 'florida', city: "Tarpon Bay - Sanibel Island, FL", region: "Southwest Florida",
     lat: 26.4433, lon: -82.0817, latDisplay: "26.44°N", lonDisplay: "82.08°W",
@@ -8207,7 +8207,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725366", waterTempId: "8725366",
+    id: "8725366", waterTempId: "8725520",
     name: "Matanzas Pass (fixed bridge) Estero Island", slug: "matanzas-pass-fixed-bridge-estero-island",
     state: 'florida', city: "Matanzas Pass (fixed bridge) Estero Island, FL", region: "Southwest Florida",
     lat: 26.4567, lon: -81.9533, latDisplay: "26.46°N", lonDisplay: "81.95°W",
@@ -8229,7 +8229,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725377", waterTempId: "8725377",
+    id: "8725377", waterTempId: "8725520",
     name: "Hendry Creek - Estero Bay", slug: "hendry-creek-estero-bay",
     state: 'florida', city: "Hendry Creek - Estero Bay, FL", region: "Southwest Florida",
     lat: 26.47, lon: -81.8767, latDisplay: "26.47°N", lonDisplay: "81.88°W",
@@ -8251,7 +8251,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725383", waterTempId: "8725383",
+    id: "8725383", waterTempId: "8725520",
     name: "Captiva Island (outside)", slug: "captiva-island-outside",
     state: 'florida', city: "Captiva Island (outside), FL", region: "Southwest Florida",
     lat: 26.4783, lon: -82.1833, latDisplay: "26.48°N", lonDisplay: "82.18°W",
@@ -8273,7 +8273,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725391", waterTempId: "8725391",
+    id: "8725391", waterTempId: "8725520",
     name: "Punta Rassa - San Carlos Bay", slug: "punta-rassa-san-carlos-bay",
     state: 'florida', city: "Punta Rassa - San Carlos Bay, FL", region: "Southwest Florida",
     lat: 26.488300323486328, lon: -82.01329803466797, latDisplay: "26.49°N", lonDisplay: "82.01°W",
@@ -8295,7 +8295,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725393", waterTempId: "8725393",
+    id: "8725393", waterTempId: "8725520",
     name: "St. James City - Pine Island", slug: "st-james-city-pine-island",
     state: 'florida', city: "St. James City - Pine Island, FL", region: "Southwest Florida",
     lat: 26.49169921875, lon: -82.08170318603516, latDisplay: "26.49°N", lonDisplay: "82.08°W",
@@ -8317,7 +8317,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725411", waterTempId: "8725411",
+    id: "8725411", waterTempId: "8725520",
     name: "Galt Island - Pine Island Sound", slug: "galt-island-pine-island-sound",
     state: 'florida', city: "Galt Island - Pine Island Sound, FL", region: "Southwest Florida",
     lat: 26.5133, lon: -82.1067, latDisplay: "26.51°N", lonDisplay: "82.11°W",
@@ -8339,7 +8339,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725417", waterTempId: "8725417",
+    id: "8725417", waterTempId: "8725520",
     name: "Captiva Island - Pine Island Sound", slug: "captiva-island-pine-island-sound",
     state: 'florida', city: "Captiva Island - Pine Island Sound, FL", region: "Southwest Florida",
     lat: 26.5217, lon: -82.1883, latDisplay: "26.52°N", lonDisplay: "82.19°W",
@@ -8361,7 +8361,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725418", waterTempId: "8725418",
+    id: "8725418", waterTempId: "8725520",
     name: "Iona Shores", slug: "iona-shores",
     state: 'florida', city: "Iona Shores, FL", region: "Southwest Florida",
     lat: 26.5217, lon: -81.965, latDisplay: "26.52°N", lonDisplay: "81.97°W",
@@ -8383,7 +8383,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725439", waterTempId: "8725439",
+    id: "8725439", waterTempId: "8725520",
     name: "Tropical Homesites Landing - Pine Island", slug: "tropical-homesites-landing-pine-island",
     state: 'florida', city: "Tropical Homesites Landing - Pine Island, FL", region: "Southwest Florida",
     lat: 26.5483, lon: -82.08, latDisplay: "26.55°N", lonDisplay: "82.08°W",
@@ -8405,7 +8405,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725441", waterTempId: "8725441",
+    id: "8725441", waterTempId: "8725520",
     name: "Redfish Pass - Captiva Island (north end)", slug: "redfish-pass-captiva-island-north-end",
     state: 'florida', city: "Redfish Pass - Captiva Island (north end), FL", region: "Southwest Florida",
     lat: 26.55, lon: -82.1967, latDisplay: "26.55°N", lonDisplay: "82.20°W",
@@ -8427,7 +8427,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725451", waterTempId: "8725451",
+    id: "8725451", waterTempId: "8725520",
     name: "Cape Coral Bridge", slug: "cape-coral-bridge",
     state: 'florida', city: "Cape Coral Bridge, FL", region: "Southwest Florida",
     lat: 26.56329917907715, lon: -81.93329620361328, latDisplay: "26.56°N", lonDisplay: "81.93°W",
@@ -8449,7 +8449,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725488", waterTempId: "8725488",
+    id: "8725488", waterTempId: "8725520",
     name: "North Captiva Island", slug: "north-captiva-island",
     state: 'florida', city: "North Captiva Island, FL", region: "Southwest Florida",
     lat: 26.605, lon: -82.2183, latDisplay: "26.61°N", lonDisplay: "82.22°W",
@@ -8471,7 +8471,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725506", waterTempId: "8725506",
+    id: "8725506", waterTempId: "8725520",
     name: "Matlacha Pass (bascule bridge)", slug: "matlacha-pass-bascule-bridge",
     state: 'florida', city: "Matlacha Pass (bascule bridge), FL", region: "Southwest Florida",
     lat: 26.63170051574707, lon: -82.06829833984375, latDisplay: "26.63°N", lonDisplay: "82.07°W",
@@ -8515,7 +8515,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725528", waterTempId: "8725528",
+    id: "8725528", waterTempId: "8725520",
     name: "Pineland - Pine Island", slug: "pineland-pine-island",
     state: 'florida', city: "Pineland - Pine Island, FL", region: "Southwest Florida",
     lat: 26.66, lon: -82.155, latDisplay: "26.66°N", lonDisplay: "82.16°W",
@@ -8537,7 +8537,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725541", waterTempId: "8725541",
+    id: "8725541", waterTempId: "8725520",
     name: "Bokeelia - Charlotte Harbor", slug: "bokeelia-charlotte-harbor",
     state: 'florida', city: "Bokeelia - Charlotte Harbor, FL", region: "Southwest Florida",
     lat: 26.70669937133789, lon: -82.16329956054688, latDisplay: "26.71°N", lonDisplay: "82.16°W",
@@ -8559,7 +8559,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725577", waterTempId: "8725577",
+    id: "8725577", waterTempId: "8725520",
     name: "Port Boca Grande - Charlotte Harbor", slug: "port-boca-grande-charlotte-harbor",
     state: 'florida', city: "Port Boca Grande - Charlotte Harbor, FL", region: "Southwest Florida",
     lat: 26.719999313354492, lon: -82.25830078125, latDisplay: "26.72°N", lonDisplay: "82.26°W",
@@ -8581,7 +8581,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725649", waterTempId: "8725649",
+    id: "8725649", waterTempId: "8725520",
     name: "Turtle Bay", slug: "turtle-bay",
     state: 'florida', city: "Turtle Bay, FL", region: "Southwest Florida",
     lat: 26.7967, lon: -82.1833, latDisplay: "26.80°N", lonDisplay: "82.18°W",
@@ -8603,7 +8603,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725667", waterTempId: "8725667",
+    id: "8725667", waterTempId: "8725520",
     name: "Placida - Gasparilla Sound", slug: "placida-gasparilla-sound",
     state: 'florida', city: "Placida - Gasparilla Sound, FL", region: "Southwest Florida",
     lat: 26.8333, lon: -82.265, latDisplay: "26.83°N", lonDisplay: "82.27°W",
@@ -8625,7 +8625,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725685", waterTempId: "8725685",
+    id: "8725685", waterTempId: "8725520",
     name: "Don Pedro Island State Park - Cutoff (south)", slug: "don-pedro-island-state-park-cutoff-south",
     state: 'florida', city: "Don Pedro Island State Park - Cutoff (south), FL", region: "Southwest Florida",
     lat: 26.855, lon: -82.3033, latDisplay: "26.86°N", lonDisplay: "82.30°W",
@@ -8647,7 +8647,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725744", waterTempId: "8725744",
+    id: "8725744", waterTempId: "8725520",
     name: "Punta Gorda - Charlotte Harbor", slug: "punta-gorda-charlotte-harbor",
     state: 'florida', city: "Punta Gorda - Charlotte Harbor, FL", region: "Southwest Florida",
     lat: 26.9283, lon: -82.065, latDisplay: "26.93°N", lonDisplay: "82.06°W",
@@ -8669,7 +8669,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725745", waterTempId: "8725745",
+    id: "8725745", waterTempId: "8725520",
     name: "Locust Point - Hog Island", slug: "locust-point-hog-island",
     state: 'florida', city: "Locust Point - Hog Island, FL", region: "Southwest Florida",
     lat: 26.93, lon: -82.1367, latDisplay: "26.93°N", lonDisplay: "82.14°W",
@@ -8691,7 +8691,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725747", waterTempId: "8725747",
+    id: "8725747", waterTempId: "8725520",
     name: "Englewood - Lemon Bay", slug: "englewood-lemon-bay",
     state: 'florida', city: "Englewood - Lemon Bay, FL", region: "Southwest Florida",
     lat: 26.9333, lon: -82.3533, latDisplay: "26.93°N", lonDisplay: "82.35°W",
@@ -8713,7 +8713,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725769", waterTempId: "8725769",
+    id: "8725769", waterTempId: "8725520",
     name: "El Jobean - Myakka River", slug: "el-jobean-myakka-river",
     state: 'florida', city: "El Jobean - Myakka River, FL", region: "Southwest Florida",
     lat: 26.9617, lon: -82.21, latDisplay: "26.96°N", lonDisplay: "82.21°W",
@@ -8735,7 +8735,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725791", waterTempId: "8725791",
+    id: "8725791", waterTempId: "8725520",
     name: "Shell Point - Peace River - Charlotte Harbor", slug: "shell-point-peace-river-charlotte-harbor",
     state: 'florida', city: "Shell Point - Peace River - Charlotte Harbor, FL", region: "Southwest Florida",
     lat: 26.9883, lon: -81.9933, latDisplay: "26.99°N", lonDisplay: "81.99°W",
@@ -8757,7 +8757,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725809", waterTempId: "8725809",
+    id: "8725809", waterTempId: "8725520",
     name: "Manasota - Lemon Bay", slug: "manasota-lemon-bay",
     state: 'florida', city: "Manasota - Lemon Bay, FL", region: "Southwest Florida",
     lat: 27.0117, lon: -82.41, latDisplay: "27.01°N", lonDisplay: "82.41°W",
@@ -8779,7 +8779,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725837", waterTempId: "8725837",
+    id: "8725837", waterTempId: "8725520",
     name: "Myakka River - US 41 bridge", slug: "myakka-river-us-41-bridge",
     state: 'florida', city: "Myakka River - US 41 bridge, FL", region: "Southwest Florida",
     lat: 27.045, lon: -82.2933, latDisplay: "27.05°N", lonDisplay: "82.29°W",
@@ -8801,7 +8801,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725858", waterTempId: "8725858",
+    id: "8725858", waterTempId: "8726384",
     name: "Venice Municipal Airport", slug: "venice-municipal-airport",
     state: 'florida', city: "Venice Municipal Airport, FL", region: "Southwest Florida",
     lat: 27.0717, lon: -82.4533, latDisplay: "27.07°N", lonDisplay: "82.45°W",
@@ -8823,7 +8823,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8725889", waterTempId: "8725889",
+    id: "8725889", waterTempId: "8726384",
     name: "Venice Inlet (inside)", slug: "venice-inlet-inside",
     state: 'florida', city: "Venice Inlet (inside), FL", region: "Southwest Florida",
     lat: 27.1117, lon: -82.4633, latDisplay: "27.11°N", lonDisplay: "82.46°W",
@@ -8845,7 +8845,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726034", waterTempId: "8726034",
+    id: "8726034", waterTempId: "8726384",
     name: "Siesta Key - Big Sarasota Pass", slug: "siesta-key-big-sarasota-pass",
     state: 'florida', city: "Siesta Key - Big Sarasota Pass, FL", region: "Tampa Bay",
     lat: 27.283899307250977, lon: -82.56500244140625, latDisplay: "27.28°N", lonDisplay: "82.57°W",
@@ -8867,7 +8867,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726083", waterTempId: "8726083",
+    id: "8726083", waterTempId: "8726384",
     name: "Sarasota - Sarasota Bay", slug: "sarasota-sarasota-bay",
     state: 'florida', city: "Sarasota - Sarasota Bay, FL", region: "Tampa Bay",
     lat: 27.3317, lon: -82.545, latDisplay: "27.33°N", lonDisplay: "82.55°W",
@@ -8889,7 +8889,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726217", waterTempId: "8726217",
+    id: "8726217", waterTempId: "8726384",
     name: "Cortez - Sarasota Bay", slug: "cortez-sarasota-bay",
     state: 'florida', city: "Cortez - Sarasota Bay, FL", region: "Tampa Bay",
     lat: 27.4667, lon: -82.6867, latDisplay: "27.47°N", lonDisplay: "82.69°W",
@@ -8911,7 +8911,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726243", waterTempId: "8726243",
+    id: "8726243", waterTempId: "8726384",
     name: "Anna Maria Key - Bradenton Beach", slug: "anna-maria-key-bradenton-beach",
     state: 'florida', city: "Anna Maria Key - Bradenton Beach, FL", region: "Tampa Bay",
     lat: 27.4967, lon: -82.7133, latDisplay: "27.50°N", lonDisplay: "82.71°W",
@@ -8933,7 +8933,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726247", waterTempId: "8726247",
+    id: "8726247", waterTempId: "8726384",
     name: "Bradenton - Manatee River", slug: "bradenton-manatee-river",
     state: 'florida', city: "Bradenton - Manatee River, FL", region: "Tampa Bay",
     lat: 27.5, lon: -82.57330322265625, latDisplay: "27.50°N", lonDisplay: "82.57°W",
@@ -8955,7 +8955,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726265", waterTempId: "8726265",
+    id: "8726265", waterTempId: "8726384",
     name: "Ellenton - Manatee River", slug: "ellenton-manatee-river",
     state: 'florida', city: "Ellenton - Manatee River, FL", region: "Tampa Bay",
     lat: 27.51490020751953, lon: -82.53379821777344, latDisplay: "27.51°N", lonDisplay: "82.53°W",
@@ -8977,7 +8977,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726278", waterTempId: "8726278",
+    id: "8726278", waterTempId: "8726384",
     name: "Redfish Point - Manatee River", slug: "redfish-point-manatee-river",
     state: 'florida', city: "Redfish Point - Manatee River, FL", region: "Tampa Bay",
     lat: 27.5267, lon: -82.4817, latDisplay: "27.53°N", lonDisplay: "82.48°W",
@@ -8999,7 +8999,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726282", waterTempId: "8726282",
+    id: "8726282", waterTempId: "8726384",
     name: "Anna Maria Key - city pier", slug: "anna-maria-key-city-pier",
     state: 'florida', city: "Anna Maria Key - city pier, FL", region: "Tampa Bay",
     lat: 27.5333, lon: -82.73, latDisplay: "27.53°N", lonDisplay: "82.73°W",
@@ -9021,7 +9021,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726347", waterTempId: "8726347",
+    id: "8726347", waterTempId: "8726384",
     name: "Egmont Key - Egmont Channel", slug: "egmont-key-egmont-channel",
     state: 'florida', city: "Egmont Key - Egmont Channel, FL", region: "Tampa Bay",
     lat: 27.6017, lon: -82.76, latDisplay: "27.60°N", lonDisplay: "82.76°W",
@@ -9043,7 +9043,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726364", waterTempId: "8726364",
+    id: "8726364", waterTempId: "8726384",
     name: "Mullet Key Channel (Skyway)", slug: "mullet-key-channel-skyway",
     state: 'florida', city: "Mullet Key Channel (Skyway), FL", region: "Tampa Bay",
     lat: 27.615, lon: -82.7267, latDisplay: "27.61°N", lonDisplay: "82.73°W",
@@ -9087,7 +9087,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726436", waterTempId: "8726436",
+    id: "8726436", waterTempId: "8726384",
     name: "Little Manatee River - US 41 Bridge", slug: "little-manatee-river-us-41-bridge",
     state: 'florida', city: "Little Manatee River - US 41 Bridge, FL", region: "Tampa Bay",
     lat: 27.705, lon: -82.4483, latDisplay: "27.70°N", lonDisplay: "82.45°W",
@@ -9109,7 +9109,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726454", waterTempId: "8726454",
+    id: "8726454", waterTempId: "8726520",
     name: "Point Pinellas", slug: "point-pinellas",
     state: 'florida', city: "Point Pinellas, FL", region: "Tampa Bay",
     lat: 27.7017, lon: -82.64, latDisplay: "27.70°N", lonDisplay: "82.64°W",
@@ -9131,7 +9131,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726468", waterTempId: "8726468",
+    id: "8726468", waterTempId: "8726384",
     name: "Shell Point", slug: "shell-point",
     state: 'florida', city: "Shell Point, FL", region: "Tampa Bay",
     lat: 27.7183, lon: -82.48, latDisplay: "27.72°N", lonDisplay: "82.48°W",
@@ -9153,7 +9153,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726486", waterTempId: "8726486",
+    id: "8726486", waterTempId: "8726520",
     name: "Gulfport", slug: "gulfport",
     state: 'florida', city: "Gulfport, FL", region: "Tampa Bay",
     lat: 27.7367, lon: -82.7067, latDisplay: "27.74°N", lonDisplay: "82.71°W",
@@ -9175,7 +9175,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726494", waterTempId: "8726494",
+    id: "8726494", waterTempId: "8726520",
     name: "Long Key - 0.5mi N. of Corey Causeway", slug: "long-key-05mi-n-of-corey-causeway",
     state: 'florida', city: "Long Key - 0.5mi N. of Corey Causeway, FL", region: "Tampa Bay",
     lat: 27.7517, lon: -82.7533, latDisplay: "27.75°N", lonDisplay: "82.75°W",
@@ -9219,7 +9219,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726533", waterTempId: "8726533",
+    id: "8726533", waterTempId: "8726520",
     name: "Johns Pass", slug: "johns-pass",
     state: 'florida', city: "Johns Pass, FL", region: "Tampa Bay",
     lat: 27.785, lon: -82.7817, latDisplay: "27.79°N", lonDisplay: "82.78°W",
@@ -9241,7 +9241,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726537", waterTempId: "8726537",
+    id: "8726537", waterTempId: "8726607",
     name: "APOLLO BEACH - HILLSBOROUGH BAY", slug: "apollo-beach-hillsborough-bay",
     state: 'florida', city: "APOLLO BEACH - HILLSBOROUGH BAY, FL", region: "Tampa Bay",
     lat: 27.786699295043945, lon: -82.42669677734375, latDisplay: "27.79°N", lonDisplay: "82.43°W",
@@ -9263,7 +9263,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726539", waterTempId: "8726539",
+    id: "8726539", waterTempId: "8726674",
     name: "NEWMAN BRANCH", slug: "newman-branch",
     state: 'florida', city: "NEWMAN BRANCH, FL", region: "Tampa Bay",
     lat: 27.7833, lon: -82.4067, latDisplay: "27.78°N", lonDisplay: "82.41°W",
@@ -9285,7 +9285,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726574", waterTempId: "8726574",
+    id: "8726574", waterTempId: "8726520",
     name: "Madeira Beach Causeway", slug: "madeira-beach-causeway",
     state: 'florida', city: "Madeira Beach Causeway, FL", region: "Tampa Bay",
     lat: 27.8083, lon: -82.795, latDisplay: "27.81°N", lonDisplay: "82.80°W",
@@ -9329,7 +9329,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726625", waterTempId: "8726625",
+    id: "8726625", waterTempId: "8726724",
     name: "Indian Rocks Beach (inside)", slug: "indian-rocks-beach-inside",
     state: 'florida', city: "Indian Rocks Beach (inside), FL", region: "Tampa Bay",
     lat: 27.8767, lon: -82.85, latDisplay: "27.88°N", lonDisplay: "82.85°W",
@@ -9351,7 +9351,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726639", waterTempId: "8726639",
+    id: "8726639", waterTempId: "8726671",
     name: "Ballast Point", slug: "ballast-point",
     state: 'florida', city: "Ballast Point, FL", region: "Tampa Bay",
     lat: 27.89, lon: -82.48, latDisplay: "27.89°N", lonDisplay: "82.48°W",
@@ -9373,7 +9373,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726641", waterTempId: "8726641",
+    id: "8726641", waterTempId: "8726607",
     name: "Gandy Bridge - Old Tampa Bay", slug: "gandy-bridge-old-tampa-bay",
     state: 'florida', city: "Gandy Bridge - Old Tampa Bay, FL", region: "Tampa Bay",
     lat: 27.8933, lon: -82.5383, latDisplay: "27.89°N", lonDisplay: "82.54°W",
@@ -9395,7 +9395,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726651", waterTempId: "8726651",
+    id: "8726651", waterTempId: "8726674",
     name: "Pendola Point - Hillsborough Bay", slug: "pendola-point-hillsborough-bay",
     state: 'florida', city: "Pendola Point - Hillsborough Bay, FL", region: "Tampa Bay",
     lat: 27.8983, lon: -82.4267, latDisplay: "27.90°N", lonDisplay: "82.43°W",
@@ -9417,7 +9417,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726657", waterTempId: "8726657",
+    id: "8726657", waterTempId: "8726671",
     name: "Davis Island - Hillsborough Bay", slug: "davis-island-hillsborough-bay",
     state: 'florida', city: "Davis Island - Hillsborough Bay, FL", region: "Tampa Bay",
     lat: 27.9083, lon: -82.4517, latDisplay: "27.91°N", lonDisplay: "82.45°W",
@@ -9439,7 +9439,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726667", waterTempId: "8726667",
+    id: "8726667", waterTempId: "8726674",
     name: "McKay Bay Entrance", slug: "mckay-bay-entrance",
     state: 'florida', city: "McKay Bay Entrance, FL", region: "Tampa Bay",
     lat: 27.913299560546875, lon: -82.42500305175781, latDisplay: "27.91°N", lonDisplay: "82.43°W",
@@ -9483,7 +9483,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726689", waterTempId: "8726689",
+    id: "8726689", waterTempId: "8726724",
     name: "Bay Aristocrat Village - Old Tampa Bay", slug: "bay-aristocrat-village-old-tampa-bay",
     state: 'florida', city: "Bay Aristocrat Village - Old Tampa Bay, FL", region: "Tampa Bay",
     lat: 27.9417, lon: -82.72, latDisplay: "27.94°N", lonDisplay: "82.72°W",
@@ -9505,7 +9505,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726706", waterTempId: "8726706",
+    id: "8726706", waterTempId: "8726724",
     name: "Clearwater", slug: "clearwater",
     state: 'florida', city: "Clearwater, FL", region: "Tampa Bay",
     lat: 27.955, lon: -82.8067, latDisplay: "27.95°N", lonDisplay: "82.81°W",
@@ -9549,7 +9549,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726738", waterTempId: "8726738",
+    id: "8726738", waterTempId: "8726724",
     name: "Safety Harbor - Old Tampa Bay", slug: "safety-harbor-old-tampa-bay",
     state: 'florida', city: "Safety Harbor - Old Tampa Bay, FL", region: "Tampa Bay",
     lat: 27.9883, lon: -82.685, latDisplay: "27.99°N", lonDisplay: "82.69°W",
@@ -9571,7 +9571,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726761", waterTempId: "8726761",
+    id: "8726761", waterTempId: "8726724",
     name: "Dunedin - St. Joseph Sound", slug: "dunedin-st-joseph-sound",
     state: 'florida', city: "Dunedin - St. Joseph Sound, FL", region: "Tampa Bay",
     lat: 28.0133, lon: -82.7933, latDisplay: "28.01°N", lonDisplay: "82.79°W",
@@ -9593,7 +9593,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726769", waterTempId: "8726769",
+    id: "8726769", waterTempId: "8726724",
     name: "Mobbly Bayou", slug: "mobbly-bayou",
     state: 'florida', city: "Mobbly Bayou, FL", region: "Tampa Bay",
     lat: 28.0217, lon: -82.655, latDisplay: "28.02°N", lonDisplay: "82.66°W",
@@ -9615,7 +9615,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726905", waterTempId: "8726905",
+    id: "8726905", waterTempId: "8726724",
     name: "Tarpon Springs - Anclote River", slug: "tarpon-springs-anclote-river",
     state: 'florida', city: "Tarpon Springs - Anclote River, FL", region: "Tampa Bay",
     lat: 28.16, lon: -82.7683, latDisplay: "28.16°N", lonDisplay: "82.77°W",
@@ -9637,7 +9637,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726917", waterTempId: "8726917",
+    id: "8726917", waterTempId: "8726724",
     name: "Anclote Key - southern end", slug: "anclote-key-southern-end",
     state: 'florida', city: "Anclote Key - southern end, FL", region: "Tampa Bay",
     lat: 28.165, lon: -82.8433, latDisplay: "28.16°N", lonDisplay: "82.84°W",
@@ -9659,7 +9659,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726924", waterTempId: "8726924",
+    id: "8726924", waterTempId: "8726724",
     name: "Anclote - Anclote River", slug: "anclote-anclote-river",
     state: 'florida', city: "Anclote - Anclote River, FL", region: "Tampa Bay",
     lat: 28.1717, lon: -82.785, latDisplay: "28.17°N", lonDisplay: "82.78°W",
@@ -9681,7 +9681,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726942", waterTempId: "8726942",
+    id: "8726942", waterTempId: "8726724",
     name: "North Anclote Key", slug: "north-anclote-key",
     state: 'florida', city: "North Anclote Key, FL", region: "Tampa Bay",
     lat: 28.21, lon: -82.84, latDisplay: "28.21°N", lonDisplay: "82.84°W",
@@ -9703,7 +9703,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8726995", waterTempId: "8726995",
+    id: "8726995", waterTempId: "8726724",
     name: "Gulf Harbors", slug: "gulf-harbors",
     state: 'florida', city: "Gulf Harbors, FL", region: "Tampa Bay",
     lat: 28.2433, lon: -82.7633, latDisplay: "28.24°N", lonDisplay: "82.76°W",
@@ -9725,7 +9725,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727001", waterTempId: "8727001",
+    id: "8727001", waterTempId: "8726724",
     name: "New Port Richey - Pithlachascotee River", slug: "new-port-richey-pithlachascotee-river",
     state: 'florida', city: "New Port Richey - Pithlachascotee River, FL", region: "Big Bend Florida",
     lat: 28.2483, lon: -82.7233, latDisplay: "28.25°N", lonDisplay: "82.72°W",
@@ -9747,7 +9747,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727012", waterTempId: "8727012",
+    id: "8727012", waterTempId: "8726724",
     name: "Hwy. 19 bridge - Pithlachascotee River", slug: "hwy-19-bridge-pithlachascotee-river",
     state: 'florida', city: "Hwy. 19 bridge - Pithlachascotee River, FL", region: "Big Bend Florida",
     lat: 28.2683, lon: -82.7267, latDisplay: "28.27°N", lonDisplay: "82.73°W",
@@ -9769,7 +9769,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727061", waterTempId: "8727061",
+    id: "8727061", waterTempId: "8726724",
     name: "Hudson - Hudson Creek", slug: "hudson-hudson-creek",
     state: 'florida', city: "Hudson - Hudson Creek, FL", region: "Big Bend Florida",
     lat: 28.3617, lon: -82.71, latDisplay: "28.36°N", lonDisplay: "82.71°W",
@@ -9791,7 +9791,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727097", waterTempId: "8727097",
+    id: "8727097", waterTempId: "8726724",
     name: "Aripeka - Hammock Creek", slug: "aripeka-hammock-creek",
     state: 'florida', city: "Aripeka - Hammock Creek, FL", region: "Big Bend Florida",
     lat: 28.4333, lon: -82.6683, latDisplay: "28.43°N", lonDisplay: "82.67°W",
@@ -9813,7 +9813,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727122", waterTempId: "8727122",
+    id: "8727122", waterTempId: "8726724",
     name: "Hernando Beach - Rocky Creek - Little Pine I. Bay", slug: "hernando-beach-rocky-creek-little-pine-i-bay",
     state: 'florida', city: "Hernando Beach - Rocky Creek - Little Pine I. Bay, FL", region: "Big Bend Florida",
     lat: 28.4867, lon: -82.6617, latDisplay: "28.49°N", lonDisplay: "82.66°W",
@@ -9835,7 +9835,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727151", waterTempId: "8727151",
+    id: "8727151", waterTempId: "8726724",
     name: "Bayport", slug: "bayport",
     state: 'florida', city: "Bayport, FL", region: "Big Bend Florida",
     lat: 28.5333, lon: -82.65, latDisplay: "28.53°N", lonDisplay: "82.65°W",
@@ -9857,7 +9857,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727235", waterTempId: "8727235",
+    id: "8727235", waterTempId: "8727520",
     name: "Johns Island - Chassahowitzka Bay", slug: "johns-island-chassahowitzka-bay",
     state: 'florida', city: "Johns Island - Chassahowitzka Bay, FL", region: "Big Bend Florida",
     lat: 28.6917, lon: -82.6383, latDisplay: "28.69°N", lonDisplay: "82.64°W",
@@ -9879,7 +9879,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727246", waterTempId: "8727246",
+    id: "8727246", waterTempId: "8727520",
     name: "Chassahowitzka - Chassahowitzka River", slug: "chassahowitzka-chassahowitzka-river",
     state: 'florida', city: "Chassahowitzka - Chassahowitzka River, FL", region: "Big Bend Florida",
     lat: 28.715, lon: -82.5767, latDisplay: "28.71°N", lonDisplay: "82.58°W",
@@ -9901,7 +9901,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727274", waterTempId: "8727274",
+    id: "8727274", waterTempId: "8727520",
     name: "Mason Creek - Homosassa Bay", slug: "mason-creek-homosassa-bay",
     state: 'florida', city: "Mason Creek - Homosassa Bay, FL", region: "Big Bend Florida",
     lat: 28.7617, lon: -82.6383, latDisplay: "28.76°N", lonDisplay: "82.64°W",
@@ -9923,7 +9923,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727277", waterTempId: "8727277",
+    id: "8727277", waterTempId: "8727520",
     name: "Tuckers Island - Homosassa River", slug: "tuckers-island-homosassa-river",
     state: 'florida', city: "Tuckers Island - Homosassa River, FL", region: "Big Bend Florida",
     lat: 28.7717, lon: -82.695, latDisplay: "28.77°N", lonDisplay: "82.69°W",
@@ -9945,7 +9945,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727293", waterTempId: "8727293",
+    id: "8727293", waterTempId: "8727520",
     name: "Halls River bridge - Homosassa River", slug: "halls-river-bridge-homosassa-river",
     state: 'florida', city: "Halls River bridge - Homosassa River, FL", region: "Big Bend Florida",
     lat: 28.8, lon: -82.6033, latDisplay: "28.80°N", lonDisplay: "82.60°W",
@@ -9967,7 +9967,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727306", waterTempId: "8727306",
+    id: "8727306", waterTempId: "8727520",
     name: "Ozello - St. Martins River", slug: "ozello-st-martins-river",
     state: 'florida', city: "Ozello - St. Martins River, FL", region: "Big Bend Florida",
     lat: 28.825, lon: -82.6583, latDisplay: "28.82°N", lonDisplay: "82.66°W",
@@ -9989,7 +9989,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727328", waterTempId: "8727328",
+    id: "8727328", waterTempId: "8727520",
     name: "Ozello north - Crystal Bay", slug: "ozello-north-crystal-bay",
     state: 'florida', city: "Ozello north - Crystal Bay, FL", region: "Big Bend Florida",
     lat: 28.8633, lon: -82.6667, latDisplay: "28.86°N", lonDisplay: "82.67°W",
@@ -10011,7 +10011,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727333", waterTempId: "8727333",
+    id: "8727333", waterTempId: "8727520",
     name: "Mangrove Pt. - Crystal Bay", slug: "mangrove-pt-crystal-bay",
     state: 'florida', city: "Mangrove Pt. - Crystal Bay, FL", region: "Big Bend Florida",
     lat: 28.87, lon: -82.7233, latDisplay: "28.87°N", lonDisplay: "82.72°W",
@@ -10033,7 +10033,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727336", waterTempId: "8727336",
+    id: "8727336", waterTempId: "8727520",
     name: "Dixie Bay - Salt River - Crystal Bay", slug: "dixie-bay-salt-river-crystal-bay",
     state: 'florida', city: "Dixie Bay - Salt River - Crystal Bay, FL", region: "Big Bend Florida",
     lat: 28.8817, lon: -82.635, latDisplay: "28.88°N", lonDisplay: "82.64°W",
@@ -10055,7 +10055,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727343", waterTempId: "8727343",
+    id: "8727343", waterTempId: "8727520",
     name: "Kings Bay", slug: "kings-bay",
     state: 'florida', city: "Kings Bay, FL", region: "Big Bend Florida",
     lat: 28.8983, lon: -82.5983, latDisplay: "28.90°N", lonDisplay: "82.60°W",
@@ -10077,7 +10077,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727348", waterTempId: "8727348",
+    id: "8727348", waterTempId: "8727520",
     name: "Twin Rivers Marina", slug: "twin-rivers-marina",
     state: 'florida', city: "Twin Rivers Marina, FL", region: "Big Bend Florida",
     lat: 28.905, lon: -82.6383, latDisplay: "28.91°N", lonDisplay: "82.64°W",
@@ -10099,7 +10099,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727359", waterTempId: "8727359",
+    id: "8727359", waterTempId: "8727520",
     name: "Shell Island - north end", slug: "shell-island-north-end",
     state: 'florida', city: "Shell Island - north end, FL", region: "Big Bend Florida",
     lat: 28.9233, lon: -82.6917, latDisplay: "28.92°N", lonDisplay: "82.69°W",
@@ -10121,7 +10121,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727386", waterTempId: "8727386",
+    id: "8727386", waterTempId: "8727520",
     name: "Florida Power", slug: "florida-power",
     state: 'florida', city: "Florida Power, FL", region: "Big Bend Florida",
     lat: 28.96, lon: -82.725, latDisplay: "28.96°N", lonDisplay: "82.72°W",
@@ -10143,7 +10143,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727395", waterTempId: "8727395",
+    id: "8727395", waterTempId: "8727520",
     name: "Withlacoochee River entrance", slug: "withlacoochee-river-entrance",
     state: 'florida', city: "Withlacoochee River entrance, FL", region: "Big Bend Florida",
     lat: 29.0017, lon: -82.7583, latDisplay: "29.00°N", lonDisplay: "82.76°W",
@@ -10187,7 +10187,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727535", waterTempId: "8727535",
+    id: "8727535", waterTempId: "8727520",
     name: "Shell Mound", slug: "shell-mound",
     state: 'florida', city: "Shell Mound, FL", region: "Big Bend Florida",
     lat: 29.20639991760254, lon: -83.0697021484375, latDisplay: "29.21°N", lonDisplay: "83.07°W",
@@ -10209,7 +10209,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727577", waterTempId: "8727577",
+    id: "8727577", waterTempId: "8727520",
     name: "Suwannee - Salt Creek", slug: "suwannee-salt-creek",
     state: 'florida', city: "Suwannee - Salt Creek, FL", region: "Big Bend Florida",
     lat: 29.3283, lon: -83.1517, latDisplay: "29.33°N", lonDisplay: "83.15°W",
@@ -10231,7 +10231,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727648", waterTempId: "8727648",
+    id: "8727648", waterTempId: "8727520",
     name: "HORSESHOE POINT", slug: "horseshoe-point",
     state: 'florida', city: "HORSESHOE POINT, FL", region: "Big Bend Florida",
     lat: 29.4367, lon: -83.2933, latDisplay: "29.44°N", lonDisplay: "83.29°W",
@@ -10253,7 +10253,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727695", waterTempId: "8727695",
+    id: "8727695", waterTempId: "8727520",
     name: "Steinhatchee River ent. - Deadman Bay", slug: "steinhatchee-river-ent-deadman-bay",
     state: 'florida', city: "Steinhatchee River ent. - Deadman Bay, FL", region: "Big Bend Florida",
     lat: 29.6717, lon: -83.39, latDisplay: "29.67°N", lonDisplay: "83.39°W",
@@ -10275,7 +10275,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727792", waterTempId: "8727792",
+    id: "8727792", waterTempId: "8727520",
     name: "Hagens Cove", slug: "hagens-cove",
     state: 'florida', city: "Hagens Cove, FL", region: "Big Bend Florida",
     lat: 29.79669952392578, lon: -83.58380126953125, latDisplay: "29.80°N", lonDisplay: "83.58°W",
@@ -10297,7 +10297,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727843", waterTempId: "8727843",
+    id: "8727843", waterTempId: "8727520",
     name: "Spring Warrior Creek", slug: "spring-warrior-creek",
     state: 'florida', city: "Spring Warrior Creek, FL", region: "Big Bend Florida",
     lat: 29.92, lon: -83.6717, latDisplay: "29.92°N", lonDisplay: "83.67°W",
@@ -10319,7 +10319,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727956", waterTempId: "8727956",
+    id: "8727956", waterTempId: "8728690",
     name: "Econfina River", slug: "econfina-river",
     state: 'florida', city: "Econfina River, FL", region: "Big Bend Florida",
     lat: 30.0533, lon: -83.91, latDisplay: "30.05°N", lonDisplay: "83.91°W",
@@ -10341,7 +10341,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727976", waterTempId: "8727976",
+    id: "8727976", waterTempId: "8728690",
     name: "Snipe Island - Econfina River State Park", slug: "snipe-island-econfina-river-state-park",
     state: 'florida', city: "Snipe Island - Econfina River State Park, FL", region: "Big Bend Florida",
     lat: 30.061899185180664, lon: -83.95269775390625, latDisplay: "30.06°N", lonDisplay: "83.95°W",
@@ -10363,7 +10363,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8727989", waterTempId: "8727989",
+    id: "8727989", waterTempId: "8728690",
     name: "Mandalay - Aucilla River", slug: "mandalay-aucilla-river",
     state: 'florida', city: "Mandalay - Aucilla River, FL", region: "Big Bend Florida",
     lat: 30.1267, lon: -83.975, latDisplay: "30.13°N", lonDisplay: "83.97°W",
@@ -10385,7 +10385,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728104", waterTempId: "8728104",
+    id: "8728104", waterTempId: "8728690",
     name: "Port Leon", slug: "port-leon",
     state: 'florida', city: "Port Leon, FL", region: "Florida Panhandle",
     lat: 30.124399185180664, lon: -84.14900207519531, latDisplay: "30.12°N", lonDisplay: "84.15°W",
@@ -10407,7 +10407,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728130", waterTempId: "8728130",
+    id: "8728130", waterTempId: "8728690",
     name: "ST. MARKS RIVER ENTRANCE", slug: "st-marks-river-entrance",
     state: 'florida', city: "ST. MARKS RIVER ENTRANCE, FL", region: "Florida Panhandle",
     lat: 30.0783, lon: -84.1783, latDisplay: "30.08°N", lonDisplay: "84.18°W",
@@ -10429,7 +10429,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728142", waterTempId: "8728142",
+    id: "8728142", waterTempId: "8728690",
     name: "St. Marks - St. Marks River", slug: "st-marks-st-marks-river",
     state: 'florida', city: "St. Marks - St. Marks River, FL", region: "Florida Panhandle",
     lat: 30.1533, lon: -84.2033, latDisplay: "30.15°N", lonDisplay: "84.20°W",
@@ -10451,7 +10451,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728152", waterTempId: "8728152",
+    id: "8728152", waterTempId: "8728690",
     name: "St. Marks - Wakulla River", slug: "st-marks-wakulla-river",
     state: 'florida', city: "St. Marks - Wakulla River, FL", region: "Florida Panhandle",
     lat: 30.158899307250977, lon: -84.21859741210938, latDisplay: "30.16°N", lonDisplay: "84.22°W",
@@ -10473,7 +10473,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728229", waterTempId: "8728229",
+    id: "8728229", waterTempId: "8728690",
     name: "Shell Point - Walker Creek", slug: "shell-point-walker-creek",
     state: 'florida', city: "Shell Point - Walker Creek, FL", region: "Florida Panhandle",
     lat: 30.05833333333333, lon: -84.29055555555556, latDisplay: "30.06°N", lonDisplay: "84.29°W",
@@ -10495,7 +10495,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728237", waterTempId: "8728237",
+    id: "8728237", waterTempId: "8728690",
     name: "Bald Point - Ochlockonee Bay", slug: "bald-point-ochlockonee-bay",
     state: 'florida', city: "Bald Point - Ochlockonee Bay, FL", region: "Florida Panhandle",
     lat: 29.9483, lon: -84.3417, latDisplay: "29.95°N", lonDisplay: "84.34°W",
@@ -10517,7 +10517,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728262", waterTempId: "8728262",
+    id: "8728262", waterTempId: "8728690",
     name: "Wakulla Airport - Ochlockonee Bay", slug: "wakulla-airport-ochlockonee-bay",
     state: 'florida', city: "Wakulla Airport - Ochlockonee Bay, FL", region: "Florida Panhandle",
     lat: 29.980199813842773, lon: -84.3958969116211, latDisplay: "29.98°N", lonDisplay: "84.40°W",
@@ -10539,7 +10539,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728269", waterTempId: "8728269",
+    id: "8728269", waterTempId: "8728690",
     name: "Panacea - Dickerson Bay", slug: "panacea-dickerson-bay",
     state: 'florida', city: "Panacea - Dickerson Bay, FL", region: "Florida Panhandle",
     lat: 30.02829933166504, lon: -84.38670349121094, latDisplay: "30.03°N", lonDisplay: "84.39°W",
@@ -10561,7 +10561,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728288", waterTempId: "8728288",
+    id: "8728288", waterTempId: "8728690",
     name: "Alligator Point - St. James Island", slug: "alligator-point-st-james-island",
     state: 'florida', city: "Alligator Point - St. James Island, FL", region: "Florida Panhandle",
     lat: 29.9033, lon: -84.4133, latDisplay: "29.90°N", lonDisplay: "84.41°W",
@@ -10583,7 +10583,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728360", waterTempId: "8728360",
+    id: "8728360", waterTempId: "8728690",
     name: "Turkey Point - St. James Island", slug: "turkey-point-st-james-island",
     state: 'florida', city: "Turkey Point - St. James Island, FL", region: "Florida Panhandle",
     lat: 29.915, lon: -84.5117, latDisplay: "29.91°N", lonDisplay: "84.51°W",
@@ -10605,7 +10605,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728408", waterTempId: "8728408",
+    id: "8728408", waterTempId: "8728690",
     name: "Dog Island - East End", slug: "dog-island-east-end",
     state: 'florida', city: "Dog Island - East End, FL", region: "Florida Panhandle",
     lat: 29.81, lon: -84.585, latDisplay: "29.81°N", lonDisplay: "84.58°W",
@@ -10627,7 +10627,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728412", waterTempId: "8728412",
+    id: "8728412", waterTempId: "8728690",
     name: "Lanark - St. George Sound", slug: "lanark-st-george-sound",
     state: 'florida', city: "Lanark - St. George Sound, FL", region: "Florida Panhandle",
     lat: 29.878299713134766, lon: -84.59500122070312, latDisplay: "29.88°N", lonDisplay: "84.60°W",
@@ -10649,7 +10649,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728464", waterTempId: "8728464",
+    id: "8728464", waterTempId: "8728690",
     name: "Carrabelle - Carrabelle River", slug: "carrabelle-carrabelle-river",
     state: 'florida', city: "Carrabelle - Carrabelle River, FL", region: "Florida Panhandle",
     lat: 29.85, lon: -84.665, latDisplay: "29.85°N", lonDisplay: "84.67°W",
@@ -10671,7 +10671,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728465", waterTempId: "8728465",
+    id: "8728465", waterTempId: "8728690",
     name: "Dog Island - west end", slug: "dog-island-west-end",
     state: 'florida', city: "Dog Island - west end, FL", region: "Florida Panhandle",
     lat: 29.785, lon: -84.6667, latDisplay: "29.79°N", lonDisplay: "84.67°W",
@@ -10693,7 +10693,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728486", waterTempId: "8728486",
+    id: "8728486", waterTempId: "8728690",
     name: "St. George Island - Northeast End", slug: "st-george-island-northeast-end",
     state: 'florida', city: "St. George Island - Northeast End, FL", region: "Florida Panhandle",
     lat: 29.766695022583008, lon: -84.69999694824219, latDisplay: "29.77°N", lonDisplay: "84.70°W",
@@ -10715,7 +10715,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728488", waterTempId: "8728488",
+    id: "8728488", waterTempId: "8728690",
     name: "South Carrabelle Beach", slug: "south-carrabelle-beach",
     state: 'florida', city: "South Carrabelle Beach, FL", region: "Florida Panhandle",
     lat: 29.801700592041016, lon: -84.73670196533203, latDisplay: "29.80°N", lonDisplay: "84.74°W",
@@ -10737,7 +10737,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728548", waterTempId: "8728548",
+    id: "8728548", waterTempId: "8728690",
     name: "St. George Island - East End", slug: "st-george-island-east-end",
     state: 'florida', city: "St. George Island - East End, FL", region: "Florida Panhandle",
     lat: 29.6867, lon: -84.7867, latDisplay: "29.69°N", lonDisplay: "84.79°W",
@@ -10759,7 +10759,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728552", waterTempId: "8728552",
+    id: "8728552", waterTempId: "8728690",
     name: "St. George Island - Rattlesnake Cove", slug: "st-george-island-rattlesnake-cove",
     state: 'florida', city: "St. George Island - Rattlesnake Cove, FL", region: "Florida Panhandle",
     lat: 29.6917, lon: -84.7917, latDisplay: "29.69°N", lonDisplay: "84.79°W",
@@ -10781,7 +10781,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728593", waterTempId: "8728593",
+    id: "8728593", waterTempId: "8728690",
     name: "East Bayou - Hwy 65 bridge - East Bay", slug: "east-bayou-hwy-65-bridge-east-bay",
     state: 'florida', city: "East Bayou - Hwy 65 bridge - East Bay, FL", region: "Florida Panhandle",
     lat: 29.818899154663086, lon: -84.85030364990234, latDisplay: "29.82°N", lonDisplay: "84.85°W",
@@ -10803,7 +10803,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728619", waterTempId: "8728619",
+    id: "8728619", waterTempId: "8728690",
     name: "Cat Point - Apalachicola Bay", slug: "cat-point-apalachicola-bay",
     state: 'florida', city: "Cat Point - Apalachicola Bay, FL", region: "Florida Panhandle",
     lat: 29.72330093383789, lon: -84.88670349121094, latDisplay: "29.72°N", lonDisplay: "84.89°W",
@@ -10825,7 +10825,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728626", waterTempId: "8728626",
+    id: "8728626", waterTempId: "8728690",
     name: "St. George Island - 12th St. W (Bayside)", slug: "st-george-island-12th-st-w-bayside",
     state: 'florida', city: "St. George Island - 12th St. W (Bayside), FL", region: "Florida Panhandle",
     lat: 29.6533, lon: -84.8967, latDisplay: "29.65°N", lonDisplay: "84.90°W",
@@ -10847,7 +10847,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728669", waterTempId: "8728669",
+    id: "8728669", waterTempId: "8728690",
     name: "St. George Island - Sikes Cut", slug: "st-george-island-sikes-cut",
     state: 'florida', city: "St. George Island - Sikes Cut, FL", region: "Florida Panhandle",
     lat: 29.613300323486328, lon: -84.95829772949219, latDisplay: "29.61°N", lonDisplay: "84.96°W",
@@ -10891,7 +10891,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728694", waterTempId: "8728694",
+    id: "8728694", waterTempId: "8728690",
     name: "WHITE BEACH - EAST BAY", slug: "white-beach-east-bay",
     state: 'florida', city: "WHITE BEACH - EAST BAY, FL", region: "Florida Panhandle",
     lat: 29.785, lon: -84.8983, latDisplay: "29.79°N", lonDisplay: "84.90°W",
@@ -10913,7 +10913,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728711", waterTempId: "8728711",
+    id: "8728711", waterTempId: "8728690",
     name: "Apalachicola River (A&N RR bridge)", slug: "apalachicola-river-an-rr-bridge",
     state: 'florida', city: "Apalachicola River (A&N RR bridge), FL", region: "Florida Panhandle",
     lat: 29.7632999420166, lon: -85.0333023071289, latDisplay: "29.76°N", lonDisplay: "85.03°W",
@@ -10935,7 +10935,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728728", waterTempId: "8728728",
+    id: "8728728", waterTempId: "8728690",
     name: "Little St. George Island - Horseshoe Cove", slug: "little-st-george-island-horseshoe-cove",
     state: 'florida', city: "Little St. George Island - Horseshoe Cove, FL", region: "Florida Panhandle",
     lat: 29.603599548339844, lon: -85.04280090332031, latDisplay: "29.60°N", lonDisplay: "85.04°W",
@@ -10957,7 +10957,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728757", waterTempId: "8728757",
+    id: "8728757", waterTempId: "8728690",
     name: "Huckleberry Landing - Jackson River", slug: "huckleberry-landing-jackson-river",
     state: 'florida', city: "Huckleberry Landing - Jackson River, FL", region: "Florida Panhandle",
     lat: 29.770000457763672, lon: -85.08499908447266, latDisplay: "29.77°N", lonDisplay: "85.08°W",
@@ -10979,7 +10979,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728766", waterTempId: "8728766",
+    id: "8728766", waterTempId: "8728690",
     name: "West Pass", slug: "west-pass",
     state: 'florida', city: "West Pass, FL", region: "Florida Panhandle",
     lat: 29.6333, lon: -85.0967, latDisplay: "29.63°N", lonDisplay: "85.10°W",
@@ -11001,7 +11001,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728786", waterTempId: "8728786",
+    id: "8728786", waterTempId: "8728690",
     name: "Eleven Mile - St. Vincent Sound", slug: "eleven-mile-st-vincent-sound",
     state: 'florida', city: "Eleven Mile - St. Vincent Sound, FL", region: "Florida Panhandle",
     lat: 29.70669937133789, lon: -85.1532974243164, latDisplay: "29.71°N", lonDisplay: "85.15°W",
@@ -11023,7 +11023,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728819", waterTempId: "8728819",
+    id: "8728819", waterTempId: "8728690",
     name: "Lake Wimico", slug: "lake-wimico",
     state: 'florida', city: "Lake Wimico, FL", region: "Florida Panhandle",
     lat: 29.821399688720703, lon: -85.17330169677734, latDisplay: "29.82°N", lonDisplay: "85.17°W",
@@ -11045,7 +11045,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728852", waterTempId: "8728852",
+    id: "8728852", waterTempId: "8728690",
     name: "Indian Pass - St. Vincent Sound", slug: "indian-pass-st-vincent-sound",
     state: 'florida', city: "Indian Pass - St. Vincent Sound, FL", region: "Florida Panhandle",
     lat: 29.685100555419922, lon: -85.22129821777344, latDisplay: "29.69°N", lonDisplay: "85.22°W",
@@ -11067,7 +11067,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728853", waterTempId: "8728853",
+    id: "8728853", waterTempId: "8728690",
     name: "White City - ICWW", slug: "white-city-icww",
     state: 'florida', city: "White City - ICWW, FL", region: "Florida Panhandle",
     lat: 29.880699157714844, lon: -85.22139739990234, latDisplay: "29.88°N", lonDisplay: "85.22°W",
@@ -11089,7 +11089,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728886", waterTempId: "8728886",
+    id: "8728886", waterTempId: "8728690",
     name: "White City - Gulf County Canal", slug: "white-city-gulf-county-canal",
     state: 'florida', city: "White City - Gulf County Canal, FL", region: "Florida Panhandle",
     lat: 29.86680030822754, lon: -85.27059936523438, latDisplay: "29.87°N", lonDisplay: "85.27°W",
@@ -11111,7 +11111,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728912", waterTempId: "8728912",
+    id: "8728912", waterTempId: "8728690",
     name: "Port Saint Joe - St. Joseph Bay", slug: "port-saint-joe-st-joseph-bay",
     state: 'florida', city: "Port Saint Joe - St. Joseph Bay, FL", region: "Florida Panhandle",
     lat: 29.815, lon: -85.3133, latDisplay: "29.82°N", lonDisplay: "85.31°W",
@@ -11133,7 +11133,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728957", waterTempId: "8728957",
+    id: "8728957", waterTempId: "8729108",
     name: "Overstreet", slug: "overstreet",
     state: 'florida', city: "Overstreet, FL", region: "Florida Panhandle",
     lat: 29.996700286865234, lon: -85.37000274658203, latDisplay: "30.00°N", lonDisplay: "85.37°W",
@@ -11155,7 +11155,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728958", waterTempId: "8728958",
+    id: "8728958", waterTempId: "8729108",
     name: "St. Joseph Point - St. Joseph Bay", slug: "st-joseph-point-st-joseph-bay",
     state: 'florida', city: "St. Joseph Point - St. Joseph Bay, FL", region: "Florida Panhandle",
     lat: 29.873300552368164, lon: -85.38999938964844, latDisplay: "29.87°N", lonDisplay: "85.39°W",
@@ -11177,7 +11177,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728973", waterTempId: "8728973",
+    id: "8728973", waterTempId: "8729108",
     name: "Wetappo Creek - East Bay", slug: "wetappo-creek-east-bay",
     state: 'florida', city: "Wetappo Creek - East Bay, FL", region: "Florida Panhandle",
     lat: 30.038299560546875, lon: -85.39330291748047, latDisplay: "30.04°N", lonDisplay: "85.39°W",
@@ -11199,7 +11199,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8728978", waterTempId: "8728978",
+    id: "8728978", waterTempId: "8728690",
     name: "Cape San Blas - Western Cape", slug: "cape-san-blas-western-cape",
     state: 'florida', city: "Cape San Blas - Western Cape, FL", region: "Florida Panhandle",
     lat: 29.764400482177734, lon: -85.40249633789062, latDisplay: "29.76°N", lonDisplay: "85.40°W",
@@ -11221,7 +11221,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729015", waterTempId: "8729015",
+    id: "8729015", waterTempId: "8729108",
     name: "Allanton - East Bay", slug: "allanton-east-bay",
     state: 'florida', city: "Allanton - East Bay, FL", region: "Florida Panhandle",
     lat: 30.030000686645508, lon: -85.46499633789062, latDisplay: "30.03°N", lonDisplay: "85.46°W",
@@ -11243,7 +11243,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729017", waterTempId: "8729017",
+    id: "8729017", waterTempId: "8729108",
     name: "Farmdale - East Bay", slug: "farmdale-east-bay",
     state: 'florida', city: "Farmdale - East Bay, FL", region: "Florida Panhandle",
     lat: 30.016700744628906, lon: -85.47000122070312, latDisplay: "30.02°N", lonDisplay: "85.47°W",
@@ -11265,7 +11265,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729026", waterTempId: "8729026",
+    id: "8729026", waterTempId: "8729108",
     name: "Goose Point - East Bay", slug: "goose-point-east-bay",
     state: 'florida', city: "Goose Point - East Bay, FL", region: "Florida Panhandle",
     lat: 30.061199188232422, lon: -85.48860168457031, latDisplay: "30.06°N", lonDisplay: "85.49°W",
@@ -11287,7 +11287,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729045", waterTempId: "8729045",
+    id: "8729045", waterTempId: "8729108",
     name: "Laird Bayou - East Bay", slug: "laird-bayou-east-bay",
     state: 'florida', city: "Laird Bayou - East Bay, FL", region: "Florida Panhandle",
     lat: 30.1217, lon: -85.5283, latDisplay: "30.12°N", lonDisplay: "85.53°W",
@@ -11309,7 +11309,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729082", waterTempId: "8729082",
+    id: "8729082", waterTempId: "8729108",
     name: "Deer Point Lake - Hwy 2321 bridge - North Bay", slug: "deer-point-lake-hwy-2321-bridge-north-bay",
     state: 'florida', city: "Deer Point Lake - Hwy 2321 bridge - North Bay, FL", region: "Florida Panhandle",
     lat: 30.26959991455078, lon: -85.60790252685547, latDisplay: "30.27°N", lonDisplay: "85.61°W",
@@ -11331,7 +11331,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729084", waterTempId: "8729084",
+    id: "8729084", waterTempId: "8729108",
     name: "Parker", slug: "parker",
     state: 'florida', city: "Parker, FL", region: "Florida Panhandle",
     lat: 30.1267, lon: -85.6117, latDisplay: "30.13°N", lonDisplay: "85.61°W",
@@ -11353,7 +11353,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729102", waterTempId: "8729102",
+    id: "8729102", waterTempId: "8729108",
     name: "Lynn Haven - North Bay", slug: "lynn-haven-north-bay",
     state: 'florida', city: "Lynn Haven - North Bay, FL", region: "Florida Panhandle",
     lat: 30.255, lon: -85.6483, latDisplay: "30.25°N", lonDisplay: "85.65°W",
@@ -11397,7 +11397,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729132", waterTempId: "8729132",
+    id: "8729132", waterTempId: "8729108",
     name: "Courtney Point", slug: "courtney-point",
     state: 'florida', city: "Courtney Point, FL", region: "Florida Panhandle",
     lat: 30.15169906616211, lon: -85.66670227050781, latDisplay: "30.15°N", lonDisplay: "85.67°W",
@@ -11419,7 +11419,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729136", waterTempId: "8729136",
+    id: "8729136", waterTempId: "8729108",
     name: "Channel entrance", slug: "channel-entrance",
     state: 'florida', city: "Channel entrance, FL", region: "Florida Panhandle",
     lat: 30.125, lon: -85.73, latDisplay: "30.13°N", lonDisplay: "85.73°W",
@@ -11441,7 +11441,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729142", waterTempId: "8729142",
+    id: "8729142", waterTempId: "8729108",
     name: "Sulphur Point - Port of Panama City", slug: "sulphur-point-port-of-panama-city",
     state: 'florida', city: "Sulphur Point - Port of Panama City, FL", region: "Florida Panhandle",
     lat: 30.183000564575195, lon: -85.73280334472656, latDisplay: "30.18°N", lonDisplay: "85.73°W",
@@ -11463,7 +11463,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729152", waterTempId: "8729152",
+    id: "8729152", waterTempId: "8729108",
     name: "Alligator Bayou", slug: "alligator-bayou",
     state: 'florida', city: "Alligator Bayou, FL", region: "Florida Panhandle",
     lat: 30.17, lon: -85.755, latDisplay: "30.17°N", lonDisplay: "85.75°W",
@@ -11485,7 +11485,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729197", waterTempId: "8729197",
+    id: "8729197", waterTempId: "8729210",
     name: "West Bay Creek - West Bay", slug: "west-bay-creek-west-bay",
     state: 'florida', city: "West Bay Creek - West Bay, FL", region: "Florida Panhandle",
     lat: 30.29330062866211, lon: -85.8582992553711, latDisplay: "30.29°N", lonDisplay: "85.86°W",
@@ -11529,7 +11529,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729376", waterTempId: "8729376",
+    id: "8729376", waterTempId: "8729210",
     name: "Santa Rosa - Hogtown Bayou", slug: "santa-rosa-hogtown-bayou",
     state: 'florida', city: "Santa Rosa - Hogtown Bayou, FL", region: "Florida Panhandle",
     lat: 30.399999618530273, lon: -86.22830200195312, latDisplay: "30.40°N", lonDisplay: "86.23°W",
@@ -11551,7 +11551,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729425", waterTempId: "8729425",
+    id: "8729425", waterTempId: "8729210",
     name: "Driftwood Point - Choctawhatchee Bay", slug: "driftwood-point-choctawhatchee-bay",
     state: 'florida', city: "Driftwood Point - Choctawhatchee Bay, FL", region: "Florida Panhandle",
     lat: 30.389400482177734, lon: -86.32879638671875, latDisplay: "30.39°N", lonDisplay: "86.33°W",
@@ -11573,7 +11573,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729479", waterTempId: "8729479",
+    id: "8729479", waterTempId: "8729210",
     name: "Rocky Bayou - Choctawhatchee Bay", slug: "rocky-bayou-choctawhatchee-bay",
     state: 'florida', city: "Rocky Bayou - Choctawhatchee Bay, FL", region: "Florida Panhandle",
     lat: 30.50670051574707, lon: -86.44670104980469, latDisplay: "30.51°N", lonDisplay: "86.45°W",
@@ -11595,7 +11595,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729501", waterTempId: "8729501",
+    id: "8729501", waterTempId: "8729210",
     name: "Valparaiso", slug: "valparaiso",
     state: 'florida', city: "Valparaiso, FL", region: "Florida Panhandle",
     lat: 30.503299713134766, lon: -86.49330139160156, latDisplay: "30.50°N", lonDisplay: "86.49°W",
@@ -11617,7 +11617,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729511", waterTempId: "8729511",
+    id: "8729511", waterTempId: "8729210",
     name: "East Pass (Destin)", slug: "east-pass-destin",
     state: 'florida', city: "East Pass (Destin), FL", region: "Florida Panhandle",
     lat: 30.395, lon: -86.5133, latDisplay: "30.39°N", lonDisplay: "86.51°W",
@@ -11639,7 +11639,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729538", waterTempId: "8729538",
+    id: "8729538", waterTempId: "8729840",
     name: "Shalimar - Garnier Bayou", slug: "shalimar-garnier-bayou",
     state: 'florida', city: "Shalimar - Garnier Bayou, FL", region: "Florida Panhandle",
     lat: 30.435, lon: -86.5867, latDisplay: "30.43°N", lonDisplay: "86.59°W",
@@ -11661,7 +11661,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729547", waterTempId: "8729547",
+    id: "8729547", waterTempId: "8729840",
     name: "Okaloosa Island", slug: "okaloosa-island",
     state: 'florida', city: "Okaloosa Island, FL", region: "Florida Panhandle",
     lat: 30.391399383544922, lon: -86.59320068359375, latDisplay: "30.39°N", lonDisplay: "86.59°W",
@@ -11683,7 +11683,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729572", waterTempId: "8729572",
+    id: "8729572", waterTempId: "8729840",
     name: "Mary Esther - Santa Rosa Sound", slug: "mary-esther-santa-rosa-sound",
     state: 'florida', city: "Mary Esther - Santa Rosa Sound, FL", region: "Florida Panhandle",
     lat: 30.4064998626709, lon: -86.65049743652344, latDisplay: "30.41°N", lonDisplay: "86.65°W",
@@ -11705,7 +11705,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729613", waterTempId: "8729613",
+    id: "8729613", waterTempId: "8729840",
     name: "Harris - The Narrows", slug: "harris-the-narrows",
     state: 'florida', city: "Harris - The Narrows, FL", region: "Florida Panhandle",
     lat: 30.4083, lon: -86.7317, latDisplay: "30.41°N", lonDisplay: "86.73°W",
@@ -11727,7 +11727,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729678", waterTempId: "8729678",
+    id: "8729678", waterTempId: "8729840",
     name: "Navarre Beach", slug: "navarre-beach",
     state: 'florida', city: "Navarre Beach, FL", region: "Florida Panhandle",
     lat: 30.3767, lon: -86.865, latDisplay: "30.38°N", lonDisplay: "86.86°W",
@@ -11749,7 +11749,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729702", waterTempId: "8729702",
+    id: "8729702", waterTempId: "8729840",
     name: "Holley - East Bay", slug: "holley-east-bay",
     state: 'florida', city: "Holley - East Bay, FL", region: "Florida Panhandle",
     lat: 30.450000762939453, lon: -86.91829681396484, latDisplay: "30.45°N", lonDisplay: "86.92°W",
@@ -11771,7 +11771,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729717", waterTempId: "8729717",
+    id: "8729717", waterTempId: "8729840",
     name: "Navarre - North Side - East Bay", slug: "navarre-north-side-east-bay",
     state: 'florida', city: "Navarre - North Side - East Bay, FL", region: "Florida Panhandle",
     lat: 30.443099975585938, lon: -86.95140075683594, latDisplay: "30.44°N", lonDisplay: "86.95°W",
@@ -11793,7 +11793,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729736", waterTempId: "8729736",
+    id: "8729736", waterTempId: "8729840",
     name: "Woodlawn Beach - Santa Rosa Sound", slug: "woodlawn-beach-santa-rosa-sound",
     state: 'florida', city: "Woodlawn Beach - Santa Rosa Sound, FL", region: "Florida Panhandle",
     lat: 30.386699676513672, lon: -86.99169921875, latDisplay: "30.39°N", lonDisplay: "86.99°W",
@@ -11815,7 +11815,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729742", waterTempId: "8729742",
+    id: "8729742", waterTempId: "8729840",
     name: "Bay Point - Blackwater River", slug: "bay-point-blackwater-river",
     state: 'florida', city: "Bay Point - Blackwater River, FL", region: "Florida Panhandle",
     lat: 30.5717, lon: -87.005, latDisplay: "30.57°N", lonDisplay: "87.00°W",
@@ -11837,7 +11837,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729747", waterTempId: "8729747",
+    id: "8729747", waterTempId: "8729840",
     name: "Shield Point - Blackwater River", slug: "shield-point-blackwater-river",
     state: 'florida', city: "Shield Point - Blackwater River, FL", region: "Florida Panhandle",
     lat: 30.58169937133789, lon: -87.01499938964844, latDisplay: "30.58°N", lonDisplay: "87.01°W",
@@ -11859,7 +11859,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729753", waterTempId: "8729753",
+    id: "8729753", waterTempId: "8729840",
     name: "Hawkins Rec. Park - Blackwater River", slug: "hawkins-rec-park-blackwater-river",
     state: 'florida', city: "Hawkins Rec. Park - Blackwater River, FL", region: "Florida Panhandle",
     lat: 30.636699676513672, lon: -87.0282974243164, latDisplay: "30.64°N", lonDisplay: "87.03°W",
@@ -11881,7 +11881,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729791", waterTempId: "8729791",
+    id: "8729791", waterTempId: "8729840",
     name: "Hernandez Point - Escambia Bay", slug: "hernandez-point-escambia-bay",
     state: 'florida', city: "Hernandez Point - Escambia Bay, FL", region: "Florida Panhandle",
     lat: 30.454999923706055, lon: -87.0999984741211, latDisplay: "30.45°N", lonDisplay: "87.10°W",
@@ -11903,7 +11903,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729806", waterTempId: "8729806",
+    id: "8729806", waterTempId: "8729840",
     name: "Fishing Bend - Santa Rosa Sound", slug: "fishing-bend-santa-rosa-sound",
     state: 'florida', city: "Fishing Bend - Santa Rosa Sound, FL", region: "Florida Panhandle",
     lat: 30.336700439453125, lon: -87.13999938964844, latDisplay: "30.34°N", lonDisplay: "87.14°W",
@@ -11925,7 +11925,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729807", waterTempId: "8729807",
+    id: "8729807", waterTempId: "8729840",
     name: "Pensacola Beach Pier", slug: "pensacola-beach-pier",
     state: 'florida', city: "Pensacola Beach Pier, FL", region: "Florida Panhandle",
     lat: 30.3275, lon: -87.141944, latDisplay: "30.33°N", lonDisplay: "87.14°W",
@@ -11947,7 +11947,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729816", waterTempId: "8729816",
+    id: "8729816", waterTempId: "8729840",
     name: "Lora Point - Escambia Bay", slug: "lora-point-escambia-bay",
     state: 'florida', city: "Lora Point - Escambia Bay, FL", region: "Florida Panhandle",
     lat: 30.514999389648438, lon: -87.16169738769531, latDisplay: "30.51°N", lonDisplay: "87.16°W",
@@ -11969,7 +11969,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729824", waterTempId: "8729824",
+    id: "8729824", waterTempId: "8729840",
     name: "Floridatown - Escambia Bay", slug: "floridatown-escambia-bay",
     state: 'florida', city: "Floridatown - Escambia Bay, FL", region: "Florida Panhandle",
     lat: 30.58169937133789, lon: -87.18000030517578, latDisplay: "30.58°N", lonDisplay: "87.18°W",
@@ -12013,7 +12013,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729868", waterTempId: "8729868",
+    id: "8729868", waterTempId: "8729840",
     name: "Warrington - 2 miles south of", slug: "warrington-2-miles-south-of",
     state: 'florida', city: "Warrington - 2 miles south of, FL", region: "Florida Panhandle",
     lat: 30.345, lon: -87.2733, latDisplay: "30.34°N", lonDisplay: "87.27°W",
@@ -12035,7 +12035,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729887", waterTempId: "8729887",
+    id: "8729887", waterTempId: "8729840",
     name: "Fort McRee Breakwater", slug: "fort-mcree-breakwater",
     state: 'florida', city: "Fort McRee Breakwater, FL", region: "Florida Panhandle",
     lat: 30.3267, lon: -87.3117, latDisplay: "30.33°N", lonDisplay: "87.31°W",
@@ -12057,7 +12057,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729905", waterTempId: "8729905",
+    id: "8729905", waterTempId: "8729840",
     name: "Millview - Perdido Bay", slug: "millview-perdido-bay",
     state: 'florida', city: "Millview - Perdido Bay, FL", region: "Florida Panhandle",
     lat: 30.4183, lon: -87.3567, latDisplay: "30.42°N", lonDisplay: "87.36°W",
@@ -12079,7 +12079,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729909", waterTempId: "8729909",
+    id: "8729909", waterTempId: "8729840",
     name: "Big Lagoon", slug: "big-lagoon",
     state: 'florida', city: "Big Lagoon, FL", region: "Florida Panhandle",
     lat: 30.32670021057129, lon: -87.35669708251953, latDisplay: "30.33°N", lonDisplay: "87.36°W",
@@ -12101,7 +12101,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729941", waterTempId: "8729941",
+    id: "8729941", waterTempId: "8729840",
     name: "Blue Angels Park", slug: "blue-angels-park",
     state: 'florida', city: "Blue Angels Park, FL", region: "Florida Panhandle",
     lat: 30.38694444444445, lon: -87.42880555555556, latDisplay: "30.39°N", lonDisplay: "87.43°W",
@@ -12123,7 +12123,7 @@ export const FLORIDA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8729962", waterTempId: "8729962",
+    id: "8729962", waterTempId: "8729840",
     name: "Nix Point - Perdido Bay", slug: "nix-point-perdido-bay",
     state: 'florida', city: "Nix Point - Perdido Bay, FL", region: "Florida Panhandle",
     lat: 30.3933, lon: -87.425, latDisplay: "30.39°N", lonDisplay: "87.42°W",

@@ -7,7 +7,7 @@ export type { StationConfig, NearbyStation, Species }
 
 export const MISSISSIPPI_STATIONS: StationConfig[] = [
   {
-    id: "8740166", waterTempId: "8740166",
+    id: "8740166", waterTempId: "8741533",
     name: "Grand Bay NERR, Mississippi Sound", slug: "grand-bay-nerr-mississippi-sound",
     state: "mississippi", city: "Grand Bay NERR, Mississippi Sound, MS", region: "Pascagoula Area",
     lat: 30.41319444444444, lon: -88.4028888888889, latDisplay: "30.41°N", lonDisplay: "88.40°W",
@@ -29,7 +29,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8740405", waterTempId: "8740405",
+    id: "8740405", waterTempId: "8741533",
     name: "Petit Bois Island, Mississippi Sound", slug: "petit-bois-island-mississippi-sound",
     state: "mississippi", city: "Petit Bois Island, Mississippi Sound, MS", region: "Pascagoula Area",
     lat: 30.2033, lon: -88.4417, latDisplay: "30.20°N", lonDisplay: "88.44°W",
@@ -51,7 +51,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8740448", waterTempId: "8740448",
+    id: "8740448", waterTempId: "8741533",
     name: "Point of Pines, Bayou Cumbest", slug: "point-of-pines-bayou-cumbest",
     state: "mississippi", city: "Point of Pines, Bayou Cumbest, MS", region: "Pascagoula Area",
     lat: 30.3867, lon: -88.44, latDisplay: "30.39°N", lonDisplay: "88.44°W",
@@ -73,7 +73,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8740993", waterTempId: "8740993",
+    id: "8740993", waterTempId: "8741533",
     name: "Pascagoula, South Side", slug: "pascagoula-south-side",
     state: "mississippi", city: "Pascagoula, South Side, MS", region: "Pascagoula Area",
     lat: 30.322200775146484, lon: -88.50800323486328, latDisplay: "30.32°N", lonDisplay: "88.51°W",
@@ -95,7 +95,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8741041", waterTempId: "8741041",
+    id: "8741041", waterTempId: "8741533",
     name: "Dock E, Port of Pascagoula", slug: "dock-e-port-of-pascagoula",
     state: "mississippi", city: "Dock E, Port of Pascagoula, MS", region: "Pascagoula Area",
     lat: 30.3477778, lon: -88.5058333, latDisplay: "30.35°N", lonDisplay: "88.51°W",
@@ -117,7 +117,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8741196", waterTempId: "8741196",
+    id: "8741196", waterTempId: "8741533",
     name: "Pascagoula, Mississippi Sound", slug: "pascagoula-mississippi-sound",
     state: "mississippi", city: "Pascagoula, Mississippi Sound, MS", region: "Pascagoula Area",
     lat: 30.34, lon: -88.5333, latDisplay: "30.34°N", lonDisplay: "88.53°W",
@@ -161,7 +161,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8742205", waterTempId: "8742205",
+    id: "8742205", waterTempId: "8741533",
     name: "Graveline Bayou Entrance", slug: "graveline-bayou-entrance",
     state: "mississippi", city: "Graveline Bayou Entrance, MS", region: "Pascagoula Area",
     lat: 30.3617, lon: -88.6633, latDisplay: "30.36°N", lonDisplay: "88.66°W",
@@ -183,7 +183,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8742221", waterTempId: "8742221",
+    id: "8742221", waterTempId: "8741533",
     name: "Horn Island, Mississippi Sound", slug: "horn-island-mississippi-sound",
     state: "mississippi", city: "Horn Island, Mississippi Sound, MS", region: "Pascagoula Area",
     lat: 30.2383, lon: -88.6667, latDisplay: "30.24°N", lonDisplay: "88.67°W",
@@ -205,7 +205,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8743081", waterTempId: "8743081",
+    id: "8743081", waterTempId: "8741533",
     name: "Hollingsworth Point, Davis Bayou", slug: "hollingsworth-point-davis-bayou",
     state: "mississippi", city: "Hollingsworth Point, Davis Bayou, MS", region: "Pascagoula Area",
     lat: 30.3867, lon: -88.7733, latDisplay: "30.39°N", lonDisplay: "88.77°W",
@@ -227,7 +227,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8743281", waterTempId: "8743281",
+    id: "8743281", waterTempId: "8741533",
     name: "Ocean Springs", slug: "ocean-springs",
     state: "mississippi", city: "Ocean Springs, MS", region: "Pascagoula Area",
     lat: 30.3917, lon: -88.7983, latDisplay: "30.39°N", lonDisplay: "88.80°W",
@@ -249,7 +249,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8743735", waterTempId: "8743735",
+    id: "8743735", waterTempId: "8741533",
     name: "Biloxi (Cadet Point), Biloxi Bay", slug: "biloxi-cadet-point-biloxi-bay",
     state: "mississippi", city: "Biloxi (Cadet Point), Biloxi Bay, MS", region: "Mississippi Sound",
     lat: 30.39, lon: -88.8567, latDisplay: "30.39°N", lonDisplay: "88.86°W",
@@ -271,7 +271,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8744117", waterTempId: "8744117",
+    id: "8744117", waterTempId: "8741533",
     name: "Biloxi", slug: "biloxi",
     state: "mississippi", city: "Biloxi, MS", region: "Mississippi Sound",
     lat: 30.4117, lon: -88.9033, latDisplay: "30.41°N", lonDisplay: "88.90°W",
@@ -293,7 +293,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8744756", waterTempId: "8744756",
+    id: "8744756", waterTempId: "8747437",
     name: "Ship Island, Mississippi Sound", slug: "ship-island-mississippi-sound",
     state: "mississippi", city: "Ship Island, Mississippi Sound, MS", region: "Mississippi Sound",
     lat: 30.2133, lon: -88.9717, latDisplay: "30.21°N", lonDisplay: "88.97°W",
@@ -315,7 +315,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8745101", waterTempId: "8745101",
+    id: "8745101", waterTempId: "8747437",
     name: "Handsboro Bridge, Bernard Bayou", slug: "handsboro-bridge-bernard-bayou",
     state: "mississippi", city: "Handsboro Bridge, Bernard Bayou, MS", region: "Mississippi Sound",
     lat: 30.4067, lon: -89.0267, latDisplay: "30.41°N", lonDisplay: "89.03°W",
@@ -337,7 +337,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8745375", waterTempId: "8745375",
+    id: "8745375", waterTempId: "8747437",
     name: "Turkey Creek, Bernard Bayou", slug: "turkey-creek-bernard-bayou",
     state: "mississippi", city: "Turkey Creek, Bernard Bayou, MS", region: "Mississippi Sound",
     lat: 30.4267, lon: -89.0533, latDisplay: "30.43°N", lonDisplay: "89.05°W",
@@ -359,7 +359,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8745557", waterTempId: "8745557",
+    id: "8745557", waterTempId: "8747437",
     name: "Gulfport Harbor, Mississippi Sound", slug: "gulfport-harbor-mississippi-sound",
     state: "mississippi", city: "Gulfport Harbor, Mississippi Sound, MS", region: "Mississippi Sound",
     lat: 30.36, lon: -89.0817, latDisplay: "30.36°N", lonDisplay: "89.08°W",
@@ -381,7 +381,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8745799", waterTempId: "8745799",
+    id: "8745799", waterTempId: "8747437",
     name: "Cat Island", slug: "cat-island",
     state: "mississippi", city: "Cat Island, MS", region: "Mississippi Sound",
     lat: 30.2317, lon: -89.1167, latDisplay: "30.23°N", lonDisplay: "89.12°W",
@@ -403,7 +403,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8746819", waterTempId: "8746819",
+    id: "8746819", waterTempId: "8747437",
     name: "Pass Christian Yacht Club, Mississippi Sound", slug: "pass-christian-yacht-club-mississippi-sound",
     state: "mississippi", city: "Pass Christian Yacht Club, Mississippi Sound, MS", region: "Mississippi Sound",
     lat: 30.31, lon: -89.245, latDisplay: "30.31°N", lonDisplay: "89.25°W",
@@ -447,7 +447,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8747766", waterTempId: "8747766",
+    id: "8747766", waterTempId: "8747437",
     name: "Waveland", slug: "waveland",
     state: "mississippi", city: "Waveland, MS", region: "Mississippi Sound",
     lat: 30.2817, lon: -89.3667, latDisplay: "30.28°N", lonDisplay: "89.37°W",
@@ -469,7 +469,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8749704", waterTempId: "8749704",
+    id: "8749704", waterTempId: "8747437",
     name: "Pearlington, Pearl River", slug: "pearlington-pearl-river",
     state: "mississippi", city: "Pearlington, Pearl River, MS", region: "Mississippi Sound",
     lat: 30.24, lon: -89.615, latDisplay: "30.24°N", lonDisplay: "89.61°W",
@@ -491,7 +491,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8740175", waterTempId: "8740175",
+    id: "8740175", waterTempId: "8741533",
     name: "B.H. FISH CAMP, BAYOU HERON", slug: "bh-fish-camp-bayou-heron",
     state: "mississippi", city: "B.H. FISH CAMP, BAYOU HERON, MS", region: "Pascagoula Area",
     lat: 30.4083, lon: -88.4017, latDisplay: "30.41°N", lonDisplay: "88.40°W",
@@ -513,7 +513,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8740965", waterTempId: "8740965",
+    id: "8740965", waterTempId: "8741533",
     name: "MS CHEMICAL CO., BAYOU CASOTTE", slug: "ms-chemical-co-bayou-casotte",
     state: "mississippi", city: "MS CHEMICAL CO., BAYOU CASOTTE, MS", region: "Pascagoula Area",
     lat: 30.3633, lon: -88.5567, latDisplay: "30.36°N", lonDisplay: "88.56°W",
@@ -535,7 +535,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8741414", waterTempId: "8741414",
+    id: "8741414", waterTempId: "8741533",
     name: "ESCATAWPA, PASCAGOULA R.", slug: "escatawpa-pascagoula-r",
     state: "mississippi", city: "ESCATAWPA, PASCAGOULA R., MS", region: "Pascagoula Area",
     lat: 30.44, lon: -88.5567, latDisplay: "30.44°N", lonDisplay: "88.56°W",
@@ -557,7 +557,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8741429", waterTempId: "8741429",
+    id: "8741429", waterTempId: "8741533",
     name: "L&N BRIDGE, PASCAGOULA RIVER", slug: "ln-bridge-pascagoula-river",
     state: "mississippi", city: "L&N BRIDGE, PASCAGOULA RIVER, MS", region: "Pascagoula Area",
     lat: 30.3667, lon: -88.5633, latDisplay: "30.37°N", lonDisplay: "88.56°W",
@@ -579,7 +579,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8741798", waterTempId: "8741798",
+    id: "8741798", waterTempId: "8741533",
     name: "Gautier", slug: "gautier",
     state: "mississippi", city: "Gautier, MS", region: "Pascagoula Area",
     lat: 30.3833, lon: -88.61, latDisplay: "30.38°N", lonDisplay: "88.61°W",
@@ -601,7 +601,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8742523", waterTempId: "8742523",
+    id: "8742523", waterTempId: "8741533",
     name: "North Shore", slug: "north-shore",
     state: "mississippi", city: "North Shore, MS", region: "Pascagoula Area",
     lat: 30.3733, lon: -88.705, latDisplay: "30.37°N", lonDisplay: "88.70°W",
@@ -623,7 +623,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8742947", waterTempId: "8742947",
+    id: "8742947", waterTempId: "8741533",
     name: "EASTERN OLD FORT BAYOU", slug: "eastern-old-fort-bayou",
     state: "mississippi", city: "EASTERN OLD FORT BAYOU, MS", region: "Pascagoula Area",
     lat: 30.44, lon: -88.7267, latDisplay: "30.44°N", lonDisplay: "88.73°W",
@@ -645,7 +645,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8743181", waterTempId: "8743181",
+    id: "8743181", waterTempId: "8741533",
     name: "Old Fort Bayou, Ocean Springs Marina", slug: "old-fort-bayou-ocean-springs-marina",
     state: "mississippi", city: "Old Fort Bayou, Ocean Springs Marina, MS", region: "Pascagoula Area",
     lat: 30.4217, lon: -88.7883, latDisplay: "30.42°N", lonDisplay: "88.79°W",
@@ -667,7 +667,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8743301", waterTempId: "8743301",
+    id: "8743301", waterTempId: "8741533",
     name: "BAYOU TALLA, BACK BAY OF BILOXI", slug: "bayou-talla-back-bay-of-biloxi",
     state: "mississippi", city: "BAYOU TALLA, BACK BAY OF BILOXI, MS", region: "Mississippi Sound",
     lat: 30.43, lon: -88.8, latDisplay: "30.43°N", lonDisplay: "88.80°W",
@@ -689,7 +689,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8743495", waterTempId: "8743495",
+    id: "8743495", waterTempId: "8741533",
     name: "OCEAN SPRINGS, OLD FORT BAYOU", slug: "ocean-springs-old-fort-bayou",
     state: "mississippi", city: "OCEAN SPRINGS, OLD FORT BAYOU, MS", region: "Mississippi Sound",
     lat: 30.42, lon: -88.8283, latDisplay: "30.42°N", lonDisplay: "88.83°W",
@@ -711,7 +711,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8743639", waterTempId: "8743639",
+    id: "8743639", waterTempId: "8741533",
     name: "BAYOU POITO, BACK BAY OF BILOXI", slug: "bayou-poito-back-bay-of-biloxi",
     state: "mississippi", city: "BAYOU POITO, BACK BAY OF BILOXI, MS", region: "Mississippi Sound",
     lat: 30.4383, lon: -88.845, latDisplay: "30.44°N", lonDisplay: "88.84°W",
@@ -733,7 +733,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8743812", waterTempId: "8743812",
+    id: "8743812", waterTempId: "8741533",
     name: "Deer Island", slug: "deer-island",
     state: "mississippi", city: "Deer Island, MS", region: "Mississippi Sound",
     lat: 30.3833, lon: -88.8667, latDisplay: "30.38°N", lonDisplay: "88.87°W",
@@ -755,7 +755,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8743838", waterTempId: "8743838",
+    id: "8743838", waterTempId: "8741533",
     name: "Langley Point", slug: "langley-point",
     state: "mississippi", city: "Langley Point, MS", region: "Mississippi Sound",
     lat: 30.425, lon: -88.87, latDisplay: "30.43°N", lonDisplay: "88.87°W",
@@ -777,7 +777,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8744284", waterTempId: "8744284",
+    id: "8744284", waterTempId: "8741533",
     name: "KEESLER AFB, BACK BAY OF BILOXI", slug: "keesler-afb-back-bay-of-biloxi",
     state: "mississippi", city: "KEESLER AFB, BACK BAY OF BILOXI, MS", region: "Mississippi Sound",
     lat: 30.4183, lon: -88.925, latDisplay: "30.42°N", lonDisplay: "88.92°W",
@@ -799,7 +799,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8744391", waterTempId: "8744391",
+    id: "8744391", waterTempId: "8741533",
     name: "CEDAR LAKE,TCHOUTACABOUFFA RIVER", slug: "cedar-laketchoutacabouffa-river",
     state: "mississippi", city: "CEDAR LAKE,TCHOUTACABOUFFA RIVER, MS", region: "Mississippi Sound",
     lat: 30.46, lon: -88.9383, latDisplay: "30.46°N", lonDisplay: "88.94°W",
@@ -821,7 +821,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8744663", waterTempId: "8744663",
+    id: "8744663", waterTempId: "8747437",
     name: "Tchoutacabouffa River Entrance", slug: "tchoutacabouffa-river-entrance",
     state: "mississippi", city: "Tchoutacabouffa River Entrance, MS", region: "Mississippi Sound",
     lat: 30.4417, lon: -88.9733, latDisplay: "30.44°N", lonDisplay: "88.97°W",
@@ -843,7 +843,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8744671", waterTempId: "8744671",
+    id: "8744671", waterTempId: "8747437",
     name: "POPPS FERRY, BACK BAY OF BILOXI", slug: "popps-ferry-back-bay-of-biloxi",
     state: "mississippi", city: "POPPS FERRY, BACK BAY OF BILOXI, MS", region: "Mississippi Sound",
     lat: 30.4133, lon: -88.975, latDisplay: "30.41°N", lonDisplay: "88.97°W",
@@ -865,7 +865,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8744934", waterTempId: "8744934",
+    id: "8744934", waterTempId: "8747437",
     name: "BILOXI RIVER, LOWER END", slug: "biloxi-river-lower-end",
     state: "mississippi", city: "BILOXI RIVER, LOWER END, MS", region: "Mississippi Sound",
     lat: 30.435, lon: -89.0083, latDisplay: "30.43°N", lonDisplay: "89.01°W",
@@ -887,7 +887,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8745555", waterTempId: "8745555",
+    id: "8745555", waterTempId: "8747437",
     name: "Landon", slug: "landon",
     state: "mississippi", city: "Landon, MS", region: "Mississippi Sound",
     lat: 30.4317, lon: -89.0817, latDisplay: "30.43°N", lonDisplay: "89.08°W",
@@ -909,7 +909,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8746487", waterTempId: "8746487",
+    id: "8746487", waterTempId: "8747437",
     name: "EASTERN WOLF RIVER", slug: "eastern-wolf-river",
     state: "mississippi", city: "EASTERN WOLF RIVER, MS", region: "Mississippi Sound",
     lat: 30.3967, lon: -89.2, latDisplay: "30.40°N", lonDisplay: "89.20°W",
@@ -931,7 +931,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8746724", waterTempId: "8746724",
+    id: "8746724", waterTempId: "8747437",
     name: "JOHNSON BAYOU", slug: "johnson-bayou",
     state: "mississippi", city: "JOHNSON BAYOU, MS", region: "Mississippi Sound",
     lat: 30.3367, lon: -89.225, latDisplay: "30.34°N", lonDisplay: "89.22°W",
@@ -953,7 +953,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8746737", waterTempId: "8746737",
+    id: "8746737", waterTempId: "8747437",
     name: "CUEVAS, EASTERN BAYOU PORTAGE", slug: "cuevas-eastern-bayou-portage",
     state: "mississippi", city: "CUEVAS, EASTERN BAYOU PORTAGE, MS", region: "Mississippi Sound",
     lat: 30.36, lon: -89.225, latDisplay: "30.36°N", lonDisplay: "89.22°W",
@@ -975,7 +975,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8746908", waterTempId: "8746908",
+    id: "8746908", waterTempId: "8747437",
     name: "DELISLE, DELISLE BAYOU", slug: "delisle-delisle-bayou",
     state: "mississippi", city: "DELISLE, DELISLE BAYOU, MS", region: "Mississippi Sound",
     lat: 30.38, lon: -89.2533, latDisplay: "30.38°N", lonDisplay: "89.25°W",
@@ -997,7 +997,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8746943", waterTempId: "8746943",
+    id: "8746943", waterTempId: "8747437",
     name: "HENDERSON AVENUE BRIDGE, BAYOU PORTAGE", slug: "henderson-avenue-bridge-bayou-portage",
     state: "mississippi", city: "HENDERSON AVENUE BRIDGE, BAYOU PORTAGE, MS", region: "Mississippi Sound",
     lat: 30.3417, lon: -89.265, latDisplay: "30.34°N", lonDisplay: "89.27°W",
@@ -1019,7 +1019,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8747038", waterTempId: "8747038",
+    id: "8747038", waterTempId: "8747437",
     name: "HENDERSON AVENUE BRIDGE, WOLF RIVER", slug: "henderson-avenue-bridge-wolf-river",
     state: "mississippi", city: "HENDERSON AVENUE BRIDGE, WOLF RIVER, MS", region: "Mississippi Sound",
     lat: 30.3583, lon: -89.2733, latDisplay: "30.36°N", lonDisplay: "89.27°W",
@@ -1041,7 +1041,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8747131", waterTempId: "8747131",
+    id: "8747131", waterTempId: "8747437",
     name: "MALLINI BAYOU NORTH", slug: "mallini-bayou-north",
     state: "mississippi", city: "MALLINI BAYOU NORTH, MS", region: "Mississippi Sound",
     lat: 30.3267, lon: -89.2883, latDisplay: "30.33°N", lonDisplay: "89.29°W",
@@ -1063,7 +1063,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8747145", waterTempId: "8747145",
+    id: "8747145", waterTempId: "8747437",
     name: "MALLINI BAYOU SOUTH", slug: "mallini-bayou-south",
     state: "mississippi", city: "MALLINI BAYOU SOUTH, MS", region: "Mississippi Sound",
     lat: 30.3117, lon: -89.2867, latDisplay: "30.31°N", lonDisplay: "89.29°W",
@@ -1085,7 +1085,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8747398", waterTempId: "8747398",
+    id: "8747398", waterTempId: "8747437",
     name: "NORTH SHORE, BAY OF ST. LOUIS", slug: "north-shore-bay-of-st-louis",
     state: "mississippi", city: "NORTH SHORE, BAY OF ST. LOUIS, MS", region: "Mississippi Sound",
     lat: 30.3733, lon: -89.3217, latDisplay: "30.37°N", lonDisplay: "89.32°W",
@@ -1107,7 +1107,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8747739", waterTempId: "8747739",
+    id: "8747739", waterTempId: "8747437",
     name: "JOURDAN RIVER ENTRANCE", slug: "jourdan-river-entrance",
     state: "mississippi", city: "JOURDAN RIVER ENTRANCE, MS", region: "Mississippi Sound",
     lat: 30.3367, lon: -89.3667, latDisplay: "30.34°N", lonDisplay: "89.37°W",
@@ -1129,7 +1129,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8747819", waterTempId: "8747819",
+    id: "8747819", waterTempId: "8747437",
     name: "WATTS BAYOU, JOURDAN RIVER", slug: "watts-bayou-jourdan-river",
     state: "mississippi", city: "WATTS BAYOU, JOURDAN RIVER, MS", region: "Mississippi Sound",
     lat: 30.3283, lon: -89.3733, latDisplay: "30.33°N", lonDisplay: "89.37°W",
@@ -1151,7 +1151,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8747934", waterTempId: "8747934",
+    id: "8747934", waterTempId: "8747437",
     name: "CUTOFF BAYOU", slug: "cutoff-bayou",
     state: "mississippi", city: "CUTOFF BAYOU, MS", region: "Mississippi Sound",
     lat: 30.3517, lon: -89.3883, latDisplay: "30.35°N", lonDisplay: "89.39°W",
@@ -1173,7 +1173,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8747961", waterTempId: "8747961",
+    id: "8747961", waterTempId: "8747437",
     name: "ROTTEN BAYOU", slug: "rotten-bayou",
     state: "mississippi", city: "ROTTEN BAYOU, MS", region: "Mississippi Sound",
     lat: 30.3983, lon: -89.385, latDisplay: "30.40°N", lonDisplay: "89.39°W",
@@ -1195,7 +1195,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8748005", waterTempId: "8748005",
+    id: "8748005", waterTempId: "8747437",
     name: "BREATH BAYOU, JOURDAN RIVER", slug: "breath-bayou-jourdan-river",
     state: "mississippi", city: "BREATH BAYOU, JOURDAN RIVER, MS", region: "Mississippi Sound",
     lat: 30.3167, lon: -89.4017, latDisplay: "30.32°N", lonDisplay: "89.40°W",
@@ -1217,7 +1217,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8748087", waterTempId: "8748087",
+    id: "8748087", waterTempId: "8747437",
     name: "LOWER JOURDAN RIVER", slug: "lower-jourdan-river",
     state: "mississippi", city: "LOWER JOURDAN RIVER, MS", region: "Mississippi Sound",
     lat: 30.375, lon: -89.4067, latDisplay: "30.38°N", lonDisplay: "89.41°W",
@@ -1239,7 +1239,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8748145", waterTempId: "8748145",
+    id: "8748145", waterTempId: "8747437",
     name: "BAYOU LA CROIX", slug: "bayou-la-croix",
     state: "mississippi", city: "BAYOU LA CROIX, MS", region: "Mississippi Sound",
     lat: 30.3333, lon: -89.4167, latDisplay: "30.33°N", lonDisplay: "89.42°W",
@@ -1261,7 +1261,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8748318", waterTempId: "8748318",
+    id: "8748318", waterTempId: "8747437",
     name: "BAYOU PHILLIP", slug: "bayou-phillip",
     state: "mississippi", city: "BAYOU PHILLIP, MS", region: "Mississippi Sound",
     lat: 30.3117, lon: -89.435, latDisplay: "30.31°N", lonDisplay: "89.44°W",
@@ -1283,7 +1283,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8748371", waterTempId: "8748371",
+    id: "8748371", waterTempId: "8747437",
     name: "JOURDAN RIVER", slug: "jourdan-river",
     state: "mississippi", city: "JOURDAN RIVER, MS", region: "Mississippi Sound",
     lat: 30.395, lon: -89.4317, latDisplay: "30.39°N", lonDisplay: "89.43°W",
@@ -1305,7 +1305,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8748469", waterTempId: "8748469",
+    id: "8748469", waterTempId: "8747437",
     name: "BAYOU LA CROIX WEST", slug: "bayou-la-croix-west",
     state: "mississippi", city: "BAYOU LA CROIX WEST, MS", region: "Mississippi Sound",
     lat: 30.3217, lon: -89.4533, latDisplay: "30.32°N", lonDisplay: "89.45°W",
@@ -1327,7 +1327,7 @@ export const MISSISSIPPI_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8748568", waterTempId: "8748568",
+    id: "8748568", waterTempId: "8747437",
     name: "JOURDAN RIVER WEST", slug: "jourdan-river-west",
     state: "mississippi", city: "JOURDAN RIVER WEST, MS", region: "Mississippi Sound",
     lat: 30.3917, lon: -89.47, latDisplay: "30.39°N", lonDisplay: "89.47°W",

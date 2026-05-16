@@ -7,7 +7,7 @@ export type { StationConfig, NearbyStation, Species }
 
 export const CALIFORNIA_STATIONS: StationConfig[] = [
   {
-    id: "9410032", waterTempId: "9410032",
+    id: "9410032", waterTempId: "9410660",
     name: "Wilson Cove, San Clemente Island", slug: "wilson-cove-san-clemente-island",
     state: "california", city: "Wilson Cove, San Clemente Island, CA", region: "San Diego",
     lat: 33.005001068115234, lon: -118.55699920654297, latDisplay: "33.01°N", lonDisplay: "118.56°W",
@@ -29,7 +29,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410068", waterTempId: "9410068",
+    id: "9410068", waterTempId: "9410840",
     name: "San Nicolas Island", slug: "san-nicolas-island",
     state: "california", city: "San Nicolas Island, CA", region: "San Diego",
     lat: 33.2667, lon: -119.497, latDisplay: "33.27°N", lonDisplay: "119.50°W",
@@ -51,7 +51,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410079", waterTempId: "9410079",
+    id: "9410079", waterTempId: "9410660",
     name: "Avalon, Santa Catalina Island", slug: "avalon-santa-catalina-island",
     state: "california", city: "Avalon, Santa Catalina Island, CA", region: "San Diego",
     lat: 33.345001220703125, lon: -118.32499694824219, latDisplay: "33.35°N", lonDisplay: "118.32°W",
@@ -73,7 +73,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410092", waterTempId: "9410092",
+    id: "9410092", waterTempId: "9410660",
     name: "Catalina Harbor, Santa Catalina Island", slug: "catalina-harbor-santa-catalina-island",
     state: "california", city: "Catalina Harbor, Santa Catalina Island, CA", region: "San Diego",
     lat: 33.4317, lon: -118.503, latDisplay: "33.43°N", lonDisplay: "118.50°W",
@@ -95,7 +95,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410120", waterTempId: "9410120",
+    id: "9410120", waterTempId: "9410170",
     name: "Imperial Beach", slug: "imperial-beach",
     state: "california", city: "Imperial Beach, CA", region: "San Diego",
     lat: 32.5783, lon: -117.135, latDisplay: "32.58°N", lonDisplay: "117.14°W",
@@ -117,7 +117,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410135", waterTempId: "9410135",
+    id: "9410135", waterTempId: "9410170",
     name: "South San Diego Bay", slug: "south-san-diego-bay",
     state: "california", city: "South San Diego Bay, CA", region: "San Diego",
     lat: 32.62910079956055, lon: -117.10780334472656, latDisplay: "32.63°N", lonDisplay: "117.11°W",
@@ -139,7 +139,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410152", waterTempId: "9410152",
+    id: "9410152", waterTempId: "9410170",
     name: "National City, San Diego Bay", slug: "national-city-san-diego-bay",
     state: "california", city: "National City, San Diego Bay, CA", region: "San Diego",
     lat: 32.665, lon: -117.118, latDisplay: "32.66°N", lonDisplay: "117.12°W",
@@ -161,7 +161,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410166", waterTempId: "9410166",
+    id: "9410166", waterTempId: "9410170",
     name: "San Diego, Quarantine Station", slug: "san-diego-quarantine-station",
     state: "california", city: "San Diego, Quarantine Station, CA", region: "San Diego",
     lat: 32.7033, lon: -117.235, latDisplay: "32.70°N", lonDisplay: "117.23°W",
@@ -205,7 +205,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410196", waterTempId: "9410196",
+    id: "9410196", waterTempId: "9410230",
     name: "Mission Bay, Campland", slug: "mission-bay-campland",
     state: "california", city: "Mission Bay, Campland, CA", region: "San Diego",
     lat: 32.793701171875, lon: -117.22380065917969, latDisplay: "32.79°N", lonDisplay: "117.22°W",
@@ -249,7 +249,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410580", waterTempId: "9410580",
+    id: "9410580", waterTempId: "9410660",
     name: "Newport Bay Entrance, Corona del Mar", slug: "newport-bay-entrance-corona-del-mar",
     state: "california", city: "Newport Bay Entrance, Corona del Mar, CA", region: "Los Angeles / Orange County",
     lat: 33.6033, lon: -117.883, latDisplay: "33.60°N", lonDisplay: "117.88°W",
@@ -271,7 +271,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410583", waterTempId: "9410583",
+    id: "9410583", waterTempId: "9410660",
     name: "Balboa Pier, Newport Beach", slug: "balboa-pier-newport-beach",
     state: "california", city: "Balboa Pier, Newport Beach, CA", region: "Los Angeles / Orange County",
     lat: 33.6, lon: -117.9, latDisplay: "33.60°N", lonDisplay: "117.90°W",
@@ -293,7 +293,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410599", waterTempId: "9410599",
+    id: "9410599", waterTempId: "9410660",
     name: "Santa Ana River entrance (inside)", slug: "santa-ana-river-entrance-inside",
     state: "california", city: "Santa Ana River entrance (inside), CA", region: "Los Angeles / Orange County",
     lat: 33.63, lon: -117.958, latDisplay: "33.63°N", lonDisplay: "117.96°W",
@@ -315,7 +315,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410650", waterTempId: "9410650",
+    id: "9410650", waterTempId: "9410660",
     name: "Cabrillo Beach", slug: "cabrillo-beach",
     state: "california", city: "Cabrillo Beach, CA", region: "Los Angeles / Orange County",
     lat: 33.7067, lon: -118.273, latDisplay: "33.71°N", lonDisplay: "118.27°W",
@@ -359,7 +359,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410680", waterTempId: "9410680",
+    id: "9410680", waterTempId: "9410660",
     name: "Long Beach, Terminal Island", slug: "long-beach-terminal-island",
     state: "california", city: "Long Beach, Terminal Island, CA", region: "Los Angeles / Orange County",
     lat: 33.7517, lon: -118.227, latDisplay: "33.75°N", lonDisplay: "118.23°W",
@@ -381,7 +381,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410686", waterTempId: "9410686",
+    id: "9410686", waterTempId: "9410660",
     name: "Long Beach, Inner Harbor", slug: "long-beach-inner-harbor",
     state: "california", city: "Long Beach, Inner Harbor, CA", region: "Los Angeles / Orange County",
     lat: 33.7717, lon: -118.21, latDisplay: "33.77°N", lonDisplay: "118.21°W",
@@ -403,7 +403,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410738", waterTempId: "9410738",
+    id: "9410738", waterTempId: "9410660",
     name: "King Harbor, Santa Monica Bay", slug: "king-harbor-santa-monica-bay",
     state: "california", city: "King Harbor, Santa Monica Bay, CA", region: "Los Angeles / Orange County",
     lat: 33.8467, lon: -118.398, latDisplay: "33.85°N", lonDisplay: "118.40°W",
@@ -425,7 +425,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410777", waterTempId: "9410777",
+    id: "9410777", waterTempId: "9410840",
     name: "El Segundo, Santa Monica Bay", slug: "el-segundo-santa-monica-bay",
     state: "california", city: "El Segundo, Santa Monica Bay, CA", region: "Los Angeles / Orange County",
     lat: 33.9083, lon: -118.433, latDisplay: "33.91°N", lonDisplay: "118.43°W",
@@ -469,7 +469,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410962", waterTempId: "9410962",
+    id: "9410962", waterTempId: "9410840",
     name: "Bechers Bay, Santa Rosa Island", slug: "bechers-bay-santa-rosa-island",
     state: "california", city: "Bechers Bay, Santa Rosa Island, CA", region: "Los Angeles / Orange County",
     lat: 34.0083, lon: -120.047, latDisplay: "34.01°N", lonDisplay: "120.05°W",
@@ -491,7 +491,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410971", waterTempId: "9410971",
+    id: "9410971", waterTempId: "9410840",
     name: "Prisoners Harbor, Santa Cruz Island", slug: "prisoners-harbor-santa-cruz-island",
     state: "california", city: "Prisoners Harbor, Santa Cruz Island, CA", region: "Los Angeles / Orange County",
     lat: 34.02, lon: -119.683, latDisplay: "34.02°N", lonDisplay: "119.68°W",
@@ -513,7 +513,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410988", waterTempId: "9410988",
+    id: "9410988", waterTempId: "9412110",
     name: "Cuyler Harbor, San Miguel Island", slug: "cuyler-harbor-san-miguel-island",
     state: "california", city: "Cuyler Harbor, San Miguel Island, CA", region: "Los Angeles / Orange County",
     lat: 34.0567, lon: -120.355, latDisplay: "34.06°N", lonDisplay: "120.36°W",
@@ -535,7 +535,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9411065", waterTempId: "9411065",
+    id: "9411065", waterTempId: "9410840",
     name: "Port Hueneme", slug: "port-hueneme",
     state: "california", city: "Port Hueneme, CA", region: "Los Angeles / Orange County",
     lat: 34.1483, lon: -119.203, latDisplay: "34.15°N", lonDisplay: "119.20°W",
@@ -557,7 +557,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9411189", waterTempId: "9411189",
+    id: "9411189", waterTempId: "9410840",
     name: "Ventura", slug: "ventura",
     state: "california", city: "Ventura, CA", region: "Los Angeles / Orange County",
     lat: 34.2667, lon: -119.283, latDisplay: "34.27°N", lonDisplay: "119.28°W",
@@ -579,7 +579,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9411270", waterTempId: "9411270",
+    id: "9411270", waterTempId: "9410840",
     name: "Rincon Island, Mussel Shoals", slug: "rincon-island-mussel-shoals",
     state: "california", city: "Rincon Island, Mussel Shoals, CA", region: "Los Angeles / Orange County",
     lat: 34.3483, lon: -119.443, latDisplay: "34.35°N", lonDisplay: "119.44°W",
@@ -601,7 +601,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9411340", waterTempId: "9411340",
+    id: "9411340", waterTempId: "9410840",
     name: "Santa Barbara", slug: "santa-barbara",
     state: "california", city: "Santa Barbara, CA", region: "Los Angeles / Orange County",
     lat: 34.40458888888889, lon: -119.6924944444445, latDisplay: "34.40°N", lonDisplay: "119.69°W",
@@ -623,7 +623,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9411399", waterTempId: "9411399",
+    id: "9411399", waterTempId: "9412110",
     name: "Gaviota State Park, Pacific Ocean", slug: "gaviota-state-park-pacific-ocean",
     state: "california", city: "Gaviota State Park, Pacific Ocean, CA", region: "Los Angeles / Orange County",
     lat: 34.46938888888889, lon: -120.2283055555556, latDisplay: "34.47°N", lonDisplay: "120.23°W",
@@ -645,7 +645,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9411406", waterTempId: "9411406",
+    id: "9411406", waterTempId: "9412110",
     name: "Oil Platform Harvest", slug: "oil-platform-harvest",
     state: "california", city: "Oil Platform Harvest, CA", region: "Los Angeles / Orange County",
     lat: 34.46916666666667, lon: -120.6819444444444, latDisplay: "34.47°N", lonDisplay: "120.68°W",
@@ -689,7 +689,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9412553", waterTempId: "9412553",
+    id: "9412553", waterTempId: "9412110",
     name: "San Simeon", slug: "san-simeon",
     state: "california", city: "San Simeon, CA", region: "Central California",
     lat: 35.6417, lon: -121.188, latDisplay: "35.64°N", lonDisplay: "121.19°W",
@@ -711,7 +711,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9412802", waterTempId: "9412802",
+    id: "9412802", waterTempId: "9413450",
     name: "Mansfield Cone", slug: "mansfield-cone",
     state: "california", city: "Mansfield Cone, CA", region: "Central California",
     lat: 35.94952777777777, lon: -121.4819444444445, latDisplay: "35.95°N", lonDisplay: "121.48°W",
@@ -733,7 +733,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9413375", waterTempId: "9413375",
+    id: "9413375", waterTempId: "9413450",
     name: "Carmel Cove, Carmel Bay", slug: "carmel-cove-carmel-bay",
     state: "california", city: "Carmel Cove, Carmel Bay, CA", region: "Central California",
     lat: 36.52, lon: -121.94, latDisplay: "36.52°N", lonDisplay: "121.94°W",
@@ -777,7 +777,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9413616", waterTempId: "9413616",
+    id: "9413616", waterTempId: "9413450",
     name: "Moss Landing, Ocean Pier", slug: "moss-landing-ocean-pier",
     state: "california", city: "Moss Landing, Ocean Pier, CA", region: "Central California",
     lat: 36.8017, lon: -121.79, latDisplay: "36.80°N", lonDisplay: "121.79°W",
@@ -799,7 +799,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9413617", waterTempId: "9413617",
+    id: "9413617", waterTempId: "9413450",
     name: "General Fish Company Pier", slug: "general-fish-company-pier",
     state: "california", city: "General Fish Company Pier, CA", region: "Central California",
     lat: 36.8017, lon: -121.787, latDisplay: "36.80°N", lonDisplay: "121.79°W",
@@ -821,7 +821,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9413623", waterTempId: "9413623",
+    id: "9413623", waterTempId: "9413450",
     name: "Elkhorn Slough, Highway 1 Bridge", slug: "elkhorn-slough-highway-1-bridge",
     state: "california", city: "Elkhorn Slough, Highway 1 Bridge, CA", region: "Central California",
     lat: 36.81, lon: -121.785, latDisplay: "36.81°N", lonDisplay: "121.78°W",
@@ -843,7 +843,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9413624", waterTempId: "9413624",
+    id: "9413624", waterTempId: "9413450",
     name: "Pacific Mariculture Dock", slug: "pacific-mariculture-dock",
     state: "california", city: "Pacific Mariculture Dock, CA", region: "Central California",
     lat: 36.8133, lon: -121.758, latDisplay: "36.81°N", lonDisplay: "121.76°W",
@@ -865,7 +865,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9413626", waterTempId: "9413626",
+    id: "9413626", waterTempId: "9413450",
     name: "Elkhorn Yacht Club", slug: "elkhorn-yacht-club",
     state: "california", city: "Elkhorn Yacht Club, CA", region: "Central California",
     lat: 36.8133, lon: -121.787, latDisplay: "36.81°N", lonDisplay: "121.79°W",
@@ -887,7 +887,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9413631", waterTempId: "9413631",
+    id: "9413631", waterTempId: "9413450",
     name: "Elkhorn, Elkhorn Slough", slug: "elkhorn-elkhorn-slough",
     state: "california", city: "Elkhorn, Elkhorn Slough, CA", region: "Central California",
     lat: 36.81829833984375, lon: -121.74700164794922, latDisplay: "36.82°N", lonDisplay: "121.75°W",
@@ -909,7 +909,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9413643", waterTempId: "9413643",
+    id: "9413643", waterTempId: "9413450",
     name: "Tidal Creek, Elkhorn Slough", slug: "tidal-creek-elkhorn-slough",
     state: "california", city: "Tidal Creek, Elkhorn Slough, CA", region: "Central California",
     lat: 36.83330154418945, lon: -121.74500274658203, latDisplay: "36.83°N", lonDisplay: "121.75°W",
@@ -931,7 +931,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9413651", waterTempId: "9413651",
+    id: "9413651", waterTempId: "9413450",
     name: "Kirby Park, Elkhorn Slough", slug: "kirby-park-elkhorn-slough",
     state: "california", city: "Kirby Park, Elkhorn Slough, CA", region: "Central California",
     lat: 36.84130096435547, lon: -121.74530029296875, latDisplay: "36.84°N", lonDisplay: "121.75°W",
@@ -953,7 +953,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9413663", waterTempId: "9413663",
+    id: "9413663", waterTempId: "9413450",
     name: "Elkhorn Slough railroad bridge", slug: "elkhorn-slough-railroad-bridge",
     state: "california", city: "Elkhorn Slough railroad bridge, CA", region: "Central California",
     lat: 36.85667, lon: -121.755, latDisplay: "36.86°N", lonDisplay: "121.75°W",
@@ -975,7 +975,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9413745", waterTempId: "9413745",
+    id: "9413745", waterTempId: "9413450",
     name: "Santa Cruz, Monterey Bay", slug: "santa-cruz-monterey-bay",
     state: "california", city: "Santa Cruz, Monterey Bay, CA", region: "Central California",
     lat: 36.9583, lon: -122.017, latDisplay: "36.96°N", lonDisplay: "122.02°W",
@@ -997,7 +997,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9413878", waterTempId: "9413878",
+    id: "9413878", waterTempId: "9414523",
     name: "Ano Nuevo Island", slug: "ano-nuevo-island",
     state: "california", city: "Ano Nuevo Island, CA", region: "San Francisco Bay Area",
     lat: 37.1083, lon: -122.338, latDisplay: "37.11°N", lonDisplay: "122.34°W",
@@ -1019,7 +1019,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414131", waterTempId: "9414131",
+    id: "9414131", waterTempId: "9414523",
     name: "Pillar Point Harbor, Half Moon Bay", slug: "pillar-point-harbor-half-moon-bay",
     state: "california", city: "Pillar Point Harbor, Half Moon Bay, CA", region: "San Francisco Bay Area",
     lat: 37.5025, lon: -122.4821666666667, latDisplay: "37.50°N", lonDisplay: "122.48°W",
@@ -1041,7 +1041,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414262", waterTempId: "9414262",
+    id: "9414262", waterTempId: "9415020",
     name: "Southeast Farallon Island", slug: "southeast-farallon-island",
     state: "california", city: "Southeast Farallon Island, CA", region: "San Francisco Bay Area",
     lat: 37.7, lon: -123, latDisplay: "37.70°N", lonDisplay: "123.00°W",
@@ -1063,7 +1063,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414275", waterTempId: "9414275",
+    id: "9414275", waterTempId: "9414290",
     name: "Ocean Beach, outer coast", slug: "ocean-beach-outer-coast",
     state: "california", city: "Ocean Beach, outer coast, CA", region: "San Francisco Bay Area",
     lat: 37.775, lon: -122.513, latDisplay: "37.77°N", lonDisplay: "122.51°W",
@@ -1107,7 +1107,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414305", waterTempId: "9414305",
+    id: "9414305", waterTempId: "9414290",
     name: "San Francisco, North Point, Pier 41", slug: "san-francisco-north-point-pier-41",
     state: "california", city: "San Francisco, North Point, Pier 41, CA", region: "San Francisco Bay Area",
     lat: 37.81, lon: -122.413, latDisplay: "37.81°N", lonDisplay: "122.41°W",
@@ -1129,7 +1129,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414317", waterTempId: "9414317",
+    id: "9414317", waterTempId: "9414290",
     name: "Rincon Point, Pier 22 1/2", slug: "rincon-point-pier-22-12",
     state: "california", city: "Rincon Point, Pier 22 1/2, CA", region: "San Francisco Bay Area",
     lat: 37.79, lon: -122.387, latDisplay: "37.79°N", lonDisplay: "122.39°W",
@@ -1151,7 +1151,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414334", waterTempId: "9414334",
+    id: "9414334", waterTempId: "9414750",
     name: "Potrero Point", slug: "potrero-point",
     state: "california", city: "Potrero Point, CA", region: "San Francisco Bay Area",
     lat: 37.7583, lon: -122.383, latDisplay: "37.76°N", lonDisplay: "122.38°W",
@@ -1173,7 +1173,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414358", waterTempId: "9414358",
+    id: "9414358", waterTempId: "9414750",
     name: "Hunters Point", slug: "hunters-point",
     state: "california", city: "Hunters Point, CA", region: "San Francisco Bay Area",
     lat: 37.73, lon: -122.357, latDisplay: "37.73°N", lonDisplay: "122.36°W",
@@ -1195,7 +1195,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414391", waterTempId: "9414391",
+    id: "9414391", waterTempId: "9414750",
     name: "South San Francisco", slug: "south-san-francisco",
     state: "california", city: "South San Francisco, CA", region: "San Francisco Bay Area",
     lat: 37.6667, lon: -122.39, latDisplay: "37.67°N", lonDisplay: "122.39°W",
@@ -1217,7 +1217,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414392", waterTempId: "9414392",
+    id: "9414392", waterTempId: "9414750",
     name: "Oyster Point Marina", slug: "oyster-point-marina",
     state: "california", city: "Oyster Point Marina, CA", region: "San Francisco Bay Area",
     lat: 37.665, lon: -122.377, latDisplay: "37.66°N", lonDisplay: "122.38°W",
@@ -1239,7 +1239,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414402", waterTempId: "9414402",
+    id: "9414402", waterTempId: "9414750",
     name: "Point San Bruno", slug: "point-san-bruno",
     state: "california", city: "Point San Bruno, CA", region: "San Francisco Bay Area",
     lat: 37.65, lon: -122.377, latDisplay: "37.65°N", lonDisplay: "122.38°W",
@@ -1261,7 +1261,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414413", waterTempId: "9414413",
+    id: "9414413", waterTempId: "9414750",
     name: "Seaplane Harbor", slug: "seaplane-harbor",
     state: "california", city: "Seaplane Harbor, CA", region: "San Francisco Bay Area",
     lat: 37.6367, lon: -122.383, latDisplay: "37.64°N", lonDisplay: "122.38°W",
@@ -1283,7 +1283,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414449", waterTempId: "9414449",
+    id: "9414449", waterTempId: "9414523",
     name: "Coyote Point Marina", slug: "coyote-point-marina",
     state: "california", city: "Coyote Point Marina, CA", region: "San Francisco Bay Area",
     lat: 37.5917, lon: -122.313, latDisplay: "37.59°N", lonDisplay: "122.31°W",
@@ -1305,7 +1305,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414458", waterTempId: "9414458",
+    id: "9414458", waterTempId: "9414523",
     name: "San Mateo Bridge (west end)", slug: "san-mateo-bridge-west-end",
     state: "california", city: "San Mateo Bridge (west end), CA", region: "San Francisco Bay Area",
     lat: 37.58, lon: -122.253, latDisplay: "37.58°N", lonDisplay: "122.25°W",
@@ -1327,7 +1327,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414483", waterTempId: "9414483",
+    id: "9414483", waterTempId: "9414523",
     name: "Bay Slough, west end", slug: "bay-slough-west-end",
     state: "california", city: "Bay Slough, west end, CA", region: "San Francisco Bay Area",
     lat: 37.5517, lon: -122.243, latDisplay: "37.55°N", lonDisplay: "122.24°W",
@@ -1349,7 +1349,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414486", waterTempId: "9414486",
+    id: "9414486", waterTempId: "9414523",
     name: "Bay Slough, east end", slug: "bay-slough-east-end",
     state: "california", city: "Bay Slough, east end, CA", region: "San Francisco Bay Area",
     lat: 37.545, lon: -122.222, latDisplay: "37.55°N", lonDisplay: "122.22°W",
@@ -1371,7 +1371,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414501", waterTempId: "9414501",
+    id: "9414501", waterTempId: "9414523",
     name: "Redwood Creek Marker 8", slug: "redwood-creek-marker-8",
     state: "california", city: "Redwood Creek Marker 8, CA", region: "San Francisco Bay Area",
     lat: 37.5333, lon: -122.193, latDisplay: "37.53°N", lonDisplay: "122.19°W",
@@ -1393,7 +1393,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414505", waterTempId: "9414505",
+    id: "9414505", waterTempId: "9414523",
     name: "Corkscrew Slough", slug: "corkscrew-slough",
     state: "california", city: "Corkscrew Slough, CA", region: "San Francisco Bay Area",
     lat: 37.5083, lon: -122.21, latDisplay: "37.51°N", lonDisplay: "122.21°W",
@@ -1415,7 +1415,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414506", waterTempId: "9414506",
+    id: "9414506", waterTempId: "9414523",
     name: "Newark Slough", slug: "newark-slough",
     state: "california", city: "Newark Slough, CA", region: "San Francisco Bay Area",
     lat: 37.5133, lon: -122.08, latDisplay: "37.51°N", lonDisplay: "122.08°W",
@@ -1437,7 +1437,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414507", waterTempId: "9414507",
+    id: "9414507", waterTempId: "9414523",
     name: "West Point Slough", slug: "west-point-slough",
     state: "california", city: "West Point Slough, CA", region: "San Francisco Bay Area",
     lat: 37.505, lon: -122.192, latDisplay: "37.51°N", lonDisplay: "122.19°W",
@@ -1459,7 +1459,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414509", waterTempId: "9414509",
+    id: "9414509", waterTempId: "9414523",
     name: "Dumbarton Highway Bridge", slug: "dumbarton-highway-bridge",
     state: "california", city: "Dumbarton Highway Bridge, CA", region: "San Francisco Bay Area",
     lat: 37.5067, lon: -122.115, latDisplay: "37.51°N", lonDisplay: "122.11°W",
@@ -1481,7 +1481,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414511", waterTempId: "9414511",
+    id: "9414511", waterTempId: "9414523",
     name: "Smith Slough", slug: "smith-slough",
     state: "california", city: "Smith Slough, CA", region: "San Francisco Bay Area",
     lat: 37.5017, lon: -122.223, latDisplay: "37.50°N", lonDisplay: "122.22°W",
@@ -1503,7 +1503,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414513", waterTempId: "9414513",
+    id: "9414513", waterTempId: "9414523",
     name: "Granite Rock, Redwood Creek", slug: "granite-rock-redwood-creek",
     state: "california", city: "Granite Rock, Redwood Creek, CA", region: "San Francisco Bay Area",
     lat: 37.495, lon: -122.213, latDisplay: "37.49°N", lonDisplay: "122.21°W",
@@ -1525,7 +1525,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414519", waterTempId: "9414519",
+    id: "9414519", waterTempId: "9414523",
     name: "Mowry Slough", slug: "mowry-slough",
     state: "california", city: "Mowry Slough, CA", region: "San Francisco Bay Area",
     lat: 37.4933, lon: -122.042, latDisplay: "37.49°N", lonDisplay: "122.04°W",
@@ -1569,7 +1569,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414525", waterTempId: "9414525",
+    id: "9414525", waterTempId: "9414523",
     name: "Palo Alto Yacht Harbor", slug: "palo-alto-yacht-harbor",
     state: "california", city: "Palo Alto Yacht Harbor, CA", region: "San Francisco Bay Area",
     lat: 37.4583, lon: -122.105, latDisplay: "37.46°N", lonDisplay: "122.11°W",
@@ -1591,7 +1591,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414539", waterTempId: "9414539",
+    id: "9414539", waterTempId: "9414523",
     name: "Calaveras Point, west of", slug: "calaveras-point-west-of",
     state: "california", city: "Calaveras Point, west of, CA", region: "San Francisco Bay Area",
     lat: 37.4667, lon: -122.067, latDisplay: "37.47°N", lonDisplay: "122.07°W",
@@ -1613,7 +1613,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414549", waterTempId: "9414549",
+    id: "9414549", waterTempId: "9414523",
     name: "Upper Guadalupe Slough", slug: "upper-guadalupe-slough",
     state: "california", city: "Upper Guadalupe Slough, CA", region: "San Francisco Bay Area",
     lat: 37.435, lon: -122.007, latDisplay: "37.44°N", lonDisplay: "122.01°W",
@@ -1635,7 +1635,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414551", waterTempId: "9414551",
+    id: "9414551", waterTempId: "9414523",
     name: "Gold Street Bridge, Alviso Slough", slug: "gold-street-bridge-alviso-slough",
     state: "california", city: "Gold Street Bridge, Alviso Slough, CA", region: "San Francisco Bay Area",
     lat: 37.4233, lon: -121.975, latDisplay: "37.42°N", lonDisplay: "121.97°W",
@@ -1657,7 +1657,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414561", waterTempId: "9414561",
+    id: "9414561", waterTempId: "9414523",
     name: "Coyote Creek, Tributary no.1", slug: "coyote-creek-tributary-no1",
     state: "california", city: "Coyote Creek, Tributary no.1, CA", region: "San Francisco Bay Area",
     lat: 37.4467, lon: -121.963, latDisplay: "37.45°N", lonDisplay: "121.96°W",
@@ -1679,7 +1679,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414575", waterTempId: "9414575",
+    id: "9414575", waterTempId: "9414523",
     name: "Coyote Creek, Alviso Slough", slug: "coyote-creek-alviso-slough",
     state: "california", city: "Coyote Creek, Alviso Slough, CA", region: "San Francisco Bay Area",
     lat: 37.465, lon: -122.023, latDisplay: "37.47°N", lonDisplay: "122.02°W",
@@ -1701,7 +1701,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414609", waterTempId: "9414609",
+    id: "9414609", waterTempId: "9414523",
     name: "South Bay Wreck", slug: "south-bay-wreck",
     state: "california", city: "South Bay Wreck, CA", region: "San Francisco Bay Area",
     lat: 37.5517, lon: -122.162, latDisplay: "37.55°N", lonDisplay: "122.16°W",
@@ -1723,7 +1723,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414621", waterTempId: "9414621",
+    id: "9414621", waterTempId: "9414523",
     name: "Coyote Hills Slough entrance", slug: "coyote-hills-slough-entrance",
     state: "california", city: "Coyote Hills Slough entrance, CA", region: "San Francisco Bay Area",
     lat: 37.5633, lon: -122.128, latDisplay: "37.56°N", lonDisplay: "122.13°W",
@@ -1745,7 +1745,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414632", waterTempId: "9414632",
+    id: "9414632", waterTempId: "9414523",
     name: "Alameda Creek", slug: "alameda-creek",
     state: "california", city: "Alameda Creek, CA", region: "San Francisco Bay Area",
     lat: 37.595, lon: -122.145, latDisplay: "37.59°N", lonDisplay: "122.14°W",
@@ -1767,7 +1767,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414637", waterTempId: "9414637",
+    id: "9414637", waterTempId: "9414523",
     name: "San Mateo Bridge (east end)", slug: "san-mateo-bridge-east-end",
     state: "california", city: "San Mateo Bridge (east end), CA", region: "San Francisco Bay Area",
     lat: 37.6083, lon: -122.182, latDisplay: "37.61°N", lonDisplay: "122.18°W",
@@ -1789,7 +1789,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414688", waterTempId: "9414688",
+    id: "9414688", waterTempId: "9414750",
     name: "San Leandro Marina", slug: "san-leandro-marina",
     state: "california", city: "San Leandro Marina, CA", region: "San Francisco Bay Area",
     lat: 37.695, lon: -122.192, latDisplay: "37.70°N", lonDisplay: "122.19°W",
@@ -1811,7 +1811,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414711", waterTempId: "9414711",
+    id: "9414711", waterTempId: "9414750",
     name: "Oakland Airport", slug: "oakland-airport",
     state: "california", city: "Oakland Airport, CA", region: "San Francisco Bay Area",
     lat: 37.7317, lon: -122.208, latDisplay: "37.73°N", lonDisplay: "122.21°W",
@@ -1833,7 +1833,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414724", waterTempId: "9414724",
+    id: "9414724", waterTempId: "9414750",
     name: "San Leandro Channel, San Leandro Bay", slug: "san-leandro-channel-san-leandro-bay",
     state: "california", city: "San Leandro Channel, San Leandro Bay, CA", region: "San Francisco Bay Area",
     lat: 37.7483, lon: -122.235, latDisplay: "37.75°N", lonDisplay: "122.23°W",
@@ -1855,7 +1855,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414746", waterTempId: "9414746",
+    id: "9414746", waterTempId: "9414750",
     name: "Oakland Harbor, Park Street Bridge", slug: "oakland-harbor-park-street-bridge",
     state: "california", city: "Oakland Harbor, Park Street Bridge, CA", region: "San Francisco Bay Area",
     lat: 37.7717, lon: -122.235, latDisplay: "37.77°N", lonDisplay: "122.23°W",
@@ -1899,7 +1899,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414763", waterTempId: "9414763",
+    id: "9414763", waterTempId: "9414750",
     name: "Oakland Harbor, Grove Street", slug: "oakland-harbor-grove-street",
     state: "california", city: "Oakland Harbor, Grove Street, CA", region: "San Francisco Bay Area",
     lat: 37.795, lon: -122.283, latDisplay: "37.80°N", lonDisplay: "122.28°W",
@@ -1921,7 +1921,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414764", waterTempId: "9414764",
+    id: "9414764", waterTempId: "9414750",
     name: "Oakland Inner Harbor", slug: "oakland-inner-harbor",
     state: "california", city: "Oakland Inner Harbor, CA", region: "San Francisco Bay Area",
     lat: 37.79499816894531, lon: -122.28199768066406, latDisplay: "37.79°N", lonDisplay: "122.28°W",
@@ -1943,7 +1943,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414765", waterTempId: "9414765",
+    id: "9414765", waterTempId: "9414750",
     name: "Oakland Pier", slug: "oakland-pier",
     state: "california", city: "Oakland Pier, CA", region: "San Francisco Bay Area",
     lat: 37.795, lon: -122.33, latDisplay: "37.80°N", lonDisplay: "122.33°W",
@@ -1965,7 +1965,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414767", waterTempId: "9414767",
+    id: "9414767", waterTempId: "9414750",
     name: "Alameda Naval Air Station", slug: "alameda-naval-air-station",
     state: "california", city: "Alameda Naval Air Station, CA", region: "San Francisco Bay Area",
     lat: 37.7933, lon: -122.315, latDisplay: "37.79°N", lonDisplay: "122.31°W",
@@ -1987,7 +1987,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414777", waterTempId: "9414777",
+    id: "9414777", waterTempId: "9414750",
     name: "Oakland Middle Harbor", slug: "oakland-middle-harbor",
     state: "california", city: "Oakland Middle Harbor, CA", region: "San Francisco Bay Area",
     lat: 37.805, lon: -122.338, latDisplay: "37.80°N", lonDisplay: "122.34°W",
@@ -2009,7 +2009,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414779", waterTempId: "9414779",
+    id: "9414779", waterTempId: "9414750",
     name: "Oakland, Matson Wharf", slug: "oakland-matson-wharf",
     state: "california", city: "Oakland, Matson Wharf, CA", region: "San Francisco Bay Area",
     lat: 37.81, lon: -122.327, latDisplay: "37.81°N", lonDisplay: "122.33°W",
@@ -2031,7 +2031,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414782", waterTempId: "9414782",
+    id: "9414782", waterTempId: "9414750",
     name: "Yerba Buena Island", slug: "yerba-buena-island",
     state: "california", city: "Yerba Buena Island, CA", region: "San Francisco Bay Area",
     lat: 37.81, lon: -122.36, latDisplay: "37.81°N", lonDisplay: "122.36°W",
@@ -2053,7 +2053,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414785", waterTempId: "9414785",
+    id: "9414785", waterTempId: "9415144",
     name: "Grant Line Canal (drawbridge)", slug: "grant-line-canal-drawbridge",
     state: "california", city: "Grant Line Canal (drawbridge), CA", region: "San Francisco Bay Area",
     lat: 37.82, lon: -121.447, latDisplay: "37.82°N", lonDisplay: "121.45°W",
@@ -2075,7 +2075,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414792", waterTempId: "9414792",
+    id: "9414792", waterTempId: "9414290",
     name: "Alcatraz Island", slug: "alcatraz-island",
     state: "california", city: "Alcatraz Island, CA", region: "San Francisco Bay Area",
     lat: 37.8267, lon: -122.417, latDisplay: "37.83°N", lonDisplay: "122.42°W",
@@ -2097,7 +2097,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414806", waterTempId: "9414806",
+    id: "9414806", waterTempId: "9414290",
     name: "Sausalito", slug: "sausalito",
     state: "california", city: "Sausalito, CA", region: "San Francisco Bay Area",
     lat: 37.8467, lon: -122.477, latDisplay: "37.85°N", lonDisplay: "122.48°W",
@@ -2119,7 +2119,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414811", waterTempId: "9414811",
+    id: "9414811", waterTempId: "9415144",
     name: "Bradmoor Island, Nurse Slough", slug: "bradmoor-island-nurse-slough",
     state: "california", city: "Bradmoor Island, Nurse Slough, CA", region: "San Francisco Bay Area",
     lat: 38.1833, lon: -121.923, latDisplay: "38.18°N", lonDisplay: "121.92°W",
@@ -2141,7 +2141,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414816", waterTempId: "9414816",
+    id: "9414816", waterTempId: "9414750",
     name: "Berkeley", slug: "berkeley",
     state: "california", city: "Berkeley, CA", region: "San Francisco Bay Area",
     lat: 37.8650016784668, lon: -122.30699920654297, latDisplay: "37.87°N", lonDisplay: "122.31°W",
@@ -2163,7 +2163,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414817", waterTempId: "9414817",
+    id: "9414817", waterTempId: "9414290",
     name: "Angel Island (west side)", slug: "angel-island-west-side",
     state: "california", city: "Angel Island (west side), CA", region: "San Francisco Bay Area",
     lat: 37.86, lon: -122.443, latDisplay: "37.86°N", lonDisplay: "122.44°W",
@@ -2185,7 +2185,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414818", waterTempId: "9414818",
+    id: "9414818", waterTempId: "9414863",
     name: "Angel Island, East Garrison", slug: "angel-island-east-garrison",
     state: "california", city: "Angel Island, East Garrison, CA", region: "San Francisco Bay Area",
     lat: 37.8633, lon: -122.42, latDisplay: "37.86°N", lonDisplay: "122.42°W",
@@ -2207,7 +2207,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414819", waterTempId: "9414819",
+    id: "9414819", waterTempId: "9414290",
     name: "Sausalito, Corps of Engineers Dock", slug: "sausalito-corps-of-engineers-dock",
     state: "california", city: "Sausalito, Corps of Engineers Dock, CA", region: "San Francisco Bay Area",
     lat: 37.865, lon: -122.493, latDisplay: "37.87°N", lonDisplay: "122.49°W",
@@ -2229,7 +2229,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414835", waterTempId: "9414835",
+    id: "9414835", waterTempId: "9415144",
     name: "Borden Highway Bridge, Middle River", slug: "borden-highway-bridge-middle-river",
     state: "california", city: "Borden Highway Bridge, Middle River, CA", region: "San Francisco Bay Area",
     lat: 37.8917, lon: -121.488, latDisplay: "37.89°N", lonDisplay: "121.49°W",
@@ -2251,7 +2251,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414836", waterTempId: "9414836",
+    id: "9414836", waterTempId: "9415144",
     name: "Borden Highway Bridge, Old River", slug: "borden-highway-bridge-old-river",
     state: "california", city: "Borden Highway Bridge, Old River, CA", region: "San Francisco Bay Area",
     lat: 37.8833, lon: -121.577, latDisplay: "37.88°N", lonDisplay: "121.58°W",
@@ -2273,7 +2273,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414837", waterTempId: "9414837",
+    id: "9414837", waterTempId: "9414863",
     name: "Point Chauncey", slug: "point-chauncey",
     state: "california", city: "Point Chauncey, CA", region: "San Francisco Bay Area",
     lat: 37.8917, lon: -122.443, latDisplay: "37.89°N", lonDisplay: "122.44°W",
@@ -2295,7 +2295,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414843", waterTempId: "9414843",
+    id: "9414843", waterTempId: "9414863",
     name: "Point Isabel", slug: "point-isabel",
     state: "california", city: "Point Isabel, CA", region: "San Francisco Bay Area",
     lat: 37.8983, lon: -122.32, latDisplay: "37.90°N", lonDisplay: "122.32°W",
@@ -2317,7 +2317,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414849", waterTempId: "9414849",
+    id: "9414849", waterTempId: "9414863",
     name: "Richmond Inner Harbor", slug: "richmond-inner-harbor",
     state: "california", city: "Richmond Inner Harbor, CA", region: "San Francisco Bay Area",
     lat: 37.91, lon: -122.358, latDisplay: "37.91°N", lonDisplay: "122.36°W",
@@ -2361,7 +2361,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414866", waterTempId: "9414866",
+    id: "9414866", waterTempId: "9415144",
     name: "Holt, Whiskey Slough", slug: "holt-whiskey-slough",
     state: "california", city: "Holt, Whiskey Slough, CA", region: "San Francisco Bay Area",
     lat: 37.935, lon: -121.435, latDisplay: "37.94°N", lonDisplay: "121.44°W",
@@ -2383,7 +2383,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414868", waterTempId: "9414868",
+    id: "9414868", waterTempId: "9415144",
     name: "Orwood, Old River", slug: "orwood-old-river",
     state: "california", city: "Orwood, Old River, CA", region: "San Francisco Bay Area",
     lat: 37.9383, lon: -121.56, latDisplay: "37.94°N", lonDisplay: "121.56°W",
@@ -2405,7 +2405,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414873", waterTempId: "9414873",
+    id: "9414873", waterTempId: "9414863",
     name: "Point San Quentin", slug: "point-san-quentin",
     state: "california", city: "Point San Quentin, CA", region: "San Francisco Bay Area",
     lat: 37.945, lon: -122.475, latDisplay: "37.95°N", lonDisplay: "122.47°W",
@@ -2427,7 +2427,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414874", waterTempId: "9414874",
+    id: "9414874", waterTempId: "9414863",
     name: "Corte Madera Creek", slug: "corte-madera-creek",
     state: "california", city: "Corte Madera Creek, CA", region: "San Francisco Bay Area",
     lat: 37.94329833984375, lon: -122.51300048828125, latDisplay: "37.94°N", lonDisplay: "122.51°W",
@@ -2449,7 +2449,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414881", waterTempId: "9414881",
+    id: "9414881", waterTempId: "9414863",
     name: "Point Orient", slug: "point-orient",
     state: "california", city: "Point Orient, CA", region: "San Francisco Bay Area",
     lat: 37.9583, lon: -122.425, latDisplay: "37.96°N", lonDisplay: "122.42°W",
@@ -2471,7 +2471,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414883", waterTempId: "9414883",
+    id: "9414883", waterTempId: "9415144",
     name: "Stockton", slug: "stockton",
     state: "california", city: "Stockton, CA", region: "San Francisco Bay Area",
     lat: 37.9583, lon: -121.29, latDisplay: "37.96°N", lonDisplay: "121.29°W",
@@ -2493,7 +2493,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414906", waterTempId: "9414906",
+    id: "9414906", waterTempId: "9414290",
     name: "Point Bonita, Bonita Cove", slug: "point-bonita-bonita-cove",
     state: "california", city: "Point Bonita, Bonita Cove, CA", region: "San Francisco Bay Area",
     lat: 37.8183, lon: -122.528, latDisplay: "37.82°N", lonDisplay: "122.53°W",
@@ -2515,7 +2515,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414958", waterTempId: "9414958",
+    id: "9414958", waterTempId: "9414290",
     name: "Bolinas Lagoon", slug: "bolinas-lagoon",
     state: "california", city: "Bolinas Lagoon, CA", region: "San Francisco Bay Area",
     lat: 37.90800094604492, lon: -122.67849731445312, latDisplay: "37.91°N", lonDisplay: "122.68°W",
@@ -2537,7 +2537,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415009", waterTempId: "9415009",
+    id: "9415009", waterTempId: "9414863",
     name: "Point San Pedro", slug: "point-san-pedro",
     state: "california", city: "Point San Pedro, CA", region: "San Francisco Bay Area",
     lat: 37.9933, lon: -122.447, latDisplay: "37.99°N", lonDisplay: "122.45°W",
@@ -2581,7 +2581,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415021", waterTempId: "9415021",
+    id: "9415021", waterTempId: "9415144",
     name: "Blackslough Landing", slug: "blackslough-landing",
     state: "california", city: "Blackslough Landing, CA", region: "San Francisco Bay Area",
     lat: 37.994998931884766, lon: -121.41999816894531, latDisplay: "37.99°N", lonDisplay: "121.42°W",
@@ -2603,7 +2603,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415052", waterTempId: "9415052",
+    id: "9415052", waterTempId: "9414863",
     name: "Gallinas, Gallinas Creek", slug: "gallinas-gallinas-creek",
     state: "california", city: "Gallinas, Gallinas Creek, CA", region: "San Francisco Bay Area",
     lat: 38.015, lon: -122.503, latDisplay: "38.02°N", lonDisplay: "122.50°W",
@@ -2625,7 +2625,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415053", waterTempId: "9415053",
+    id: "9415053", waterTempId: "9415144",
     name: "Dutch Slough", slug: "dutch-slough",
     state: "california", city: "Dutch Slough, CA", region: "San Francisco Bay Area",
     lat: 38.0117, lon: -121.638, latDisplay: "38.01°N", lonDisplay: "121.64°W",
@@ -2647,7 +2647,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415056", waterTempId: "9415056",
+    id: "9415056", waterTempId: "9414863",
     name: "Pinole Point", slug: "pinole-point",
     state: "california", city: "Pinole Point, CA", region: "San Francisco Bay Area",
     lat: 38.015, lon: -122.363, latDisplay: "38.02°N", lonDisplay: "122.36°W",
@@ -2669,7 +2669,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415064", waterTempId: "9415064",
+    id: "9415064", waterTempId: "9415144",
     name: "Antioch", slug: "antioch",
     state: "california", city: "Antioch, CA", region: "San Francisco Bay Area",
     lat: 38.02, lon: -121.815, latDisplay: "38.02°N", lonDisplay: "121.81°W",
@@ -2691,7 +2691,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415074", waterTempId: "9415074",
+    id: "9415074", waterTempId: "9414863",
     name: "Hercules, Refugio Landing", slug: "hercules-refugio-landing",
     state: "california", city: "Hercules, Refugio Landing, CA", region: "San Francisco Bay Area",
     lat: 38.0233, lon: -122.292, latDisplay: "38.02°N", lonDisplay: "122.29°W",
@@ -2713,7 +2713,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415095", waterTempId: "9415095",
+    id: "9415095", waterTempId: "9415144",
     name: "Irish Landing, Sand Mound Slough", slug: "irish-landing-sand-mound-slough",
     state: "california", city: "Irish Landing, Sand Mound Slough, CA", region: "San Francisco Bay Area",
     lat: 38.0333, lon: -121.583, latDisplay: "38.03°N", lonDisplay: "121.58°W",
@@ -2735,7 +2735,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415096", waterTempId: "9415096",
+    id: "9415096", waterTempId: "9415144",
     name: "Pittsburg, New York Slough", slug: "pittsburg-new-york-slough",
     state: "california", city: "Pittsburg, New York Slough, CA", region: "San Francisco Bay Area",
     lat: 38.0367, lon: -121.88, latDisplay: "38.04°N", lonDisplay: "121.88°W",
@@ -2779,7 +2779,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415105", waterTempId: "9415105",
+    id: "9415105", waterTempId: "9415144",
     name: "Wards Island, Little Connection Slough", slug: "wards-island-little-connection-slough",
     state: "california", city: "Wards Island, Little Connection Slough, CA", region: "San Francisco Bay Area",
     lat: 38.04999923706055, lon: -121.49700164794922, latDisplay: "38.05°N", lonDisplay: "121.50°W",
@@ -2801,7 +2801,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415111", waterTempId: "9415111",
+    id: "9415111", waterTempId: "9415102",
     name: "Benicia", slug: "benicia",
     state: "california", city: "Benicia, CA", region: "San Francisco Bay Area",
     lat: 38.0433, lon: -122.13, latDisplay: "38.04°N", lonDisplay: "122.13°W",
@@ -2823,7 +2823,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415112", waterTempId: "9415112",
+    id: "9415112", waterTempId: "9415144",
     name: "Mallard Island Ferry Wharf", slug: "mallard-island-ferry-wharf",
     state: "california", city: "Mallard Island Ferry Wharf, CA", region: "San Francisco Bay Area",
     lat: 38.0433, lon: -121.918, latDisplay: "38.04°N", lonDisplay: "121.92°W",
@@ -2845,7 +2845,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415117", waterTempId: "9415117",
+    id: "9415117", waterTempId: "9415144",
     name: "Bishop Cut, Disappointment Slough", slug: "bishop-cut-disappointment-slough",
     state: "california", city: "Bishop Cut, Disappointment Slough, CA", region: "San Francisco Bay Area",
     lat: 38.045, lon: -121.42, latDisplay: "38.05°N", lonDisplay: "121.42°W",
@@ -2867,7 +2867,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415142", waterTempId: "9415142",
+    id: "9415142", waterTempId: "9415102",
     name: "Selby", slug: "selby",
     state: "california", city: "Selby, CA", region: "San Francisco Bay Area",
     lat: 38.0583, lon: -122.243, latDisplay: "38.06°N", lonDisplay: "122.24°W",
@@ -2889,7 +2889,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415143", waterTempId: "9415143",
+    id: "9415143", waterTempId: "9415102",
     name: "Crockett", slug: "crockett",
     state: "california", city: "Crockett, CA", region: "San Francisco Bay Area",
     lat: 38.0583, lon: -122.223, latDisplay: "38.06°N", lonDisplay: "122.22°W",
@@ -2933,7 +2933,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415145", waterTempId: "9415145",
+    id: "9415145", waterTempId: "9415144",
     name: "False River", slug: "false-river",
     state: "california", city: "False River, CA", region: "San Francisco Bay Area",
     lat: 38.055, lon: -121.657, latDisplay: "38.05°N", lonDisplay: "121.66°W",
@@ -2955,7 +2955,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415149", waterTempId: "9415149",
+    id: "9415149", waterTempId: "9415144",
     name: "Prisoners Point", slug: "prisoners-point",
     state: "california", city: "Prisoners Point, CA", region: "San Francisco Bay Area",
     lat: 38.0617, lon: -121.555, latDisplay: "38.06°N", lonDisplay: "121.56°W",
@@ -2977,7 +2977,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415165", waterTempId: "9415165",
+    id: "9415165", waterTempId: "9415102",
     name: "Vallejo, Mare Island Strait", slug: "vallejo-mare-island-strait",
     state: "california", city: "Vallejo, Mare Island Strait, CA", region: "San Francisco Bay Area",
     lat: 38.1117, lon: -122.273, latDisplay: "38.11°N", lonDisplay: "122.27°W",
@@ -2999,7 +2999,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415176", waterTempId: "9415176",
+    id: "9415176", waterTempId: "9415144",
     name: "Collinsville", slug: "collinsville",
     state: "california", city: "Collinsville, CA", region: "San Francisco Bay Area",
     lat: 38.0733, lon: -121.848, latDisplay: "38.07°N", lonDisplay: "121.85°W",
@@ -3021,7 +3021,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415193", waterTempId: "9415193",
+    id: "9415193", waterTempId: "9415144",
     name: "Threemile Slough entrance", slug: "threemile-slough-entrance",
     state: "california", city: "Threemile Slough entrance, CA", region: "San Francisco Bay Area",
     lat: 38.086700439453125, lon: -121.68499755859375, latDisplay: "38.09°N", lonDisplay: "121.68°W",
@@ -3043,7 +3043,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415205", waterTempId: "9415205",
+    id: "9415205", waterTempId: "9415144",
     name: "Montezuma Slough", slug: "montezuma-slough",
     state: "california", city: "Montezuma Slough, CA", region: "San Francisco Bay Area",
     lat: 38.0767, lon: -121.885, latDisplay: "38.08°N", lonDisplay: "121.89°W",
@@ -3065,7 +3065,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415218", waterTempId: "9415218",
+    id: "9415218", waterTempId: "9415102",
     name: "Mare Island", slug: "mare-island",
     state: "california", city: "Mare Island, CA", region: "San Francisco Bay Area",
     lat: 38.07, lon: -122.25, latDisplay: "38.07°N", lonDisplay: "122.25°W",
@@ -3087,7 +3087,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415227", waterTempId: "9415227",
+    id: "9415227", waterTempId: "9415144",
     name: "Point Buckler", slug: "point-buckler",
     state: "california", city: "Point Buckler, CA", region: "San Francisco Bay Area",
     lat: 38.1, lon: -122.033, latDisplay: "38.10°N", lonDisplay: "122.03°W",
@@ -3109,7 +3109,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415228", waterTempId: "9415228",
+    id: "9415228", waterTempId: "9415020",
     name: "Inverness, Tomales Bay", slug: "inverness-tomales-bay",
     state: "california", city: "Inverness, Tomales Bay, CA", region: "San Francisco Bay Area",
     lat: 38.1133, lon: -122.868, latDisplay: "38.11°N", lonDisplay: "122.87°W",
@@ -3131,7 +3131,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415229", waterTempId: "9415229",
+    id: "9415229", waterTempId: "9415144",
     name: "Korths Harbor, San Joaquin River", slug: "korths-harbor-san-joaquin-river",
     state: "california", city: "Korths Harbor, San Joaquin River, CA", region: "San Francisco Bay Area",
     lat: 38.097599029541016, lon: -121.56839752197266, latDisplay: "38.10°N", lonDisplay: "121.57°W",
@@ -3153,7 +3153,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415236", waterTempId: "9415236",
+    id: "9415236", waterTempId: "9415144",
     name: "Threemile Slough", slug: "threemile-slough",
     state: "california", city: "Threemile Slough, CA", region: "San Francisco Bay Area",
     lat: 38.1067, lon: -121.7, latDisplay: "38.11°N", lonDisplay: "121.70°W",
@@ -3175,7 +3175,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415252", waterTempId: "9415252",
+    id: "9415252", waterTempId: "9414863",
     name: "Petaluma River entrance", slug: "petaluma-river-entrance",
     state: "california", city: "Petaluma River entrance, CA", region: "San Francisco Bay Area",
     lat: 38.11530555555556, lon: -122.5056666666667, latDisplay: "38.12°N", lonDisplay: "122.51°W",
@@ -3197,7 +3197,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415257", waterTempId: "9415257",
+    id: "9415257", waterTempId: "9415144",
     name: "Terminous, South Fork", slug: "terminous-south-fork",
     state: "california", city: "Terminous, South Fork, CA", region: "San Francisco Bay Area",
     lat: 38.11, lon: -121.498, latDisplay: "38.11°N", lonDisplay: "121.50°W",
@@ -3219,7 +3219,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415265", waterTempId: "9415265",
+    id: "9415265", waterTempId: "9415144",
     name: "Suisun Slough entrance", slug: "suisun-slough-entrance",
     state: "california", city: "Suisun Slough entrance, CA", region: "San Francisco Bay Area",
     lat: 38.1283, lon: -122.073, latDisplay: "38.13°N", lonDisplay: "122.07°W",
@@ -3241,7 +3241,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415266", waterTempId: "9415266",
+    id: "9415266", waterTempId: "9415144",
     name: "Pierce Harbor, Goodyear Slough", slug: "pierce-harbor-goodyear-slough",
     state: "california", city: "Pierce Harbor, Goodyear Slough, CA", region: "San Francisco Bay Area",
     lat: 38.1267, lon: -122.1, latDisplay: "38.13°N", lonDisplay: "122.10°W",
@@ -3263,7 +3263,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415287", waterTempId: "9415287",
+    id: "9415287", waterTempId: "9415144",
     name: "Georgiana Slough entrance", slug: "georgiana-slough-entrance",
     state: "california", city: "Georgiana Slough entrance, CA", region: "San Francisco Bay Area",
     lat: 38.125, lon: -121.578, latDisplay: "38.13°N", lonDisplay: "121.58°W",
@@ -3285,7 +3285,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415307", waterTempId: "9415307",
+    id: "9415307", waterTempId: "9415144",
     name: "Meins Landing, Montezuma Slough", slug: "meins-landing-montezuma-slough",
     state: "california", city: "Meins Landing, Montezuma Slough, CA", region: "San Francisco Bay Area",
     lat: 38.1367, lon: -121.907, latDisplay: "38.14°N", lonDisplay: "121.91°W",
@@ -3307,7 +3307,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415316", waterTempId: "9415316",
+    id: "9415316", waterTempId: "9415144",
     name: "Rio Vista", slug: "rio-vista",
     state: "california", city: "Rio Vista, CA", region: "San Francisco Bay Area",
     lat: 38.145, lon: -121.692, latDisplay: "38.15°N", lonDisplay: "121.69°W",
@@ -3329,7 +3329,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415320", waterTempId: "9415320",
+    id: "9415320", waterTempId: "9415020",
     name: "Reynolds, Tomales Bay", slug: "reynolds-tomales-bay",
     state: "california", city: "Reynolds, Tomales Bay, CA", region: "San Francisco Bay Area",
     lat: 38.1467, lon: -122.883, latDisplay: "38.15°N", lonDisplay: "122.88°W",
@@ -3351,7 +3351,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415338", waterTempId: "9415338",
+    id: "9415338", waterTempId: "9414863",
     name: "Sonoma Creek", slug: "sonoma-creek",
     state: "california", city: "Sonoma Creek, CA", region: "San Francisco Bay Area",
     lat: 38.1567, lon: -122.407, latDisplay: "38.16°N", lonDisplay: "122.41°W",
@@ -3373,7 +3373,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415339", waterTempId: "9415339",
+    id: "9415339", waterTempId: "9415020",
     name: "Marshall, Tomales Bay", slug: "marshall-tomales-bay",
     state: "california", city: "Marshall, Tomales Bay, CA", region: "San Francisco Bay Area",
     lat: 38.1617, lon: -122.893, latDisplay: "38.16°N", lonDisplay: "122.89°W",
@@ -3395,7 +3395,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415344", waterTempId: "9415344",
+    id: "9415344", waterTempId: "9414863",
     name: "Hog Island, San Antonio Creek", slug: "hog-island-san-antonio-creek",
     state: "california", city: "Hog Island, San Antonio Creek, CA", region: "San Francisco Bay Area",
     lat: 38.1617, lon: -122.55, latDisplay: "38.16°N", lonDisplay: "122.55°W",
@@ -3417,7 +3417,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415379", waterTempId: "9415379",
+    id: "9415379", waterTempId: "9415144",
     name: "Joice Island, Suisun Slough", slug: "joice-island-suisun-slough",
     state: "california", city: "Joice Island, Suisun Slough, CA", region: "San Francisco Bay Area",
     lat: 38.18, lon: -122.045, latDisplay: "38.18°N", lonDisplay: "122.05°W",
@@ -3439,7 +3439,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415396", waterTempId: "9415396",
+    id: "9415396", waterTempId: "9415020",
     name: "Blakes Landing, Tomales Bay", slug: "blakes-landing-tomales-bay",
     state: "california", city: "Blakes Landing, Tomales Bay, CA", region: "San Francisco Bay Area",
     lat: 38.19, lon: -122.917, latDisplay: "38.19°N", lonDisplay: "122.92°W",
@@ -3461,7 +3461,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415402", waterTempId: "9415402",
+    id: "9415402", waterTempId: "9415144",
     name: "Montezuma Slough Bridge", slug: "montezuma-slough-bridge",
     state: "california", city: "Montezuma Slough Bridge, CA", region: "San Francisco Bay Area",
     lat: 38.1867, lon: -121.98, latDisplay: "38.19°N", lonDisplay: "121.98°W",
@@ -3483,7 +3483,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415414", waterTempId: "9415414",
+    id: "9415414", waterTempId: "9415144",
     name: "Steamboat Slough, Snug Harbor Marina", slug: "steamboat-slough-snug-harbor-marina",
     state: "california", city: "Steamboat Slough, Snug Harbor Marina, CA", region: "San Francisco Bay Area",
     lat: 38.1833, lon: -121.655, latDisplay: "38.18°N", lonDisplay: "121.66°W",
@@ -3505,7 +3505,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415415", waterTempId: "9415415",
+    id: "9415415", waterTempId: "9415102",
     name: "Edgerley Island, Napa River", slug: "edgerley-island-napa-river",
     state: "california", city: "Edgerley Island, Napa River, CA", region: "San Francisco Bay Area",
     lat: 38.1917, lon: -122.312, latDisplay: "38.19°N", lonDisplay: "122.31°W",
@@ -3527,7 +3527,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415446", waterTempId: "9415446",
+    id: "9415446", waterTempId: "9415102",
     name: "Brazos Drawbridge, Napa River", slug: "brazos-drawbridge-napa-river",
     state: "california", city: "Brazos Drawbridge, Napa River, CA", region: "San Francisco Bay Area",
     lat: 38.21, lon: -122.307, latDisplay: "38.21°N", lonDisplay: "122.31°W",
@@ -3549,7 +3549,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415447", waterTempId: "9415447",
+    id: "9415447", waterTempId: "9414863",
     name: "Wingo, Sonoma Creek", slug: "wingo-sonoma-creek",
     state: "california", city: "Wingo, Sonoma Creek, CA", region: "San Francisco Bay Area",
     lat: 38.21, lon: -122.427, latDisplay: "38.21°N", lonDisplay: "122.43°W",
@@ -3571,7 +3571,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415469", waterTempId: "9415469",
+    id: "9415469", waterTempId: "9415020",
     name: "Tomales Bay entrance", slug: "tomales-bay-entrance",
     state: "california", city: "Tomales Bay entrance, CA", region: "San Francisco Bay Area",
     lat: 38.2283, lon: -122.977, latDisplay: "38.23°N", lonDisplay: "122.98°W",
@@ -3593,7 +3593,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415478", waterTempId: "9415478",
+    id: "9415478", waterTempId: "9415144",
     name: "New Hope Bridge", slug: "new-hope-bridge",
     state: "california", city: "New Hope Bridge, CA", region: "San Francisco Bay Area",
     lat: 38.2267, lon: -121.49, latDisplay: "38.23°N", lonDisplay: "121.49°W",
@@ -3615,7 +3615,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415498", waterTempId: "9415498",
+    id: "9415498", waterTempId: "9415144",
     name: "Suisun City, Suisun Slough", slug: "suisun-city-suisun-slough",
     state: "california", city: "Suisun City, Suisun Slough, CA", region: "San Francisco Bay Area",
     lat: 38.2367, lon: -122.03, latDisplay: "38.24°N", lonDisplay: "122.03°W",
@@ -3637,7 +3637,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415565", waterTempId: "9415565",
+    id: "9415565", waterTempId: "9415144",
     name: "Snodgrass Slough", slug: "snodgrass-slough",
     state: "california", city: "Snodgrass Slough, CA", region: "San Francisco Bay Area",
     lat: 38.2767, lon: -121.495, latDisplay: "38.28°N", lonDisplay: "121.50°W",
@@ -3659,7 +3659,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415584", waterTempId: "9415584",
+    id: "9415584", waterTempId: "9414863",
     name: "Upper drawbridge, Petaluma River", slug: "upper-drawbridge-petaluma-river",
     state: "california", city: "Upper drawbridge, Petaluma River, CA", region: "San Francisco Bay Area",
     lat: 38.2283, lon: -122.613, latDisplay: "38.23°N", lonDisplay: "122.61°W",
@@ -3681,7 +3681,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415623", waterTempId: "9415623",
+    id: "9415623", waterTempId: "9415102",
     name: "Napa, Napa River", slug: "napa-napa-river",
     state: "california", city: "Napa, Napa River, CA", region: "San Francisco Bay Area",
     lat: 38.2983, lon: -122.28, latDisplay: "38.30°N", lonDisplay: "122.28°W",
@@ -3703,7 +3703,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415625", waterTempId: "9415625",
+    id: "9415625", waterTempId: "9415020",
     name: "Bodega Harbor entrance", slug: "bodega-harbor-entrance",
     state: "california", city: "Bodega Harbor entrance, CA", region: "San Francisco Bay Area",
     lat: 38.3083, lon: -123.055, latDisplay: "38.31°N", lonDisplay: "123.06°W",
@@ -3725,7 +3725,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415846", waterTempId: "9415846",
+    id: "9415846", waterTempId: "9415144",
     name: "Clarksburg", slug: "clarksburg",
     state: "california", city: "Clarksburg, CA", region: "San Francisco Bay Area",
     lat: 38.4167, lon: -121.523, latDisplay: "38.42°N", lonDisplay: "121.52°W",
@@ -3747,7 +3747,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9416024", waterTempId: "9416024",
+    id: "9416024", waterTempId: "9416841",
     name: "Fort Ross", slug: "fort-ross",
     state: "california", city: "Fort Ross, CA", region: "North Coast California",
     lat: 38.5133, lon: -123.245, latDisplay: "38.51°N", lonDisplay: "123.25°W",
@@ -3769,7 +3769,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9416131", waterTempId: "9416131",
+    id: "9416131", waterTempId: "9415144",
     name: "Port of West Sacramento", slug: "port-of-west-sacramento",
     state: "california", city: "Port of West Sacramento, CA", region: "North Coast California",
     lat: 38.56224822998047, lon: -121.54630279541016, latDisplay: "38.56°N", lonDisplay: "121.55°W",
@@ -3791,7 +3791,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9416174", waterTempId: "9416174",
+    id: "9416174", waterTempId: "9415144",
     name: "Sacramento", slug: "sacramento",
     state: "california", city: "Sacramento, CA", region: "North Coast California",
     lat: 38.58, lon: -121.507, latDisplay: "38.58°N", lonDisplay: "121.51°W",
@@ -3813,7 +3813,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9416409", waterTempId: "9416409",
+    id: "9416409", waterTempId: "9416841",
     name: "Green Cove", slug: "green-cove",
     state: "california", city: "Green Cove, CA", region: "North Coast California",
     lat: 38.70433333333333, lon: -123.4493888888889, latDisplay: "38.70°N", lonDisplay: "123.45°W",
@@ -3857,7 +3857,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9417426", waterTempId: "9417426",
+    id: "9417426", waterTempId: "9416841",
     name: "NOYO HARBOR", slug: "noyo-harbor",
     state: "california", city: "NOYO HARBOR, CA", region: "North Coast California",
     lat: 39.42577777777778, lon: -123.8051111111111, latDisplay: "39.43°N", lonDisplay: "123.81°W",
@@ -3879,7 +3879,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9417624", waterTempId: "9417624",
+    id: "9417624", waterTempId: "9416841",
     name: "Westport", slug: "westport",
     state: "california", city: "Westport, CA", region: "North Coast California",
     lat: 39.6333, lon: -123.783, latDisplay: "39.63°N", lonDisplay: "123.78°W",
@@ -3901,7 +3901,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9418024", waterTempId: "9418024",
+    id: "9418024", waterTempId: "9418767",
     name: "Shelter Cove", slug: "shelter-cove",
     state: "california", city: "Shelter Cove, CA", region: "North Coast California",
     lat: 40.025001525878906, lon: -124.05799865722656, latDisplay: "40.03°N", lonDisplay: "124.06°W",
@@ -3923,7 +3923,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9418637", waterTempId: "9418637",
+    id: "9418637", waterTempId: "9418767",
     name: "Cockrobin Island Bridge, Eel River", slug: "cockrobin-island-bridge-eel-river",
     state: "california", city: "Cockrobin Island Bridge, Eel River, CA", region: "North Coast California",
     lat: 40.63719940185547, lon: -124.2822036743164, latDisplay: "40.64°N", lonDisplay: "124.28°W",
@@ -3945,7 +3945,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9418686", waterTempId: "9418686",
+    id: "9418686", waterTempId: "9418767",
     name: "Hookton Slough", slug: "hookton-slough",
     state: "california", city: "Hookton Slough, CA", region: "North Coast California",
     lat: 40.6867, lon: -124.222, latDisplay: "40.69°N", lonDisplay: "124.22°W",
@@ -3967,7 +3967,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9418723", waterTempId: "9418723",
+    id: "9418723", waterTempId: "9418767",
     name: "Fields Landing", slug: "fields-landing",
     state: "california", city: "Fields Landing, CA", region: "North Coast California",
     lat: 40.7233, lon: -124.222, latDisplay: "40.72°N", lonDisplay: "124.22°W",
@@ -3989,7 +3989,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9418757", waterTempId: "9418757",
+    id: "9418757", waterTempId: "9418767",
     name: "Elk River Railroad Bridge", slug: "elk-river-railroad-bridge",
     state: "california", city: "Elk River Railroad Bridge, CA", region: "North Coast California",
     lat: 40.7567, lon: -124.193, latDisplay: "40.76°N", lonDisplay: "124.19°W",
@@ -4033,7 +4033,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9418778", waterTempId: "9418778",
+    id: "9418778", waterTempId: "9418767",
     name: "Bucksport", slug: "bucksport",
     state: "california", city: "Bucksport, CA", region: "North Coast California",
     lat: 40.7783, lon: -124.197, latDisplay: "40.78°N", lonDisplay: "124.20°W",
@@ -4055,7 +4055,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9418801", waterTempId: "9418801",
+    id: "9418801", waterTempId: "9418767",
     name: "Eureka", slug: "eureka",
     state: "california", city: "Eureka, CA", region: "North Coast California",
     lat: 40.8067, lon: -124.167, latDisplay: "40.81°N", lonDisplay: "124.17°W",
@@ -4077,7 +4077,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9418802", waterTempId: "9418802",
+    id: "9418802", waterTempId: "9418767",
     name: "Eureka Slough Bridge", slug: "eureka-slough-bridge",
     state: "california", city: "Eureka Slough Bridge, CA", region: "North Coast California",
     lat: 40.8067, lon: -124.142, latDisplay: "40.81°N", lonDisplay: "124.14°W",
@@ -4099,7 +4099,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9418817", waterTempId: "9418817",
+    id: "9418817", waterTempId: "9418767",
     name: "Samoa", slug: "samoa",
     state: "california", city: "Samoa, CA", region: "North Coast California",
     lat: 40.8267, lon: -124.18, latDisplay: "40.83°N", lonDisplay: "124.18°W",
@@ -4121,7 +4121,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9418851", waterTempId: "9418851",
+    id: "9418851", waterTempId: "9418767",
     name: "Arcata Wharf", slug: "arcata-wharf",
     state: "california", city: "Arcata Wharf, CA", region: "North Coast California",
     lat: 40.85, lon: -124.117, latDisplay: "40.85°N", lonDisplay: "124.12°W",
@@ -4143,7 +4143,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9418865", waterTempId: "9418865",
+    id: "9418865", waterTempId: "9418767",
     name: "Mad River Slough, Arcata Bay", slug: "mad-river-slough-arcata-bay",
     state: "california", city: "Mad River Slough, Arcata Bay, CA", region: "North Coast California",
     lat: 40.865, lon: -124.148, latDisplay: "40.87°N", lonDisplay: "124.15°W",
@@ -4165,7 +4165,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9419059", waterTempId: "9419059",
+    id: "9419059", waterTempId: "9418767",
     name: "Trinidad Harbor", slug: "trinidad-harbor",
     state: "california", city: "Trinidad Harbor, CA", region: "North Coast California",
     lat: 41.0567, lon: -124.147, latDisplay: "41.06°N", lonDisplay: "124.15°W",
@@ -4209,7 +4209,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9419945", waterTempId: "9419945",
+    id: "9419945", waterTempId: "9419750",
     name: "Pyramid Point, Smith River", slug: "pyramid-point-smith-river",
     state: "california", city: "Pyramid Point, Smith River, CA", region: "North Coast California",
     lat: 41.94525, lon: -124.2009166666667, latDisplay: "41.95°N", lonDisplay: "124.20°W",
@@ -4231,7 +4231,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410025", waterTempId: "9410025",
+    id: "9410025", waterTempId: "9410170",
     name: "ONEONTA SLOUGH,TIJUANA EST.", slug: "oneonta-sloughtijuana-est",
     state: "california", city: "ONEONTA SLOUGH,TIJUANA EST., CA", region: "San Diego",
     lat: 32.5717, lon: -117.12, latDisplay: "32.57°N", lonDisplay: "117.12°W",
@@ -4253,7 +4253,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410155", waterTempId: "9410155",
+    id: "9410155", waterTempId: "9410170",
     name: "Ballast Point", slug: "ballast-point",
     state: "california", city: "Ballast Point, CA", region: "San Diego",
     lat: 32.6867, lon: -117.233, latDisplay: "32.69°N", lonDisplay: "117.23°W",
@@ -4275,7 +4275,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410179", waterTempId: "9410179",
+    id: "9410179", waterTempId: "9410170",
     name: "Ocean Beach, Point Loma", slug: "ocean-beach-point-loma",
     state: "california", city: "Ocean Beach, Point Loma, CA", region: "San Diego",
     lat: 32.7483, lon: -117.255, latDisplay: "32.75°N", lonDisplay: "117.25°W",
@@ -4297,7 +4297,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410302", waterTempId: "9410302",
+    id: "9410302", waterTempId: "9410230",
     name: "SAN ELIJO LAGOON", slug: "san-elijo-lagoon",
     state: "california", city: "SAN ELIJO LAGOON, CA", region: "San Diego",
     lat: 33.0133, lon: -117.277, latDisplay: "33.01°N", lonDisplay: "117.28°W",
@@ -4319,7 +4319,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9410396", waterTempId: "9410396",
+    id: "9410396", waterTempId: "9410230",
     name: "OCEANSIDE HARBOR", slug: "oceanside-harbor",
     state: "california", city: "OCEANSIDE HARBOR, CA", region: "San Diego",
     lat: 33.21, lon: -117.395, latDisplay: "33.21°N", lonDisplay: "117.39°W",
@@ -4341,7 +4341,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9411013", waterTempId: "9411013",
+    id: "9411013", waterTempId: "9410840",
     name: "MUGU LAGOON BRIDGE", slug: "mugu-lagoon-bridge",
     state: "california", city: "MUGU LAGOON BRIDGE, CA", region: "Los Angeles / Orange County",
     lat: 34.1017, lon: -119.098, latDisplay: "34.10°N", lonDisplay: "119.10°W",
@@ -4363,7 +4363,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414510", waterTempId: "9414510",
+    id: "9414510", waterTempId: "9414523",
     name: "DUMBARTON RAILROAD BRIDGE", slug: "dumbarton-railroad-bridge",
     state: "california", city: "DUMBARTON RAILROAD BRIDGE, CA", region: "San Francisco Bay Area",
     lat: 37.5, lon: -122.1, latDisplay: "37.50°N", lonDisplay: "122.10°W",
@@ -4385,7 +4385,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414537", waterTempId: "9414537",
+    id: "9414537", waterTempId: "9414523",
     name: "PALO ALTO, CHANNEL  MARKER 8, S. F. BAY", slug: "palo-alto-channel-marker-8-s-f-bay",
     state: "california", city: "PALO ALTO, CHANNEL  MARKER 8, S. F. BAY, CA", region: "San Francisco Bay Area",
     lat: 37.4567, lon: -122.11, latDisplay: "37.46°N", lonDisplay: "122.11°W",
@@ -4407,7 +4407,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414585", waterTempId: "9414585",
+    id: "9414585", waterTempId: "9414523",
     name: "UPPER COYOTE CREEK, TRIBUTARY 3", slug: "upper-coyote-creek-tributary-3",
     state: "california", city: "UPPER COYOTE CREEK, TRIBUTARY 3, CA", region: "San Francisco Bay Area",
     lat: 37.4617, lon: -121.953, latDisplay: "37.46°N", lonDisplay: "121.95°W",
@@ -4429,7 +4429,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414589", waterTempId: "9414589",
+    id: "9414589", waterTempId: "9414523",
     name: "COYOTE CREEK, TRIBUTARY 2, S. F. BAY", slug: "coyote-creek-tributary-2-s-f-bay",
     state: "california", city: "COYOTE CREEK, TRIBUTARY 2, S. F. BAY, CA", region: "San Francisco Bay Area",
     lat: 37.46, lon: -121.953, latDisplay: "37.46°N", lonDisplay: "121.95°W",
@@ -4451,7 +4451,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414759", waterTempId: "9414759",
+    id: "9414759", waterTempId: "9415144",
     name: "HOLLY SUGAR REF.,TOM PAINE SL.", slug: "holly-sugar-reftom-paine-sl",
     state: "california", city: "HOLLY SUGAR REF.,TOM PAINE SL., CA", region: "San Francisco Bay Area",
     lat: 37.775, lon: -121.42, latDisplay: "37.77°N", lonDisplay: "121.42°W",
@@ -4473,7 +4473,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414768", waterTempId: "9414768",
+    id: "9414768", waterTempId: "9415144",
     name: "MOSSDALE,SAN JOAQUIN RIVER", slug: "mossdalesan-joaquin-river",
     state: "california", city: "MOSSDALE,SAN JOAQUIN RIVER, CA", region: "San Francisco Bay Area",
     lat: 37.7867, lon: -121.313, latDisplay: "37.79°N", lonDisplay: "121.31°W",
@@ -4495,7 +4495,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414778", waterTempId: "9414778",
+    id: "9414778", waterTempId: "9415144",
     name: "NAGLEE BRIDGE,OLD RIVER", slug: "naglee-bridgeold-river",
     state: "california", city: "NAGLEE BRIDGE,OLD RIVER, CA", region: "San Francisco Bay Area",
     lat: 37.8033, lon: -121.448, latDisplay: "37.80°N", lonDisplay: "121.45°W",
@@ -4517,7 +4517,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414794", waterTempId: "9414794",
+    id: "9414794", waterTempId: "9415144",
     name: "CLIFTON COURT FERRY,OLD RIVER", slug: "clifton-court-ferryold-river",
     state: "california", city: "CLIFTON COURT FERRY,OLD RIVER, CA", region: "San Francisco Bay Area",
     lat: 37.835, lon: -121.552, latDisplay: "37.84°N", lonDisplay: "121.55°W",
@@ -4539,7 +4539,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414796", waterTempId: "9414796",
+    id: "9414796", waterTempId: "9414290",
     name: "GPS Buoy, San Francisco Bay", slug: "gps-buoy-san-francisco-bay",
     state: "california", city: "GPS Buoy, San Francisco Bay, CA", region: "San Francisco Bay Area",
     lat: 37.8333, lon: -122.397, latDisplay: "37.83°N", lonDisplay: "122.40°W",
@@ -4561,7 +4561,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9414867", waterTempId: "9414867",
+    id: "9414867", waterTempId: "9415144",
     name: "BORDEN HIGHWAY BRIDGE, SAN JOAQUIN RIVER", slug: "borden-highway-bridge-san-joaquin-river",
     state: "california", city: "BORDEN HIGHWAY BRIDGE, SAN JOAQUIN RIVER, CA", region: "San Francisco Bay Area",
     lat: 37.9367, lon: -121.333, latDisplay: "37.94°N", lonDisplay: "121.33°W",
@@ -4583,7 +4583,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415004", waterTempId: "9415004",
+    id: "9415004", waterTempId: "9415144",
     name: "ELDORADO PUMP, SAN JOAQUIN RIVER", slug: "eldorado-pump-san-joaquin-river",
     state: "california", city: "ELDORADO PUMP, SAN JOAQUIN RIVER, CA", region: "San Francisco Bay Area",
     lat: 37.985, lon: -121.392, latDisplay: "37.98°N", lonDisplay: "121.39°W",
@@ -4605,7 +4605,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415027", waterTempId: "9415027",
+    id: "9415027", waterTempId: "9415144",
     name: "BACON ISLAND,MIDDLE RIVER", slug: "bacon-islandmiddle-river",
     state: "california", city: "BACON ISLAND,MIDDLE RIVER, CA", region: "San Francisco Bay Area",
     lat: 38.0033, lon: -121.523, latDisplay: "38.00°N", lonDisplay: "121.52°W",
@@ -4627,7 +4627,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415124", waterTempId: "9415124",
+    id: "9415124", waterTempId: "9414863",
     name: "Hamilton AFB (Outside)", slug: "hamilton-afb-outside",
     state: "california", city: "Hamilton AFB (Outside), CA", region: "San Francisco Bay Area",
     lat: 38.0483, lon: -122.498, latDisplay: "38.05°N", lonDisplay: "122.50°W",
@@ -4649,7 +4649,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415126", waterTempId: "9415126",
+    id: "9415126", waterTempId: "9414863",
     name: "Hamilton AFB (Inside)", slug: "hamilton-afb-inside",
     state: "california", city: "Hamilton AFB (Inside), CA", region: "San Francisco Bay Area",
     lat: 38.0483, lon: -122.498, latDisplay: "38.05°N", lonDisplay: "122.50°W",
@@ -4671,7 +4671,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415151", waterTempId: "9415151",
+    id: "9415151", waterTempId: "9415144",
     name: "VENICE ISLAND, VENICE CUT", slug: "venice-island-venice-cut",
     state: "california", city: "VENICE ISLAND, VENICE CUT, CA", region: "San Francisco Bay Area",
     lat: 38.0567, lon: -121.53, latDisplay: "38.06°N", lonDisplay: "121.53°W",
@@ -4693,7 +4693,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415187", waterTempId: "9415187",
+    id: "9415187", waterTempId: "9414863",
     name: "SAN PABLO BAY", slug: "san-pablo-bay",
     state: "california", city: "SAN PABLO BAY, CA", region: "San Francisco Bay Area",
     lat: 38.08, lon: -122.462, latDisplay: "38.08°N", lonDisplay: "122.46°W",
@@ -4715,7 +4715,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415198", waterTempId: "9415198",
+    id: "9415198", waterTempId: "9415144",
     name: "POTATO PT,VENICE IS,SN JQN R", slug: "potato-ptvenice-issn-jqn-r",
     state: "california", city: "POTATO PT,VENICE IS,SN JQN R, CA", region: "San Francisco Bay Area",
     lat: 38.08, lon: -121.568, latDisplay: "38.08°N", lonDisplay: "121.57°W",
@@ -4737,7 +4737,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415352", waterTempId: "9415352",
+    id: "9415352", waterTempId: "9415144",
     name: "ISLETON,SACRAMENTO RIVER", slug: "isletonsacramento-river",
     state: "california", city: "ISLETON,SACRAMENTO RIVER, CA", region: "San Francisco Bay Area",
     lat: 38.1633, lon: -121.608, latDisplay: "38.16°N", lonDisplay: "121.61°W",
@@ -4759,7 +4759,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415423", waterTempId: "9415423",
+    id: "9415423", waterTempId: "9414863",
     name: "LAKEVILLE, PETALUMA RIVER", slug: "lakeville-petaluma-river",
     state: "california", city: "LAKEVILLE, PETALUMA RIVER, CA", region: "San Francisco Bay Area",
     lat: 38.1983, lon: -122.547, latDisplay: "38.20°N", lonDisplay: "122.55°W",
@@ -4781,7 +4781,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415438", waterTempId: "9415438",
+    id: "9415438", waterTempId: "9415102",
     name: "SKAGGS ISLAND, HUDEMAN SLOUGH", slug: "skaggs-island-hudeman-slough",
     state: "california", city: "SKAGGS ISLAND, HUDEMAN SLOUGH, CA", region: "San Francisco Bay Area",
     lat: 38.205, lon: -122.373, latDisplay: "38.20°N", lonDisplay: "122.37°W",
@@ -4803,7 +4803,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415477", waterTempId: "9415477",
+    id: "9415477", waterTempId: "9415020",
     name: "SAND POINT, TOMALES BAY", slug: "sand-point-tomales-bay",
     state: "california", city: "SAND POINT, TOMALES BAY, CA", region: "San Francisco Bay Area",
     lat: 38.2317, lon: -122.968, latDisplay: "38.23°N", lonDisplay: "122.97°W",
@@ -4825,7 +4825,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415479", waterTempId: "9415479",
+    id: "9415479", waterTempId: "9415144",
     name: "RYER ISLAND, CACHE SLOUGH", slug: "ryer-island-cache-slough",
     state: "california", city: "RYER ISLAND, CACHE SLOUGH, CA", region: "San Francisco Bay Area",
     lat: 38.2267, lon: -121.673, latDisplay: "38.23°N", lonDisplay: "121.67°W",
@@ -4847,7 +4847,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415489", waterTempId: "9415489",
+    id: "9415489", waterTempId: "9415144",
     name: "WALNUT GROVE,SACRAMENTO RIVER", slug: "walnut-grovesacramento-river",
     state: "california", city: "WALNUT GROVE,SACRAMENTO RIVER, CA", region: "San Francisco Bay Area",
     lat: 38.24, lon: -121.522, latDisplay: "38.24°N", lonDisplay: "121.52°W",
@@ -4869,7 +4869,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9415522", waterTempId: "9415522",
+    id: "9415522", waterTempId: "9415144",
     name: "BENSON FERRY BRIDGE,MOKELUMNE R.", slug: "benson-ferry-bridgemokelumne-r",
     state: "california", city: "BENSON FERRY BRIDGE,MOKELUMNE R., CA", region: "San Francisco Bay Area",
     lat: 38.2567, lon: -121.438, latDisplay: "38.26°N", lonDisplay: "121.44°W",
@@ -4891,7 +4891,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9418739", waterTempId: "9418739",
+    id: "9418739", waterTempId: "9418767",
     name: "RED BLUFF, HUMBOLDT BAY", slug: "red-bluff-humboldt-bay",
     state: "california", city: "RED BLUFF, HUMBOLDT BAY, CA", region: "North Coast California",
     lat: 40.74, lon: -124.212, latDisplay: "40.74°N", lonDisplay: "124.21°W",
@@ -4913,7 +4913,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9418799", waterTempId: "9418799",
+    id: "9418799", waterTempId: "9418767",
     name: "FRESHWATER SLOUGH, HUMBOLDT BAY", slug: "freshwater-slough-humboldt-bay",
     state: "california", city: "FRESHWATER SLOUGH, HUMBOLDT BAY, CA", region: "North Coast California",
     lat: 40.7983, lon: -124.12, latDisplay: "40.80°N", lonDisplay: "124.12°W",
@@ -4935,7 +4935,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9418983", waterTempId: "9418983",
+    id: "9418983", waterTempId: "9418767",
     name: "UPPER MAD RIVER SLOUGH", slug: "upper-mad-river-slough",
     state: "california", city: "UPPER MAD RIVER SLOUGH, CA", region: "North Coast California",
     lat: 40.8983, lon: -124.135, latDisplay: "40.90°N", lonDisplay: "124.14°W",
@@ -4957,7 +4957,7 @@ export const CALIFORNIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9419551", waterTempId: "9419551",
+    id: "9419551", waterTempId: "9419750",
     name: "Requa Dock", slug: "requa-dock",
     state: "california", city: "Requa Dock, CA", region: "North Coast California",
     lat: 41.545, lon: -124.07, latDisplay: "41.55°N", lonDisplay: "124.07°W",

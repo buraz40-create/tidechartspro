@@ -7,7 +7,7 @@ export type { StationConfig, NearbyStation, Species }
 
 export const GEORGIA_STATIONS: StationConfig[] = [
   {
-    id: "8670073", waterTempId: "8670073",
+    id: "8670073", waterTempId: "8670870",
     name: "S.C.L. RR. bridge", slug: "scl-rr-bridge",
     state: "georgia", city: "S.C.L. RR. bridge, GA", region: "Savannah / Tybee Island",
     lat: 32.2317, lon: -81.145, latDisplay: "32.23°N", lonDisplay: "81.14°W",
@@ -29,7 +29,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8670424", waterTempId: "8670424",
+    id: "8670424", waterTempId: "8670870",
     name: "Port Wentworth", slug: "port-wentworth",
     state: "georgia", city: "Port Wentworth, GA", region: "Savannah / Tybee Island",
     lat: 32.14330555555556, lon: -81.14169444444444, latDisplay: "32.14°N", lonDisplay: "81.14°W",
@@ -51,7 +51,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8670678", waterTempId: "8670678",
+    id: "8670678", waterTempId: "8670870",
     name: "Fort Jackson", slug: "fort-jackson",
     state: "georgia", city: "Fort Jackson, GA", region: "Savannah / Tybee Island",
     lat: 32.0817, lon: -81.0367, latDisplay: "32.08°N", lonDisplay: "81.04°W",
@@ -73,7 +73,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8670681", waterTempId: "8670681",
+    id: "8670681", waterTempId: "8670870",
     name: "SAVANNAH", slug: "savannah",
     state: "georgia", city: "SAVANNAH, GA", region: "Savannah / Tybee Island",
     lat: 32.0817, lon: -81.0917, latDisplay: "32.08°N", lonDisplay: "81.09°W",
@@ -117,7 +117,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8670892", waterTempId: "8670892",
+    id: "8670892", waterTempId: "8670870",
     name: "Tybee Light", slug: "tybee-light",
     state: "georgia", city: "Tybee Light, GA", region: "Savannah / Tybee Island",
     lat: 32.0283, lon: -80.855, latDisplay: "32.03°N", lonDisplay: "80.86°W",
@@ -139,7 +139,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8671086", waterTempId: "8671086",
+    id: "8671086", waterTempId: "8670870",
     name: "Skidaway Institute, Skidaway River", slug: "skidaway-institute-skidaway-river",
     state: "georgia", city: "Skidaway Institute, Skidaway River, GA", region: "Golden Isles / Brunswick",
     lat: 31.99, lon: -81.0233, latDisplay: "31.99°N", lonDisplay: "81.02°W",
@@ -161,7 +161,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8671314", waterTempId: "8671314",
+    id: "8671314", waterTempId: "8670870",
     name: "Halfmoon Reef, Halfmoon River", slug: "halfmoon-reef-halfmoon-river",
     state: "georgia", city: "Halfmoon Reef, Halfmoon River, GA", region: "Golden Isles / Brunswick",
     lat: 31.963300704956055, lon: -80.94329833984375, latDisplay: "31.96°N", lonDisplay: "80.94°W",
@@ -183,7 +183,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8671315", waterTempId: "8671315",
+    id: "8671315", waterTempId: "8670870",
     name: "Priest Landing, Wilmington River", slug: "priest-landing-wilmington-river",
     state: "georgia", city: "Priest Landing, Wilmington River, GA", region: "Golden Isles / Brunswick",
     lat: 31.963300704956055, lon: -81.01170349121094, latDisplay: "31.96°N", lonDisplay: "81.01°W",
@@ -205,7 +205,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8671489", waterTempId: "8671489",
+    id: "8671489", waterTempId: "8670870",
     name: "Richmond Hill, Ogeechee River", slug: "richmond-hill-ogeechee-river",
     state: "georgia", city: "Richmond Hill, Ogeechee River, GA", region: "Golden Isles / Brunswick",
     lat: 31.94300079345703, lon: -81.28980255126953, latDisplay: "31.94°N", lonDisplay: "81.29°W",
@@ -227,7 +227,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8671642", waterTempId: "8671642",
+    id: "8671642", waterTempId: "8670870",
     name: "Vernon View, Burnside River", slug: "vernon-view-burnside-river",
     state: "georgia", city: "Vernon View, Burnside River, GA", region: "Golden Isles / Brunswick",
     lat: 31.9267, lon: -81.0983, latDisplay: "31.93°N", lonDisplay: "81.10°W",
@@ -249,7 +249,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8671946", waterTempId: "8671946",
+    id: "8671946", waterTempId: "8670870",
     name: "Little Wassaw Island, Green Island Sound", slug: "little-wassaw-island-green-island-sound",
     state: "georgia", city: "Little Wassaw Island, Green Island Sound, GA", region: "Golden Isles / Brunswick",
     lat: 31.889699935913086, lon: -81.06169891357422, latDisplay: "31.89°N", lonDisplay: "81.06°W",
@@ -271,7 +271,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8672219", waterTempId: "8672219",
+    id: "8672219", waterTempId: "8670870",
     name: "Florida Passage, Ogeechee River", slug: "florida-passage-ogeechee-river",
     state: "georgia", city: "Florida Passage, Ogeechee River, GA", region: "Golden Isles / Brunswick",
     lat: 31.8533, lon: -81.1467, latDisplay: "31.85°N", lonDisplay: "81.15°W",
@@ -293,7 +293,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8672455", waterTempId: "8672455",
+    id: "8672455", waterTempId: "8670870",
     name: "Bradley Point, Bradley River", slug: "bradley-point-bradley-river",
     state: "georgia", city: "Bradley Point, Bradley River, GA", region: "Golden Isles / Brunswick",
     lat: 31.8217, lon: -81.05, latDisplay: "31.82°N", lonDisplay: "81.05°W",
@@ -315,7 +315,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8672462", waterTempId: "8672462",
+    id: "8672462", waterTempId: "8670870",
     name: "Belfast, Belfast River", slug: "belfast-belfast-river",
     state: "georgia", city: "Belfast, Belfast River, GA", region: "Golden Isles / Brunswick",
     lat: 31.8217, lon: -81.2983, latDisplay: "31.82°N", lonDisplay: "81.30°W",
@@ -337,7 +337,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8672667", waterTempId: "8672667",
+    id: "8672667", waterTempId: "8670870",
     name: "Bear River, (Range 'A' Light)", slug: "bear-river-range-a-light",
     state: "georgia", city: "Bear River, (Range 'A' Light), GA", region: "Golden Isles / Brunswick",
     lat: 31.7933, lon: -81.1817, latDisplay: "31.79°N", lonDisplay: "81.18°W",
@@ -359,7 +359,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8672696", waterTempId: "8672696",
+    id: "8672696", waterTempId: "8670870",
     name: "Kilkenny Club, Kilkenny Creek", slug: "kilkenny-club-kilkenny-creek",
     state: "georgia", city: "Kilkenny Club, Kilkenny Creek, GA", region: "Golden Isles / Brunswick",
     lat: 31.7883, lon: -81.2033, latDisplay: "31.79°N", lonDisplay: "81.20°W",
@@ -381,7 +381,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8672875", waterTempId: "8672875",
+    id: "8672875", waterTempId: "8670870",
     name: "Sunbury, Medway River", slug: "sunbury-medway-river",
     state: "georgia", city: "Sunbury, Medway River, GA", region: "Golden Isles / Brunswick",
     lat: 31.7667, lon: -81.2783, latDisplay: "31.77°N", lonDisplay: "81.28°W",
@@ -403,7 +403,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8673171", waterTempId: "8673171",
+    id: "8673171", waterTempId: "8670870",
     name: "Bear River Entrance", slug: "bear-river-entrance",
     state: "georgia", city: "Bear River Entrance, GA", region: "Golden Isles / Brunswick",
     lat: 31.72302777777778, lon: -81.1417, latDisplay: "31.72°N", lonDisplay: "81.14°W",
@@ -425,7 +425,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8673381", waterTempId: "8673381",
+    id: "8673381", waterTempId: "8670870",
     name: "Halfmoon, Timmons River", slug: "halfmoon-timmons-river",
     state: "georgia", city: "Halfmoon, Timmons River, GA", region: "Golden Isles / Brunswick",
     lat: 31.695, lon: -81.2717, latDisplay: "31.70°N", lonDisplay: "81.27°W",
@@ -447,7 +447,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8673437", waterTempId: "8673437",
+    id: "8673437", waterTempId: "8670870",
     name: "Walburg Creek entrance", slug: "walburg-creek-entrance",
     state: "georgia", city: "Walburg Creek entrance, GA", region: "Golden Isles / Brunswick",
     lat: 31.69, lon: -81.155, latDisplay: "31.69°N", lonDisplay: "81.16°W",
@@ -469,7 +469,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8673499", waterTempId: "8673499",
+    id: "8673499", waterTempId: "8670870",
     name: "North Newport River (Daymark 119)", slug: "north-newport-river-daymark-119",
     state: "georgia", city: "North Newport River (Daymark 119), GA", region: "Golden Isles / Brunswick",
     lat: 31.6817, lon: -81.1917, latDisplay: "31.68°N", lonDisplay: "81.19°W",
@@ -491,7 +491,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8673812", waterTempId: "8673812",
+    id: "8673812", waterTempId: "8670870",
     name: "Thomas Landing, S. Newport River", slug: "thomas-landing-s-newport-river",
     state: "georgia", city: "Thomas Landing, S. Newport River, GA", region: "Golden Isles / Brunswick",
     lat: 31.6433, lon: -81.2567, latDisplay: "31.64°N", lonDisplay: "81.26°W",
@@ -513,7 +513,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8673875", waterTempId: "8673875",
+    id: "8673875", waterTempId: "8670870",
     name: "Eagle Neck, South Newport River", slug: "eagle-neck-south-newport-river",
     state: "georgia", city: "Eagle Neck, South Newport River, GA", region: "Golden Isles / Brunswick",
     lat: 31.65, lon: -81.305, latDisplay: "31.65°N", lonDisplay: "81.31°W",
@@ -535,7 +535,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8673962", waterTempId: "8673962",
+    id: "8673962", waterTempId: "8670870",
     name: "Harris Neck, Barbour Island River", slug: "harris-neck-barbour-island-river",
     state: "georgia", city: "Harris Neck, Barbour Island River, GA", region: "Golden Isles / Brunswick",
     lat: 31.6233, lon: -81.2633, latDisplay: "31.62°N", lonDisplay: "81.26°W",
@@ -557,7 +557,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8674251", waterTempId: "8674251",
+    id: "8674251", waterTempId: "8670870",
     name: "Barbour Island, Barbour Island River", slug: "barbour-island-barbour-island-river",
     state: "georgia", city: "Barbour Island, Barbour Island River, GA", region: "Golden Isles / Brunswick",
     lat: 31.5783, lon: -81.24, latDisplay: "31.58°N", lonDisplay: "81.24°W",
@@ -579,7 +579,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8674301", waterTempId: "8674301",
+    id: "8674301", waterTempId: "8670870",
     name: "South Newport River (Daymark 135)", slug: "south-newport-river-daymark-135",
     state: "georgia", city: "South Newport River (Daymark 135), GA", region: "Golden Isles / Brunswick",
     lat: 31.575, lon: -81.19, latDisplay: "31.57°N", lonDisplay: "81.19°W",
@@ -601,7 +601,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8674512", waterTempId: "8674512",
+    id: "8674512", waterTempId: "8670870",
     name: "Pine Harbor, Sapelo River", slug: "pine-harbor-sapelo-river",
     state: "georgia", city: "Pine Harbor, Sapelo River, GA", region: "Golden Isles / Brunswick",
     lat: 31.5483, lon: -81.3717, latDisplay: "31.55°N", lonDisplay: "81.37°W",
@@ -623,7 +623,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8674623", waterTempId: "8674623",
+    id: "8674623", waterTempId: "8670870",
     name: "Dog Hammock, Sapelo River", slug: "dog-hammock-sapelo-river",
     state: "georgia", city: "Dog Hammock, Sapelo River, GA", region: "Golden Isles / Brunswick",
     lat: 31.5317, lon: -81.27, latDisplay: "31.53°N", lonDisplay: "81.27°W",
@@ -645,7 +645,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8674638", waterTempId: "8674638",
+    id: "8674638", waterTempId: "8670870",
     name: "Bellville Point, Sapelo River", slug: "bellville-point-sapelo-river",
     state: "georgia", city: "Bellville Point, Sapelo River, GA", region: "Golden Isles / Brunswick",
     lat: 31.5317, lon: -81.36, latDisplay: "31.53°N", lonDisplay: "81.36°W",
@@ -667,7 +667,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8674801", waterTempId: "8674801",
+    id: "8674801", waterTempId: "8670870",
     name: "Eagle Creek, Mud River", slug: "eagle-creek-mud-river",
     state: "georgia", city: "Eagle Creek, Mud River, GA", region: "Golden Isles / Brunswick",
     lat: 31.51, lon: -81.2783, latDisplay: "31.51°N", lonDisplay: "81.28°W",
@@ -689,7 +689,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8674875", waterTempId: "8674875",
+    id: "8674875", waterTempId: "8670870",
     name: "Creighton Narrows Entrance, Crescent River", slug: "creighton-narrows-entrance-crescent-river",
     state: "georgia", city: "Creighton Narrows Entrance, Crescent River, GA", region: "St. Marys / Cumberland Island",
     lat: 31.4983, lon: -81.325, latDisplay: "31.50°N", lonDisplay: "81.33°W",
@@ -711,7 +711,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8674962", waterTempId: "8674962",
+    id: "8674962", waterTempId: "8670870",
     name: "Blackbeard Creek, Blackbeard Island", slug: "blackbeard-creek-blackbeard-island",
     state: "georgia", city: "Blackbeard Creek, Blackbeard Island, GA", region: "St. Marys / Cumberland Island",
     lat: 31.4883, lon: -81.21, latDisplay: "31.49°N", lonDisplay: "81.21°W",
@@ -733,7 +733,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8674975", waterTempId: "8674975",
+    id: "8674975", waterTempId: "8670870",
     name: "Daymark #156, Head of Mud River", slug: "daymark-156-head-of-mud-river",
     state: "georgia", city: "Daymark #156, Head of Mud River, GA", region: "St. Marys / Cumberland Island",
     lat: 31.4867, lon: -81.32, latDisplay: "31.49°N", lonDisplay: "81.32°W",
@@ -755,7 +755,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8675245", waterTempId: "8675245",
+    id: "8675245", waterTempId: "8670870",
     name: "Hudson Creek entrance", slug: "hudson-creek-entrance",
     state: "georgia", city: "Hudson Creek entrance, GA", region: "St. Marys / Cumberland Island",
     lat: 31.4467, lon: -81.3433, latDisplay: "31.45°N", lonDisplay: "81.34°W",
@@ -777,7 +777,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8675365", waterTempId: "8675365",
+    id: "8675365", waterTempId: "8670870",
     name: "Old Tea Kettle Creek (Daymark 173)", slug: "old-tea-kettle-creek-daymark-173",
     state: "georgia", city: "Old Tea Kettle Creek (Daymark 173), GA", region: "St. Marys / Cumberland Island",
     lat: 31.4317, lon: -81.3067, latDisplay: "31.43°N", lonDisplay: "81.31°W",
@@ -799,7 +799,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8675622", waterTempId: "8675622",
+    id: "8675622", waterTempId: "8670870",
     name: "Old Tower, Sapelo Island", slug: "old-tower-sapelo-island",
     state: "georgia", city: "Old Tower, Sapelo Island, GA", region: "St. Marys / Cumberland Island",
     lat: 31.39, lon: -81.2883, latDisplay: "31.39°N", lonDisplay: "81.29°W",
@@ -821,7 +821,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8675761", waterTempId: "8675761",
+    id: "8675761", waterTempId: "8720030",
     name: "Rockdedundy River (Daymark 185)", slug: "rockdedundy-river-daymark-185",
     state: "georgia", city: "Rockdedundy River (Daymark 185), GA", region: "St. Marys / Cumberland Island",
     lat: 31.37386111111111, lon: -81.33394444444444, latDisplay: "31.37°N", lonDisplay: "81.33°W",
@@ -843,7 +843,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8675779", waterTempId: "8675779",
+    id: "8675779", waterTempId: "8720030",
     name: "Darien, Darien River", slug: "darien-darien-river",
     state: "georgia", city: "Darien, Darien River, GA", region: "St. Marys / Cumberland Island",
     lat: 31.3683, lon: -81.435, latDisplay: "31.37°N", lonDisplay: "81.44°W",
@@ -865,7 +865,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8675843", waterTempId: "8675843",
+    id: "8675843", waterTempId: "8720030",
     name: "Threemile Cut entrance, Darien River", slug: "threemile-cut-entrance-darien-river",
     state: "georgia", city: "Threemile Cut entrance, Darien River, GA", region: "St. Marys / Cumberland Island",
     lat: 31.3567, lon: -81.3767, latDisplay: "31.36°N", lonDisplay: "81.38°W",
@@ -887,7 +887,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8676012", waterTempId: "8676012",
+    id: "8676012", waterTempId: "8720030",
     name: "Champney Island, South Altamaha River", slug: "champney-island-south-altamaha-river",
     state: "georgia", city: "Champney Island, South Altamaha River, GA", region: "St. Marys / Cumberland Island",
     lat: 31.3317, lon: -81.46, latDisplay: "31.33°N", lonDisplay: "81.46°W",
@@ -909,7 +909,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8676329", waterTempId: "8676329",
+    id: "8676329", waterTempId: "8720030",
     name: "Mackay River (ICWW), Buttermilk Sound", slug: "mackay-river-icww-buttermilk-sound",
     state: "georgia", city: "Mackay River (ICWW), Buttermilk Sound, GA", region: "St. Marys / Cumberland Island",
     lat: 31.285, lon: -81.385, latDisplay: "31.29°N", lonDisplay: "81.39°W",
@@ -931,7 +931,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8676722", waterTempId: "8676722",
+    id: "8676722", waterTempId: "8720030",
     name: "Dillard Creek", slug: "dillard-creek",
     state: "georgia", city: "Dillard Creek, GA", region: "St. Marys / Cumberland Island",
     lat: 31.225, lon: -81.5717, latDisplay: "31.23°N", lonDisplay: "81.57°W",
@@ -953,7 +953,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8676743", waterTempId: "8676743",
+    id: "8676743", waterTempId: "8720030",
     name: "Frederica River", slug: "frederica-river",
     state: "georgia", city: "Frederica River, GA", region: "St. Marys / Cumberland Island",
     lat: 31.2217, lon: -81.3933, latDisplay: "31.22°N", lonDisplay: "81.39°W",
@@ -975,7 +975,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8676766", waterTempId: "8676766",
+    id: "8676766", waterTempId: "8720030",
     name: "Mackay River (Daymark 239)", slug: "mackay-river-daymark-239",
     state: "georgia", city: "Mackay River (Daymark 239), GA", region: "St. Marys / Cumberland Island",
     lat: 31.21, lon: -81.425, latDisplay: "31.21°N", lonDisplay: "81.42°W",
@@ -997,7 +997,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8676787", waterTempId: "8676787",
+    id: "8676787", waterTempId: "8720030",
     name: "Buffalo River entrance", slug: "buffalo-river-entrance",
     state: "georgia", city: "Buffalo River entrance, GA", region: "St. Marys / Cumberland Island",
     lat: 31.215, lon: -81.5833, latDisplay: "31.21°N", lonDisplay: "81.58°W",
@@ -1019,7 +1019,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8676808", waterTempId: "8676808",
+    id: "8676808", waterTempId: "8720030",
     name: "Crispen Island", slug: "crispen-island",
     state: "georgia", city: "Crispen Island, GA", region: "St. Marys / Cumberland Island",
     lat: 31.213300704956055, lon: -81.55000305175781, latDisplay: "31.21°N", lonDisplay: "81.55°W",
@@ -1041,7 +1041,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8677045", waterTempId: "8677045",
+    id: "8677045", waterTempId: "8720030",
     name: "Frederica River Bridge", slug: "frederica-river-bridge",
     state: "georgia", city: "Frederica River Bridge, GA", region: "St. Marys / Cumberland Island",
     lat: 31.1683, lon: -81.4133, latDisplay: "31.17°N", lonDisplay: "81.41°W",
@@ -1063,7 +1063,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8677344", waterTempId: "8677344",
+    id: "8677344", waterTempId: "8720030",
     name: "St. Simons Light", slug: "st-simons-light",
     state: "georgia", city: "St. Simons Light, GA", region: "St. Marys / Cumberland Island",
     lat: 31.1317, lon: -81.3967, latDisplay: "31.13°N", lonDisplay: "81.40°W",
@@ -1085,7 +1085,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8677406", waterTempId: "8677406",
+    id: "8677406", waterTempId: "8720030",
     name: "Howe Street Pier, Brunswick", slug: "howe-street-pier-brunswick",
     state: "georgia", city: "Howe Street Pier, Brunswick, GA", region: "St. Marys / Cumberland Island",
     lat: 31.14455555555556, lon: -81.49680555555555, latDisplay: "31.14°N", lonDisplay: "81.50°W",
@@ -1107,7 +1107,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8677566", waterTempId: "8677566",
+    id: "8677566", waterTempId: "8720030",
     name: "8 miles above mouth", slug: "8-miles-above-mouth",
     state: "georgia", city: "8 miles above mouth, GA", region: "St. Marys / Cumberland Island",
     lat: 31.0983, lon: -81.5733, latDisplay: "31.10°N", lonDisplay: "81.57°W",
@@ -1129,7 +1129,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8677576", waterTempId: "8677576",
+    id: "8677576", waterTempId: "8720030",
     name: "Jointer Island, Jointer Creek", slug: "jointer-island-jointer-creek",
     state: "georgia", city: "Jointer Island, Jointer Creek, GA", region: "St. Marys / Cumberland Island",
     lat: 31.095, lon: -81.505, latDisplay: "31.09°N", lonDisplay: "81.50°W",
@@ -1151,7 +1151,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8677832", waterTempId: "8677832",
+    id: "8677832", waterTempId: "8720030",
     name: "Jekyll Island Marina, Jekyll Creek", slug: "jekyll-island-marina-jekyll-creek",
     state: "georgia", city: "Jekyll Island Marina, Jekyll Creek, GA", region: "St. Marys / Cumberland Island",
     lat: 31.0567, lon: -81.4233, latDisplay: "31.06°N", lonDisplay: "81.42°W",
@@ -1173,7 +1173,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8677833", waterTempId: "8677833",
+    id: "8677833", waterTempId: "8720030",
     name: "2.5 miles above mouth", slug: "25-miles-above-mouth",
     state: "georgia", city: "2.5 miles above mouth, GA", region: "St. Marys / Cumberland Island",
     lat: 31.0583, lon: -81.4933, latDisplay: "31.06°N", lonDisplay: "81.49°W",
@@ -1195,7 +1195,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8678111", waterTempId: "8678111",
+    id: "8678111", waterTempId: "8720030",
     name: "Dover Bluff, Dover Creek", slug: "dover-bluff-dover-creek",
     state: "georgia", city: "Dover Bluff, Dover Creek, GA", region: "St. Marys / Cumberland Island",
     lat: 31.0167, lon: -81.5283, latDisplay: "31.02°N", lonDisplay: "81.53°W",
@@ -1217,7 +1217,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8678124", waterTempId: "8678124",
+    id: "8678124", waterTempId: "8720030",
     name: "Raccoon Key Spit", slug: "raccoon-key-spit",
     state: "georgia", city: "Raccoon Key Spit, GA", region: "St. Marys / Cumberland Island",
     lat: 31.01480555555555, lon: -81.45597222222223, latDisplay: "31.01°N", lonDisplay: "81.46°W",
@@ -1239,7 +1239,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8678322", waterTempId: "8678322",
+    id: "8678322", waterTempId: "8720030",
     name: "Bailey Cut, 0.8 mile west of", slug: "bailey-cut-08-mile-west-of",
     state: "georgia", city: "Bailey Cut, 0.8 mile west of, GA", region: "St. Marys / Cumberland Island",
     lat: 30.985, lon: -81.5917, latDisplay: "30.98°N", lonDisplay: "81.59°W",
@@ -1261,7 +1261,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8678412", waterTempId: "8678412",
+    id: "8678412", waterTempId: "8720030",
     name: "Todd Creek entrance", slug: "todd-creek-entrance",
     state: "georgia", city: "Todd Creek entrance, GA", region: "St. Marys / Cumberland Island",
     lat: 30.9717, lon: -81.52, latDisplay: "30.97°N", lonDisplay: "81.52°W",
@@ -1283,7 +1283,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8678466", waterTempId: "8678466",
+    id: "8678466", waterTempId: "8720030",
     name: "Ceylon", slug: "ceylon",
     state: "georgia", city: "Ceylon, GA", region: "St. Marys / Cumberland Island",
     lat: 30.9633, lon: -81.655, latDisplay: "30.96°N", lonDisplay: "81.66°W",
@@ -1305,7 +1305,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8678642", waterTempId: "8678642",
+    id: "8678642", waterTempId: "8720030",
     name: "Floyd Creek, 2.8 miles above entrance", slug: "floyd-creek-28-miles-above-entrance",
     state: "georgia", city: "Floyd Creek, 2.8 miles above entrance, GA", region: "St. Marys / Cumberland Island",
     lat: 30.9367, lon: -81.5067, latDisplay: "30.94°N", lonDisplay: "81.51°W",
@@ -1327,7 +1327,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8678688", waterTempId: "8678688",
+    id: "8678688", waterTempId: "8720030",
     name: "Cumberland Wharf, Cumberland River", slug: "cumberland-wharf-cumberland-river",
     state: "georgia", city: "Cumberland Wharf, Cumberland River, GA", region: "St. Marys / Cumberland Island",
     lat: 30.93, lon: -81.4467, latDisplay: "30.93°N", lonDisplay: "81.45°W",
@@ -1349,7 +1349,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8679083", waterTempId: "8679083",
+    id: "8679083", waterTempId: "8720030",
     name: "Harrietts Bluff, Crooked River", slug: "harrietts-bluff-crooked-river",
     state: "georgia", city: "Harrietts Bluff, Crooked River, GA", region: "St. Marys / Cumberland Island",
     lat: 30.87, lon: -81.585, latDisplay: "30.87°N", lonDisplay: "81.58°W",
@@ -1371,7 +1371,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8679242", waterTempId: "8679242",
+    id: "8679242", waterTempId: "8720030",
     name: "Crooked River, Cumberland Dividings", slug: "crooked-river-cumberland-dividings",
     state: "georgia", city: "Crooked River, Cumberland Dividings, GA", region: "St. Marys / Cumberland Island",
     lat: 30.8433, lon: -81.4867, latDisplay: "30.84°N", lonDisplay: "81.49°W",
@@ -1393,7 +1393,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8679511", waterTempId: "8679511",
+    id: "8679511", waterTempId: "8720030",
     name: "Kings Bay, Navy Base", slug: "kings-bay-navy-base",
     state: "georgia", city: "Kings Bay, Navy Base, GA", region: "St. Marys / Cumberland Island",
     lat: 30.7967, lon: -81.515, latDisplay: "30.80°N", lonDisplay: "81.52°W",
@@ -1415,7 +1415,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8679598", waterTempId: "8679598",
+    id: "8679598", waterTempId: "8720030",
     name: "Kings Bay, MSF Pier", slug: "kings-bay-msf-pier",
     state: "georgia", city: "Kings Bay, MSF Pier, GA", region: "St. Marys / Cumberland Island",
     lat: 30.778099060058594, lon: -81.49140167236328, latDisplay: "30.78°N", lonDisplay: "81.49°W",
@@ -1437,7 +1437,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8679758", waterTempId: "8679758",
+    id: "8679758", waterTempId: "8720030",
     name: "Seacamp Dock, Cumberland Island", slug: "seacamp-dock-cumberland-island",
     state: "georgia", city: "Seacamp Dock, Cumberland Island, GA", region: "St. Marys / Cumberland Island",
     lat: 30.7633, lon: -81.4717, latDisplay: "30.76°N", lonDisplay: "81.47°W",
@@ -1459,7 +1459,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8679945", waterTempId: "8679945",
+    id: "8679945", waterTempId: "8720030",
     name: "Beach Creek ent., Cumberland Island", slug: "beach-creek-ent-cumberland-island",
     state: "georgia", city: "Beach Creek ent., Cumberland Island, GA", region: "St. Marys / Cumberland Island",
     lat: 30.7267, lon: -81.4767, latDisplay: "30.73°N", lonDisplay: "81.48°W",
@@ -1481,7 +1481,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8679964", waterTempId: "8679964",
+    id: "8679964", waterTempId: "8720030",
     name: "St. Marys", slug: "st-marys",
     state: "georgia", city: "St. Marys, GA", region: "St. Marys / Cumberland Island",
     lat: 30.72, lon: -81.5483, latDisplay: "30.72°N", lonDisplay: "81.55°W",
@@ -1503,7 +1503,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8679997", waterTempId: "8679997",
+    id: "8679997", waterTempId: "8720030",
     name: "St. Marys Entrance, North Jetty", slug: "st-marys-entrance-north-jetty",
     state: "georgia", city: "St. Marys Entrance, North Jetty, GA", region: "St. Marys / Cumberland Island",
     lat: 30.72, lon: -81.445, latDisplay: "30.72°N", lonDisplay: "81.44°W",
@@ -1525,7 +1525,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8670893", waterTempId: "8670893",
+    id: "8670893", waterTempId: "8670870",
     name: "PALMER JOHNSON SHIPYARD, WILMINGTON R.", slug: "palmer-johnson-shipyard-wilmington-r",
     state: "georgia", city: "PALMER JOHNSON SHIPYARD, WILMINGTON R., GA", region: "Savannah / Tybee Island",
     lat: 32.0233, lon: -81.0467, latDisplay: "32.02°N", lonDisplay: "81.05°W",
@@ -1547,7 +1547,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8671029", waterTempId: "8671029",
+    id: "8671029", waterTempId: "8670870",
     name: "TYBEE MARINA, TYBEE CREEK", slug: "tybee-marina-tybee-creek",
     state: "georgia", city: "TYBEE MARINA, TYBEE CREEK, GA", region: "Golden Isles / Brunswick",
     lat: 31.9967, lon: -80.855, latDisplay: "32.00°N", lonDisplay: "80.86°W",
@@ -1569,7 +1569,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8674599", waterTempId: "8674599",
+    id: "8674599", waterTempId: "8670870",
     name: "NORTH BLACKBEARD IS, SAPELO SND", slug: "north-blackbeard-is-sapelo-snd",
     state: "georgia", city: "NORTH BLACKBEARD IS, SAPELO SND, GA", region: "Golden Isles / Brunswick",
     lat: 31.5367, lon: -81.1933, latDisplay: "31.54°N", lonDisplay: "81.19°W",
@@ -1591,7 +1591,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8675623", waterTempId: "8675623",
+    id: "8675623", waterTempId: "8670870",
     name: "SAPELO ISLAND (OUTSIDE)", slug: "sapelo-island-outside",
     state: "georgia", city: "SAPELO ISLAND (OUTSIDE), GA", region: "St. Marys / Cumberland Island",
     lat: 31.3917, lon: -81.2667, latDisplay: "31.39°N", lonDisplay: "81.27°W",
@@ -1613,7 +1613,7 @@ export const GEORGIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8679909", waterTempId: "8679909",
+    id: "8679909", waterTempId: "8720030",
     name: "RANGE \"A\" LIGHT TOWER", slug: "range-a-light-tower",
     state: "georgia", city: "RANGE \"A\" LIGHT TOWER, GA", region: "St. Marys / Cumberland Island",
     lat: 30.7267, lon: -81.4983, latDisplay: "30.73°N", lonDisplay: "81.50°W",

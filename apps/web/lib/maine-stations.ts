@@ -29,7 +29,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8410714", waterTempId: "8410714",
+    id: "8410714", waterTempId: "8410140",
     name: "Coffins Point", slug: "coffins-point",
     state: "maine", city: "Coffins Point, ME", region: "Downeast Maine / Acadia",
     lat: 44.87, lon: -67.1083, latDisplay: "44.87°N", lonDisplay: "67.11°W",
@@ -51,7 +51,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8410715", waterTempId: "8410715",
+    id: "8410715", waterTempId: "8410140",
     name: "Garnet Point, Pennamquan River", slug: "garnet-point-pennamquan-river",
     state: "maine", city: "Garnet Point, Pennamquan River, ME", region: "Downeast Maine / Acadia",
     lat: 44.9233, lon: -67.13, latDisplay: "44.92°N", lonDisplay: "67.13°W",
@@ -73,7 +73,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8410834", waterTempId: "8410834",
+    id: "8410834", waterTempId: "8410140",
     name: "Pettegrove Point, Dochet Island", slug: "pettegrove-point-dochet-island",
     state: "maine", city: "Pettegrove Point, Dochet Island, ME", region: "Downeast Maine / Acadia",
     lat: 45.12844444444445, lon: -67.14466666666667, latDisplay: "45.13°N", lonDisplay: "67.14°W",
@@ -95,7 +95,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8410864", waterTempId: "8410864",
+    id: "8410864", waterTempId: "8410140",
     name: "Gravelly Point, Whiting Bay", slug: "gravelly-point-whiting-bay",
     state: "maine", city: "Gravelly Point, Whiting Bay, ME", region: "Downeast Maine / Acadia",
     lat: 44.823299407958984, lon: -67.15170288085938, latDisplay: "44.82°N", lonDisplay: "67.15°W",
@@ -117,7 +117,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8410875", waterTempId: "8410875",
+    id: "8410875", waterTempId: "8410140",
     name: "Birch Islands", slug: "birch-islands",
     state: "maine", city: "Birch Islands, ME", region: "Downeast Maine / Acadia",
     lat: 44.875, lon: -67.1583, latDisplay: "44.88°N", lonDisplay: "67.16°W",
@@ -161,7 +161,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8411250", waterTempId: "8411250",
+    id: "8411250", waterTempId: "8411060",
     name: "Cutler, Naval Radio Station", slug: "cutler-naval-radio-station",
     state: "maine", city: "Cutler, Naval Radio Station, ME", region: "Downeast Maine / Acadia",
     lat: 44.6417, lon: -67.2967, latDisplay: "44.64°N", lonDisplay: "67.30°W",
@@ -183,7 +183,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8411411", waterTempId: "8411411",
+    id: "8411411", waterTempId: "8411060",
     name: "Stone Island, Machias Bay", slug: "stone-island-machias-bay",
     state: "maine", city: "Stone Island, Machias Bay, ME", region: "Downeast Maine / Acadia",
     lat: 44.6033, lon: -67.3683, latDisplay: "44.60°N", lonDisplay: "67.37°W",
@@ -205,7 +205,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8411467", waterTempId: "8411467",
+    id: "8411467", waterTempId: "8411060",
     name: "Machiasport, Machias River", slug: "machiasport-machias-river",
     state: "maine", city: "Machiasport, Machias River, ME", region: "Downeast Maine / Acadia",
     lat: 44.6983, lon: -67.3933, latDisplay: "44.70°N", lonDisplay: "67.39°W",
@@ -227,7 +227,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8411696", waterTempId: "8411696",
+    id: "8411696", waterTempId: "8411060",
     name: "Shoppee Point, Englishman Bay", slug: "shoppee-point-englishman-bay",
     state: "maine", city: "Shoppee Point, Englishman Bay, ME", region: "Downeast Maine / Acadia",
     lat: 44.615, lon: -67.4967, latDisplay: "44.62°N", lonDisplay: "67.50°W",
@@ -249,7 +249,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8411801", waterTempId: "8411801",
+    id: "8411801", waterTempId: "8411060",
     name: "Steele Harbor Island", slug: "steele-harbor-island",
     state: "maine", city: "Steele Harbor Island, ME", region: "Midcoast Maine",
     lat: 44.4933, lon: -67.5433, latDisplay: "44.49°N", lonDisplay: "67.54°W",
@@ -271,7 +271,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8412568", waterTempId: "8412568",
+    id: "8412568", waterTempId: "8413320",
     name: "Green Island, Petit Manan Bar", slug: "green-island-petit-manan-bar",
     state: "maine", city: "Green Island, Petit Manan Bar, ME", region: "Midcoast Maine",
     lat: 44.3717, lon: -67.87, latDisplay: "44.37°N", lonDisplay: "67.87°W",
@@ -293,7 +293,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8412581", waterTempId: "8412581",
+    id: "8412581", waterTempId: "8413320",
     name: "Millbridge, Narraguagus River, Maine", slug: "millbridge-narraguagus-river-maine",
     state: "maine", city: "Millbridge, Narraguagus River, Maine, ME", region: "Downeast Maine / Acadia",
     lat: 44.54, lon: -67.875, latDisplay: "44.54°N", lonDisplay: "67.88°W",
@@ -315,7 +315,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8412932", waterTempId: "8412932",
+    id: "8412932", waterTempId: "8413320",
     name: "Prospect Harbor", slug: "prospect-harbor",
     state: "maine", city: "Prospect Harbor, ME", region: "Midcoast Maine",
     lat: 44.4, lon: -68.0217, latDisplay: "44.40°N", lonDisplay: "68.02°W",
@@ -337,7 +337,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8413079", waterTempId: "8413079",
+    id: "8413079", waterTempId: "8413320",
     name: "Winter Harbor, Frenchman Bay", slug: "winter-harbor-frenchman-bay",
     state: "maine", city: "Winter Harbor, Frenchman Bay, ME", region: "Midcoast Maine",
     lat: 44.3883, lon: -68.0867, latDisplay: "44.39°N", lonDisplay: "68.09°W",
@@ -381,7 +381,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8413564", waterTempId: "8413564",
+    id: "8413564", waterTempId: "8413320",
     name: "Southwest Harbor", slug: "southwest-harbor",
     state: "maine", city: "Southwest Harbor, ME", region: "Midcoast Maine",
     lat: 44.275, lon: -68.3133, latDisplay: "44.27°N", lonDisplay: "68.31°W",
@@ -403,7 +403,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8413651", waterTempId: "8413651",
+    id: "8413651", waterTempId: "8413320",
     name: "Bass Harbor", slug: "bass-harbor",
     state: "maine", city: "Bass Harbor, ME", region: "Midcoast Maine",
     lat: 44.2417, lon: -68.3533, latDisplay: "44.24°N", lonDisplay: "68.35°W",
@@ -425,7 +425,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8413801", waterTempId: "8413801",
+    id: "8413801", waterTempId: "8413320",
     name: "Ellsworth, Union River", slug: "ellsworth-union-river",
     state: "maine", city: "Ellsworth, Union River, ME", region: "Downeast Maine / Acadia",
     lat: 44.535, lon: -68.4217, latDisplay: "44.53°N", lonDisplay: "68.42°W",
@@ -447,7 +447,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8413825", waterTempId: "8413825",
+    id: "8413825", waterTempId: "8413320",
     name: "Mackerel Cove, Swans Island", slug: "mackerel-cove-swans-island",
     state: "maine", city: "Mackerel Cove, Swans Island, ME", region: "Midcoast Maine",
     lat: 44.16999816894531, lon: -68.43499755859375, latDisplay: "44.17°N", lonDisplay: "68.43°W",
@@ -469,7 +469,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8413857", waterTempId: "8413857",
+    id: "8413857", waterTempId: "8413320",
     name: "Burnt Coat Harbor, Swans Island", slug: "burnt-coat-harbor-swans-island",
     state: "maine", city: "Burnt Coat Harbor, Swans Island, ME", region: "Midcoast Maine",
     lat: 44.145, lon: -68.45, latDisplay: "44.15°N", lonDisplay: "68.45°W",
@@ -491,7 +491,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8414112", waterTempId: "8414112",
+    id: "8414112", waterTempId: "8413320",
     name: "Blue Hill Harbor", slug: "blue-hill-harbor",
     state: "maine", city: "Blue Hill Harbor, ME", region: "Midcoast Maine",
     lat: 44.4083, lon: -68.5633, latDisplay: "44.41°N", lonDisplay: "68.56°W",
@@ -513,7 +513,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8414168", waterTempId: "8414168",
+    id: "8414168", waterTempId: "8413320",
     name: "Center Harbor", slug: "center-harbor",
     state: "maine", city: "Center Harbor, ME", region: "Midcoast Maine",
     lat: 44.2633, lon: -68.5867, latDisplay: "44.26°N", lonDisplay: "68.59°W",
@@ -535,7 +535,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8414249", waterTempId: "8414249",
+    id: "8414249", waterTempId: "8413320",
     name: "Oceanville, Deer Isle", slug: "oceanville-deer-isle",
     state: "maine", city: "Oceanville, Deer Isle, ME", region: "Midcoast Maine",
     lat: 44.19230555555556, lon: -68.62093055555556, latDisplay: "44.19°N", lonDisplay: "68.62°W",
@@ -557,7 +557,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8414288", waterTempId: "8414288",
+    id: "8414288", waterTempId: "8413320",
     name: "Isle Au Haut", slug: "isle-au-haut",
     state: "maine", city: "Isle Au Haut, ME", region: "Midcoast Maine",
     lat: 44.0733, lon: -68.6367, latDisplay: "44.07°N", lonDisplay: "68.64°W",
@@ -579,7 +579,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8414348", waterTempId: "8414348",
+    id: "8414348", waterTempId: "8413320",
     name: "Stonington, Deer Isle", slug: "stonington-deer-isle",
     state: "maine", city: "Stonington, Deer Isle, ME", region: "Midcoast Maine",
     lat: 44.1533, lon: -68.6617, latDisplay: "44.15°N", lonDisplay: "68.66°W",
@@ -601,7 +601,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8414424", waterTempId: "8414424",
+    id: "8414424", waterTempId: "8413320",
     name: "Little Deer Isle", slug: "little-deer-isle",
     state: "maine", city: "Little Deer Isle, ME", region: "Midcoast Maine",
     lat: 44.2917, lon: -68.6933, latDisplay: "44.29°N", lonDisplay: "68.69°W",
@@ -623,7 +623,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8414581", waterTempId: "8414581",
+    id: "8414581", waterTempId: "8413320",
     name: "Gross Point, Eastern Channel", slug: "gross-point-eastern-channel",
     state: "maine", city: "Gross Point, Eastern Channel, ME", region: "Downeast Maine / Acadia",
     lat: 44.5367, lon: -68.7583, latDisplay: "44.54°N", lonDisplay: "68.76°W",
@@ -645,7 +645,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8414612", waterTempId: "8414612",
+    id: "8414612", waterTempId: "8413320",
     name: "Bangor", slug: "bangor",
     state: "maine", city: "Bangor, ME", region: "Downeast Maine / Acadia",
     lat: 44.785, lon: -68.7667, latDisplay: "44.78°N", lonDisplay: "68.77°W",
@@ -667,7 +667,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8414672", waterTempId: "8414672",
+    id: "8414672", waterTempId: "8413320",
     name: "Castine", slug: "castine",
     state: "maine", city: "Castine, ME", region: "Midcoast Maine",
     lat: 44.3867, lon: -68.7967, latDisplay: "44.39°N", lonDisplay: "68.80°W",
@@ -689,7 +689,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8414684", waterTempId: "8414684",
+    id: "8414684", waterTempId: "8413320",
     name: "Bucksport", slug: "bucksport",
     state: "maine", city: "Bucksport, ME", region: "Downeast Maine / Acadia",
     lat: 44.5717, lon: -68.8017, latDisplay: "44.57°N", lonDisplay: "68.80°W",
@@ -711,7 +711,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8414692", waterTempId: "8414692",
+    id: "8414692", waterTempId: "8413320",
     name: "Sandy Point", slug: "sandy-point",
     state: "maine", city: "Sandy Point, ME", region: "Downeast Maine / Acadia",
     lat: 44.505, lon: -68.805, latDisplay: "44.51°N", lonDisplay: "68.81°W",
@@ -733,7 +733,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8414721", waterTempId: "8414721",
+    id: "8414721", waterTempId: "8413320",
     name: "Fort Point, Penobscot River", slug: "fort-point-penobscot-river",
     state: "maine", city: "Fort Point, Penobscot River, ME", region: "Midcoast Maine",
     lat: 44.4717, lon: -68.8133, latDisplay: "44.47°N", lonDisplay: "68.81°W",
@@ -755,7 +755,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8414776", waterTempId: "8414776",
+    id: "8414776", waterTempId: "8413320",
     name: "Vinalhaven, Vinalhaven Island", slug: "vinalhaven-vinalhaven-island",
     state: "maine", city: "Vinalhaven, Vinalhaven Island, ME", region: "Midcoast Maine",
     lat: 44.0433, lon: -68.84, latDisplay: "44.04°N", lonDisplay: "68.84°W",
@@ -777,7 +777,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8414781", waterTempId: "8414781",
+    id: "8414781", waterTempId: "8413320",
     name: "Winterport", slug: "winterport",
     state: "maine", city: "Winterport, ME", region: "Downeast Maine / Acadia",
     lat: 44.63669967651367, lon: -68.8416976928711, latDisplay: "44.64°N", lonDisplay: "68.84°W",
@@ -799,7 +799,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8414856", waterTempId: "8414856",
+    id: "8414856", waterTempId: "8413320",
     name: "North Haven", slug: "north-haven",
     state: "maine", city: "North Haven, ME", region: "Midcoast Maine",
     lat: 44.1267, lon: -68.8733, latDisplay: "44.13°N", lonDisplay: "68.87°W",
@@ -821,7 +821,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8414876", waterTempId: "8414876",
+    id: "8414876", waterTempId: "8413320",
     name: "Matinicus Harbor, Wheaton Island", slug: "matinicus-harbor-wheaton-island",
     state: "maine", city: "Matinicus Harbor, Wheaton Island, ME", region: "Casco Bay / Portland",
     lat: 43.8617, lon: -68.8817, latDisplay: "43.86°N", lonDisplay: "68.88°W",
@@ -843,7 +843,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8414888", waterTempId: "8414888",
+    id: "8414888", waterTempId: "8413320",
     name: "Pulpit Harbor, North Haven Island", slug: "pulpit-harbor-north-haven-island",
     state: "maine", city: "Pulpit Harbor, North Haven Island, ME", region: "Midcoast Maine",
     lat: 44.1567, lon: -68.8867, latDisplay: "44.16°N", lonDisplay: "68.89°W",
@@ -865,7 +865,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8415191", waterTempId: "8415191",
+    id: "8415191", waterTempId: "8413320",
     name: "Belfast", slug: "belfast",
     state: "maine", city: "Belfast, ME", region: "Midcoast Maine",
     lat: 44.4267, lon: -69.005, latDisplay: "44.43°N", lonDisplay: "69.00°W",
@@ -887,7 +887,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8415490", waterTempId: "8415490",
+    id: "8415490", waterTempId: "8413320",
     name: "Rockland", slug: "rockland",
     state: "maine", city: "Rockland, ME", region: "Midcoast Maine",
     lat: 44.105, lon: -69.1017, latDisplay: "44.10°N", lonDisplay: "69.10°W",
@@ -909,7 +909,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8415709", waterTempId: "8415709",
+    id: "8415709", waterTempId: "8413320",
     name: "Thomaston", slug: "thomaston",
     state: "maine", city: "Thomaston, ME", region: "Midcoast Maine",
     lat: 44.0717, lon: -69.1817, latDisplay: "44.07°N", lonDisplay: "69.18°W",
@@ -931,7 +931,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8415809", waterTempId: "8415809",
+    id: "8415809", waterTempId: "8418150",
     name: "Tenants Harbor", slug: "tenants-harbor",
     state: "maine", city: "Tenants Harbor, ME", region: "Midcoast Maine",
     lat: 43.965, lon: -69.2167, latDisplay: "43.97°N", lonDisplay: "69.22°W",
@@ -953,7 +953,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8415867", waterTempId: "8415867",
+    id: "8415867", waterTempId: "8418150",
     name: "Otis Cove", slug: "otis-cove",
     state: "maine", city: "Otis Cove, ME", region: "Midcoast Maine",
     lat: 43.9867, lon: -69.2367, latDisplay: "43.99°N", lonDisplay: "69.24°W",
@@ -975,7 +975,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8415933", waterTempId: "8415933",
+    id: "8415933", waterTempId: "8418150",
     name: "Port Clyde", slug: "port-clyde",
     state: "maine", city: "Port Clyde, ME", region: "Midcoast Maine",
     lat: 43.925, lon: -69.26, latDisplay: "43.92°N", lonDisplay: "69.26°W",
@@ -997,7 +997,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8416028", waterTempId: "8416028",
+    id: "8416028", waterTempId: "8418150",
     name: "Burnt Island, Georges Islands", slug: "burnt-island-georges-islands",
     state: "maine", city: "Burnt Island, Georges Islands, ME", region: "Casco Bay / Portland",
     lat: 43.8717, lon: -69.295, latDisplay: "43.87°N", lonDisplay: "69.30°W",
@@ -1019,7 +1019,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8416092", waterTempId: "8416092",
+    id: "8416092", waterTempId: "8418150",
     name: "Monhegan Island", slug: "monhegan-island",
     state: "maine", city: "Monhegan Island, ME", region: "Casco Bay / Portland",
     lat: 43.765, lon: -69.3217, latDisplay: "43.77°N", lonDisplay: "69.32°W",
@@ -1041,7 +1041,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8416141", waterTempId: "8416141",
+    id: "8416141", waterTempId: "8418150",
     name: "Friendship Harbor", slug: "friendship-harbor",
     state: "maine", city: "Friendship Harbor, ME", region: "Midcoast Maine",
     lat: 43.97, lon: -69.3417, latDisplay: "43.97°N", lonDisplay: "69.34°W",
@@ -1063,7 +1063,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8416224", waterTempId: "8416224",
+    id: "8416224", waterTempId: "8418150",
     name: "Waldoboro", slug: "waldoboro",
     state: "maine", city: "Waldoboro, ME", region: "Midcoast Maine",
     lat: 44.0933, lon: -69.3767, latDisplay: "44.09°N", lonDisplay: "69.38°W",
@@ -1085,7 +1085,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8416232", waterTempId: "8416232",
+    id: "8416232", waterTempId: "8418150",
     name: "Jones Neck", slug: "jones-neck",
     state: "maine", city: "Jones Neck, ME", region: "Midcoast Maine",
     lat: 44.015, lon: -69.38, latDisplay: "44.02°N", lonDisplay: "69.38°W",
@@ -1107,7 +1107,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8416381", waterTempId: "8416381",
+    id: "8416381", waterTempId: "8418150",
     name: "Muscongus Harbor, Muscongus Sound", slug: "muscongus-harbor-muscongus-sound",
     state: "maine", city: "Muscongus Harbor, Muscongus Sound, ME", region: "Midcoast Maine",
     lat: 43.9667, lon: -69.4417, latDisplay: "43.97°N", lonDisplay: "69.44°W",
@@ -1129,7 +1129,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8416501", waterTempId: "8416501",
+    id: "8416501", waterTempId: "8418150",
     name: "New Harbor, Muscongus Bay", slug: "new-harbor-muscongus-bay",
     state: "maine", city: "New Harbor, Muscongus Bay, ME", region: "Casco Bay / Portland",
     lat: 43.875, lon: -69.4917, latDisplay: "43.88°N", lonDisplay: "69.49°W",
@@ -1151,7 +1151,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8416581", waterTempId: "8416581",
+    id: "8416581", waterTempId: "8418150",
     name: "Pemaquid Harbor, Johns Bay", slug: "pemaquid-harbor-johns-bay",
     state: "maine", city: "Pemaquid Harbor, Johns Bay, ME", region: "Casco Bay / Portland",
     lat: 43.8767, lon: -69.525, latDisplay: "43.88°N", lonDisplay: "69.53°W",
@@ -1173,7 +1173,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8416608", waterTempId: "8416608",
+    id: "8416608", waterTempId: "8418150",
     name: "Newcastle", slug: "newcastle",
     state: "maine", city: "Newcastle, ME", region: "Midcoast Maine",
     lat: 44.0333, lon: -69.5367, latDisplay: "44.03°N", lonDisplay: "69.54°W",
@@ -1195,7 +1195,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8416721", waterTempId: "8416721",
+    id: "8416721", waterTempId: "8418150",
     name: "East Boothbay", slug: "east-boothbay",
     state: "maine", city: "East Boothbay, ME", region: "Casco Bay / Portland",
     lat: 43.865, lon: -69.5833, latDisplay: "43.87°N", lonDisplay: "69.58°W",
@@ -1217,7 +1217,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8416731", waterTempId: "8416731",
+    id: "8416731", waterTempId: "8418150",
     name: "Walpole", slug: "walpole",
     state: "maine", city: "Walpole, ME", region: "Midcoast Maine",
     lat: 43.9333, lon: -69.58, latDisplay: "43.93°N", lonDisplay: "69.58°W",
@@ -1239,7 +1239,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8416796", waterTempId: "8416796",
+    id: "8416796", waterTempId: "8418150",
     name: "Damariscove Harbor, Damariscove Island", slug: "damariscove-harbor-damariscove-island",
     state: "maine", city: "Damariscove Harbor, Damariscove Island, ME", region: "Casco Bay / Portland",
     lat: 43.7583, lon: -69.615, latDisplay: "43.76°N", lonDisplay: "69.61°W",
@@ -1261,7 +1261,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8416804", waterTempId: "8416804",
+    id: "8416804", waterTempId: "8418150",
     name: "Sheepscot (below rapids)", slug: "sheepscot-below-rapids",
     state: "maine", city: "Sheepscot (below rapids), ME", region: "Midcoast Maine",
     lat: 44.05, lon: -69.6183, latDisplay: "44.05°N", lonDisplay: "69.62°W",
@@ -1283,7 +1283,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8416828", waterTempId: "8416828",
+    id: "8416828", waterTempId: "8418150",
     name: "Boothbay Harbor", slug: "boothbay-harbor",
     state: "maine", city: "Boothbay Harbor, ME", region: "Casco Bay / Portland",
     lat: 43.85, lon: -69.6283, latDisplay: "43.85°N", lonDisplay: "69.63°W",
@@ -1305,7 +1305,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8416908", waterTempId: "8416908",
+    id: "8416908", waterTempId: "8418150",
     name: "Southport, Townsend Gut", slug: "southport-townsend-gut",
     state: "maine", city: "Southport, Townsend Gut, ME", region: "Casco Bay / Portland",
     lat: 43.8467, lon: -69.6617, latDisplay: "43.85°N", lonDisplay: "69.66°W",
@@ -1327,7 +1327,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8416921", waterTempId: "8416921",
+    id: "8416921", waterTempId: "8418150",
     name: "Wiscasset", slug: "wiscasset",
     state: "maine", city: "Wiscasset, ME", region: "Midcoast Maine",
     lat: 44, lon: -69.6667, latDisplay: "44.00°N", lonDisplay: "69.67°W",
@@ -1349,7 +1349,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8416928", waterTempId: "8416928",
+    id: "8416928", waterTempId: "8418150",
     name: "Cross River entrance", slug: "cross-river-entrance",
     state: "maine", city: "Cross River entrance, ME", region: "Midcoast Maine",
     lat: 43.925, lon: -69.67, latDisplay: "43.92°N", lonDisplay: "69.67°W",
@@ -1371,7 +1371,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8416961", waterTempId: "8416961",
+    id: "8416961", waterTempId: "8418150",
     name: "Back River", slug: "back-river",
     state: "maine", city: "Back River, ME", region: "Midcoast Maine",
     lat: 43.9583, lon: -69.6833, latDisplay: "43.96°N", lonDisplay: "69.68°W",
@@ -1393,7 +1393,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8416968", waterTempId: "8416968",
+    id: "8416968", waterTempId: "8418150",
     name: "Isle of Springs", slug: "isle-of-springs",
     state: "maine", city: "Isle of Springs, ME", region: "Casco Bay / Portland",
     lat: 43.86, lon: -69.6867, latDisplay: "43.86°N", lonDisplay: "69.69°W",
@@ -1415,7 +1415,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417067", waterTempId: "8417067",
+    id: "8417067", waterTempId: "8418150",
     name: "Robinhood, Sasanoa River", slug: "robinhood-sasanoa-river",
     state: "maine", city: "Robinhood, Sasanoa River, ME", region: "Casco Bay / Portland",
     lat: 43.8533, lon: -69.7333, latDisplay: "43.85°N", lonDisplay: "69.73°W",
@@ -1437,7 +1437,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417127", waterTempId: "8417127",
+    id: "8417127", waterTempId: "8418150",
     name: "Mill Point, Sasanoa River", slug: "mill-point-sasanoa-river",
     state: "maine", city: "Mill Point, Sasanoa River, ME", region: "Casco Bay / Portland",
     lat: 43.8867, lon: -69.7633, latDisplay: "43.89°N", lonDisplay: "69.76°W",
@@ -1459,7 +1459,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417134", waterTempId: "8417134",
+    id: "8417134", waterTempId: "8418150",
     name: "Gardiner", slug: "gardiner",
     state: "maine", city: "Gardiner, ME", region: "Midcoast Maine",
     lat: 44.2333, lon: -69.7667, latDisplay: "44.23°N", lonDisplay: "69.77°W",
@@ -1481,7 +1481,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417177", waterTempId: "8417177",
+    id: "8417177", waterTempId: "8418150",
     name: "Fort Popham, Hunniwell Point", slug: "fort-popham-hunniwell-point",
     state: "maine", city: "Fort Popham, Hunniwell Point, ME", region: "Casco Bay / Portland",
     lat: 43.755, lon: -69.785, latDisplay: "43.76°N", lonDisplay: "69.78°W",
@@ -1503,7 +1503,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417208", waterTempId: "8417208",
+    id: "8417208", waterTempId: "8418150",
     name: "Richmond", slug: "richmond",
     state: "maine", city: "Richmond, ME", region: "Midcoast Maine",
     lat: 44.0883, lon: -69.7983, latDisplay: "44.09°N", lonDisplay: "69.80°W",
@@ -1525,7 +1525,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417221", waterTempId: "8417221",
+    id: "8417221", waterTempId: "8418150",
     name: "Phippsburg", slug: "phippsburg",
     state: "maine", city: "Phippsburg, ME", region: "Casco Bay / Portland",
     lat: 43.8183, lon: -69.81, latDisplay: "43.82°N", lonDisplay: "69.81°W",
@@ -1547,7 +1547,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417227", waterTempId: "8417227",
+    id: "8417227", waterTempId: "8418150",
     name: "Bath", slug: "bath",
     state: "maine", city: "Bath, ME", region: "Midcoast Maine",
     lat: 43.925, lon: -69.815, latDisplay: "43.92°N", lonDisplay: "69.81°W",
@@ -1569,7 +1569,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417271", waterTempId: "8417271",
+    id: "8417271", waterTempId: "8418150",
     name: "Sturgeon Island, Merrymeeting Bay", slug: "sturgeon-island-merrymeeting-bay",
     state: "maine", city: "Sturgeon Island, Merrymeeting Bay, ME", region: "Midcoast Maine",
     lat: 43.9817, lon: -69.835, latDisplay: "43.98°N", lonDisplay: "69.83°W",
@@ -1591,7 +1591,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417367", waterTempId: "8417367",
+    id: "8417367", waterTempId: "8418150",
     name: "Howard Point, New Meadows River", slug: "howard-point-new-meadows-river",
     state: "maine", city: "Howard Point, New Meadows River, ME", region: "Casco Bay / Portland",
     lat: 43.89, lon: -69.8833, latDisplay: "43.89°N", lonDisplay: "69.88°W",
@@ -1613,7 +1613,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417377", waterTempId: "8417377",
+    id: "8417377", waterTempId: "8418150",
     name: "Androscoggin River entrance", slug: "androscoggin-river-entrance",
     state: "maine", city: "Androscoggin River entrance, ME", region: "Midcoast Maine",
     lat: 43.95, lon: -69.8883, latDisplay: "43.95°N", lonDisplay: "69.89°W",
@@ -1635,7 +1635,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417387", waterTempId: "8417387",
+    id: "8417387", waterTempId: "8418150",
     name: "Cundy Harbor, New Meadows River", slug: "cundy-harbor-new-meadows-river",
     state: "maine", city: "Cundy Harbor, New Meadows River, ME", region: "Casco Bay / Portland",
     lat: 43.7883, lon: -69.8933, latDisplay: "43.79°N", lonDisplay: "69.89°W",
@@ -1657,7 +1657,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417391", waterTempId: "8417391",
+    id: "8417391", waterTempId: "8418150",
     name: "Bowdoinham, Cathance River", slug: "bowdoinham-cathance-river",
     state: "maine", city: "Bowdoinham, Cathance River, ME", region: "Midcoast Maine",
     lat: 44.0083, lon: -69.895, latDisplay: "44.01°N", lonDisplay: "69.89°W",
@@ -1679,7 +1679,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417527", waterTempId: "8417527",
+    id: "8417527", waterTempId: "8418150",
     name: "Brunswick, Androscoggin River", slug: "brunswick-androscoggin-river",
     state: "maine", city: "Brunswick, Androscoggin River, ME", region: "Midcoast Maine",
     lat: 43.9217, lon: -69.9633, latDisplay: "43.92°N", lonDisplay: "69.96°W",
@@ -1701,7 +1701,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417553", waterTempId: "8417553",
+    id: "8417553", waterTempId: "8418150",
     name: "Wilson Cove, Middle Bay", slug: "wilson-cove-middle-bay",
     state: "maine", city: "Wilson Cove, Middle Bay, ME", region: "Casco Bay / Portland",
     lat: 43.825, lon: -69.9767, latDisplay: "43.83°N", lonDisplay: "69.98°W",
@@ -1723,7 +1723,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417647", waterTempId: "8417647",
+    id: "8417647", waterTempId: "8418150",
     name: "South Harpswell, Potts Harbor", slug: "south-harpswell-potts-harbor",
     state: "maine", city: "South Harpswell, Potts Harbor, ME", region: "Casco Bay / Portland",
     lat: 43.7383, lon: -70.0233, latDisplay: "43.74°N", lonDisplay: "70.02°W",
@@ -1745,7 +1745,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417801", waterTempId: "8417801",
+    id: "8417801", waterTempId: "8418150",
     name: "South Freeport", slug: "south-freeport",
     state: "maine", city: "South Freeport, ME", region: "Casco Bay / Portland",
     lat: 43.82, lon: -70.1033, latDisplay: "43.82°N", lonDisplay: "70.10°W",
@@ -1767,7 +1767,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417821", waterTempId: "8417821",
+    id: "8417821", waterTempId: "8418150",
     name: "Cliff Island, Luckse Sound", slug: "cliff-island-luckse-sound",
     state: "maine", city: "Cliff Island, Luckse Sound, ME", region: "Casco Bay / Portland",
     lat: 43.695, lon: -70.11, latDisplay: "43.70°N", lonDisplay: "70.11°W",
@@ -1789,7 +1789,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417874", waterTempId: "8417874",
+    id: "8417874", waterTempId: "8418150",
     name: "Doyle Point", slug: "doyle-point",
     state: "maine", city: "Doyle Point, ME", region: "Casco Bay / Portland",
     lat: 43.7517, lon: -70.14, latDisplay: "43.75°N", lonDisplay: "70.14°W",
@@ -1811,7 +1811,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417881", waterTempId: "8417881",
+    id: "8417881", waterTempId: "8418150",
     name: "Great Chebeague Island", slug: "great-chebeague-island",
     state: "maine", city: "Great Chebeague Island, ME", region: "Casco Bay / Portland",
     lat: 43.7217, lon: -70.1417, latDisplay: "43.72°N", lonDisplay: "70.14°W",
@@ -1833,7 +1833,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417911", waterTempId: "8417911",
+    id: "8417911", waterTempId: "8418150",
     name: "Vaill Island", slug: "vaill-island",
     state: "maine", city: "Vaill Island, ME", region: "Casco Bay / Portland",
     lat: 43.6767, lon: -70.155, latDisplay: "43.68°N", lonDisplay: "70.16°W",
@@ -1855,7 +1855,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417941", waterTempId: "8417941",
+    id: "8417941", waterTempId: "8418150",
     name: "Long Island", slug: "long-island",
     state: "maine", city: "Long Island, ME", region: "Casco Bay / Portland",
     lat: 43.69, lon: -70.17, latDisplay: "43.69°N", lonDisplay: "70.17°W",
@@ -1877,7 +1877,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417948", waterTempId: "8417948",
+    id: "8417948", waterTempId: "8418150",
     name: "Prince Point", slug: "prince-point",
     state: "maine", city: "Prince Point, ME", region: "Casco Bay / Portland",
     lat: 43.7617, lon: -70.1733, latDisplay: "43.76°N", lonDisplay: "70.17°W",
@@ -1899,7 +1899,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417988", waterTempId: "8417988",
+    id: "8417988", waterTempId: "8418150",
     name: "Great Diamond Island", slug: "great-diamond-island",
     state: "maine", city: "Great Diamond Island, ME", region: "Casco Bay / Portland",
     lat: 43.67, lon: -70.2, latDisplay: "43.67°N", lonDisplay: "70.20°W",
@@ -1921,7 +1921,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417997", waterTempId: "8417997",
+    id: "8417997", waterTempId: "8418150",
     name: "Cushing Island", slug: "cushing-island",
     state: "maine", city: "Cushing Island, ME", region: "Casco Bay / Portland",
     lat: 43.645, lon: -70.1983, latDisplay: "43.65°N", lonDisplay: "70.20°W",
@@ -1943,7 +1943,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8418001", waterTempId: "8418001",
+    id: "8418001", waterTempId: "8418150",
     name: "Peak Island", slug: "peak-island",
     state: "maine", city: "Peak Island, ME", region: "Casco Bay / Portland",
     lat: 43.655, lon: -70.2, latDisplay: "43.66°N", lonDisplay: "70.20°W",
@@ -1965,7 +1965,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8418009", waterTempId: "8418009",
+    id: "8418009", waterTempId: "8418150",
     name: "Cow Island", slug: "cow-island",
     state: "maine", city: "Cow Island, ME", region: "Casco Bay / Portland",
     lat: 43.69, lon: -70.19, latDisplay: "43.69°N", lonDisplay: "70.19°W",
@@ -1987,7 +1987,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8418015", waterTempId: "8418015",
+    id: "8418015", waterTempId: "8418150",
     name: "Falmouth Foreside", slug: "falmouth-foreside",
     state: "maine", city: "Falmouth Foreside, ME", region: "Casco Bay / Portland",
     lat: 43.7317, lon: -70.205, latDisplay: "43.73°N", lonDisplay: "70.20°W",
@@ -2009,7 +2009,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8418031", waterTempId: "8418031",
+    id: "8418031", waterTempId: "8418150",
     name: "Portland Head Light", slug: "portland-head-light",
     state: "maine", city: "Portland Head Light, ME", region: "Casco Bay / Portland",
     lat: 43.6233, lon: -70.2067, latDisplay: "43.62°N", lonDisplay: "70.21°W",
@@ -2031,7 +2031,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8418137", waterTempId: "8418137",
+    id: "8418137", waterTempId: "8418150",
     name: "Presumpscot River Bridge", slug: "presumpscot-river-bridge",
     state: "maine", city: "Presumpscot River Bridge, ME", region: "Casco Bay / Portland",
     lat: 43.6867, lon: -70.2467, latDisplay: "43.69°N", lonDisplay: "70.25°W",
@@ -2075,7 +2075,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8418175", waterTempId: "8418175",
+    id: "8418175", waterTempId: "8418150",
     name: "Back Cove", slug: "back-cove",
     state: "maine", city: "Back Cove, ME", region: "Casco Bay / Portland",
     lat: 43.6767, lon: -70.255, latDisplay: "43.68°N", lonDisplay: "70.25°W",
@@ -2097,7 +2097,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8418268", waterTempId: "8418268",
+    id: "8418268", waterTempId: "8418150",
     name: "Fore River", slug: "fore-river",
     state: "maine", city: "Fore River, ME", region: "Casco Bay / Portland",
     lat: 43.6417, lon: -70.285, latDisplay: "43.64°N", lonDisplay: "70.28°W",
@@ -2119,7 +2119,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8418445", waterTempId: "8418445",
+    id: "8418445", waterTempId: "8418150",
     name: "Pine Point, Scarborough River", slug: "pine-point-scarborough-river",
     state: "maine", city: "Pine Point, Scarborough River, ME", region: "Casco Bay / Portland",
     lat: 43.545, lon: -70.3333, latDisplay: "43.55°N", lonDisplay: "70.33°W",
@@ -2141,7 +2141,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8418557", waterTempId: "8418557",
+    id: "8418557", waterTempId: "8418150",
     name: "Old Orchard Beach", slug: "old-orchard-beach",
     state: "maine", city: "Old Orchard Beach, ME", region: "Casco Bay / Portland",
     lat: 43.5167, lon: -70.3667, latDisplay: "43.52°N", lonDisplay: "70.37°W",
@@ -2163,7 +2163,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8418606", waterTempId: "8418606",
+    id: "8418606", waterTempId: "8418150",
     name: "Camp Ellis, Saco River Entrance", slug: "camp-ellis-saco-river-entrance",
     state: "maine", city: "Camp Ellis, Saco River Entrance, ME", region: "York County / Southern Maine",
     lat: 43.4617, lon: -70.3817, latDisplay: "43.46°N", lonDisplay: "70.38°W",
@@ -2185,7 +2185,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8418772", waterTempId: "8418772",
+    id: "8418772", waterTempId: "8418150",
     name: "Cape Porpoise", slug: "cape-porpoise",
     state: "maine", city: "Cape Porpoise, ME", region: "York County / Southern Maine",
     lat: 43.3667, lon: -70.4317, latDisplay: "43.37°N", lonDisplay: "70.43°W",
@@ -2207,7 +2207,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8418828", waterTempId: "8418828",
+    id: "8418828", waterTempId: "8418150",
     name: "Biddeford, Saco River", slug: "biddeford-saco-river",
     state: "maine", city: "Biddeford, Saco River, ME", region: "York County / Southern Maine",
     lat: 43.4917, lon: -70.4467, latDisplay: "43.49°N", lonDisplay: "70.45°W",
@@ -2229,7 +2229,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8418911", waterTempId: "8418911",
+    id: "8418911", waterTempId: "8419870",
     name: "Kennebunkport", slug: "kennebunkport",
     state: "maine", city: "Kennebunkport, ME", region: "York County / Southern Maine",
     lat: 43.3583, lon: -70.4767, latDisplay: "43.36°N", lonDisplay: "70.48°W",
@@ -2251,7 +2251,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8419317", waterTempId: "8419317",
+    id: "8419317", waterTempId: "8419870",
     name: "Wells, Webhannet River", slug: "wells-webhannet-river",
     state: "maine", city: "Wells, Webhannet River, ME", region: "York County / Southern Maine",
     lat: 43.31999969482422, lon: -70.56330108642578, latDisplay: "43.32°N", lonDisplay: "70.56°W",
@@ -2273,7 +2273,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8419399", waterTempId: "8419399",
+    id: "8419399", waterTempId: "8419870",
     name: "Cape Neddick", slug: "cape-neddick",
     state: "maine", city: "Cape Neddick, ME", region: "York County / Southern Maine",
     lat: 43.1667, lon: -70.5933, latDisplay: "43.17°N", lonDisplay: "70.59°W",
@@ -2295,7 +2295,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8419518", waterTempId: "8419518",
+    id: "8419518", waterTempId: "8419870",
     name: "York Harbor", slug: "york-harbor",
     state: "maine", city: "York Harbor, ME", region: "York County / Southern Maine",
     lat: 43.1317, lon: -70.6417, latDisplay: "43.13°N", lonDisplay: "70.64°W",
@@ -2317,7 +2317,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8419528", waterTempId: "8419528",
+    id: "8419528", waterTempId: "8419870",
     name: "Fort Point, York Harbor", slug: "fort-point-york-harbor",
     state: "maine", city: "Fort Point, York Harbor, ME", region: "York County / Southern Maine",
     lat: 43.13, lon: -70.6383, latDisplay: "43.13°N", lonDisplay: "70.64°W",
@@ -2339,7 +2339,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8419590", waterTempId: "8419590",
+    id: "8419590", waterTempId: "8419870",
     name: "Seapoint, Cutts Island", slug: "seapoint-cutts-island",
     state: "maine", city: "Seapoint, Cutts Island, ME", region: "York County / Southern Maine",
     lat: 43.085, lon: -70.6617, latDisplay: "43.09°N", lonDisplay: "70.66°W",
@@ -2361,7 +2361,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8419688", waterTempId: "8419688",
+    id: "8419688", waterTempId: "8419870",
     name: "Gerrish Island", slug: "gerrish-island",
     state: "maine", city: "Gerrish Island, ME", region: "York County / Southern Maine",
     lat: 43.0667, lon: -70.6967, latDisplay: "43.07°N", lonDisplay: "70.70°W",
@@ -2383,7 +2383,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8419807", waterTempId: "8419807",
+    id: "8419807", waterTempId: "8419870",
     name: "Kittery Point", slug: "kittery-point",
     state: "maine", city: "Kittery Point, ME", region: "York County / Southern Maine",
     lat: 43.0817, lon: -70.7033, latDisplay: "43.08°N", lonDisplay: "70.70°W",
@@ -2427,7 +2427,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8419997", waterTempId: "8419997",
+    id: "8419997", waterTempId: "8419870",
     name: "Salmon Falls River", slug: "salmon-falls-river",
     state: "maine", city: "Salmon Falls River, ME", region: "York County / Southern Maine",
     lat: 43.1917, lon: -70.825, latDisplay: "43.19°N", lonDisplay: "70.83°W",
@@ -2449,7 +2449,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8414821", waterTempId: "8414821",
+    id: "8414821", waterTempId: "8413320",
     name: "IRON POINT, FOX ISL, THOROFARE", slug: "iron-point-fox-isl-thorofare",
     state: "maine", city: "IRON POINT, FOX ISL, THOROFARE, ME", region: "Midcoast Maine",
     lat: 44.1267, lon: -68.8583, latDisplay: "44.13°N", lonDisplay: "68.86°W",
@@ -2471,7 +2471,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417087", waterTempId: "8417087",
+    id: "8417087", waterTempId: "8418150",
     name: "Phipps Pt.", slug: "phipps-pt",
     state: "maine", city: "Phipps Pt., ME", region: "Casco Bay / Portland",
     lat: 43.8983, lon: -69.7433, latDisplay: "43.90°N", lonDisplay: "69.74°W",
@@ -2493,7 +2493,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8417144", waterTempId: "8417144",
+    id: "8417144", waterTempId: "8418150",
     name: "Augusta, MCRR Bridge, Kennebec River", slug: "augusta-mcrr-bridge-kennebec-river",
     state: "maine", city: "Augusta, MCRR Bridge, Kennebec River, ME", region: "Midcoast Maine",
     lat: 44.32, lon: -69.77028, latDisplay: "44.32°N", lonDisplay: "69.77°W",
@@ -2515,7 +2515,7 @@ export const MAINE_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8419751", waterTempId: "8419751",
+    id: "8419751", waterTempId: "8419870",
     name: "APPLEDORE ISLAND", slug: "appledore-island",
     state: "maine", city: "APPLEDORE ISLAND, ME", region: "York County / Southern Maine",
     lat: 42.9883, lon: -70.6183, latDisplay: "42.99°N", lonDisplay: "70.62°W",

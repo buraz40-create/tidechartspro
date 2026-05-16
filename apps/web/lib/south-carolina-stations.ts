@@ -7,7 +7,7 @@ export type { StationConfig, NearbyStation, Species }
 
 export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   {
-    id: "8660098", waterTempId: "8660098",
+    id: "8660098", waterTempId: "8661070",
     name: "Little River Neck, north end", slug: "little-river-neck-north-end",
     state: "south-carolina", city: "Little River Neck, north end, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.87, lon: -78.5733, latDisplay: "33.87°N", lonDisplay: "78.57°W",
@@ -29,7 +29,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8660121", waterTempId: "8660121",
+    id: "8660121", waterTempId: "8661070",
     name: "Little River (town)", slug: "little-river-town",
     state: "south-carolina", city: "Little River (town), SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.87, lon: -78.6083, latDisplay: "33.87°N", lonDisplay: "78.61°W",
@@ -51,7 +51,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8660147", waterTempId: "8660147",
+    id: "8660147", waterTempId: "8661070",
     name: "Dunn Sound, north end", slug: "dunn-sound-north-end",
     state: "south-carolina", city: "Dunn Sound, north end, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.86, lon: -78.58, latDisplay: "33.86°N", lonDisplay: "78.58°W",
@@ -73,7 +73,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8660148", waterTempId: "8660148",
+    id: "8660148", waterTempId: "8661070",
     name: "Dunn Sound, Little River Inlet", slug: "dunn-sound-little-river-inlet",
     state: "south-carolina", city: "Dunn Sound, Little River Inlet, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.8583, lon: -78.57, latDisplay: "33.86°N", lonDisplay: "78.57°W",
@@ -95,7 +95,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8660166", waterTempId: "8660166",
+    id: "8660166", waterTempId: "8661070",
     name: "Nixon Crossroads", slug: "nixon-crossroads",
     state: "south-carolina", city: "Nixon Crossroads, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.855, lon: -78.6483, latDisplay: "33.85°N", lonDisplay: "78.65°W",
@@ -117,7 +117,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8660195", waterTempId: "8660195",
+    id: "8660195", waterTempId: "8661070",
     name: "Dunn Sound, west end", slug: "dunn-sound-west-end",
     state: "south-carolina", city: "Dunn Sound, west end, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.8517, lon: -78.5883, latDisplay: "33.85°N", lonDisplay: "78.59°W",
@@ -139,7 +139,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8660265", waterTempId: "8660265",
+    id: "8660265", waterTempId: "8661070",
     name: "Cherry Grove (inside)", slug: "cherry-grove-inside",
     state: "south-carolina", city: "Cherry Grove (inside), SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.835, lon: -78.6333, latDisplay: "33.84°N", lonDisplay: "78.63°W",
@@ -161,7 +161,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8660266", waterTempId: "8660266",
+    id: "8660266", waterTempId: "8661070",
     name: "Hog Inlet Pier", slug: "hog-inlet-pier",
     state: "south-carolina", city: "Hog Inlet Pier, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.8367, lon: -78.6067, latDisplay: "33.84°N", lonDisplay: "78.61°W",
@@ -183,7 +183,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8660275", waterTempId: "8660275",
+    id: "8660275", waterTempId: "8661070",
     name: "Conway, RR. bridge", slug: "conway-rr-bridge",
     state: "south-carolina", city: "Conway, RR. bridge, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.835, lon: -79.0417, latDisplay: "33.84°N", lonDisplay: "79.04°W",
@@ -205,7 +205,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8660315", waterTempId: "8660315",
+    id: "8660315", waterTempId: "8661070",
     name: "Grahamville", slug: "grahamville",
     state: "south-carolina", city: "Grahamville, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.83, lon: -78.9533, latDisplay: "33.83°N", lonDisplay: "78.95°W",
@@ -227,7 +227,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8660401", waterTempId: "8660401",
+    id: "8660401", waterTempId: "8661070",
     name: "Myrtle Beach Airport", slug: "myrtle-beach-airport",
     state: "south-carolina", city: "Myrtle Beach Airport, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.82, lon: -78.7183, latDisplay: "33.82°N", lonDisplay: "78.72°W",
@@ -249,7 +249,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8660475", waterTempId: "8660475",
+    id: "8660475", waterTempId: "8661070",
     name: "Pitch Landing", slug: "pitch-landing",
     state: "south-carolina", city: "Pitch Landing, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.8, lon: -79.055, latDisplay: "33.80°N", lonDisplay: "79.06°W",
@@ -271,7 +271,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8660642", waterTempId: "8660642",
+    id: "8660642", waterTempId: "8661070",
     name: "North Myrtle Beach, ICWW", slug: "north-myrtle-beach-icww",
     state: "south-carolina", city: "North Myrtle Beach, ICWW, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.766700744628906, lon: -78.81500244140625, latDisplay: "33.77°N", lonDisplay: "78.82°W",
@@ -293,7 +293,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8660754", waterTempId: "8660754",
+    id: "8660754", waterTempId: "8661070",
     name: "Carolina Forest, ICWW", slug: "carolina-forest-icww",
     state: "south-carolina", city: "Carolina Forest, ICWW, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.734901428222656, lon: -78.88269805908203, latDisplay: "33.73°N", lonDisplay: "78.88°W",
@@ -315,7 +315,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8660831", waterTempId: "8660831",
+    id: "8660831", waterTempId: "8661070",
     name: "Keysfield", slug: "keysfield",
     state: "south-carolina", city: "Keysfield, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.745, lon: -79.065, latDisplay: "33.74°N", lonDisplay: "79.06°W",
@@ -337,7 +337,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8660854", waterTempId: "8660854",
+    id: "8660854", waterTempId: "8661070",
     name: "Myrtle Beach, Combination Bridge", slug: "myrtle-beach-combination-bridge",
     state: "south-carolina", city: "Myrtle Beach, Combination Bridge, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.7133, lon: -78.9217, latDisplay: "33.71°N", lonDisplay: "78.92°W",
@@ -359,7 +359,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8660983", waterTempId: "8660983",
+    id: "8660983", waterTempId: "8661070",
     name: "Socastee Bridge", slug: "socastee-bridge",
     state: "south-carolina", city: "Socastee Bridge, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.6867, lon: -79.005, latDisplay: "33.69°N", lonDisplay: "79.00°W",
@@ -381,7 +381,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661067", waterTempId: "8661067",
+    id: "8661067", waterTempId: "8661070",
     name: "Enterprise Landing", slug: "enterprise-landing",
     state: "south-carolina", city: "Enterprise Landing, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.6667, lon: -79.0633, latDisplay: "33.67°N", lonDisplay: "79.06°W",
@@ -425,7 +425,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661093", waterTempId: "8661093",
+    id: "8661093", waterTempId: "8661070",
     name: "Yauhannah Bridge", slug: "yauhannah-bridge",
     state: "south-carolina", city: "Yauhannah Bridge, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.66, lon: -79.155, latDisplay: "33.66°N", lonDisplay: "79.16°W",
@@ -447,7 +447,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661119", waterTempId: "8661119",
+    id: "8661119", waterTempId: "8661070",
     name: "Little Bull Creek entrance, Bull Creek", slug: "little-bull-creek-entrance-bull-creek",
     state: "south-carolina", city: "Little Bull Creek entrance, Bull Creek, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.6017, lon: -79.1183, latDisplay: "33.60°N", lonDisplay: "79.12°W",
@@ -469,7 +469,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661139", waterTempId: "8661139",
+    id: "8661139", waterTempId: "8661070",
     name: "Bucksport", slug: "bucksport",
     state: "south-carolina", city: "Bucksport, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.6467, lon: -79.095, latDisplay: "33.65°N", lonDisplay: "79.09°W",
@@ -491,7 +491,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661299", waterTempId: "8661299",
+    id: "8661299", waterTempId: "8661070",
     name: "Lower Topsaw Landing", slug: "lower-topsaw-landing",
     state: "south-carolina", city: "Lower Topsaw Landing, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.6083, lon: -79.1517, latDisplay: "33.61°N", lonDisplay: "79.15°W",
@@ -513,7 +513,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661347", waterTempId: "8661347",
+    id: "8661347", waterTempId: "8661070",
     name: "Bull Creek entrance", slug: "bull-creek-entrance",
     state: "south-carolina", city: "Bull Creek entrance, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.5967, lon: -79.0983, latDisplay: "33.60°N", lonDisplay: "79.10°W",
@@ -535,7 +535,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661367", waterTempId: "8661367",
+    id: "8661367", waterTempId: "8661070",
     name: "Rhems, Black Mingo Creek, Black River", slug: "rhems-black-mingo-creek-black-river",
     state: "south-carolina", city: "Rhems, Black Mingo Creek, Black River, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.6033, lon: -79.4267, latDisplay: "33.60°N", lonDisplay: "79.43°W",
@@ -557,7 +557,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661419", waterTempId: "8661419",
+    id: "8661419", waterTempId: "8661070",
     name: "Garden City Bridge, Main Creek", slug: "garden-city-bridge-main-creek",
     state: "south-carolina", city: "Garden City Bridge, Main Creek, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.5783, lon: -79.0033, latDisplay: "33.58°N", lonDisplay: "79.00°W",
@@ -579,7 +579,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661437", waterTempId: "8661437",
+    id: "8661437", waterTempId: "8661070",
     name: "Garden City Pier (ocean)", slug: "garden-city-pier-ocean",
     state: "south-carolina", city: "Garden City Pier (ocean), SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.575, lon: -78.9967, latDisplay: "33.58°N", lonDisplay: "79.00°W",
@@ -601,7 +601,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661493", waterTempId: "8661493",
+    id: "8661493", waterTempId: "8661070",
     name: "Wachesaw Landing, Waccamaw River", slug: "wachesaw-landing-waccamaw-river",
     state: "south-carolina", city: "Wachesaw Landing, Waccamaw River, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.560001373291016, lon: -79.08499908447266, latDisplay: "33.56°N", lonDisplay: "79.08°W",
@@ -623,7 +623,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661529", waterTempId: "8661529",
+    id: "8661529", waterTempId: "8661070",
     name: "Captain Alex's Marina, Parsonage Creek", slug: "captain-alexs-marina-parsonage-creek",
     state: "south-carolina", city: "Captain Alex's Marina, Parsonage Creek, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.5517, lon: -79.0367, latDisplay: "33.55°N", lonDisplay: "79.04°W",
@@ -645,7 +645,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661558", waterTempId: "8661558",
+    id: "8661558", waterTempId: "8661070",
     name: "Holly Grove Plantation", slug: "holly-grove-plantation",
     state: "south-carolina", city: "Holly Grove Plantation, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.5517, lon: -79.1767, latDisplay: "33.55°N", lonDisplay: "79.18°W",
@@ -667,7 +667,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661559", waterTempId: "8661559",
+    id: "8661559", waterTempId: "8661070",
     name: "Smith's Dock", slug: "smiths-dock",
     state: "south-carolina", city: "Smith's Dock, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.545, lon: -79.045, latDisplay: "33.55°N", lonDisplay: "79.05°W",
@@ -689,7 +689,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661582", waterTempId: "8661582",
+    id: "8661582", waterTempId: "8661070",
     name: "Divine's Dock", slug: "divines-dock",
     state: "south-carolina", city: "Divine's Dock, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.5417, lon: -79.0283, latDisplay: "33.54°N", lonDisplay: "79.03°W",
@@ -711,7 +711,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661593", waterTempId: "8661593",
+    id: "8661593", waterTempId: "8661070",
     name: "Winea Plantation, Black River", slug: "winea-plantation-black-river",
     state: "south-carolina", city: "Winea Plantation, Black River, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.535, lon: -79.3883, latDisplay: "33.53°N", lonDisplay: "79.39°W",
@@ -733,7 +733,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661608", waterTempId: "8661608",
+    id: "8661608", waterTempId: "8661070",
     name: "Allston Creek", slug: "allston-creek",
     state: "south-carolina", city: "Allston Creek, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.5317, lon: -79.0533, latDisplay: "33.53°N", lonDisplay: "79.05°W",
@@ -755,7 +755,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661609", waterTempId: "8661609",
+    id: "8661609", waterTempId: "8661070",
     name: "Oaks Creek, 0.5 mi. above entrance", slug: "oaks-creek-05-mi-above-entrance",
     state: "south-carolina", city: "Oaks Creek, 0.5 mi. above entrance, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.53, lon: -79.0433, latDisplay: "33.53°N", lonDisplay: "79.04°W",
@@ -777,7 +777,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661684", waterTempId: "8661684",
+    id: "8661684", waterTempId: "8661070",
     name: "Oaks Creek, upper end", slug: "oaks-creek-upper-end",
     state: "south-carolina", city: "Oaks Creek, upper end, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.5117, lon: -79.0683, latDisplay: "33.51°N", lonDisplay: "79.07°W",
@@ -799,7 +799,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661686", waterTempId: "8661686",
+    id: "8661686", waterTempId: "8661070",
     name: "Black River (south of Dunbar)", slug: "black-river-south-of-dunbar",
     state: "south-carolina", city: "Black River (south of Dunbar), SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.5117, lon: -79.3417, latDisplay: "33.51°N", lonDisplay: "79.34°W",
@@ -821,7 +821,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661703", waterTempId: "8661703",
+    id: "8661703", waterTempId: "8661070",
     name: "Thoroughfare Creek entrance", slug: "thoroughfare-creek-entrance",
     state: "south-carolina", city: "Thoroughfare Creek entrance, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.5067, lon: -79.145, latDisplay: "33.51°N", lonDisplay: "79.14°W",
@@ -843,7 +843,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661734", waterTempId: "8661734",
+    id: "8661734", waterTempId: "8661070",
     name: "Mt. Pleasant Plantation, Black River", slug: "mt-pleasant-plantation-black-river",
     state: "south-carolina", city: "Mt. Pleasant Plantation, Black River, SC", region: "Charleston / Lowcountry",
     lat: 33.495, lon: -79.4617, latDisplay: "33.49°N", lonDisplay: "79.46°W",
@@ -865,7 +865,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661741", waterTempId: "8661741",
+    id: "8661741", waterTempId: "8661070",
     name: "Arundel Plantation", slug: "arundel-plantation",
     state: "south-carolina", city: "Arundel Plantation, SC", region: "Charleston / Lowcountry",
     lat: 33.4833, lon: -79.1783, latDisplay: "33.48°N", lonDisplay: "79.18°W",
@@ -887,7 +887,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661866", waterTempId: "8661866",
+    id: "8661866", waterTempId: "8661070",
     name: "South of Sam Worth Game Management Area", slug: "south-of-sam-worth-game-management-area",
     state: "south-carolina", city: "South of Sam Worth Game Management Area, SC", region: "Charleston / Lowcountry",
     lat: 33.4683, lon: -79.1883, latDisplay: "33.47°N", lonDisplay: "79.19°W",
@@ -909,7 +909,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661867", waterTempId: "8661867",
+    id: "8661867", waterTempId: "8661070",
     name: "Litchfield Beach bridge", slug: "litchfield-beach-bridge",
     state: "south-carolina", city: "Litchfield Beach bridge, SC", region: "Charleston / Lowcountry",
     lat: 33.4717, lon: -79.1017, latDisplay: "33.47°N", lonDisplay: "79.10°W",
@@ -931,7 +931,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661873", waterTempId: "8661873",
+    id: "8661873", waterTempId: "8661070",
     name: "Carr Creek, 1 mile above entrance", slug: "carr-creek-1-mile-above-entrance",
     state: "south-carolina", city: "Carr Creek, 1 mile above entrance, SC", region: "Charleston / Lowcountry",
     lat: 33.465, lon: -79.1867, latDisplay: "33.47°N", lonDisplay: "79.19°W",
@@ -953,7 +953,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661913", waterTempId: "8661913",
+    id: "8661913", waterTempId: "8661070",
     name: "Weymouth Plantation", slug: "weymouth-plantation",
     state: "south-carolina", city: "Weymouth Plantation, SC", region: "Charleston / Lowcountry",
     lat: 33.455, lon: -79.205, latDisplay: "33.45°N", lonDisplay: "79.20°W",
@@ -975,7 +975,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661947", waterTempId: "8661947",
+    id: "8661947", waterTempId: "8661070",
     name: "Midway Inlet North, Pawleys Island", slug: "midway-inlet-north-pawleys-island",
     state: "south-carolina", city: "Midway Inlet North, Pawleys Island, SC", region: "Charleston / Lowcountry",
     lat: 33.4483, lon: -79.1117, latDisplay: "33.45°N", lonDisplay: "79.11°W",
@@ -997,7 +997,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661989", waterTempId: "8661989",
+    id: "8661989", waterTempId: "8661070",
     name: "Bennet's Dock, Pawleys Island Creek", slug: "bennets-dock-pawleys-island-creek",
     state: "south-carolina", city: "Bennet's Dock, Pawleys Island Creek, SC", region: "Charleston / Lowcountry",
     lat: 33.435, lon: -79.1267, latDisplay: "33.44°N", lonDisplay: "79.13°W",
@@ -1019,7 +1019,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661991", waterTempId: "8661991",
+    id: "8661991", waterTempId: "8661070",
     name: "Hagley Landing", slug: "hagley-landing",
     state: "south-carolina", city: "Hagley Landing, SC", region: "Charleston / Lowcountry",
     lat: 33.435, lon: -79.1817, latDisplay: "33.44°N", lonDisplay: "79.18°W",
@@ -1041,7 +1041,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8662006", waterTempId: "8662006",
+    id: "8662006", waterTempId: "8661070",
     name: "Pawleys Island Pier (ocean)", slug: "pawleys-island-pier-ocean",
     state: "south-carolina", city: "Pawleys Island Pier (ocean), SC", region: "Charleston / Lowcountry",
     lat: 33.4317, lon: -79.1167, latDisplay: "33.43°N", lonDisplay: "79.12°W",
@@ -1063,7 +1063,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8662071", waterTempId: "8662071",
+    id: "8662071", waterTempId: "8661070",
     name: "Ward's Dock, Pawleys Inlet", slug: "wards-dock-pawleys-inlet",
     state: "south-carolina", city: "Ward's Dock, Pawleys Inlet, SC", region: "Charleston / Lowcountry",
     lat: 33.4117, lon: -79.135, latDisplay: "33.41°N", lonDisplay: "79.14°W",
@@ -1085,7 +1085,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8662216", waterTempId: "8662216",
+    id: "8662216", waterTempId: "8661070",
     name: "Cumberland", slug: "cumberland",
     state: "south-carolina", city: "Cumberland, SC", region: "Charleston / Lowcountry",
     lat: 33.37, lon: -79.4333, latDisplay: "33.37°N", lonDisplay: "79.43°W",
@@ -1107,7 +1107,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8662237", waterTempId: "8662237",
+    id: "8662237", waterTempId: "8661070",
     name: "Jacobs Wharf", slug: "jacobs-wharf",
     state: "south-carolina", city: "Jacobs Wharf, SC", region: "Charleston / Lowcountry",
     lat: 33.3633, lon: -79.355, latDisplay: "33.36°N", lonDisplay: "79.36°W",
@@ -1129,7 +1129,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8662245", waterTempId: "8662245",
+    id: "8662245", waterTempId: "8661070",
     name: "Oyster Landing (N. Inlet Estuary)", slug: "oyster-landing-n-inlet-estuary",
     state: "south-carolina", city: "Oyster Landing (N. Inlet Estuary), SC", region: "Charleston / Lowcountry",
     lat: 33.35169982910156, lon: -79.18669891357422, latDisplay: "33.35°N", lonDisplay: "79.19°W",
@@ -1151,7 +1151,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8662299", waterTempId: "8662299",
+    id: "8662299", waterTempId: "8661070",
     name: "Clambank Creek, Goat Island, North Inlet", slug: "clambank-creek-goat-island-north-inlet",
     state: "south-carolina", city: "Clambank Creek, Goat Island, North Inlet, SC", region: "Charleston / Lowcountry",
     lat: 33.3333, lon: -79.1933, latDisplay: "33.33°N", lonDisplay: "79.19°W",
@@ -1173,7 +1173,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8662405", waterTempId: "8662405",
+    id: "8662405", waterTempId: "8665530",
     name: "Jamestown Bridge, Santee River", slug: "jamestown-bridge-santee-river",
     state: "south-carolina", city: "Jamestown Bridge, Santee River, SC", region: "Charleston / Lowcountry",
     lat: 33.305, lon: -79.6783, latDisplay: "33.30°N", lonDisplay: "79.68°W",
@@ -1195,7 +1195,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8662549", waterTempId: "8662549",
+    id: "8662549", waterTempId: "8661070",
     name: "South Island Ferry, Intracoastal Waterway", slug: "south-island-ferry-intracoastal-waterway",
     state: "south-carolina", city: "South Island Ferry, Intracoastal Waterway, SC", region: "Charleston / Lowcountry",
     lat: 33.2517, lon: -79.2683, latDisplay: "33.25°N", lonDisplay: "79.27°W",
@@ -1217,7 +1217,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8662670", waterTempId: "8662670",
+    id: "8662670", waterTempId: "8665530",
     name: "Pleasant Hill Landing, Santee River", slug: "pleasant-hill-landing-santee-river",
     state: "south-carolina", city: "Pleasant Hill Landing, Santee River, SC", region: "Charleston / Lowcountry",
     lat: 33.245, lon: -79.5217, latDisplay: "33.24°N", lonDisplay: "79.52°W",
@@ -1239,7 +1239,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8662746", waterTempId: "8662746",
+    id: "8662746", waterTempId: "8661070",
     name: "South Island Plantation (C.G. Station)", slug: "south-island-plantation-cg-station",
     state: "south-carolina", city: "South Island Plantation (C.G. Station), SC", region: "Charleston / Lowcountry",
     lat: 33.235, lon: -79.2033, latDisplay: "33.23°N", lonDisplay: "79.20°W",
@@ -1261,7 +1261,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8662747", waterTempId: "8662747",
+    id: "8662747", waterTempId: "8661070",
     name: "Georgetown Lighthouse", slug: "georgetown-lighthouse",
     state: "south-carolina", city: "Georgetown Lighthouse, SC", region: "Charleston / Lowcountry",
     lat: 33.2233, lon: -79.185, latDisplay: "33.22°N", lonDisplay: "79.19°W",
@@ -1283,7 +1283,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8662793", waterTempId: "8662793",
+    id: "8662793", waterTempId: "8661070",
     name: "North Santee Bridge", slug: "north-santee-bridge",
     state: "south-carolina", city: "North Santee Bridge, SC", region: "Charleston / Lowcountry",
     lat: 33.21, lon: -79.385, latDisplay: "33.21°N", lonDisplay: "79.39°W",
@@ -1305,7 +1305,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8662796", waterTempId: "8662796",
+    id: "8662796", waterTempId: "8661070",
     name: "Minim Creek ent., ICWW, North Santee Bay", slug: "minim-creek-ent-icww-north-santee-bay",
     state: "south-carolina", city: "Minim Creek ent., ICWW, North Santee Bay, SC", region: "Charleston / Lowcountry",
     lat: 33.195, lon: -79.275, latDisplay: "33.20°N", lonDisplay: "79.28°W",
@@ -1327,7 +1327,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8662799", waterTempId: "8662799",
+    id: "8662799", waterTempId: "8665530",
     name: "U.S. Highway 17 bridge, South Santee River", slug: "us-highway-17-bridge-south-santee-river",
     state: "south-carolina", city: "U.S. Highway 17 bridge, South Santee River, SC", region: "Charleston / Lowcountry",
     lat: 33.185, lon: -79.4067, latDisplay: "33.19°N", lonDisplay: "79.41°W",
@@ -1349,7 +1349,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8662926", waterTempId: "8662926",
+    id: "8662926", waterTempId: "8661070",
     name: "Georgetown, Sampit River Ent.", slug: "georgetown-sampit-river-ent",
     state: "south-carolina", city: "Georgetown, Sampit River Ent., SC", region: "Charleston / Lowcountry",
     lat: 33.361698150634766, lon: -79.27999877929688, latDisplay: "33.36°N", lonDisplay: "79.28°W",
@@ -1371,7 +1371,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8662931", waterTempId: "8662931",
+    id: "8662931", waterTempId: "8661070",
     name: "Waccamaw River Entrance", slug: "waccamaw-river-entrance",
     state: "south-carolina", city: "Waccamaw River Entrance, SC", region: "Charleston / Lowcountry",
     lat: 33.36669921875, lon: -79.25499725341797, latDisplay: "33.37°N", lonDisplay: "79.25°W",
@@ -1393,7 +1393,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8662953", waterTempId: "8662953",
+    id: "8662953", waterTempId: "8661070",
     name: "Windsor Plantation, Black River", slug: "windsor-plantation-black-river",
     state: "south-carolina", city: "Windsor Plantation, Black River, SC", region: "Charleston / Lowcountry",
     lat: 33.415, lon: -79.25, latDisplay: "33.41°N", lonDisplay: "79.25°W",
@@ -1415,7 +1415,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8663101", waterTempId: "8663101",
+    id: "8663101", waterTempId: "8665530",
     name: "Cape Romain", slug: "cape-romain",
     state: "south-carolina", city: "Cape Romain, SC", region: "Charleston / Lowcountry",
     lat: 33.025, lon: -79.3483, latDisplay: "33.02°N", lonDisplay: "79.35°W",
@@ -1437,7 +1437,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8663219", waterTempId: "8663219",
+    id: "8663219", waterTempId: "8665530",
     name: "South Santee River, ICWW, 4 Mi Canal Creek", slug: "south-santee-river-icww-4-mi-canal-creek",
     state: "south-carolina", city: "South Santee River, ICWW, 4 Mi Canal Creek, SC", region: "Charleston / Lowcountry",
     lat: 33.15420150756836, lon: -79.35440063476562, latDisplay: "33.15°N", lonDisplay: "79.35°W",
@@ -1459,7 +1459,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8663261", waterTempId: "8663261",
+    id: "8663261", waterTempId: "8661070",
     name: "Cedar Island, North Santee Bay", slug: "cedar-island-north-santee-bay",
     state: "south-carolina", city: "Cedar Island, North Santee Bay, SC", region: "Charleston / Lowcountry",
     lat: 33.14, lon: -79.245, latDisplay: "33.14°N", lonDisplay: "79.25°W",
@@ -1481,7 +1481,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8663381", waterTempId: "8663381",
+    id: "8663381", waterTempId: "8661070",
     name: "Cedar Island Point, South Santee River", slug: "cedar-island-point-south-santee-river",
     state: "south-carolina", city: "Cedar Island Point, South Santee River, SC", region: "Charleston / Lowcountry",
     lat: 33.12, lon: -79.27, latDisplay: "33.12°N", lonDisplay: "79.27°W",
@@ -1503,7 +1503,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8663461", waterTempId: "8663461",
+    id: "8663461", waterTempId: "8665530",
     name: "Casino Creek, ICWW", slug: "casino-creek-icww",
     state: "south-carolina", city: "Casino Creek, ICWW, SC", region: "Charleston / Lowcountry",
     lat: 33.1083, lon: -79.3933, latDisplay: "33.11°N", lonDisplay: "79.39°W",
@@ -1525,7 +1525,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8663535", waterTempId: "8663535",
+    id: "8663535", waterTempId: "8665530",
     name: "Quinby Creek bridge, East Branch", slug: "quinby-creek-bridge-east-branch",
     state: "south-carolina", city: "Quinby Creek bridge, East Branch, SC", region: "Charleston / Lowcountry",
     lat: 33.095, lon: -79.8083, latDisplay: "33.09°N", lonDisplay: "79.81°W",
@@ -1547,7 +1547,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8663539", waterTempId: "8663539",
+    id: "8663539", waterTempId: "8665530",
     name: "Pimlico, West Branch", slug: "pimlico-west-branch",
     state: "south-carolina", city: "Pimlico, West Branch, SC", region: "Charleston / Lowcountry",
     lat: 33.095, lon: -79.9533, latDisplay: "33.09°N", lonDisplay: "79.95°W",
@@ -1569,7 +1569,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8663618", waterTempId: "8663618",
+    id: "8663618", waterTempId: "8665530",
     name: "McClellanville, Jeremy Creek", slug: "mcclellanville-jeremy-creek",
     state: "south-carolina", city: "McClellanville, Jeremy Creek, SC", region: "Charleston / Lowcountry",
     lat: 33.0783, lon: -79.46, latDisplay: "33.08°N", lonDisplay: "79.46°W",
@@ -1591,7 +1591,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8663631", waterTempId: "8663631",
+    id: "8663631", waterTempId: "8665530",
     name: "Old Rice Mill, West Branch", slug: "old-rice-mill-west-branch",
     state: "south-carolina", city: "Old Rice Mill, West Branch, SC", region: "Charleston / Lowcountry",
     lat: 33.0783, lon: -79.925, latDisplay: "33.08°N", lonDisplay: "79.92°W",
@@ -1613,7 +1613,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8663665", waterTempId: "8663665",
+    id: "8663665", waterTempId: "8665530",
     name: "Richmond Plantation, East Branch", slug: "richmond-plantation-east-branch",
     state: "south-carolina", city: "Richmond Plantation, East Branch, SC", region: "Charleston / Lowcountry",
     lat: 33.0767, lon: -79.855, latDisplay: "33.08°N", lonDisplay: "79.86°W",
@@ -1635,7 +1635,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8663731", waterTempId: "8663731",
+    id: "8663731", waterTempId: "8665530",
     name: "Bonneau Ferry, East Branch", slug: "bonneau-ferry-east-branch",
     state: "south-carolina", city: "Bonneau Ferry, East Branch, SC", region: "Charleston / Lowcountry",
     lat: 33.0717, lon: -79.8833, latDisplay: "33.07°N", lonDisplay: "79.88°W",
@@ -1657,7 +1657,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8663757", waterTempId: "8663757",
+    id: "8663757", waterTempId: "8665530",
     name: "Dupont, Dean Hall", slug: "dupont-dean-hall",
     state: "south-carolina", city: "Dupont, Dean Hall, SC", region: "Charleston / Lowcountry",
     lat: 33.0583, lon: -79.9367, latDisplay: "33.06°N", lonDisplay: "79.94°W",
@@ -1679,7 +1679,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8663781", waterTempId: "8663781",
+    id: "8663781", waterTempId: "8665530",
     name: "Blessing Plantation, East Branch", slug: "blessing-plantation-east-branch",
     state: "south-carolina", city: "Blessing Plantation, East Branch, SC", region: "Charleston / Lowcountry",
     lat: 33.055, lon: -79.88, latDisplay: "33.05°N", lonDisplay: "79.88°W",
@@ -1701,7 +1701,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8663858", waterTempId: "8663858",
+    id: "8663858", waterTempId: "8665530",
     name: "Buck Hall, Awendaw Creek", slug: "buck-hall-awendaw-creek",
     state: "south-carolina", city: "Buck Hall, Awendaw Creek, SC", region: "Charleston / Lowcountry",
     lat: 33.040000915527344, lon: -79.55999755859375, latDisplay: "33.04°N", lonDisplay: "79.56°W",
@@ -1723,7 +1723,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8663899", waterTempId: "8663899",
+    id: "8663899", waterTempId: "8665530",
     name: "Harbor River entrance", slug: "harbor-river-entrance",
     state: "south-carolina", city: "Harbor River entrance, SC", region: "Charleston / Lowcountry",
     lat: 33.0333, lon: -79.535, latDisplay: "33.03°N", lonDisplay: "79.53°W",
@@ -1745,7 +1745,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664022", waterTempId: "8664022",
+    id: "8664022", waterTempId: "8665530",
     name: "General Dynamics Pier", slug: "general-dynamics-pier",
     state: "south-carolina", city: "General Dynamics Pier, SC", region: "Charleston / Lowcountry",
     lat: 33.0083, lon: -79.9233, latDisplay: "33.01°N", lonDisplay: "79.92°W",
@@ -1767,7 +1767,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664099", waterTempId: "8664099",
+    id: "8664099", waterTempId: "8665530",
     name: "Five Fathom Creek entrance", slug: "five-fathom-creek-entrance",
     state: "south-carolina", city: "Five Fathom Creek entrance, SC", region: "Charleston / Lowcountry",
     lat: 33, lon: -79.4967, latDisplay: "33.00°N", lonDisplay: "79.50°W",
@@ -1789,7 +1789,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664131", waterTempId: "8664131",
+    id: "8664131", waterTempId: "8665530",
     name: "Back River Reservoir, West Branch", slug: "back-river-reservoir-west-branch",
     state: "south-carolina", city: "Back River Reservoir, West Branch, SC", region: "Charleston / Lowcountry",
     lat: 32.995, lon: -79.9367, latDisplay: "32.99°N", lonDisplay: "79.94°W",
@@ -1811,7 +1811,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664442", waterTempId: "8664442",
+    id: "8664442", waterTempId: "8665530",
     name: "Moores Landing, ICWW, Sewee Bay", slug: "moores-landing-icww-sewee-bay",
     state: "south-carolina", city: "Moores Landing, ICWW, Sewee Bay, SC", region: "Charleston / Lowcountry",
     lat: 32.9367, lon: -79.655, latDisplay: "32.94°N", lonDisplay: "79.66°W",
@@ -1833,7 +1833,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664515", waterTempId: "8664515",
+    id: "8664515", waterTempId: "8665530",
     name: "Snow Point, 0.4 mi. North of", slug: "snow-point-04-mi-north-of",
     state: "south-carolina", city: "Snow Point, 0.4 mi. North of, SC", region: "Charleston / Lowcountry",
     lat: 32.9483, lon: -79.9317, latDisplay: "32.95°N", lonDisplay: "79.93°W",
@@ -1855,7 +1855,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664531", waterTempId: "8664531",
+    id: "8664531", waterTempId: "8665530",
     name: "Bacon Bridge", slug: "bacon-bridge",
     state: "south-carolina", city: "Bacon Bridge, SC", region: "Charleston / Lowcountry",
     lat: 32.9583, lon: -80.2033, latDisplay: "32.96°N", lonDisplay: "80.20°W",
@@ -1877,7 +1877,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664532", waterTempId: "8664532",
+    id: "8664532", waterTempId: "8665530",
     name: "Greggs Landing, Mateeba Gardens", slug: "greggs-landing-mateeba-gardens",
     state: "south-carolina", city: "Greggs Landing, Mateeba Gardens, SC", region: "Charleston / Lowcountry",
     lat: 32.9317, lon: -80.1567, latDisplay: "32.93°N", lonDisplay: "80.16°W",
@@ -1899,7 +1899,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664541", waterTempId: "8664541",
+    id: "8664541", waterTempId: "8665530",
     name: "Yeamans Hall, Goose Creek", slug: "yeamans-hall-goose-creek",
     state: "south-carolina", city: "Yeamans Hall, Goose Creek, SC", region: "Charleston / Lowcountry",
     lat: 32.925, lon: -79.9867, latDisplay: "32.92°N", lonDisplay: "79.99°W",
@@ -1921,7 +1921,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664545", waterTempId: "8664545",
+    id: "8664545", waterTempId: "8665530",
     name: "Cainhoy", slug: "cainhoy",
     state: "south-carolina", city: "Cainhoy, SC", region: "Charleston / Lowcountry",
     lat: 32.9267, lon: -79.83, latDisplay: "32.93°N", lonDisplay: "79.83°W",
@@ -1943,7 +1943,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664582", waterTempId: "8664582",
+    id: "8664582", waterTempId: "8665530",
     name: "Woodville", slug: "woodville",
     state: "south-carolina", city: "Woodville, SC", region: "Charleston / Lowcountry",
     lat: 32.92, lon: -79.7333, latDisplay: "32.92°N", lonDisplay: "79.73°W",
@@ -1965,7 +1965,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664589", waterTempId: "8664589",
+    id: "8664589", waterTempId: "8665530",
     name: "Hanahan, Turkey Creek, Goose Creek", slug: "hanahan-turkey-creek-goose-creek",
     state: "south-carolina", city: "Hanahan, Turkey Creek, Goose Creek, SC", region: "Charleston / Lowcountry",
     lat: 32.9183, lon: -80.0117, latDisplay: "32.92°N", lonDisplay: "80.01°W",
@@ -1987,7 +1987,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664611", waterTempId: "8664611",
+    id: "8664611", waterTempId: "8665530",
     name: "Big Paradise Island", slug: "big-paradise-island",
     state: "south-carolina", city: "Big Paradise Island, SC", region: "Charleston / Lowcountry",
     lat: 32.915, lon: -79.7467, latDisplay: "32.91°N", lonDisplay: "79.75°W",
@@ -2009,7 +2009,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664621", waterTempId: "8664621",
+    id: "8664621", waterTempId: "8665530",
     name: "Wharf Creek entrance", slug: "wharf-creek-entrance",
     state: "south-carolina", city: "Wharf Creek entrance, SC", region: "Charleston / Lowcountry",
     lat: 32.9133, lon: -79.6167, latDisplay: "32.91°N", lonDisplay: "79.62°W",
@@ -2031,7 +2031,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664662", waterTempId: "8664662",
+    id: "8664662", waterTempId: "8665530",
     name: "Goose Creek entrance", slug: "goose-creek-entrance",
     state: "south-carolina", city: "Goose Creek entrance, SC", region: "Charleston / Lowcountry",
     lat: 32.91, lon: -79.9517, latDisplay: "32.91°N", lonDisplay: "79.95°W",
@@ -2053,7 +2053,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664688", waterTempId: "8664688",
+    id: "8664688", waterTempId: "8665530",
     name: "Clouter Creek, north entrance", slug: "clouter-creek-north-entrance",
     state: "south-carolina", city: "Clouter Creek, north entrance, SC", region: "Charleston / Lowcountry",
     lat: 32.9067, lon: -79.935, latDisplay: "32.91°N", lonDisplay: "79.94°W",
@@ -2075,7 +2075,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664699", waterTempId: "8664699",
+    id: "8664699", waterTempId: "8665530",
     name: "North Charleston, Ashley river", slug: "north-charleston-ashley-river",
     state: "south-carolina", city: "North Charleston, Ashley river, SC", region: "Charleston / Lowcountry",
     lat: 32.900299072265625, lon: -80.11750030517578, latDisplay: "32.90°N", lonDisplay: "80.12°W",
@@ -2097,7 +2097,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664701", waterTempId: "8664701",
+    id: "8664701", waterTempId: "8665530",
     name: "Nowell Creek", slug: "nowell-creek",
     state: "south-carolina", city: "Nowell Creek, SC", region: "Charleston / Lowcountry",
     lat: 32.9, lon: -79.9, latDisplay: "32.90°N", lonDisplay: "79.90°W",
@@ -2119,7 +2119,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664782", waterTempId: "8664782",
+    id: "8664782", waterTempId: "8665530",
     name: "Parker Island, Horlbeck Creek", slug: "parker-island-horlbeck-creek",
     state: "south-carolina", city: "Parker Island, Horlbeck Creek, SC", region: "Charleston / Lowcountry",
     lat: 32.885, lon: -79.845, latDisplay: "32.88°N", lonDisplay: "79.84°W",
@@ -2141,7 +2141,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664801", waterTempId: "8664801",
+    id: "8664801", waterTempId: "8665530",
     name: "Price Creek, North Capers Island", slug: "price-creek-north-capers-island",
     state: "south-carolina", city: "Price Creek, North Capers Island, SC", region: "Charleston / Lowcountry",
     lat: 32.8817, lon: -79.6583, latDisplay: "32.88°N", lonDisplay: "79.66°W",
@@ -2163,7 +2163,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664841", waterTempId: "8664841",
+    id: "8664841", waterTempId: "8665530",
     name: "Magnolia Gardens", slug: "magnolia-gardens",
     state: "south-carolina", city: "Magnolia Gardens, SC", region: "Charleston / Lowcountry",
     lat: 32.8767, lon: -80.0833, latDisplay: "32.88°N", lonDisplay: "80.08°W",
@@ -2185,7 +2185,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664878", waterTempId: "8664878",
+    id: "8664878", waterTempId: "8665530",
     name: "Old Capers Landing, Santee Pass, Capers Island", slug: "old-capers-landing-santee-pass-capers-island",
     state: "south-carolina", city: "Old Capers Landing, Santee Pass, Capers Island, SC", region: "Charleston / Lowcountry",
     lat: 32.87, lon: -79.6867, latDisplay: "32.87°N", lonDisplay: "79.69°W",
@@ -2207,7 +2207,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664941", waterTempId: "8664941",
+    id: "8664941", waterTempId: "8665530",
     name: "Capers Creek, South Capers Island", slug: "capers-creek-south-capers-island",
     state: "south-carolina", city: "Capers Creek, South Capers Island, SC", region: "Charleston / Lowcountry",
     lat: 32.8567, lon: -79.7067, latDisplay: "32.86°N", lonDisplay: "79.71°W",
@@ -2229,7 +2229,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664945", waterTempId: "8664945",
+    id: "8664945", waterTempId: "8665530",
     name: "Clouter Creek, south entrance", slug: "clouter-creek-south-entrance",
     state: "south-carolina", city: "Clouter Creek, south entrance, SC", region: "Charleston / Lowcountry",
     lat: 32.86, lon: -79.9383, latDisplay: "32.86°N", lonDisplay: "79.94°W",
@@ -2251,7 +2251,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664992", waterTempId: "8664992",
+    id: "8664992", waterTempId: "8665530",
     name: "North Dewees Island, Capers Inlet", slug: "north-dewees-island-capers-inlet",
     state: "south-carolina", city: "North Dewees Island, Capers Inlet, SC", region: "Charleston / Lowcountry",
     lat: 32.85, lon: -79.7033, latDisplay: "32.85°N", lonDisplay: "79.70°W",
@@ -2273,7 +2273,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665002", waterTempId: "8665002",
+    id: "8665002", waterTempId: "8665530",
     name: "Drayton, Bee's Ferry", slug: "drayton-bees-ferry",
     state: "south-carolina", city: "Drayton, Bee's Ferry, SC", region: "Charleston / Lowcountry",
     lat: 32.8483, lon: -80.0517, latDisplay: "32.85°N", lonDisplay: "80.05°W",
@@ -2295,7 +2295,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665099", waterTempId: "8665099",
+    id: "8665099", waterTempId: "8665530",
     name: "I-526 bridge", slug: "i-526-bridge",
     state: "south-carolina", city: "I-526 bridge, SC", region: "Charleston / Lowcountry",
     lat: 32.8367, lon: -80.0217, latDisplay: "32.84°N", lonDisplay: "80.02°W",
@@ -2317,7 +2317,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665101", waterTempId: "8665101",
+    id: "8665101", waterTempId: "8665530",
     name: "Cosgrove Bridge", slug: "cosgrove-bridge",
     state: "south-carolina", city: "Cosgrove Bridge, SC", region: "Charleston / Lowcountry",
     lat: 32.835, lon: -79.9867, latDisplay: "32.84°N", lonDisplay: "79.99°W",
@@ -2339,7 +2339,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665111", waterTempId: "8665111",
+    id: "8665111", waterTempId: "8665530",
     name: "South Dewees Island, Dewees Inlet", slug: "south-dewees-island-dewees-inlet",
     state: "south-carolina", city: "South Dewees Island, Dewees Inlet, SC", region: "Charleston / Lowcountry",
     lat: 32.8333, lon: -79.7267, latDisplay: "32.83°N", lonDisplay: "79.73°W",
@@ -2361,7 +2361,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665145", waterTempId: "8665145",
+    id: "8665145", waterTempId: "8665530",
     name: "Duck Island", slug: "duck-island",
     state: "south-carolina", city: "Duck Island, SC", region: "Charleston / Lowcountry",
     lat: 32.83, lon: -79.9667, latDisplay: "32.83°N", lonDisplay: "79.97°W",
@@ -2383,7 +2383,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665167", waterTempId: "8665167",
+    id: "8665167", waterTempId: "8665530",
     name: "Hamlin Sound", slug: "hamlin-sound",
     state: "south-carolina", city: "Hamlin Sound, SC", region: "Charleston / Lowcountry",
     lat: 32.8267, lon: -79.7867, latDisplay: "32.83°N", lonDisplay: "79.79°W",
@@ -2405,7 +2405,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665192", waterTempId: "8665192",
+    id: "8665192", waterTempId: "8665530",
     name: "Hobcaw Point", slug: "hobcaw-point",
     state: "south-carolina", city: "Hobcaw Point, SC", region: "Charleston / Lowcountry",
     lat: 32.8217, lon: -79.9, latDisplay: "32.82°N", lonDisplay: "79.90°W",
@@ -2427,7 +2427,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665257", waterTempId: "8665257",
+    id: "8665257", waterTempId: "8665530",
     name: "Canaday Landing, south of, Edisto River", slug: "canaday-landing-south-of-edisto-river",
     state: "south-carolina", city: "Canaday Landing, south of, Edisto River, SC", region: "Charleston / Lowcountry",
     lat: 32.8133, lon: -80.4067, latDisplay: "32.81°N", lonDisplay: "80.41°W",
@@ -2449,7 +2449,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665387", waterTempId: "8665387",
+    id: "8665387", waterTempId: "8665530",
     name: "Hamlin Creek, Isle of Palms", slug: "hamlin-creek-isle-of-palms",
     state: "south-carolina", city: "Hamlin Creek, Isle of Palms, SC", region: "Charleston / Lowcountry",
     lat: 32.7867, lon: -79.7917, latDisplay: "32.79°N", lonDisplay: "79.79°W",
@@ -2471,7 +2471,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665424", waterTempId: "8665424",
+    id: "8665424", waterTempId: "8665530",
     name: "Folly Creek, Hwy. 171 bridge", slug: "folly-creek-hwy-171-bridge",
     state: "south-carolina", city: "Folly Creek, Hwy. 171 bridge, SC", region: "Beaufort / Sea Islands",
     lat: 32.675, lon: -79.9517, latDisplay: "32.67°N", lonDisplay: "79.95°W",
@@ -2493,7 +2493,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665426", waterTempId: "8665426",
+    id: "8665426", waterTempId: "8665530",
     name: "Shem Creek", slug: "shem-creek",
     state: "south-carolina", city: "Shem Creek, SC", region: "Charleston / Lowcountry",
     lat: 32.7933, lon: -79.8817, latDisplay: "32.79°N", lonDisplay: "79.88°W",
@@ -2515,7 +2515,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665475", waterTempId: "8665475",
+    id: "8665475", waterTempId: "8665530",
     name: "Limehouse Bridge", slug: "limehouse-bridge",
     state: "south-carolina", city: "Limehouse Bridge, SC", region: "Charleston / Lowcountry",
     lat: 32.7867, lon: -80.105, latDisplay: "32.79°N", lonDisplay: "80.11°W",
@@ -2537,7 +2537,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665494", waterTempId: "8665494",
+    id: "8665494", waterTempId: "8665530",
     name: "Isle of Palms Pier", slug: "isle-of-palms-pier",
     state: "south-carolina", city: "Isle of Palms Pier, SC", region: "Charleston / Lowcountry",
     lat: 32.7833, lon: -79.785, latDisplay: "32.78°N", lonDisplay: "79.78°W",
@@ -2559,7 +2559,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665495", waterTempId: "8665495",
+    id: "8665495", waterTempId: "8665530",
     name: "South Ashley Bridge", slug: "south-ashley-bridge",
     state: "south-carolina", city: "South Ashley Bridge, SC", region: "Charleston / Lowcountry",
     lat: 32.7833, lon: -79.9567, latDisplay: "32.78°N", lonDisplay: "79.96°W",
@@ -2603,7 +2603,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665552", waterTempId: "8665552",
+    id: "8665552", waterTempId: "8665530",
     name: "Breach Inlet, Isle of Palms", slug: "breach-inlet-isle-of-palms",
     state: "south-carolina", city: "Breach Inlet, Isle of Palms, SC", region: "Charleston / Lowcountry",
     lat: 32.7767, lon: -79.8117, latDisplay: "32.78°N", lonDisplay: "79.81°W",
@@ -2625,7 +2625,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665567", waterTempId: "8665567",
+    id: "8665567", waterTempId: "8665530",
     name: "Ben Sawyer Bridge, ICWW", slug: "ben-sawyer-bridge-icww",
     state: "south-carolina", city: "Ben Sawyer Bridge, ICWW, SC", region: "Charleston / Lowcountry",
     lat: 32.7733, lon: -79.8417, latDisplay: "32.77°N", lonDisplay: "79.84°W",
@@ -2647,7 +2647,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665589", waterTempId: "8665589",
+    id: "8665589", waterTempId: "8665530",
     name: "Sandblasters, Pennys Creek", slug: "sandblasters-pennys-creek",
     state: "south-carolina", city: "Sandblasters, Pennys Creek, SC", region: "Charleston / Lowcountry",
     lat: 32.77, lon: -80.0633, latDisplay: "32.77°N", lonDisplay: "80.06°W",
@@ -2669,7 +2669,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665599", waterTempId: "8665599",
+    id: "8665599", waterTempId: "8665530",
     name: "Pennys Creek, west entrance", slug: "pennys-creek-west-entrance",
     state: "south-carolina", city: "Pennys Creek, west entrance, SC", region: "Charleston / Lowcountry",
     lat: 32.7683, lon: -80.07, latDisplay: "32.77°N", lonDisplay: "80.07°W",
@@ -2691,7 +2691,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665613", waterTempId: "8665613",
+    id: "8665613", waterTempId: "8665530",
     name: "Wappoo Creek, highway bridge", slug: "wappoo-creek-highway-bridge",
     state: "south-carolina", city: "Wappoo Creek, highway bridge, SC", region: "Charleston / Lowcountry",
     lat: 32.7667, lon: -79.9733, latDisplay: "32.77°N", lonDisplay: "79.97°W",
@@ -2713,7 +2713,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665637", waterTempId: "8665637",
+    id: "8665637", waterTempId: "8665530",
     name: "The Cove, Fort Moultrie", slug: "the-cove-fort-moultrie",
     state: "south-carolina", city: "The Cove, Fort Moultrie, SC", region: "Charleston / Lowcountry",
     lat: 32.7633, lon: -79.8567, latDisplay: "32.76°N", lonDisplay: "79.86°W",
@@ -2735,7 +2735,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665641", waterTempId: "8665641",
+    id: "8665641", waterTempId: "8665530",
     name: "Elliott Cut entrance", slug: "elliott-cut-entrance",
     state: "south-carolina", city: "Elliott Cut entrance, SC", region: "Charleston / Lowcountry",
     lat: 32.7633, lon: -80.0017, latDisplay: "32.76°N", lonDisplay: "80.00°W",
@@ -2757,7 +2757,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665726", waterTempId: "8665726",
+    id: "8665726", waterTempId: "8665530",
     name: "Fort Johnson", slug: "fort-johnson",
     state: "south-carolina", city: "Fort Johnson, SC", region: "Charleston / Lowcountry",
     lat: 32.7517, lon: -79.8983, latDisplay: "32.75°N", lonDisplay: "79.90°W",
@@ -2779,7 +2779,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665728", waterTempId: "8665728",
+    id: "8665728", waterTempId: "8665530",
     name: "Fort Sumter", slug: "fort-sumter",
     state: "south-carolina", city: "Fort Sumter, SC", region: "Charleston / Lowcountry",
     lat: 32.7533, lon: -79.8767, latDisplay: "32.75°N", lonDisplay: "79.88°W",
@@ -2801,7 +2801,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665737", waterTempId: "8665737",
+    id: "8665737", waterTempId: "8665530",
     name: "Jacksonboro Camp", slug: "jacksonboro-camp",
     state: "south-carolina", city: "Jacksonboro Camp, SC", region: "Charleston / Lowcountry",
     lat: 32.7533, lon: -80.45, latDisplay: "32.75°N", lonDisplay: "80.45°W",
@@ -2823,7 +2823,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665763", waterTempId: "8665763",
+    id: "8665763", waterTempId: "8665530",
     name: "Hollywood, Wadmalaw River", slug: "hollywood-wadmalaw-river",
     state: "south-carolina", city: "Hollywood, Wadmalaw River, SC", region: "Charleston / Lowcountry",
     lat: 32.746700286865234, lon: -80.16500091552734, latDisplay: "32.75°N", lonDisplay: "80.17°W",
@@ -2845,7 +2845,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665775", waterTempId: "8665775",
+    id: "8665775", waterTempId: "8665530",
     name: "James Island Creek, 1 mi. above ent.", slug: "james-island-creek-1-mi-above-ent",
     state: "south-carolina", city: "James Island Creek, 1 mi. above ent., SC", region: "Charleston / Lowcountry",
     lat: 32.745, lon: -79.9483, latDisplay: "32.74°N", lonDisplay: "79.95°W",
@@ -2867,7 +2867,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8665814", waterTempId: "8665814",
+    id: "8665814", waterTempId: "8665530",
     name: "Ashepoo", slug: "ashepoo",
     state: "south-carolina", city: "Ashepoo, SC", region: "Charleston / Lowcountry",
     lat: 32.7433, lon: -80.5567, latDisplay: "32.74°N", lonDisplay: "80.56°W",
@@ -2889,7 +2889,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666017", waterTempId: "8666017",
+    id: "8666017", waterTempId: "8665530",
     name: "Penny Creek, south of, Edisto River", slug: "penny-creek-south-of-edisto-river",
     state: "south-carolina", city: "Penny Creek, south of, Edisto River, SC", region: "Charleston / Lowcountry",
     lat: 32.715, lon: -80.4367, latDisplay: "32.72°N", lonDisplay: "80.44°W",
@@ -2911,7 +2911,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666029", waterTempId: "8666029",
+    id: "8666029", waterTempId: "8665530",
     name: "Church Creek bridge", slug: "church-creek-bridge",
     state: "south-carolina", city: "Church Creek bridge, SC", region: "Charleston / Lowcountry",
     lat: 32.715, lon: -80.0917, latDisplay: "32.72°N", lonDisplay: "80.09°W",
@@ -2933,7 +2933,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666101", waterTempId: "8666101",
+    id: "8666101", waterTempId: "8665530",
     name: "Johns Island, Church Creek", slug: "johns-island-church-creek",
     state: "south-carolina", city: "Johns Island, Church Creek, SC", region: "Charleston / Lowcountry",
     lat: 32.7067, lon: -80.1567, latDisplay: "32.71°N", lonDisplay: "80.16°W",
@@ -2955,7 +2955,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666131", waterTempId: "8666131",
+    id: "8666131", waterTempId: "8665530",
     name: "Lower Toogoodoo Creek, 2 mi. above entrance", slug: "lower-toogoodoo-creek-2-mi-above-entrance",
     state: "south-carolina", city: "Lower Toogoodoo Creek, 2 mi. above entrance, SC", region: "Charleston / Lowcountry",
     lat: 32.7033, lon: -80.2783, latDisplay: "32.70°N", lonDisplay: "80.28°W",
@@ -2977,7 +2977,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666166", waterTempId: "8666166",
+    id: "8666166", waterTempId: "8665530",
     name: "Cuckolds Creek", slug: "cuckolds-creek",
     state: "south-carolina", city: "Cuckolds Creek, SC", region: "Charleston / Lowcountry",
     lat: 32.7133, lon: -80.695, latDisplay: "32.71°N", lonDisplay: "80.69°W",
@@ -2999,7 +2999,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666167", waterTempId: "8666167",
+    id: "8666167", waterTempId: "8665530",
     name: "Hope Creek, Edisto River", slug: "hope-creek-edisto-river",
     state: "south-carolina", city: "Hope Creek, Edisto River, SC", region: "Beaufort / Sea Islands",
     lat: 32.7, lon: -80.4267, latDisplay: "32.70°N", lonDisplay: "80.43°W",
@@ -3021,7 +3021,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666217", waterTempId: "8666217",
+    id: "8666217", waterTempId: "8665530",
     name: "Yonges Island", slug: "yonges-island",
     state: "south-carolina", city: "Yonges Island, SC", region: "Beaufort / Sea Islands",
     lat: 32.695, lon: -80.2233, latDisplay: "32.70°N", lonDisplay: "80.22°W",
@@ -3043,7 +3043,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666282", waterTempId: "8666282",
+    id: "8666282", waterTempId: "8665530",
     name: "Oak Branch, Bohicket Creek", slug: "oak-branch-bohicket-creek",
     state: "south-carolina", city: "Oak Branch, Bohicket Creek, SC", region: "Beaufort / Sea Islands",
     lat: 32.6833, lon: -80.0967, latDisplay: "32.68°N", lonDisplay: "80.10°W",
@@ -3065,7 +3065,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666283", waterTempId: "8666283",
+    id: "8666283", waterTempId: "8665530",
     name: "Abbapoola Creek entrance", slug: "abbapoola-creek-entrance",
     state: "south-carolina", city: "Abbapoola Creek entrance, SC", region: "Beaufort / Sea Islands",
     lat: 32.6767, lon: -80.0067, latDisplay: "32.68°N", lonDisplay: "80.01°W",
@@ -3087,7 +3087,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666359", waterTempId: "8666359",
+    id: "8666359", waterTempId: "8670870",
     name: "Bluff Plantation", slug: "bluff-plantation",
     state: "south-carolina", city: "Bluff Plantation, SC", region: "Beaufort / Sea Islands",
     lat: 32.6833, lon: -80.7383, latDisplay: "32.68°N", lonDisplay: "80.74°W",
@@ -3109,7 +3109,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666367", waterTempId: "8666367",
+    id: "8666367", waterTempId: "8665530",
     name: "Willtown Bluff, Edisto River", slug: "willtown-bluff-edisto-river",
     state: "south-carolina", city: "Willtown Bluff, Edisto River, SC", region: "Beaufort / Sea Islands",
     lat: 32.6817, lon: -80.4167, latDisplay: "32.68°N", lonDisplay: "80.42°W",
@@ -3131,7 +3131,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666433", waterTempId: "8666433",
+    id: "8666433", waterTempId: "8665530",
     name: "Toogoodoo Creek, 2 mi. above entrance", slug: "toogoodoo-creek-2-mi-above-entrance",
     state: "south-carolina", city: "Toogoodoo Creek, 2 mi. above entrance, SC", region: "Beaufort / Sea Islands",
     lat: 32.6683, lon: -80.2933, latDisplay: "32.67°N", lonDisplay: "80.29°W",
@@ -3153,7 +3153,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666467", waterTempId: "8666467",
+    id: "8666467", waterTempId: "8665530",
     name: "Folly River, north, Folly Island", slug: "folly-river-north-folly-island",
     state: "south-carolina", city: "Folly River, north, Folly Island, SC", region: "Beaufort / Sea Islands",
     lat: 32.67, lon: -79.9167, latDisplay: "32.67°N", lonDisplay: "79.92°W",
@@ -3175,7 +3175,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666552", waterTempId: "8666552",
+    id: "8666552", waterTempId: "8665530",
     name: "Park Island, Tom Point Creek", slug: "park-island-tom-point-creek",
     state: "south-carolina", city: "Park Island, Tom Point Creek, SC", region: "Beaufort / Sea Islands",
     lat: 32.665, lon: -80.3167, latDisplay: "32.66°N", lonDisplay: "80.32°W",
@@ -3197,7 +3197,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666616", waterTempId: "8666616",
+    id: "8666616", waterTempId: "8665530",
     name: "Dawho River", slug: "dawho-river",
     state: "south-carolina", city: "Dawho River, SC", region: "Beaufort / Sea Islands",
     lat: 32.6567, lon: -80.3917, latDisplay: "32.66°N", lonDisplay: "80.39°W",
@@ -3219,7 +3219,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666652", waterTempId: "8666652",
+    id: "8666652", waterTempId: "8665530",
     name: "Folly River Bridge, Folly Island", slug: "folly-river-bridge-folly-island",
     state: "south-carolina", city: "Folly River Bridge, Folly Island, SC", region: "Beaufort / Sea Islands",
     lat: 32.6617, lon: -79.945, latDisplay: "32.66°N", lonDisplay: "79.94°W",
@@ -3241,7 +3241,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666659", waterTempId: "8666659",
+    id: "8666659", waterTempId: "8670870",
     name: "U.S. 17 Bridge", slug: "us-17-bridge",
     state: "south-carolina", city: "U.S. 17 Bridge, SC", region: "Beaufort / Sea Islands",
     lat: 32.6517, lon: -80.6833, latDisplay: "32.65°N", lonDisplay: "80.68°W",
@@ -3263,7 +3263,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666699", waterTempId: "8666699",
+    id: "8666699", waterTempId: "8665530",
     name: "Bluff Point", slug: "bluff-point",
     state: "south-carolina", city: "Bluff Point, SC", region: "Beaufort / Sea Islands",
     lat: 32.6467, lon: -80.2567, latDisplay: "32.65°N", lonDisplay: "80.26°W",
@@ -3285,7 +3285,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666749", waterTempId: "8666749",
+    id: "8666749", waterTempId: "8665530",
     name: "Airy Hall Plantation", slug: "airy-hall-plantation",
     state: "south-carolina", city: "Airy Hall Plantation, SC", region: "Beaufort / Sea Islands",
     lat: 32.6317, lon: -80.4717, latDisplay: "32.63°N", lonDisplay: "80.47°W",
@@ -3307,7 +3307,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666767", waterTempId: "8666767",
+    id: "8666767", waterTempId: "8665530",
     name: "Snake Island", slug: "snake-island",
     state: "south-carolina", city: "Snake Island, SC", region: "Beaufort / Sea Islands",
     lat: 32.64, lon: -80.015, latDisplay: "32.64°N", lonDisplay: "80.02°W",
@@ -3329,7 +3329,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666775", waterTempId: "8666775",
+    id: "8666775", waterTempId: "8665530",
     name: "Leadenwah Creek, 3 mi. above entrance", slug: "leadenwah-creek-3-mi-above-entrance",
     state: "south-carolina", city: "Leadenwah Creek, 3 mi. above entrance, SC", region: "Beaufort / Sea Islands",
     lat: 32.6367, lon: -80.2017, latDisplay: "32.64°N", lonDisplay: "80.20°W",
@@ -3351,7 +3351,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666799", waterTempId: "8666799",
+    id: "8666799", waterTempId: "8665530",
     name: "Dawho Bridge, Dawho River", slug: "dawho-bridge-dawho-river",
     state: "south-carolina", city: "Dawho Bridge, Dawho River, SC", region: "Beaufort / Sea Islands",
     lat: 32.6367, lon: -80.3417, latDisplay: "32.64°N", lonDisplay: "80.34°W",
@@ -3373,7 +3373,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666918", waterTempId: "8666918",
+    id: "8666918", waterTempId: "8665530",
     name: "Ho-Non-Wah Boy Scout Camp, Bohicket Creek", slug: "ho-non-wah-boy-scout-camp-bohicket-creek",
     state: "south-carolina", city: "Ho-Non-Wah Boy Scout Camp, Bohicket Creek, SC", region: "Beaufort / Sea Islands",
     lat: 32.625, lon: -80.1667, latDisplay: "32.63°N", lonDisplay: "80.17°W",
@@ -3395,7 +3395,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667017", waterTempId: "8667017",
+    id: "8667017", waterTempId: "8665530",
     name: "Brickyard Ferry, swing bridge", slug: "brickyard-ferry-swing-bridge",
     state: "south-carolina", city: "Brickyard Ferry, swing bridge, SC", region: "Beaufort / Sea Islands",
     lat: 32.6133, lon: -80.4817, latDisplay: "32.61°N", lonDisplay: "80.48°W",
@@ -3417,7 +3417,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667062", waterTempId: "8667062",
+    id: "8667062", waterTempId: "8665530",
     name: "Kiawah River Bridge", slug: "kiawah-river-bridge",
     state: "south-carolina", city: "Kiawah River Bridge, SC", region: "Beaufort / Sea Islands",
     lat: 32.6033, lon: -80.1317, latDisplay: "32.60°N", lonDisplay: "80.13°W",
@@ -3439,7 +3439,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667067", waterTempId: "8667067",
+    id: "8667067", waterTempId: "8665530",
     name: "Pine Landing", slug: "pine-landing",
     state: "south-carolina", city: "Pine Landing, SC", region: "Beaufort / Sea Islands",
     lat: 32.6033, lon: -80.3883, latDisplay: "32.60°N", lonDisplay: "80.39°W",
@@ -3461,7 +3461,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667074", waterTempId: "8667074",
+    id: "8667074", waterTempId: "8665530",
     name: "Wiggins, Chehaw River", slug: "wiggins-chehaw-river",
     state: "south-carolina", city: "Wiggins, Chehaw River, SC", region: "Beaufort / Sea Islands",
     lat: 32.6017, lon: -80.5417, latDisplay: "32.60°N", lonDisplay: "80.54°W",
@@ -3483,7 +3483,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667075", waterTempId: "8667075",
+    id: "8667075", waterTempId: "8665530",
     name: "Steamboat Landing, Steamboat Creek", slug: "steamboat-landing-steamboat-creek",
     state: "south-carolina", city: "Steamboat Landing, Steamboat Creek, SC", region: "Beaufort / Sea Islands",
     lat: 32.6033, lon: -80.2867, latDisplay: "32.60°N", lonDisplay: "80.29°W",
@@ -3505,7 +3505,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667076", waterTempId: "8667076",
+    id: "8667076", waterTempId: "8670870",
     name: "Tulifiny River, I-95 bridge", slug: "tulifiny-river-i-95-bridge",
     state: "south-carolina", city: "Tulifiny River, I-95 bridge, SC", region: "Beaufort / Sea Islands",
     lat: 32.6017, lon: -80.9033, latDisplay: "32.60°N", lonDisplay: "80.90°W",
@@ -3527,7 +3527,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667089", waterTempId: "8667089",
+    id: "8667089", waterTempId: "8665530",
     name: "Rockville, Bohicket Creek", slug: "rockville-bohicket-creek",
     state: "south-carolina", city: "Rockville, Bohicket Creek, SC", region: "Beaufort / Sea Islands",
     lat: 32.5983, lon: -80.195, latDisplay: "32.60°N", lonDisplay: "80.19°W",
@@ -3549,7 +3549,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667101", waterTempId: "8667101",
+    id: "8667101", waterTempId: "8665530",
     name: "Windsor Plantation, Russel Creek", slug: "windsor-plantation-russel-creek",
     state: "south-carolina", city: "Windsor Plantation, Russel Creek, SC", region: "Beaufort / Sea Islands",
     lat: 32.5983, lon: -80.345, latDisplay: "32.60°N", lonDisplay: "80.34°W",
@@ -3571,7 +3571,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667146", waterTempId: "8667146",
+    id: "8667146", waterTempId: "8670870",
     name: "North Dawson Landing, Coosawhatchie River", slug: "north-dawson-landing-coosawhatchie-river",
     state: "south-carolina", city: "North Dawson Landing, Coosawhatchie River, SC", region: "Beaufort / Sea Islands",
     lat: 32.5617, lon: -80.91, latDisplay: "32.56°N", lonDisplay: "80.91°W",
@@ -3593,7 +3593,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667172", waterTempId: "8667172",
+    id: "8667172", waterTempId: "8670870",
     name: "Sheldon, Huspa Creek, Whale Branch", slug: "sheldon-huspa-creek-whale-branch",
     state: "south-carolina", city: "Sheldon, Huspa Creek, Whale Branch, SC", region: "Beaufort / Sea Islands",
     lat: 32.5833, lon: -80.7833, latDisplay: "32.58°N", lonDisplay: "80.78°W",
@@ -3615,7 +3615,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667178", waterTempId: "8667178",
+    id: "8667178", waterTempId: "8665530",
     name: "Point of Pines", slug: "point-of-pines",
     state: "south-carolina", city: "Point of Pines, SC", region: "Beaufort / Sea Islands",
     lat: 32.585, lon: -80.2283, latDisplay: "32.59°N", lonDisplay: "80.23°W",
@@ -3637,7 +3637,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667199", waterTempId: "8667199",
+    id: "8667199", waterTempId: "8670870",
     name: "Briars Creek ent., Wimbee Creek, Bull River", slug: "briars-creek-ent-wimbee-creek-bull-river",
     state: "south-carolina", city: "Briars Creek ent., Wimbee Creek, Bull River, SC", region: "Beaufort / Sea Islands",
     lat: 32.5783, lon: -80.67, latDisplay: "32.58°N", lonDisplay: "80.67°W",
@@ -3659,7 +3659,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667201", waterTempId: "8667201",
+    id: "8667201", waterTempId: "8665530",
     name: "Bluff Islands", slug: "bluff-islands",
     state: "south-carolina", city: "Bluff Islands, SC", region: "Beaufort / Sea Islands",
     lat: 32.5783, lon: -80.4933, latDisplay: "32.58°N", lonDisplay: "80.49°W",
@@ -3681,7 +3681,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667209", waterTempId: "8667209",
+    id: "8667209", waterTempId: "8665530",
     name: "Musselboro Island, Mosquito Creek", slug: "musselboro-island-mosquito-creek",
     state: "south-carolina", city: "Musselboro Island, Mosquito Creek, SC", region: "Beaufort / Sea Islands",
     lat: 32.5783, lon: -80.4483, latDisplay: "32.58°N", lonDisplay: "80.45°W",
@@ -3703,7 +3703,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667259", waterTempId: "8667259",
+    id: "8667259", waterTempId: "8665530",
     name: "Fields Point", slug: "fields-point",
     state: "south-carolina", city: "Fields Point, SC", region: "Beaufort / Sea Islands",
     lat: 32.5683, lon: -80.5533, latDisplay: "32.57°N", lonDisplay: "80.55°W",
@@ -3725,7 +3725,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667272", waterTempId: "8667272",
+    id: "8667272", waterTempId: "8665530",
     name: "Bowles Island, New Chehaw River", slug: "bowles-island-new-chehaw-river",
     state: "south-carolina", city: "Bowles Island, New Chehaw River, SC", region: "Beaufort / Sea Islands",
     lat: 32.565, lon: -80.5167, latDisplay: "32.56°N", lonDisplay: "80.52°W",
@@ -3747,7 +3747,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667281", waterTempId: "8667281",
+    id: "8667281", waterTempId: "8665530",
     name: "Ocella Creek, 2 mi. above entrance", slug: "ocella-creek-2-mi-above-entrance",
     state: "south-carolina", city: "Ocella Creek, 2 mi. above entrance, SC", region: "Beaufort / Sea Islands",
     lat: 32.5617, lon: -80.2383, latDisplay: "32.56°N", lonDisplay: "80.24°W",
@@ -3769,7 +3769,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667295", waterTempId: "8667295",
+    id: "8667295", waterTempId: "8665530",
     name: "White House Woods, Mosquito Creek", slug: "white-house-woods-mosquito-creek",
     state: "south-carolina", city: "White House Woods, Mosquito Creek, SC", region: "Beaufort / Sea Islands",
     lat: 32.55870056152344, lon: -80.45439910888672, latDisplay: "32.56°N", lonDisplay: "80.45°W",
@@ -3791,7 +3791,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667309", waterTempId: "8667309",
+    id: "8667309", waterTempId: "8665530",
     name: "Fenwick Island", slug: "fenwick-island",
     state: "south-carolina", city: "Fenwick Island, SC", region: "Beaufort / Sea Islands",
     lat: 32.56, lon: -80.4183, latDisplay: "32.56°N", lonDisplay: "80.42°W",
@@ -3813,7 +3813,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667351", waterTempId: "8667351",
+    id: "8667351", waterTempId: "8665530",
     name: "Hutchinson Island", slug: "hutchinson-island",
     state: "south-carolina", city: "Hutchinson Island, SC", region: "Beaufort / Sea Islands",
     lat: 32.5517, lon: -80.4817, latDisplay: "32.55°N", lonDisplay: "80.48°W",
@@ -3835,7 +3835,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667411", waterTempId: "8667411",
+    id: "8667411", waterTempId: "8670870",
     name: "Lobeco, Whale Branch", slug: "lobeco-whale-branch",
     state: "south-carolina", city: "Lobeco, Whale Branch, SC", region: "Beaufort / Sea Islands",
     lat: 32.5733, lon: -80.745, latDisplay: "32.57°N", lonDisplay: "80.75°W",
@@ -3857,7 +3857,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667425", waterTempId: "8667425",
+    id: "8667425", waterTempId: "8665530",
     name: "Peters Point, St. Pierre Creek", slug: "peters-point-st-pierre-creek",
     state: "south-carolina", city: "Peters Point, St. Pierre Creek, SC", region: "Beaufort / Sea Islands",
     lat: 32.54, lon: -80.34, latDisplay: "32.54°N", lonDisplay: "80.34°W",
@@ -3879,7 +3879,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667482", waterTempId: "8667482",
+    id: "8667482", waterTempId: "8665530",
     name: "Ashepoo-Coosaw Cutoff, ICWW", slug: "ashepoo-coosaw-cutoff-icww",
     state: "south-carolina", city: "Ashepoo-Coosaw Cutoff, ICWW, SC", region: "Beaufort / Sea Islands",
     lat: 32.525, lon: -80.4517, latDisplay: "32.52°N", lonDisplay: "80.45°W",
@@ -3901,7 +3901,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667491", waterTempId: "8667491",
+    id: "8667491", waterTempId: "8670870",
     name: "Whale Branch entrance", slug: "whale-branch-entrance",
     state: "south-carolina", city: "Whale Branch entrance, SC", region: "Beaufort / Sea Islands",
     lat: 32.525, lon: -80.675, latDisplay: "32.52°N", lonDisplay: "80.67°W",
@@ -3923,7 +3923,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667493", waterTempId: "8667493",
+    id: "8667493", waterTempId: "8670870",
     name: "Summerhouse Point, Bull River", slug: "summerhouse-point-bull-river",
     state: "south-carolina", city: "Summerhouse Point, Bull River, SC", region: "Beaufort / Sea Islands",
     lat: 32.5267, lon: -80.5733, latDisplay: "32.53°N", lonDisplay: "80.57°W",
@@ -3945,7 +3945,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667508", waterTempId: "8667508",
+    id: "8667508", waterTempId: "8670870",
     name: "RR. Bridge, Hall Island", slug: "rr-bridge-hall-island",
     state: "south-carolina", city: "RR. Bridge, Hall Island, SC", region: "Beaufort / Sea Islands",
     lat: 32.5217, lon: -80.8383, latDisplay: "32.52°N", lonDisplay: "80.84°W",
@@ -3967,7 +3967,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667524", waterTempId: "8667524",
+    id: "8667524", waterTempId: "8665530",
     name: "Seabrook", slug: "seabrook",
     state: "south-carolina", city: "Seabrook, SC", region: "Beaufort / Sea Islands",
     lat: 32.5233, lon: -80.4067, latDisplay: "32.52°N", lonDisplay: "80.41°W",
@@ -3989,7 +3989,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667591", waterTempId: "8667591",
+    id: "8667591", waterTempId: "8670870",
     name: "Pilot Island, West Branch Boyds Creek", slug: "pilot-island-west-branch-boyds-creek",
     state: "south-carolina", city: "Pilot Island, West Branch Boyds Creek, SC", region: "Beaufort / Sea Islands",
     lat: 32.505, lon: -80.8633, latDisplay: "32.51°N", lonDisplay: "80.86°W",
@@ -4011,7 +4011,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667612", waterTempId: "8667612",
+    id: "8667612", waterTempId: "8670870",
     name: "Air Station Beaufort, McCalleys creek", slug: "air-station-beaufort-mccalleys-creek",
     state: "south-carolina", city: "Air Station Beaufort, McCalleys creek, SC", region: "Beaufort / Sea Islands",
     lat: 32.50189971923828, lon: -80.68489837646484, latDisplay: "32.50°N", lonDisplay: "80.68°W",
@@ -4033,7 +4033,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667624", waterTempId: "8667624",
+    id: "8667624", waterTempId: "8670870",
     name: "Brickyard Point, Brickyard Creek", slug: "brickyard-point-brickyard-creek",
     state: "south-carolina", city: "Brickyard Point, Brickyard Creek, SC", region: "Beaufort / Sea Islands",
     lat: 32.4933, lon: -80.685, latDisplay: "32.49°N", lonDisplay: "80.69°W",
@@ -4055,7 +4055,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667630", waterTempId: "8667630",
+    id: "8667630", waterTempId: "8665530",
     name: "Edisto Beach, Edisto Island", slug: "edisto-beach-edisto-island",
     state: "south-carolina", city: "Edisto Beach, Edisto Island, SC", region: "Beaufort / Sea Islands",
     lat: 32.5017, lon: -80.2967, latDisplay: "32.50°N", lonDisplay: "80.30°W",
@@ -4077,7 +4077,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667633", waterTempId: "8667633",
+    id: "8667633", waterTempId: "8670870",
     name: "Corning Landing, Whale Branch", slug: "corning-landing-whale-branch",
     state: "south-carolina", city: "Corning Landing, Whale Branch, SC", region: "Beaufort / Sea Islands",
     lat: 32.5025, lon: -80.7841, latDisplay: "32.50°N", lonDisplay: "80.78°W",
@@ -4099,7 +4099,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667676", waterTempId: "8667676",
+    id: "8667676", waterTempId: "8665530",
     name: "Edisto Marina, Big Bay Creek entrance", slug: "edisto-marina-big-bay-creek-entrance",
     state: "south-carolina", city: "Edisto Marina, Big Bay Creek entrance, SC", region: "Beaufort / Sea Islands",
     lat: 32.4933, lon: -80.34, latDisplay: "32.49°N", lonDisplay: "80.34°W",
@@ -4121,7 +4121,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667679", waterTempId: "8667679",
+    id: "8667679", waterTempId: "8665530",
     name: "Carters Dock, Big Bay Creek", slug: "carters-dock-big-bay-creek",
     state: "south-carolina", city: "Carters Dock, Big Bay Creek, SC", region: "Beaufort / Sea Islands",
     lat: 32.4933, lon: -80.3267, latDisplay: "32.49°N", lonDisplay: "80.33°W",
@@ -4143,7 +4143,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667733", waterTempId: "8667733",
+    id: "8667733", waterTempId: "8670870",
     name: "Sams Point, Lucy Point Creek", slug: "sams-point-lucy-point-creek",
     state: "south-carolina", city: "Sams Point, Lucy Point Creek, SC", region: "Beaufort / Sea Islands",
     lat: 32.4833, lon: -80.6, latDisplay: "32.48°N", lonDisplay: "80.60°W",
@@ -4165,7 +4165,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667783", waterTempId: "8667783",
+    id: "8667783", waterTempId: "8665530",
     name: "Otter Island", slug: "otter-island",
     state: "south-carolina", city: "Otter Island, SC", region: "Beaufort / Sea Islands",
     lat: 32.4767, lon: -80.42, latDisplay: "32.48°N", lonDisplay: "80.42°W",
@@ -4187,7 +4187,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667864", waterTempId: "8667864",
+    id: "8667864", waterTempId: "8670870",
     name: "Marine Corps Air Station, Brickyard Creek", slug: "marine-corps-air-station-brickyard-creek",
     state: "south-carolina", city: "Marine Corps Air Station, Brickyard Creek, SC", region: "Beaufort / Sea Islands",
     lat: 32.465, lon: -80.6917, latDisplay: "32.47°N", lonDisplay: "80.69°W",
@@ -4209,7 +4209,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667901", waterTempId: "8667901",
+    id: "8667901", waterTempId: "8670870",
     name: "Lucy Point Creek entrance", slug: "lucy-point-creek-entrance",
     state: "south-carolina", city: "Lucy Point Creek entrance, SC", region: "Beaufort / Sea Islands",
     lat: 32.4517, lon: -80.61, latDisplay: "32.45°N", lonDisplay: "80.61°W",
@@ -4231,7 +4231,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667909", waterTempId: "8667909",
+    id: "8667909", waterTempId: "8670870",
     name: "Albergottie Creek, Rt. 21 bridge", slug: "albergottie-creek-rt-21-bridge",
     state: "south-carolina", city: "Albergottie Creek, Rt. 21 bridge, SC", region: "Beaufort / Sea Islands",
     lat: 32.45, lon: -80.7317, latDisplay: "32.45°N", lonDisplay: "80.73°W",
@@ -4253,7 +4253,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667927", waterTempId: "8667927",
+    id: "8667927", waterTempId: "8670870",
     name: "Village Creek Entrance", slug: "village-creek-entrance",
     state: "south-carolina", city: "Village Creek Entrance, SC", region: "Beaufort / Sea Islands",
     lat: 32.445, lon: -80.5033, latDisplay: "32.45°N", lonDisplay: "80.50°W",
@@ -4275,7 +4275,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667972", waterTempId: "8667972",
+    id: "8667972", waterTempId: "8670870",
     name: "Edding Point, Edding Creek", slug: "edding-point-edding-creek",
     state: "south-carolina", city: "Edding Point, Edding Creek, SC", region: "Beaufort / Sea Islands",
     lat: 32.4467, lon: -80.5333, latDisplay: "32.45°N", lonDisplay: "80.53°W",
@@ -4297,7 +4297,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667982", waterTempId: "8667982",
+    id: "8667982", waterTempId: "8670870",
     name: "Jenkins Creek, 1 mi. above entrance", slug: "jenkins-creek-1-mi-above-entrance",
     state: "south-carolina", city: "Jenkins Creek, 1 mi. above entrance, SC", region: "Beaufort / Sea Islands",
     lat: 32.44, lon: -80.5533, latDisplay: "32.44°N", lonDisplay: "80.55°W",
@@ -4319,7 +4319,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667999", waterTempId: "8667999",
+    id: "8667999", waterTempId: "8670870",
     name: "Beaufort", slug: "beaufort",
     state: "south-carolina", city: "Beaufort, SC", region: "Beaufort / Sea Islands",
     lat: 32.43, lon: -80.675, latDisplay: "32.43°N", lonDisplay: "80.67°W",
@@ -4341,7 +4341,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668077", waterTempId: "8668077",
+    id: "8668077", waterTempId: "8670870",
     name: "Village Creek Cemetery", slug: "village-creek-cemetery",
     state: "south-carolina", city: "Village Creek Cemetery, SC", region: "Beaufort / Sea Islands",
     lat: 32.4167, lon: -80.52, latDisplay: "32.42°N", lonDisplay: "80.52°W",
@@ -4363,7 +4363,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668091", waterTempId: "8668091",
+    id: "8668091", waterTempId: "8670870",
     name: "Jenkins Creek, Polawana Island", slug: "jenkins-creek-polawana-island",
     state: "south-carolina", city: "Jenkins Creek, Polawana Island, SC", region: "Beaufort / Sea Islands",
     lat: 32.42, lon: -80.5767, latDisplay: "32.42°N", lonDisplay: "80.58°W",
@@ -4385,7 +4385,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668092", waterTempId: "8668092",
+    id: "8668092", waterTempId: "8670870",
     name: "Battery Creek, 4 mi. above entrance", slug: "battery-creek-4-mi-above-entrance",
     state: "south-carolina", city: "Battery Creek, 4 mi. above entrance, SC", region: "Beaufort / Sea Islands",
     lat: 32.4133, lon: -80.7, latDisplay: "32.41°N", lonDisplay: "80.70°W",
@@ -4407,7 +4407,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668109", waterTempId: "8668109",
+    id: "8668109", waterTempId: "8670870",
     name: "Broughton Point, Hazzard Creek", slug: "broughton-point-hazzard-creek",
     state: "south-carolina", city: "Broughton Point, Hazzard Creek, SC", region: "Beaufort / Sea Islands",
     lat: 32.41, lon: -80.885, latDisplay: "32.41°N", lonDisplay: "80.89°W",
@@ -4429,7 +4429,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668146", waterTempId: "8668146",
+    id: "8668146", waterTempId: "8670870",
     name: "Harbor River Bridge", slug: "harbor-river-bridge",
     state: "south-carolina", city: "Harbor River Bridge, SC", region: "Beaufort / Sea Islands",
     lat: 32.4033, lon: -80.4533, latDisplay: "32.40°N", lonDisplay: "80.45°W",
@@ -4451,7 +4451,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668155", waterTempId: "8668155",
+    id: "8668155", waterTempId: "8670870",
     name: "Distant Island Creek, upper end, Cowen Creek", slug: "distant-island-creek-upper-end-cowen-creek",
     state: "south-carolina", city: "Distant Island Creek, upper end, Cowen Creek, SC", region: "Beaufort / Sea Islands",
     lat: 32.4017, lon: -80.6533, latDisplay: "32.40°N", lonDisplay: "80.65°W",
@@ -4473,7 +4473,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668173", waterTempId: "8668173",
+    id: "8668173", waterTempId: "8670870",
     name: "Cowen Creek, Rt. 21 bridge", slug: "cowen-creek-rt-21-bridge",
     state: "south-carolina", city: "Cowen Creek, Rt. 21 bridge, SC", region: "Beaufort / Sea Islands",
     lat: 32.3983, lon: -80.6167, latDisplay: "32.40°N", lonDisplay: "80.62°W",
@@ -4495,7 +4495,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668223", waterTempId: "8668223",
+    id: "8668223", waterTempId: "8670870",
     name: "Hwy. 170 bridge", slug: "hwy-170-bridge",
     state: "south-carolina", city: "Hwy. 170 bridge, SC", region: "Beaufort / Sea Islands",
     lat: 32.3867, lon: -80.7767, latDisplay: "32.39°N", lonDisplay: "80.78°W",
@@ -4517,7 +4517,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668227", waterTempId: "8668227",
+    id: "8668227", waterTempId: "8670870",
     name: "Johnson Creek Bridge, Hunting Island", slug: "johnson-creek-bridge-hunting-island",
     state: "south-carolina", city: "Johnson Creek Bridge, Hunting Island, SC", region: "Beaufort / Sea Islands",
     lat: 32.3917, lon: -80.4383, latDisplay: "32.39°N", lonDisplay: "80.44°W",
@@ -4539,7 +4539,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668255", waterTempId: "8668255",
+    id: "8668255", waterTempId: "8670870",
     name: "Capers Creek, Cowen Creek, St. Helena Island", slug: "capers-creek-cowen-creek-st-helena-island",
     state: "south-carolina", city: "Capers Creek, Cowen Creek, St. Helena Island, SC", region: "Beaufort / Sea Islands",
     lat: 32.3717, lon: -80.605, latDisplay: "32.37°N", lonDisplay: "80.61°W",
@@ -4561,7 +4561,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668282", waterTempId: "8668282",
+    id: "8668282", waterTempId: "8670870",
     name: "Distant Island, Cowen Creek", slug: "distant-island-cowen-creek",
     state: "south-carolina", city: "Distant Island, Cowen Creek, SC", region: "Beaufort / Sea Islands",
     lat: 32.3783, lon: -80.6333, latDisplay: "32.38°N", lonDisplay: "80.63°W",
@@ -4583,7 +4583,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668301", waterTempId: "8668301",
+    id: "8668301", waterTempId: "8670870",
     name: "Chechessee Bluff, Chechessee River", slug: "chechessee-bluff-chechessee-river",
     state: "south-carolina", city: "Chechessee Bluff, Chechessee River, SC", region: "Beaufort / Sea Islands",
     lat: 32.3733, lon: -80.8367, latDisplay: "32.37°N", lonDisplay: "80.84°W",
@@ -4605,7 +4605,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668445", waterTempId: "8668445",
+    id: "8668445", waterTempId: "8670870",
     name: "Parris Island, Marine Corps Recruit Depot", slug: "parris-island-marine-corps-recruit-depot",
     state: "south-carolina", city: "Parris Island, Marine Corps Recruit Depot, SC", region: "Beaufort / Sea Islands",
     lat: 32.35, lon: -80.6683, latDisplay: "32.35°N", lonDisplay: "80.67°W",
@@ -4627,7 +4627,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668482", waterTempId: "8668482",
+    id: "8668482", waterTempId: "8670870",
     name: "Baileys Landing, Okatee River, Colleton River", slug: "baileys-landing-okatee-river-colleton-river",
     state: "south-carolina", city: "Baileys Landing, Okatee River, Colleton River, SC", region: "Beaufort / Sea Islands",
     lat: 32.3467, lon: -80.89, latDisplay: "32.35°N", lonDisplay: "80.89°W",
@@ -4649,7 +4649,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668498", waterTempId: "8668498",
+    id: "8668498", waterTempId: "8670870",
     name: "Fripps Inlet, Hunting Island Bridge", slug: "fripps-inlet-hunting-island-bridge",
     state: "south-carolina", city: "Fripps Inlet, Hunting Island Bridge, SC", region: "Beaufort / Sea Islands",
     lat: 32.34, lon: -80.465, latDisplay: "32.34°N", lonDisplay: "80.47°W",
@@ -4671,7 +4671,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668511", waterTempId: "8668511",
+    id: "8668511", waterTempId: "8670870",
     name: "Callawassie Island Bridge, Colleton River", slug: "callawassie-island-bridge-colleton-river",
     state: "south-carolina", city: "Callawassie Island Bridge, Colleton River, SC", region: "Beaufort / Sea Islands",
     lat: 32.3417, lon: -80.8567, latDisplay: "32.34°N", lonDisplay: "80.86°W",
@@ -4693,7 +4693,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668529", waterTempId: "8668529",
+    id: "8668529", waterTempId: "8670870",
     name: "Club Bridge Creek ent., Trenchards Inlet", slug: "club-bridge-creek-ent-trenchards-inlet",
     state: "south-carolina", city: "Club Bridge Creek ent., Trenchards Inlet, SC", region: "Beaufort / Sea Islands",
     lat: 32.335, lon: -80.5417, latDisplay: "32.34°N", lonDisplay: "80.54°W",
@@ -4715,7 +4715,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668601", waterTempId: "8668601",
+    id: "8668601", waterTempId: "8670870",
     name: "Station Creek, County Landing", slug: "station-creek-county-landing",
     state: "south-carolina", city: "Station Creek, County Landing, SC", region: "Beaufort / Sea Islands",
     lat: 32.325, lon: -80.6017, latDisplay: "32.33°N", lonDisplay: "80.60°W",
@@ -4737,7 +4737,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668619", waterTempId: "8668619",
+    id: "8668619", waterTempId: "8670870",
     name: "Colleton River Entrance", slug: "colleton-river-entrance",
     state: "south-carolina", city: "Colleton River Entrance, SC", region: "Beaufort / Sea Islands",
     lat: 32.3217, lon: -80.7917, latDisplay: "32.32°N", lonDisplay: "80.79°W",
@@ -4759,7 +4759,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668636", waterTempId: "8668636",
+    id: "8668636", waterTempId: "8670870",
     name: "Callawassie Creek, Colleton River", slug: "callawassie-creek-colleton-river",
     state: "south-carolina", city: "Callawassie Creek, Colleton River, SC", region: "Beaufort / Sea Islands",
     lat: 32.3167, lon: -80.8417, latDisplay: "32.32°N", lonDisplay: "80.84°W",
@@ -4781,7 +4781,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668655", waterTempId: "8668655",
+    id: "8668655", waterTempId: "8670870",
     name: "Callawassie Island, south, Colleton River", slug: "callawassie-island-south-colleton-river",
     state: "south-carolina", city: "Callawassie Island, south, Colleton River, SC", region: "Beaufort / Sea Islands",
     lat: 32.3133, lon: -80.86, latDisplay: "32.31°N", lonDisplay: "80.86°W",
@@ -4803,7 +4803,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668686", waterTempId: "8668686",
+    id: "8668686", waterTempId: "8670870",
     name: "Fort Fremont", slug: "fort-fremont",
     state: "south-carolina", city: "Fort Fremont, SC", region: "Beaufort / Sea Islands",
     lat: 32.3067, lon: -80.645, latDisplay: "32.31°N", lonDisplay: "80.64°W",
@@ -4825,7 +4825,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668701", waterTempId: "8668701",
+    id: "8668701", waterTempId: "8670870",
     name: "Purrysburg Landing, S.C.", slug: "purrysburg-landing-sc",
     state: "south-carolina", city: "Purrysburg Landing, S.C., SC", region: "Beaufort / Sea Islands",
     lat: 32.3033, lon: -81.1217, latDisplay: "32.30°N", lonDisplay: "81.12°W",
@@ -4847,7 +4847,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668836", waterTempId: "8668836",
+    id: "8668836", waterTempId: "8670870",
     name: "Station Creek, west end", slug: "station-creek-west-end",
     state: "south-carolina", city: "Station Creek, west end, SC", region: "Beaufort / Sea Islands",
     lat: 32.28, lon: -80.6383, latDisplay: "32.28°N", lonDisplay: "80.64°W",
@@ -4869,7 +4869,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668837", waterTempId: "8668837",
+    id: "8668837", waterTempId: "8670870",
     name: "Capers Island, Trenchards Inlet", slug: "capers-island-trenchards-inlet",
     state: "south-carolina", city: "Capers Island, Trenchards Inlet, SC", region: "Beaufort / Sea Islands",
     lat: 32.2733, lon: -80.585, latDisplay: "32.27°N", lonDisplay: "80.58°W",
@@ -4891,7 +4891,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668918", waterTempId: "8668918",
+    id: "8668918", waterTempId: "8670870",
     name: "Skull Creek, north entrance, Hilton Head Island", slug: "skull-creek-north-entrance-hilton-head-island",
     state: "south-carolina", city: "Skull Creek, north entrance, Hilton Head Island, SC", region: "Beaufort / Sea Islands",
     lat: 32.2667, lon: -80.7367, latDisplay: "32.27°N", lonDisplay: "80.74°W",
@@ -4913,7 +4913,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8668944", waterTempId: "8668944",
+    id: "8668944", waterTempId: "8670870",
     name: "Pinckney Island, Mackay Creek, Chechessee River", slug: "pinckney-island-mackay-creek-chechessee-river",
     state: "south-carolina", city: "Pinckney Island, Mackay Creek, Chechessee River, SC", region: "Beaufort / Sea Islands",
     lat: 32.26, lon: -80.7667, latDisplay: "32.26°N", lonDisplay: "80.77°W",
@@ -4935,7 +4935,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8669072", waterTempId: "8669072",
+    id: "8669072", waterTempId: "8670870",
     name: "Rt. 170 bridge", slug: "rt-170-bridge",
     state: "south-carolina", city: "Rt. 170 bridge, SC", region: "Beaufort / Sea Islands",
     lat: 32.2367, lon: -81.0117, latDisplay: "32.24°N", lonDisplay: "81.01°W",
@@ -4957,7 +4957,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8669103", waterTempId: "8669103",
+    id: "8669103", waterTempId: "8670870",
     name: "Bluffton", slug: "bluffton",
     state: "south-carolina", city: "Bluffton, SC", region: "Beaufort / Sea Islands",
     lat: 32.23, lon: -80.8617, latDisplay: "32.23°N", lonDisplay: "80.86°W",
@@ -4979,7 +4979,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8669133", waterTempId: "8669133",
+    id: "8669133", waterTempId: "8670870",
     name: "Skull Creek, south entrance, Hilton Head Island", slug: "skull-creek-south-entrance-hilton-head-island",
     state: "south-carolina", city: "Skull Creek, south entrance, Hilton Head Island, SC", region: "Beaufort / Sea Islands",
     lat: 32.2233, lon: -80.7717, latDisplay: "32.22°N", lonDisplay: "80.77°W",
@@ -5001,7 +5001,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8669167", waterTempId: "8669167",
+    id: "8669167", waterTempId: "8670870",
     name: "Port Royal Plantation, Hilton Head Island", slug: "port-royal-plantation-hilton-head-island",
     state: "south-carolina", city: "Port Royal Plantation, Hilton Head Island, SC", region: "Beaufort / Sea Islands",
     lat: 32.22, lon: -80.6683, latDisplay: "32.22°N", lonDisplay: "80.67°W",
@@ -5023,7 +5023,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8669246", waterTempId: "8669246",
+    id: "8669246", waterTempId: "8670870",
     name: "Brighton Beach. May River", slug: "brighton-beach-may-river",
     state: "south-carolina", city: "Brighton Beach. May River, SC", region: "Beaufort / Sea Islands",
     lat: 32.2140998840332, lon: -80.84649658203125, latDisplay: "32.21°N", lonDisplay: "80.85°W",
@@ -5045,7 +5045,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8669262", waterTempId: "8669262",
+    id: "8669262", waterTempId: "8670870",
     name: "Bull Island North", slug: "bull-island-north",
     state: "south-carolina", city: "Bull Island North, SC", region: "Beaufort / Sea Islands",
     lat: 32.2, lon: -80.815, latDisplay: "32.20°N", lonDisplay: "80.81°W",
@@ -5067,7 +5067,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8669277", waterTempId: "8669277",
+    id: "8669277", waterTempId: "8670870",
     name: "Cook Landing Cemetery", slug: "cook-landing-cemetery",
     state: "south-carolina", city: "Cook Landing Cemetery, SC", region: "Beaufort / Sea Islands",
     lat: 32.195, lon: -81, latDisplay: "32.20°N", lonDisplay: "81.00°W",
@@ -5089,7 +5089,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8669323", waterTempId: "8669323",
+    id: "8669323", waterTempId: "8670870",
     name: "Savage I., Savage Creek, Bull Creek", slug: "savage-i-savage-creek-bull-creek",
     state: "south-carolina", city: "Savage I., Savage Creek, Bull Creek, SC", region: "Beaufort / Sea Islands",
     lat: 32.185, lon: -80.86, latDisplay: "32.19°N", lonDisplay: "80.86°W",
@@ -5111,7 +5111,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8669338", waterTempId: "8669338",
+    id: "8669338", waterTempId: "8670870",
     name: "Broad Creek, Hilton Head Island", slug: "broad-creek-hilton-head-island",
     state: "south-carolina", city: "Broad Creek, Hilton Head Island, SC", region: "Beaufort / Sea Islands",
     lat: 32.185, lon: -80.7533, latDisplay: "32.19°N", lonDisplay: "80.75°W",
@@ -5133,7 +5133,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8669346", waterTempId: "8669346",
+    id: "8669346", waterTempId: "8670870",
     name: "Good Hope Landing, south of", slug: "good-hope-landing-south-of",
     state: "south-carolina", city: "Good Hope Landing, south of, SC", region: "Beaufort / Sea Islands",
     lat: 32.1767, lon: -80.9667, latDisplay: "32.18°N", lonDisplay: "80.97°W",
@@ -5155,7 +5155,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8669369", waterTempId: "8669369",
+    id: "8669369", waterTempId: "8670870",
     name: "Moreland Cemetery", slug: "moreland-cemetery",
     state: "south-carolina", city: "Moreland Cemetery, SC", region: "Beaufort / Sea Islands",
     lat: 32.175, lon: -80.8917, latDisplay: "32.17°N", lonDisplay: "80.89°W",
@@ -5177,7 +5177,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8669414", waterTempId: "8669414",
+    id: "8669414", waterTempId: "8670870",
     name: "Bull Creek, Bull Island South, Cooper River", slug: "bull-creek-bull-island-south-cooper-river",
     state: "south-carolina", city: "Bull Creek, Bull Island South, Cooper River, SC", region: "Beaufort / Sea Islands",
     lat: 32.165, lon: -80.8567, latDisplay: "32.16°N", lonDisplay: "80.86°W",
@@ -5199,7 +5199,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8669415", waterTempId: "8669415",
+    id: "8669415", waterTempId: "8670870",
     name: "Little Back River, Hwy. 17, Back River, S.C.", slug: "little-back-river-hwy-17-back-river-sc",
     state: "south-carolina", city: "Little Back River, Hwy. 17, Back River, S.C., SC", region: "Beaufort / Sea Islands",
     lat: 32.165, lon: -81.13, latDisplay: "32.16°N", lonDisplay: "81.13°W",
@@ -5221,7 +5221,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8669464", waterTempId: "8669464",
+    id: "8669464", waterTempId: "8670870",
     name: "Calibogue Cay, Broad Creek, Hilton Head Island", slug: "calibogue-cay-broad-creek-hilton-head-island",
     state: "south-carolina", city: "Calibogue Cay, Broad Creek, Hilton Head Island, SC", region: "Beaufort / Sea Islands",
     lat: 32.1533, lon: -80.795, latDisplay: "32.15°N", lonDisplay: "80.80°W",
@@ -5243,7 +5243,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8669493", waterTempId: "8669493",
+    id: "8669493", waterTempId: "8670870",
     name: "Haig Point, Daufuskie Island, Cooper River", slug: "haig-point-daufuskie-island-cooper-river",
     state: "south-carolina", city: "Haig Point, Daufuskie Island, Cooper River, SC", region: "Beaufort / Sea Islands",
     lat: 32.1467, lon: -80.8367, latDisplay: "32.15°N", lonDisplay: "80.84°W",
@@ -5265,7 +5265,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8669531", waterTempId: "8669531",
+    id: "8669531", waterTempId: "8670870",
     name: "Doughboy Island", slug: "doughboy-island",
     state: "south-carolina", city: "Doughboy Island, SC", region: "Beaufort / Sea Islands",
     lat: 32.1383, lon: -80.9317, latDisplay: "32.14°N", lonDisplay: "80.93°W",
@@ -5287,7 +5287,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8669575", waterTempId: "8669575",
+    id: "8669575", waterTempId: "8670870",
     name: "Turnbridge Landing, Salt Water Creek", slug: "turnbridge-landing-salt-water-creek",
     state: "south-carolina", city: "Turnbridge Landing, Salt Water Creek, SC", region: "Beaufort / Sea Islands",
     lat: 32.1283, lon: -81.0117, latDisplay: "32.13°N", lonDisplay: "81.01°W",
@@ -5309,7 +5309,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8669601", waterTempId: "8669601",
+    id: "8669601", waterTempId: "8670870",
     name: "Pine Island, Ramshorn Creek, Cooper River", slug: "pine-island-ramshorn-creek-cooper-river",
     state: "south-carolina", city: "Pine Island, Ramshorn Creek, Cooper River, SC", region: "Beaufort / Sea Islands",
     lat: 32.1217, lon: -80.8983, latDisplay: "32.12°N", lonDisplay: "80.90°W",
@@ -5331,7 +5331,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8669625", waterTempId: "8669625",
+    id: "8669625", waterTempId: "8670870",
     name: "Braddock Point, Hilton Head Island", slug: "braddock-point-hilton-head-island",
     state: "south-carolina", city: "Braddock Point, Hilton Head Island, SC", region: "Beaufort / Sea Islands",
     lat: 32.1133, lon: -80.83, latDisplay: "32.11°N", lonDisplay: "80.83°W",
@@ -5353,7 +5353,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8669691", waterTempId: "8669691",
+    id: "8669691", waterTempId: "8670870",
     name: "Daufuskie Landing, Daufuskie Island", slug: "daufuskie-landing-daufuskie-island",
     state: "south-carolina", city: "Daufuskie Landing, Daufuskie Island, SC", region: "Beaufort / Sea Islands",
     lat: 32.1033, lon: -80.895, latDisplay: "32.10°N", lonDisplay: "80.89°W",
@@ -5375,7 +5375,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8669722", waterTempId: "8669722",
+    id: "8669722", waterTempId: "8670870",
     name: "Hargray Pier, Daufuskie Island", slug: "hargray-pier-daufuskie-island",
     state: "south-carolina", city: "Hargray Pier, Daufuskie Island, SC", region: "Beaufort / Sea Islands",
     lat: 32.0983, lon: -80.8983, latDisplay: "32.10°N", lonDisplay: "80.90°W",
@@ -5397,7 +5397,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8669801", waterTempId: "8669801",
+    id: "8669801", waterTempId: "8670870",
     name: "Bloody Point, Daufuskie Island", slug: "bloody-point-daufuskie-island",
     state: "south-carolina", city: "Bloody Point, Daufuskie Island, SC", region: "Beaufort / Sea Islands",
     lat: 32.0817, lon: -80.8783, latDisplay: "32.08°N", lonDisplay: "80.88°W",
@@ -5419,7 +5419,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8669815", waterTempId: "8669815",
+    id: "8669815", waterTempId: "8670870",
     name: "Fields Cut, Wright River", slug: "fields-cut-wright-river",
     state: "south-carolina", city: "Fields Cut, Wright River, SC", region: "Beaufort / Sea Islands",
     lat: 32.0867, lon: -80.9333, latDisplay: "32.09°N", lonDisplay: "80.93°W",
@@ -5441,7 +5441,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8660271", waterTempId: "8660271",
+    id: "8660271", waterTempId: "8661070",
     name: "North Myrtle Beach", slug: "north-myrtle-beach",
     state: "south-carolina", city: "North Myrtle Beach, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.832527, lon: -78.68745, latDisplay: "33.83°N", lonDisplay: "78.69°W",
@@ -5463,7 +5463,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8661000", waterTempId: "8661000",
+    id: "8661000", waterTempId: "8661070",
     name: "Myrtle Beach", slug: "myrtle-beach",
     state: "south-carolina", city: "Myrtle Beach, SC", region: "Grand Strand / Myrtle Beach",
     lat: 33.6833, lon: -78.885, latDisplay: "33.68°N", lonDisplay: "78.89°W",
@@ -5485,7 +5485,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8664561", waterTempId: "8664561",
+    id: "8664561", waterTempId: "8665530",
     name: "CAINHOY, WANDO RIVER", slug: "cainhoy-wando-river",
     state: "south-carolina", city: "CAINHOY, WANDO RIVER, SC", region: "Charleston / Lowcountry",
     lat: 32.9233, lon: -79.8367, latDisplay: "32.92°N", lonDisplay: "79.84°W",
@@ -5507,7 +5507,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666102", waterTempId: "8666102",
+    id: "8666102", waterTempId: "8665530",
     name: "SECESSIONVHLLE CREEK", slug: "secessionvhlle-creek",
     state: "south-carolina", city: "SECESSIONVHLLE CREEK, SC", region: "Charleston / Lowcountry",
     lat: 32.7067, lon: -79.9367, latDisplay: "32.71°N", lonDisplay: "79.94°W",
@@ -5529,7 +5529,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666135", waterTempId: "8666135",
+    id: "8666135", waterTempId: "8670870",
     name: "COMBAHEE RIVER, 17A", slug: "combahee-river-17a",
     state: "south-carolina", city: "COMBAHEE RIVER, 17A, SC", region: "Charleston / Lowcountry",
     lat: 32.7033, lon: -80.825, latDisplay: "32.70°N", lonDisplay: "80.83°W",
@@ -5551,7 +5551,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8666653", waterTempId: "8666653",
+    id: "8666653", waterTempId: "8665530",
     name: "FOLLY RIVER SOUTH (TEST FLOAT)", slug: "folly-river-south-test-float",
     state: "south-carolina", city: "FOLLY RIVER SOUTH (TEST FLOAT), SC", region: "Beaufort / Sea Islands",
     lat: 32.6617, lon: -79.945, latDisplay: "32.66°N", lonDisplay: "79.94°W",
@@ -5573,7 +5573,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667034", waterTempId: "8667034",
+    id: "8667034", waterTempId: "8670870",
     name: "COMBAHEE RIVER AT RAILROAD BRIDGE", slug: "combahee-river-at-railroad-bridge",
     state: "south-carolina", city: "COMBAHEE RIVER AT RAILROAD BRIDGE, SC", region: "Beaufort / Sea Islands",
     lat: 32.59, lon: -80.63, latDisplay: "32.59°N", lonDisplay: "80.63°W",
@@ -5595,7 +5595,7 @@ export const SOUTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8667623", waterTempId: "8667623",
+    id: "8667623", waterTempId: "8665530",
     name: "SCOTT CREEK, EDISTO ISLAND", slug: "scott-creek-edisto-island",
     state: "south-carolina", city: "SCOTT CREEK, EDISTO ISLAND, SC", region: "Beaufort / Sea Islands",
     lat: 32.5017, lon: -80.3183, latDisplay: "32.50°N", lonDisplay: "80.32°W",

@@ -7,7 +7,7 @@ export type { StationConfig, NearbyStation, Species }
 
 export const NEW_YORK_STATIONS: StationConfig[] = [
   {
-    id: "8510448", waterTempId: "8510448",
+    id: "8510448", waterTempId: "8510560",
     name: "Lake Montauk", slug: "lake-montauk",
     state: "new-york", city: "Lake Montauk, NY", region: "New York Harbor / East River",
     lat: 41.0733, lon: -71.935, latDisplay: "41.07°N", lonDisplay: "71.94°W",
@@ -29,7 +29,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8510502", waterTempId: "8510502",
+    id: "8510502", waterTempId: "8510560",
     name: "Montauk Harbor entrance", slug: "montauk-harbor-entrance",
     state: "new-york", city: "Montauk Harbor entrance, NY", region: "New York Harbor / East River",
     lat: 41.075, lon: -71.9367, latDisplay: "41.08°N", lonDisplay: "71.94°W",
@@ -73,7 +73,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8510719", waterTempId: "8510719",
+    id: "8510719", waterTempId: "8461490",
     name: "Silver Eel Pond, Fishers Island, N.Y.", slug: "silver-eel-pond-fishers-island-ny",
     state: "new-york", city: "Silver Eel Pond, Fishers Island, N.Y., NY", region: "New York Harbor / East River",
     lat: 41.2567, lon: -72.03, latDisplay: "41.26°N", lonDisplay: "72.03°W",
@@ -95,7 +95,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8510884", waterTempId: "8510884",
+    id: "8510884", waterTempId: "8461490",
     name: "Little Gull Island", slug: "little-gull-island",
     state: "new-york", city: "Little Gull Island, NY", region: "New York Harbor / East River",
     lat: 41.2067, lon: -72.1017, latDisplay: "41.21°N", lonDisplay: "72.10°W",
@@ -117,7 +117,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8511171", waterTempId: "8511171",
+    id: "8511171", waterTempId: "8510560",
     name: "Threemile Harbor entrance, Gardiners Bay", slug: "threemile-harbor-entrance-gardiners-bay",
     state: "new-york", city: "Threemile Harbor entrance, Gardiners Bay, NY", region: "New York Harbor / East River",
     lat: 41.035, lon: -72.19, latDisplay: "41.03°N", lonDisplay: "72.19°W",
@@ -139,7 +139,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8511236", waterTempId: "8511236",
+    id: "8511236", waterTempId: "8461490",
     name: "Plum Gut Harbor, Plum Island", slug: "plum-gut-harbor-plum-island",
     state: "new-york", city: "Plum Gut Harbor, Plum Island, NY", region: "New York Harbor / East River",
     lat: 41.1717, lon: -72.205, latDisplay: "41.17°N", lonDisplay: "72.20°W",
@@ -161,7 +161,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8511629", waterTempId: "8511629",
+    id: "8511629", waterTempId: "8510560",
     name: "Sag Harbor", slug: "sag-harbor",
     state: "new-york", city: "Sag Harbor, NY", region: "New York Harbor / East River",
     lat: 41.0033, lon: -72.2967, latDisplay: "41.00°N", lonDisplay: "72.30°W",
@@ -183,7 +183,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8511671", waterTempId: "8511671",
+    id: "8511671", waterTempId: "8510560",
     name: "Orient", slug: "orient",
     state: "new-york", city: "Orient, NY", region: "New York Harbor / East River",
     lat: 41.1367, lon: -72.3067, latDisplay: "41.14°N", lonDisplay: "72.31°W",
@@ -205,7 +205,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8511779", waterTempId: "8511779",
+    id: "8511779", waterTempId: "8510560",
     name: "Noyack Bay", slug: "noyack-bay",
     state: "new-york", city: "Noyack Bay, NY", region: "New York Harbor / East River",
     lat: 40.995, lon: -72.3317, latDisplay: "40.99°N", lonDisplay: "72.33°W",
@@ -227,7 +227,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8511907", waterTempId: "8511907",
+    id: "8511907", waterTempId: "8510560",
     name: "Greenport", slug: "greenport",
     state: "new-york", city: "Greenport, NY", region: "New York Harbor / East River",
     lat: 41.101, lon: -72.36116666666666, latDisplay: "41.10°N", lonDisplay: "72.36°W",
@@ -249,7 +249,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8512053", waterTempId: "8512053",
+    id: "8512053", waterTempId: "8510560",
     name: "Hashamomuck Beach", slug: "hashamomuck-beach",
     state: "new-york", city: "Hashamomuck Beach, NY", region: "New York Harbor / East River",
     lat: 41.095, lon: -72.3983, latDisplay: "41.09°N", lonDisplay: "72.40°W",
@@ -271,7 +271,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8512114", waterTempId: "8512114",
+    id: "8512114", waterTempId: "8510560",
     name: "Southold", slug: "southold",
     state: "new-york", city: "Southold, NY", region: "New York Harbor / East River",
     lat: 41.06, lon: -72.4133, latDisplay: "41.06°N", lonDisplay: "72.41°W",
@@ -293,7 +293,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8512328", waterTempId: "8512328",
+    id: "8512328", waterTempId: "8510560",
     name: "New Suffolk", slug: "new-suffolk",
     state: "new-york", city: "New Suffolk, NY", region: "New York Harbor / East River",
     lat: 40.9917, lon: -72.4717, latDisplay: "40.99°N", lonDisplay: "72.47°W",
@@ -315,7 +315,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8512354", waterTempId: "8512354",
+    id: "8512354", waterTempId: "8510560",
     name: "Shinnecock Inlet (ocean)", slug: "shinnecock-inlet-ocean",
     state: "new-york", city: "Shinnecock Inlet (ocean), NY", region: "New York Harbor / East River",
     lat: 40.8367, lon: -72.48, latDisplay: "40.84°N", lonDisplay: "72.48°W",
@@ -337,7 +337,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8512451", waterTempId: "8512451",
+    id: "8512451", waterTempId: "8510560",
     name: "Ponquoque Point", slug: "ponquoque-point",
     state: "new-york", city: "Ponquoque Point, NY", region: "New York Harbor / East River",
     lat: 40.85, lon: -72.5033, latDisplay: "40.85°N", lonDisplay: "72.50°W",
@@ -359,7 +359,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8512668", waterTempId: "8512668",
+    id: "8512668", waterTempId: "8465705",
     name: "Mattituck Inlet", slug: "mattituck-inlet",
     state: "new-york", city: "Mattituck Inlet, NY", region: "New York Harbor / East River",
     lat: 41.01499938964844, lon: -72.56169891357422, latDisplay: "41.01°N", lonDisplay: "72.56°W",
@@ -381,7 +381,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8512671", waterTempId: "8512671",
+    id: "8512671", waterTempId: "8510560",
     name: "Shinnecock Bay entrance", slug: "shinnecock-bay-entrance",
     state: "new-york", city: "Shinnecock Bay entrance, NY", region: "New York Harbor / East River",
     lat: 40.82, lon: -72.5617, latDisplay: "40.82°N", lonDisplay: "72.56°W",
@@ -403,7 +403,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8512735", waterTempId: "8512735",
+    id: "8512735", waterTempId: "8465705",
     name: "South Jamesport", slug: "south-jamesport",
     state: "new-york", city: "South Jamesport, NY", region: "New York Harbor / East River",
     lat: 40.935, lon: -72.5817, latDisplay: "40.94°N", lonDisplay: "72.58°W",
@@ -425,7 +425,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8512769", waterTempId: "8512769",
+    id: "8512769", waterTempId: "8465705",
     name: "Shinnecock Yacht Club, Penniman Creek", slug: "shinnecock-yacht-club-penniman-creek",
     state: "new-york", city: "Shinnecock Yacht Club, Penniman Creek, NY", region: "New York Harbor / East River",
     lat: 40.81855555555556, lon: -72.58661111111111, latDisplay: "40.82°N", lonDisplay: "72.59°W",
@@ -447,7 +447,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8512987", waterTempId: "8512987",
+    id: "8512987", waterTempId: "8465705",
     name: "Northville", slug: "northville",
     state: "new-york", city: "Northville, NY", region: "New York Harbor / East River",
     lat: 40.9817, lon: -72.645, latDisplay: "40.98°N", lonDisplay: "72.64°W",
@@ -469,7 +469,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8513388", waterTempId: "8513388",
+    id: "8513388", waterTempId: "8467150",
     name: "Moriches Coast Guard Station", slug: "moriches-coast-guard-station",
     state: "new-york", city: "Moriches Coast Guard Station, NY", region: "New York Harbor / East River",
     lat: 40.7867, lon: -72.75, latDisplay: "40.79°N", lonDisplay: "72.75°W",
@@ -491,7 +491,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8513398", waterTempId: "8513398",
+    id: "8513398", waterTempId: "8467150",
     name: "Moriches Inlet", slug: "moriches-inlet",
     state: "new-york", city: "Moriches Inlet, NY", region: "New York Harbor / East River",
     lat: 40.76441666666667, lon: -72.75597222222223, latDisplay: "40.76°N", lonDisplay: "72.76°W",
@@ -513,7 +513,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8513825", waterTempId: "8513825",
+    id: "8513825", waterTempId: "8467150",
     name: "Smith Point Bridge, Narrow Bay", slug: "smith-point-bridge-narrow-bay",
     state: "new-york", city: "Smith Point Bridge, Narrow Bay, NY", region: "New York Harbor / East River",
     lat: 40.7383, lon: -72.8683, latDisplay: "40.74°N", lonDisplay: "72.87°W",
@@ -535,7 +535,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8514322", waterTempId: "8514322",
+    id: "8514322", waterTempId: "8467150",
     name: "Patchogue", slug: "patchogue",
     state: "new-york", city: "Patchogue, NY", region: "New York Harbor / East River",
     lat: 40.75, lon: -73, latDisplay: "40.75°N", lonDisplay: "73.00°W",
@@ -557,7 +557,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8514421", waterTempId: "8514421",
+    id: "8514421", waterTempId: "8467150",
     name: "Mount Sinai Harbor", slug: "mount-sinai-harbor",
     state: "new-york", city: "Mount Sinai Harbor, NY", region: "New York Harbor / East River",
     lat: 40.9633, lon: -73.04, latDisplay: "40.96°N", lonDisplay: "73.04°W",
@@ -579,7 +579,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8514422", waterTempId: "8514422",
+    id: "8514422", waterTempId: "8467150",
     name: "Cedar Beach", slug: "cedar-beach",
     state: "new-york", city: "Cedar Beach, NY", region: "New York Harbor / East River",
     lat: 40.965, lon: -73.0433, latDisplay: "40.97°N", lonDisplay: "73.04°W",
@@ -601,7 +601,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8514560", waterTempId: "8514560",
+    id: "8514560", waterTempId: "8467150",
     name: "Port Jefferson", slug: "port-jefferson",
     state: "new-york", city: "Port Jefferson, NY", region: "New York Harbor / East River",
     lat: 40.95000076293945, lon: -73.07669830322266, latDisplay: "40.95°N", lonDisplay: "73.08°W",
@@ -623,7 +623,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8514594", waterTempId: "8514594",
+    id: "8514594", waterTempId: "8467150",
     name: "Port Jefferson Harbor entrance", slug: "port-jefferson-harbor-entrance",
     state: "new-york", city: "Port Jefferson Harbor entrance, NY", region: "New York Harbor / East River",
     lat: 40.9717, lon: -73.0917, latDisplay: "40.97°N", lonDisplay: "73.09°W",
@@ -645,7 +645,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8514779", waterTempId: "8514779",
+    id: "8514779", waterTempId: "8516945",
     name: "Seaview Ferry Dock", slug: "seaview-ferry-dock",
     state: "new-york", city: "Seaview Ferry Dock, NY", region: "New York Harbor / East River",
     lat: 40.64925, lon: -73.15061111111112, latDisplay: "40.65°N", lonDisplay: "73.15°W",
@@ -667,7 +667,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8514783", waterTempId: "8514783",
+    id: "8514783", waterTempId: "8467150",
     name: "Great River, Connetquot River", slug: "great-river-connetquot-river",
     state: "new-york", city: "Great River, Connetquot River, NY", region: "New York Harbor / East River",
     lat: 40.7233, lon: -73.1517, latDisplay: "40.72°N", lonDisplay: "73.15°W",
@@ -689,7 +689,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8514961", waterTempId: "8514961",
+    id: "8514961", waterTempId: "8516945",
     name: "West Fire Island", slug: "west-fire-island",
     state: "new-york", city: "West Fire Island, NY", region: "New York Harbor / East River",
     lat: 40.6567, lon: -73.205, latDisplay: "40.66°N", lonDisplay: "73.20°W",
@@ -711,7 +711,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8515014", waterTempId: "8515014",
+    id: "8515014", waterTempId: "8516945",
     name: "Fire Island Light", slug: "fire-island-light",
     state: "new-york", city: "Fire Island Light, NY", region: "New York Harbor / East River",
     lat: 40.635, lon: -73.22, latDisplay: "40.63°N", lonDisplay: "73.22°W",
@@ -733,7 +733,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8515102", waterTempId: "8515102",
+    id: "8515102", waterTempId: "8516945",
     name: "Bay Shore, Watchogue Creek Entrance", slug: "bay-shore-watchogue-creek-entrance",
     state: "new-york", city: "Bay Shore, Watchogue Creek Entrance, NY", region: "New York Harbor / East River",
     lat: 40.7167, lon: -73.24, latDisplay: "40.72°N", lonDisplay: "73.24°W",
@@ -755,7 +755,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8515186", waterTempId: "8515186",
+    id: "8515186", waterTempId: "8516945",
     name: "Fire Island Coast Guard Station", slug: "fire-island-coast-guard-station",
     state: "new-york", city: "Fire Island Coast Guard Station, NY", region: "New York Harbor / East River",
     lat: 40.6267, lon: -73.26, latDisplay: "40.63°N", lonDisplay: "73.26°W",
@@ -777,7 +777,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8515228", waterTempId: "8515228",
+    id: "8515228", waterTempId: "8516945",
     name: "Democrat Point, Fire Island Inlet", slug: "democrat-point-fire-island-inlet",
     state: "new-york", city: "Democrat Point, Fire Island Inlet, NY", region: "New York Harbor / East River",
     lat: 40.6333, lon: -73.2933, latDisplay: "40.63°N", lonDisplay: "73.29°W",
@@ -799,7 +799,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8515336", waterTempId: "8515336",
+    id: "8515336", waterTempId: "8516945",
     name: "Oak Beach", slug: "oak-beach",
     state: "new-york", city: "Oak Beach, NY", region: "New York Harbor / East River",
     lat: 40.64, lon: -73.295, latDisplay: "40.64°N", lonDisplay: "73.30°W",
@@ -821,7 +821,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8515421", waterTempId: "8515421",
+    id: "8515421", waterTempId: "8516945",
     name: "Babylon", slug: "babylon",
     state: "new-york", city: "Babylon, NY", region: "New York Harbor / East River",
     lat: 40.685, lon: -73.315, latDisplay: "40.69°N", lonDisplay: "73.31°W",
@@ -843,7 +843,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8515586", waterTempId: "8515586",
+    id: "8515586", waterTempId: "8467150",
     name: "Northport, Northport Bay", slug: "northport-northport-bay",
     state: "new-york", city: "Northport, Northport Bay, NY", region: "New York Harbor / East River",
     lat: 40.9, lon: -73.3533, latDisplay: "40.90°N", lonDisplay: "73.35°W",
@@ -865,7 +865,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8515764", waterTempId: "8515764",
+    id: "8515764", waterTempId: "8516945",
     name: "Gilgo Heading", slug: "gilgo-heading",
     state: "new-york", city: "Gilgo Heading, NY", region: "New York Harbor / East River",
     lat: 40.62, lon: -73.395, latDisplay: "40.62°N", lonDisplay: "73.39°W",
@@ -887,7 +887,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8515786", waterTempId: "8515786",
+    id: "8515786", waterTempId: "8467150",
     name: "Eatons Neck Point", slug: "eatons-neck-point",
     state: "new-york", city: "Eatons Neck Point, NY", region: "New York Harbor / East River",
     lat: 40.9533, lon: -73.4, latDisplay: "40.95°N", lonDisplay: "73.40°W",
@@ -909,7 +909,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8515864", waterTempId: "8515864",
+    id: "8515864", waterTempId: "8516945",
     name: "Amityville", slug: "amityville",
     state: "new-york", city: "Amityville, NY", region: "New York Harbor / East River",
     lat: 40.655, lon: -73.4183, latDisplay: "40.66°N", lonDisplay: "73.42°W",
@@ -931,7 +931,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8515921", waterTempId: "8515921",
+    id: "8515921", waterTempId: "8516945",
     name: "Lloyd Harbor, Huntington Bay", slug: "lloyd-harbor-huntington-bay",
     state: "new-york", city: "Lloyd Harbor, Huntington Bay, NY", region: "New York Harbor / East River",
     lat: 40.91, lon: -73.4317, latDisplay: "40.91°N", lonDisplay: "73.43°W",
@@ -953,7 +953,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516055", waterTempId: "8516055",
+    id: "8516055", waterTempId: "8516945",
     name: "Biltmore Shores, South Oyster Bay", slug: "biltmore-shores-south-oyster-bay",
     state: "new-york", city: "Biltmore Shores, South Oyster Bay, NY", region: "New York Harbor / East River",
     lat: 40.6667, lon: -73.4683, latDisplay: "40.67°N", lonDisplay: "73.47°W",
@@ -975,7 +975,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516061", waterTempId: "8516061",
+    id: "8516061", waterTempId: "8516945",
     name: "Cold Spring Harbor", slug: "cold-spring-harbor",
     state: "new-york", city: "Cold Spring Harbor, NY", region: "New York Harbor / East River",
     lat: 40.87329864501953, lon: -73.47000122070312, latDisplay: "40.87°N", lonDisplay: "73.47°W",
@@ -997,7 +997,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516155", waterTempId: "8516155",
+    id: "8516155", waterTempId: "8516945",
     name: "Green Island", slug: "green-island",
     state: "new-york", city: "Green Island, NY", region: "New York Harbor / East River",
     lat: 40.6233, lon: -73.5017, latDisplay: "40.62°N", lonDisplay: "73.50°W",
@@ -1019,7 +1019,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516201", waterTempId: "8516201",
+    id: "8516201", waterTempId: "8516945",
     name: "Oyster Bay Harbor", slug: "oyster-bay-harbor",
     state: "new-york", city: "Oyster Bay Harbor, NY", region: "New York Harbor / East River",
     lat: 40.8667, lon: -73.5167, latDisplay: "40.87°N", lonDisplay: "73.52°W",
@@ -1041,7 +1041,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516211", waterTempId: "8516211",
+    id: "8516211", waterTempId: "8516945",
     name: "Bellmore, Bellmore Creek", slug: "bellmore-bellmore-creek",
     state: "new-york", city: "Bellmore, Bellmore Creek, NY", region: "New York Harbor / East River",
     lat: 40.6633, lon: -73.52, latDisplay: "40.66°N", lonDisplay: "73.52°W",
@@ -1063,7 +1063,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516221", waterTempId: "8516221",
+    id: "8516221", waterTempId: "8516945",
     name: "Cuba Island", slug: "cuba-island",
     state: "new-york", city: "Cuba Island, NY", region: "New York Harbor / East River",
     lat: 40.62, lon: -73.5233, latDisplay: "40.62°N", lonDisplay: "73.52°W",
@@ -1085,7 +1085,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516225", waterTempId: "8516225",
+    id: "8516225", waterTempId: "8516945",
     name: "Deep Creek Meadow", slug: "deep-creek-meadow",
     state: "new-york", city: "Deep Creek Meadow, NY", region: "New York Harbor / East River",
     lat: 40.6033, lon: -73.525, latDisplay: "40.60°N", lonDisplay: "73.53°W",
@@ -1107,7 +1107,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516299", waterTempId: "8516299",
+    id: "8516299", waterTempId: "8516945",
     name: "Bayville Bridge", slug: "bayville-bridge",
     state: "new-york", city: "Bayville Bridge, NY", region: "New York Harbor / East River",
     lat: 40.9033, lon: -73.55, latDisplay: "40.90°N", lonDisplay: "73.55°W",
@@ -1129,7 +1129,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516315", waterTempId: "8516315",
+    id: "8516315", waterTempId: "8516945",
     name: "Neds Creek", slug: "neds-creek",
     state: "new-york", city: "Neds Creek, NY", region: "New York Harbor / East River",
     lat: 40.6233, lon: -73.555, latDisplay: "40.62°N", lonDisplay: "73.56°W",
@@ -1151,7 +1151,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516385", waterTempId: "8516385",
+    id: "8516385", waterTempId: "8516945",
     name: "Jones Inlet (Point Lookout)", slug: "jones-inlet-point-lookout",
     state: "new-york", city: "Jones Inlet (Point Lookout), NY", region: "Eastern Long Island",
     lat: 40.5867, lon: -73.5783, latDisplay: "40.59°N", lonDisplay: "73.58°W",
@@ -1173,7 +1173,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516402", waterTempId: "8516402",
+    id: "8516402", waterTempId: "8516945",
     name: "Point Lookout (marina), Jones Inlet", slug: "point-lookout-marina-jones-inlet",
     state: "new-york", city: "Point Lookout (marina), Jones Inlet, NY", region: "Eastern Long Island",
     lat: 40.59388888888889, lon: -73.58397222222223, latDisplay: "40.59°N", lonDisplay: "73.58°W",
@@ -1195,7 +1195,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516411", waterTempId: "8516411",
+    id: "8516411", waterTempId: "8516945",
     name: "Freeport, Baldwin Bay", slug: "freeport-baldwin-bay",
     state: "new-york", city: "Freeport, Baldwin Bay, NY", region: "New York Harbor / East River",
     lat: 40.6333, lon: -73.5867, latDisplay: "40.63°N", lonDisplay: "73.59°W",
@@ -1217,7 +1217,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516501", waterTempId: "8516501",
+    id: "8516501", waterTempId: "8516945",
     name: "Baldwin, Parsonage Cove, Hempstead Bay", slug: "baldwin-parsonage-cove-hempstead-bay",
     state: "new-york", city: "Baldwin, Parsonage Cove, Hempstead Bay, NY", region: "New York Harbor / East River",
     lat: 40.6333, lon: -73.6167, latDisplay: "40.63°N", lonDisplay: "73.62°W",
@@ -1239,7 +1239,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516601", waterTempId: "8516601",
+    id: "8516601", waterTempId: "8516945",
     name: "Long Beach (Inside)", slug: "long-beach-inside",
     state: "new-york", city: "Long Beach (Inside), NY", region: "Eastern Long Island",
     lat: 40.6, lon: -73.65, latDisplay: "40.60°N", lonDisplay: "73.65°W",
@@ -1261,7 +1261,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516607", waterTempId: "8516607",
+    id: "8516607", waterTempId: "8516945",
     name: "Harry Tappen Marina, Hempstead Harbor", slug: "harry-tappen-marina-hempstead-harbor",
     state: "new-york", city: "Harry Tappen Marina, Hempstead Harbor, NY", region: "New York Harbor / East River",
     lat: 40.83461111111111, lon: -73.65241666666667, latDisplay: "40.83°N", lonDisplay: "73.65°W",
@@ -1283,7 +1283,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516614", waterTempId: "8516614",
+    id: "8516614", waterTempId: "8516945",
     name: "Glen Cove, Hempstead Harbor", slug: "glen-cove-hempstead-harbor",
     state: "new-york", city: "Glen Cove, Hempstead Harbor, NY", region: "New York Harbor / East River",
     lat: 40.8633, lon: -73.655, latDisplay: "40.86°N", lonDisplay: "73.66°W",
@@ -1305,7 +1305,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516661", waterTempId: "8516661",
+    id: "8516661", waterTempId: "8516945",
     name: "Bay Park, Hewlett Bay", slug: "bay-park-hewlett-bay",
     state: "new-york", city: "Bay Park, Hewlett Bay, NY", region: "New York Harbor / East River",
     lat: 40.63, lon: -73.67, latDisplay: "40.63°N", lonDisplay: "73.67°W",
@@ -1327,7 +1327,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516663", waterTempId: "8516663",
+    id: "8516663", waterTempId: "8516945",
     name: "Long Beach, Bridgewater Yacht Club, New York", slug: "long-beach-bridgewater-yacht-club-new-york",
     state: "new-york", city: "Long Beach, Bridgewater Yacht Club, New York, NY", region: "Eastern Long Island",
     lat: 40.59633333333333, lon: -73.65508333333334, latDisplay: "40.60°N", lonDisplay: "73.66°W",
@@ -1349,7 +1349,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516745", waterTempId: "8516745",
+    id: "8516745", waterTempId: "8516945",
     name: "Woodmere, Brosewere Bay", slug: "woodmere-brosewere-bay",
     state: "new-york", city: "Woodmere, Brosewere Bay, NY", region: "New York Harbor / East River",
     lat: 40.62, lon: -73.6983, latDisplay: "40.62°N", lonDisplay: "73.70°W",
@@ -1371,7 +1371,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516761", waterTempId: "8516761",
+    id: "8516761", waterTempId: "8516945",
     name: "Port Washington, Manhasset Bay", slug: "port-washington-manhasset-bay",
     state: "new-york", city: "Port Washington, Manhasset Bay, NY", region: "New York Harbor / East River",
     lat: 40.8317, lon: -73.7033, latDisplay: "40.83°N", lonDisplay: "73.70°W",
@@ -1393,7 +1393,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516881", waterTempId: "8516881",
+    id: "8516881", waterTempId: "8516945",
     name: "East Rockaway Inlet, Atlantic Beach", slug: "east-rockaway-inlet-atlantic-beach",
     state: "new-york", city: "East Rockaway Inlet, Atlantic Beach, NY", region: "Eastern Long Island",
     lat: 40.595, lon: -73.7433, latDisplay: "40.59°N", lonDisplay: "73.74°W",
@@ -1415,7 +1415,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516891", waterTempId: "8516891",
+    id: "8516891", waterTempId: "8516945",
     name: "Norton Point, Head of Bay", slug: "norton-point-head-of-bay",
     state: "new-york", city: "Norton Point, Head of Bay, NY", region: "New York Harbor / East River",
     lat: 40.635, lon: -73.7467, latDisplay: "40.63°N", lonDisplay: "73.75°W",
@@ -1437,7 +1437,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516925", waterTempId: "8516925",
+    id: "8516925", waterTempId: "8516945",
     name: "Motts Basin", slug: "motts-basin",
     state: "new-york", city: "Motts Basin, NY", region: "New York Harbor / East River",
     lat: 40.6167, lon: -73.7583, latDisplay: "40.62°N", lonDisplay: "73.76°W",
@@ -1481,7 +1481,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516990", waterTempId: "8516990",
+    id: "8516990", waterTempId: "8516945",
     name: "Willets Point", slug: "willets-point",
     state: "new-york", city: "Willets Point, NY", region: "New York Harbor / East River",
     lat: 40.7933, lon: -73.7817, latDisplay: "40.79°N", lonDisplay: "73.78°W",
@@ -1503,7 +1503,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8516999", waterTempId: "8516999",
+    id: "8516999", waterTempId: "8516945",
     name: "J.F.K. International Airport", slug: "jfk-international-airport",
     state: "new-york", city: "J.F.K. International Airport, NY", region: "New York Harbor / East River",
     lat: 40.6233, lon: -73.7833, latDisplay: "40.62°N", lonDisplay: "73.78°W",
@@ -1525,7 +1525,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8517125", waterTempId: "8517125",
+    id: "8517125", waterTempId: "8516945",
     name: "Whitestone", slug: "whitestone",
     state: "new-york", city: "Whitestone, NY", region: "New York Harbor / East River",
     lat: 40.7983, lon: -73.8133, latDisplay: "40.80°N", lonDisplay: "73.81°W",
@@ -1547,7 +1547,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8517137", waterTempId: "8517137",
+    id: "8517137", waterTempId: "8518750",
     name: "Beach Channel (bridge)", slug: "beach-channel-bridge",
     state: "new-york", city: "Beach Channel (bridge), NY", region: "Eastern Long Island",
     lat: 40.5883, lon: -73.82, latDisplay: "40.59°N", lonDisplay: "73.82°W",
@@ -1569,7 +1569,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8517201", waterTempId: "8517201",
+    id: "8517201", waterTempId: "8518750",
     name: "North Channel Bridge, Grassy Bay", slug: "north-channel-bridge-grassy-bay",
     state: "new-york", city: "North Channel Bridge, Grassy Bay, NY", region: "New York Harbor / East River",
     lat: 40.645, lon: -73.8367, latDisplay: "40.65°N", lonDisplay: "73.84°W",
@@ -1591,7 +1591,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8517251", waterTempId: "8517251",
+    id: "8517251", waterTempId: "8516945",
     name: "Worlds Fair Marina, Flushing Bay", slug: "worlds-fair-marina-flushing-bay",
     state: "new-york", city: "Worlds Fair Marina, Flushing Bay, NY", region: "New York Harbor / East River",
     lat: 40.761, lon: -73.85036111111111, latDisplay: "40.76°N", lonDisplay: "73.85°W",
@@ -1613,7 +1613,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8517276", waterTempId: "8517276",
+    id: "8517276", waterTempId: "8516945",
     name: "College Point, Flushing Bay", slug: "college-point-flushing-bay",
     state: "new-york", city: "College Point, Flushing Bay, NY", region: "New York Harbor / East River",
     lat: 40.7833, lon: -73.8567, latDisplay: "40.78°N", lonDisplay: "73.86°W",
@@ -1635,7 +1635,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8517381", waterTempId: "8517381",
+    id: "8517381", waterTempId: "8518750",
     name: "Canarsie", slug: "canarsie",
     state: "new-york", city: "Canarsie, NY", region: "New York Harbor / East River",
     lat: 40.63, lon: -73.885, latDisplay: "40.63°N", lonDisplay: "73.89°W",
@@ -1657,7 +1657,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8517394", waterTempId: "8517394",
+    id: "8517394", waterTempId: "8531680",
     name: "Barren Island, Rockaway Inlet", slug: "barren-island-rockaway-inlet",
     state: "new-york", city: "Barren Island, Rockaway Inlet, NY", region: "Eastern Long Island",
     lat: 40.5783, lon: -73.8883, latDisplay: "40.58°N", lonDisplay: "73.89°W",
@@ -1679,7 +1679,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8517401", waterTempId: "8517401",
+    id: "8517401", waterTempId: "8518750",
     name: "Hell Gate, Wards Island", slug: "hell-gate-wards-island",
     state: "new-york", city: "Hell Gate, Wards Island, NY", region: "New York Harbor / East River",
     lat: 40.7867, lon: -73.9217, latDisplay: "40.79°N", lonDisplay: "73.92°W",
@@ -1701,7 +1701,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8517519", waterTempId: "8517519",
+    id: "8517519", waterTempId: "8518750",
     name: "Mill Basin", slug: "mill-basin",
     state: "new-york", city: "Mill Basin, NY", region: "New York Harbor / East River",
     lat: 40.6083, lon: -73.9217, latDisplay: "40.61°N", lonDisplay: "73.92°W",
@@ -1723,7 +1723,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8517531", waterTempId: "8517531",
+    id: "8517531", waterTempId: "8518750",
     name: "Plumb Beach Channel", slug: "plumb-beach-channel",
     state: "new-york", city: "Plumb Beach Channel, NY", region: "Eastern Long Island",
     lat: 40.585, lon: -73.925, latDisplay: "40.59°N", lonDisplay: "73.92°W",
@@ -1745,7 +1745,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8517673", waterTempId: "8517673",
+    id: "8517673", waterTempId: "8518750",
     name: "Hunters Point, Newtown Creek", slug: "hunters-point-newtown-creek",
     state: "new-york", city: "Hunters Point, Newtown Creek, NY", region: "New York Harbor / East River",
     lat: 40.74, lon: -73.9617, latDisplay: "40.74°N", lonDisplay: "73.96°W",
@@ -1767,7 +1767,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8517732", waterTempId: "8517732",
+    id: "8517732", waterTempId: "8518750",
     name: "Wallabout Bay, Brooklyn Navy Yard", slug: "wallabout-bay-brooklyn-navy-yard",
     state: "new-york", city: "Wallabout Bay, Brooklyn Navy Yard, NY", region: "New York Harbor / East River",
     lat: 40.7067, lon: -73.975, latDisplay: "40.71°N", lonDisplay: "73.97°W",
@@ -1789,7 +1789,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8517741", waterTempId: "8517741",
+    id: "8517741", waterTempId: "8531680",
     name: "Coney Island", slug: "coney-island",
     state: "new-york", city: "Coney Island, NY", region: "Eastern Long Island",
     lat: 40.57, lon: -73.9833, latDisplay: "40.57°N", lonDisplay: "73.98°W",
@@ -1811,7 +1811,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8517756", waterTempId: "8517756",
+    id: "8517756", waterTempId: "8531680",
     name: "Kingsborough, Sheepshead Bay", slug: "kingsborough-sheepshead-bay",
     state: "new-york", city: "Kingsborough, Sheepshead Bay, NY", region: "Eastern Long Island",
     lat: 40.581199645996094, lon: -73.93379974365234, latDisplay: "40.58°N", lonDisplay: "73.93°W",
@@ -1833,7 +1833,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8517811", waterTempId: "8517811",
+    id: "8517811", waterTempId: "8518750",
     name: "Norton Point, Gravesend Bay", slug: "norton-point-gravesend-bay",
     state: "new-york", city: "Norton Point, Gravesend Bay, NY", region: "Eastern Long Island",
     lat: 40.59, lon: -73.9983, latDisplay: "40.59°N", lonDisplay: "74.00°W",
@@ -1855,7 +1855,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8517847", waterTempId: "8517847",
+    id: "8517847", waterTempId: "8518750",
     name: "Brooklyn Bridge", slug: "brooklyn-bridge",
     state: "new-york", city: "Brooklyn Bridge, NY", region: "New York Harbor / East River",
     lat: 40.7033, lon: -73.995, latDisplay: "40.70°N", lonDisplay: "74.00°W",
@@ -1877,7 +1877,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8517921", waterTempId: "8517921",
+    id: "8517921", waterTempId: "8518750",
     name: "Gowanus Bay", slug: "gowanus-bay",
     state: "new-york", city: "Gowanus Bay, NY", region: "Eastern Long Island",
     lat: 40.665, lon: -74.0133, latDisplay: "40.66°N", lonDisplay: "74.01°W",
@@ -1899,7 +1899,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8517942", waterTempId: "8517942",
+    id: "8517942", waterTempId: "8518750",
     name: "Fort Hamilton, The Narrows", slug: "fort-hamilton-the-narrows",
     state: "new-york", city: "Fort Hamilton, The Narrows, NY", region: "Eastern Long Island",
     lat: 40.6083, lon: -74.035, latDisplay: "40.61°N", lonDisplay: "74.03°W",
@@ -1921,7 +1921,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518091", waterTempId: "8518091",
+    id: "8518091", waterTempId: "8516945",
     name: "Rye Beach", slug: "rye-beach",
     state: "new-york", city: "Rye Beach, NY", region: "New York Harbor / East River",
     lat: 40.9617, lon: -73.6717, latDisplay: "40.96°N", lonDisplay: "73.67°W",
@@ -1943,7 +1943,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518490", waterTempId: "8518490",
+    id: "8518490", waterTempId: "8516945",
     name: "New Rochelle", slug: "new-rochelle",
     state: "new-york", city: "New Rochelle, NY", region: "New York Harbor / East River",
     lat: 40.8933, lon: -73.7817, latDisplay: "40.89°N", lonDisplay: "73.78°W",
@@ -1965,7 +1965,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518526", waterTempId: "8518526",
+    id: "8518526", waterTempId: "8516945",
     name: "Throgs Neck, Fort Schuyler", slug: "throgs-neck-fort-schuyler",
     state: "new-york", city: "Throgs Neck, Fort Schuyler, NY", region: "New York Harbor / East River",
     lat: 40.805, lon: -73.795, latDisplay: "40.80°N", lonDisplay: "73.80°W",
@@ -1987,7 +1987,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518621", waterTempId: "8518621",
+    id: "8518621", waterTempId: "8516945",
     name: "Hunts Point", slug: "hunts-point",
     state: "new-york", city: "Hunts Point, NY", region: "New York Harbor / East River",
     lat: 40.8, lon: -73.8733, latDisplay: "40.80°N", lonDisplay: "73.87°W",
@@ -2009,7 +2009,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518635", waterTempId: "8518635",
+    id: "8518635", waterTempId: "8516945",
     name: "North Brother Island", slug: "north-brother-island",
     state: "new-york", city: "North Brother Island, NY", region: "New York Harbor / East River",
     lat: 40.7983, lon: -73.8983, latDisplay: "40.80°N", lonDisplay: "73.90°W",
@@ -2031,7 +2031,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518639", waterTempId: "8518639",
+    id: "8518639", waterTempId: "8516945",
     name: "Port Morris (Stony Point)", slug: "port-morris-stony-point",
     state: "new-york", city: "Port Morris (Stony Point), NY", region: "New York Harbor / East River",
     lat: 40.8017, lon: -73.9067, latDisplay: "40.80°N", lonDisplay: "73.91°W",
@@ -2053,7 +2053,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518643", waterTempId: "8518643",
+    id: "8518643", waterTempId: "8518750",
     name: "Harlem River, Randalls Island", slug: "harlem-river-randalls-island",
     state: "new-york", city: "Harlem River, Randalls Island, NY", region: "New York Harbor / East River",
     lat: 40.8, lon: -73.9283, latDisplay: "40.80°N", lonDisplay: "73.93°W",
@@ -2075,7 +2075,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518668", waterTempId: "8518668",
+    id: "8518668", waterTempId: "8518750",
     name: "Horns Hook, East 90th Street", slug: "horns-hook-east-90th-street",
     state: "new-york", city: "Horns Hook, East 90th Street, NY", region: "New York Harbor / East River",
     lat: 40.7767, lon: -73.9417, latDisplay: "40.78°N", lonDisplay: "73.94°W",
@@ -2097,7 +2097,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518687", waterTempId: "8518687",
+    id: "8518687", waterTempId: "8518750",
     name: "Queensboro Bridge", slug: "queensboro-bridge",
     state: "new-york", city: "Queensboro Bridge, NY", region: "New York Harbor / East River",
     lat: 40.7583, lon: -73.9583, latDisplay: "40.76°N", lonDisplay: "73.96°W",
@@ -2119,7 +2119,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518695", waterTempId: "8518695",
+    id: "8518695", waterTempId: "8518750",
     name: "East 41st Street, New York City", slug: "east-41st-street-new-york-city",
     state: "new-york", city: "East 41st Street, New York City, NY", region: "New York Harbor / East River",
     lat: 40.7467, lon: -73.9683, latDisplay: "40.75°N", lonDisplay: "73.97°W",
@@ -2141,7 +2141,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518699", waterTempId: "8518699",
+    id: "8518699", waterTempId: "8518750",
     name: "Williamsburg Bridge", slug: "williamsburg-bridge",
     state: "new-york", city: "Williamsburg Bridge, NY", region: "New York Harbor / East River",
     lat: 40.7117, lon: -73.9683, latDisplay: "40.71°N", lonDisplay: "73.97°W",
@@ -2185,7 +2185,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518902", waterTempId: "8518902",
+    id: "8518902", waterTempId: "8516945",
     name: "Dyckman Street, Ferry Slip", slug: "dyckman-street-ferry-slip",
     state: "new-york", city: "Dyckman Street, Ferry Slip, NY", region: "New York Harbor / East River",
     lat: 40.8683, lon: -73.9333, latDisplay: "40.87°N", lonDisplay: "73.93°W",
@@ -2207,7 +2207,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518903", waterTempId: "8518903",
+    id: "8518903", waterTempId: "8516945",
     name: "Spuyten Duyvil Creek ent., N.Y.", slug: "spuyten-duyvil-creek-ent-ny",
     state: "new-york", city: "Spuyten Duyvil Creek ent., N.Y., NY", region: "New York Harbor / East River",
     lat: 40.8783, lon: -73.925, latDisplay: "40.88°N", lonDisplay: "73.92°W",
@@ -2229,7 +2229,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518905", waterTempId: "8518905",
+    id: "8518905", waterTempId: "8516945",
     name: "Riverdale, N.Y.", slug: "riverdale-ny",
     state: "new-york", city: "Riverdale, N.Y., NY", region: "New York Harbor / East River",
     lat: 40.9033, lon: -73.9167, latDisplay: "40.90°N", lonDisplay: "73.92°W",
@@ -2251,7 +2251,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518919", waterTempId: "8518919",
+    id: "8518919", waterTempId: "8516945",
     name: "Tarrytown", slug: "tarrytown",
     state: "new-york", city: "Tarrytown, NY", region: "New York Harbor / East River",
     lat: 41.0783, lon: -73.87, latDisplay: "41.08°N", lonDisplay: "73.87°W",
@@ -2273,7 +2273,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518924", waterTempId: "8518924",
+    id: "8518924", waterTempId: "8516945",
     name: "Haverstraw", slug: "haverstraw",
     state: "new-york", city: "Haverstraw, NY", region: "New York Harbor / East River",
     lat: 41.2183, lon: -73.9633, latDisplay: "41.22°N", lonDisplay: "73.96°W",
@@ -2295,7 +2295,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518934", waterTempId: "8518934",
+    id: "8518934", waterTempId: "8518962",
     name: "Beacon, Flushkill", slug: "beacon-flushkill",
     state: "new-york", city: "Beacon, Flushkill, NY", region: "New York Harbor / East River",
     lat: 41.5, lon: -73.9833, latDisplay: "41.50°N", lonDisplay: "73.98°W",
@@ -2317,7 +2317,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518935", waterTempId: "8518935",
+    id: "8518935", waterTempId: "8518962",
     name: "Newburgh", slug: "newburgh",
     state: "new-york", city: "Newburgh, NY", region: "Long Island Sound",
     lat: 41.5, lon: -74.0067, latDisplay: "41.50°N", lonDisplay: "74.01°W",
@@ -2339,7 +2339,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518939", waterTempId: "8518939",
+    id: "8518939", waterTempId: "8518962",
     name: "New Hamburg", slug: "new-hamburg",
     state: "new-york", city: "New Hamburg, NY", region: "New York Harbor / East River",
     lat: 41.5833, lon: -73.95, latDisplay: "41.58°N", lonDisplay: "73.95°W",
@@ -2361,7 +2361,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518945", waterTempId: "8518945",
+    id: "8518945", waterTempId: "8518962",
     name: "Poughkeepsie", slug: "poughkeepsie",
     state: "new-york", city: "Poughkeepsie, NY", region: "New York Harbor / East River",
     lat: 41.7, lon: -73.9333, latDisplay: "41.70°N", lonDisplay: "73.93°W",
@@ -2383,7 +2383,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518949", waterTempId: "8518949",
+    id: "8518949", waterTempId: "8516945",
     name: "Peekskill", slug: "peekskill",
     state: "new-york", city: "Peekskill, NY", region: "New York Harbor / East River",
     lat: 41.2883, lon: -73.9317, latDisplay: "41.29°N", lonDisplay: "73.93°W",
@@ -2405,7 +2405,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518951", waterTempId: "8518951",
+    id: "8518951", waterTempId: "8518962",
     name: "Hyde Park", slug: "hyde-park",
     state: "new-york", city: "Hyde Park, NY", region: "New York Harbor / East River",
     lat: 41.7833, lon: -73.95, latDisplay: "41.78°N", lonDisplay: "73.95°W",
@@ -2449,7 +2449,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518964", waterTempId: "8518964",
+    id: "8518964", waterTempId: "8518962",
     name: "Tivoli", slug: "tivoli",
     state: "new-york", city: "Tivoli, NY", region: "New York Harbor / East River",
     lat: 42.0583, lon: -73.9167, latDisplay: "42.06°N", lonDisplay: "73.92°W",
@@ -2471,7 +2471,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518974", waterTempId: "8518974",
+    id: "8518974", waterTempId: "8518979",
     name: "Hudson", slug: "hudson",
     state: "new-york", city: "Hudson, NY", region: "New York Harbor / East River",
     lat: 42.25, lon: -73.8, latDisplay: "42.25°N", lonDisplay: "73.80°W",
@@ -2515,7 +2515,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518989", waterTempId: "8518989",
+    id: "8518989", waterTempId: "8518979",
     name: "Castleton", slug: "castleton",
     state: "new-york", city: "Castleton, NY", region: "New York Harbor / East River",
     lat: 42.5333, lon: -73.7667, latDisplay: "42.53°N", lonDisplay: "73.77°W",
@@ -2537,7 +2537,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518993", waterTempId: "8518993",
+    id: "8518993", waterTempId: "8518962",
     name: "Kingston", slug: "kingston",
     state: "new-york", city: "Kingston, NY", region: "New York Harbor / East River",
     lat: 41.9183, lon: -73.9833, latDisplay: "41.92°N", lonDisplay: "73.98°W",
@@ -2559,7 +2559,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8518995", waterTempId: "8518995",
+    id: "8518995", waterTempId: "8518979",
     name: "ALBANY", slug: "albany",
     state: "new-york", city: "ALBANY, NY", region: "New York Harbor / East River",
     lat: 42.65, lon: -73.7467, latDisplay: "42.65°N", lonDisplay: "73.75°W",
@@ -2581,7 +2581,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8519050", waterTempId: "8519050",
+    id: "8519050", waterTempId: "8518750",
     name: "USCG Station NY", slug: "uscg-station-ny",
     state: "new-york", city: "USCG Station NY, NY", region: "Eastern Long Island",
     lat: 40.612, lon: -74.0598611111111, latDisplay: "40.61°N", lonDisplay: "74.06°W",
@@ -2603,7 +2603,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8519112", waterTempId: "8519112",
+    id: "8519112", waterTempId: "8518750",
     name: "St. George, Staten Island", slug: "st-george-staten-island",
     state: "new-york", city: "St. George, Staten Island, NY", region: "Eastern Long Island",
     lat: 40.6433, lon: -74.0733, latDisplay: "40.64°N", lonDisplay: "74.07°W",
@@ -2625,7 +2625,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8519200", waterTempId: "8519200",
+    id: "8519200", waterTempId: "8518750",
     name: "Port Ivory, Howland Hook, N.Y.", slug: "port-ivory-howland-hook-ny",
     state: "new-york", city: "Port Ivory, Howland Hook, N.Y., NY", region: "Eastern Long Island",
     lat: 40.645, lon: -74.18, latDisplay: "40.65°N", lonDisplay: "74.18°W",
@@ -2647,7 +2647,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8519436", waterTempId: "8519436",
+    id: "8519436", waterTempId: "8531680",
     name: "Great Kills Harbor", slug: "great-kills-harbor",
     state: "new-york", city: "Great Kills Harbor, NY", region: "Eastern Long Island",
     lat: 40.5433, lon: -74.14, latDisplay: "40.54°N", lonDisplay: "74.14°W",
@@ -2669,7 +2669,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8519483", waterTempId: "8519483",
+    id: "8519483", waterTempId: "8518750",
     name: "Bayonne Bridge, Bergen Point", slug: "bayonne-bridge-bergen-point",
     state: "new-york", city: "Bayonne Bridge, Bergen Point, NY", region: "Eastern Long Island",
     lat: 40.63911111111111, lon: -74.14630555555556, latDisplay: "40.64°N", lonDisplay: "74.15°W",
@@ -2691,7 +2691,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8519726", waterTempId: "8519726",
+    id: "8519726", waterTempId: "8531680",
     name: "Princes Bay", slug: "princes-bay",
     state: "new-york", city: "Princes Bay, NY", region: "Eastern Long Island",
     lat: 40.5117, lon: -74.2, latDisplay: "40.51°N", lonDisplay: "74.20°W",
@@ -2713,7 +2713,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8519789", waterTempId: "8519789",
+    id: "8519789", waterTempId: "8531680",
     name: "Rossville, N.Y.", slug: "rossville-ny",
     state: "new-york", city: "Rossville, N.Y., NY", region: "Eastern Long Island",
     lat: 40.5567, lon: -74.2233, latDisplay: "40.56°N", lonDisplay: "74.22°W",
@@ -2735,7 +2735,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8510321", waterTempId: "8510321",
+    id: "8510321", waterTempId: "8510560",
     name: "MONTAUK POINT LIGHT", slug: "montauk-point-light",
     state: "new-york", city: "MONTAUK POINT LIGHT, NY", region: "New York Harbor / East River",
     lat: 41.0717, lon: -71.8567, latDisplay: "41.07°N", lonDisplay: "71.86°W",
@@ -2757,7 +2757,7 @@ export const NEW_YORK_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8519024", waterTempId: "8519024",
+    id: "8519024", waterTempId: "8518750",
     name: "FORT WADSWORTH, STATEN ISLAND", slug: "fort-wadsworth-staten-island",
     state: "new-york", city: "FORT WADSWORTH, STATEN ISLAND, NY", region: "Eastern Long Island",
     lat: 40.6067, lon: -74.055, latDisplay: "40.61°N", lonDisplay: "74.06°W",

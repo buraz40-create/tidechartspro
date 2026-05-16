@@ -7,7 +7,7 @@ export type { StationConfig, NearbyStation, Species }
 
 export const NEW_JERSEY_STATIONS: StationConfig[] = [
   {
-    id: "8530095", waterTempId: "8530095",
+    id: "8530095", waterTempId: "8516945",
     name: "Alpine, N.J.", slug: "alpine-nj",
     state: "new-jersey", city: "Alpine, N.J., NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.945, lon: -73.9183, latDisplay: "40.95°N", lonDisplay: "73.92°W",
@@ -29,7 +29,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8530186", waterTempId: "8530186",
+    id: "8530186", waterTempId: "8518750",
     name: "New Millford", slug: "new-millford",
     state: "new-jersey", city: "New Millford, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.935, lon: -74.03, latDisplay: "40.94°N", lonDisplay: "74.03°W",
@@ -51,7 +51,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8530278", waterTempId: "8530278",
+    id: "8530278", waterTempId: "8518750",
     name: "Hackensack", slug: "hackensack",
     state: "new-jersey", city: "Hackensack, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.88, lon: -74.04, latDisplay: "40.88°N", lonDisplay: "74.04°W",
@@ -73,7 +73,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8530398", waterTempId: "8530398",
+    id: "8530398", waterTempId: "8518750",
     name: "Ridgefield Park", slug: "ridgefield-park",
     state: "new-jersey", city: "Ridgefield Park, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.85, lon: -74.03, latDisplay: "40.85°N", lonDisplay: "74.03°W",
@@ -95,7 +95,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8530403", waterTempId: "8530403",
+    id: "8530403", waterTempId: "8518750",
     name: "East Rutherford", slug: "east-rutherford",
     state: "new-jersey", city: "East Rutherford, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.8467, lon: -74.12, latDisplay: "40.85°N", lonDisplay: "74.12°W",
@@ -117,7 +117,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8530505", waterTempId: "8530505",
+    id: "8530505", waterTempId: "8518750",
     name: "Edgewater, N.J.", slug: "edgewater-nj",
     state: "new-jersey", city: "Edgewater, N.J., NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.8133, lon: -73.9783, latDisplay: "40.81°N", lonDisplay: "73.98°W",
@@ -139,7 +139,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8530528", waterTempId: "8530528",
+    id: "8530528", waterTempId: "8518750",
     name: "Carlstadt, Garretts Reach", slug: "carlstadt-garretts-reach",
     state: "new-jersey", city: "Carlstadt, Garretts Reach, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.8067, lon: -74.06, latDisplay: "40.81°N", lonDisplay: "74.06°W",
@@ -161,7 +161,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8530531", waterTempId: "8530531",
+    id: "8530531", waterTempId: "8518750",
     name: "North Secaucus, Garretts Reach", slug: "north-secaucus-garretts-reach",
     state: "new-jersey", city: "North Secaucus, Garretts Reach, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.805, lon: -74.0533, latDisplay: "40.80°N", lonDisplay: "74.05°W",
@@ -183,7 +183,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8530586", waterTempId: "8530586",
+    id: "8530586", waterTempId: "8518750",
     name: "Fish Creek, Berrys Creek", slug: "fish-creek-berrys-creek",
     state: "new-jersey", city: "Fish Creek, Berrys Creek, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.7933, lon: -74.0917, latDisplay: "40.79°N", lonDisplay: "74.09°W",
@@ -205,7 +205,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8530591", waterTempId: "8530591",
+    id: "8530591", waterTempId: "8518750",
     name: "Belleville", slug: "belleville",
     state: "new-jersey", city: "Belleville, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.7867, lon: -74.1467, latDisplay: "40.79°N", lonDisplay: "74.15°W",
@@ -227,7 +227,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8530645", waterTempId: "8530645",
+    id: "8530645", waterTempId: "8518750",
     name: "Weehawken, Union City, N.J.", slug: "weehawken-union-city-nj",
     state: "new-jersey", city: "Weehawken, Union City, N.J., NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.765, lon: -74.0183, latDisplay: "40.77°N", lonDisplay: "74.02°W",
@@ -249,7 +249,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8530696", waterTempId: "8530696",
+    id: "8530696", waterTempId: "8518750",
     name: "Amtrak RR. swing bridge", slug: "amtrak-rr-swing-bridge",
     state: "new-jersey", city: "Amtrak RR. swing bridge, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.7517, lon: -74.0967, latDisplay: "40.75°N", lonDisplay: "74.10°W",
@@ -271,7 +271,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8530743", waterTempId: "8530743",
+    id: "8530743", waterTempId: "8518750",
     name: "Point No Point", slug: "point-no-point",
     state: "new-jersey", city: "Point No Point, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.7317, lon: -74.1167, latDisplay: "40.73°N", lonDisplay: "74.12°W",
@@ -293,7 +293,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8530772", waterTempId: "8530772",
+    id: "8530772", waterTempId: "8518750",
     name: "Kearny Point", slug: "kearny-point",
     state: "new-jersey", city: "Kearny Point, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.7283, lon: -74.1033, latDisplay: "40.73°N", lonDisplay: "74.10°W",
@@ -315,7 +315,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8530882", waterTempId: "8530882",
+    id: "8530882", waterTempId: "8518750",
     name: "Port Elizabeth", slug: "port-elizabeth",
     state: "new-jersey", city: "Port Elizabeth, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.673301696777344, lon: -74.13999938964844, latDisplay: "40.67°N", lonDisplay: "74.14°W",
@@ -337,7 +337,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8530884", waterTempId: "8530884",
+    id: "8530884", waterTempId: "8518750",
     name: "Port Newark Terminal", slug: "port-newark-terminal",
     state: "new-jersey", city: "Port Newark Terminal, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.69, lon: -74.1333, latDisplay: "40.69°N", lonDisplay: "74.13°W",
@@ -359,7 +359,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8530985", waterTempId: "8530985",
+    id: "8530985", waterTempId: "8518750",
     name: "Constable Hook", slug: "constable-hook",
     state: "new-jersey", city: "Constable Hook, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.655, lon: -74.085, latDisplay: "40.66°N", lonDisplay: "74.08°W",
@@ -381,7 +381,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8531077", waterTempId: "8531077",
+    id: "8531077", waterTempId: "8518750",
     name: "Rahway River, RR. Bridge", slug: "rahway-river-rr-bridge",
     state: "new-jersey", city: "Rahway River, RR. Bridge, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.5983, lon: -74.2317, latDisplay: "40.60°N", lonDisplay: "74.23°W",
@@ -403,7 +403,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8531095", waterTempId: "8531095",
+    id: "8531095", waterTempId: "8518750",
     name: "Carteret", slug: "carteret",
     state: "new-jersey", city: "Carteret, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.5867, lon: -74.21, latDisplay: "40.59°N", lonDisplay: "74.21°W",
@@ -425,7 +425,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8531142", waterTempId: "8531142",
+    id: "8531142", waterTempId: "8531680",
     name: "Port Reading, Arthur Kill", slug: "port-reading-arthur-kill",
     state: "new-jersey", city: "Port Reading, Arthur Kill, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.55500030517578, lon: -74.24500274658203, latDisplay: "40.56°N", lonDisplay: "74.25°W",
@@ -447,7 +447,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8531156", waterTempId: "8531156",
+    id: "8531156", waterTempId: "8531680",
     name: "Woodbridge Creek, 0.8 n.mi. above entrance", slug: "woodbridge-creek-08-nmi-above-entrance",
     state: "new-jersey", city: "Woodbridge Creek, 0.8 n.mi. above entrance, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.545, lon: -74.265, latDisplay: "40.55°N", lonDisplay: "74.27°W",
@@ -469,7 +469,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8531223", waterTempId: "8531223",
+    id: "8531223", waterTempId: "8531680",
     name: "Cheesequake Creek, Garden State Parkway", slug: "cheesequake-creek-garden-state-parkway",
     state: "new-jersey", city: "Cheesequake Creek, Garden State Parkway, NJ", region: "Jersey Shore North",
     lat: 40.4533, lon: -74.2733, latDisplay: "40.45°N", lonDisplay: "74.27°W",
@@ -491,7 +491,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8531232", waterTempId: "8531232",
+    id: "8531232", waterTempId: "8531680",
     name: "South Amboy", slug: "south-amboy",
     state: "new-jersey", city: "South Amboy, NJ", region: "Jersey Shore North",
     lat: 40.4917, lon: -74.2817, latDisplay: "40.49°N", lonDisplay: "74.28°W",
@@ -513,7 +513,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8531262", waterTempId: "8531262",
+    id: "8531262", waterTempId: "8531680",
     name: "Keasbey", slug: "keasbey",
     state: "new-jersey", city: "Keasbey, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.50830078125, lon: -74.31169891357422, latDisplay: "40.51°N", lonDisplay: "74.31°W",
@@ -535,7 +535,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8531369", waterTempId: "8531369",
+    id: "8531369", waterTempId: "8531680",
     name: "Old Bridge, South River", slug: "old-bridge-south-river",
     state: "new-jersey", city: "Old Bridge, South River, NJ", region: "Jersey Shore North",
     lat: 40.41669845581055, lon: -74.36329650878906, latDisplay: "40.42°N", lonDisplay: "74.36°W",
@@ -557,7 +557,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8531390", waterTempId: "8531390",
+    id: "8531390", waterTempId: "8531680",
     name: "Sayreville", slug: "sayreville",
     state: "new-jersey", city: "Sayreville, NJ", region: "Jersey Shore North",
     lat: 40.47829818725586, lon: -74.35669708251953, latDisplay: "40.48°N", lonDisplay: "74.36°W",
@@ -579,7 +579,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8531463", waterTempId: "8531463",
+    id: "8531463", waterTempId: "8531680",
     name: "New Brunswick", slug: "new-brunswick",
     state: "new-jersey", city: "New Brunswick, NJ", region: "Jersey Shore North",
     lat: 40.48830032348633, lon: -74.43499755859375, latDisplay: "40.49°N", lonDisplay: "74.43°W",
@@ -601,7 +601,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8531526", waterTempId: "8531526",
+    id: "8531526", waterTempId: "8531680",
     name: "Matawan Creek, Route 35 bridge", slug: "matawan-creek-route-35-bridge",
     state: "new-jersey", city: "Matawan Creek, Route 35 bridge, NJ", region: "Jersey Shore North",
     lat: 40.4333, lon: -74.2183, latDisplay: "40.43°N", lonDisplay: "74.22°W",
@@ -623,7 +623,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8531545", waterTempId: "8531545",
+    id: "8531545", waterTempId: "8531680",
     name: "Keyport", slug: "keyport",
     state: "new-jersey", city: "Keyport, NJ", region: "Jersey Shore North",
     lat: 40.44, lon: -74.1983, latDisplay: "40.44°N", lonDisplay: "74.20°W",
@@ -645,7 +645,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8531592", waterTempId: "8531592",
+    id: "8531592", waterTempId: "8531680",
     name: "Waackaack Creek", slug: "waackaack-creek",
     state: "new-jersey", city: "Waackaack Creek, NJ", region: "Jersey Shore North",
     lat: 40.4483, lon: -74.1433, latDisplay: "40.45°N", lonDisplay: "74.14°W",
@@ -667,7 +667,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8531662", waterTempId: "8531662",
+    id: "8531662", waterTempId: "8531680",
     name: "Atlantic Highlands", slug: "atlantic-highlands",
     state: "new-jersey", city: "Atlantic Highlands, NJ", region: "Jersey Shore North",
     lat: 40.4183, lon: -74.035, latDisplay: "40.42°N", lonDisplay: "74.03°W",
@@ -711,7 +711,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8531712", waterTempId: "8531712",
+    id: "8531712", waterTempId: "8531680",
     name: "Highlands, Route 36 bridge", slug: "highlands-route-36-bridge",
     state: "new-jersey", city: "Highlands, Route 36 bridge, NJ", region: "Jersey Shore North",
     lat: 40.3967, lon: -73.9817, latDisplay: "40.40°N", lonDisplay: "73.98°W",
@@ -733,7 +733,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8531753", waterTempId: "8531753",
+    id: "8531753", waterTempId: "8531680",
     name: "Oceanic Bridge, Navesink River", slug: "oceanic-bridge-navesink-river",
     state: "new-jersey", city: "Oceanic Bridge, Navesink River, NJ", region: "Jersey Shore North",
     lat: 40.3767, lon: -74.015, latDisplay: "40.38°N", lonDisplay: "74.02°W",
@@ -755,7 +755,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8531804", waterTempId: "8531804",
+    id: "8531804", waterTempId: "8531680",
     name: "Sea Bright", slug: "sea-bright",
     state: "new-jersey", city: "Sea Bright, NJ", region: "Jersey Shore North",
     lat: 40.365, lon: -73.975, latDisplay: "40.37°N", lonDisplay: "73.97°W",
@@ -777,7 +777,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8531833", waterTempId: "8531833",
+    id: "8531833", waterTempId: "8531680",
     name: "Red Bank, Navesink River", slug: "red-bank-navesink-river",
     state: "new-jersey", city: "Red Bank, Navesink River, NJ", region: "Jersey Shore North",
     lat: 40.355, lon: -74.065, latDisplay: "40.35°N", lonDisplay: "74.06°W",
@@ -799,7 +799,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8531925", waterTempId: "8531925",
+    id: "8531925", waterTempId: "8531680",
     name: "Gooseneck Point, bridge", slug: "gooseneck-point-bridge",
     state: "new-jersey", city: "Gooseneck Point, bridge, NJ", region: "Jersey Shore North",
     lat: 40.3267, lon: -74.0167, latDisplay: "40.33°N", lonDisplay: "74.02°W",
@@ -821,7 +821,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8531942", waterTempId: "8531942",
+    id: "8531942", waterTempId: "8531680",
     name: "Long Branch Reach", slug: "long-branch-reach",
     state: "new-jersey", city: "Long Branch Reach, NJ", region: "Jersey Shore North",
     lat: 40.325, lon: -73.9967, latDisplay: "40.33°N", lonDisplay: "74.00°W",
@@ -843,7 +843,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8531991", waterTempId: "8531991",
+    id: "8531991", waterTempId: "8531680",
     name: "Long Branch (fishing pier)", slug: "long-branch-fishing-pier",
     state: "new-jersey", city: "Long Branch (fishing pier), NJ", region: "Jersey Shore North",
     lat: 40.3033, lon: -73.9767, latDisplay: "40.30°N", lonDisplay: "73.98°W",
@@ -865,7 +865,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8532322", waterTempId: "8532322",
+    id: "8532322", waterTempId: "8531680",
     name: "Shark River Hills", slug: "shark-river-hills",
     state: "new-jersey", city: "Shark River Hills, NJ", region: "Jersey Shore North",
     lat: 40.1917, lon: -74.0383, latDisplay: "40.19°N", lonDisplay: "74.04°W",
@@ -887,7 +887,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8532337", waterTempId: "8532337",
+    id: "8532337", waterTempId: "8531680",
     name: "Belmar, Atlantic Ocean", slug: "belmar-atlantic-ocean",
     state: "new-jersey", city: "Belmar, Atlantic Ocean, NJ", region: "Jersey Shore North",
     lat: 40.185, lon: -74.0083, latDisplay: "40.19°N", lonDisplay: "74.01°W",
@@ -909,7 +909,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8532339", waterTempId: "8532339",
+    id: "8532339", waterTempId: "8531680",
     name: "Shark River Island, fixed RR. bridge", slug: "shark-river-island-fixed-rr-bridge",
     state: "new-jersey", city: "Shark River Island, fixed RR. bridge, NJ", region: "Jersey Shore North",
     lat: 40.1867, lon: -74.0267, latDisplay: "40.19°N", lonDisplay: "74.03°W",
@@ -931,7 +931,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8532371", waterTempId: "8532371",
+    id: "8532371", waterTempId: "8531680",
     name: "New Bedford", slug: "new-bedford",
     state: "new-jersey", city: "New Bedford, NJ", region: "Jersey Shore North",
     lat: 40.1783, lon: -74.0467, latDisplay: "40.18°N", lonDisplay: "74.05°W",
@@ -953,7 +953,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8532585", waterTempId: "8532585",
+    id: "8532585", waterTempId: "8531680",
     name: "Brielle, Route 35 bridge", slug: "brielle-route-35-bridge",
     state: "new-jersey", city: "Brielle, Route 35 bridge, NJ", region: "Jersey Shore North",
     lat: 40.105, lon: -74.055, latDisplay: "40.10°N", lonDisplay: "74.06°W",
@@ -975,7 +975,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8532591", waterTempId: "8532591",
+    id: "8532591", waterTempId: "8531680",
     name: "Manasquan Inlet, USCG Station", slug: "manasquan-inlet-uscg-station",
     state: "new-jersey", city: "Manasquan Inlet, USCG Station, NJ", region: "Jersey Shore North",
     lat: 40.1017, lon: -74.035, latDisplay: "40.10°N", lonDisplay: "74.03°W",
@@ -997,7 +997,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8532611", waterTempId: "8532611",
+    id: "8532611", waterTempId: "8531680",
     name: "Riviera Beach", slug: "riviera-beach",
     state: "new-jersey", city: "Riviera Beach, NJ", region: "Jersey Shore North",
     lat: 40.0967, lon: -74.0867, latDisplay: "40.10°N", lonDisplay: "74.09°W",
@@ -1019,7 +1019,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8532703", waterTempId: "8532703",
+    id: "8532703", waterTempId: "8531680",
     name: "Forge Pond", slug: "forge-pond",
     state: "new-jersey", city: "Forge Pond, NJ", region: "Jersey Shore North",
     lat: 40.065, lon: -74.135, latDisplay: "40.06°N", lonDisplay: "74.14°W",
@@ -1041,7 +1041,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8532715", waterTempId: "8532715",
+    id: "8532715", waterTempId: "8531680",
     name: "Beaverdam Creek entrance", slug: "beaverdam-creek-entrance",
     state: "new-jersey", city: "Beaverdam Creek entrance, NJ", region: "Jersey Shore North",
     lat: 40.0617, lon: -74.0617, latDisplay: "40.06°N", lonDisplay: "74.06°W",
@@ -1063,7 +1063,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8532716", waterTempId: "8532716",
+    id: "8532716", waterTempId: "8531680",
     name: "Beaverdam Creek, inside", slug: "beaverdam-creek-inside",
     state: "new-jersey", city: "Beaverdam Creek, inside, NJ", region: "Jersey Shore North",
     lat: 40.0617, lon: -74.0733, latDisplay: "40.06°N", lonDisplay: "74.07°W",
@@ -1085,7 +1085,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8532721", waterTempId: "8532721",
+    id: "8532721", waterTempId: "8531680",
     name: "Tall Pines Camp", slug: "tall-pines-camp",
     state: "new-jersey", city: "Tall Pines Camp, NJ", region: "Jersey Shore North",
     lat: 40.0583, lon: -74.1167, latDisplay: "40.06°N", lonDisplay: "74.12°W",
@@ -1107,7 +1107,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8532786", waterTempId: "8532786",
+    id: "8532786", waterTempId: "8531680",
     name: "Mantoloking", slug: "mantoloking",
     state: "new-jersey", city: "Mantoloking, NJ", region: "Jersey Shore North",
     lat: 40.0367, lon: -74.0533, latDisplay: "40.04°N", lonDisplay: "74.05°W",
@@ -1129,7 +1129,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8532835", waterTempId: "8532835",
+    id: "8532835", waterTempId: "8531680",
     name: "Kettle Creek, Green Island", slug: "kettle-creek-green-island",
     state: "new-jersey", city: "Kettle Creek, Green Island, NJ", region: "Jersey Shore North",
     lat: 40.0133, lon: -74.1133, latDisplay: "40.01°N", lonDisplay: "74.11°W",
@@ -1151,7 +1151,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8532885", waterTempId: "8532885",
+    id: "8532885", waterTempId: "8531680",
     name: "Ocean Beach", slug: "ocean-beach",
     state: "new-jersey", city: "Ocean Beach, NJ", region: "Jersey Shore North",
     lat: 39.9883, lon: -74.0683, latDisplay: "39.99°N", lonDisplay: "74.07°W",
@@ -1173,7 +1173,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8532921", waterTempId: "8532921",
+    id: "8532921", waterTempId: "8531680",
     name: "Silver Bay, Silver Bay Marina", slug: "silver-bay-silver-bay-marina",
     state: "new-jersey", city: "Silver Bay, Silver Bay Marina, NJ", region: "Jersey Shore North",
     lat: 39.9967, lon: -74.1483, latDisplay: "40.00°N", lonDisplay: "74.15°W",
@@ -1195,7 +1195,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533005", waterTempId: "8533005",
+    id: "8533005", waterTempId: "8531680",
     name: "Goose Creek entrance", slug: "goose-creek-entrance",
     state: "new-jersey", city: "Goose Creek entrance, NJ", region: "Jersey Shore North",
     lat: 39.9633, lon: -74.115, latDisplay: "39.96°N", lonDisplay: "74.11°W",
@@ -1217,7 +1217,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533051", waterTempId: "8533051",
+    id: "8533051", waterTempId: "8548989",
     name: "Toms River (town), Toms River", slug: "toms-river-town-toms-river",
     state: "new-jersey", city: "Toms River (town), Toms River, NJ", region: "Jersey Shore North",
     lat: 39.95000076293945, lon: -74.19830322265625, latDisplay: "39.95°N", lonDisplay: "74.20°W",
@@ -1239,7 +1239,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533055", waterTempId: "8533055",
+    id: "8533055", waterTempId: "8548989",
     name: "Coates Point", slug: "coates-point",
     state: "new-jersey", city: "Coates Point, NJ", region: "Jersey Shore North",
     lat: 39.9483, lon: -74.115, latDisplay: "39.95°N", lonDisplay: "74.11°W",
@@ -1261,7 +1261,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533071", waterTempId: "8533071",
+    id: "8533071", waterTempId: "8531680",
     name: "Seaside Heights, ocean", slug: "seaside-heights-ocean",
     state: "new-jersey", city: "Seaside Heights, ocean, NJ", region: "Jersey Shore North",
     lat: 39.9433, lon: -74.035, latDisplay: "39.94°N", lonDisplay: "74.03°W",
@@ -1283,7 +1283,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533135", waterTempId: "8533135",
+    id: "8533135", waterTempId: "8531680",
     name: "Seaside Park", slug: "seaside-park",
     state: "new-jersey", city: "Seaside Park, NJ", region: "Jersey Shore North",
     lat: 39.9217, lon: -74.0833, latDisplay: "39.92°N", lonDisplay: "74.08°W",
@@ -1305,7 +1305,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533141", waterTempId: "8533141",
+    id: "8533141", waterTempId: "8548989",
     name: "Barnegat Pier", slug: "barnegat-pier",
     state: "new-jersey", city: "Barnegat Pier, NJ", region: "Jersey Shore North",
     lat: 39.9183, lon: -74.11, latDisplay: "39.92°N", lonDisplay: "74.11°W",
@@ -1327,7 +1327,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533185", waterTempId: "8533185",
+    id: "8533185", waterTempId: "8548989",
     name: "Sloop Creek", slug: "sloop-creek",
     state: "new-jersey", city: "Sloop Creek, NJ", region: "Jersey Shore North",
     lat: 39.905, lon: -74.1333, latDisplay: "39.91°N", lonDisplay: "74.13°W",
@@ -1349,7 +1349,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533295", waterTempId: "8533295",
+    id: "8533295", waterTempId: "8548989",
     name: "Cedar Creek", slug: "cedar-creek",
     state: "new-jersey", city: "Cedar Creek, NJ", region: "Jersey Shore North",
     lat: 39.87, lon: -74.155, latDisplay: "39.87°N", lonDisplay: "74.16°W",
@@ -1371,7 +1371,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533345", waterTempId: "8533345",
+    id: "8533345", waterTempId: "8534720",
     name: "Island Beach", slug: "island-beach",
     state: "new-jersey", city: "Island Beach, NJ", region: "Jersey Shore North",
     lat: 39.8517, lon: -74.0883, latDisplay: "39.85°N", lonDisplay: "74.09°W",
@@ -1393,7 +1393,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533365", waterTempId: "8533365",
+    id: "8533365", waterTempId: "8534720",
     name: "Stouts Creek", slug: "stouts-creek",
     state: "new-jersey", city: "Stouts Creek, NJ", region: "Jersey Shore North",
     lat: 39.845001220703125, lon: -74.15170288085938, latDisplay: "39.85°N", lonDisplay: "74.15°W",
@@ -1415,7 +1415,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533391", waterTempId: "8533391",
+    id: "8533391", waterTempId: "8534720",
     name: "Forked River", slug: "forked-river",
     state: "new-jersey", city: "Forked River, NJ", region: "Jersey Shore North",
     lat: 39.825, lon: -74.1733, latDisplay: "39.83°N", lonDisplay: "74.17°W",
@@ -1437,7 +1437,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533465", waterTempId: "8533465",
+    id: "8533465", waterTempId: "8534720",
     name: "Oyster Creek", slug: "oyster-creek",
     state: "new-jersey", city: "Oyster Creek, NJ", region: "Jersey Shore North",
     lat: 39.8083, lon: -74.1883, latDisplay: "39.81°N", lonDisplay: "74.19°W",
@@ -1459,7 +1459,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533535", waterTempId: "8533535",
+    id: "8533535", waterTempId: "8534720",
     name: "Island Beach, Sedge Islands", slug: "island-beach-sedge-islands",
     state: "new-jersey", city: "Island Beach, Sedge Islands, NJ", region: "Jersey Shore North",
     lat: 39.7883, lon: -74.0983, latDisplay: "39.79°N", lonDisplay: "74.10°W",
@@ -1481,7 +1481,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533541", waterTempId: "8533541",
+    id: "8533541", waterTempId: "8534720",
     name: "Waretown", slug: "waretown",
     state: "new-jersey", city: "Waretown, NJ", region: "Jersey Shore North",
     lat: 39.7917, lon: -74.1817, latDisplay: "39.79°N", lonDisplay: "74.18°W",
@@ -1503,7 +1503,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533615", waterTempId: "8533615",
+    id: "8533615", waterTempId: "8534720",
     name: "Barnegat Inlet, USCG Station", slug: "barnegat-inlet-uscg-station",
     state: "new-jersey", city: "Barnegat Inlet, USCG Station, NJ", region: "Jersey Shore North",
     lat: 39.7617, lon: -74.1117, latDisplay: "39.76°N", lonDisplay: "74.11°W",
@@ -1525,7 +1525,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533631", waterTempId: "8533631",
+    id: "8533631", waterTempId: "8534720",
     name: "High Bar", slug: "high-bar",
     state: "new-jersey", city: "High Bar, NJ", region: "Jersey Shore North",
     lat: 39.7567, lon: -74.1283, latDisplay: "39.76°N", lonDisplay: "74.13°W",
@@ -1547,7 +1547,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533665", waterTempId: "8533665",
+    id: "8533665", waterTempId: "8534720",
     name: "Double Creek", slug: "double-creek",
     state: "new-jersey", city: "Double Creek, NJ", region: "Jersey Shore North",
     lat: 39.745, lon: -74.2017, latDisplay: "39.74°N", lonDisplay: "74.20°W",
@@ -1569,7 +1569,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533738", waterTempId: "8533738",
+    id: "8533738", waterTempId: "8534720",
     name: "Loveladies Harbor", slug: "loveladies-harbor",
     state: "new-jersey", city: "Loveladies Harbor, NJ", region: "Jersey Shore North",
     lat: 39.725, lon: -74.1367, latDisplay: "39.73°N", lonDisplay: "74.14°W",
@@ -1591,7 +1591,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533780", waterTempId: "8533780",
+    id: "8533780", waterTempId: "8534720",
     name: "Flat Creek", slug: "flat-creek",
     state: "new-jersey", city: "Flat Creek, NJ", region: "Jersey Shore North",
     lat: 39.7067, lon: -74.1917, latDisplay: "39.71°N", lonDisplay: "74.19°W",
@@ -1613,7 +1613,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533862", waterTempId: "8533862",
+    id: "8533862", waterTempId: "8534720",
     name: "North Beach", slug: "north-beach",
     state: "new-jersey", city: "North Beach, NJ", region: "Jersey Shore South",
     lat: 39.675, lon: -74.16, latDisplay: "39.67°N", lonDisplay: "74.16°W",
@@ -1635,7 +1635,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533905", waterTempId: "8533905",
+    id: "8533905", waterTempId: "8534720",
     name: "Mill Creek, 1 n.mi. above entrance", slug: "mill-creek-1-nmi-above-entrance",
     state: "new-jersey", city: "Mill Creek, 1 n.mi. above entrance, NJ", region: "Jersey Shore South",
     lat: 39.665, lon: -74.2317, latDisplay: "39.66°N", lonDisplay: "74.23°W",
@@ -1657,7 +1657,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533909", waterTempId: "8533909",
+    id: "8533909", waterTempId: "8534720",
     name: "Manahawkin Creek", slug: "manahawkin-creek",
     state: "new-jersey", city: "Manahawkin Creek, NJ", region: "Jersey Shore South",
     lat: 39.6667, lon: -74.215, latDisplay: "39.67°N", lonDisplay: "74.22°W",
@@ -1679,7 +1679,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533935", waterTempId: "8533935",
+    id: "8533935", waterTempId: "8534720",
     name: "Manahawkin Drawbridge", slug: "manahawkin-drawbridge",
     state: "new-jersey", city: "Manahawkin Drawbridge, NJ", region: "Jersey Shore South",
     lat: 39.6533, lon: -74.185, latDisplay: "39.65°N", lonDisplay: "74.19°W",
@@ -1701,7 +1701,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533941", waterTempId: "8533941",
+    id: "8533941", waterTempId: "8534720",
     name: "Cedar Run", slug: "cedar-run",
     state: "new-jersey", city: "Cedar Run, NJ", region: "Jersey Shore South",
     lat: 39.6533, lon: -74.2567, latDisplay: "39.65°N", lonDisplay: "74.26°W",
@@ -1723,7 +1723,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533982", waterTempId: "8533982",
+    id: "8533982", waterTempId: "8534720",
     name: "Dinner Point Creek, upper end", slug: "dinner-point-creek-upper-end",
     state: "new-jersey", city: "Dinner Point Creek, upper end, NJ", region: "Jersey Shore South",
     lat: 39.6567, lon: -74.27, latDisplay: "39.66°N", lonDisplay: "74.27°W",
@@ -1745,7 +1745,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533987", waterTempId: "8533987",
+    id: "8533987", waterTempId: "8534720",
     name: "West Creek, Westecunk Creek", slug: "west-creek-westecunk-creek",
     state: "new-jersey", city: "West Creek, Westecunk Creek, NJ", region: "Jersey Shore South",
     lat: 39.6317, lon: -74.2967, latDisplay: "39.63°N", lonDisplay: "74.30°W",
@@ -1767,7 +1767,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534002", waterTempId: "8534002",
+    id: "8534002", waterTempId: "8534720",
     name: "Sweetwater, Mullica River Marina", slug: "sweetwater-mullica-river-marina",
     state: "new-jersey", city: "Sweetwater, Mullica River Marina, NJ", region: "Jersey Shore South",
     lat: 39.625, lon: -74.6417, latDisplay: "39.63°N", lonDisplay: "74.64°W",
@@ -1789,7 +1789,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534043", waterTempId: "8534043",
+    id: "8534043", waterTempId: "8534720",
     name: "Wading River (town), Wading River", slug: "wading-river-town-wading-river",
     state: "new-jersey", city: "Wading River (town), Wading River, NJ", region: "Jersey Shore South",
     lat: 39.6183, lon: -74.4967, latDisplay: "39.62°N", lonDisplay: "74.50°W",
@@ -1811,7 +1811,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534044", waterTempId: "8534044",
+    id: "8534044", waterTempId: "8534720",
     name: "Westecunk Creek entrance", slug: "westecunk-creek-entrance",
     state: "new-jersey", city: "Westecunk Creek entrance, NJ", region: "Jersey Shore South",
     lat: 39.6133, lon: -74.2633, latDisplay: "39.61°N", lonDisplay: "74.26°W",
@@ -1833,7 +1833,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534048", waterTempId: "8534048",
+    id: "8534048", waterTempId: "8534720",
     name: "Beach Haven Crest", slug: "beach-haven-crest",
     state: "new-jersey", city: "Beach Haven Crest, NJ", region: "Jersey Shore South",
     lat: 39.6133, lon: -74.21, latDisplay: "39.61°N", lonDisplay: "74.21°W",
@@ -1855,7 +1855,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534049", waterTempId: "8534049",
+    id: "8534049", waterTempId: "8534720",
     name: "Parker Run, upper end", slug: "parker-run-upper-end",
     state: "new-jersey", city: "Parker Run, upper end, NJ", region: "Jersey Shore South",
     lat: 39.6167, lon: -74.31, latDisplay: "39.62°N", lonDisplay: "74.31°W",
@@ -1877,7 +1877,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534080", waterTempId: "8534080",
+    id: "8534080", waterTempId: "8534720",
     name: "Tuckerton, Tuckerton Creek", slug: "tuckerton-tuckerton-creek",
     state: "new-jersey", city: "Tuckerton, Tuckerton Creek, NJ", region: "Jersey Shore South",
     lat: 39.6017, lon: -74.3417, latDisplay: "39.60°N", lonDisplay: "74.34°W",
@@ -1899,7 +1899,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534104", waterTempId: "8534104",
+    id: "8534104", waterTempId: "8534720",
     name: "New Gretna, Bass River", slug: "new-gretna-bass-river",
     state: "new-jersey", city: "New Gretna, Bass River, NJ", region: "Jersey Shore South",
     lat: 39.5917, lon: -74.4417, latDisplay: "39.59°N", lonDisplay: "74.44°W",
@@ -1921,7 +1921,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534117", waterTempId: "8534117",
+    id: "8534117", waterTempId: "8534720",
     name: "Green Bank", slug: "green-bank",
     state: "new-jersey", city: "Green Bank, NJ", region: "Jersey Shore South",
     lat: 39.6117, lon: -74.59, latDisplay: "39.61°N", lonDisplay: "74.59°W",
@@ -1943,7 +1943,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534139", waterTempId: "8534139",
+    id: "8534139", waterTempId: "8534720",
     name: "Tuckerton Creek entrance", slug: "tuckerton-creek-entrance",
     state: "new-jersey", city: "Tuckerton Creek entrance, NJ", region: "Jersey Shore South",
     lat: 39.5767, lon: -74.3317, latDisplay: "39.58°N", lonDisplay: "74.33°W",
@@ -1965,7 +1965,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534208", waterTempId: "8534208",
+    id: "8534208", waterTempId: "8534720",
     name: "Beach Haven Coast Guard Station", slug: "beach-haven-coast-guard-station",
     state: "new-jersey", city: "Beach Haven Coast Guard Station, NJ", region: "Jersey Shore South",
     lat: 39.5483, lon: -74.2567, latDisplay: "39.55°N", lonDisplay: "74.26°W",
@@ -1987,7 +1987,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534212", waterTempId: "8534212",
+    id: "8534212", waterTempId: "8534720",
     name: "Chestnut Neck Boat Yard", slug: "chestnut-neck-boat-yard",
     state: "new-jersey", city: "Chestnut Neck Boat Yard, NJ", region: "Jersey Shore South",
     lat: 39.5483, lon: -74.4617, latDisplay: "39.55°N", lonDisplay: "74.46°W",
@@ -2009,7 +2009,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534244", waterTempId: "8534244",
+    id: "8534244", waterTempId: "8534720",
     name: "Graveling Point", slug: "graveling-point",
     state: "new-jersey", city: "Graveling Point, NJ", region: "Jersey Shore South",
     lat: 39.540000915527344, lon: -74.38670349121094, latDisplay: "39.54°N", lonDisplay: "74.39°W",
@@ -2031,7 +2031,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534256", waterTempId: "8534256",
+    id: "8534256", waterTempId: "8534720",
     name: "Nacote Creek, U.S. Highway 9 bridge", slug: "nacote-creek-us-highway-9-bridge",
     state: "new-jersey", city: "Nacote Creek, U.S. Highway 9 bridge, NJ", region: "Jersey Shore South",
     lat: 39.535, lon: -74.4633, latDisplay: "39.53°N", lonDisplay: "74.46°W",
@@ -2053,7 +2053,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534287", waterTempId: "8534287",
+    id: "8534287", waterTempId: "8534720",
     name: "Little Sheepshead Creek", slug: "little-sheepshead-creek",
     state: "new-jersey", city: "Little Sheepshead Creek, NJ", region: "Jersey Shore South",
     lat: 39.5217, lon: -74.32, latDisplay: "39.52°N", lonDisplay: "74.32°W",
@@ -2075,7 +2075,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534296", waterTempId: "8534296",
+    id: "8534296", waterTempId: "8534720",
     name: "Seven Island, Newmans Thorofare", slug: "seven-island-newmans-thorofare",
     state: "new-jersey", city: "Seven Island, Newmans Thorofare, NJ", region: "Jersey Shore South",
     lat: 39.5167, lon: -74.3367, latDisplay: "39.52°N", lonDisplay: "74.34°W",
@@ -2097,7 +2097,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534319", waterTempId: "8534319",
+    id: "8534319", waterTempId: "8534720",
     name: "Tuckerton, Shooting Thorofare, Little Egg Inlet", slug: "tuckerton-shooting-thorofare-little-egg-inlet",
     state: "new-jersey", city: "Tuckerton, Shooting Thorofare, Little Egg Inlet, NJ", region: "Jersey Shore South",
     lat: 39.50830078125, lon: -74.32499694824219, latDisplay: "39.51°N", lonDisplay: "74.32°W",
@@ -2119,7 +2119,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534393", waterTempId: "8534393",
+    id: "8534393", waterTempId: "8534720",
     name: "Main Marsh Thorofare", slug: "main-marsh-thorofare",
     state: "new-jersey", city: "Main Marsh Thorofare, NJ", region: "Jersey Shore South",
     lat: 39.4783, lon: -74.3833, latDisplay: "39.48°N", lonDisplay: "74.38°W",
@@ -2141,7 +2141,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534468", waterTempId: "8534468",
+    id: "8534468", waterTempId: "8534720",
     name: "Mays Landing, Great Egg Harbor River", slug: "mays-landing-great-egg-harbor-river",
     state: "new-jersey", city: "Mays Landing, Great Egg Harbor River, NJ", region: "Jersey Shore South",
     lat: 39.4483, lon: -74.7283, latDisplay: "39.45°N", lonDisplay: "74.73°W",
@@ -2163,7 +2163,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534496", waterTempId: "8534496",
+    id: "8534496", waterTempId: "8534720",
     name: "Brigantine Channel @ Hoffman Thorofare", slug: "brigantine-channel-hoffman-thorofare",
     state: "new-jersey", city: "Brigantine Channel @ Hoffman Thorofare, NJ", region: "Jersey Shore South",
     lat: 39.435, lon: -74.3633, latDisplay: "39.44°N", lonDisplay: "74.36°W",
@@ -2185,7 +2185,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534540", waterTempId: "8534540",
+    id: "8534540", waterTempId: "8534720",
     name: "Absecon, Absecon Creek, U.S. Hwy. 30 bridge", slug: "absecon-absecon-creek-us-hwy-30-bridge",
     state: "new-jersey", city: "Absecon, Absecon Creek, U.S. Hwy. 30 bridge, NJ", region: "Jersey Shore South",
     lat: 39.4233, lon: -74.5, latDisplay: "39.42°N", lonDisplay: "74.50°W",
@@ -2207,7 +2207,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534638", waterTempId: "8534638",
+    id: "8534638", waterTempId: "8534720",
     name: "Absecon Channel, State Route 87 bridge", slug: "absecon-channel-state-route-87-bridge",
     state: "new-jersey", city: "Absecon Channel, State Route 87 bridge, NJ", region: "Jersey Shore South",
     lat: 39.385, lon: -74.425, latDisplay: "39.38°N", lonDisplay: "74.42°W",
@@ -2229,7 +2229,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534657", waterTempId: "8534657",
+    id: "8534657", waterTempId: "8534720",
     name: "Pleasantville, Lakes Bay, Great Egg Harbor Inlet", slug: "pleasantville-lakes-bay-great-egg-harbor-inlet",
     state: "new-jersey", city: "Pleasantville, Lakes Bay, Great Egg Harbor Inlet, NJ", region: "Jersey Shore South",
     lat: 39.3817, lon: -74.5183, latDisplay: "39.38°N", lonDisplay: "74.52°W",
@@ -2251,7 +2251,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534691", waterTempId: "8534691",
+    id: "8534691", waterTempId: "8534720",
     name: "River Bend Marina, Great Egg Harbor River", slug: "river-bend-marina-great-egg-harbor-river",
     state: "new-jersey", city: "River Bend Marina, Great Egg Harbor River, NJ", region: "Jersey Shore South",
     lat: 39.3683, lon: -74.7167, latDisplay: "39.37°N", lonDisplay: "74.72°W",
@@ -2295,7 +2295,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534739", waterTempId: "8534739",
+    id: "8534739", waterTempId: "8534720",
     name: "Dock Thorofare, Risley Channel", slug: "dock-thorofare-risley-channel",
     state: "new-jersey", city: "Dock Thorofare, Risley Channel, NJ", region: "Jersey Shore South",
     lat: 39.3517, lon: -74.54, latDisplay: "39.35°N", lonDisplay: "74.54°W",
@@ -2317,7 +2317,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534770", waterTempId: "8534770",
+    id: "8534770", waterTempId: "8534720",
     name: "Ventnor City, ocean pier", slug: "ventnor-city-ocean-pier",
     state: "new-jersey", city: "Ventnor City, ocean pier, NJ", region: "Jersey Shore South",
     lat: 39.335, lon: -74.4767, latDisplay: "39.34°N", lonDisplay: "74.48°W",
@@ -2339,7 +2339,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534778", waterTempId: "8534778",
+    id: "8534778", waterTempId: "8534720",
     name: "Steelmanville, Patcong Ck., 2.5 nm above ent.", slug: "steelmanville-patcong-ck-25-nm-above-ent",
     state: "new-jersey", city: "Steelmanville, Patcong Ck., 2.5 nm above ent., NJ", region: "Jersey Shore South",
     lat: 39.334999084472656, lon: -74.5967025756836, latDisplay: "39.33°N", lonDisplay: "74.60°W",
@@ -2361,7 +2361,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534836", waterTempId: "8534836",
+    id: "8534836", waterTempId: "8534720",
     name: "Longport (inside), Great Egg Harbor Inlet", slug: "longport-inside-great-egg-harbor-inlet",
     state: "new-jersey", city: "Longport (inside), Great Egg Harbor Inlet, NJ", region: "Jersey Shore South",
     lat: 39.3083, lon: -74.5333, latDisplay: "39.31°N", lonDisplay: "74.53°W",
@@ -2383,7 +2383,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534883", waterTempId: "8534883",
+    id: "8534883", waterTempId: "8534720",
     name: "Tuckahoe, Tuckahoe River", slug: "tuckahoe-tuckahoe-river",
     state: "new-jersey", city: "Tuckahoe, Tuckahoe River, NJ", region: "Jersey Shore South",
     lat: 39.295, lon: -74.7483, latDisplay: "39.30°N", lonDisplay: "74.75°W",
@@ -2405,7 +2405,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534975", waterTempId: "8534975",
+    id: "8534975", waterTempId: "8534720",
     name: "Beesleys Point", slug: "beesleys-point",
     state: "new-jersey", city: "Beesleys Point, NJ", region: "Jersey Shore South",
     lat: 39.2883, lon: -74.6283, latDisplay: "39.29°N", lonDisplay: "74.63°W",
@@ -2427,7 +2427,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8535001", waterTempId: "8535001",
+    id: "8535001", waterTempId: "8534720",
     name: "Cedar Swamp Creek, Tuckahoe River", slug: "cedar-swamp-creek-tuckahoe-river",
     state: "new-jersey", city: "Cedar Swamp Creek, Tuckahoe River, NJ", region: "Jersey Shore South",
     lat: 39.2467, lon: -74.7183, latDisplay: "39.25°N", lonDisplay: "74.72°W",
@@ -2449,7 +2449,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8535055", waterTempId: "8535055",
+    id: "8535055", waterTempId: "8536110",
     name: "Bivalve, Maurice River", slug: "bivalve-maurice-river",
     state: "new-jersey", city: "Bivalve, Maurice River, NJ", region: "Jersey Shore South",
     lat: 39.23249816894531, lon: -75.03279876708984, latDisplay: "39.23°N", lonDisplay: "75.03°W",
@@ -2471,7 +2471,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8535101", waterTempId: "8535101",
+    id: "8535101", waterTempId: "8534720",
     name: "Middle Thorofare, Ocean Drive bridge", slug: "middle-thorofare-ocean-drive-bridge",
     state: "new-jersey", city: "Middle Thorofare, Ocean Drive bridge, NJ", region: "Jersey Shore South",
     lat: 39.215, lon: -74.6483, latDisplay: "39.22°N", lonDisplay: "74.65°W",
@@ -2493,7 +2493,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8535163", waterTempId: "8535163",
+    id: "8535163", waterTempId: "8534720",
     name: "Strathmere, Strathmere Bay", slug: "strathmere-strathmere-bay",
     state: "new-jersey", city: "Strathmere, Strathmere Bay, NJ", region: "Delaware Bay NJ",
     lat: 39.2, lon: -74.6567, latDisplay: "39.20°N", lonDisplay: "74.66°W",
@@ -2515,7 +2515,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8535221", waterTempId: "8535221",
+    id: "8535221", waterTempId: "8536110",
     name: "Ludlam Bay, west side", slug: "ludlam-bay-west-side",
     state: "new-jersey", city: "Ludlam Bay, west side, NJ", region: "Delaware Bay NJ",
     lat: 39.1767, lon: -74.71, latDisplay: "39.18°N", lonDisplay: "74.71°W",
@@ -2537,7 +2537,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8535309", waterTempId: "8535309",
+    id: "8535309", waterTempId: "8536110",
     name: "Townsend Sound", slug: "townsend-sound",
     state: "new-jersey", city: "Townsend Sound, NJ", region: "Delaware Bay NJ",
     lat: 39.1467, lon: -74.75, latDisplay: "39.15°N", lonDisplay: "74.75°W",
@@ -2559,7 +2559,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8535357", waterTempId: "8535357",
+    id: "8535357", waterTempId: "8536110",
     name: "Stites Sound", slug: "stites-sound",
     state: "new-jersey", city: "Stites Sound, NJ", region: "Delaware Bay NJ",
     lat: 39.12, lon: -74.755, latDisplay: "39.12°N", lonDisplay: "74.75°W",
@@ -2581,7 +2581,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8535375", waterTempId: "8535375",
+    id: "8535375", waterTempId: "8536110",
     name: "Ocean Drive bridge", slug: "ocean-drive-bridge",
     state: "new-jersey", city: "Ocean Drive bridge, NJ", region: "Delaware Bay NJ",
     lat: 39.1217, lon: -74.7167, latDisplay: "39.12°N", lonDisplay: "74.72°W",
@@ -2603,7 +2603,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8535419", waterTempId: "8535419",
+    id: "8535419", waterTempId: "8536110",
     name: "Ingram Thorofare", slug: "ingram-thorofare",
     state: "new-jersey", city: "Ingram Thorofare, NJ", region: "Delaware Bay NJ",
     lat: 39.11, lon: -74.7383, latDisplay: "39.11°N", lonDisplay: "74.74°W",
@@ -2625,7 +2625,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8535451", waterTempId: "8535451",
+    id: "8535451", waterTempId: "8536110",
     name: "Long Reach, Ingram Thorofare", slug: "long-reach-ingram-thorofare",
     state: "new-jersey", city: "Long Reach, Ingram Thorofare, NJ", region: "Delaware Bay NJ",
     lat: 39.1017, lon: -74.755, latDisplay: "39.10°N", lonDisplay: "74.75°W",
@@ -2647,7 +2647,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8535581", waterTempId: "8535581",
+    id: "8535581", waterTempId: "8536110",
     name: "Stone Harbor, Great Channel", slug: "stone-harbor-great-channel",
     state: "new-jersey", city: "Stone Harbor, Great Channel, NJ", region: "Delaware Bay NJ",
     lat: 39.05670166015625, lon: -74.76499938964844, latDisplay: "39.06°N", lonDisplay: "74.76°W",
@@ -2669,7 +2669,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8535661", waterTempId: "8535661",
+    id: "8535661", waterTempId: "8536110",
     name: "Nummy Island, Grassy Sound Channel", slug: "nummy-island-grassy-sound-channel",
     state: "new-jersey", city: "Nummy Island, Grassy Sound Channel, NJ", region: "Delaware Bay NJ",
     lat: 39.0283, lon: -74.8017, latDisplay: "39.03°N", lonDisplay: "74.80°W",
@@ -2691,7 +2691,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8535695", waterTempId: "8535695",
+    id: "8535695", waterTempId: "8536110",
     name: "Old Turtle Thorofare, RR. bridge", slug: "old-turtle-thorofare-rr-bridge",
     state: "new-jersey", city: "Old Turtle Thorofare, RR. bridge, NJ", region: "Delaware Bay NJ",
     lat: 39.0183, lon: -74.8417, latDisplay: "39.02°N", lonDisplay: "74.84°W",
@@ -2713,7 +2713,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8535726", waterTempId: "8535726",
+    id: "8535726", waterTempId: "8536110",
     name: "West Wildwood, Grassy Sound", slug: "west-wildwood-grassy-sound",
     state: "new-jersey", city: "West Wildwood, Grassy Sound, NJ", region: "Delaware Bay NJ",
     lat: 39.005, lon: -74.8267, latDisplay: "39.01°N", lonDisplay: "74.83°W",
@@ -2735,7 +2735,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8535805", waterTempId: "8535805",
+    id: "8535805", waterTempId: "8536110",
     name: "Swain Channel, Taylor Sound", slug: "swain-channel-taylor-sound",
     state: "new-jersey", city: "Swain Channel, Taylor Sound, NJ", region: "Delaware Bay NJ",
     lat: 38.98, lon: -74.8633, latDisplay: "38.98°N", lonDisplay: "74.86°W",
@@ -2757,7 +2757,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8535835", waterTempId: "8535835",
+    id: "8535835", waterTempId: "8536110",
     name: "Wildwood Crest, ocean pier", slug: "wildwood-crest-ocean-pier",
     state: "new-jersey", city: "Wildwood Crest, ocean pier, NJ", region: "Delaware Bay NJ",
     lat: 38.975, lon: -74.8233, latDisplay: "38.98°N", lonDisplay: "74.82°W",
@@ -2779,7 +2779,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8535838", waterTempId: "8535838",
+    id: "8535838", waterTempId: "8536110",
     name: "Wildwood Crest, Sunset Lake", slug: "wildwood-crest-sunset-lake",
     state: "new-jersey", city: "Wildwood Crest, Sunset Lake, NJ", region: "Delaware Bay NJ",
     lat: 38.9783, lon: -74.8367, latDisplay: "38.98°N", lonDisplay: "74.84°W",
@@ -2801,7 +2801,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8535901", waterTempId: "8535901",
+    id: "8535901", waterTempId: "8536110",
     name: "Cape May Harbor", slug: "cape-may-harbor",
     state: "new-jersey", city: "Cape May Harbor, NJ", region: "Delaware Bay NJ",
     lat: 38.9483, lon: -74.8917, latDisplay: "38.95°N", lonDisplay: "74.89°W",
@@ -2823,7 +2823,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8535902", waterTempId: "8535902",
+    id: "8535902", waterTempId: "8536110",
     name: "Cape Island Creek, Cape May", slug: "cape-island-creek-cape-may",
     state: "new-jersey", city: "Cape Island Creek, Cape May, NJ", region: "Delaware Bay NJ",
     lat: 38.9467, lon: -74.9133, latDisplay: "38.95°N", lonDisplay: "74.91°W",
@@ -2845,7 +2845,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8535962", waterTempId: "8535962",
+    id: "8535962", waterTempId: "8536110",
     name: "Cape May, Atlantic Ocean", slug: "cape-may-atlantic-ocean",
     state: "new-jersey", city: "Cape May, Atlantic Ocean, NJ", region: "Delaware Bay NJ",
     lat: 38.93, lon: -74.935, latDisplay: "38.93°N", lonDisplay: "74.94°W",
@@ -2867,7 +2867,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8536021", waterTempId: "8536021",
+    id: "8536021", waterTempId: "8536110",
     name: "Cape May Point, Sunset Beach", slug: "cape-may-point-sunset-beach",
     state: "new-jersey", city: "Cape May Point, Sunset Beach, NJ", region: "Delaware Bay NJ",
     lat: 38.9467, lon: -74.9717, latDisplay: "38.95°N", lonDisplay: "74.97°W",
@@ -2911,7 +2911,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8536271", waterTempId: "8536271",
+    id: "8536271", waterTempId: "8536110",
     name: "North Highlands Beach", slug: "north-highlands-beach",
     state: "new-jersey", city: "North Highlands Beach, NJ", region: "Delaware Bay NJ",
     lat: 39.0183, lon: -74.9533, latDisplay: "39.02°N", lonDisplay: "74.95°W",
@@ -2933,7 +2933,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8536449", waterTempId: "8536449",
+    id: "8536449", waterTempId: "8536110",
     name: "Dias Creek, Route 47 bridge", slug: "dias-creek-route-47-bridge",
     state: "new-jersey", city: "Dias Creek, Route 47 bridge, NJ", region: "Delaware Bay NJ",
     lat: 39.0833, lon: -74.8867, latDisplay: "39.08°N", lonDisplay: "74.89°W",
@@ -2955,7 +2955,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8536551", waterTempId: "8536551",
+    id: "8536551", waterTempId: "8536110",
     name: "Bidwell Creek, Route 47 bridge", slug: "bidwell-creek-route-47-bridge",
     state: "new-jersey", city: "Bidwell Creek, Route 47 bridge, NJ", region: "Delaware Bay NJ",
     lat: 39.1183, lon: -74.8683, latDisplay: "39.12°N", lonDisplay: "74.87°W",
@@ -2977,7 +2977,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8536581", waterTempId: "8536581",
+    id: "8536581", waterTempId: "8536110",
     name: "Bidwell Creek entrance", slug: "bidwell-creek-entrance",
     state: "new-jersey", city: "Bidwell Creek entrance, NJ", region: "Delaware Bay NJ",
     lat: 39.1283, lon: -74.8917, latDisplay: "39.13°N", lonDisplay: "74.89°W",
@@ -2999,7 +2999,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8536687", waterTempId: "8536687",
+    id: "8536687", waterTempId: "8536110",
     name: "Sluice Creek, Route 47 bridge, Dennis Creek", slug: "sluice-creek-route-47-bridge-dennis-creek",
     state: "new-jersey", city: "Sluice Creek, Route 47 bridge, Dennis Creek, NJ", region: "Delaware Bay NJ",
     lat: 39.1617, lon: -74.8317, latDisplay: "39.16°N", lonDisplay: "74.83°W",
@@ -3021,7 +3021,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8536736", waterTempId: "8536736",
+    id: "8536736", waterTempId: "8536110",
     name: "Dennis Creek, 2.5 n.mi. above entrance", slug: "dennis-creek-25-nmi-above-entrance",
     state: "new-jersey", city: "Dennis Creek, 2.5 n.mi. above entrance, NJ", region: "Delaware Bay NJ",
     lat: 39.1783, lon: -74.8517, latDisplay: "39.18°N", lonDisplay: "74.85°W",
@@ -3043,7 +3043,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8536752", waterTempId: "8536752",
+    id: "8536752", waterTempId: "8536110",
     name: "Dennis Creek, Route 47 bridge", slug: "dennis-creek-route-47-bridge",
     state: "new-jersey", city: "Dennis Creek, Route 47 bridge, NJ", region: "Delaware Bay NJ",
     lat: 39.1833, lon: -74.8217, latDisplay: "39.18°N", lonDisplay: "74.82°W",
@@ -3065,7 +3065,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8536764", waterTempId: "8536764",
+    id: "8536764", waterTempId: "8536110",
     name: "West Creek, 0.7 n.mi. above entrance", slug: "west-creek-07-nmi-above-entrance",
     state: "new-jersey", city: "West Creek, 0.7 n.mi. above entrance, NJ", region: "Delaware Bay NJ",
     lat: 39.1883, lon: -74.915, latDisplay: "39.19°N", lonDisplay: "74.92°W",
@@ -3087,7 +3087,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8536780", waterTempId: "8536780",
+    id: "8536780", waterTempId: "8536110",
     name: "East Point, Maurice River Cove", slug: "east-point-maurice-river-cove",
     state: "new-jersey", city: "East Point, Maurice River Cove, NJ", region: "Delaware Bay NJ",
     lat: 39.2, lon: -75.02, latDisplay: "39.20°N", lonDisplay: "75.02°W",
@@ -3109,7 +3109,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8536801", waterTempId: "8536801",
+    id: "8536801", waterTempId: "8536110",
     name: "Riggins Ditch, 0.5 n.mi. above entrance", slug: "riggins-ditch-05-nmi-above-entrance",
     state: "new-jersey", city: "Riggins Ditch, 0.5 n.mi. above entrance, NJ", region: "Delaware Bay NJ",
     lat: 39.2, lon: -74.97, latDisplay: "39.20°N", lonDisplay: "74.97°W",
@@ -3131,7 +3131,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8536823", waterTempId: "8536823",
+    id: "8536823", waterTempId: "8536110",
     name: "East Creek, Route 47 bridge", slug: "east-creek-route-47-bridge",
     state: "new-jersey", city: "East Creek, Route 47 bridge, NJ", region: "Jersey Shore South",
     lat: 39.2083, lon: -74.9017, latDisplay: "39.21°N", lonDisplay: "74.90°W",
@@ -3153,7 +3153,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8536848", waterTempId: "8536848",
+    id: "8536848", waterTempId: "8537121",
     name: "Fishing Creek entrance", slug: "fishing-creek-entrance",
     state: "new-jersey", city: "Fishing Creek entrance, NJ", region: "Jersey Shore South",
     lat: 39.2167, lon: -75.1583, latDisplay: "39.22°N", lonDisplay: "75.16°W",
@@ -3175,7 +3175,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8536849", waterTempId: "8536849",
+    id: "8536849", waterTempId: "8537121",
     name: "Dividing Creek entrance", slug: "dividing-creek-entrance",
     state: "new-jersey", city: "Dividing Creek entrance, NJ", region: "Jersey Shore South",
     lat: 39.2167, lon: -75.1033, latDisplay: "39.22°N", lonDisplay: "75.10°W",
@@ -3197,7 +3197,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8536851", waterTempId: "8536851",
+    id: "8536851", waterTempId: "8536110",
     name: "West Creek, Route 47 bridge", slug: "west-creek-route-47-bridge",
     state: "new-jersey", city: "West Creek, Route 47 bridge, NJ", region: "Jersey Shore South",
     lat: 39.2167, lon: -74.925, latDisplay: "39.22°N", lonDisplay: "74.92°W",
@@ -3219,7 +3219,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8536855", waterTempId: "8536855",
+    id: "8536855", waterTempId: "8536110",
     name: "Riggins Ditch, Heislerville", slug: "riggins-ditch-heislerville",
     state: "new-jersey", city: "Riggins Ditch, Heislerville, NJ", region: "Jersey Shore South",
     lat: 39.2183, lon: -74.98, latDisplay: "39.22°N", lonDisplay: "74.98°W",
@@ -3241,7 +3241,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8536931", waterTempId: "8536931",
+    id: "8536931", waterTempId: "8537121",
     name: "Fortescue Creek", slug: "fortescue-creek",
     state: "new-jersey", city: "Fortescue Creek, NJ", region: "Jersey Shore South",
     lat: 39.2383, lon: -75.175, latDisplay: "39.24°N", lonDisplay: "75.17°W",
@@ -3263,7 +3263,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8536935", waterTempId: "8536935",
+    id: "8536935", waterTempId: "8537121",
     name: "Weir Creek bridge, Dividing Creek", slug: "weir-creek-bridge-dividing-creek",
     state: "new-jersey", city: "Weir Creek bridge, Dividing Creek, NJ", region: "Jersey Shore South",
     lat: 39.25, lon: -75.1283, latDisplay: "39.25°N", lonDisplay: "75.13°W",
@@ -3285,7 +3285,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537026", waterTempId: "8537026",
+    id: "8537026", waterTempId: "8537121",
     name: "Hollywood Beach, The Glades", slug: "hollywood-beach-the-glades",
     state: "new-jersey", city: "Hollywood Beach, The Glades, NJ", region: "Jersey Shore South",
     lat: 39.275, lon: -75.1417, latDisplay: "39.27°N", lonDisplay: "75.14°W",
@@ -3307,7 +3307,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537052", waterTempId: "8537052",
+    id: "8537052", waterTempId: "8537121",
     name: "Money Island, Nantuxent Creek entrance", slug: "money-island-nantuxent-creek-entrance",
     state: "new-jersey", city: "Money Island, Nantuxent Creek entrance, NJ", region: "Jersey Shore South",
     lat: 39.285, lon: -75.2383, latDisplay: "39.28°N", lonDisplay: "75.24°W",
@@ -3329,7 +3329,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537059", waterTempId: "8537059",
+    id: "8537059", waterTempId: "8537121",
     name: "Mauricetown", slug: "mauricetown",
     state: "new-jersey", city: "Mauricetown, NJ", region: "Jersey Shore South",
     lat: 39.285, lon: -74.9917, latDisplay: "39.28°N", lonDisplay: "74.99°W",
@@ -3351,7 +3351,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537079", waterTempId: "8537079",
+    id: "8537079", waterTempId: "8537121",
     name: "Newport Landing, Nantuxent Creek", slug: "newport-landing-nantuxent-creek",
     state: "new-jersey", city: "Newport Landing, Nantuxent Creek, NJ", region: "Jersey Shore South",
     lat: 39.2917, lon: -75.1983, latDisplay: "39.29°N", lonDisplay: "75.20°W",
@@ -3373,7 +3373,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537101", waterTempId: "8537101",
+    id: "8537101", waterTempId: "8537121",
     name: "Cedar Creek entrance, Nantuxent Cove", slug: "cedar-creek-entrance-nantuxent-cove",
     state: "new-jersey", city: "Cedar Creek entrance, Nantuxent Cove, NJ", region: "Jersey Shore South",
     lat: 39.2983, lon: -75.2467, latDisplay: "39.30°N", lonDisplay: "75.25°W",
@@ -3395,7 +3395,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537116", waterTempId: "8537116",
+    id: "8537116", waterTempId: "8537121",
     name: "Back Creek entrance, Nantuxent Cove", slug: "back-creek-entrance-nantuxent-cove",
     state: "new-jersey", city: "Back Creek entrance, Nantuxent Cove, NJ", region: "Jersey Shore South",
     lat: 39.305, lon: -75.2783, latDisplay: "39.30°N", lonDisplay: "75.28°W",
@@ -3439,7 +3439,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537147", waterTempId: "8537147",
+    id: "8537147", waterTempId: "8537121",
     name: "Port Elizabeth, Manumuskin River", slug: "port-elizabeth-manumuskin-river",
     state: "new-jersey", city: "Port Elizabeth, Manumuskin River, NJ", region: "Jersey Shore South",
     lat: 39.3133, lon: -74.985, latDisplay: "39.31°N", lonDisplay: "74.98°W",
@@ -3461,7 +3461,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537242", waterTempId: "8537242",
+    id: "8537242", waterTempId: "8537121",
     name: "Menantico Creek entrance", slug: "menantico-creek-entrance",
     state: "new-jersey", city: "Menantico Creek entrance, NJ", region: "Jersey Shore South",
     lat: 39.3433, lon: -75.0083, latDisplay: "39.34°N", lonDisplay: "75.01°W",
@@ -3483,7 +3483,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537353", waterTempId: "8537353",
+    id: "8537353", waterTempId: "8537121",
     name: "Tindalls Wharf, Cohansey River", slug: "tindalls-wharf-cohansey-river",
     state: "new-jersey", city: "Tindalls Wharf, Cohansey River, NJ", region: "Jersey Shore South",
     lat: 39.3783, lon: -75.235, latDisplay: "39.38°N", lonDisplay: "75.23°W",
@@ -3505,7 +3505,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537359", waterTempId: "8537359",
+    id: "8537359", waterTempId: "8537121",
     name: "Millville", slug: "millville",
     state: "new-jersey", city: "Millville, NJ", region: "Jersey Shore South",
     lat: 39.3917, lon: -75.0417, latDisplay: "39.39°N", lonDisplay: "75.04°W",
@@ -3527,7 +3527,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537374", waterTempId: "8537374",
+    id: "8537374", waterTempId: "8537121",
     name: "Greenwich Pier, Cohansey River", slug: "greenwich-pier-cohansey-river",
     state: "new-jersey", city: "Greenwich Pier, Cohansey River, NJ", region: "Jersey Shore South",
     lat: 39.3833, lon: -75.35, latDisplay: "39.38°N", lonDisplay: "75.35°W",
@@ -3549,7 +3549,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537416", waterTempId: "8537416",
+    id: "8537416", waterTempId: "8537121",
     name: "Stathems Neck, Stow Creek, N.J.", slug: "stathems-neck-stow-creek-nj",
     state: "new-jersey", city: "Stathems Neck, Stow Creek, N.J., NJ", region: "Jersey Shore South",
     lat: 39.4067, lon: -75.405, latDisplay: "39.41°N", lonDisplay: "75.41°W",
@@ -3571,7 +3571,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537488", waterTempId: "8537488",
+    id: "8537488", waterTempId: "8537121",
     name: "Pine Island, Malapartis Creek, N.J.", slug: "pine-island-malapartis-creek-nj",
     state: "new-jersey", city: "Pine Island, Malapartis Creek, N.J., NJ", region: "Jersey Shore South",
     lat: 39.4217, lon: -75.4283, latDisplay: "39.42°N", lonDisplay: "75.43°W",
@@ -3593,7 +3593,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537489", waterTempId: "8537489",
+    id: "8537489", waterTempId: "8537121",
     name: "Raccoon Ditch, Newport Meadows, Stow Creek, N.J.", slug: "raccoon-ditch-newport-meadows-stow-creek-nj",
     state: "new-jersey", city: "Raccoon Ditch, Newport Meadows, Stow Creek, N.J., NJ", region: "Jersey Shore South",
     lat: 39.4217, lon: -75.3817, latDisplay: "39.42°N", lonDisplay: "75.38°W",
@@ -3615,7 +3615,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537535", waterTempId: "8537535",
+    id: "8537535", waterTempId: "8537121",
     name: "1 n.mi. above entrance, N.J.", slug: "1-nmi-above-entrance-nj",
     state: "new-jersey", city: "1 n.mi. above entrance, N.J., NJ", region: "Jersey Shore South",
     lat: 39.4317, lon: -75.4467, latDisplay: "39.43°N", lonDisplay: "75.45°W",
@@ -3637,7 +3637,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537562", waterTempId: "8537562",
+    id: "8537562", waterTempId: "8537121",
     name: "Canton, Stow Creek, N.J.", slug: "canton-stow-creek-nj",
     state: "new-jersey", city: "Canton, Stow Creek, N.J., NJ", region: "Jersey Shore South",
     lat: 39.4617, lon: -75.4033, latDisplay: "39.46°N", lonDisplay: "75.40°W",
@@ -3659,7 +3659,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537614", waterTempId: "8537614",
+    id: "8537614", waterTempId: "8551910",
     name: "Artificial Island, Salem Nuclear Plant, N.J.", slug: "artificial-island-salem-nuclear-plant-nj",
     state: "new-jersey", city: "Artificial Island, Salem Nuclear Plant, N.J., NJ", region: "Jersey Shore South",
     lat: 39.46, lon: -75.5317, latDisplay: "39.46°N", lonDisplay: "75.53°W",
@@ -3681,7 +3681,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537667", waterTempId: "8537667",
+    id: "8537667", waterTempId: "8551910",
     name: "Hope Creek, 0.6 n.mi. above entrance, N.J.", slug: "hope-creek-06-nmi-above-entrance-nj",
     state: "new-jersey", city: "Hope Creek, 0.6 n.mi. above entrance, N.J., NJ", region: "Jersey Shore South",
     lat: 39.4583, lon: -75.495, latDisplay: "39.46°N", lonDisplay: "75.50°W",
@@ -3703,7 +3703,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537731", waterTempId: "8537731",
+    id: "8537731", waterTempId: "8551910",
     name: "0.8 n.mi. above entrance", slug: "08-nmi-above-entrance",
     state: "new-jersey", city: "0.8 n.mi. above entrance, NJ", region: "Jersey Shore South",
     lat: 39.4967, lon: -75.5167, latDisplay: "39.50°N", lonDisplay: "75.52°W",
@@ -3725,7 +3725,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537753", waterTempId: "8537753",
+    id: "8537753", waterTempId: "8551910",
     name: "2.5 n.mi. above entrance", slug: "25-nmi-above-entrance",
     state: "new-jersey", city: "2.5 n.mi. above entrance, NJ", region: "Jersey Shore South",
     lat: 39.505, lon: -75.4833, latDisplay: "39.51°N", lonDisplay: "75.48°W",
@@ -3747,7 +3747,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537774", waterTempId: "8537774",
+    id: "8537774", waterTempId: "8551910",
     name: "Abbots Meadow", slug: "abbots-meadow",
     state: "new-jersey", city: "Abbots Meadow, NJ", region: "Jersey Shore South",
     lat: 39.5117, lon: -75.4933, latDisplay: "39.51°N", lonDisplay: "75.49°W",
@@ -3769,7 +3769,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537779", waterTempId: "8537779",
+    id: "8537779", waterTempId: "8551910",
     name: "Coopers Creek bridge", slug: "coopers-creek-bridge",
     state: "new-jersey", city: "Coopers Creek bridge, NJ", region: "Jersey Shore South",
     lat: 39.5133, lon: -75.4467, latDisplay: "39.51°N", lonDisplay: "75.45°W",
@@ -3791,7 +3791,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537889", waterTempId: "8537889",
+    id: "8537889", waterTempId: "8551910",
     name: "Quinton", slug: "quinton",
     state: "new-jersey", city: "Quinton, NJ", region: "Jersey Shore South",
     lat: 39.5483, lon: -75.415, latDisplay: "39.55°N", lonDisplay: "75.42°W",
@@ -3813,7 +3813,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537961", waterTempId: "8537961",
+    id: "8537961", waterTempId: "8551910",
     name: "Sinnickson Landing", slug: "sinnickson-landing",
     state: "new-jersey", city: "Sinnickson Landing, NJ", region: "Jersey Shore South",
     lat: 39.57, lon: -75.4983, latDisplay: "39.57°N", lonDisplay: "75.50°W",
@@ -3835,7 +3835,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537979", waterTempId: "8537979",
+    id: "8537979", waterTempId: "8551910",
     name: "Salem", slug: "salem",
     state: "new-jersey", city: "Salem, NJ", region: "Jersey Shore South",
     lat: 39.5767, lon: -75.4767, latDisplay: "39.58°N", lonDisplay: "75.48°W",
@@ -3857,7 +3857,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538231", waterTempId: "8538231",
+    id: "8538231", waterTempId: "8551910",
     name: "Salem Canal entrance, N.J.", slug: "salem-canal-entrance-nj",
     state: "new-jersey", city: "Salem Canal entrance, N.J., NJ", region: "Jersey Shore South",
     lat: 39.6833, lon: -75.51, latDisplay: "39.68°N", lonDisplay: "75.51°W",
@@ -3879,7 +3879,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538274", waterTempId: "8538274",
+    id: "8538274", waterTempId: "8540433",
     name: "Auburn, Oldmans Creek, N.J.", slug: "auburn-oldmans-creek-nj",
     state: "new-jersey", city: "Auburn, Oldmans Creek, N.J., NJ", region: "Jersey Shore North",
     lat: 39.715, lon: -75.36, latDisplay: "39.72°N", lonDisplay: "75.36°W",
@@ -3901,7 +3901,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538369", waterTempId: "8538369",
+    id: "8538369", waterTempId: "8540433",
     name: "Pedricktown, Oldmans Creek, N.J.", slug: "pedricktown-oldmans-creek-nj",
     state: "new-jersey", city: "Pedricktown, Oldmans Creek, N.J., NJ", region: "Jersey Shore North",
     lat: 39.7617, lon: -75.4033, latDisplay: "39.76°N", lonDisplay: "75.40°W",
@@ -3923,7 +3923,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538438", waterTempId: "8538438",
+    id: "8538438", waterTempId: "8545240",
     name: "Mantua, Mantua Creek, N.J.", slug: "mantua-mantua-creek-nj",
     state: "new-jersey", city: "Mantua, Mantua Creek, N.J., NJ", region: "Jersey Shore North",
     lat: 39.795, lon: -75.1767, latDisplay: "39.80°N", lonDisplay: "75.18°W",
@@ -3945,7 +3945,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538449", waterTempId: "8538449",
+    id: "8538449", waterTempId: "8540433",
     name: "Bridgeport, Raccoon Creek, N.J.", slug: "bridgeport-raccoon-creek-nj",
     state: "new-jersey", city: "Bridgeport, Raccoon Creek, N.J., NJ", region: "Jersey Shore North",
     lat: 39.8067, lon: -75.355, latDisplay: "39.81°N", lonDisplay: "75.36°W",
@@ -3967,7 +3967,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538512", waterTempId: "8538512",
+    id: "8538512", waterTempId: "8545240",
     name: "Paulsboro, Mantua Creek, N.J.", slug: "paulsboro-mantua-creek-nj",
     state: "new-jersey", city: "Paulsboro, Mantua Creek, N.J., NJ", region: "Jersey Shore North",
     lat: 39.835, lon: -75.2383, latDisplay: "39.84°N", lonDisplay: "75.24°W",
@@ -3989,7 +3989,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538548", waterTempId: "8538548",
+    id: "8538548", waterTempId: "8545240",
     name: "Woodbury Creek, N.J.", slug: "woodbury-creek-nj",
     state: "new-jersey", city: "Woodbury Creek, N.J., NJ", region: "Jersey Shore North",
     lat: 39.86, lon: -75.1867, latDisplay: "39.86°N", lonDisplay: "75.19°W",
@@ -4011,7 +4011,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538552", waterTempId: "8538552",
+    id: "8538552", waterTempId: "8545240",
     name: "Billingsport, N.J.", slug: "billingsport-nj",
     state: "new-jersey", city: "Billingsport, N.J., NJ", region: "Jersey Shore North",
     lat: 39.85, lon: -75.25, latDisplay: "39.85°N", lonDisplay: "75.25°W",
@@ -4033,7 +4033,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538601", waterTempId: "8538601",
+    id: "8538601", waterTempId: "8545240",
     name: "Westville, Rt. 47 bridge, Big Timber Creek, N.J.", slug: "westville-rt-47-bridge-big-timber-creek-nj",
     state: "new-jersey", city: "Westville, Rt. 47 bridge, Big Timber Creek, N.J., NJ", region: "Jersey Shore North",
     lat: 39.8733, lon: -75.1233, latDisplay: "39.87°N", lonDisplay: "75.12°W",
@@ -4055,7 +4055,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538752", waterTempId: "8538752",
+    id: "8538752", waterTempId: "8545240",
     name: "Pavonia, Cooper River, RR. bridge, N.J.", slug: "pavonia-cooper-river-rr-bridge-nj",
     state: "new-jersey", city: "Pavonia, Cooper River, RR. bridge, N.J., NJ", region: "Jersey Shore North",
     lat: 39.9467, lon: -75.105, latDisplay: "39.95°N", lonDisplay: "75.11°W",
@@ -4077,7 +4077,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538824", waterTempId: "8538824",
+    id: "8538824", waterTempId: "8539094",
     name: "Hainesport, South Branch", slug: "hainesport-south-branch",
     state: "new-jersey", city: "Hainesport, South Branch, NJ", region: "Jersey Shore North",
     lat: 39.9783, lon: -74.8233, latDisplay: "39.98°N", lonDisplay: "74.82°W",
@@ -4099,7 +4099,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538848", waterTempId: "8538848",
+    id: "8538848", waterTempId: "8539094",
     name: "North Branch", slug: "north-branch",
     state: "new-jersey", city: "North Branch, NJ", region: "Jersey Shore North",
     lat: 39.9983, lon: -74.8183, latDisplay: "40.00°N", lonDisplay: "74.82°W",
@@ -4121,7 +4121,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538853", waterTempId: "8538853",
+    id: "8538853", waterTempId: "8546252",
     name: "Palmyra, Pennsauken Creek, Route 73 bridge, N.J.", slug: "palmyra-pennsauken-creek-route-73-bridge-nj",
     state: "new-jersey", city: "Palmyra, Pennsauken Creek, Route 73 bridge, N.J., NJ", region: "Jersey Shore North",
     lat: 39.9933, lon: -75.0283, latDisplay: "39.99°N", lonDisplay: "75.03°W",
@@ -4143,7 +4143,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538875", waterTempId: "8538875",
+    id: "8538875", waterTempId: "8546252",
     name: "Pompeston Creek, N.J.", slug: "pompeston-creek-nj",
     state: "new-jersey", city: "Pompeston Creek, N.J., NJ", region: "Jersey Shore North",
     lat: 40.0133, lon: -75.0083, latDisplay: "40.01°N", lonDisplay: "75.01°W",
@@ -4165,7 +4165,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538886", waterTempId: "8538886",
+    id: "8538886", waterTempId: "8546252",
     name: "Tacony-Palmyra Bridge", slug: "tacony-palmyra-bridge",
     state: "new-jersey", city: "Tacony-Palmyra Bridge, NJ", region: "Jersey Shore North",
     lat: 40.01190185546875, lon: -75.04299926757812, latDisplay: "40.01°N", lonDisplay: "75.04°W",
@@ -4187,7 +4187,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538921", waterTempId: "8538921",
+    id: "8538921", waterTempId: "8539094",
     name: "Bridgeboro", slug: "bridgeboro",
     state: "new-jersey", city: "Bridgeboro, NJ", region: "Jersey Shore North",
     lat: 40.0283, lon: -74.9317, latDisplay: "40.03°N", lonDisplay: "74.93°W",
@@ -4209,7 +4209,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8539058", waterTempId: "8539058",
+    id: "8539058", waterTempId: "8539094",
     name: "Assiscunk Creek, Route 130 bridge, N.J.", slug: "assiscunk-creek-route-130-bridge-nj",
     state: "new-jersey", city: "Assiscunk Creek, Route 130 bridge, N.J., NJ", region: "Jersey Shore North",
     lat: 40.0733, lon: -74.8483, latDisplay: "40.07°N", lonDisplay: "74.85°W",
@@ -4253,7 +4253,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8539487", waterTempId: "8539487",
+    id: "8539487", waterTempId: "8548989",
     name: "Fieldsboro, N.J.", slug: "fieldsboro-nj",
     state: "new-jersey", city: "Fieldsboro, N.J., NJ", region: "Jersey Shore North",
     lat: 40.1367, lon: -74.7367, latDisplay: "40.14°N", lonDisplay: "74.74°W",
@@ -4275,7 +4275,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8539993", waterTempId: "8539993",
+    id: "8539993", waterTempId: "8548989",
     name: "Trenton, N.J.", slug: "trenton-nj",
     state: "new-jersey", city: "Trenton, N.J., NJ", region: "Jersey Shore North",
     lat: 40.1883, lon: -74.755, latDisplay: "40.19°N", lonDisplay: "74.75°W",
@@ -4297,7 +4297,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8530345", waterTempId: "8530345",
+    id: "8530345", waterTempId: "8518750",
     name: "GARFIELD  PASSAIC RIVER", slug: "garfield-passaic-river",
     state: "new-jersey", city: "GARFIELD  PASSAIC RIVER, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.8683, lon: -74.1117, latDisplay: "40.87°N", lonDisplay: "74.11°W",
@@ -4319,7 +4319,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8530464", waterTempId: "8530464",
+    id: "8530464", waterTempId: "8518750",
     name: "BERRYS CREEK, NO. 3", slug: "berrys-creek-no-3",
     state: "new-jersey", city: "BERRYS CREEK, NO. 3, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.8283, lon: -74.08, latDisplay: "40.83°N", lonDisplay: "74.08°W",
@@ -4341,7 +4341,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8530502", waterTempId: "8530502",
+    id: "8530502", waterTempId: "8518750",
     name: "BERRYS CREEK, NO. 7", slug: "berrys-creek-no-7",
     state: "new-jersey", city: "BERRYS CREEK, NO. 7, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.8167, lon: -74.0867, latDisplay: "40.82°N", lonDisplay: "74.09°W",
@@ -4363,7 +4363,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8530538", waterTempId: "8530538",
+    id: "8530538", waterTempId: "8518750",
     name: "CROMAKILL CREEK", slug: "cromakill-creek",
     state: "new-jersey", city: "CROMAKILL CREEK, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.8033, lon: -74.0333, latDisplay: "40.80°N", lonDisplay: "74.03°W",
@@ -4385,7 +4385,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8530576", waterTempId: "8530576",
+    id: "8530576", waterTempId: "8518750",
     name: "MILL CREEK, HACKENSACK RIVER", slug: "mill-creek-hackensack-river",
     state: "new-jersey", city: "MILL CREEK, HACKENSACK RIVER, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.7983, lon: -74.05, latDisplay: "40.80°N", lonDisplay: "74.05°W",
@@ -4407,7 +4407,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8530802", waterTempId: "8530802",
+    id: "8530802", waterTempId: "8518750",
     name: "JERSEY CITY PA-RR FERRY", slug: "jersey-city-pa-rr-ferry",
     state: "new-jersey", city: "JERSEY CITY PA-RR FERRY, NJ", region: "New York Harbor / Raritan Bay",
     lat: 40.7167, lon: -74.0317, latDisplay: "40.72°N", lonDisplay: "74.03°W",
@@ -4429,7 +4429,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8531630", waterTempId: "8531630",
+    id: "8531630", waterTempId: "8531680",
     name: "COMPTON CREEK, SANDY HOOK BAY", slug: "compton-creek-sandy-hook-bay",
     state: "new-jersey", city: "COMPTON CREEK, SANDY HOOK BAY, NJ", region: "Jersey Shore North",
     lat: 40.4317, lon: -74.085, latDisplay: "40.43°N", lonDisplay: "74.08°W",
@@ -4451,7 +4451,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8533542", waterTempId: "8533542",
+    id: "8533542", waterTempId: "8534720",
     name: "WARETOWN (BACKUP)", slug: "waretown-backup",
     state: "new-jersey", city: "WARETOWN (BACKUP), NJ", region: "Jersey Shore North",
     lat: 39.7917, lon: -74.1817, latDisplay: "39.79°N", lonDisplay: "74.18°W",
@@ -4473,7 +4473,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534320", waterTempId: "8534320",
+    id: "8534320", waterTempId: "8534720",
     name: "GREAT BAY SPECIAL PROJECT", slug: "great-bay-special-project",
     state: "new-jersey", city: "GREAT BAY SPECIAL PROJECT, NJ", region: "Jersey Shore South",
     lat: 39.5083, lon: -74.325, latDisplay: "39.51°N", lonDisplay: "74.33°W",
@@ -4495,7 +4495,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534469", waterTempId: "8534469",
+    id: "8534469", waterTempId: "8534720",
     name: "REED BAY,WEST SIDE", slug: "reed-baywest-side",
     state: "new-jersey", city: "REED BAY,WEST SIDE, NJ", region: "Jersey Shore South",
     lat: 39.4533, lon: -74.4267, latDisplay: "39.45°N", lonDisplay: "74.43°W",
@@ -4517,7 +4517,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534772", waterTempId: "8534772",
+    id: "8534772", waterTempId: "8534720",
     name: "VENTNOR CITY (NGS)", slug: "ventnor-city-ngs",
     state: "new-jersey", city: "VENTNOR CITY (NGS), NJ", region: "Jersey Shore South",
     lat: 39.335, lon: -74.4767, latDisplay: "39.34°N", lonDisplay: "74.48°W",
@@ -4539,7 +4539,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534773", waterTempId: "8534773",
+    id: "8534773", waterTempId: "8534720",
     name: "VENTNOR OFFSHORE 2", slug: "ventnor-offshore-2",
     state: "new-jersey", city: "VENTNOR OFFSHORE 2, NJ", region: "Jersey Shore South",
     lat: 39.3317, lon: -74.42, latDisplay: "39.33°N", lonDisplay: "74.42°W",
@@ -4561,7 +4561,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534774", waterTempId: "8534774",
+    id: "8534774", waterTempId: "8534720",
     name: "VENTNOR OFFSHORE 5 MI.", slug: "ventnor-offshore-5-mi",
     state: "new-jersey", city: "VENTNOR OFFSHORE 5 MI., NJ", region: "Jersey Shore South",
     lat: 39.29, lon: -74.375, latDisplay: "39.29°N", lonDisplay: "74.38°W",
@@ -4583,7 +4583,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534779", waterTempId: "8534779",
+    id: "8534779", waterTempId: "8534720",
     name: "STEELMANVILLE 2, PATCONG RIVER", slug: "steelmanville-2-patcong-river",
     state: "new-jersey", city: "STEELMANVILLE 2, PATCONG RIVER, NJ", region: "Jersey Shore South",
     lat: 39.3367, lon: -74.595, latDisplay: "39.34°N", lonDisplay: "74.59°W",
@@ -4605,7 +4605,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534780", waterTempId: "8534780",
+    id: "8534780", waterTempId: "8534720",
     name: "STEELMANVILLE 3, PATCONG RIVER", slug: "steelmanville-3-patcong-river",
     state: "new-jersey", city: "STEELMANVILLE 3, PATCONG RIVER, NJ", region: "Jersey Shore South",
     lat: 39.3367, lon: -74.5933, latDisplay: "39.34°N", lonDisplay: "74.59°W",
@@ -4627,7 +4627,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534781", waterTempId: "8534781",
+    id: "8534781", waterTempId: "8534720",
     name: "STEELMANVILLE 4, PATCONG RIVER", slug: "steelmanville-4-patcong-river",
     state: "new-jersey", city: "STEELMANVILLE 4, PATCONG RIVER, NJ", region: "Jersey Shore South",
     lat: 39.33, lon: -74.5767, latDisplay: "39.33°N", lonDisplay: "74.58°W",
@@ -4649,7 +4649,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534782", waterTempId: "8534782",
+    id: "8534782", waterTempId: "8534720",
     name: "STEELMANVILLE 5, PATCONG RIVER", slug: "steelmanville-5-patcong-river",
     state: "new-jersey", city: "STEELMANVILLE 5, PATCONG RIVER, NJ", region: "Jersey Shore South",
     lat: 39.3283, lon: -74.5767, latDisplay: "39.33°N", lonDisplay: "74.58°W",
@@ -4671,7 +4671,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534884", waterTempId: "8534884",
+    id: "8534884", waterTempId: "8534720",
     name: "TUCKAHOE 2, TUCKAHOE RIVER", slug: "tuckahoe-2-tuckahoe-river",
     state: "new-jersey", city: "TUCKAHOE 2, TUCKAHOE RIVER, NJ", region: "Jersey Shore South",
     lat: 39.2967, lon: -74.75, latDisplay: "39.30°N", lonDisplay: "74.75°W",
@@ -4693,7 +4693,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8534885", waterTempId: "8534885",
+    id: "8534885", waterTempId: "8534720",
     name: "TUCKAHOE 3, TUCKAHOE RIVER", slug: "tuckahoe-3-tuckahoe-river",
     state: "new-jersey", city: "TUCKAHOE 3, TUCKAHOE RIVER, NJ", region: "Jersey Shore South",
     lat: 39.2917, lon: -74.75, latDisplay: "39.29°N", lonDisplay: "74.75°W",
@@ -4715,7 +4715,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8535445", waterTempId: "8535445",
+    id: "8535445", waterTempId: "8536110",
     name: "GREAT SOUND", slug: "great-sound",
     state: "new-jersey", city: "GREAT SOUND, NJ", region: "Delaware Bay NJ",
     lat: 39.1017, lon: -74.7883, latDisplay: "39.10°N", lonDisplay: "74.79°W",
@@ -4737,7 +4737,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8535555", waterTempId: "8535555",
+    id: "8535555", waterTempId: "8536110",
     name: "JENKINS SOUND", slug: "jenkins-sound",
     state: "new-jersey", city: "JENKINS SOUND, NJ", region: "Delaware Bay NJ",
     lat: 39.065, lon: -74.8083, latDisplay: "39.06°N", lonDisplay: "74.81°W",
@@ -4759,7 +4759,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8536831", waterTempId: "8536831",
+    id: "8536831", waterTempId: "8537121",
     name: "ORANOAKEN CREEK", slug: "oranoaken-creek",
     state: "new-jersey", city: "ORANOAKEN CREEK, NJ", region: "Jersey Shore South",
     lat: 39.2933, lon: -75.1333, latDisplay: "39.29°N", lonDisplay: "75.13°W",
@@ -4781,7 +4781,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8536840", waterTempId: "8536840",
+    id: "8536840", waterTempId: "8536110",
     name: "BRANDYWINE SHOAL LIGHTHOUSE", slug: "brandywine-shoal-lighthouse",
     state: "new-jersey", city: "BRANDYWINE SHOAL LIGHTHOUSE, NJ", region: "Delaware Bay NJ",
     lat: 38.9867, lon: -75.1117, latDisplay: "38.99°N", lonDisplay: "75.11°W",
@@ -4803,7 +4803,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8536889", waterTempId: "8536889",
+    id: "8536889", waterTempId: "8536110",
     name: "BIVALE", slug: "bivale",
     state: "new-jersey", city: "BIVALE, NJ", region: "Jersey Shore South",
     lat: 39.23, lon: -75.0367, latDisplay: "39.23°N", lonDisplay: "75.04°W",
@@ -4825,7 +4825,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8536915", waterTempId: "8536915",
+    id: "8536915", waterTempId: "8537121",
     name: "FORTESCUE, DELAWARE BAY", slug: "fortescue-delaware-bay",
     state: "new-jersey", city: "FORTESCUE, DELAWARE BAY, NJ", region: "Jersey Shore South",
     lat: 39.2367, lon: -75.1733, latDisplay: "39.24°N", lonDisplay: "75.17°W",
@@ -4847,7 +4847,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8536999", waterTempId: "8536999",
+    id: "8536999", waterTempId: "8537121",
     name: "DIVIDING CREEK, DEL BAY", slug: "dividing-creek-del-bay",
     state: "new-jersey", city: "DIVIDING CREEK, DEL BAY, NJ", region: "Jersey Shore South",
     lat: 39.2667, lon: -75.095, latDisplay: "39.27°N", lonDisplay: "75.09°W",
@@ -4869,7 +4869,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537103", waterTempId: "8537103",
+    id: "8537103", waterTempId: "8537121",
     name: "HUSTED LND.", slug: "husted-lnd",
     state: "new-jersey", city: "HUSTED LND., NJ", region: "Jersey Shore South",
     lat: 39.3517, lon: -75.2583, latDisplay: "39.35°N", lonDisplay: "75.26°W",
@@ -4891,7 +4891,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537201", waterTempId: "8537201",
+    id: "8537201", waterTempId: "8537121",
     name: "UPPER CEDAR CREEK", slug: "upper-cedar-creek",
     state: "new-jersey", city: "UPPER CEDAR CREEK, NJ", region: "Jersey Shore South",
     lat: 39.33, lon: -75.2117, latDisplay: "39.33°N", lonDisplay: "75.21°W",
@@ -4913,7 +4913,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537363", waterTempId: "8537363",
+    id: "8537363", waterTempId: "8537121",
     name: "Bayside", slug: "bayside",
     state: "new-jersey", city: "Bayside, NJ", region: "Jersey Shore South",
     lat: 39.3817, lon: -75.4067, latDisplay: "39.38°N", lonDisplay: "75.41°W",
@@ -4935,7 +4935,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537589", waterTempId: "8537589",
+    id: "8537589", waterTempId: "8551910",
     name: "SILVER LAKE FORK", slug: "silver-lake-fork",
     state: "new-jersey", city: "SILVER LAKE FORK, NJ", region: "Jersey Shore South",
     lat: 39.4533, lon: -75.455, latDisplay: "39.45°N", lonDisplay: "75.45°W",
@@ -4957,7 +4957,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8537689", waterTempId: "8537689",
+    id: "8537689", waterTempId: "8551910",
     name: "UPPER HOPE CREEK", slug: "upper-hope-creek",
     state: "new-jersey", city: "UPPER HOPE CREEK, NJ", region: "Jersey Shore South",
     lat: 39.485, lon: -75.4933, latDisplay: "39.48°N", lonDisplay: "75.49°W",
@@ -4979,7 +4979,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538055", waterTempId: "8538055",
+    id: "8538055", waterTempId: "8551910",
     name: "MILL CREEK, PENNSNECK", slug: "mill-creek-pennsneck",
     state: "new-jersey", city: "MILL CREEK, PENNSNECK, NJ", region: "Jersey Shore South",
     lat: 39.61, lon: -75.52, latDisplay: "39.61°N", lonDisplay: "75.52°W",
@@ -5001,7 +5001,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538086", waterTempId: "8538086",
+    id: "8538086", waterTempId: "8551910",
     name: "KATES CREEK MEADOW", slug: "kates-creek-meadow",
     state: "new-jersey", city: "KATES CREEK MEADOW, NJ", region: "Jersey Shore South",
     lat: 39.62, lon: -75.4533, latDisplay: "39.62°N", lonDisplay: "75.45°W",
@@ -5023,7 +5023,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538095", waterTempId: "8538095",
+    id: "8538095", waterTempId: "8551910",
     name: "WINSLOW FARMS, SALEM R.", slug: "winslow-farms-salem-r",
     state: "new-jersey", city: "WINSLOW FARMS, SALEM R., NJ", region: "Jersey Shore South",
     lat: 39.6283, lon: -75.4817, latDisplay: "39.63°N", lonDisplay: "75.48°W",
@@ -5045,7 +5045,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538414", waterTempId: "8538414",
+    id: "8538414", waterTempId: "8540433",
     name: "NEW BRIDGE, OLDMANS CREEK", slug: "new-bridge-oldmans-creek",
     state: "new-jersey", city: "NEW BRIDGE, OLDMANS CREEK, NJ", region: "Jersey Shore North",
     lat: 39.7833, lon: -75.4067, latDisplay: "39.78°N", lonDisplay: "75.41°W",
@@ -5067,7 +5067,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538479", waterTempId: "8538479",
+    id: "8538479", waterTempId: "8545240",
     name: "SUNSET BEACH, BIG TIMBER CREEK", slug: "sunset-beach-big-timber-creek",
     state: "new-jersey", city: "SUNSET BEACH, BIG TIMBER CREEK, NJ", region: "Jersey Shore North",
     lat: 39.815, lon: -75.0883, latDisplay: "39.81°N", lonDisplay: "75.09°W",
@@ -5089,7 +5089,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538568", waterTempId: "8538568",
+    id: "8538568", waterTempId: "8545240",
     name: "WOODBURY CREEK", slug: "woodbury-creek",
     state: "new-jersey", city: "WOODBURY CREEK, NJ", region: "Jersey Shore North",
     lat: 39.8583, lon: -75.185, latDisplay: "39.86°N", lonDisplay: "75.19°W",
@@ -5111,7 +5111,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538779", waterTempId: "8538779",
+    id: "8538779", waterTempId: "8546252",
     name: "PAVONIA", slug: "pavonia",
     state: "new-jersey", city: "PAVONIA, NJ", region: "Jersey Shore North",
     lat: 39.9617, lon: -75.0983, latDisplay: "39.96°N", lonDisplay: "75.10°W",
@@ -5133,7 +5133,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8538831", waterTempId: "8538831",
+    id: "8538831", waterTempId: "8546252",
     name: "CINNAMINSON", slug: "cinnaminson",
     state: "new-jersey", city: "CINNAMINSON, NJ", region: "Jersey Shore North",
     lat: 39.9783, lon: -75.0133, latDisplay: "39.98°N", lonDisplay: "75.01°W",
@@ -5155,7 +5155,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8539494", waterTempId: "8539494",
+    id: "8539494", waterTempId: "8548989",
     name: "BLACKS CREEK, DELAWARE RIVER", slug: "blacks-creek-delaware-river",
     state: "new-jersey", city: "BLACKS CREEK, DELAWARE RIVER, NJ", region: "Jersey Shore North",
     lat: 40.1383, lon: -74.7117, latDisplay: "40.14°N", lonDisplay: "74.71°W",
@@ -5177,7 +5177,7 @@ export const NEW_JERSEY_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8539808", waterTempId: "8539808",
+    id: "8539808", waterTempId: "8548989",
     name: "SYLVAN GLEN, CROSSWICKS CREEK", slug: "sylvan-glen-crosswicks-creek",
     state: "new-jersey", city: "SYLVAN GLEN, CROSSWICKS CREEK, NJ", region: "Jersey Shore North",
     lat: 40.1817, lon: -74.705, latDisplay: "40.18°N", lonDisplay: "74.70°W",

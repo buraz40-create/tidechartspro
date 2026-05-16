@@ -7,7 +7,7 @@ export type { StationConfig, NearbyStation, Species }
 
 export const HAWAII_STATIONS: StationConfig[] = [
   {
-    id: "1610367", waterTempId: "1610367",
+    id: "1610367", waterTempId: "1611400",
     name: "Nonopapa, Niihau Island", slug: "nonopapa-niihau-island",
     state: "hawaii", city: "Nonopapa, Niihau Island, HI", region: "Kauai / Niihau",
     lat: 21.87, lon: -160.235, latDisplay: "21.87°N", lonDisplay: "160.24°W",
@@ -29,7 +29,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1611347", waterTempId: "1611347",
+    id: "1611347", waterTempId: "1611400",
     name: "Port Allen, Hanapepe Bay", slug: "port-allen-hanapepe-bay",
     state: "hawaii", city: "Port Allen, Hanapepe Bay, HI", region: "Kauai / Niihau",
     lat: 21.9033, lon: -159.592, latDisplay: "21.90°N", lonDisplay: "159.59°W",
@@ -73,7 +73,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1611401", waterTempId: "1611401",
+    id: "1611401", waterTempId: "1611400",
     name: "Waimea Bay", slug: "waimea-bay",
     state: "hawaii", city: "Waimea Bay, HI", region: "Kauai / Niihau",
     lat: 21.9567, lon: -159.673, latDisplay: "21.96°N", lonDisplay: "159.67°W",
@@ -95,7 +95,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1611443", waterTempId: "1611443",
+    id: "1611443", waterTempId: "1611400",
     name: "Hanamaulu Bay", slug: "hanamaulu-bay",
     state: "hawaii", city: "Hanamaulu Bay, HI", region: "Kauai / Niihau",
     lat: 21.995, lon: -159.335, latDisplay: "22.00°N", lonDisplay: "159.34°W",
@@ -117,7 +117,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1611683", waterTempId: "1611683",
+    id: "1611683", waterTempId: "1611400",
     name: "Hanalei Bay", slug: "hanalei-bay",
     state: "hawaii", city: "Hanalei Bay, HI", region: "Kauai / Niihau",
     lat: 22.215, lon: -159.502, latDisplay: "22.21°N", lonDisplay: "159.50°W",
@@ -139,7 +139,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1612301", waterTempId: "1612301",
+    id: "1612301", waterTempId: "1612340",
     name: "Hanauma Bay", slug: "hanauma-bay",
     state: "hawaii", city: "Hanauma Bay, HI", region: "Oahu",
     lat: 21.275, lon: -157.697, latDisplay: "21.27°N", lonDisplay: "157.70°W",
@@ -183,7 +183,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1612366", waterTempId: "1612366",
+    id: "1612366", waterTempId: "1612340",
     name: "Pearl Harbor Entrance, Bishop Point", slug: "pearl-harbor-entrance-bishop-point",
     state: "hawaii", city: "Pearl Harbor Entrance, Bishop Point, HI", region: "Oahu",
     lat: 21.33, lon: -157.967, latDisplay: "21.33°N", lonDisplay: "157.97°W",
@@ -205,7 +205,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1612376", waterTempId: "1612376",
+    id: "1612376", waterTempId: "1612480",
     name: "Waimanalo", slug: "waimanalo",
     state: "hawaii", city: "Waimanalo, HI", region: "Oahu",
     lat: 21.335, lon: -157.693, latDisplay: "21.34°N", lonDisplay: "157.69°W",
@@ -227,7 +227,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1612401", waterTempId: "1612401",
+    id: "1612401", waterTempId: "1612340",
     name: "Ford Island, Pearl Harbor", slug: "ford-island-pearl-harbor",
     state: "hawaii", city: "Ford Island, Pearl Harbor, HI", region: "Oahu",
     lat: 21.36750030517578, lon: -157.96389770507812, latDisplay: "21.37°N", lonDisplay: "157.96°W",
@@ -249,7 +249,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1612404", waterTempId: "1612404",
+    id: "1612404", waterTempId: "1612340",
     name: "Pearl Harbor, Ford Island Ferry", slug: "pearl-harbor-ford-island-ferry",
     state: "hawaii", city: "Pearl Harbor, Ford Island Ferry, HI", region: "Oahu",
     lat: 21.3683, lon: -157.94, latDisplay: "21.37°N", lonDisplay: "157.94°W",
@@ -293,7 +293,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1612482", waterTempId: "1612482",
+    id: "1612482", waterTempId: "1612340",
     name: "Waianae", slug: "waianae",
     state: "hawaii", city: "Waianae, HI", region: "Oahu",
     lat: 21.445, lon: -158.192, latDisplay: "21.45°N", lonDisplay: "158.19°W",
@@ -315,7 +315,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1612668", waterTempId: "1612668",
+    id: "1612668", waterTempId: "1612480",
     name: "Haleiwa, Waialua Bay", slug: "haleiwa-waialua-bay",
     state: "hawaii", city: "Haleiwa, Waialua Bay, HI", region: "Kauai / Niihau",
     lat: 21.5983, lon: -158.108, latDisplay: "21.60°N", lonDisplay: "158.11°W",
@@ -337,7 +337,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1613077", waterTempId: "1613077",
+    id: "1613077", waterTempId: "1615680",
     name: "Kamalo Harbor", slug: "kamalo-harbor",
     state: "hawaii", city: "Kamalo Harbor, HI", region: "Maui / Molokai",
     lat: 21.0483, lon: -156.877, latDisplay: "21.05°N", lonDisplay: "156.88°W",
@@ -359,7 +359,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1613155", waterTempId: "1613155",
+    id: "1613155", waterTempId: "1615680",
     name: "Pukoo Harbor", slug: "pukoo-harbor",
     state: "hawaii", city: "Pukoo Harbor, HI", region: "Maui / Molokai",
     lat: 21.0717, lon: -156.8, latDisplay: "21.07°N", lonDisplay: "156.80°W",
@@ -381,7 +381,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1613198", waterTempId: "1613198",
+    id: "1613198", waterTempId: "1615680",
     name: "Kaunakakai", slug: "kaunakakai",
     state: "hawaii", city: "Kaunakakai, HI", region: "Maui / Molokai",
     lat: 21.085, lon: -157.032, latDisplay: "21.09°N", lonDisplay: "157.03°W",
@@ -403,7 +403,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1613226", waterTempId: "1613226",
+    id: "1613226", waterTempId: "1612480",
     name: "Kolo", slug: "kolo",
     state: "hawaii", city: "Kolo, HI", region: "Maui / Molokai",
     lat: 21.0933, lon: -157.197, latDisplay: "21.09°N", lonDisplay: "157.20°W",
@@ -425,7 +425,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1614465", waterTempId: "1614465",
+    id: "1614465", waterTempId: "1615680",
     name: "Kaumalapau, Lanai Island", slug: "kaumalapau-lanai-island",
     state: "hawaii", city: "Kaumalapau, Lanai Island, HI", region: "Maui / Molokai",
     lat: 20.79, lon: -156.995, latDisplay: "20.79°N", lonDisplay: "157.00°W",
@@ -447,7 +447,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1615202", waterTempId: "1615202",
+    id: "1615202", waterTempId: "1615680",
     name: "Makena", slug: "makena",
     state: "hawaii", city: "Makena, HI", region: "Hawaii (Big Island)",
     lat: 20.6567, lon: -156.445, latDisplay: "20.66°N", lonDisplay: "156.44°W",
@@ -469,7 +469,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1615395", waterTempId: "1615395",
+    id: "1615395", waterTempId: "1615680",
     name: "Hana", slug: "hana",
     state: "hawaii", city: "Hana, HI", region: "Hawaii (Big Island)",
     lat: 20.7617, lon: -155.987, latDisplay: "20.76°N", lonDisplay: "155.99°W",
@@ -513,7 +513,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1616696", waterTempId: "1616696",
+    id: "1616696", waterTempId: "1615680",
     name: "Kuheia Bay", slug: "kuheia-bay",
     state: "hawaii", city: "Kuheia Bay, HI", region: "Maui / Molokai",
     lat: 20.595, lon: -156.607, latDisplay: "20.59°N", lonDisplay: "156.61°W",
@@ -535,7 +535,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1617277", waterTempId: "1617277",
+    id: "1617277", waterTempId: "1617433",
     name: "Mahukona", slug: "mahukona",
     state: "hawaii", city: "Mahukona, HI", region: "Hawaii (Big Island)",
     lat: 20.1867, lon: -155.903, latDisplay: "20.19°N", lonDisplay: "155.90°W",
@@ -601,7 +601,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1617846", waterTempId: "1617846",
+    id: "1617846", waterTempId: "1617433",
     name: "Kailua Kona", slug: "kailua-kona",
     state: "hawaii", city: "Kailua Kona, HI", region: "Hawaii (Big Island)",
     lat: 19.6433, lon: -156, latDisplay: "19.64°N", lonDisplay: "156.00°W",
@@ -623,7 +623,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1618021", waterTempId: "1618021",
+    id: "1618021", waterTempId: "1617433",
     name: "Napoopoo, Kealakekua Bay", slug: "napoopoo-kealakekua-bay",
     state: "hawaii", city: "Napoopoo, Kealakekua Bay, HI", region: "Hawaii (Big Island)",
     lat: 19.4767, lon: -155.922, latDisplay: "19.48°N", lonDisplay: "155.92°W",
@@ -645,7 +645,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1618578", waterTempId: "1618578",
+    id: "1618578", waterTempId: "1617760",
     name: "Honuapo", slug: "honuapo",
     state: "hawaii", city: "Honuapo, HI", region: "Hawaii (Big Island)",
     lat: 19.0883, lon: -155.553, latDisplay: "19.09°N", lonDisplay: "155.55°W",
@@ -667,7 +667,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1619222", waterTempId: "1619222",
+    id: "1619222", waterTempId: "1611400",
     name: "East Island, French Frigate Shoals", slug: "east-island-french-frigate-shoals",
     state: "hawaii", city: "East Island, French Frigate Shoals, HI", region: "Kauai / Niihau",
     lat: 23.783300399780273, lon: -166.20799255371094, latDisplay: "23.78°N", lonDisplay: "166.21°W",
@@ -689,7 +689,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1619645", waterTempId: "1619645",
+    id: "1619645", waterTempId: "1619910",
     name: "Laysan Island", slug: "laysan-island",
     state: "hawaii", city: "Laysan Island, HI", region: "Kauai / Niihau",
     lat: 25.766700744628906, lon: -171.75, latDisplay: "25.77°N", lonDisplay: "171.75°W",
@@ -711,7 +711,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1612479", waterTempId: "1612479",
+    id: "1612479", waterTempId: "1612480",
     name: "MOKUOLOE, KANEONE BAY, OAHU IS. (BACKUP)", slug: "mokuoloe-kaneone-bay-oahu-is-backup",
     state: "hawaii", city: "MOKUOLOE, KANEONE BAY, OAHU IS. (BACKUP), HI", region: "Oahu",
     lat: 21.435, lon: -157.792, latDisplay: "21.43°N", lonDisplay: "157.79°W",
@@ -733,7 +733,7 @@ export const HAWAII_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "1612702", waterTempId: "1612702",
+    id: "1612702", waterTempId: "1612480",
     name: "LAIEMALOO, OAHU ISLAND", slug: "laiemaloo-oahu-island",
     state: "hawaii", city: "LAIEMALOO, OAHU ISLAND, HI", region: "Kauai / Niihau",
     lat: 21.6367, lon: -157.922, latDisplay: "21.64°N", lonDisplay: "157.92°W",

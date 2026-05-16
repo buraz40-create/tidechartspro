@@ -1244,7 +1244,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
   // ── Live water temp (NOAA CO-OPS station 8720503) ──
   const [waterTemp, setWaterTemp] = useState<string | null>(null)
   useEffect(() => {
-    fetch(`https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?station=${station.waterTempId}&product=water_temperature&time_zone=LST_LDT&interval=h&units=english&application=TideChartsPro&format=json&range=2`)
+    fetch(`https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?station=${station.waterTempId}&product=water_temperature&time_zone=LST_LDT&interval=h&units=english&application=TideChartsPro&format=json&range=6`)
       .then(r => r.json())
       .then((d: { data?: Array<{ v: string }> }) => {
         const last = d.data?.at(-1)

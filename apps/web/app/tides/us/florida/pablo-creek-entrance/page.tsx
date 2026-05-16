@@ -1218,7 +1218,7 @@ function PabloCreekEntranceContent() {
   // ── Live water temp (NOAA CO-OPS station 8720503) ──
   const [waterTemp, setWaterTemp] = useState<string | null>(null)
   useEffect(() => {
-    fetch(`https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?station=${STATION.waterTempId}&product=water_temperature&time_zone=LST_LDT&interval=h&units=english&application=TideChartsPro&format=json&range=2`)
+    fetch(`https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?station=${STATION.waterTempId}&product=water_temperature&time_zone=LST_LDT&interval=h&units=english&application=TideChartsPro&format=json&range=6`)
       .then(r => r.json())
       .then((d: { data?: Array<{ v: string }> }) => {
         const last = d.data?.at(-1)
@@ -1431,7 +1431,7 @@ function PabloCreekEntranceContent() {
         <div style={{ display: 'flex', alignItems: 'flex-start', justifyContent: 'space-between', flexWrap: 'wrap', gap: 8, marginBottom: 8, flexDirection: isMobile ? 'row' : 'row' }}>
           <div>
             <div style={{ fontSize: 11, color: t.textFaint, marginBottom: 4 }}>
-              <a href="/tides/florida" style={{ color: t.textFaint, textDecoration: 'none' }}>Florida</a>
+              <a href="/tides/us/florida" style={{ color: t.textFaint, textDecoration: 'none' }}>Florida</a>
               <span style={{ margin: '0 6px' }}>/</span>
               <span style={{ color: t.textMuted }}>{STATION.name}</span>
             </div>
@@ -2501,7 +2501,7 @@ function PabloCreekEntranceContent() {
               ].map(s => (
                 <a
                   key={s.slug}
-                  href={`/tides/florida/${s.slug}`}
+                  href={`/tides/us/florida/${s.slug}`}
                   style={{
                     fontSize: 13, color: t.accent, textDecoration: 'none',
                     background: t.surfaceAlt, border: `1px solid ${t.border}`,

@@ -29,7 +29,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8651605", waterTempId: "8651605",
+    id: "8651605", waterTempId: "8651370",
     name: "Kitty Hawk (ocean)", slug: "kitty-hawk-ocean",
     state: "north-carolina", city: "Kitty Hawk (ocean), NC", region: "Outer Banks / Pamlico Sound",
     lat: 36.1017, lon: -75.71, latDisplay: "36.10°N", lonDisplay: "75.71°W",
@@ -73,7 +73,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8652247", waterTempId: "8652247",
+    id: "8652247", waterTempId: "8652226",
     name: "Manns Harbor, Croatan Sound", slug: "manns-harbor-croatan-sound",
     state: "north-carolina", city: "Manns Harbor, Croatan Sound, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.9033, lon: -75.77, latDisplay: "35.90°N", lonDisplay: "75.77°W",
@@ -95,7 +95,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8652437", waterTempId: "8652437",
+    id: "8652437", waterTempId: "8652226",
     name: "Oyster Creek, Croatan Sound", slug: "oyster-creek-croatan-sound",
     state: "north-carolina", city: "Oyster Creek, Croatan Sound, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.845, lon: -75.655, latDisplay: "35.84°N", lonDisplay: "75.66°W",
@@ -117,7 +117,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8652547", waterTempId: "8652547",
+    id: "8652547", waterTempId: "8652587",
     name: "Roanoke Marshes Light, Croatan Sound", slug: "roanoke-marshes-light-croatan-sound",
     state: "north-carolina", city: "Roanoke Marshes Light, Croatan Sound, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.8117, lon: -75.7, latDisplay: "35.81°N", lonDisplay: "75.70°W",
@@ -161,7 +161,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8652591", waterTempId: "8652591",
+    id: "8652591", waterTempId: "8652587",
     name: "Roanoke Sound Channel", slug: "roanoke-sound-channel",
     state: "north-carolina", city: "Roanoke Sound Channel, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.7983, lon: -75.5833, latDisplay: "35.80°N", lonDisplay: "75.58°W",
@@ -183,7 +183,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8652648", waterTempId: "8652648",
+    id: "8652648", waterTempId: "8652587",
     name: "Old House Channel", slug: "old-house-channel",
     state: "north-carolina", city: "Old House Channel, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.77669906616211, lon: -75.58499908447266, latDisplay: "35.78°N", lonDisplay: "75.58°W",
@@ -205,7 +205,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8652657", waterTempId: "8652657",
+    id: "8652657", waterTempId: "8652587",
     name: "Oregon Inlet Channel", slug: "oregon-inlet-channel",
     state: "north-carolina", city: "Oregon Inlet Channel, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.7733, lon: -75.5583, latDisplay: "35.77°N", lonDisplay: "75.56°W",
@@ -227,7 +227,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8652659", waterTempId: "8652659",
+    id: "8652659", waterTempId: "8652587",
     name: "Oregon Inlet Bridge", slug: "oregon-inlet-bridge",
     state: "north-carolina", city: "Oregon Inlet Bridge, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.7733, lon: -75.5383, latDisplay: "35.77°N", lonDisplay: "75.54°W",
@@ -249,7 +249,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8652678", waterTempId: "8652678",
+    id: "8652678", waterTempId: "8652587",
     name: "Oregon Inlet (USCG Station)", slug: "oregon-inlet-uscg-station",
     state: "north-carolina", city: "Oregon Inlet (USCG Station), NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.7683, lon: -75.5267, latDisplay: "35.77°N", lonDisplay: "75.53°W",
@@ -271,7 +271,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8652737", waterTempId: "8652737",
+    id: "8652737", waterTempId: "8652587",
     name: "Davis Slough", slug: "davis-slough",
     state: "north-carolina", city: "Davis Slough, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.7483, lon: -75.5533, latDisplay: "35.75°N", lonDisplay: "75.55°W",
@@ -293,7 +293,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8653215", waterTempId: "8653215",
+    id: "8653215", waterTempId: "8652587",
     name: "Rodanthe, Pamlico Sound", slug: "rodanthe-pamlico-sound",
     state: "north-carolina", city: "Rodanthe, Pamlico Sound, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.595001220703125, lon: -75.4717025756836, latDisplay: "35.60°N", lonDisplay: "75.47°W",
@@ -315,7 +315,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8653244", waterTempId: "8653244",
+    id: "8653244", waterTempId: "8654467",
     name: "Pungo River, Route 45, NC", slug: "pungo-river-route-45-nc",
     state: "north-carolina", city: "Pungo River, Route 45, NC, NC", region: "Albemarle Sound",
     lat: 35.585201263427734, lon: -76.48560333251953, latDisplay: "35.59°N", lonDisplay: "76.49°W",
@@ -337,7 +337,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8653471", waterTempId: "8653471",
+    id: "8653471", waterTempId: "8654467",
     name: "Engelhard", slug: "engelhard",
     state: "north-carolina", city: "Engelhard, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.5093994140625, lon: -75.98889923095703, latDisplay: "35.51°N", lonDisplay: "75.99°W",
@@ -359,7 +359,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8653951", waterTempId: "8653951",
+    id: "8653951", waterTempId: "8654467",
     name: "Peter's Ditch", slug: "peters-ditch",
     state: "north-carolina", city: "Peter's Ditch, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.35013888888889, lon: -75.51202777777777, latDisplay: "35.35°N", lonDisplay: "75.51°W",
@@ -381,7 +381,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8654400", waterTempId: "8654400",
+    id: "8654400", waterTempId: "8654467",
     name: "CAPE HATTERAS FISHING PIER", slug: "cape-hatteras-fishing-pier",
     state: "north-carolina", city: "CAPE HATTERAS FISHING PIER, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.2233, lon: -75.635, latDisplay: "35.22°N", lonDisplay: "75.64°W",
@@ -425,7 +425,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8654769", waterTempId: "8654769",
+    id: "8654769", waterTempId: "8654467",
     name: "Ocracoke, Pamlico Sound", slug: "ocracoke-pamlico-sound",
     state: "north-carolina", city: "Ocracoke, Pamlico Sound, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.115501403808594, lon: -75.98690032958984, latDisplay: "35.12°N", lonDisplay: "75.99°W",
@@ -447,7 +447,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8655133", waterTempId: "8655133",
+    id: "8655133", waterTempId: "8656483",
     name: "Oriental, Neuse River", slug: "oriental-neuse-river",
     state: "north-carolina", city: "Oriental, Neuse River, NC", region: "Albemarle Sound",
     lat: 35.024600982666016, lon: -76.69180297851562, latDisplay: "35.02°N", lonDisplay: "76.69°W",
@@ -469,7 +469,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8655151", waterTempId: "8655151",
+    id: "8655151", waterTempId: "8656483",
     name: "Cedar Island", slug: "cedar-island",
     state: "north-carolina", city: "Cedar Island, NC", region: "Albemarle Sound",
     lat: 35.01890182495117, lon: -76.31430053710938, latDisplay: "35.02°N", lonDisplay: "76.31°W",
@@ -491,7 +491,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8655875", waterTempId: "8655875",
+    id: "8655875", waterTempId: "8656483",
     name: "Sea Level", slug: "sea-level",
     state: "north-carolina", city: "Sea Level, NC", region: "Albemarle Sound",
     lat: 34.875, lon: -76.3433, latDisplay: "34.88°N", lonDisplay: "76.34°W",
@@ -513,7 +513,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8656084", waterTempId: "8656084",
+    id: "8656084", waterTempId: "8656483",
     name: "Core Creek Bridge", slug: "core-creek-bridge",
     state: "north-carolina", city: "Core Creek Bridge, NC", region: "Albemarle Sound",
     lat: 34.82500076293945, lon: -76.69000244140625, latDisplay: "34.83°N", lonDisplay: "76.69°W",
@@ -535,7 +535,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8656201", waterTempId: "8656201",
+    id: "8656201", waterTempId: "8656483",
     name: "Davis, Core Sound", slug: "davis-core-sound",
     state: "north-carolina", city: "Davis, Core Sound, NC", region: "New Bern / Crystal Coast",
     lat: 34.79679870605469, lon: -76.45549774169922, latDisplay: "34.80°N", lonDisplay: "76.46°W",
@@ -557,7 +557,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8656225", waterTempId: "8656225",
+    id: "8656225", waterTempId: "8656483",
     name: "North River Bridge", slug: "north-river-bridge",
     state: "north-carolina", city: "North River Bridge, NC", region: "New Bern / Crystal Coast",
     lat: 34.7917, lon: -76.6083, latDisplay: "34.79°N", lonDisplay: "76.61°W",
@@ -579,7 +579,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8656306", waterTempId: "8656306",
+    id: "8656306", waterTempId: "8656483",
     name: "Newport River (Yacht Club)", slug: "newport-river-yacht-club",
     state: "north-carolina", city: "Newport River (Yacht Club), NC", region: "New Bern / Crystal Coast",
     lat: 34.7683, lon: -76.6717, latDisplay: "34.77°N", lonDisplay: "76.67°W",
@@ -601,7 +601,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8656451", waterTempId: "8656451",
+    id: "8656451", waterTempId: "8656483",
     name: "Gallant Channel", slug: "gallant-channel",
     state: "north-carolina", city: "Gallant Channel, NC", region: "New Bern / Crystal Coast",
     lat: 34.7283, lon: -76.6683, latDisplay: "34.73°N", lonDisplay: "76.67°W",
@@ -623,7 +623,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8656467", waterTempId: "8656467",
+    id: "8656467", waterTempId: "8656483",
     name: "SpoonersCreek", slug: "spoonerscreek",
     state: "north-carolina", city: "SpoonersCreek, NC", region: "New Bern / Crystal Coast",
     lat: 34.725, lon: -76.8033, latDisplay: "34.73°N", lonDisplay: "76.80°W",
@@ -667,7 +667,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8656496", waterTempId: "8656496",
+    id: "8656496", waterTempId: "8656483",
     name: "Morehead City", slug: "morehead-city",
     state: "north-carolina", city: "Morehead City, NC", region: "New Bern / Crystal Coast",
     lat: 34.7183, lon: -76.695, latDisplay: "34.72°N", lonDisplay: "76.69°W",
@@ -689,7 +689,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8656499", waterTempId: "8656499",
+    id: "8656499", waterTempId: "8656483",
     name: "Atlantic Beach Bridge", slug: "atlantic-beach-bridge",
     state: "north-carolina", city: "Atlantic Beach Bridge, NC", region: "New Bern / Crystal Coast",
     lat: 34.7183, lon: -76.7367, latDisplay: "34.72°N", lonDisplay: "76.74°W",
@@ -711,7 +711,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8656502", waterTempId: "8656502",
+    id: "8656502", waterTempId: "8656483",
     name: "Morehead City Harbor", slug: "morehead-city-harbor",
     state: "north-carolina", city: "Morehead City Harbor, NC", region: "New Bern / Crystal Coast",
     lat: 34.720001220703125, lon: -76.71080017089844, latDisplay: "34.72°N", lonDisplay: "76.71°W",
@@ -733,7 +733,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8656503", waterTempId: "8656503",
+    id: "8656503", waterTempId: "8656483",
     name: "Harkers Island Bridge", slug: "harkers-island-bridge",
     state: "north-carolina", city: "Harkers Island Bridge, NC", region: "New Bern / Crystal Coast",
     lat: 34.715, lon: -76.5783, latDisplay: "34.72°N", lonDisplay: "76.58°W",
@@ -755,7 +755,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8656518", waterTempId: "8656518",
+    id: "8656518", waterTempId: "8656483",
     name: "Beaufort, Taylor Creek", slug: "beaufort-taylor-creek",
     state: "north-carolina", city: "Beaufort, Taylor Creek, NC", region: "New Bern / Crystal Coast",
     lat: 34.7117, lon: -76.645, latDisplay: "34.71°N", lonDisplay: "76.64°W",
@@ -777,7 +777,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8656539", waterTempId: "8656539",
+    id: "8656539", waterTempId: "8656483",
     name: "Lenoxville Point", slug: "lenoxville-point",
     state: "north-carolina", city: "Lenoxville Point, NC", region: "New Bern / Crystal Coast",
     lat: 34.7083, lon: -76.62, latDisplay: "34.71°N", lonDisplay: "76.62°W",
@@ -799,7 +799,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8656554", waterTempId: "8656554",
+    id: "8656554", waterTempId: "8656483",
     name: "Channel Marker Lt. 59", slug: "channel-marker-lt-59",
     state: "north-carolina", city: "Channel Marker Lt. 59, NC", region: "New Bern / Crystal Coast",
     lat: 34.7033, lon: -76.62, latDisplay: "34.70°N", lonDisplay: "76.62°W",
@@ -821,7 +821,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8656566", waterTempId: "8656566",
+    id: "8656566", waterTempId: "8656483",
     name: "Coral Bay, Atlantic Beach", slug: "coral-bay-atlantic-beach",
     state: "north-carolina", city: "Coral Bay, Atlantic Beach, NC", region: "New Bern / Crystal Coast",
     lat: 34.7, lon: -76.7683, latDisplay: "34.70°N", lonDisplay: "76.77°W",
@@ -843,7 +843,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8656569", waterTempId: "8656569",
+    id: "8656569", waterTempId: "8656483",
     name: "Beaufort Inlet Channel Range", slug: "beaufort-inlet-channel-range",
     state: "north-carolina", city: "Beaufort Inlet Channel Range, NC", region: "New Bern / Crystal Coast",
     lat: 34.6983, lon: -76.665, latDisplay: "34.70°N", lonDisplay: "76.67°W",
@@ -865,7 +865,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8656571", waterTempId: "8656571",
+    id: "8656571", waterTempId: "8656483",
     name: "Fort Macon, USCG Station", slug: "fort-macon-uscg-station",
     state: "north-carolina", city: "Fort Macon, USCG Station, NC", region: "New Bern / Crystal Coast",
     lat: 34.6983, lon: -76.6817, latDisplay: "34.70°N", lonDisplay: "76.68°W",
@@ -887,7 +887,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8656590", waterTempId: "8656590",
+    id: "8656590", waterTempId: "8656483",
     name: "Atlantic Beach", slug: "atlantic-beach",
     state: "north-carolina", city: "Atlantic Beach, NC", region: "New Bern / Crystal Coast",
     lat: 34.6933, lon: -76.7117, latDisplay: "34.69°N", lonDisplay: "76.71°W",
@@ -909,7 +909,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8656613", waterTempId: "8656613",
+    id: "8656613", waterTempId: "8656483",
     name: "Swansboro, East Corbett Ave. Bridge", slug: "swansboro-east-corbett-ave-bridge",
     state: "north-carolina", city: "Swansboro, East Corbett Ave. Bridge, NC", region: "New Bern / Crystal Coast",
     lat: 34.68659973144531, lon: -77.11810302734375, latDisplay: "34.69°N", lonDisplay: "77.12°W",
@@ -931,7 +931,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8656841", waterTempId: "8656841",
+    id: "8656841", waterTempId: "8656483",
     name: "Cape Lookout Bight", slug: "cape-lookout-bight",
     state: "north-carolina", city: "Cape Lookout Bight, NC", region: "New Bern / Crystal Coast",
     lat: 34.6133, lon: -76.5383, latDisplay: "34.61°N", lonDisplay: "76.54°W",
@@ -953,7 +953,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8656937", waterTempId: "8656937",
+    id: "8656937", waterTempId: "8656483",
     name: "Cape Lookout (ocean)", slug: "cape-lookout-ocean",
     state: "north-carolina", city: "Cape Lookout (ocean), NC", region: "New Bern / Crystal Coast",
     lat: 34.6083, lon: -76.5283, latDisplay: "34.61°N", lonDisplay: "76.53°W",
@@ -975,7 +975,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8657002", waterTempId: "8657002",
+    id: "8657002", waterTempId: "8658163",
     name: "Sneads Ferry, New River", slug: "sneads-ferry-new-river",
     state: "north-carolina", city: "Sneads Ferry, New River, NC", region: "New Bern / Crystal Coast",
     lat: 34.57630157470703, lon: -77.39540100097656, latDisplay: "34.58°N", lonDisplay: "77.40°W",
@@ -997,7 +997,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8657167", waterTempId: "8657167",
+    id: "8657167", waterTempId: "8658163",
     name: "New River Inlet", slug: "new-river-inlet",
     state: "north-carolina", city: "New River Inlet, NC", region: "New Bern / Crystal Coast",
     lat: 34.5333, lon: -77.3417, latDisplay: "34.53°N", lonDisplay: "77.34°W",
@@ -1019,7 +1019,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8657419", waterTempId: "8657419",
+    id: "8657419", waterTempId: "8658163",
     name: "Ocean City Beach (fishing pier)", slug: "ocean-city-beach-fishing-pier",
     state: "north-carolina", city: "Ocean City Beach (fishing pier), NC", region: "New Bern / Crystal Coast",
     lat: 34.4517, lon: -77.495, latDisplay: "34.45°N", lonDisplay: "77.50°W",
@@ -1041,7 +1041,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8657813", waterTempId: "8657813",
+    id: "8657813", waterTempId: "8658163",
     name: "Hampstead", slug: "hampstead",
     state: "north-carolina", city: "Hampstead, NC", region: "New Bern / Crystal Coast",
     lat: 34.33940124511719, lon: -77.70600128173828, latDisplay: "34.34°N", lonDisplay: "77.71°W",
@@ -1085,7 +1085,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8658145", waterTempId: "8658145",
+    id: "8658145", waterTempId: "8658163",
     name: "Shinn Point, ICWW", slug: "shinn-point-icww",
     state: "north-carolina", city: "Shinn Point, ICWW, NC", region: "New Bern / Crystal Coast",
     lat: 34.217899322509766, lon: -77.81230163574219, latDisplay: "34.22°N", lonDisplay: "77.81°W",
@@ -1129,7 +1129,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8658501", waterTempId: "8658501",
+    id: "8658501", waterTempId: "8658120",
     name: "Orton Point", slug: "orton-point",
     state: "north-carolina", city: "Orton Point, NC", region: "Cape Fear / Wilmington",
     lat: 34.0567, lon: -77.94, latDisplay: "34.06°N", lonDisplay: "77.94°W",
@@ -1151,7 +1151,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8658559", waterTempId: "8658559",
+    id: "8658559", waterTempId: "8658120",
     name: "Wilmington Beach", slug: "wilmington-beach",
     state: "north-carolina", city: "Wilmington Beach, NC", region: "Cape Fear / Wilmington",
     lat: 34.0317, lon: -77.8933, latDisplay: "34.03°N", lonDisplay: "77.89°W",
@@ -1173,7 +1173,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8658579", waterTempId: "8658579",
+    id: "8658579", waterTempId: "8658120",
     name: "Sunny Point Army Base, Wharf no.3", slug: "sunny-point-army-base-wharf-no3",
     state: "north-carolina", city: "Sunny Point Army Base, Wharf no.3, NC", region: "Cape Fear / Wilmington",
     lat: 34.0233, lon: -77.9467, latDisplay: "34.02°N", lonDisplay: "77.95°W",
@@ -1195,7 +1195,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8658622", waterTempId: "8658622",
+    id: "8658622", waterTempId: "8658120",
     name: "Reaves Point", slug: "reaves-point",
     state: "north-carolina", city: "Reaves Point, NC", region: "Cape Fear / Wilmington",
     lat: 34.0033, lon: -77.955, latDisplay: "34.00°N", lonDisplay: "77.95°W",
@@ -1217,7 +1217,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8658654", waterTempId: "8658654",
+    id: "8658654", waterTempId: "8658120",
     name: "Sunny Point Army Base, Wharf no.1", slug: "sunny-point-army-base-wharf-no1",
     state: "north-carolina", city: "Sunny Point Army Base, Wharf no.1, NC", region: "Cape Fear / Wilmington",
     lat: 33.99, lon: -77.9567, latDisplay: "33.99°N", lonDisplay: "77.96°W",
@@ -1239,7 +1239,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8658715", waterTempId: "8658715",
+    id: "8658715", waterTempId: "8658120",
     name: "Federal Point", slug: "federal-point",
     state: "north-carolina", city: "Federal Point, NC", region: "Cape Fear / Wilmington",
     lat: 33.9617, lon: -77.94, latDisplay: "33.96°N", lonDisplay: "77.94°W",
@@ -1261,7 +1261,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8658741", waterTempId: "8658741",
+    id: "8658741", waterTempId: "8658120",
     name: "Zekes Island", slug: "zekes-island",
     state: "north-carolina", city: "Zekes Island, NC", region: "Cape Fear / Wilmington",
     lat: 33.95, lon: -77.9517, latDisplay: "33.95°N", lonDisplay: "77.95°W",
@@ -1283,7 +1283,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8658901", waterTempId: "8658901",
+    id: "8658901", waterTempId: "8658120",
     name: "Bald Head", slug: "bald-head",
     state: "north-carolina", city: "Bald Head, NC", region: "Cape Fear / Wilmington",
     lat: 33.88, lon: -78.0017, latDisplay: "33.88°N", lonDisplay: "78.00°W",
@@ -1305,7 +1305,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8659084", waterTempId: "8659084",
+    id: "8659084", waterTempId: "8658120",
     name: "Southport", slug: "southport",
     state: "north-carolina", city: "Southport, NC", region: "Cape Fear / Wilmington",
     lat: 33.915, lon: -78.0183, latDisplay: "33.91°N", lonDisplay: "78.02°W",
@@ -1327,7 +1327,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8659086", waterTempId: "8659086",
+    id: "8659086", waterTempId: "8658120",
     name: "Fort Caswell", slug: "fort-caswell",
     state: "north-carolina", city: "Fort Caswell, NC", region: "Cape Fear / Wilmington",
     lat: 33.8967, lon: -78.0167, latDisplay: "33.90°N", lonDisplay: "78.02°W",
@@ -1349,7 +1349,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8659182", waterTempId: "8659182",
+    id: "8659182", waterTempId: "8658120",
     name: "Oak Island, Yaupon Beach", slug: "oak-island-yaupon-beach",
     state: "north-carolina", city: "Oak Island, Yaupon Beach, NC", region: "Cape Fear / Wilmington",
     lat: 33.9017, lon: -78.0817, latDisplay: "33.90°N", lonDisplay: "78.08°W",
@@ -1371,7 +1371,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8659414", waterTempId: "8659414",
+    id: "8659414", waterTempId: "8658120",
     name: "Varnamtown, Lockwoods Folly River", slug: "varnamtown-lockwoods-folly-river",
     state: "north-carolina", city: "Varnamtown, Lockwoods Folly River, NC", region: "Cape Fear / Wilmington",
     lat: 33.933101654052734, lon: -78.21890258789062, latDisplay: "33.93°N", lonDisplay: "78.22°W",
@@ -1393,7 +1393,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8659665", waterTempId: "8659665",
+    id: "8659665", waterTempId: "8658120",
     name: "Bowen Point, Shallotte Inlet", slug: "bowen-point-shallotte-inlet",
     state: "north-carolina", city: "Bowen Point, Shallotte Inlet, NC", region: "Cape Fear / Wilmington",
     lat: 33.915000915527344, lon: -78.37329864501953, latDisplay: "33.92°N", lonDisplay: "78.37°W",
@@ -1415,7 +1415,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8659897", waterTempId: "8659897",
+    id: "8659897", waterTempId: "8661070",
     name: "Sunset Beach Pier", slug: "sunset-beach-pier",
     state: "north-carolina", city: "Sunset Beach Pier, NC", region: "Cape Fear / Wilmington",
     lat: 33.865, lon: -78.5067, latDisplay: "33.87°N", lonDisplay: "78.51°W",
@@ -1437,7 +1437,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8651097", waterTempId: "8651097",
+    id: "8651097", waterTempId: "8639348",
     name: "Chowan River, E of Harrellsville", slug: "chowan-river-e-of-harrellsville",
     state: "north-carolina", city: "Chowan River, E of Harrellsville, NC", region: "Albemarle Sound",
     lat: 36.270443, lon: -76.672806, latDisplay: "36.27°N", lonDisplay: "76.67°W",
@@ -1459,7 +1459,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8651371", waterTempId: "8651371",
+    id: "8651371", waterTempId: "8651370",
     name: "DUCK, (INSHORE)", slug: "duck-inshore",
     state: "north-carolina", city: "DUCK, (INSHORE), NC", region: "Outer Banks / Pamlico Sound",
     lat: 36.1817, lon: -75.75, latDisplay: "36.18°N", lonDisplay: "75.75°W",
@@ -1481,7 +1481,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8651817", waterTempId: "8651817",
+    id: "8651817", waterTempId: "8651370",
     name: "Edenhouse Point", slug: "edenhouse-point",
     state: "north-carolina", city: "Edenhouse Point, NC", region: "Albemarle Sound",
     lat: 36.055027, lon: -76.68425, latDisplay: "36.06°N", lonDisplay: "76.68°W",
@@ -1503,7 +1503,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8652232", waterTempId: "8652232",
+    id: "8652232", waterTempId: "8652226",
     name: "MANTEO, SHALLOWBAG BAY", slug: "manteo-shallowbag-bay",
     state: "north-carolina", city: "MANTEO, SHALLOWBAG BAY, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.91, lon: -75.67, latDisplay: "35.91°N", lonDisplay: "75.67°W",
@@ -1525,7 +1525,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8652715", waterTempId: "8652715",
+    id: "8652715", waterTempId: "8652587",
     name: "PEA ISLAND #2", slug: "pea-island-2",
     state: "north-carolina", city: "PEA ISLAND #2, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.7567, lon: -75.5317, latDisplay: "35.76°N", lonDisplay: "75.53°W",
@@ -1547,7 +1547,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8652827", waterTempId: "8652827",
+    id: "8652827", waterTempId: "8652226",
     name: "North Fork Alligator River NC 94", slug: "north-fork-alligator-river-nc-94",
     state: "north-carolina", city: "North Fork Alligator River NC 94, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.7215, lon: -76.1934, latDisplay: "35.72°N", lonDisplay: "76.19°W",
@@ -1569,7 +1569,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8652905", waterTempId: "8652905",
+    id: "8652905", waterTempId: "8652587",
     name: "Lake Worth", slug: "lake-worth",
     state: "north-carolina", city: "Lake Worth, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.6983, lon: -75.7733, latDisplay: "35.70°N", lonDisplay: "75.77°W",
@@ -1591,7 +1591,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8653084", waterTempId: "8653084",
+    id: "8653084", waterTempId: "8652587",
     name: "East Lake, Buck Island", slug: "east-lake-buck-island",
     state: "north-carolina", city: "East Lake, Buck Island, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.71731, lon: -76.06047, latDisplay: "35.72°N", lonDisplay: "76.06°W",
@@ -1613,7 +1613,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8653305", waterTempId: "8653305",
+    id: "8653305", waterTempId: "8652587",
     name: "LONG SHOAL LT.", slug: "long-shoal-lt",
     state: "north-carolina", city: "LONG SHOAL LT., NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.565, lon: -75.735, latDisplay: "35.56°N", lonDisplay: "75.73°W",
@@ -1635,7 +1635,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8653365", waterTempId: "8653365",
+    id: "8653365", waterTempId: "8656483",
     name: "Washington, Tar River", slug: "washington-tar-river",
     state: "north-carolina", city: "Washington, Tar River, NC", region: "Albemarle Sound",
     lat: 35.545, lon: -77.0617, latDisplay: "35.55°N", lonDisplay: "77.06°W",
@@ -1657,7 +1657,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8653395", waterTempId: "8653395",
+    id: "8653395", waterTempId: "8654467",
     name: "Belhaven, Pungo River", slug: "belhaven-pungo-river",
     state: "north-carolina", city: "Belhaven, Pungo River, NC", region: "Albemarle Sound",
     lat: 35.536682, lon: -76.6229, latDisplay: "35.54°N", lonDisplay: "76.62°W",
@@ -1679,7 +1679,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8653717", waterTempId: "8653717",
+    id: "8653717", waterTempId: "8656483",
     name: "Bayview, Pamlico River", slug: "bayview-pamlico-river",
     state: "north-carolina", city: "Bayview, Pamlico River, NC", region: "Albemarle Sound",
     lat: 35.427776, lon: -76.74, latDisplay: "35.43°N", lonDisplay: "76.74°W",
@@ -1701,7 +1701,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8653795", waterTempId: "8653795",
+    id: "8653795", waterTempId: "8654467",
     name: "Swanquarter", slug: "swanquarter",
     state: "north-carolina", city: "Swanquarter, NC", region: "Albemarle Sound",
     lat: 35.401943, lon: -76.32806, latDisplay: "35.40°N", lonDisplay: "76.33°W",
@@ -1723,7 +1723,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8653901", waterTempId: "8653901",
+    id: "8653901", waterTempId: "8654467",
     name: "GULL SHOAL", slug: "gull-shoal",
     state: "north-carolina", city: "GULL SHOAL, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.3667, lon: -75.9583, latDisplay: "35.37°N", lonDisplay: "75.96°W",
@@ -1745,7 +1745,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8653960", waterTempId: "8653960",
+    id: "8653960", waterTempId: "8654467",
     name: "AVON", slug: "avon",
     state: "north-carolina", city: "AVON, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.3467, lon: -75.5, latDisplay: "35.35°N", lonDisplay: "75.50°W",
@@ -1767,7 +1767,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8654572", waterTempId: "8654572",
+    id: "8654572", waterTempId: "8654467",
     name: "Ocracoke Island", slug: "ocracoke-island",
     state: "north-carolina", city: "Ocracoke Island, NC", region: "Outer Banks / Pamlico Sound",
     lat: 35.171333, lon: -75.817444, latDisplay: "35.17°N", lonDisplay: "75.82°W",
@@ -1789,7 +1789,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8654812", waterTempId: "8654812",
+    id: "8654812", waterTempId: "8656483",
     name: "New Bern, Trent River", slug: "new-bern-trent-river",
     state: "north-carolina", city: "New Bern, Trent River, NC", region: "Albemarle Sound",
     lat: 35.108162, lon: -77.03449, latDisplay: "35.11°N", lonDisplay: "77.03°W",
@@ -1811,7 +1811,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8656486", waterTempId: "8656486",
+    id: "8656486", waterTempId: "8656483",
     name: "N.C.A.R. STATE FISHERIES", slug: "ncar-state-fisheries",
     state: "north-carolina", city: "N.C.A.R. STATE FISHERIES, NC", region: "New Bern / Crystal Coast",
     lat: 34.72, lon: -76.755, latDisplay: "34.72°N", lonDisplay: "76.75°W",
@@ -1833,7 +1833,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8656612", waterTempId: "8656612",
+    id: "8656612", waterTempId: "8656483",
     name: "CALICO JACKS MARINA, HARKER'S ISLAND", slug: "calico-jacks-marina-harkers-island",
     state: "north-carolina", city: "CALICO JACKS MARINA, HARKER'S ISLAND, NC", region: "New Bern / Crystal Coast",
     lat: 34.6867, lon: -76.5333, latDisplay: "34.69°N", lonDisplay: "76.53°W",
@@ -1855,7 +1855,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8658681", waterTempId: "8658681",
+    id: "8658681", waterTempId: "8658120",
     name: "REAVES PT. CH., CAPE FEAR RIVER", slug: "reaves-pt-ch-cape-fear-river",
     state: "north-carolina", city: "REAVES PT. CH., CAPE FEAR RIVER, NC", region: "Cape Fear / Wilmington",
     lat: 33.975, lon: -77.945, latDisplay: "33.98°N", lonDisplay: "77.94°W",
@@ -1877,7 +1877,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8659898", waterTempId: "8659898",
+    id: "8659898", waterTempId: "8661070",
     name: "SUNSET BEACH BRIDGE", slug: "sunset-beach-bridge",
     state: "north-carolina", city: "SUNSET BEACH BRIDGE, NC", region: "Cape Fear / Wilmington",
     lat: 33.8817, lon: -78.51, latDisplay: "33.88°N", lonDisplay: "78.51°W",
@@ -1899,7 +1899,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8659942", waterTempId: "8659942",
+    id: "8659942", waterTempId: "8661070",
     name: "COLKINS NECK, LITTLE RIVER", slug: "colkins-neck-little-river",
     state: "north-carolina", city: "COLKINS NECK, LITTLE RIVER, NC", region: "Cape Fear / Wilmington",
     lat: 33.8733, lon: -78.5467, latDisplay: "33.87°N", lonDisplay: "78.55°W",
@@ -1921,7 +1921,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8659944", waterTempId: "8659944",
+    id: "8659944", waterTempId: "8661070",
     name: "CALABASH CREEK BRIDGE", slug: "calabash-creek-bridge",
     state: "north-carolina", city: "CALABASH CREEK BRIDGE, NC", region: "Cape Fear / Wilmington",
     lat: 33.8883, lon: -78.5517, latDisplay: "33.89°N", lonDisplay: "78.55°W",
@@ -1943,7 +1943,7 @@ export const NORTH_CAROLINA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8659960", waterTempId: "8659960",
+    id: "8659960", waterTempId: "8661070",
     name: "BIRD ISLAND, LITTLE RIVER INLET", slug: "bird-island-little-river-inlet",
     state: "north-carolina", city: "BIRD ISLAND, LITTLE RIVER INLET, NC", region: "Cape Fear / Wilmington",
     lat: 33.855, lon: -78.5433, latDisplay: "33.85°N", lonDisplay: "78.54°W",

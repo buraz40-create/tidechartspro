@@ -7,7 +7,7 @@ export type { StationConfig, NearbyStation, Species }
 
 export const ALABAMA_STATIONS: StationConfig[] = [
   {
-    id: "8730561", waterTempId: "8730561",
+    id: "8730561", waterTempId: "8729840",
     name: "Arnica Bay, Mill Point", slug: "arnica-bay-mill-point",
     state: "alabama", city: "Arnica Bay, Mill Point, AL", region: "Alabama Gulf Coast",
     lat: 30.310199737548828, lon: -87.51930236816406, latDisplay: "30.31°N", lonDisplay: "87.52°W",
@@ -29,7 +29,7 @@ export const ALABAMA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8730667", waterTempId: "8730667",
+    id: "8730667", waterTempId: "8729840",
     name: "Alabama Point", slug: "alabama-point",
     state: "alabama", city: "Alabama Point, AL", region: "Alabama Gulf Coast",
     lat: 30.27861111111111, lon: -87.55500030517578, latDisplay: "30.28°N", lonDisplay: "87.56°W",
@@ -51,7 +51,7 @@ export const ALABAMA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8730849", waterTempId: "8730849",
+    id: "8730849", waterTempId: "8729840",
     name: "Wolf Bay", slug: "wolf-bay",
     state: "alabama", city: "Wolf Bay, AL", region: "Mobile Bay",
     lat: 30.354999542236328, lon: -87.5999984741211, latDisplay: "30.35°N", lonDisplay: "87.60°W",
@@ -73,7 +73,7 @@ export const ALABAMA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8731269", waterTempId: "8731269",
+    id: "8731269", waterTempId: "8735180",
     name: "Gulf State Park Pier", slug: "gulf-state-park-pier",
     state: "alabama", city: "Gulf State Park Pier, AL", region: "Alabama Gulf Coast",
     lat: 30.248300552368164, lon: -87.66829681396484, latDisplay: "30.25°N", lonDisplay: "87.67°W",
@@ -95,7 +95,7 @@ export const ALABAMA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8731439", waterTempId: "8731439",
+    id: "8731439", waterTempId: "8735180",
     name: "Gulf Shores, ICWW", slug: "gulf-shores-icww",
     state: "alabama", city: "Gulf Shores, ICWW, AL", region: "Alabama Gulf Coast",
     lat: 30.27988888888889, lon: -87.68427777777778, latDisplay: "30.28°N", lonDisplay: "87.68°W",
@@ -117,7 +117,7 @@ export const ALABAMA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8731952", waterTempId: "8731952",
+    id: "8731952", waterTempId: "8735180",
     name: "Bon Secour, Bon Secour River", slug: "bon-secour-bon-secour-river",
     state: "alabama", city: "Bon Secour, Bon Secour River, AL", region: "Alabama Gulf Coast",
     lat: 30.3033, lon: -87.735, latDisplay: "30.30°N", lonDisplay: "87.73°W",
@@ -139,7 +139,7 @@ export const ALABAMA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8732828", waterTempId: "8732828",
+    id: "8732828", waterTempId: "8735180",
     name: "Weeks Bay", slug: "weeks-bay",
     state: "alabama", city: "Weeks Bay, AL", region: "Mobile Bay",
     lat: 30.416900634765625, lon: -87.82540130615234, latDisplay: "30.42°N", lonDisplay: "87.83°W",
@@ -161,7 +161,7 @@ export const ALABAMA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8733502", waterTempId: "8733502",
+    id: "8733502", waterTempId: "8736897",
     name: "Fly Creek, Mobile Bay", slug: "fly-creek-mobile-bay",
     state: "alabama", city: "Fly Creek, Mobile Bay, AL", region: "Mobile Bay",
     lat: 30.542800903320312, lon: -87.9010009765625, latDisplay: "30.54°N", lonDisplay: "87.90°W",
@@ -183,7 +183,7 @@ export const ALABAMA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8733821", waterTempId: "8733821",
+    id: "8733821", waterTempId: "8736897",
     name: "Point Clear, Mobile Bay", slug: "point-clear-mobile-bay",
     state: "alabama", city: "Point Clear, Mobile Bay, AL", region: "Mobile Bay",
     lat: 30.48663888888889, lon: -87.93452777777777, latDisplay: "30.49°N", lonDisplay: "87.93°W",
@@ -205,7 +205,7 @@ export const ALABAMA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8733839", waterTempId: "8733839",
+    id: "8733839", waterTempId: "8737048",
     name: "Meaher State Park, Mobile Bay", slug: "meaher-state-park-mobile-bay",
     state: "alabama", city: "Meaher State Park, Mobile Bay, AL", region: "Mobile Bay",
     lat: 30.66716666666667, lon: -87.93644444444445, latDisplay: "30.67°N", lonDisplay: "87.94°W",
@@ -227,7 +227,7 @@ export const ALABAMA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8734635", waterTempId: "8734635",
+    id: "8734635", waterTempId: "8735180",
     name: "Mobile Point (Fort Morgan)", slug: "mobile-point-fort-morgan",
     state: "alabama", city: "Mobile Point (Fort Morgan), AL", region: "Alabama Gulf Coast",
     lat: 30.2333, lon: -88.02, latDisplay: "30.23°N", lonDisplay: "88.02°W",
@@ -271,7 +271,7 @@ export const ALABAMA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8735181", waterTempId: "8735181",
+    id: "8735181", waterTempId: "8735180",
     name: "Dauphin Island Hydro", slug: "dauphin-island-hydro",
     state: "alabama", city: "Dauphin Island Hydro, AL", region: "Alabama Gulf Coast",
     lat: 30.25131944444444, lon: -88.07948611111111, latDisplay: "30.25°N", lonDisplay: "88.08°W",
@@ -293,7 +293,7 @@ export const ALABAMA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8735391", waterTempId: "8735391",
+    id: "8735391", waterTempId: "8736897",
     name: "Dog River Bridge", slug: "dog-river-bridge",
     state: "alabama", city: "Dog River Bridge, AL", region: "Mobile Bay",
     lat: 30.565200805664062, lon: -88.08799743652344, latDisplay: "30.57°N", lonDisplay: "88.09°W",
@@ -315,7 +315,7 @@ export const ALABAMA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8735523", waterTempId: "8735523",
+    id: "8735523", waterTempId: "8735180",
     name: "East Fowl River, Hwy 193 Bridge", slug: "east-fowl-river-hwy-193-bridge",
     state: "alabama", city: "East Fowl River, Hwy 193 Bridge, AL", region: "Mobile Bay",
     lat: 30.443700790405273, lon: -88.11389923095703, latDisplay: "30.44°N", lonDisplay: "88.11°W",
@@ -381,7 +381,7 @@ export const ALABAMA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8737138", waterTempId: "8737138",
+    id: "8737138", waterTempId: "8737048",
     name: "William Brooks Park, Chichasaw Creek", slug: "william-brooks-park-chichasaw-creek",
     state: "alabama", city: "William Brooks Park, Chichasaw Creek, AL", region: "Mobile Bay",
     lat: 30.78190040588379, lon: -88.07360076904297, latDisplay: "30.78°N", lonDisplay: "88.07°W",
@@ -403,7 +403,7 @@ export const ALABAMA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8737182", waterTempId: "8737182",
+    id: "8737182", waterTempId: "8737048",
     name: "Lower Hall Landing, Tensaw River", slug: "lower-hall-landing-tensaw-river",
     state: "alabama", city: "Lower Hall Landing, Tensaw River, AL", region: "Mobile Bay",
     lat: 30.8183, lon: -87.915, latDisplay: "30.82°N", lonDisplay: "87.92°W",
@@ -425,7 +425,7 @@ export const ALABAMA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8737373", waterTempId: "8737373",
+    id: "8737373", waterTempId: "8737048",
     name: "Lower Bryant Landing", slug: "lower-bryant-landing",
     state: "alabama", city: "Lower Bryant Landing, AL", region: "Mobile Bay",
     lat: 30.9783, lon: -87.8733, latDisplay: "30.98°N", lonDisplay: "87.87°W",
@@ -447,7 +447,7 @@ export const ALABAMA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8738043", waterTempId: "8738043",
+    id: "8738043", waterTempId: "8735180",
     name: "West Fowl River, Hwy 188 bridge", slug: "west-fowl-river-hwy-188-bridge",
     state: "alabama", city: "West Fowl River, Hwy 188 bridge, AL", region: "Mobile Bay",
     lat: 30.37660026550293, lon: -88.15859985351562, latDisplay: "30.38°N", lonDisplay: "88.16°W",
@@ -469,7 +469,7 @@ export const ALABAMA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8739051", waterTempId: "8739051",
+    id: "8739051", waterTempId: "8735180",
     name: "Bayou La Batre, Mississippi Sound", slug: "bayou-la-batre-mississippi-sound",
     state: "alabama", city: "Bayou La Batre, Mississippi Sound, AL", region: "Mobile Bay",
     lat: 30.3717, lon: -88.275, latDisplay: "30.37°N", lonDisplay: "88.28°W",
@@ -491,7 +491,7 @@ export const ALABAMA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8739803", waterTempId: "8739803",
+    id: "8739803", waterTempId: "8735180",
     name: "Bayou LaBatre Bridge", slug: "bayou-labatre-bridge",
     state: "alabama", city: "Bayou LaBatre Bridge, AL", region: "Mobile Bay",
     lat: 30.40570068359375, lon: -88.2477035522461, latDisplay: "30.41°N", lonDisplay: "88.25°W",
@@ -513,7 +513,7 @@ export const ALABAMA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8735184", waterTempId: "8735184",
+    id: "8735184", waterTempId: "8735180",
     name: "DAUPHIN ISLAND (TEMP)", slug: "dauphin-island-temp",
     state: "alabama", city: "DAUPHIN ISLAND (TEMP), AL", region: "Alabama Gulf Coast",
     lat: 30.2517, lon: -88.08, latDisplay: "30.25°N", lonDisplay: "88.08°W",
@@ -535,7 +535,7 @@ export const ALABAMA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8735587", waterTempId: "8735587",
+    id: "8735587", waterTempId: "8735180",
     name: "NORTH POINT, DAUPHIN ISLAND", slug: "north-point-dauphin-island",
     state: "alabama", city: "NORTH POINT, DAUPHIN ISLAND, AL", region: "Alabama Gulf Coast",
     lat: 30.2583, lon: -88.1133, latDisplay: "30.26°N", lonDisplay: "88.11°W",

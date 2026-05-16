@@ -29,7 +29,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8770520", waterTempId: "8770520",
+    id: "8770520", waterTempId: "8770475",
     name: "Rainbow Bridge", slug: "rainbow-bridge",
     state: "texas", city: "Rainbow Bridge, TX", region: "Sabine / Beaumont",
     lat: 29.979999542236328, lon: -93.88169860839844, latDisplay: "29.98°N", lonDisplay: "93.88°W",
@@ -51,7 +51,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8770542", waterTempId: "8770542",
+    id: "8770542", waterTempId: "8770777",
     name: "Buffalo Bayou, Houston Ship Channel", slug: "buffalo-bayou-houston-ship-channel",
     state: "texas", city: "Buffalo Bayou, Houston Ship Channel, TX", region: "Matagorda Bay",
     lat: 29.761899948120117, lon: -95.34429931640625, latDisplay: "29.76°N", lonDisplay: "95.34°W",
@@ -73,7 +73,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8770557", waterTempId: "8770557",
+    id: "8770557", waterTempId: "8770613",
     name: "Point Barrow, Trinity Bay", slug: "point-barrow-trinity-bay",
     state: "texas", city: "Point Barrow, Trinity Bay, TX", region: "Galveston Bay",
     lat: 29.74, lon: -94.8317, latDisplay: "29.74°N", lonDisplay: "94.83°W",
@@ -95,7 +95,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8770559", waterTempId: "8770559",
+    id: "8770559", waterTempId: "8770971",
     name: "Round Point, Trinity Bay", slug: "round-point-trinity-bay",
     state: "texas", city: "Round Point, Trinity Bay, TX", region: "Galveston Bay",
     lat: 29.7133, lon: -94.69, latDisplay: "29.71°N", lonDisplay: "94.69°W",
@@ -117,7 +117,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8770570", waterTempId: "8770570",
+    id: "8770570", waterTempId: "8770822",
     name: "Sabine Pass", slug: "sabine-pass",
     state: "texas", city: "Sabine Pass, TX", region: "Sabine / Beaumont",
     lat: 29.7284, lon: -93.8701, latDisplay: "29.73°N", lonDisplay: "93.87°W",
@@ -161,7 +161,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8770625", waterTempId: "8770625",
+    id: "8770625", waterTempId: "8770613",
     name: "Umbrella Point, Trinity Bay", slug: "umbrella-point-trinity-bay",
     state: "texas", city: "Umbrella Point, Trinity Bay, TX", region: "Galveston Bay",
     lat: 29.68, lon: -94.8683, latDisplay: "29.68°N", lonDisplay: "94.87°W",
@@ -183,7 +183,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8770653", waterTempId: "8770653",
+    id: "8770653", waterTempId: "8770733",
     name: "Cypress, San Jacinto River", slug: "cypress-san-jacinto-river",
     state: "texas", city: "Cypress, San Jacinto River, TX", region: "Galveston Bay",
     lat: 29.84670066833496, lon: -95.08830261230469, latDisplay: "29.85°N", lonDisplay: "95.09°W",
@@ -227,7 +227,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8770743", waterTempId: "8770743",
+    id: "8770743", waterTempId: "8770733",
     name: "Battleship Texas State Park", slug: "battleship-texas-state-park",
     state: "texas", city: "Battleship Texas State Park, TX", region: "Galveston Bay",
     lat: 29.75670051574707, lon: -95.08999633789062, latDisplay: "29.76°N", lonDisplay: "95.09°W",
@@ -249,7 +249,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8770752", waterTempId: "8770752",
+    id: "8770752", waterTempId: "8770822",
     name: "COX WC-53 Platform", slug: "cox-wc-53-platform",
     state: "texas", city: "COX WC-53 Platform, TX", region: "Sabine / Beaumont",
     lat: 29.62400054931641, lon: -93.75, latDisplay: "29.62°N", lonDisplay: "93.75°W",
@@ -337,7 +337,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8770931", waterTempId: "8770931",
+    id: "8770931", waterTempId: "8771013",
     name: "Smith Point", slug: "smith-point",
     state: "texas", city: "Smith Point, TX", region: "Galveston Bay",
     lat: 29.535, lon: -94.7817, latDisplay: "29.54°N", lonDisplay: "94.78°W",
@@ -359,7 +359,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8770933", waterTempId: "8770933",
+    id: "8770933", waterTempId: "8770613",
     name: "Clear Lake", slug: "clear-lake",
     state: "texas", city: "Clear Lake, TX", region: "Galveston Bay",
     lat: 29.5633, lon: -95.0667, latDisplay: "29.56°N", lonDisplay: "95.07°W",
@@ -425,7 +425,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8771050", waterTempId: "8771050",
+    id: "8771050", waterTempId: "8770822",
     name: "Renaissance SA-13 Platform", slug: "renaissance-sa-13-platform",
     state: "texas", city: "Renaissance SA-13 Platform, TX", region: "Sabine / Beaumont",
     lat: 29.47900009155273, lon: -93.63999938964844, latDisplay: "29.48°N", lonDisplay: "93.64°W",
@@ -447,7 +447,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8771074", waterTempId: "8771074",
+    id: "8771074", waterTempId: "8770822",
     name: "Fieldwood WC-289 Platform", slug: "fieldwood-wc-289-platform",
     state: "texas", city: "Fieldwood WC-289 Platform, TX", region: "Sabine / Beaumont",
     lat: 29.34700012207031, lon: -93.63500213623047, latDisplay: "29.35°N", lonDisplay: "93.64°W",
@@ -469,7 +469,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8771165", waterTempId: "8771165",
+    id: "8771165", waterTempId: "8771341",
     name: "Sievers Cove, Goat Island", slug: "sievers-cove-goat-island",
     state: "texas", city: "Sievers Cove, Goat Island, TX", region: "Galveston Bay",
     lat: 29.431100845336914, lon: -94.71040344238281, latDisplay: "29.43°N", lonDisplay: "94.71°W",
@@ -491,7 +491,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8771262", waterTempId: "8771262",
+    id: "8771262", waterTempId: "8771486",
     name: "Texas City, Galveston Bay", slug: "texas-city-galveston-bay",
     state: "texas", city: "Texas City, Galveston Bay, TX", region: "Galveston Bay",
     lat: 29.390600204467773, lon: -94.88490295410156, latDisplay: "29.39°N", lonDisplay: "94.88°W",
@@ -513,7 +513,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8771328", waterTempId: "8771328",
+    id: "8771328", waterTempId: "8771341",
     name: "Port Bolivar", slug: "port-bolivar",
     state: "texas", city: "Port Bolivar, TX", region: "Galveston Bay",
     lat: 29.365, lon: -94.78, latDisplay: "29.36°N", lonDisplay: "94.78°W",
@@ -557,7 +557,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8771367", waterTempId: "8771367",
+    id: "8771367", waterTempId: "8770822",
     name: "Sabine Offshore Light (USCG S-1 Platform)", slug: "sabine-offshore-light-uscg-s-1-platform",
     state: "texas", city: "Sabine Offshore Light (USCG S-1 Platform), TX", region: "Sabine / Beaumont",
     lat: 29.4689998626709, lon: -93.72000122070312, latDisplay: "29.47°N", lonDisplay: "93.72°W",
@@ -579,7 +579,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8771416", waterTempId: "8771416",
+    id: "8771416", waterTempId: "8771341",
     name: "Galveston Bay Entrance, South Jetty", slug: "galveston-bay-entrance-south-jetty",
     state: "texas", city: "Galveston Bay Entrance, South Jetty, TX", region: "Galveston Bay",
     lat: 29.32670021057129, lon: -94.69329833984375, latDisplay: "29.33°N", lonDisplay: "94.69°W",
@@ -645,7 +645,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8771510", waterTempId: "8771510",
+    id: "8771510", waterTempId: "8771450",
     name: "Galveston Pleasure Pier", slug: "galveston-pleasure-pier",
     state: "texas", city: "Galveston Pleasure Pier, TX", region: "Galveston Bay",
     lat: 29.2853, lon: -94.7894, latDisplay: "29.29°N", lonDisplay: "94.79°W",
@@ -667,7 +667,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8771722", waterTempId: "8771722",
+    id: "8771722", waterTempId: "8771486",
     name: "Jamaica Beach, West Bay", slug: "jamaica-beach-west-bay",
     state: "texas", city: "Jamaica Beach, West Bay, TX", region: "Galveston Bay",
     lat: 29.19860076904297, lon: -94.98829650878906, latDisplay: "29.20°N", lonDisplay: "94.99°W",
@@ -689,7 +689,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8771801", waterTempId: "8771801",
+    id: "8771801", waterTempId: "8771972",
     name: "Alligator Point, West Bay", slug: "alligator-point-west-bay",
     state: "texas", city: "Alligator Point, West Bay, TX", region: "Galveston Bay",
     lat: 29.1667, lon: -95.125, latDisplay: "29.17°N", lonDisplay: "95.13°W",
@@ -733,7 +733,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8772132", waterTempId: "8772132",
+    id: "8772132", waterTempId: "8771972",
     name: "Christmas Bay", slug: "christmas-bay",
     state: "texas", city: "Christmas Bay, TX", region: "Galveston Bay",
     lat: 29.0417, lon: -95.175, latDisplay: "29.04°N", lonDisplay: "95.17°W",
@@ -755,7 +755,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8772391", waterTempId: "8772391",
+    id: "8772391", waterTempId: "8772471",
     name: "Old Brazos River, Freeport", slug: "old-brazos-river-freeport",
     state: "texas", city: "Old Brazos River, Freeport, TX", region: "Matagorda Bay",
     lat: 28.96109962463379, lon: -95.36740112304688, latDisplay: "28.96°N", lonDisplay: "95.37°W",
@@ -777,7 +777,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8772440", waterTempId: "8772440",
+    id: "8772440", waterTempId: "8772471",
     name: "Freeport Harbor", slug: "freeport-harbor",
     state: "texas", city: "Freeport Harbor, TX", region: "Matagorda Bay",
     lat: 28.9483, lon: -95.3083, latDisplay: "28.95°N", lonDisplay: "95.31°W",
@@ -799,7 +799,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8772447", waterTempId: "8772447",
+    id: "8772447", waterTempId: "8772471",
     name: "USCG Freeport", slug: "uscg-freeport",
     state: "texas", city: "USCG Freeport, TX", region: "Matagorda Bay",
     lat: 28.94330555555555, lon: -95.3025, latDisplay: "28.94°N", lonDisplay: "95.30°W",
@@ -843,7 +843,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8772479", waterTempId: "8772479",
+    id: "8772479", waterTempId: "8772471",
     name: "Freeport Entrance Jetty", slug: "freeport-entrance-jetty",
     state: "texas", city: "Freeport Entrance Jetty, TX", region: "Matagorda Bay",
     lat: 28.930299758911133, lon: -95.30590057373047, latDisplay: "28.93°N", lonDisplay: "95.31°W",
@@ -865,7 +865,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8772985", waterTempId: "8772985",
+    id: "8772985", waterTempId: "8773146",
     name: "Sargent, ICWW", slug: "sargent-icww",
     state: "texas", city: "Sargent, ICWW, TX", region: "Matagorda Bay",
     lat: 28.77163888888889, lon: -95.61683333333333, latDisplay: "28.77°N", lonDisplay: "95.62°W",
@@ -997,7 +997,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8773808", waterTempId: "8773808",
+    id: "8773808", waterTempId: "8773701",
     name: "Barroom Bay", slug: "barroom-bay",
     state: "texas", city: "Barroom Bay, TX", region: "Matagorda Bay",
     lat: 28.402999877929688, lon: -96.48079681396484, latDisplay: "28.40°N", lonDisplay: "96.48°W",
@@ -1019,7 +1019,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8773896", waterTempId: "8773896",
+    id: "8773896", waterTempId: "8773037",
     name: "Shoalwater Flats, Espiritu Santo Bay", slug: "shoalwater-flats-espiritu-santo-bay",
     state: "texas", city: "Shoalwater Flats, Espiritu Santo Bay, TX", region: "Aransas / Corpus Christi",
     lat: 28.364500045776367, lon: -96.5802993774414, latDisplay: "28.36°N", lonDisplay: "96.58°W",
@@ -1085,7 +1085,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8774652", waterTempId: "8774652",
+    id: "8774652", waterTempId: "8774770",
     name: "Bayside, Copano Bay", slug: "bayside-copano-bay",
     state: "texas", city: "Bayside, Copano Bay, TX", region: "Aransas / Corpus Christi",
     lat: 28.068300247192383, lon: -97.19560241699219, latDisplay: "28.07°N", lonDisplay: "97.20°W",
@@ -1129,7 +1129,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8775083", waterTempId: "8775083",
+    id: "8775083", waterTempId: "8775237",
     name: "Conn Brown Harbor, Aransas Pass", slug: "conn-brown-harbor-aransas-pass",
     state: "texas", city: "Conn Brown Harbor, Aransas Pass, TX", region: "Aransas / Corpus Christi",
     lat: 27.908100128173828, lon: -97.13529968261719, latDisplay: "27.91°N", lonDisplay: "97.14°W",
@@ -1151,7 +1151,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8775131", waterTempId: "8775131",
+    id: "8775131", waterTempId: "8775132",
     name: "Portland, Nueces Bay", slug: "portland-nueces-bay",
     state: "texas", city: "Portland, Nueces Bay, TX", region: "Aransas / Corpus Christi",
     lat: 27.88279914855957, lon: -97.34310150146484, latDisplay: "27.88°N", lonDisplay: "97.34°W",
@@ -1195,7 +1195,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8775188", waterTempId: "8775188",
+    id: "8775188", waterTempId: "8775222",
     name: "White Point", slug: "white-point",
     state: "texas", city: "White Point, TX", region: "Aransas / Corpus Christi",
     lat: 27.858299255371094, lon: -97.4749984741211, latDisplay: "27.86°N", lonDisplay: "97.47°W",
@@ -1283,7 +1283,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8775244", waterTempId: "8775244",
+    id: "8775244", waterTempId: "8775222",
     name: "Nueces Bay", slug: "nueces-bay",
     state: "texas", city: "Nueces Bay, TX", region: "Aransas / Corpus Christi",
     lat: 27.832799911499023, lon: -97.48590087890625, latDisplay: "27.83°N", lonDisplay: "97.49°W",
@@ -1305,7 +1305,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8775270", waterTempId: "8775270",
+    id: "8775270", waterTempId: "8775241",
     name: "Port Aransas (H. Caldwell Pier)", slug: "port-aransas-h-caldwell-pier",
     state: "texas", city: "Port Aransas (H. Caldwell Pier), TX", region: "Aransas / Corpus Christi",
     lat: 27.82670021057129, lon: -97.05000305175781, latDisplay: "27.83°N", lonDisplay: "97.05°W",
@@ -1371,7 +1371,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8775421", waterTempId: "8775421",
+    id: "8775421", waterTempId: "8775792",
     name: "Corpus Christi Naval Air Station", slug: "corpus-christi-naval-air-station",
     state: "texas", city: "Corpus Christi Naval Air Station, TX", region: "Aransas / Corpus Christi",
     lat: 27.704999923706055, lon: -97.27999877929688, latDisplay: "27.70°N", lonDisplay: "97.28°W",
@@ -1415,7 +1415,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8775870", waterTempId: "8775870",
+    id: "8775870", waterTempId: "8775792",
     name: "Corpus Christi, Bob Hall Pier", slug: "corpus-christi-bob-hall-pier",
     state: "texas", city: "Corpus Christi, Bob Hall Pier, TX", region: "Aransas / Corpus Christi",
     lat: 27.579999923706055, lon: -97.2166976928711, latDisplay: "27.58°N", lonDisplay: "97.22°W",
@@ -1437,7 +1437,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8778485", waterTempId: "8778485",
+    id: "8778485", waterTempId: "8778490",
     name: "Padre Island, Port Mansfield Channel Ent.", slug: "padre-island-port-mansfield-channel-ent",
     state: "texas", city: "Padre Island, Port Mansfield Channel Ent., TX", region: "Aransas / Corpus Christi",
     lat: 26.564199447631836, lon: -97.27649688720703, latDisplay: "26.56°N", lonDisplay: "97.28°W",
@@ -1481,7 +1481,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8779724", waterTempId: "8779724",
+    id: "8779724", waterTempId: "8779748",
     name: "Queen Isabella Causeway (east end)", slug: "queen-isabella-causeway-east-end",
     state: "texas", city: "Queen Isabella Causeway (east end), TX", region: "Aransas / Corpus Christi",
     lat: 26.0783, lon: -97.17, latDisplay: "26.08°N", lonDisplay: "97.17°W",
@@ -1503,7 +1503,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8779739", waterTempId: "8779739",
+    id: "8779739", waterTempId: "8779748",
     name: "Queen Isabella Causeway (west end)", slug: "queen-isabella-causeway-west-end",
     state: "texas", city: "Queen Isabella Causeway (west end), TX", region: "Aransas / Corpus Christi",
     lat: 26.0717, lon: -97.1917, latDisplay: "26.07°N", lonDisplay: "97.19°W",
@@ -1569,7 +1569,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8779750", waterTempId: "8779750",
+    id: "8779750", waterTempId: "8779749",
     name: "PADRE ISLAND (south end)", slug: "padre-island-south-end",
     state: "texas", city: "PADRE ISLAND (south end), TX", region: "Aransas / Corpus Christi",
     lat: 26.0683, lon: -97.1567, latDisplay: "26.07°N", lonDisplay: "97.16°W",
@@ -1591,7 +1591,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8779768", waterTempId: "8779768",
+    id: "8779768", waterTempId: "8779748",
     name: "South Bay entrance", slug: "south-bay-entrance",
     state: "texas", city: "South Bay entrance, TX", region: "Aransas / Corpus Christi",
     lat: 26.0517, lon: -97.1817, latDisplay: "26.05°N", lonDisplay: "97.18°W",
@@ -1635,7 +1635,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8779911", waterTempId: "8779911",
+    id: "8779911", waterTempId: "8779770",
     name: "San Martin Lake Channel", slug: "san-martin-lake-channel",
     state: "texas", city: "San Martin Lake Channel, TX", region: "Aransas / Corpus Christi",
     lat: 26.001800537109375, lon: -97.29859924316406, latDisplay: "26.00°N", lonDisplay: "97.30°W",
@@ -1657,7 +1657,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8770501", waterTempId: "8770501",
+    id: "8770501", waterTempId: "8770733",
     name: "ANNIE'S LANDING, SAN JACINTO RIVER", slug: "annies-landing-san-jacinto-river",
     state: "texas", city: "ANNIE'S LANDING, SAN JACINTO RIVER, TX", region: "Galveston Bay",
     lat: 29.8183, lon: -95.0783, latDisplay: "29.82°N", lonDisplay: "95.08°W",
@@ -1679,7 +1679,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8770590", waterTempId: "8770590",
+    id: "8770590", waterTempId: "8770822",
     name: "SABINE PASS", slug: "sabine-pass-8770590",
     state: "texas", city: "SABINE PASS, TX", region: "Sabine / Beaumont",
     lat: 29.705, lon: -93.8533, latDisplay: "29.70°N", lonDisplay: "93.85°W",
@@ -1701,7 +1701,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8770597", waterTempId: "8770597",
+    id: "8770597", waterTempId: "8770475",
     name: "Orange", slug: "orange",
     state: "texas", city: "Orange, TX", region: "Sabine / Beaumont",
     lat: 30.0983, lon: -93.7217, latDisplay: "30.10°N", lonDisplay: "93.72°W",
@@ -1723,7 +1723,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8771021", waterTempId: "8771021",
+    id: "8771021", waterTempId: "8771013",
     name: "TRINITY RIVER CHANNEL PLATFORM", slug: "trinity-river-channel-platform",
     state: "texas", city: "TRINITY RIVER CHANNEL PLATFORM, TX", region: "Galveston Bay",
     lat: 29.515, lon: -94.8483, latDisplay: "29.52°N", lonDisplay: "94.85°W",
@@ -1745,7 +1745,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8771081", waterTempId: "8771081",
+    id: "8771081", waterTempId: "8770822",
     name: "Sabine Offshore", slug: "sabine-offshore",
     state: "texas", city: "Sabine Offshore, TX", region: "Sabine / Beaumont",
     lat: 29.4983, lon: -93.64, latDisplay: "29.50°N", lonDisplay: "93.64°W",
@@ -1767,7 +1767,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8771904", waterTempId: "8771904",
+    id: "8771904", waterTempId: "8771341",
     name: "GALVESTON OFFSHORE", slug: "galveston-offshore",
     state: "texas", city: "GALVESTON OFFSHORE, TX", region: "Galveston Bay",
     lat: 29.1233, lon: -94.5083, latDisplay: "29.12°N", lonDisplay: "94.51°W",
@@ -1789,7 +1789,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8773156", waterTempId: "8773156",
+    id: "8773156", waterTempId: "8773146",
     name: "PALACIOS", slug: "palacios",
     state: "texas", city: "PALACIOS, TX", region: "Matagorda Bay",
     lat: 28.6933, lon: -96.225, latDisplay: "28.69°N", lonDisplay: "96.22°W",
@@ -1811,7 +1811,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8773385", waterTempId: "8773385",
+    id: "8773385", waterTempId: "8773146",
     name: "Matagorda Peninsula", slug: "matagorda-peninsula",
     state: "texas", city: "Matagorda Peninsula, TX", region: "Matagorda Bay",
     lat: 28.612072, lon: -95.97544, latDisplay: "28.61°N", lonDisplay: "95.98°W",
@@ -1833,7 +1833,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8773963", waterTempId: "8773963",
+    id: "8773963", waterTempId: "8773701",
     name: "NORTH MATAGORDA", slug: "north-matagorda",
     state: "texas", city: "NORTH MATAGORDA, TX", region: "Matagorda Bay",
     lat: 28.3333, lon: -96.4617, latDisplay: "28.33°N", lonDisplay: "96.46°W",
@@ -1855,7 +1855,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8775238", waterTempId: "8775238",
+    id: "8775238", waterTempId: "8775241",
     name: "PORT ARANSAS (SPECIAL PROJECT)", slug: "port-aransas-special-project",
     state: "texas", city: "PORT ARANSAS (SPECIAL PROJECT), TX", region: "Aransas / Corpus Christi",
     lat: 27.8383, lon: -97.0517, latDisplay: "27.84°N", lonDisplay: "97.05°W",
@@ -1877,7 +1877,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8775351", waterTempId: "8775351",
+    id: "8775351", waterTempId: "8775296",
     name: "CORPUS CHRISTI", slug: "corpus-christi",
     state: "texas", city: "CORPUS CHRISTI, TX", region: "Aransas / Corpus Christi",
     lat: 27.7933, lon: -97.39, latDisplay: "27.79°N", lonDisplay: "97.39°W",
@@ -1899,7 +1899,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8776639", waterTempId: "8776639",
+    id: "8776639", waterTempId: "8776604",
     name: "RIVIERA BEACH, BAFFIN BAY", slug: "riviera-beach-baffin-bay",
     state: "texas", city: "RIVIERA BEACH, BAFFIN BAY, TX", region: "Lower Laguna Madre",
     lat: 27.288305, lon: -97.6617, latDisplay: "27.29°N", lonDisplay: "97.66°W",
@@ -1921,7 +1921,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8777562", waterTempId: "8777562",
+    id: "8777562", waterTempId: "8777812",
     name: "EL TORO", slug: "el-toro",
     state: "texas", city: "EL TORO, TX", region: "Aransas / Corpus Christi",
     lat: 26.9417, lon: -97.4583, latDisplay: "26.94°N", lonDisplay: "97.46°W",
@@ -1943,7 +1943,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8779040", waterTempId: "8779040",
+    id: "8779040", waterTempId: "8779280",
     name: "GREEN IS #1, WEST SIDE", slug: "green-is-1-west-side",
     state: "texas", city: "GREEN IS #1, WEST SIDE, TX", region: "Aransas / Corpus Christi",
     lat: 26.3617, lon: -97.3183, latDisplay: "26.36°N", lonDisplay: "97.32°W",
@@ -1965,7 +1965,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8779571", waterTempId: "8779571",
+    id: "8779571", waterTempId: "8779748",
     name: "CAMERON CO. FISHING PIER", slug: "cameron-co-fishing-pier",
     state: "texas", city: "CAMERON CO. FISHING PIER, TX", region: "Aransas / Corpus Christi",
     lat: 26.14, lon: -97.1667, latDisplay: "26.14°N", lonDisplay: "97.17°W",
@@ -1987,7 +1987,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8779751", waterTempId: "8779751",
+    id: "8779751", waterTempId: "8779749",
     name: "PADRE ISLAND, SOUTH END", slug: "padre-island-south-end-8779751",
     state: "texas", city: "PADRE ISLAND, SOUTH END, TX", region: "Aransas / Corpus Christi",
     lat: 26.0683, lon: -97.1517, latDisplay: "26.07°N", lonDisplay: "97.15°W",
@@ -2009,7 +2009,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8779753", waterTempId: "8779753",
+    id: "8779753", waterTempId: "8779749",
     name: "SOUTH PADRE IS., (MODIFIED BULB)", slug: "south-padre-is-modified-bulb",
     state: "texas", city: "SOUTH PADRE IS., (MODIFIED BULB), TX", region: "Aransas / Corpus Christi",
     lat: 26.0683, lon: -97.15, latDisplay: "26.07°N", lonDisplay: "97.15°W",
@@ -2031,7 +2031,7 @@ export const TEXAS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8779977", waterTempId: "8779977",
+    id: "8779977", waterTempId: "8779770",
     name: "Brownsville", slug: "brownsville",
     state: "texas", city: "Brownsville, TX", region: "Aransas / Corpus Christi",
     lat: 25.9517, lon: -97.4017, latDisplay: "25.95°N", lonDisplay: "97.40°W",

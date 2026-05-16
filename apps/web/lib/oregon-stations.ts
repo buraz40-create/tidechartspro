@@ -7,7 +7,7 @@ export type { StationConfig, NearbyStation, Species }
 
 export const OREGON_STATIONS: StationConfig[] = [
   {
-    id: "9430104", waterTempId: "9430104",
+    id: "9430104", waterTempId: "9419750",
     name: "Brookings, Chetco Cove", slug: "brookings-chetco-cove",
     state: "oregon", city: "Brookings, Chetco Cove, OR", region: "Southern Oregon Coast",
     lat: 42.0433, lon: -124.285, latDisplay: "42.04°N", lonDisplay: "124.28°W",
@@ -29,7 +29,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9431011", waterTempId: "9431011",
+    id: "9431011", waterTempId: "9431647",
     name: "Gold Beach, Rogue River", slug: "gold-beach-rogue-river",
     state: "oregon", city: "Gold Beach, Rogue River, OR", region: "Southern Oregon Coast",
     lat: 42.42163888888889, lon: -124.4187222222222, latDisplay: "42.42°N", lonDisplay: "124.42°W",
@@ -73,7 +73,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9432373", waterTempId: "9432373",
+    id: "9432373", waterTempId: "9432780",
     name: "Bandon, Coquille River", slug: "bandon-coquille-river",
     state: "oregon", city: "Bandon, Coquille River, OR", region: "Southern Oregon Coast",
     lat: 43.12, lon: -124.413, latDisplay: "43.12°N", lonDisplay: "124.41°W",
@@ -95,7 +95,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9432436", waterTempId: "9432436",
+    id: "9432436", waterTempId: "9432780",
     name: "Rink Creek Entrance, Coquille River", slug: "rink-creek-entrance-coquille-river",
     state: "oregon", city: "Rink Creek Entrance, Coquille River, OR", region: "Southern Oregon Coast",
     lat: 43.157901763916016, lon: -124.18180084228516, latDisplay: "43.16°N", lonDisplay: "124.18°W",
@@ -139,7 +139,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9432845", waterTempId: "9432845",
+    id: "9432845", waterTempId: "9432780",
     name: "Coos Bay", slug: "coos-bay",
     state: "oregon", city: "Coos Bay, OR", region: "Southern Oregon Coast",
     lat: 43.38, lon: -124.215, latDisplay: "43.38°N", lonDisplay: "124.22°W",
@@ -161,7 +161,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9432864", waterTempId: "9432864",
+    id: "9432864", waterTempId: "9432780",
     name: "Empire", slug: "empire",
     state: "oregon", city: "Empire, OR", region: "Southern Oregon Coast",
     lat: 43.3917, lon: -124.28, latDisplay: "43.39°N", lonDisplay: "124.28°W",
@@ -183,7 +183,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9432879", waterTempId: "9432879",
+    id: "9432879", waterTempId: "9432780",
     name: "Sitka Dock, Coos Bay", slug: "sitka-dock-coos-bay",
     state: "oregon", city: "Sitka Dock, Coos Bay, OR", region: "Southern Oregon Coast",
     lat: 43.3767, lon: -124.297, latDisplay: "43.38°N", lonDisplay: "124.30°W",
@@ -205,7 +205,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9433445", waterTempId: "9433445",
+    id: "9433445", waterTempId: "9432780",
     name: "Umpqua River Entrance, Half Moon Bay", slug: "umpqua-river-entrance-half-moon-bay",
     state: "oregon", city: "Umpqua River Entrance, Half Moon Bay, OR", region: "Southern Oregon Coast",
     lat: 43.675, lon: -124.192, latDisplay: "43.67°N", lonDisplay: "124.19°W",
@@ -227,7 +227,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9433501", waterTempId: "9433501",
+    id: "9433501", waterTempId: "9432780",
     name: "Reedsport", slug: "reedsport",
     state: "oregon", city: "Reedsport, OR", region: "Southern Oregon Coast",
     lat: 43.70830154418945, lon: -124.0979995727539, latDisplay: "43.71°N", lonDisplay: "124.10°W",
@@ -249,7 +249,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9434032", waterTempId: "9434032",
+    id: "9434032", waterTempId: "9432780",
     name: "Florence, Siuslaw River", slug: "florence-siuslaw-river",
     state: "oregon", city: "Florence, Siuslaw River, OR", region: "Southern Oregon Coast",
     lat: 43.96670150756836, lon: -124.10299682617188, latDisplay: "43.97°N", lonDisplay: "124.10°W",
@@ -271,7 +271,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9434068", waterTempId: "9434068",
+    id: "9434068", waterTempId: "9435380",
     name: "Cushman, Siuslaw River", slug: "cushman-siuslaw-river",
     state: "oregon", city: "Cushman, Siuslaw River, OR", region: "Southern Oregon Coast",
     lat: 43.98500061035156, lon: -124.04499816894531, latDisplay: "43.99°N", lonDisplay: "124.04°W",
@@ -293,7 +293,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9434098", waterTempId: "9434098",
+    id: "9434098", waterTempId: "9435380",
     name: "Florence USCG Pier, Siuslaw River", slug: "florence-uscg-pier-siuslaw-river",
     state: "oregon", city: "Florence USCG Pier, Siuslaw River, OR", region: "Southern Oregon Coast",
     lat: 44.00210189819336, lon: -124.12300109863281, latDisplay: "44.00°N", lonDisplay: "124.12°W",
@@ -315,7 +315,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9434132", waterTempId: "9434132",
+    id: "9434132", waterTempId: "9435380",
     name: "Siuslaw River Entrance", slug: "siuslaw-river-entrance",
     state: "oregon", city: "Siuslaw River Entrance, OR", region: "Southern Oregon Coast",
     lat: 44.016700744628906, lon: -124.12999725341797, latDisplay: "44.02°N", lonDisplay: "124.13°W",
@@ -337,7 +337,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9434938", waterTempId: "9434938",
+    id: "9434938", waterTempId: "9435380",
     name: "Drift Creek, Alsea River", slug: "drift-creek-alsea-river",
     state: "oregon", city: "Drift Creek, Alsea River, OR", region: "Southern Oregon Coast",
     lat: 44.4133, lon: -123.99, latDisplay: "44.41°N", lonDisplay: "123.99°W",
@@ -359,7 +359,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9434939", waterTempId: "9434939",
+    id: "9434939", waterTempId: "9435380",
     name: "Waldport, Alsea Bay", slug: "waldport-alsea-bay",
     state: "oregon", city: "Waldport, Alsea Bay, OR", region: "Southern Oregon Coast",
     lat: 44.43436111111111, lon: -124.0580833333333, latDisplay: "44.43°N", lonDisplay: "124.06°W",
@@ -381,7 +381,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9435308", waterTempId: "9435308",
+    id: "9435308", waterTempId: "9435380",
     name: "Weiser Point, Yaquina River", slug: "weiser-point-yaquina-river",
     state: "oregon", city: "Weiser Point, Yaquina River, OR", region: "Central Oregon Coast",
     lat: 44.5933, lon: -124.008, latDisplay: "44.59°N", lonDisplay: "124.01°W",
@@ -403,7 +403,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9435362", waterTempId: "9435362",
+    id: "9435362", waterTempId: "9435380",
     name: "TOLEDO", slug: "toledo",
     state: "oregon", city: "TOLEDO, OR", region: "Central Oregon Coast",
     lat: 44.6167, lon: -123.937, latDisplay: "44.62°N", lonDisplay: "123.94°W",
@@ -447,7 +447,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9435385", waterTempId: "9435385",
+    id: "9435385", waterTempId: "9435380",
     name: "YAQUINA USCG STA, NEWPORT", slug: "yaquina-uscg-sta-newport",
     state: "oregon", city: "YAQUINA USCG STA, NEWPORT, OR", region: "Central Oregon Coast",
     lat: 44.6267, lon: -124.055, latDisplay: "44.63°N", lonDisplay: "124.06°W",
@@ -469,7 +469,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9435827", waterTempId: "9435827",
+    id: "9435827", waterTempId: "9435380",
     name: "Depoe Bay", slug: "depoe-bay",
     state: "oregon", city: "Depoe Bay, OR", region: "Central Oregon Coast",
     lat: 44.81, lon: -124.058, latDisplay: "44.81°N", lonDisplay: "124.06°W",
@@ -491,7 +491,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9435992", waterTempId: "9435992",
+    id: "9435992", waterTempId: "9435380",
     name: "Chinook Bend, Siletz River", slug: "chinook-bend-siletz-river",
     state: "oregon", city: "Chinook Bend, Siletz River, OR", region: "Central Oregon Coast",
     lat: 44.880001068115234, lon: -123.9636001586914, latDisplay: "44.88°N", lonDisplay: "123.96°W",
@@ -513,7 +513,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9436031", waterTempId: "9436031",
+    id: "9436031", waterTempId: "9435380",
     name: "Kernville, Siletz River", slug: "kernville-siletz-river",
     state: "oregon", city: "Kernville, Siletz River, OR", region: "Central Oregon Coast",
     lat: 44.8967, lon: -124, latDisplay: "44.90°N", lonDisplay: "124.00°W",
@@ -535,7 +535,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9436101", waterTempId: "9436101",
+    id: "9436101", waterTempId: "9435380",
     name: "Taft, Siletz Bay", slug: "taft-siletz-bay",
     state: "oregon", city: "Taft, Siletz Bay, OR", region: "Central Oregon Coast",
     lat: 44.9267, lon: -124.013, latDisplay: "44.93°N", lonDisplay: "124.01°W",
@@ -557,7 +557,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9436381", waterTempId: "9436381",
+    id: "9436381", waterTempId: "9435380",
     name: "Cascade Head, Salmon River", slug: "cascade-head-salmon-river",
     state: "oregon", city: "Cascade Head, Salmon River, OR", region: "Central Oregon Coast",
     lat: 45.04794444444445, lon: -124.0073055555556, latDisplay: "45.05°N", lonDisplay: "124.01°W",
@@ -579,7 +579,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9437262", waterTempId: "9437262",
+    id: "9437262", waterTempId: "9439040",
     name: "Netarts, Netarts Bay", slug: "netarts-netarts-bay",
     state: "oregon", city: "Netarts, Netarts Bay, OR", region: "Central Oregon Coast",
     lat: 45.43, lon: -123.945, latDisplay: "45.43°N", lonDisplay: "123.94°W",
@@ -601,7 +601,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9437331", waterTempId: "9437331",
+    id: "9437331", waterTempId: "9439040",
     name: "Tillamook, Hoquarten Slough", slug: "tillamook-hoquarten-slough",
     state: "oregon", city: "Tillamook, Hoquarten Slough, OR", region: "Central Oregon Coast",
     lat: 45.46, lon: -123.845, latDisplay: "45.46°N", lonDisplay: "123.84°W",
@@ -623,7 +623,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9437381", waterTempId: "9437381",
+    id: "9437381", waterTempId: "9439040",
     name: "Dick Point", slug: "dick-point",
     state: "oregon", city: "Dick Point, OR", region: "Central Oregon Coast",
     lat: 45.4817, lon: -123.902, latDisplay: "45.48°N", lonDisplay: "123.90°W",
@@ -645,7 +645,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9437540", waterTempId: "9437540",
+    id: "9437540", waterTempId: "9439040",
     name: "Garibaldi", slug: "garibaldi",
     state: "oregon", city: "Garibaldi, OR", region: "Central Oregon Coast",
     lat: 45.55453, lon: -123.9189444443915, latDisplay: "45.55°N", lonDisplay: "123.92°W",
@@ -667,7 +667,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9437581", waterTempId: "9437581",
+    id: "9437581", waterTempId: "9439040",
     name: "Barview", slug: "barview",
     state: "oregon", city: "Barview, OR", region: "Central Oregon Coast",
     lat: 45.5683, lon: -123.943, latDisplay: "45.57°N", lonDisplay: "123.94°W",
@@ -689,7 +689,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9437585", waterTempId: "9437585",
+    id: "9437585", waterTempId: "9439040",
     name: "North Jetty, Tillamook Bay", slug: "north-jetty-tillamook-bay",
     state: "oregon", city: "North Jetty, Tillamook Bay, OR", region: "Central Oregon Coast",
     lat: 45.56999969482422, lon: -123.96499633789062, latDisplay: "45.57°N", lonDisplay: "123.96°W",
@@ -711,7 +711,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9437815", waterTempId: "9437815",
+    id: "9437815", waterTempId: "9439040",
     name: "Brighton", slug: "brighton",
     state: "oregon", city: "Brighton, OR", region: "Central Oregon Coast",
     lat: 45.67, lon: -123.925, latDisplay: "45.67°N", lonDisplay: "123.92°W",
@@ -733,7 +733,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9437908", waterTempId: "9437908",
+    id: "9437908", waterTempId: "9439040",
     name: "Nehalem", slug: "nehalem",
     state: "oregon", city: "Nehalem, OR", region: "Central Oregon Coast",
     lat: 45.71, lon: -123.89, latDisplay: "45.71°N", lonDisplay: "123.89°W",
@@ -755,7 +755,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9437954", waterTempId: "9437954",
+    id: "9437954", waterTempId: "9439040",
     name: "North Fork, Nehalem River", slug: "north-fork-nehalem-river",
     state: "oregon", city: "North Fork, Nehalem River, OR", region: "Central Oregon Coast",
     lat: 45.73379898071289, lon: -123.87640380859375, latDisplay: "45.73°N", lonDisplay: "123.88°W",
@@ -777,7 +777,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9438772", waterTempId: "9438772",
+    id: "9438772", waterTempId: "9439040",
     name: "Cathcart Landing, Youngs River", slug: "cathcart-landing-youngs-river",
     state: "oregon", city: "Cathcart Landing, Youngs River, OR", region: "Columbia River / Astoria",
     lat: 46.12425, lon: -123.8043333333333, latDisplay: "46.12°N", lonDisplay: "123.80°W",
@@ -799,7 +799,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9439011", waterTempId: "9439011",
+    id: "9439011", waterTempId: "9439040",
     name: "Hammond, Oregon", slug: "hammond-oregon",
     state: "oregon", city: "Hammond, Oregon, OR", region: "Columbia River / Astoria",
     lat: 46.2017, lon: -123.945, latDisplay: "46.20°N", lonDisplay: "123.94°W",
@@ -821,7 +821,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9439023", waterTempId: "9439023",
+    id: "9439023", waterTempId: "9439040",
     name: "Astoria (Port Docks), Oreg.", slug: "astoria-port-docks-oreg",
     state: "oregon", city: "Astoria (Port Docks), Oreg., OR", region: "Columbia River / Astoria",
     lat: 46.1867, lon: -123.86, latDisplay: "46.19°N", lonDisplay: "123.86°W",
@@ -843,7 +843,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9439026", waterTempId: "9439026",
+    id: "9439026", waterTempId: "9439040",
     name: "Astoria (Youngs Bay), Oreg.", slug: "astoria-youngs-bay-oreg",
     state: "oregon", city: "Astoria (Youngs Bay), Oreg., OR", region: "Columbia River / Astoria",
     lat: 46.1717, lon: -123.842, latDisplay: "46.17°N", lonDisplay: "123.84°W",
@@ -887,7 +887,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9439054", waterTempId: "9439054",
+    id: "9439054", waterTempId: "9439040",
     name: "Settlers Point, Oreg.", slug: "settlers-point-oreg",
     state: "oregon", city: "Settlers Point, Oreg., OR", region: "Columbia River / Astoria",
     lat: 46.175, lon: -123.678, latDisplay: "46.17°N", lonDisplay: "123.68°W",
@@ -909,7 +909,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9439069", waterTempId: "9439069",
+    id: "9439069", waterTempId: "9439040",
     name: "Knappa, Knappa Slough", slug: "knappa-knappa-slough",
     state: "oregon", city: "Knappa, Knappa Slough, OR", region: "Columbia River / Astoria",
     lat: 46.1867, lon: -123.588, latDisplay: "46.19°N", lonDisplay: "123.59°W",
@@ -931,7 +931,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9439099", waterTempId: "9439099",
+    id: "9439099", waterTempId: "9439040",
     name: "Wauna", slug: "wauna",
     state: "oregon", city: "Wauna, OR", region: "Columbia River / Astoria",
     lat: 46.15999984741211, lon: -123.40499877929688, latDisplay: "46.16°N", lonDisplay: "123.40°W",
@@ -953,7 +953,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9439189", waterTempId: "9439189",
+    id: "9439189", waterTempId: "9440422",
     name: "Rocky Point", slug: "rocky-point",
     state: "oregon", city: "Rocky Point, OR", region: "Central Oregon Coast",
     lat: 45.6967, lon: -122.868, latDisplay: "45.70°N", lonDisplay: "122.87°W",
@@ -975,7 +975,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9439201", waterTempId: "9439201",
+    id: "9439201", waterTempId: "9440422",
     name: "Saint Helens", slug: "saint-helens",
     state: "oregon", city: "Saint Helens, OR", region: "Central Oregon Coast",
     lat: 45.8650016784668, lon: -122.7969970703125, latDisplay: "45.87°N", lonDisplay: "122.80°W",
@@ -997,7 +997,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9439221", waterTempId: "9439221",
+    id: "9439221", waterTempId: "9440422",
     name: "Portland Morrison Street Bridge", slug: "portland-morrison-street-bridge",
     state: "oregon", city: "Portland Morrison Street Bridge, OR", region: "Central Oregon Coast",
     lat: 45.51, lon: -122.673, latDisplay: "45.51°N", lonDisplay: "122.67°W",
@@ -1019,7 +1019,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9432771", waterTempId: "9432771",
+    id: "9432771", waterTempId: "9432780",
     name: "CAPE ARAGO LIGHTHOUSE", slug: "cape-arago-lighthouse",
     state: "oregon", city: "CAPE ARAGO LIGHTHOUSE, OR", region: "Southern Oregon Coast",
     lat: 43.3417, lon: -124.367, latDisplay: "43.34°N", lonDisplay: "124.37°W",
@@ -1041,7 +1041,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9432796", waterTempId: "9432796",
+    id: "9432796", waterTempId: "9432780",
     name: "ISTHMUS SLOUGH, COOS BAY", slug: "isthmus-slough-coos-bay",
     state: "oregon", city: "ISTHMUS SLOUGH, COOS BAY, OR", region: "Southern Oregon Coast",
     lat: 43.3517, lon: -124.192, latDisplay: "43.35°N", lonDisplay: "124.19°W",
@@ -1063,7 +1063,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9432895", waterTempId: "9432895",
+    id: "9432895", waterTempId: "9432780",
     name: "NORTH BEND, COOS BAY", slug: "north-bend-coos-bay",
     state: "oregon", city: "NORTH BEND, COOS BAY, OR", region: "Southern Oregon Coast",
     lat: 43.41, lon: -124.218, latDisplay: "43.41°N", lonDisplay: "124.22°W",
@@ -1085,7 +1085,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9436641", waterTempId: "9436641",
+    id: "9436641", waterTempId: "9435380",
     name: "Nestucca Bay", slug: "nestucca-bay",
     state: "oregon", city: "Nestucca Bay, OR", region: "Central Oregon Coast",
     lat: 45.16111, lon: -123.937775, latDisplay: "45.16°N", lonDisplay: "123.94°W",
@@ -1107,7 +1107,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9438125", waterTempId: "9438125",
+    id: "9438125", waterTempId: "9440422",
     name: "Multnomah Channel", slug: "multnomah-channel",
     state: "oregon", city: "Multnomah Channel, OR", region: "Central Oregon Coast",
     lat: 45.8117, lon: -122.827, latDisplay: "45.81°N", lonDisplay: "122.83°W",
@@ -1129,7 +1129,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9438478", waterTempId: "9438478",
+    id: "9438478", waterTempId: "9439040",
     name: "Seaside", slug: "seaside",
     state: "oregon", city: "Seaside, OR", region: "Central Oregon Coast",
     lat: 46, lon: -123.922, latDisplay: "46.00°N", lonDisplay: "123.92°W",
@@ -1151,7 +1151,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9439008", waterTempId: "9439008",
+    id: "9439008", waterTempId: "9439040",
     name: "FORT STEVENS", slug: "fort-stevens",
     state: "oregon", city: "FORT STEVENS, OR", region: "Columbia River / Astoria",
     lat: 46.2067, lon: -123.95, latDisplay: "46.21°N", lonDisplay: "123.95°W",
@@ -1173,7 +1173,7 @@ export const OREGON_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9439135", waterTempId: "9439135",
+    id: "9439135", waterTempId: "9440422",
     name: "BEAVER", slug: "beaver",
     state: "oregon", city: "BEAVER, OR", region: "Columbia River / Astoria",
     lat: 46.1817, lon: -123.18, latDisplay: "46.18°N", lonDisplay: "123.18°W",

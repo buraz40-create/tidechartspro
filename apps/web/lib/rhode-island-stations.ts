@@ -7,7 +7,7 @@ export type { StationConfig, NearbyStation, Species }
 
 export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   {
-    id: "8450768", waterTempId: "8450768",
+    id: "8450768", waterTempId: "8452660",
     name: "Sakonnet", slug: "sakonnet",
     state: "rhode-island", city: "Sakonnet, RI", region: "Rhode Island Sound",
     lat: 41.465, lon: -71.1933, latDisplay: "41.47°N", lonDisplay: "71.19°W",
@@ -29,7 +29,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8450898", waterTempId: "8450898",
+    id: "8450898", waterTempId: "8447386",
     name: "North End, Bay Oil pier", slug: "north-end-bay-oil-pier",
     state: "rhode-island", city: "North End, Bay Oil pier, RI", region: "Rhode Island Sound",
     lat: 41.6517, lon: -71.21, latDisplay: "41.65°N", lonDisplay: "71.21°W",
@@ -51,7 +51,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8450948", waterTempId: "8450948",
+    id: "8450948", waterTempId: "8447386",
     name: "Anthony Point", slug: "anthony-point",
     state: "rhode-island", city: "Anthony Point, RI", region: "Rhode Island Sound",
     lat: 41.6383, lon: -71.2117, latDisplay: "41.64°N", lonDisplay: "71.21°W",
@@ -73,7 +73,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8450954", waterTempId: "8450954",
+    id: "8450954", waterTempId: "8447386",
     name: "Nannaquaket Neck", slug: "nannaquaket-neck",
     state: "rhode-island", city: "Nannaquaket Neck, RI", region: "Rhode Island Sound",
     lat: 41.6183, lon: -71.2033, latDisplay: "41.62°N", lonDisplay: "71.20°W",
@@ -95,7 +95,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8451301", waterTempId: "8451301",
+    id: "8451301", waterTempId: "8452660",
     name: "The Glen", slug: "the-glen",
     state: "rhode-island", city: "The Glen, RI", region: "Rhode Island Sound",
     lat: 41.5583, lon: -71.2367, latDisplay: "41.56°N", lonDisplay: "71.24°W",
@@ -117,7 +117,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8451351", waterTempId: "8451351",
+    id: "8451351", waterTempId: "8452660",
     name: "Sachuest, Flint Point", slug: "sachuest-flint-point",
     state: "rhode-island", city: "Sachuest, Flint Point, RI", region: "Rhode Island Sound",
     lat: 41.4867, lon: -71.2383, latDisplay: "41.49°N", lonDisplay: "71.24°W",
@@ -139,7 +139,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8451552", waterTempId: "8451552",
+    id: "8451552", waterTempId: "8447386",
     name: "Bristol Ferry", slug: "bristol-ferry",
     state: "rhode-island", city: "Bristol Ferry, RI", region: "Rhode Island Sound",
     lat: 41.6367, lon: -71.255, latDisplay: "41.64°N", lonDisplay: "71.25°W",
@@ -161,7 +161,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8451929", waterTempId: "8451929",
+    id: "8451929", waterTempId: "8452944",
     name: "Bristol, Bristol Harbor", slug: "bristol-bristol-harbor",
     state: "rhode-island", city: "Bristol, Bristol Harbor, RI", region: "Rhode Island Sound",
     lat: 41.6683, lon: -71.28, latDisplay: "41.67°N", lonDisplay: "71.28°W",
@@ -183,7 +183,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8452154", waterTempId: "8452154",
+    id: "8452154", waterTempId: "8452944",
     name: "Bristol Highlands", slug: "bristol-highlands",
     state: "rhode-island", city: "Bristol Highlands, RI", region: "Rhode Island Sound",
     lat: 41.69670104980469, lon: -71.29329681396484, latDisplay: "41.70°N", lonDisplay: "71.29°W",
@@ -205,7 +205,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8452555", waterTempId: "8452555",
+    id: "8452555", waterTempId: "8452660",
     name: "Prudence Island, (south end)", slug: "prudence-island-south-end",
     state: "rhode-island", city: "Prudence Island, (south end), RI", region: "Rhode Island Sound",
     lat: 41.58, lon: -71.3217, latDisplay: "41.58°N", lonDisplay: "71.32°W",
@@ -271,7 +271,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8453033", waterTempId: "8453033",
+    id: "8453033", waterTempId: "8452944",
     name: "Bay Spring, Bullock Cove", slug: "bay-spring-bullock-cove",
     state: "rhode-island", city: "Bay Spring, Bullock Cove, RI", region: "Narragansett Bay",
     lat: 41.75170135498047, lon: -71.35169982910156, latDisplay: "41.75°N", lonDisplay: "71.35°W",
@@ -293,7 +293,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8453201", waterTempId: "8453201",
+    id: "8453201", waterTempId: "8452660",
     name: "Castle Hill", slug: "castle-hill",
     state: "rhode-island", city: "Castle Hill, RI", region: "Rhode Island Sound",
     lat: 41.4633, lon: -71.3617, latDisplay: "41.46°N", lonDisplay: "71.36°W",
@@ -315,7 +315,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8453433", waterTempId: "8453433",
+    id: "8453433", waterTempId: "8454000",
     name: "Rumford, Seekonk River", slug: "rumford-seekonk-river",
     state: "rhode-island", city: "Rumford, Seekonk River, RI", region: "Narragansett Bay",
     lat: 41.84000015258789, lon: -71.37329864501953, latDisplay: "41.84°N", lonDisplay: "71.37°W",
@@ -337,7 +337,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8453465", waterTempId: "8453465",
+    id: "8453465", waterTempId: "8452660",
     name: "Conanicut Point", slug: "conanicut-point",
     state: "rhode-island", city: "Conanicut Point, RI", region: "Rhode Island Sound",
     lat: 41.5733, lon: -71.3717, latDisplay: "41.57°N", lonDisplay: "71.37°W",
@@ -359,7 +359,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8453611", waterTempId: "8453611",
+    id: "8453611", waterTempId: "8454000",
     name: "Pawtucket, Seekonk River", slug: "pawtucket-seekonk-river",
     state: "rhode-island", city: "Pawtucket, Seekonk River, RI", region: "Narragansett Bay",
     lat: 41.8683, lon: -71.38, latDisplay: "41.87°N", lonDisplay: "71.38°W",
@@ -381,7 +381,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8453742", waterTempId: "8453742",
+    id: "8453742", waterTempId: "8452660",
     name: "West Jamestown, Dutch Island Harbor", slug: "west-jamestown-dutch-island-harbor",
     state: "rhode-island", city: "West Jamestown, Dutch Island Harbor, RI", region: "Rhode Island Sound",
     lat: 41.4967, lon: -71.3867, latDisplay: "41.50°N", lonDisplay: "71.39°W",
@@ -403,7 +403,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8453767", waterTempId: "8453767",
+    id: "8453767", waterTempId: "8454000",
     name: "Pawtuxet, Pawtuxet Cove", slug: "pawtuxet-pawtuxet-cove",
     state: "rhode-island", city: "Pawtuxet, Pawtuxet Cove, RI", region: "Narragansett Bay",
     lat: 41.76169967651367, lon: -71.38829803466797, latDisplay: "41.76°N", lonDisplay: "71.39°W",
@@ -425,7 +425,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8453999", waterTempId: "8453999",
+    id: "8453999", waterTempId: "8452660",
     name: "Beavertail Point", slug: "beavertail-point",
     state: "rhode-island", city: "Beavertail Point, RI", region: "Rhode Island Sound",
     lat: 41.4517, lon: -71.4017, latDisplay: "41.45°N", lonDisplay: "71.40°W",
@@ -469,7 +469,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8454049", waterTempId: "8454049",
+    id: "8454049", waterTempId: "8452660",
     name: "Quonset Point", slug: "quonset-point",
     state: "rhode-island", city: "Quonset Point, RI", region: "Rhode Island Sound",
     lat: 41.58679962158203, lon: -71.41100311279297, latDisplay: "41.59°N", lonDisplay: "71.41°W",
@@ -491,7 +491,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8454341", waterTempId: "8454341",
+    id: "8454341", waterTempId: "8452660",
     name: "Watson Pier, Boston Neck", slug: "watson-pier-boston-neck",
     state: "rhode-island", city: "Watson Pier, Boston Neck, RI", region: "Rhode Island Sound",
     lat: 41.46, lon: -71.4283, latDisplay: "41.46°N", lonDisplay: "71.43°W",
@@ -513,7 +513,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8454538", waterTempId: "8454538",
+    id: "8454538", waterTempId: "8452660",
     name: "Wickford", slug: "wickford",
     state: "rhode-island", city: "Wickford, RI", region: "Rhode Island Sound",
     lat: 41.5717, lon: -71.445, latDisplay: "41.57°N", lonDisplay: "71.44°W",
@@ -535,7 +535,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8454578", waterTempId: "8454578",
+    id: "8454578", waterTempId: "8452944",
     name: "East Greenwich", slug: "east-greenwich",
     state: "rhode-island", city: "East Greenwich, RI", region: "Rhode Island Sound",
     lat: 41.665000915527344, lon: -71.44499969482422, latDisplay: "41.67°N", lonDisplay: "71.44°W",
@@ -557,7 +557,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8454658", waterTempId: "8454658",
+    id: "8454658", waterTempId: "8452660",
     name: "Narragansett Pier", slug: "narragansett-pier",
     state: "rhode-island", city: "Narragansett Pier, RI", region: "Rhode Island Sound",
     lat: 41.4217, lon: -71.455, latDisplay: "41.42°N", lonDisplay: "71.45°W",
@@ -579,7 +579,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8455083", waterTempId: "8455083",
+    id: "8455083", waterTempId: "8452660",
     name: "Point Judith, Harbor of Refuge", slug: "point-judith-harbor-of-refuge",
     state: "rhode-island", city: "Point Judith, Harbor of Refuge, RI", region: "Rhode Island Sound",
     lat: 41.3633, lon: -71.49, latDisplay: "41.36°N", lonDisplay: "71.49°W",
@@ -601,7 +601,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8455137", waterTempId: "8455137",
+    id: "8455137", waterTempId: "8447386",
     name: "KICKAMUIT RIVER", slug: "kickamuit-river",
     state: "rhode-island", city: "KICKAMUIT RIVER, RI", region: "Narragansett Bay",
     lat: 41.707801818847656, lon: -71.24169921875, latDisplay: "41.71°N", lonDisplay: "71.24°W",
@@ -623,7 +623,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8455189", waterTempId: "8455189",
+    id: "8455189", waterTempId: "8461490",
     name: "Westerly, Pawcatuck River", slug: "westerly-pawcatuck-river",
     state: "rhode-island", city: "Westerly, Pawcatuck River, RI", region: "Rhode Island Sound",
     lat: 41.3817, lon: -71.8317, latDisplay: "41.38°N", lonDisplay: "71.83°W",
@@ -645,7 +645,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8458022", waterTempId: "8458022",
+    id: "8458022", waterTempId: "8461490",
     name: "Weekapaug Point, Block Island Sound", slug: "weekapaug-point-block-island-sound",
     state: "rhode-island", city: "Weekapaug Point, Block Island Sound, RI", region: "Rhode Island Sound",
     lat: 41.3283, lon: -71.7617, latDisplay: "41.33°N", lonDisplay: "71.76°W",
@@ -667,7 +667,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8458694", waterTempId: "8458694",
+    id: "8458694", waterTempId: "8461490",
     name: "Watch Hill Point", slug: "watch-hill-point",
     state: "rhode-island", city: "Watch Hill Point, RI", region: "Rhode Island Sound",
     lat: 41.305, lon: -71.86, latDisplay: "41.30°N", lonDisplay: "71.86°W",
@@ -689,7 +689,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8459338", waterTempId: "8459338",
+    id: "8459338", waterTempId: "8510560",
     name: "Block Island (Old Harbor)", slug: "block-island-old-harbor",
     state: "rhode-island", city: "Block Island (Old Harbor), RI", region: "Rhode Island Sound",
     lat: 41.1733, lon: -71.5567, latDisplay: "41.17°N", lonDisplay: "71.56°W",
@@ -711,7 +711,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8459681", waterTempId: "8459681",
+    id: "8459681", waterTempId: "8510560",
     name: "Southwest Point, Block Island", slug: "southwest-point-block-island",
     state: "rhode-island", city: "Southwest Point, Block Island, RI", region: "Rhode Island Sound",
     lat: 41.1633, lon: -71.61, latDisplay: "41.16°N", lonDisplay: "71.61°W",
@@ -733,7 +733,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8453572", waterTempId: "8453572",
+    id: "8453572", waterTempId: "8452944",
     name: "WARWICK POINT", slug: "warwick-point",
     state: "rhode-island", city: "WARWICK POINT, RI", region: "Rhode Island Sound",
     lat: 41.6667, lon: -71.3783, latDisplay: "41.67°N", lonDisplay: "71.38°W",
@@ -755,7 +755,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8459449", waterTempId: "8459449",
+    id: "8459449", waterTempId: "8510560",
     name: "VAILS BEACH, BLOCK IS. SOUND", slug: "vails-beach-block-is-sound",
     state: "rhode-island", city: "VAILS BEACH, BLOCK IS. SOUND, RI", region: "Rhode Island Sound",
     lat: 41.1483, lon: -71.575, latDisplay: "41.15°N", lonDisplay: "71.58°W",
@@ -777,7 +777,7 @@ export const RHODE_ISLAND_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8459479", waterTempId: "8459479",
+    id: "8459479", waterTempId: "8452660",
     name: "SANDY POINT, BLOCK IS, SOUND", slug: "sandy-point-block-is-sound",
     state: "rhode-island", city: "SANDY POINT, BLOCK IS, SOUND, RI", region: "Rhode Island Sound",
     lat: 41.2283, lon: -71.58, latDisplay: "41.23°N", lonDisplay: "71.58°W",

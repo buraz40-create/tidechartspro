@@ -7,7 +7,7 @@ export type { StationConfig, NearbyStation, Species }
 
 export const LOUISIANA_STATIONS: StationConfig[] = [
   {
-    id: "8760172", waterTempId: "8760172",
+    id: "8760172", waterTempId: "8741533",
     name: "Chandeleur Light", slug: "chandeleur-light",
     state: "louisiana", city: "Chandeleur Light, LA", region: "Breton Sound / Mississippi Delta",
     lat: 30.0483, lon: -88.8717, latDisplay: "30.05°N", lonDisplay: "88.87°W",
@@ -29,7 +29,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8760412", waterTempId: "8760412",
+    id: "8760412", waterTempId: "8760721",
     name: "North Pass, Pass a Loutre", slug: "north-pass-pass-a-loutre",
     state: "louisiana", city: "North Pass, Pass a Loutre, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.205, lon: -89.0367, latDisplay: "29.20°N", lonDisplay: "89.04°W",
@@ -51,7 +51,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8760416", waterTempId: "8760416",
+    id: "8760416", waterTempId: "8760721",
     name: "Southeast Pass", slug: "southeast-pass",
     state: "louisiana", city: "Southeast Pass, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.1167, lon: -89.045, latDisplay: "29.12°N", lonDisplay: "89.05°W",
@@ -73,7 +73,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8760417", waterTempId: "8760417",
+    id: "8760417", waterTempId: "8760721",
     name: "Devon Energy Facility", slug: "devon-energy-facility",
     state: "louisiana", city: "Devon Energy Facility, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.20075, lon: -89.04446666666666, latDisplay: "29.20°N", lonDisplay: "89.04°W",
@@ -95,7 +95,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8760424", waterTempId: "8760424",
+    id: "8760424", waterTempId: "8760721",
     name: "Lonesome Bayou (Thomasin)", slug: "lonesome-bayou-thomasin",
     state: "louisiana", city: "Lonesome Bayou (Thomasin), LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.2283, lon: -89.05, latDisplay: "29.23°N", lonDisplay: "89.05°W",
@@ -117,7 +117,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8760551", waterTempId: "8760551",
+    id: "8760551", waterTempId: "8760721",
     name: "SOUTH PASS", slug: "south-pass",
     state: "louisiana", city: "SOUTH PASS, LA", region: "Breton Sound / Mississippi Delta",
     lat: 28.99, lon: -89.14, latDisplay: "28.99°N", lonDisplay: "89.14°W",
@@ -139,7 +139,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8760579", waterTempId: "8760579",
+    id: "8760579", waterTempId: "8760721",
     name: "Port Eads, South Pass", slug: "port-eads-south-pass",
     state: "louisiana", city: "Port Eads, South Pass, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.015, lon: -89.16, latDisplay: "29.02°N", lonDisplay: "89.16°W",
@@ -161,7 +161,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8760595", waterTempId: "8760595",
+    id: "8760595", waterTempId: "8760721",
     name: "Breton Islands", slug: "breton-islands",
     state: "louisiana", city: "Breton Islands, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.4933, lon: -89.1733, latDisplay: "29.49°N", lonDisplay: "89.17°W",
@@ -183,7 +183,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8760668", waterTempId: "8760668",
+    id: "8760668", waterTempId: "8747437",
     name: "Grand Pass", slug: "grand-pass",
     state: "louisiana", city: "Grand Pass, LA", region: "Breton Sound / Mississippi Delta",
     lat: 30.126699447631836, lon: -89.2217025756836, latDisplay: "30.13°N", lonDisplay: "89.22°W",
@@ -227,7 +227,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8760736", waterTempId: "8760736",
+    id: "8760736", waterTempId: "8760721",
     name: "Joseph Bayou", slug: "joseph-bayou",
     state: "louisiana", city: "Joseph Bayou, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.0583, lon: -89.2717, latDisplay: "29.06°N", lonDisplay: "89.27°W",
@@ -249,7 +249,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8760742", waterTempId: "8760742",
+    id: "8760742", waterTempId: "8761305",
     name: "Comfort Island", slug: "comfort-island",
     state: "louisiana", city: "Comfort Island, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.8233, lon: -89.27, latDisplay: "29.82°N", lonDisplay: "89.27°W",
@@ -271,7 +271,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8760841", waterTempId: "8760841",
+    id: "8760841", waterTempId: "8760721",
     name: "Jack Bay", slug: "jack-bay",
     state: "louisiana", city: "Jack Bay, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.3667, lon: -89.345, latDisplay: "29.37°N", lonDisplay: "89.34°W",
@@ -293,7 +293,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8760889", waterTempId: "8760889",
+    id: "8760889", waterTempId: "8760721",
     name: "Grand Bay", slug: "grand-bay",
     state: "louisiana", city: "Grand Bay, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.38655555555556, lon: -89.3801388888889, latDisplay: "29.39°N", lonDisplay: "89.38°W",
@@ -337,7 +337,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8760943", waterTempId: "8760943",
+    id: "8760943", waterTempId: "8760922",
     name: "SW Pass", slug: "sw-pass",
     state: "louisiana", city: "SW Pass, LA", region: "Breton Sound / Mississippi Delta",
     lat: 28.925, lon: -89.4183, latDisplay: "28.93°N", lonDisplay: "89.42°W",
@@ -359,7 +359,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8760959", waterTempId: "8760959",
+    id: "8760959", waterTempId: "8760922",
     name: "Southwest Pass", slug: "southwest-pass",
     state: "louisiana", city: "Southwest Pass, LA", region: "Breton Sound / Mississippi Delta",
     lat: 28.9317, lon: -89.4283, latDisplay: "28.93°N", lonDisplay: "89.43°W",
@@ -381,7 +381,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761108", waterTempId: "8761108",
+    id: "8761108", waterTempId: "8761305",
     name: "Bay Gardene", slug: "bay-gardene",
     state: "louisiana", city: "Bay Gardene, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.5983, lon: -89.6183, latDisplay: "29.60°N", lonDisplay: "89.62°W",
@@ -403,7 +403,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761115", waterTempId: "8761115",
+    id: "8761115", waterTempId: "8760721",
     name: "Bay Pomme D'or", slug: "bay-pomme-dor",
     state: "louisiana", city: "Bay Pomme D'or, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.35059928894043, lon: -89.53990173339844, latDisplay: "29.35°N", lonDisplay: "89.54°W",
@@ -425,7 +425,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761212", waterTempId: "8761212",
+    id: "8761212", waterTempId: "8761724",
     name: "Empire Jetty", slug: "empire-jetty",
     state: "louisiana", city: "Empire Jetty, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.25, lon: -89.6083, latDisplay: "29.25°N", lonDisplay: "89.61°W",
@@ -447,7 +447,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761289", waterTempId: "8761289",
+    id: "8761289", waterTempId: "8761724",
     name: "Bastian Island", slug: "bastian-island",
     state: "louisiana", city: "Bastian Island, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.2867, lon: -89.6633, latDisplay: "29.29°N", lonDisplay: "89.66°W",
@@ -491,7 +491,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761402", waterTempId: "8761402",
+    id: "8761402", waterTempId: "8761305",
     name: "The Rigolets, U.S. Highway 90", slug: "the-rigolets-us-highway-90",
     state: "louisiana", city: "The Rigolets, U.S. Highway 90, LA", region: "Breton Sound / Mississippi Delta",
     lat: 30.1667, lon: -89.7367, latDisplay: "30.17°N", lonDisplay: "89.74°W",
@@ -513,7 +513,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761431", waterTempId: "8761431",
+    id: "8761431", waterTempId: "8761305",
     name: "Rat Bayou", slug: "rat-bayou",
     state: "louisiana", city: "Rat Bayou, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.56669444444444, lon: -89.76336111111111, latDisplay: "29.57°N", lonDisplay: "89.76°W",
@@ -535,7 +535,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761432", waterTempId: "8761432",
+    id: "8761432", waterTempId: "8761724",
     name: "Bayou Chene", slug: "bayou-chene",
     state: "louisiana", city: "Bayou Chene, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.512699127197266, lon: -89.7645034790039, latDisplay: "29.51°N", lonDisplay: "89.76°W",
@@ -557,7 +557,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761473", waterTempId: "8761473",
+    id: "8761473", waterTempId: "8761927",
     name: "Bayou BonFouca, Route 433", slug: "bayou-bonfouca-route-433",
     state: "louisiana", city: "Bayou BonFouca, Route 433, LA", region: "Breton Sound / Mississippi Delta",
     lat: 30.2717, lon: -89.7933, latDisplay: "30.27°N", lonDisplay: "89.79°W",
@@ -579,7 +579,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761487", waterTempId: "8761487",
+    id: "8761487", waterTempId: "8761305",
     name: "Chef Menteur, Chef Menteur Pass", slug: "chef-menteur-chef-menteur-pass",
     state: "louisiana", city: "Chef Menteur, Chef Menteur Pass, LA", region: "Breton Sound / Mississippi Delta",
     lat: 30.065, lon: -89.8, latDisplay: "30.07°N", lonDisplay: "89.80°W",
@@ -601,7 +601,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761529", waterTempId: "8761529",
+    id: "8761529", waterTempId: "8761305",
     name: "MARTELLO CASTLE, LAKE BORGNE", slug: "martello-castle-lake-borgne",
     state: "louisiana", city: "MARTELLO CASTLE, LAKE BORGNE, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.945, lon: -89.835, latDisplay: "29.95°N", lonDisplay: "89.83°W",
@@ -623,7 +623,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761557", waterTempId: "8761557",
+    id: "8761557", waterTempId: "8761724",
     name: "Quatre Bayous Pass", slug: "quatre-bayous-pass",
     state: "louisiana", city: "Quatre Bayous Pass, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.31, lon: -89.8533, latDisplay: "29.31°N", lonDisplay: "89.85°W",
@@ -645,7 +645,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761677", waterTempId: "8761677",
+    id: "8761677", waterTempId: "8761724",
     name: "Independence Island", slug: "independence-island",
     state: "louisiana", city: "Independence Island, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.31, lon: -89.9383, latDisplay: "29.31°N", lonDisplay: "89.94°W",
@@ -667,7 +667,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761678", waterTempId: "8761678",
+    id: "8761678", waterTempId: "8761927",
     name: "Michoud Substation, ICWW", slug: "michoud-substation-icww",
     state: "louisiana", city: "Michoud Substation, ICWW, LA", region: "Breton Sound / Mississippi Delta",
     lat: 30.0067, lon: -89.9367, latDisplay: "30.01°N", lonDisplay: "89.94°W",
@@ -689,7 +689,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761687", waterTempId: "8761687",
+    id: "8761687", waterTempId: "8761724",
     name: "Barataria Pass", slug: "barataria-pass",
     state: "louisiana", city: "Barataria Pass, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.275, lon: -89.945, latDisplay: "29.27°N", lonDisplay: "89.94°W",
@@ -733,7 +733,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761732", waterTempId: "8761732",
+    id: "8761732", waterTempId: "8761724",
     name: "Manilla", slug: "manilla",
     state: "louisiana", city: "Manilla, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.4267, lon: -89.9767, latDisplay: "29.43°N", lonDisplay: "89.98°W",
@@ -755,7 +755,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761742", waterTempId: "8761742",
+    id: "8761742", waterTempId: "8761724",
     name: "Mendicant Island, Barataria Bay", slug: "mendicant-island-barataria-bay",
     state: "louisiana", city: "Mendicant Island, Barataria Bay, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.318300247192383, lon: -89.9800033569336, latDisplay: "29.32°N", lonDisplay: "89.98°W",
@@ -777,7 +777,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761819", waterTempId: "8761819",
+    id: "8761819", waterTempId: "8761724",
     name: "TEXACO DOCK, HACKBERRY BAY", slug: "texaco-dock-hackberry-bay",
     state: "louisiana", city: "TEXACO DOCK, HACKBERRY BAY, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.4017, lon: -90.0383, latDisplay: "29.40°N", lonDisplay: "90.04°W",
@@ -799,7 +799,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761826", waterTempId: "8761826",
+    id: "8761826", waterTempId: "8761724",
     name: "Caminada Pass (bridge)", slug: "caminada-pass-bridge",
     state: "louisiana", city: "Caminada Pass (bridge), LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.209999084472656, lon: -90.04000091552734, latDisplay: "29.21°N", lonDisplay: "90.04°W",
@@ -821,7 +821,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761899", waterTempId: "8761899",
+    id: "8761899", waterTempId: "8761955",
     name: "Lafitte, Barataria Waterway", slug: "lafitte-barataria-waterway",
     state: "louisiana", city: "Lafitte, Barataria Waterway, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.6667, lon: -90.1117, latDisplay: "29.67°N", lonDisplay: "90.11°W",
@@ -865,7 +865,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761993", waterTempId: "8761993",
+    id: "8761993", waterTempId: "8761927",
     name: "Tchefuncta River, Lake Pontchartrain", slug: "tchefuncta-river-lake-pontchartrain",
     state: "louisiana", city: "Tchefuncta River, Lake Pontchartrain, LA", region: "Breton Sound / Mississippi Delta",
     lat: 30.3783, lon: -90.16, latDisplay: "30.38°N", lonDisplay: "90.16°W",
@@ -887,7 +887,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8762075", waterTempId: "8762075",
+    id: "8762075", waterTempId: "8761724",
     name: "Port Fourchon", slug: "port-fourchon",
     state: "louisiana", city: "Port Fourchon, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.114200592041016, lon: -90.19930267333984, latDisplay: "29.11°N", lonDisplay: "90.20°W",
@@ -909,7 +909,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8762084", waterTempId: "8762084",
+    id: "8762084", waterTempId: "8761724",
     name: "Leeville, Bayou LaFourche", slug: "leeville-bayou-lafourche",
     state: "louisiana", city: "Leeville, Bayou LaFourche, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.2483, lon: -90.2117, latDisplay: "29.25°N", lonDisplay: "90.21°W",
@@ -931,7 +931,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8762184", waterTempId: "8762184",
+    id: "8762184", waterTempId: "8761724",
     name: "Golden Meadow, Plaisance Canal", slug: "golden-meadow-plaisance-canal",
     state: "louisiana", city: "Golden Meadow, Plaisance Canal, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.373300552368164, lon: -90.26499938964844, latDisplay: "29.37°N", lonDisplay: "90.26°W",
@@ -953,7 +953,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8762223", waterTempId: "8762223",
+    id: "8762223", waterTempId: "8761724",
     name: "East Timbalier Island, Timbalier Bay", slug: "east-timbalier-island-timbalier-bay",
     state: "louisiana", city: "East Timbalier Island, Timbalier Bay, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.0767, lon: -90.285, latDisplay: "29.08°N", lonDisplay: "90.28°W",
@@ -975,7 +975,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8762329", waterTempId: "8762329",
+    id: "8762329", waterTempId: "8762482",
     name: "Bayou Faleau", slug: "bayou-faleau",
     state: "louisiana", city: "Bayou Faleau, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.47038888888889, lon: -90.34222222222222, latDisplay: "29.47°N", lonDisplay: "90.34°W",
@@ -997,7 +997,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8762372", waterTempId: "8762372",
+    id: "8762372", waterTempId: "8761927",
     name: "East Bank 1, Norco, B. LaBranche", slug: "east-bank-1-norco-b-labranche",
     state: "louisiana", city: "East Bank 1, Norco, B. LaBranche, LA", region: "Breton Sound / Mississippi Delta",
     lat: 30.05033333333333, lon: -90.368, latDisplay: "30.05°N", lonDisplay: "90.37°W",
@@ -1019,7 +1019,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8762481", waterTempId: "8762481",
+    id: "8762481", waterTempId: "8761724",
     name: "Pelican Islands, Timbalier Bay", slug: "pelican-islands-timbalier-bay",
     state: "louisiana", city: "Pelican Islands, Timbalier Bay, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.1283, lon: -90.4233, latDisplay: "29.13°N", lonDisplay: "90.42°W",
@@ -1041,7 +1041,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8762483", waterTempId: "8762483",
+    id: "8762483", waterTempId: "8761927",
     name: "I-10 BONNET CARRE FLOODWAY", slug: "i-10-bonnet-carre-floodway",
     state: "louisiana", city: "I-10 BONNET CARRE FLOODWAY, LA", region: "Breton Sound / Mississippi Delta",
     lat: 30.067899703979492, lon: -90.38999938964844, latDisplay: "30.07°N", lonDisplay: "90.39°W",
@@ -1063,7 +1063,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8762525", waterTempId: "8762525",
+    id: "8762525", waterTempId: "8762482",
     name: "Pointe Au Chien, Cut Off Canal", slug: "pointe-au-chien-cut-off-canal",
     state: "louisiana", city: "Pointe Au Chien, Cut Off Canal, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.41670036315918, lon: -90.44670104980469, latDisplay: "29.42°N", lonDisplay: "90.45°W",
@@ -1085,7 +1085,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8762675", waterTempId: "8762675",
+    id: "8762675", waterTempId: "8761724",
     name: "Timbalier Island, Timbalier Bay", slug: "timbalier-island-timbalier-bay",
     state: "louisiana", city: "Timbalier Island, Timbalier Bay, LA", region: "Barataria / New Orleans",
     lat: 29.0867, lon: -90.5267, latDisplay: "29.09°N", lonDisplay: "90.53°W",
@@ -1107,7 +1107,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8762850", waterTempId: "8762850",
+    id: "8762850", waterTempId: "8761724",
     name: "Wine Island, Terrebonne Bay", slug: "wine-island-terrebonne-bay",
     state: "louisiana", city: "Wine Island, Terrebonne Bay, LA", region: "Barataria / New Orleans",
     lat: 29.0783, lon: -90.5867, latDisplay: "29.08°N", lonDisplay: "90.59°W",
@@ -1129,7 +1129,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8762888", waterTempId: "8762888",
+    id: "8762888", waterTempId: "8761724",
     name: "E. ISLE DERNIERES, LAKE PELTO", slug: "e-isle-dernieres-lake-pelto",
     state: "louisiana", city: "E. ISLE DERNIERES, LAKE PELTO, LA", region: "Barataria / New Orleans",
     lat: 29.0717, lon: -90.64, latDisplay: "29.07°N", lonDisplay: "90.64°W",
@@ -1151,7 +1151,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8762928", waterTempId: "8762928",
+    id: "8762928", waterTempId: "8762482",
     name: "Cocodrie, Terrebonne Bay", slug: "cocodrie-terrebonne-bay",
     state: "louisiana", city: "Cocodrie, Terrebonne Bay, LA", region: "Barataria / New Orleans",
     lat: 29.245, lon: -90.6617, latDisplay: "29.25°N", lonDisplay: "90.66°W",
@@ -1173,7 +1173,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8763206", waterTempId: "8763206",
+    id: "8763206", waterTempId: "8764314",
     name: "Caillou Boca", slug: "caillou-boca",
     state: "louisiana", city: "Caillou Boca, LA", region: "Barataria / New Orleans",
     lat: 29.0633, lon: -90.8067, latDisplay: "29.06°N", lonDisplay: "90.81°W",
@@ -1195,7 +1195,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8763506", waterTempId: "8763506",
+    id: "8763506", waterTempId: "8764314",
     name: "Raccoon Point, Caillou Bay", slug: "raccoon-point-caillou-bay",
     state: "louisiana", city: "Raccoon Point, Caillou Bay, LA", region: "Barataria / New Orleans",
     lat: 29.0633, lon: -90.9617, latDisplay: "29.06°N", lonDisplay: "90.96°W",
@@ -1217,7 +1217,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8763535", waterTempId: "8763535",
+    id: "8763535", waterTempId: "8764314",
     name: "Texas Gas Platform, Caillou Bay", slug: "texas-gas-platform-caillou-bay",
     state: "louisiana", city: "Texas Gas Platform, Caillou Bay, LA", region: "Barataria / New Orleans",
     lat: 29.17477777777778, lon: -90.97644444444444, latDisplay: "29.17°N", lonDisplay: "90.98°W",
@@ -1239,7 +1239,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8763719", waterTempId: "8763719",
+    id: "8763719", waterTempId: "8764314",
     name: "Ship Shoal Light", slug: "ship-shoal-light",
     state: "louisiana", city: "Ship Shoal Light, LA", region: "Barataria / New Orleans",
     lat: 28.915, lon: -91.0717, latDisplay: "28.91°N", lonDisplay: "91.07°W",
@@ -1261,7 +1261,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8763843", waterTempId: "8763843",
+    id: "8763843", waterTempId: "8764227",
     name: "Fourleague Bay", slug: "fourleague-bay",
     state: "louisiana", city: "Fourleague Bay, LA", region: "Barataria / New Orleans",
     lat: 29.341800689697266, lon: -91.135498046875, latDisplay: "29.34°N", lonDisplay: "91.14°W",
@@ -1283,7 +1283,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8764025", waterTempId: "8764025",
+    id: "8764025", waterTempId: "8764044",
     name: "Stouts Pass at Six Mile Lake", slug: "stouts-pass-at-six-mile-lake",
     state: "louisiana", city: "Stouts Pass at Six Mile Lake, LA", region: "Barataria / New Orleans",
     lat: 29.7433, lon: -91.23, latDisplay: "29.74°N", lonDisplay: "91.23°W",
@@ -1327,7 +1327,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8764165", waterTempId: "8764165",
+    id: "8764165", waterTempId: "8764227",
     name: "Shell Island", slug: "shell-island",
     state: "louisiana", city: "Shell Island, LA", region: "Barataria / New Orleans",
     lat: 29.4733, lon: -91.305, latDisplay: "29.47°N", lonDisplay: "91.31°W",
@@ -1371,7 +1371,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8764256", waterTempId: "8764256",
+    id: "8764256", waterTempId: "8764314",
     name: "Point Au Fer", slug: "point-au-fer",
     state: "louisiana", city: "Point Au Fer, LA", region: "Barataria / New Orleans",
     lat: 29.3333, lon: -91.3533, latDisplay: "29.33°N", lonDisplay: "91.35°W",
@@ -1393,7 +1393,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8764311", waterTempId: "8764311",
+    id: "8764311", waterTempId: "8764314",
     name: "Eugene Island", slug: "eugene-island",
     state: "louisiana", city: "Eugene Island, LA", region: "Barataria / New Orleans",
     lat: 29.3717, lon: -91.385, latDisplay: "29.37°N", lonDisplay: "91.39°W",
@@ -1437,7 +1437,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8764634", waterTempId: "8764634",
+    id: "8764634", waterTempId: "8764227",
     name: "Point Chevreuil", slug: "point-chevreuil",
     state: "louisiana", city: "Point Chevreuil, LA", region: "Vermilion / Atchafalaya",
     lat: 29.5183, lon: -91.555, latDisplay: "29.52°N", lonDisplay: "91.56°W",
@@ -1459,7 +1459,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8764706", waterTempId: "8764706",
+    id: "8764706", waterTempId: "8764314",
     name: "Rabbit Island, 5 miles south of", slug: "rabbit-island-5-miles-south-of",
     state: "louisiana", city: "Rabbit Island, 5 miles south of, LA", region: "Vermilion / Atchafalaya",
     lat: 29.42, lon: -91.5933, latDisplay: "29.42°N", lonDisplay: "91.59°W",
@@ -1481,7 +1481,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8764931", waterTempId: "8764931",
+    id: "8764931", waterTempId: "8764044",
     name: "Cote Blanche Island, West Cote Blanche Bay", slug: "cote-blanche-island-west-cote-blanche-bay",
     state: "louisiana", city: "Cote Blanche Island, West Cote Blanche Bay, LA", region: "Vermilion / Atchafalaya",
     lat: 29.735, lon: -91.7133, latDisplay: "29.73°N", lonDisplay: "91.71°W",
@@ -1503,7 +1503,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8765026", waterTempId: "8765026",
+    id: "8765026", waterTempId: "8764314",
     name: "South Point, Marsh Island", slug: "south-point-marsh-island",
     state: "louisiana", city: "South Point, Marsh Island, LA", region: "Vermilion / Atchafalaya",
     lat: 29.485, lon: -91.7633, latDisplay: "29.48°N", lonDisplay: "91.76°W",
@@ -1525,7 +1525,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8765148", waterTempId: "8765148",
+    id: "8765148", waterTempId: "8766072",
     name: "Weeks Bay", slug: "weeks-bay",
     state: "louisiana", city: "Weeks Bay, LA", region: "Vermilion / Atchafalaya",
     lat: 29.83722222222222, lon: -91.8375, latDisplay: "29.84°N", lonDisplay: "91.84°W",
@@ -1547,7 +1547,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8765251", waterTempId: "8765251",
+    id: "8765251", waterTempId: "8766072",
     name: "Cypremort Point", slug: "cypremort-point",
     state: "louisiana", city: "Cypremort Point, LA", region: "Vermilion / Atchafalaya",
     lat: 29.71336111111111, lon: -91.88, latDisplay: "29.71°N", lonDisplay: "91.88°W",
@@ -1569,7 +1569,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8765551", waterTempId: "8765551",
+    id: "8765551", waterTempId: "8766072",
     name: "Southwest Pass, Vermilion Bay", slug: "southwest-pass-vermilion-bay",
     state: "louisiana", city: "Southwest Pass, Vermilion Bay, LA", region: "Vermilion / Atchafalaya",
     lat: 29.58, lon: -92.035, latDisplay: "29.58°N", lonDisplay: "92.03°W",
@@ -1591,7 +1591,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8765568", waterTempId: "8765568",
+    id: "8765568", waterTempId: "8766072",
     name: "Lighthouse Point", slug: "lighthouse-point",
     state: "louisiana", city: "Lighthouse Point, LA", region: "Vermilion / Atchafalaya",
     lat: 29.5233, lon: -92.0433, latDisplay: "29.52°N", lonDisplay: "92.04°W",
@@ -1613,7 +1613,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8765746", waterTempId: "8765746",
+    id: "8765746", waterTempId: "8766072",
     name: "Bayou Fearman, Vermillion Bay", slug: "bayou-fearman-vermillion-bay",
     state: "louisiana", city: "Bayou Fearman, Vermillion Bay, LA", region: "Vermilion / Atchafalaya",
     lat: 29.674400329589844, lon: -92.13520050048828, latDisplay: "29.67°N", lonDisplay: "92.14°W",
@@ -1635,7 +1635,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8765785", waterTempId: "8765785",
+    id: "8765785", waterTempId: "8766072",
     name: "Intracoastal City", slug: "intracoastal-city",
     state: "louisiana", city: "Intracoastal City, LA", region: "Vermilion / Atchafalaya",
     lat: 29.783000946044922, lon: -92.15560150146484, latDisplay: "29.78°N", lonDisplay: "92.16°W",
@@ -1657,7 +1657,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8765969", waterTempId: "8765969",
+    id: "8765969", waterTempId: "8766072",
     name: "Freshwater Bayou", slug: "freshwater-bayou",
     state: "louisiana", city: "Freshwater Bayou, LA", region: "Vermilion / Atchafalaya",
     lat: 29.655399322509766, lon: -92.25070190429688, latDisplay: "29.66°N", lonDisplay: "92.25°W",
@@ -1679,7 +1679,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8765994", waterTempId: "8765994",
+    id: "8765994", waterTempId: "8766072",
     name: "Schooner Bayou, Vermillion Bay", slug: "schooner-bayou-vermillion-bay",
     state: "louisiana", city: "Schooner Bayou, Vermillion Bay, LA", region: "Vermilion / Atchafalaya",
     lat: 29.758100509643555, lon: -92.26380157470703, latDisplay: "29.76°N", lonDisplay: "92.26°W",
@@ -1723,7 +1723,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8766941", waterTempId: "8766941",
+    id: "8766941", waterTempId: "8766072",
     name: "Joseph Harbor", slug: "joseph-harbor",
     state: "louisiana", city: "Joseph Harbor, LA", region: "Cameron",
     lat: 29.637500762939453, lon: -92.76719665527344, latDisplay: "29.64°N", lonDisplay: "92.77°W",
@@ -1745,7 +1745,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8767095", waterTempId: "8767095",
+    id: "8767095", waterTempId: "8768094",
     name: "Catfish Point, Mermentau River", slug: "catfish-point-mermentau-river",
     state: "louisiana", city: "Catfish Point, Mermentau River, LA", region: "Cameron",
     lat: 29.862899780273438, lon: -92.8488998413086, latDisplay: "29.86°N", lonDisplay: "92.85°W",
@@ -1767,7 +1767,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8767403", waterTempId: "8767403",
+    id: "8767403", waterTempId: "8768094",
     name: "Mermentau River, Grand Chenier", slug: "mermentau-river-grand-chenier",
     state: "louisiana", city: "Mermentau River, Grand Chenier, LA", region: "Cameron",
     lat: 29.774999618530273, lon: -93.00830078125, latDisplay: "29.77°N", lonDisplay: "93.01°W",
@@ -1811,7 +1811,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8767911", waterTempId: "8767911",
+    id: "8767911", waterTempId: "8767961",
     name: "East Calcasieu Lake", slug: "east-calcasieu-lake",
     state: "louisiana", city: "East Calcasieu Lake, LA", region: "Cameron",
     lat: 29.993900299072266, lon: -93.27050018310547, latDisplay: "29.99°N", lonDisplay: "93.27°W",
@@ -1877,7 +1877,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8768772", waterTempId: "8768772",
+    id: "8768772", waterTempId: "8767961",
     name: "Gum Cove, ICWW", slug: "gum-cove-icww",
     state: "louisiana", city: "Gum Cove, ICWW, LA", region: "Calcasieu / Sabine",
     lat: 30.058700561523438, lon: -93.52259826660156, latDisplay: "30.06°N", lonDisplay: "93.52°W",
@@ -1899,7 +1899,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8769858", waterTempId: "8769858",
+    id: "8769858", waterTempId: "8770475",
     name: "East Sabine Lake", slug: "east-sabine-lake",
     state: "louisiana", city: "East Sabine Lake, LA", region: "Calcasieu / Sabine",
     lat: 29.812700271606445, lon: -93.86209869384766, latDisplay: "29.81°N", lonDisplay: "93.86°W",
@@ -1921,7 +1921,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8760550", waterTempId: "8760550",
+    id: "8760550", waterTempId: "8760721",
     name: "SOUTH PASS", slug: "south-pass-8760550",
     state: "louisiana", city: "SOUTH PASS, LA", region: "Breton Sound / Mississippi Delta",
     lat: 28.9917, lon: -89.14, latDisplay: "28.99°N", lonDisplay: "89.14°W",
@@ -1943,7 +1943,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8760781", waterTempId: "8760781",
+    id: "8760781", waterTempId: "8760721",
     name: "SHELL OIL, EAST BAY", slug: "shell-oil-east-bay",
     state: "louisiana", city: "SHELL OIL, EAST BAY, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.0533, lon: -89.305, latDisplay: "29.05°N", lonDisplay: "89.31°W",
@@ -1965,7 +1965,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8760783", waterTempId: "8760783",
+    id: "8760783", waterTempId: "8760721",
     name: "SOUTHWEST PASS", slug: "southwest-pass-8760783",
     state: "louisiana", city: "SOUTHWEST PASS, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.0567, lon: -89.3083, latDisplay: "29.06°N", lonDisplay: "89.31°W",
@@ -1987,7 +1987,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8760849", waterTempId: "8760849",
+    id: "8760849", waterTempId: "8760721",
     name: "VENICE, GRAND PASS", slug: "venice-grand-pass",
     state: "louisiana", city: "VENICE, GRAND PASS, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.2733, lon: -89.3517, latDisplay: "29.27°N", lonDisplay: "89.35°W",
@@ -2009,7 +2009,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761193", waterTempId: "8761193",
+    id: "8761193", waterTempId: "8761724",
     name: "EMPIRE, MISSISSIPPI RIVER", slug: "empire-mississippi-river",
     state: "louisiana", city: "EMPIRE, MISSISSIPPI RIVER, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.39, lon: -89.595, latDisplay: "29.39°N", lonDisplay: "89.59°W",
@@ -2031,7 +2031,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761198", waterTempId: "8761198",
+    id: "8761198", waterTempId: "8760721",
     name: "CHEVRON STATION 289, PELICAN ISLAND", slug: "chevron-station-289-pelican-island",
     state: "louisiana", city: "CHEVRON STATION 289, PELICAN ISLAND, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.2667, lon: -89.5983, latDisplay: "29.27°N", lonDisplay: "89.60°W",
@@ -2053,7 +2053,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761207", waterTempId: "8761207",
+    id: "8761207", waterTempId: "8761724",
     name: "EMPIRE, DOULLUT CANAL", slug: "empire-doullut-canal",
     state: "louisiana", city: "EMPIRE, DOULLUT CANAL, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.375, lon: -89.6017, latDisplay: "29.38°N", lonDisplay: "89.60°W",
@@ -2075,7 +2075,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761385", waterTempId: "8761385",
+    id: "8761385", waterTempId: "8761305",
     name: "VICINITY OF UNO CHEF MENTEUR", slug: "vicinity-of-uno-chef-menteur",
     state: "louisiana", city: "VICINITY OF UNO CHEF MENTEUR, LA", region: "Breton Sound / Mississippi Delta",
     lat: 30.06875, lon: -89.802086, latDisplay: "30.07°N", lonDisplay: "89.80°W",
@@ -2097,7 +2097,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761414", waterTempId: "8761414",
+    id: "8761414", waterTempId: "8761724",
     name: "BILLET BAY COMMUNITY, BILLET BAY", slug: "billet-bay-community-billet-bay",
     state: "louisiana", city: "BILLET BAY COMMUNITY, BILLET BAY, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.3717, lon: -89.7517, latDisplay: "29.37°N", lonDisplay: "89.75°W",
@@ -2119,7 +2119,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761426", waterTempId: "8761426",
+    id: "8761426", waterTempId: "8761305",
     name: "GREENS DITCH, LAKE ST. CATHERINE", slug: "greens-ditch-lake-st-catherine",
     state: "louisiana", city: "GREENS DITCH, LAKE ST. CATHERINE, LA", region: "Breton Sound / Mississippi Delta",
     lat: 30.1117, lon: -89.76, latDisplay: "30.11°N", lonDisplay: "89.76°W",
@@ -2141,7 +2141,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761484", waterTempId: "8761484",
+    id: "8761484", waterTempId: "8761724",
     name: "LEASE VB #4, BAYOU DULAC", slug: "lease-vb-4-bayou-dulac",
     state: "louisiana", city: "LEASE VB #4, BAYOU DULAC, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.4567, lon: -89.8, latDisplay: "29.46°N", lonDisplay: "89.80°W",
@@ -2163,7 +2163,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761494", waterTempId: "8761494",
+    id: "8761494", waterTempId: "8761305",
     name: "WEST POINT A LA HACHE, MISS. RIVER", slug: "west-point-a-la-hache-miss-river",
     state: "louisiana", city: "WEST POINT A LA HACHE, MISS. RIVER, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.5733, lon: -89.805, latDisplay: "29.57°N", lonDisplay: "89.81°W",
@@ -2185,7 +2185,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761534", waterTempId: "8761534",
+    id: "8761534", waterTempId: "8761927",
     name: "BIG POINT, LAKE PONTCHARTRAIN", slug: "big-point-lake-pontchartrain",
     state: "louisiana", city: "BIG POINT, LAKE PONTCHARTRAIN, LA", region: "Breton Sound / Mississippi Delta",
     lat: 30.2283, lon: -89.8533, latDisplay: "30.23°N", lonDisplay: "89.85°W",
@@ -2207,7 +2207,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761602", waterTempId: "8761602",
+    id: "8761602", waterTempId: "8761724",
     name: "LAKE JUDGE PEREZ, HERMITAGE BAYO", slug: "lake-judge-perez-hermitage-bayo",
     state: "louisiana", city: "LAKE JUDGE PEREZ, HERMITAGE BAYO, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.5583, lon: -89.8833, latDisplay: "29.56°N", lonDisplay: "89.88°W",
@@ -2229,7 +2229,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761679", waterTempId: "8761679",
+    id: "8761679", waterTempId: "8761724",
     name: "ST. MARYS POINT, BARATARIA BAY", slug: "st-marys-point-barataria-bay",
     state: "louisiana", city: "ST. MARYS POINT, BARATARIA BAY, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.4317, lon: -89.9383, latDisplay: "29.43°N", lonDisplay: "89.94°W",
@@ -2251,7 +2251,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761699", waterTempId: "8761699",
+    id: "8761699", waterTempId: "8761927",
     name: "S.N.G. CO., LACOMBE BAYOU", slug: "sng-co-lacombe-bayou",
     state: "louisiana", city: "S.N.G. CO., LACOMBE BAYOU, LA", region: "Breton Sound / Mississippi Delta",
     lat: 30.28, lon: -89.9533, latDisplay: "30.28°N", lonDisplay: "89.95°W",
@@ -2273,7 +2273,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761720", waterTempId: "8761720",
+    id: "8761720", waterTempId: "8761724",
     name: "GRAND ISLE", slug: "grand-isle",
     state: "louisiana", city: "GRAND ISLE, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.255, lon: -89.9683, latDisplay: "29.25°N", lonDisplay: "89.97°W",
@@ -2295,7 +2295,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761727", waterTempId: "8761727",
+    id: "8761727", waterTempId: "8761955",
     name: "ALLIANCE, MISSISSIPPI RIVER", slug: "alliance-mississippi-river",
     state: "louisiana", city: "ALLIANCE, MISSISSIPPI RIVER, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.69, lon: -89.9733, latDisplay: "29.69°N", lonDisplay: "89.97°W",
@@ -2317,7 +2317,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761799", waterTempId: "8761799",
+    id: "8761799", waterTempId: "8761724",
     name: "M.V. PETROLEUM DOCK, BAYOU ST DENIS", slug: "mv-petroleum-dock-bayou-st-denis",
     state: "louisiana", city: "M.V. PETROLEUM DOCK, BAYOU ST DENIS, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.4967, lon: -90.025, latDisplay: "29.50°N", lonDisplay: "90.03°W",
@@ -2339,7 +2339,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761959", waterTempId: "8761959",
+    id: "8761959", waterTempId: "8761724",
     name: "EQUITABLE PETROLEUM DOCK, TURTLE BAY", slug: "equitable-petroleum-dock-turtle-bay",
     state: "louisiana", city: "EQUITABLE PETROLEUM DOCK, TURTLE BAY, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.52, lon: -90.1383, latDisplay: "29.52°N", lonDisplay: "90.14°W",
@@ -2361,7 +2361,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8761962", waterTempId: "8761962",
+    id: "8761962", waterTempId: "8761724",
     name: "TEXACO GAS EXPLORATION DOCK, BAY RAMBO", slug: "texaco-gas-exploration-dock-bay-rambo",
     state: "louisiana", city: "TEXACO GAS EXPLORATION DOCK, BAY RAMBO, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.3617, lon: -90.14, latDisplay: "29.36°N", lonDisplay: "90.14°W",
@@ -2383,7 +2383,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8762079", waterTempId: "8762079",
+    id: "8762079", waterTempId: "8761724",
     name: "FOURCHON (LUMCON)", slug: "fourchon-lumcon",
     state: "louisiana", city: "FOURCHON (LUMCON), LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.1133, lon: -90.185, latDisplay: "29.11°N", lonDisplay: "90.19°W",
@@ -2405,7 +2405,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8762273", waterTempId: "8762273",
+    id: "8762273", waterTempId: "8761927",
     name: "EAST END, PASS MANCHAC", slug: "east-end-pass-manchac",
     state: "louisiana", city: "EAST END, PASS MANCHAC, LA", region: "Breton Sound / Mississippi Delta",
     lat: 30.2967, lon: -90.3117, latDisplay: "30.30°N", lonDisplay: "90.31°W",
@@ -2427,7 +2427,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8762419", waterTempId: "8762419",
+    id: "8762419", waterTempId: "8761927",
     name: "U.S. HIGHWAY 51, PASS MANCHAC", slug: "us-highway-51-pass-manchac",
     state: "louisiana", city: "U.S. HIGHWAY 51, PASS MANCHAC, LA", region: "Breton Sound / Mississippi Delta",
     lat: 30.285, lon: -90.4017, latDisplay: "30.29°N", lonDisplay: "90.40°W",
@@ -2449,7 +2449,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8762571", waterTempId: "8762571",
+    id: "8762571", waterTempId: "8762482",
     name: "PT. AU CHIEN WMA, ST LOUIS CANAL", slug: "pt-au-chien-wma-st-louis-canal",
     state: "louisiana", city: "PT. AU CHIEN WMA, ST LOUIS CANAL, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.4567, lon: -90.4717, latDisplay: "29.46°N", lonDisplay: "90.47°W",
@@ -2471,7 +2471,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8762582", waterTempId: "8762582",
+    id: "8762582", waterTempId: "8761724",
     name: "TIMBALIER ISLAND, TIMBALIER BAY", slug: "timbalier-island-timbalier-bay-8762582",
     state: "louisiana", city: "TIMBALIER ISLAND, TIMBALIER BAY, LA", region: "Breton Sound / Mississippi Delta",
     lat: 29.0667, lon: -90.4767, latDisplay: "29.07°N", lonDisplay: "90.48°W",
@@ -2493,7 +2493,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8762731", waterTempId: "8762731",
+    id: "8762731", waterTempId: "8762482",
     name: "POINT BARRE, HUMBLE CANAL", slug: "point-barre-humble-canal",
     state: "louisiana", city: "POINT BARRE, HUMBLE CANAL, LA", region: "Barataria / New Orleans",
     lat: 29.4283, lon: -90.5567, latDisplay: "29.43°N", lonDisplay: "90.56°W",
@@ -2515,7 +2515,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8762788", waterTempId: "8762788",
+    id: "8762788", waterTempId: "8761927",
     name: "CARTHAGE BLUFF LDG, AMITE RIVER", slug: "carthage-bluff-ldg-amite-river",
     state: "louisiana", city: "CARTHAGE BLUFF LDG, AMITE RIVER, LA", region: "Barataria / New Orleans",
     lat: 30.3083, lon: -90.5867, latDisplay: "30.31°N", lonDisplay: "90.59°W",
@@ -2537,7 +2537,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8762938", waterTempId: "8762938",
+    id: "8762938", waterTempId: "8761724",
     name: "TEXACO TB#3, BAYOU PETIT CAILLOU", slug: "texaco-tb3-bayou-petit-caillou",
     state: "louisiana", city: "TEXACO TB#3, BAYOU PETIT CAILLOU, LA", region: "Barataria / New Orleans",
     lat: 29.1867, lon: -90.6667, latDisplay: "29.19°N", lonDisplay: "90.67°W",
@@ -2559,7 +2559,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8763027", waterTempId: "8763027",
+    id: "8763027", waterTempId: "8762482",
     name: "LA HIGHWAY 57, BAYOU DULAC", slug: "la-highway-57-bayou-dulac",
     state: "louisiana", city: "LA HIGHWAY 57, BAYOU DULAC, LA", region: "Barataria / New Orleans",
     lat: 29.3733, lon: -90.7117, latDisplay: "29.37°N", lonDisplay: "90.71°W",
@@ -2581,7 +2581,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8763153", waterTempId: "8763153",
+    id: "8763153", waterTempId: "8764227",
     name: "SUPERIOR OIL, FOUR ISLAND BAYOU", slug: "superior-oil-four-island-bayou",
     state: "louisiana", city: "SUPERIOR OIL, FOUR ISLAND BAYOU, LA", region: "Barataria / New Orleans",
     lat: 29.235, lon: -90.78, latDisplay: "29.23°N", lonDisplay: "90.78°W",
@@ -2603,7 +2603,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8763921", waterTempId: "8763921",
+    id: "8763921", waterTempId: "8764044",
     name: "Doiron Landing", slug: "doiron-landing",
     state: "louisiana", city: "Doiron Landing, LA", region: "Barataria / New Orleans",
     lat: 29.764029, lon: -91.17589, latDisplay: "29.76°N", lonDisplay: "91.18°W",
@@ -2625,7 +2625,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8763986", waterTempId: "8763986",
+    id: "8763986", waterTempId: "8764044",
     name: "MORGAN CITY", slug: "morgan-city",
     state: "louisiana", city: "MORGAN CITY, LA", region: "Barataria / New Orleans",
     lat: 29.6933, lon: -91.21, latDisplay: "29.69°N", lonDisplay: "91.21°W",
@@ -2647,7 +2647,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8764101", waterTempId: "8764101",
+    id: "8764101", waterTempId: "8764227",
     name: "DEER ISLAND", slug: "deer-island",
     state: "louisiana", city: "DEER ISLAND, LA", region: "Barataria / New Orleans",
     lat: 29.4733, lon: -91.2667, latDisplay: "29.47°N", lonDisplay: "91.27°W",
@@ -2669,7 +2669,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8764361", waterTempId: "8764361",
+    id: "8764361", waterTempId: "8764227",
     name: "WAX LAKE OUTLET", slug: "wax-lake-outlet",
     state: "louisiana", city: "WAX LAKE OUTLET, LA", region: "Barataria / New Orleans",
     lat: 29.5733, lon: -91.42, latDisplay: "29.57°N", lonDisplay: "91.42°W",
@@ -2691,7 +2691,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8764632", waterTempId: "8764632",
+    id: "8764632", waterTempId: "8764227",
     name: "SALT POINT", slug: "salt-point",
     state: "louisiana", city: "SALT POINT, LA", region: "Vermilion / Atchafalaya",
     lat: 29.5733, lon: -91.5367, latDisplay: "29.57°N", lonDisplay: "91.54°W",
@@ -2713,7 +2713,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8765171", waterTempId: "8765171",
+    id: "8765171", waterTempId: "8766072",
     name: "New Iberia", slug: "new-iberia",
     state: "louisiana", city: "New Iberia, LA", region: "Vermilion / Atchafalaya",
     lat: 29.9483, lon: -91.8383, latDisplay: "29.95°N", lonDisplay: "91.84°W",
@@ -2735,7 +2735,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8765258", waterTempId: "8765258",
+    id: "8765258", waterTempId: "8766072",
     name: "CYPREMORT POINT", slug: "cypremort-point-8765258",
     state: "louisiana", city: "CYPREMORT POINT, LA", region: "Vermilion / Atchafalaya",
     lat: 29.7117, lon: -91.8783, latDisplay: "29.71°N", lonDisplay: "91.88°W",
@@ -2757,7 +2757,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8766503", waterTempId: "8766503",
+    id: "8766503", waterTempId: "8766072",
     name: "Rollover Bayou", slug: "rollover-bayou",
     state: "louisiana", city: "Rollover Bayou, LA", region: "Cameron",
     lat: 29.576666, lon: -92.535, latDisplay: "29.58°N", lonDisplay: "92.53°W",
@@ -2779,7 +2779,7 @@ export const LOUISIANA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8766769", waterTempId: "8766769",
+    id: "8766769", waterTempId: "8767816",
     name: "Lake Arthur", slug: "lake-arthur",
     state: "louisiana", city: "Lake Arthur, LA", region: "Cameron",
     lat: 30.0735, lon: -92.6768, latDisplay: "30.07°N", lonDisplay: "92.68°W",

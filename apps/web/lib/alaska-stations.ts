@@ -7,7 +7,7 @@ export type { StationConfig, NearbyStation, Species }
 
 export const ALASKA_STATIONS: StationConfig[] = [
   {
-    id: "9450041", waterTempId: "9450041",
+    id: "9450041", waterTempId: "9450460",
     name: "Minnie Bay", slug: "minnie-bay",
     state: "alaska", city: "Minnie Bay, AK", region: "Southeast Alaska",
     lat: 54.7267, lon: -132.302, latDisplay: "54.73°N", lonDisplay: "132.30°W",
@@ -29,7 +29,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450055", waterTempId: "9450055",
+    id: "9450055", waterTempId: "9450460",
     name: "Security Cove", slug: "security-cove",
     state: "alaska", city: "Security Cove, AK", region: "Southeast Alaska",
     lat: 54.7483, lon: -132.855, latDisplay: "54.75°N", lonDisplay: "132.85°W",
@@ -51,7 +51,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450104", waterTempId: "9450104",
+    id: "9450104", waterTempId: "9450460",
     name: "Nakat Harbor, Alaska", slug: "nakat-harbor-alaska",
     state: "alaska", city: "Nakat Harbor, Alaska, AK", region: "Southeast Alaska",
     lat: 54.82, lon: -130.7, latDisplay: "54.82°N", lonDisplay: "130.70°W",
@@ -73,7 +73,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450125", waterTempId: "9450125",
+    id: "9450125", waterTempId: "9450460",
     name: "American Bay, Kaigani Strait", slug: "american-bay-kaigani-strait",
     state: "alaska", city: "American Bay, Kaigani Strait, AK", region: "Southeast Alaska",
     lat: 54.85, lon: -132.83, latDisplay: "54.85°N", lonDisplay: "132.83°W",
@@ -95,7 +95,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450139", waterTempId: "9450139",
+    id: "9450139", waterTempId: "9450460",
     name: "Hunter Bay", slug: "hunter-bay",
     state: "alaska", city: "Hunter Bay, AK", region: "Southeast Alaska",
     lat: 54.8717, lon: -132.322, latDisplay: "54.87°N", lonDisplay: "132.32°W",
@@ -117,7 +117,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450142", waterTempId: "9450142",
+    id: "9450142", waterTempId: "9450460",
     name: "Kelp Island Passage, Duke Island", slug: "kelp-island-passage-duke-island",
     state: "alaska", city: "Kelp Island Passage, Duke Island, AK", region: "Southeast Alaska",
     lat: 54.8767, lon: -131.3, latDisplay: "54.88°N", lonDisplay: "131.30°W",
@@ -139,7 +139,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450158", waterTempId: "9450158",
+    id: "9450158", waterTempId: "9450460",
     name: "Elbow Bay", slug: "elbow-bay",
     state: "alaska", city: "Elbow Bay, AK", region: "Southeast Alaska",
     lat: 54.9, lon: -132.653, latDisplay: "54.90°N", lonDisplay: "132.65°W",
@@ -161,7 +161,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450172", waterTempId: "9450172",
+    id: "9450172", waterTempId: "9450460",
     name: "Morse Cove, Duke Island", slug: "morse-cove-duke-island",
     state: "alaska", city: "Morse Cove, Duke Island, AK", region: "Southeast Alaska",
     lat: 54.92, lon: -131.255, latDisplay: "54.92°N", lonDisplay: "131.25°W",
@@ -183,7 +183,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450176", waterTempId: "9450176",
+    id: "9450176", waterTempId: "9450460",
     name: "Kassa Inlet entrance", slug: "kassa-inlet-entrance",
     state: "alaska", city: "Kassa Inlet entrance, AK", region: "Southeast Alaska",
     lat: 54.9267, lon: -132.522, latDisplay: "54.93°N", lonDisplay: "132.52°W",
@@ -205,7 +205,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450212", waterTempId: "9450212",
+    id: "9450212", waterTempId: "9450460",
     name: "Ingraham Bay, Prince of Wales Island", slug: "ingraham-bay-prince-of-wales-island",
     state: "alaska", city: "Ingraham Bay, Prince of Wales Island, AK", region: "Southeast Alaska",
     lat: 54.98, lon: -132.007, latDisplay: "54.98°N", lonDisplay: "132.01°W",
@@ -227,7 +227,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450226", waterTempId: "9450226",
+    id: "9450226", waterTempId: "9450460",
     name: "Mabel Island", slug: "mabel-island",
     state: "alaska", city: "Mabel Island, AK", region: "Southeast Alaska",
     lat: 55, lon: -132.592, latDisplay: "55.00°N", lonDisplay: "132.59°W",
@@ -249,7 +249,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450244", waterTempId: "9450244",
+    id: "9450244", waterTempId: "9450460",
     name: "Menefee Anch., Prince of Wales Island", slug: "menefee-anch-prince-of-wales-island",
     state: "alaska", city: "Menefee Anch., Prince of Wales Island, AK", region: "Southeast Alaska",
     lat: 55.0267, lon: -132.013, latDisplay: "55.03°N", lonDisplay: "132.01°W",
@@ -271,7 +271,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450254", waterTempId: "9450254",
+    id: "9450254", waterTempId: "9450460",
     name: "Kah Shakes Cove", slug: "kah-shakes-cove",
     state: "alaska", city: "Kah Shakes Cove, AK", region: "Southeast Alaska",
     lat: 55.0417, lon: -130.98, latDisplay: "55.04°N", lonDisplay: "130.98°W",
@@ -293,7 +293,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450258", waterTempId: "9450258",
+    id: "9450258", waterTempId: "9450460",
     name: "Keete Island, Nutkwa Inlets", slug: "keete-island-nutkwa-inlets",
     state: "alaska", city: "Keete Island, Nutkwa Inlets, AK", region: "Southeast Alaska",
     lat: 55.0467, lon: -132.577, latDisplay: "55.05°N", lonDisplay: "132.58°W",
@@ -315,7 +315,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450271", waterTempId: "9450271",
+    id: "9450271", waterTempId: "9450460",
     name: "Niblack Anchorage, Moira Sound", slug: "niblack-anchorage-moira-sound",
     state: "alaska", city: "Niblack Anchorage, Moira Sound, AK", region: "Southeast Alaska",
     lat: 55.0667, lon: -132.12, latDisplay: "55.07°N", lonDisplay: "132.12°W",
@@ -337,7 +337,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450272", waterTempId: "9450272",
+    id: "9450272", waterTempId: "9450460",
     name: "Sakie Bay", slug: "sakie-bay",
     state: "alaska", city: "Sakie Bay, AK", region: "Gulf of Alaska",
     lat: 55.0667, lon: -133.2, latDisplay: "55.07°N", lonDisplay: "133.20°W",
@@ -359,7 +359,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450273", waterTempId: "9450273",
+    id: "9450273", waterTempId: "9450460",
     name: "Tamgas Harbor, Annette Island", slug: "tamgas-harbor-annette-island",
     state: "alaska", city: "Tamgas Harbor, Annette Island, AK", region: "Southeast Alaska",
     lat: 55.0667, lon: -131.542, latDisplay: "55.07°N", lonDisplay: "131.54°W",
@@ -381,7 +381,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450281", waterTempId: "9450281",
+    id: "9450281", waterTempId: "9450460",
     name: "Keete Inlet", slug: "keete-inlet",
     state: "alaska", city: "Keete Inlet, AK", region: "Southeast Alaska",
     lat: 55.08, lon: -132.49, latDisplay: "55.08°N", lonDisplay: "132.49°W",
@@ -403,7 +403,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450282", waterTempId: "9450282",
+    id: "9450282", waterTempId: "9450460",
     name: "Mud Bay", slug: "mud-bay",
     state: "alaska", city: "Mud Bay, AK", region: "Southeast Alaska",
     lat: 55.0817, lon: -132.632, latDisplay: "55.08°N", lonDisplay: "132.63°W",
@@ -425,7 +425,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450283", waterTempId: "9450283",
+    id: "9450283", waterTempId: "9450460",
     name: "View Cove", slug: "view-cove",
     state: "alaska", city: "View Cove, AK", region: "Gulf of Alaska",
     lat: 55.0833, lon: -133.017, latDisplay: "55.08°N", lonDisplay: "133.02°W",
@@ -447,7 +447,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450296", waterTempId: "9450296",
+    id: "9450296", waterTempId: "9450460",
     name: "Custom House Cove, Mary Island", slug: "custom-house-cove-mary-island",
     state: "alaska", city: "Custom House Cove, Mary Island, AK", region: "Southeast Alaska",
     lat: 55.1, lon: -131.217, latDisplay: "55.10°N", lonDisplay: "131.22°W",
@@ -469,7 +469,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450305", waterTempId: "9450305",
+    id: "9450305", waterTempId: "9450460",
     name: "Boca de Quadra", slug: "boca-de-quadra",
     state: "alaska", city: "Boca de Quadra, AK", region: "Southeast Alaska",
     lat: 55.1167, lon: -130.798, latDisplay: "55.12°N", lonDisplay: "130.80°W",
@@ -491,7 +491,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450312", waterTempId: "9450312",
+    id: "9450312", waterTempId: "9450460",
     name: "Sea Otter Harbor", slug: "sea-otter-harbor",
     state: "alaska", city: "Sea Otter Harbor, AK", region: "Gulf of Alaska",
     lat: 55.1267, lon: -133.167, latDisplay: "55.13°N", lonDisplay: "133.17°W",
@@ -513,7 +513,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450314", waterTempId: "9450314",
+    id: "9450314", waterTempId: "9450460",
     name: "Metlakatla, Port Chester", slug: "metlakatla-port-chester",
     state: "alaska", city: "Metlakatla, Port Chester, AK", region: "Southeast Alaska",
     lat: 55.1283, lon: -131.567, latDisplay: "55.13°N", lonDisplay: "131.57°W",
@@ -535,7 +535,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450339", waterTempId: "9450339",
+    id: "9450339", waterTempId: "9450460",
     name: "Nehenta Bay, Gravina Island", slug: "nehenta-bay-gravina-island",
     state: "alaska", city: "Nehenta Bay, Gravina Island, AK", region: "Southeast Alaska",
     lat: 55.1667, lon: -131.797, latDisplay: "55.17°N", lonDisplay: "131.80°W",
@@ -557,7 +557,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450341", waterTempId: "9450341",
+    id: "9450341", waterTempId: "9450460",
     name: "South Pass, Sukkwan Strait", slug: "south-pass-sukkwan-strait",
     state: "alaska", city: "South Pass, Sukkwan Strait, AK", region: "Southeast Alaska",
     lat: 55.1667, lon: -132.87, latDisplay: "55.17°N", lonDisplay: "132.87°W",
@@ -579,7 +579,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450351", waterTempId: "9450351",
+    id: "9450351", waterTempId: "9450460",
     name: "Saltery Point", slug: "saltery-point",
     state: "alaska", city: "Saltery Point, AK", region: "Southeast Alaska",
     lat: 55.1817, lon: -132.795, latDisplay: "55.18°N", lonDisplay: "132.79°W",
@@ -601,7 +601,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450364", waterTempId: "9450364",
+    id: "9450364", waterTempId: "9450460",
     name: "HYDABURG, SUKKWAN STRAIT", slug: "hydaburg-sukkwan-strait",
     state: "alaska", city: "HYDABURG, SUKKWAN STRAIT, AK", region: "Southeast Alaska",
     lat: 55.201698303222656, lon: -132.822998046875, latDisplay: "55.20°N", lonDisplay: "132.82°W",
@@ -623,7 +623,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450366", waterTempId: "9450366",
+    id: "9450366", waterTempId: "9450460",
     name: "North Pass, West End", slug: "north-pass-west-end",
     state: "alaska", city: "North Pass, West End, AK", region: "Southeast Alaska",
     lat: 55.205, lon: -132.94, latDisplay: "55.20°N", lonDisplay: "132.94°W",
@@ -645,7 +645,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450369", waterTempId: "9450369",
+    id: "9450369", waterTempId: "9450460",
     name: "Copper Harbor", slug: "copper-harbor",
     state: "alaska", city: "Copper Harbor, AK", region: "Southeast Alaska",
     lat: 55.21, lon: -132.625, latDisplay: "55.21°N", lonDisplay: "132.63°W",
@@ -667,7 +667,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450373", waterTempId: "9450373",
+    id: "9450373", waterTempId: "9450460",
     name: "Lancaster Cove, Cholmondeley Sound", slug: "lancaster-cove-cholmondeley-sound",
     state: "alaska", city: "Lancaster Cove, Cholmondeley Sound, AK", region: "Southeast Alaska",
     lat: 55.2133, lon: -132.095, latDisplay: "55.21°N", lonDisplay: "132.09°W",
@@ -689,7 +689,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450382", waterTempId: "9450382",
+    id: "9450382", waterTempId: "9450460",
     name: "Alva Bay, Revillagigedo Island", slug: "alva-bay-revillagigedo-island",
     state: "alaska", city: "Alva Bay, Revillagigedo Island, AK", region: "Southeast Alaska",
     lat: 55.2283, lon: -131.133, latDisplay: "55.23°N", lonDisplay: "131.13°W",
@@ -711,7 +711,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450387", waterTempId: "9450387",
+    id: "9450387", waterTempId: "9450460",
     name: "Natalia Point", slug: "natalia-point",
     state: "alaska", city: "Natalia Point, AK", region: "Gulf of Alaska",
     lat: 55.2333, lon: -133.043, latDisplay: "55.23°N", lonDisplay: "133.04°W",
@@ -733,7 +733,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450399", waterTempId: "9450399",
+    id: "9450399", waterTempId: "9450460",
     name: "Divide Head, Cholmondeley Sound", slug: "divide-head-cholmondeley-sound",
     state: "alaska", city: "Divide Head, Cholmondeley Sound, AK", region: "Southeast Alaska",
     lat: 55.2517, lon: -132.3, latDisplay: "55.25°N", lonDisplay: "132.30°W",
@@ -755,7 +755,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450406", waterTempId: "9450406",
+    id: "9450406", waterTempId: "9450460",
     name: "Block Island, Tlevak Narrows", slug: "block-island-tlevak-narrows",
     state: "alaska", city: "Block Island, Tlevak Narrows, AK", region: "Gulf of Alaska",
     lat: 55.263301849365234, lon: -133.11500549316406, latDisplay: "55.26°N", lonDisplay: "133.12°W",
@@ -777,7 +777,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450413", waterTempId: "9450413",
+    id: "9450413", waterTempId: "9450460",
     name: "Soda Bay", slug: "soda-bay",
     state: "alaska", city: "Soda Bay, AK", region: "Southeast Alaska",
     lat: 55.275, lon: -132.967, latDisplay: "55.27°N", lonDisplay: "132.97°W",
@@ -799,7 +799,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450421", waterTempId: "9450421",
+    id: "9450421", waterTempId: "9450460",
     name: "Sulzer", slug: "sulzer",
     state: "alaska", city: "Sulzer, AK", region: "Southeast Alaska",
     lat: 55.285, lon: -132.622, latDisplay: "55.28°N", lonDisplay: "132.62°W",
@@ -843,7 +843,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450463", waterTempId: "9450463",
+    id: "9450463", waterTempId: "9450460",
     name: "TROCADERO BAY", slug: "trocadero-bay",
     state: "alaska", city: "TROCADERO BAY, AK", region: "Southeast Alaska",
     lat: 55.35166666666667, lon: -132.9380555555556, latDisplay: "55.35°N", lonDisplay: "132.94°W",
@@ -865,7 +865,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450483", waterTempId: "9450483",
+    id: "9450483", waterTempId: "9450460",
     name: "Mop Point, Thorne Arm", slug: "mop-point-thorne-arm",
     state: "alaska", city: "Mop Point, Thorne Arm, AK", region: "Southeast Alaska",
     lat: 55.3833, lon: -131.235, latDisplay: "55.38°N", lonDisplay: "131.24°W",
@@ -887,7 +887,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450492", waterTempId: "9450492",
+    id: "9450492", waterTempId: "9450460",
     name: "Ward Cove", slug: "ward-cove",
     state: "alaska", city: "Ward Cove, AK", region: "Southeast Alaska",
     lat: 55.3983, lon: -131.727, latDisplay: "55.40°N", lonDisplay: "131.73°W",
@@ -909,7 +909,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450495", waterTempId: "9450495",
+    id: "9450495", waterTempId: "9450460",
     name: "Saltery Cove, Skowl Arm", slug: "saltery-cove-skowl-arm",
     state: "alaska", city: "Saltery Cove, Skowl Arm, AK", region: "Southeast Alaska",
     lat: 55.4017, lon: -132.328, latDisplay: "55.40°N", lonDisplay: "132.33°W",
@@ -931,7 +931,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450511", waterTempId: "9450511",
+    id: "9450511", waterTempId: "9450460",
     name: "Vallenar Point", slug: "vallenar-point",
     state: "alaska", city: "Vallenar Point, AK", region: "Southeast Alaska",
     lat: 55.4267, lon: -131.847, latDisplay: "55.43°N", lonDisplay: "131.85°W",
@@ -953,7 +953,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450533", waterTempId: "9450533",
+    id: "9450533", waterTempId: "9450460",
     name: "Coon Island, George Inlet", slug: "coon-island-george-inlet",
     state: "alaska", city: "Coon Island, George Inlet, AK", region: "Southeast Alaska",
     lat: 55.4617, lon: -131.505, latDisplay: "55.46°N", lonDisplay: "131.50°W",
@@ -975,7 +975,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450544", waterTempId: "9450544",
+    id: "9450544", waterTempId: "9450460",
     name: "Hollis Anchorage", slug: "hollis-anchorage",
     state: "alaska", city: "Hollis Anchorage, AK", region: "Southeast Alaska",
     lat: 55.48, lon: -132.645, latDisplay: "55.48°N", lonDisplay: "132.65°W",
@@ -997,7 +997,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450551", waterTempId: "9450551",
+    id: "9450551", waterTempId: "9450460",
     name: "Craig, Klawock Inlet", slug: "craig-klawock-inlet",
     state: "alaska", city: "Craig, Klawock Inlet, AK", region: "Gulf of Alaska",
     lat: 55.4883, lon: -133.142, latDisplay: "55.49°N", lonDisplay: "133.14°W",
@@ -1019,7 +1019,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450578", waterTempId: "9450578",
+    id: "9450578", waterTempId: "9451054",
     name: "Steamboat Bay, Noyes Island", slug: "steamboat-bay-noyes-island",
     state: "alaska", city: "Steamboat Bay, Noyes Island, AK", region: "Gulf of Alaska",
     lat: 55.5333, lon: -133.637, latDisplay: "55.53°N", lonDisplay: "133.64°W",
@@ -1041,7 +1041,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450581", waterTempId: "9450581",
+    id: "9450581", waterTempId: "9450460",
     name: "Kasaan", slug: "kasaan",
     state: "alaska", city: "Kasaan, AK", region: "Southeast Alaska",
     lat: 55.535, lon: -132.397, latDisplay: "55.53°N", lonDisplay: "132.40°W",
@@ -1063,7 +1063,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450584", waterTempId: "9450584",
+    id: "9450584", waterTempId: "9450460",
     name: "Cruz Pass, San Fernando Island", slug: "cruz-pass-san-fernando-island",
     state: "alaska", city: "Cruz Pass, San Fernando Island, AK", region: "Gulf of Alaska",
     lat: 55.5417, lon: -133.315, latDisplay: "55.54°N", lonDisplay: "133.31°W",
@@ -1085,7 +1085,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450623", waterTempId: "9450623",
+    id: "9450623", waterTempId: "9450460",
     name: "Big Salt Lake", slug: "big-salt-lake",
     state: "alaska", city: "Big Salt Lake, AK", region: "Southeast Alaska",
     lat: 55.6, lon: -132.95, latDisplay: "55.60°N", lonDisplay: "132.95°W",
@@ -1107,7 +1107,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450624", waterTempId: "9450624",
+    id: "9450624", waterTempId: "9450460",
     name: "Loring, Naha Bay", slug: "loring-naha-bay",
     state: "alaska", city: "Loring, Naha Bay, AK", region: "Southeast Alaska",
     lat: 55.6017, lon: -131.632, latDisplay: "55.60°N", lonDisplay: "131.63°W",
@@ -1129,7 +1129,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450625", waterTempId: "9450625",
+    id: "9450625", waterTempId: "9450460",
     name: "Lindeman Cove", slug: "lindeman-cove",
     state: "alaska", city: "Lindeman Cove, AK", region: "Southeast Alaska",
     lat: 55.6017, lon: -132.512, latDisplay: "55.60°N", lonDisplay: "132.51°W",
@@ -1151,7 +1151,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450651", waterTempId: "9450651",
+    id: "9450651", waterTempId: "9450460",
     name: "Rudyerd Bay", slug: "rudyerd-bay",
     state: "alaska", city: "Rudyerd Bay, AK", region: "Southeast Alaska",
     lat: 55.6417, lon: -130.645, latDisplay: "55.64°N", lonDisplay: "130.65°W",
@@ -1173,7 +1173,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450679", waterTempId: "9450679",
+    id: "9450679", waterTempId: "9451054",
     name: "Anguilla Island", slug: "anguilla-island",
     state: "alaska", city: "Anguilla Island, AK", region: "Gulf of Alaska",
     lat: 55.6833, lon: -133.587, latDisplay: "55.68°N", lonDisplay: "133.59°W",
@@ -1195,7 +1195,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450711", waterTempId: "9450711",
+    id: "9450711", waterTempId: "9451054",
     name: "Nossuk Bay, Tonowek Bay", slug: "nossuk-bay-tonowek-bay",
     state: "alaska", city: "Nossuk Bay, Tonowek Bay, AK", region: "Gulf of Alaska",
     lat: 55.72166666666666, lon: -133.35, latDisplay: "55.72°N", lonDisplay: "133.35°W",
@@ -1217,7 +1217,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450729", waterTempId: "9450729",
+    id: "9450729", waterTempId: "9450460",
     name: "Davis River entrance, Alaska", slug: "davis-river-entrance-alaska",
     state: "alaska", city: "Davis River entrance, Alaska, AK", region: "Southeast Alaska",
     lat: 55.76, lon: -130.177, latDisplay: "55.76°N", lonDisplay: "130.18°W",
@@ -1239,7 +1239,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450753", waterTempId: "9450753",
+    id: "9450753", waterTempId: "9450460",
     name: "Magnetic Point, Union Bay, Earnest Sound", slug: "magnetic-point-union-bay-earnest-sound",
     state: "alaska", city: "Magnetic Point, Union Bay, Earnest Sound, AK", region: "Southeast Alaska",
     lat: 55.78828333333333, lon: -132.1908833333334, latDisplay: "55.79°N", lonDisplay: "132.19°W",
@@ -1261,7 +1261,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450768", waterTempId: "9450768",
+    id: "9450768", waterTempId: "9451054",
     name: "Port Alice, Heceta Island", slug: "port-alice-heceta-island",
     state: "alaska", city: "Port Alice, Heceta Island, AK", region: "Gulf of Alaska",
     lat: 55.8117, lon: -133.605, latDisplay: "55.81°N", lonDisplay: "133.60°W",
@@ -1283,7 +1283,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450815", waterTempId: "9450815",
+    id: "9450815", waterTempId: "9450460",
     name: "Ratz Harbor, Prince of Wales Island", slug: "ratz-harbor-prince-of-wales-island",
     state: "alaska", city: "Ratz Harbor, Prince of Wales Island, AK", region: "Southeast Alaska",
     lat: 55.88, lon: -132.595, latDisplay: "55.88°N", lonDisplay: "132.59°W",
@@ -1305,7 +1305,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450817", waterTempId: "9450817",
+    id: "9450817", waterTempId: "9451054",
     name: "Tuxekan, 0.5 mile south of", slug: "tuxekan-05-mile-south-of",
     state: "alaska", city: "Tuxekan, 0.5 mile south of, AK", region: "Gulf of Alaska",
     lat: 55.8833, lon: -133.243, latDisplay: "55.88°N", lonDisplay: "133.24°W",
@@ -1327,7 +1327,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450829", waterTempId: "9450829",
+    id: "9450829", waterTempId: "9451054",
     name: "Coronation Island", slug: "coronation-island",
     state: "alaska", city: "Coronation Island, AK", region: "Gulf of Alaska",
     lat: 55.9033, lon: -134.118, latDisplay: "55.90°N", lonDisplay: "134.12°W",
@@ -1349,7 +1349,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450831", waterTempId: "9450831",
+    id: "9450831", waterTempId: "9450460",
     name: "Hyder, Portland Canal", slug: "hyder-portland-canal",
     state: "alaska", city: "Hyder, Portland Canal, AK", region: "Southeast Alaska",
     lat: 55.90449905395508, lon: -130.01080322265625, latDisplay: "55.90°N", lonDisplay: "130.01°W",
@@ -1371,7 +1371,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450836", waterTempId: "9450836",
+    id: "9450836", waterTempId: "9450460",
     name: "Yes Cannery, Yes Bay", slug: "yes-cannery-yes-bay",
     state: "alaska", city: "Yes Cannery, Yes Bay, AK", region: "Southeast Alaska",
     lat: 55.9133, lon: -131.797, latDisplay: "55.91°N", lonDisplay: "131.80°W",
@@ -1393,7 +1393,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450851", waterTempId: "9450851",
+    id: "9450851", waterTempId: "9451054",
     name: "El Capitan Island", slug: "el-capitan-island",
     state: "alaska", city: "El Capitan Island, AK", region: "Gulf of Alaska",
     lat: 55.9367, lon: -133.325, latDisplay: "55.94°N", lonDisplay: "133.32°W",
@@ -1415,7 +1415,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450859", waterTempId: "9450859",
+    id: "9450859", waterTempId: "9451054",
     name: "Edna Bay", slug: "edna-bay",
     state: "alaska", city: "Edna Bay, AK", region: "Gulf of Alaska",
     lat: 55.95, lon: -133.662, latDisplay: "55.95°N", lonDisplay: "133.66°W",
@@ -1437,7 +1437,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450862", waterTempId: "9450862",
+    id: "9450862", waterTempId: "9451054",
     name: "Pole Anchorage, Kosciusko Island", slug: "pole-anchorage-kosciusko-island",
     state: "alaska", city: "Pole Anchorage, Kosciusko Island, AK", region: "Gulf of Alaska",
     lat: 55.955, lon: -133.81, latDisplay: "55.95°N", lonDisplay: "133.81°W",
@@ -1459,7 +1459,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450879", waterTempId: "9450879",
+    id: "9450879", waterTempId: "9450460",
     name: "Fitzgibbon Cove", slug: "fitzgibbon-cove",
     state: "alaska", city: "Fitzgibbon Cove, AK", region: "Southeast Alaska",
     lat: 55.9833, lon: -131.175, latDisplay: "55.98°N", lonDisplay: "131.18°W",
@@ -1481,7 +1481,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450904", waterTempId: "9450904",
+    id: "9450904", waterTempId: "9451054",
     name: "Lake Bay", slug: "lake-bay",
     state: "alaska", city: "Lake Bay, AK", region: "Southeast Alaska",
     lat: 56.0233, lon: -132.92, latDisplay: "56.02°N", lonDisplay: "132.92°W",
@@ -1503,7 +1503,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450906", waterTempId: "9450906",
+    id: "9450906", waterTempId: "9450460",
     name: "Beck Island, Clarence Strait", slug: "beck-island-clarence-strait",
     state: "alaska", city: "Beck Island, Clarence Strait, AK", region: "Southeast Alaska",
     lat: 56.0467, lon: -132.862, latDisplay: "56.05°N", lonDisplay: "132.86°W",
@@ -1525,7 +1525,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450913", waterTempId: "9450913",
+    id: "9450913", waterTempId: "9451054",
     name: "Affleck Canal entrance, Kuiu Island", slug: "affleck-canal-entrance-kuiu-island",
     state: "alaska", city: "Affleck Canal entrance, Kuiu Island, AK", region: "Gulf of Alaska",
     lat: 56.0369, lon: -134.115, latDisplay: "56.04°N", lonDisplay: "134.12°W",
@@ -1547,7 +1547,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450914", waterTempId: "9450914",
+    id: "9450914", waterTempId: "9450460",
     name: "Burrough Bay, Behm Canal", slug: "burrough-bay-behm-canal",
     state: "alaska", city: "Burrough Bay, Behm Canal, AK", region: "Southeast Alaska",
     lat: 56.0383, lon: -131.095, latDisplay: "56.04°N", lonDisplay: "131.09°W",
@@ -1569,7 +1569,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450937", waterTempId: "9450937",
+    id: "9450937", waterTempId: "9451054",
     name: "El Capitan Passage, S. of Devilfish Bay", slug: "el-capitan-passage-s-of-devilfish-bay",
     state: "alaska", city: "El Capitan Passage, S. of Devilfish Bay, AK", region: "Gulf of Alaska",
     lat: 56.0733, lon: -133.313, latDisplay: "56.07°N", lonDisplay: "133.31°W",
@@ -1591,7 +1591,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450938", waterTempId: "9450938",
+    id: "9450938", waterTempId: "9451054",
     name: "Thorne Island, Whale Passage", slug: "thorne-island-whale-passage",
     state: "alaska", city: "Thorne Island, Whale Passage, AK", region: "Southeast Alaska",
     lat: 56.0583, lon: -132.968, latDisplay: "56.06°N", lonDisplay: "132.97°W",
@@ -1613,7 +1613,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450943", waterTempId: "9450943",
+    id: "9450943", waterTempId: "9451054",
     name: "Point St. Albans", slug: "point-st-albans",
     state: "alaska", city: "Point St. Albans, AK", region: "Gulf of Alaska",
     lat: 56.0817, lon: -133.97, latDisplay: "56.08°N", lonDisplay: "133.97°W",
@@ -1635,7 +1635,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450970", waterTempId: "9450970",
+    id: "9450970", waterTempId: "9450460",
     name: "Thoms Point, Zimovia Strait", slug: "thoms-point-zimovia-strait",
     state: "alaska", city: "Thoms Point, Zimovia Strait, AK", region: "Southeast Alaska",
     lat: 56.1183, lon: -132.078, latDisplay: "56.12°N", lonDisplay: "132.08°W",
@@ -1657,7 +1657,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450973", waterTempId: "9450973",
+    id: "9450973", waterTempId: "9451054",
     name: "Blashke Island", slug: "blashke-island",
     state: "alaska", city: "Blashke Island, AK", region: "Southeast Alaska",
     lat: 56.1267, lon: -132.895, latDisplay: "56.13°N", lonDisplay: "132.90°W",
@@ -1679,7 +1679,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450982", waterTempId: "9450982",
+    id: "9450982", waterTempId: "9451054",
     name: "Shakan Bay Entrance", slug: "shakan-bay-entrance",
     state: "alaska", city: "Shakan Bay Entrance, AK", region: "Gulf of Alaska",
     lat: 56.14, lon: -133.61, latDisplay: "56.14°N", lonDisplay: "133.61°W",
@@ -1701,7 +1701,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450987", waterTempId: "9450987",
+    id: "9450987", waterTempId: "9451054",
     name: "Shakan Strait, Kosciusko Island", slug: "shakan-strait-kosciusko-island",
     state: "alaska", city: "Shakan Strait, Kosciusko Island, AK", region: "Gulf of Alaska",
     lat: 56.1483, lon: -133.46, latDisplay: "56.15°N", lonDisplay: "133.46°W",
@@ -1723,7 +1723,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450988", waterTempId: "9450988",
+    id: "9450988", waterTempId: "9451054",
     name: "Kell Bay, Affleck Canal, Kuiu Island", slug: "kell-bay-affleck-canal-kuiu-island",
     state: "alaska", city: "Kell Bay, Affleck Canal, Kuiu Island, AK", region: "Gulf of Alaska",
     lat: 56.15, lon: -134.133, latDisplay: "56.15°N", lonDisplay: "134.13°W",
@@ -1745,7 +1745,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450997", waterTempId: "9450997",
+    id: "9450997", waterTempId: "9451054",
     name: "El Capitan Passage, W. of Aneskett Pt.", slug: "el-capitan-passage-w-of-aneskett-pt",
     state: "alaska", city: "El Capitan Passage, W. of Aneskett Pt., AK", region: "Gulf of Alaska",
     lat: 56.1633, lon: -133.33, latDisplay: "56.16°N", lonDisplay: "133.33°W",
@@ -1767,7 +1767,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450998", waterTempId: "9450998",
+    id: "9450998", waterTempId: "9451054",
     name: "El Capitan Passage, Dry Pass", slug: "el-capitan-passage-dry-pass",
     state: "alaska", city: "El Capitan Passage, Dry Pass, AK", region: "Gulf of Alaska",
     lat: 56.1633, lon: -133.413, latDisplay: "56.16°N", lonDisplay: "133.41°W",
@@ -1789,7 +1789,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451001", waterTempId: "9451001",
+    id: "9451001", waterTempId: "9451054",
     name: "Table Bay, Kuiu Island", slug: "table-bay-kuiu-island",
     state: "alaska", city: "Table Bay, Kuiu Island, AK", region: "Gulf of Alaska",
     lat: 56.1667, lon: -134.245, latDisplay: "56.17°N", lonDisplay: "134.25°W",
@@ -1811,7 +1811,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451005", waterTempId: "9451005",
+    id: "9451005", waterTempId: "9450460",
     name: "Point Harrington", slug: "point-harrington",
     state: "alaska", city: "Point Harrington, AK", region: "Southeast Alaska",
     lat: 56.1783, lon: -132.697, latDisplay: "56.18°N", lonDisplay: "132.70°W",
@@ -1833,7 +1833,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451012", waterTempId: "9451012",
+    id: "9451012", waterTempId: "9450460",
     name: "Bradfield Canal, Ernest Sound", slug: "bradfield-canal-ernest-sound",
     state: "alaska", city: "Bradfield Canal, Ernest Sound, AK", region: "Southeast Alaska",
     lat: 56.195526123046875, lon: -131.5574188232422, latDisplay: "56.20°N", lonDisplay: "131.56°W",
@@ -1855,7 +1855,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451037", waterTempId: "9451037",
+    id: "9451037", waterTempId: "9450460",
     name: "Village Rock, Zimovia Strait", slug: "village-rock-zimovia-strait",
     state: "alaska", city: "Village Rock, Zimovia Strait, AK", region: "Southeast Alaska",
     lat: 56.22, lon: -132.297, latDisplay: "56.22°N", lonDisplay: "132.30°W",
@@ -1899,7 +1899,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451074", waterTempId: "9451074",
+    id: "9451074", waterTempId: "9451054",
     name: "Bushy Island, Snow Passage", slug: "bushy-island-snow-passage",
     state: "alaska", city: "Bushy Island, Snow Passage, AK", region: "Southeast Alaska",
     lat: 56.2767, lon: -132.985, latDisplay: "56.28°N", lonDisplay: "132.99°W",
@@ -1921,7 +1921,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451082", waterTempId: "9451082",
+    id: "9451082", waterTempId: "9451054",
     name: "Port Beauclerc, Kuiu Island", slug: "port-beauclerc-kuiu-island",
     state: "alaska", city: "Port Beauclerc, Kuiu Island, AK", region: "Gulf of Alaska",
     lat: 56.2883, lon: -133.962, latDisplay: "56.29°N", lonDisplay: "133.96°W",
@@ -1943,7 +1943,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451093", waterTempId: "9451093",
+    id: "9451093", waterTempId: "9451054",
     name: "Port Malmesbury, Kuiu Island", slug: "port-malmesbury-kuiu-island",
     state: "alaska", city: "Port Malmesbury, Kuiu Island, AK", region: "Gulf of Alaska",
     lat: 56.305, lon: -134.238, latDisplay: "56.30°N", lonDisplay: "134.24°W",
@@ -1965,7 +1965,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451095", waterTempId: "9451095",
+    id: "9451095", waterTempId: "9451054",
     name: "Port Protection, Prince of Wales Island.", slug: "port-protection-prince-of-wales-island",
     state: "alaska", city: "Port Protection, Prince of Wales Island., AK", region: "Gulf of Alaska",
     lat: 56.3083, lon: -133.6, latDisplay: "56.31°N", lonDisplay: "133.60°W",
@@ -1987,7 +1987,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451124", waterTempId: "9451124",
+    id: "9451124", waterTempId: "9450460",
     name: "Reef Point, Stikine Strait", slug: "reef-point-stikine-strait",
     state: "alaska", city: "Reef Point, Stikine Strait, AK", region: "Southeast Alaska",
     lat: 56.3533, lon: -132.553, latDisplay: "56.35°N", lonDisplay: "132.55°W",
@@ -2009,7 +2009,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451148", waterTempId: "9451148",
+    id: "9451148", waterTempId: "9451054",
     name: "Reid Bay", slug: "reid-bay",
     state: "alaska", city: "Reid Bay, AK", region: "Gulf of Alaska",
     lat: 56.3883, lon: -133.883, latDisplay: "56.39°N", lonDisplay: "133.88°W",
@@ -2031,7 +2031,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451151", waterTempId: "9451151",
+    id: "9451151", waterTempId: "9451054",
     name: "Port Walter, Baranof Island", slug: "port-walter-baranof-island",
     state: "alaska", city: "Port Walter, Baranof Island, AK", region: "Gulf of Alaska",
     lat: 56.3917, lon: -134.66, latDisplay: "56.39°N", lonDisplay: "134.66°W",
@@ -2053,7 +2053,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451152", waterTempId: "9451152",
+    id: "9451152", waterTempId: "9450460",
     name: "Madan Bay", slug: "madan-bay",
     state: "alaska", city: "Madan Bay, AK", region: "Southeast Alaska",
     lat: 56.3922, lon: -132.169, latDisplay: "56.39°N", lonDisplay: "132.17°W",
@@ -2075,7 +2075,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451163", waterTempId: "9451163",
+    id: "9451163", waterTempId: "9451054",
     name: "Sumner Island", slug: "sumner-island",
     state: "alaska", city: "Sumner Island, AK", region: "Gulf of Alaska",
     lat: 56.41, lon: -133.793, latDisplay: "56.41°N", lonDisplay: "133.79°W",
@@ -2097,7 +2097,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451204", waterTempId: "9451204",
+    id: "9451204", waterTempId: "9450460",
     name: "Wrangell, Wrangell Island", slug: "wrangell-wrangell-island",
     state: "alaska", city: "Wrangell, Wrangell Island, AK", region: "Southeast Alaska",
     lat: 56.47, lon: -132.387, latDisplay: "56.47°N", lonDisplay: "132.39°W",
@@ -2119,7 +2119,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451238", waterTempId: "9451238",
+    id: "9451238", waterTempId: "9451054",
     name: "Greys Island", slug: "greys-island",
     state: "alaska", city: "Greys Island, AK", region: "Southeast Alaska",
     lat: 56.5217, lon: -132.542, latDisplay: "56.52°N", lonDisplay: "132.54°W",
@@ -2141,7 +2141,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451247", waterTempId: "9451247",
+    id: "9451247", waterTempId: "9451054",
     name: "Monte Carlo Island", slug: "monte-carlo-island",
     state: "alaska", city: "Monte Carlo Island, AK", region: "Gulf of Alaska",
     lat: 56.535, lon: -133.767, latDisplay: "56.53°N", lonDisplay: "133.77°W",
@@ -2163,7 +2163,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451263", waterTempId: "9451263",
+    id: "9451263", waterTempId: "9451054",
     name: "Point Lockwood, Woewodski Island", slug: "point-lockwood-woewodski-island",
     state: "alaska", city: "Point Lockwood, Woewodski Island, AK", region: "Southeast Alaska",
     lat: 56.5583, lon: -132.963, latDisplay: "56.56°N", lonDisplay: "132.96°W",
@@ -2185,7 +2185,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451281", waterTempId: "9451281",
+    id: "9451281", waterTempId: "9451054",
     name: "Blaquiere Point", slug: "blaquiere-point",
     state: "alaska", city: "Blaquiere Point, AK", region: "Southeast Alaska",
     lat: 56.584693908691406, lon: -132.5421905517578, latDisplay: "56.58°N", lonDisplay: "132.54°W",
@@ -2207,7 +2207,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451287", waterTempId: "9451287",
+    id: "9451287", waterTempId: "9451054",
     name: "Beecher Pass", slug: "beecher-pass",
     state: "alaska", city: "Beecher Pass, AK", region: "Southeast Alaska",
     lat: 56.595, lon: -132.987, latDisplay: "56.59°N", lonDisplay: "132.99°W",
@@ -2229,7 +2229,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451301", waterTempId: "9451301",
+    id: "9451301", waterTempId: "9451054",
     name: "Dry Strait", slug: "dry-strait",
     state: "alaska", city: "Dry Strait, AK", region: "Southeast Alaska",
     lat: 56.615, lon: -132.575, latDisplay: "56.62°N", lonDisplay: "132.57°W",
@@ -2251,7 +2251,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451317", waterTempId: "9451317",
+    id: "9451317", waterTempId: "9451054",
     name: "Anchor Point", slug: "anchor-point",
     state: "alaska", city: "Anchor Point, AK", region: "Southeast Alaska",
     lat: 56.6383, lon: -132.927, latDisplay: "56.64°N", lonDisplay: "132.93°W",
@@ -2273,7 +2273,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451321", waterTempId: "9451321",
+    id: "9451321", waterTempId: "9451054",
     name: "Castle Islands, Duncan Canal", slug: "castle-islands-duncan-canal",
     state: "alaska", city: "Castle Islands, Duncan Canal, AK", region: "Gulf of Alaska",
     lat: 56.643306732177734, lon: -133.15199279785156, latDisplay: "56.64°N", lonDisplay: "133.15°W",
@@ -2295,7 +2295,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451335", waterTempId: "9451335",
+    id: "9451335", waterTempId: "9451054",
     name: "Cosmos Point", slug: "cosmos-point",
     state: "alaska", city: "Cosmos Point, AK", region: "Southeast Alaska",
     lat: 56.6633, lon: -132.617, latDisplay: "56.66°N", lonDisplay: "132.62°W",
@@ -2317,7 +2317,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451346", waterTempId: "9451346",
+    id: "9451346", waterTempId: "9451054",
     name: "Papke's Landing", slug: "papkes-landing",
     state: "alaska", city: "Papke's Landing, AK", region: "Southeast Alaska",
     lat: 56.6767, lon: -132.933, latDisplay: "56.68°N", lonDisplay: "132.93°W",
@@ -2339,7 +2339,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451349", waterTempId: "9451349",
+    id: "9451349", waterTempId: "9451054",
     name: "The Summit", slug: "the-summit",
     state: "alaska", city: "The Summit, AK", region: "Gulf of Alaska",
     lat: 56.68242222222222, lon: -133.7369083333333, latDisplay: "56.68°N", lonDisplay: "133.74°W",
@@ -2361,7 +2361,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451376", waterTempId: "9451376",
+    id: "9451376", waterTempId: "9451600",
     name: "Dorothy Cove, Necker Bay", slug: "dorothy-cove-necker-bay",
     state: "alaska", city: "Dorothy Cove, Necker Bay, AK", region: "Gulf of Alaska",
     lat: 56.7217, lon: -135.075, latDisplay: "56.72°N", lonDisplay: "135.07°W",
@@ -2383,7 +2383,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451421", waterTempId: "9451421",
+    id: "9451421", waterTempId: "9451600",
     name: "Golf Island, Necker Island", slug: "golf-island-necker-island",
     state: "alaska", city: "Golf Island, Necker Island, AK", region: "Gulf of Alaska",
     lat: 56.7867, lon: -135.393, latDisplay: "56.79°N", lonDisplay: "135.39°W",
@@ -2405,7 +2405,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451422", waterTempId: "9451422",
+    id: "9451422", waterTempId: "9451054",
     name: "Leconte Bay", slug: "leconte-bay",
     state: "alaska", city: "Leconte Bay, AK", region: "Southeast Alaska",
     lat: 56.7883, lon: -132.502, latDisplay: "56.79°N", lonDisplay: "132.50°W",
@@ -2427,7 +2427,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451434", waterTempId: "9451434",
+    id: "9451434", waterTempId: "9451054",
     name: "Turn Point", slug: "turn-point",
     state: "alaska", city: "Turn Point, AK", region: "Southeast Alaska",
     lat: 56.8, lon: -132.98, latDisplay: "56.80°N", lonDisplay: "132.98°W",
@@ -2449,7 +2449,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451438", waterTempId: "9451438",
+    id: "9451438", waterTempId: "9451054",
     name: "Entrance Island", slug: "entrance-island",
     state: "alaska", city: "Entrance Island, AK", region: "Gulf of Alaska",
     lat: 56.8117, lon: -133.787, latDisplay: "56.81°N", lonDisplay: "133.79°W",
@@ -2471,7 +2471,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451439", waterTempId: "9451439",
+    id: "9451439", waterTempId: "9451054",
     name: "Petersburg", slug: "petersburg",
     state: "alaska", city: "Petersburg, AK", region: "Southeast Alaska",
     lat: 56.815, lon: -132.957, latDisplay: "56.81°N", lonDisplay: "132.96°W",
@@ -2493,7 +2493,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451467", waterTempId: "9451467",
+    id: "9451467", waterTempId: "9451600",
     name: "Red Bluff Bay", slug: "red-bluff-bay",
     state: "alaska", city: "Red Bluff Bay, AK", region: "Gulf of Alaska",
     lat: 56.8567, lon: -134.723, latDisplay: "56.86°N", lonDisplay: "134.72°W",
@@ -2515,7 +2515,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451468", waterTempId: "9451468",
+    id: "9451468", waterTempId: "9451600",
     name: "Symonds Bay, Biorka Island", slug: "symonds-bay-biorka-island",
     state: "alaska", city: "Symonds Bay, Biorka Island, AK", region: "Gulf of Alaska",
     lat: 56.8567, lon: -135.52, latDisplay: "56.86°N", lonDisplay: "135.52°W",
@@ -2537,7 +2537,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451497", waterTempId: "9451497",
+    id: "9451497", waterTempId: "9451600",
     name: "Saginaw Bay, Kuiu Island", slug: "saginaw-bay-kuiu-island",
     state: "alaska", city: "Saginaw Bay, Kuiu Island, AK", region: "Gulf of Alaska",
     lat: 56.90333333333334, lon: -134.3030555555556, latDisplay: "56.90°N", lonDisplay: "134.30°W",
@@ -2559,7 +2559,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451528", waterTempId: "9451528",
+    id: "9451528", waterTempId: "9451600",
     name: "Kake Harbor, Keku Strait", slug: "kake-harbor-keku-strait",
     state: "alaska", city: "Kake Harbor, Keku Strait, AK", region: "Gulf of Alaska",
     lat: 56.94830555555556, lon: -133.8947222222222, latDisplay: "56.95°N", lonDisplay: "133.89°W",
@@ -2581,7 +2581,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451561", waterTempId: "9451561",
+    id: "9451561", waterTempId: "9451054",
     name: "Thomas Bay", slug: "thomas-bay",
     state: "alaska", city: "Thomas Bay, AK", region: "Southeast Alaska",
     lat: 56.9966926574707, lon: -132.78500366210938, latDisplay: "57.00°N", lonDisplay: "132.79°W",
@@ -2625,7 +2625,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451625", waterTempId: "9451625",
+    id: "9451625", waterTempId: "9451600",
     name: "Baranof, Warm Spring Bay", slug: "baranof-warm-spring-bay",
     state: "alaska", city: "Baranof, Warm Spring Bay, AK", region: "Gulf of Alaska",
     lat: 57.08833333333333, lon: -134.825, latDisplay: "57.09°N", lonDisplay: "134.82°W",
@@ -2647,7 +2647,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451634", waterTempId: "9451634",
+    id: "9451634", waterTempId: "9451600",
     name: "Herring Bay", slug: "herring-bay",
     state: "alaska", city: "Herring Bay, AK", region: "Gulf of Alaska",
     lat: 57.1133, lon: -134.38, latDisplay: "57.11°N", lonDisplay: "134.38°W",
@@ -2669,7 +2669,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451706", waterTempId: "9451706",
+    id: "9451706", waterTempId: "9451600",
     name: "Eliza Harbor, Admiralty Island", slug: "eliza-harbor-admiralty-island",
     state: "alaska", city: "Eliza Harbor, Admiralty Island, AK", region: "Gulf of Alaska",
     lat: 57.1883, lon: -134.287, latDisplay: "57.19°N", lonDisplay: "134.29°W",
@@ -2691,7 +2691,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451717", waterTempId: "9451717",
+    id: "9451717", waterTempId: "9451600",
     name: "Kasnyku Bay", slug: "kasnyku-bay",
     state: "alaska", city: "Kasnyku Bay, AK", region: "Gulf of Alaska",
     lat: 57.2167, lon: -134.868, latDisplay: "57.22°N", lonDisplay: "134.87°W",
@@ -2713,7 +2713,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451718", waterTempId: "9451718",
+    id: "9451718", waterTempId: "9451600",
     name: "Cleveland Passage, Whitney Island", slug: "cleveland-passage-whitney-island",
     state: "alaska", city: "Cleveland Passage, Whitney Island, AK", region: "Gulf of Alaska",
     lat: 57.2183, lon: -133.512, latDisplay: "57.22°N", lonDisplay: "133.51°W",
@@ -2735,7 +2735,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451725", waterTempId: "9451725",
+    id: "9451725", waterTempId: "9451600",
     name: "Olga Point, Olga Strait", slug: "olga-point-olga-strait",
     state: "alaska", city: "Olga Point, Olga Strait, AK", region: "Gulf of Alaska",
     lat: 57.2283, lon: -135.537, latDisplay: "57.23°N", lonDisplay: "135.54°W",
@@ -2757,7 +2757,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451741", waterTempId: "9451741",
+    id: "9451741", waterTempId: "9451600",
     name: "Whitestone Narrows, Neva Strait", slug: "whitestone-narrows-neva-strait",
     state: "alaska", city: "Whitestone Narrows, Neva Strait, AK", region: "Gulf of Alaska",
     lat: 57.25, lon: -135.567, latDisplay: "57.25°N", lonDisplay: "135.57°W",
@@ -2779,7 +2779,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451781", waterTempId: "9451781",
+    id: "9451781", waterTempId: "9451600",
     name: "Cannery Cove, Pybus Bay", slug: "cannery-cove-pybus-bay",
     state: "alaska", city: "Cannery Cove, Pybus Bay, AK", region: "Gulf of Alaska",
     lat: 57.3067, lon: -134.133, latDisplay: "57.31°N", lonDisplay: "134.13°W",
@@ -2801,7 +2801,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451785", waterTempId: "9451785",
+    id: "9451785", waterTempId: "9451600",
     name: "The Brothers", slug: "the-brothers",
     state: "alaska", city: "The Brothers, AK", region: "Gulf of Alaska",
     lat: 57.295, lon: -133.797, latDisplay: "57.30°N", lonDisplay: "133.80°W",
@@ -2823,7 +2823,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451798", waterTempId: "9451798",
+    id: "9451798", waterTempId: "9452210",
     name: "Port Houghton (Inside)", slug: "port-houghton-inside",
     state: "alaska", city: "Port Houghton (Inside), AK", region: "Gulf of Alaska",
     lat: 57.32500076293945, lon: -133.18299865722656, latDisplay: "57.33°N", lonDisplay: "133.18°W",
@@ -2845,7 +2845,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451802", waterTempId: "9451802",
+    id: "9451802", waterTempId: "9451600",
     name: "Scraggy Point", slug: "scraggy-point",
     state: "alaska", city: "Scraggy Point, AK", region: "Gulf of Alaska",
     lat: 57.3367, lon: -135.723, latDisplay: "57.34°N", lonDisplay: "135.72°W",
@@ -2867,7 +2867,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451805", waterTempId: "9451805",
+    id: "9451805", waterTempId: "9451600",
     name: "Scraggy Island", slug: "scraggy-island",
     state: "alaska", city: "Scraggy Island, AK", region: "Gulf of Alaska",
     lat: 57.34, lon: -135.707, latDisplay: "57.34°N", lonDisplay: "135.71°W",
@@ -2889,7 +2889,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451826", waterTempId: "9451826",
+    id: "9451826", waterTempId: "9451600",
     name: "Haley Anchorage, Fish Bay", slug: "haley-anchorage-fish-bay",
     state: "alaska", city: "Haley Anchorage, Fish Bay, AK", region: "Gulf of Alaska",
     lat: 57.3717, lon: -135.618, latDisplay: "57.37°N", lonDisplay: "135.62°W",
@@ -2911,7 +2911,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451851", waterTempId: "9451851",
+    id: "9451851", waterTempId: "9452210",
     name: "Hobart Bay", slug: "hobart-bay",
     state: "alaska", city: "Hobart Bay, AK", region: "Gulf of Alaska",
     lat: 57.4067, lon: -133.42, latDisplay: "57.41°N", lonDisplay: "133.42°W",
@@ -2933,7 +2933,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451853", waterTempId: "9451853",
+    id: "9451853", waterTempId: "9451600",
     name: "Serguis Narrows", slug: "serguis-narrows",
     state: "alaska", city: "Serguis Narrows, AK", region: "Gulf of Alaska",
     lat: 57.41, lon: -135.627, latDisplay: "57.41°N", lonDisplay: "135.63°W",
@@ -2955,7 +2955,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451858", waterTempId: "9451858",
+    id: "9451858", waterTempId: "9451600",
     name: "Klokachef Island", slug: "klokachef-island",
     state: "alaska", city: "Klokachef Island, AK", region: "Gulf of Alaska",
     lat: 57.4167, lon: -135.89, latDisplay: "57.42°N", lonDisplay: "135.89°W",
@@ -2977,7 +2977,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451859", waterTempId: "9451859",
+    id: "9451859", waterTempId: "9451600",
     name: "Bear Bay", slug: "bear-bay",
     state: "alaska", city: "Bear Bay, AK", region: "Gulf of Alaska",
     lat: 57.4183, lon: -135.583, latDisplay: "57.42°N", lonDisplay: "135.58°W",
@@ -2999,7 +2999,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451895", waterTempId: "9451895",
+    id: "9451895", waterTempId: "9451600",
     name: "Killisnoo", slug: "killisnoo",
     state: "alaska", city: "Killisnoo, AK", region: "Gulf of Alaska",
     lat: 57.47, lon: -134.565, latDisplay: "57.47°N", lonDisplay: "134.56°W",
@@ -3021,7 +3021,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451906", waterTempId: "9451906",
+    id: "9451906", waterTempId: "9452210",
     name: "Gambier Bay (cannery wharf)", slug: "gambier-bay-cannery-wharf",
     state: "alaska", city: "Gambier Bay (cannery wharf), AK", region: "Gulf of Alaska",
     lat: 57.4833, lon: -133.96, latDisplay: "57.48°N", lonDisplay: "133.96°W",
@@ -3043,7 +3043,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451909", waterTempId: "9451909",
+    id: "9451909", waterTempId: "9452210",
     name: "Good Island, Gambier Bay", slug: "good-island-gambier-bay",
     state: "alaska", city: "Good Island, Gambier Bay, AK", region: "Gulf of Alaska",
     lat: 57.4867, lon: -133.898, latDisplay: "57.49°N", lonDisplay: "133.90°W",
@@ -3065,7 +3065,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451936", waterTempId: "9451936",
+    id: "9451936", waterTempId: "9451600",
     name: "Povorotni Island, Pogibshi Point", slug: "povorotni-island-pogibshi-point",
     state: "alaska", city: "Povorotni Island, Pogibshi Point, AK", region: "Gulf of Alaska",
     lat: 57.515, lon: -135.555, latDisplay: "57.52°N", lonDisplay: "135.56°W",
@@ -3087,7 +3087,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451953", waterTempId: "9451953",
+    id: "9451953", waterTempId: "9451600",
     name: "Target Island, Mitchell Bay", slug: "target-island-mitchell-bay",
     state: "alaska", city: "Target Island, Mitchell Bay, AK", region: "Gulf of Alaska",
     lat: 57.5333, lon: -134.417, latDisplay: "57.53°N", lonDisplay: "134.42°W",
@@ -3109,7 +3109,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451962", waterTempId: "9451962",
+    id: "9451962", waterTempId: "9452210",
     name: "Windham Bay", slug: "windham-bay",
     state: "alaska", city: "Windham Bay, AK", region: "Gulf of Alaska",
     lat: 57.5433, lon: -133.498, latDisplay: "57.54°N", lonDisplay: "133.50°W",
@@ -3131,7 +3131,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451979", waterTempId: "9451979",
+    id: "9451979", waterTempId: "9451600",
     name: "Nismeni Cove", slug: "nismeni-cove",
     state: "alaska", city: "Nismeni Cove, AK", region: "Gulf of Alaska",
     lat: 57.5617, lon: -135.412, latDisplay: "57.56°N", lonDisplay: "135.41°W",
@@ -3153,7 +3153,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452005", waterTempId: "9452005",
+    id: "9452005", waterTempId: "9452210",
     name: "Upper Endicott Arm, North Shore", slug: "upper-endicott-arm-north-shore",
     state: "alaska", city: "Upper Endicott Arm, North Shore, AK", region: "Gulf of Alaska",
     lat: 57.52169418334961, lon: -133.05499267578125, latDisplay: "57.52°N", lonDisplay: "133.05°W",
@@ -3175,7 +3175,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452022", waterTempId: "9452022",
+    id: "9452022", waterTempId: "9452210",
     name: "Sawyer Island, Tracy Arm", slug: "sawyer-island-tracy-arm",
     state: "alaska", city: "Sawyer Island, Tracy Arm, AK", region: "Gulf of Alaska",
     lat: 57.8783, lon: -133.19, latDisplay: "57.88°N", lonDisplay: "133.19°W",
@@ -3197,7 +3197,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452064", waterTempId: "9452064",
+    id: "9452064", waterTempId: "9452210",
     name: "Holkham Bay, Wood Spit", slug: "holkham-bay-wood-spit",
     state: "alaska", city: "Holkham Bay, Wood Spit, AK", region: "Gulf of Alaska",
     lat: 57.7183, lon: -133.578, latDisplay: "57.72°N", lonDisplay: "133.58°W",
@@ -3219,7 +3219,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452067", waterTempId: "9452067",
+    id: "9452067", waterTempId: "9452210",
     name: "Holkham Bay, Tracy Arm Entrance", slug: "holkham-bay-tracy-arm-entrance",
     state: "alaska", city: "Holkham Bay, Tracy Arm Entrance, AK", region: "Gulf of Alaska",
     lat: 57.76, lon: -133.603, latDisplay: "57.76°N", lonDisplay: "133.60°W",
@@ -3241,7 +3241,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452081", waterTempId: "9452081",
+    id: "9452081", waterTempId: "9452210",
     name: "Port Snettisham, Speel River Arm", slug: "port-snettisham-speel-river-arm",
     state: "alaska", city: "Port Snettisham, Speel River Arm, AK", region: "Gulf of Alaska",
     lat: 58.116695404052734, lon: -133.69000244140625, latDisplay: "58.12°N", lonDisplay: "133.69°W",
@@ -3263,7 +3263,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452082", waterTempId: "9452082",
+    id: "9452082", waterTempId: "9452210",
     name: "Port Snettisham, Crib Point", slug: "port-snettisham-crib-point",
     state: "alaska", city: "Port Snettisham, Crib Point, AK", region: "Gulf of Alaska",
     lat: 58.0967, lon: -133.742, latDisplay: "58.10°N", lonDisplay: "133.74°W",
@@ -3285,7 +3285,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452089", waterTempId: "9452089",
+    id: "9452089", waterTempId: "9452210",
     name: "Sharp Point, Speel Arm", slug: "sharp-point-speel-arm",
     state: "alaska", city: "Sharp Point, Speel Arm, AK", region: "Gulf of Alaska",
     lat: 58.022335052490234, lon: -133.80728149414062, latDisplay: "58.02°N", lonDisplay: "133.81°W",
@@ -3307,7 +3307,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452123", waterTempId: "9452123",
+    id: "9452123", waterTempId: "9452210",
     name: "Taku Harbor", slug: "taku-harbor",
     state: "alaska", city: "Taku Harbor, AK", region: "Gulf of Alaska",
     lat: 58.0683, lon: -134.012, latDisplay: "58.07°N", lonDisplay: "134.01°W",
@@ -3329,7 +3329,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452124", waterTempId: "9452124",
+    id: "9452124", waterTempId: "9452210",
     name: "Taku Point, Taku Inlet", slug: "taku-point-taku-inlet",
     state: "alaska", city: "Taku Point, Taku Inlet, AK", region: "Gulf of Alaska",
     lat: 58.408668518066406, lon: -134.00613403320312, latDisplay: "58.41°N", lonDisplay: "134.01°W",
@@ -3351,7 +3351,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452128", waterTempId: "9452128",
+    id: "9452128", waterTempId: "9452210",
     name: "Rasp Ledge, Seymour Canal", slug: "rasp-ledge-seymour-canal",
     state: "alaska", city: "Rasp Ledge, Seymour Canal, AK", region: "Gulf of Alaska",
     lat: 57.6783, lon: -134.038, latDisplay: "57.68°N", lonDisplay: "134.04°W",
@@ -3373,7 +3373,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452133", waterTempId: "9452133",
+    id: "9452133", waterTempId: "9452210",
     name: "Greely Point, Taku Inlet", slug: "greely-point-taku-inlet",
     state: "alaska", city: "Greely Point, Taku Inlet, AK", region: "Gulf of Alaska",
     lat: 58.2233, lon: -134.06, latDisplay: "58.22°N", lonDisplay: "134.06°W",
@@ -3417,7 +3417,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452249", waterTempId: "9452249",
+    id: "9452249", waterTempId: "9452210",
     name: "Young Bay", slug: "young-bay",
     state: "alaska", city: "Young Bay, AK", region: "Gulf of Alaska",
     lat: 58.1833, lon: -134.587, latDisplay: "58.18°N", lonDisplay: "134.59°W",
@@ -3439,7 +3439,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452263", waterTempId: "9452263",
+    id: "9452263", waterTempId: "9452210",
     name: "Auke Bay", slug: "auke-bay",
     state: "alaska", city: "Auke Bay, AK", region: "Gulf of Alaska",
     lat: 58.3817, lon: -134.645, latDisplay: "58.38°N", lonDisplay: "134.65°W",
@@ -3461,7 +3461,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452294", waterTempId: "9452294",
+    id: "9452294", waterTempId: "9452210",
     name: "Hawk Inlet Entrance", slug: "hawk-inlet-entrance",
     state: "alaska", city: "Hawk Inlet Entrance, AK", region: "Gulf of Alaska",
     lat: 58.085, lon: -134.777, latDisplay: "58.09°N", lonDisplay: "134.78°W",
@@ -3483,7 +3483,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452318", waterTempId: "9452318",
+    id: "9452318", waterTempId: "9452210",
     name: "Barlow Cove, Mansfield Peninsula", slug: "barlow-cove-mansfield-peninsula",
     state: "alaska", city: "Barlow Cove, Mansfield Peninsula, AK", region: "Gulf of Alaska",
     lat: 58.3217, lon: -134.878, latDisplay: "58.32°N", lonDisplay: "134.88°W",
@@ -3505,7 +3505,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452321", waterTempId: "9452321",
+    id: "9452321", waterTempId: "9452210",
     name: "Funter, Funter Bay", slug: "funter-funter-bay",
     state: "alaska", city: "Funter, Funter Bay, AK", region: "Gulf of Alaska",
     lat: 58.255, lon: -134.895, latDisplay: "58.26°N", lonDisplay: "134.90°W",
@@ -3527,7 +3527,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452328", waterTempId: "9452328",
+    id: "9452328", waterTempId: "9452210",
     name: "False Bay, Chatham Strait", slug: "false-bay-chatham-strait",
     state: "alaska", city: "False Bay, Chatham Strait, AK", region: "Gulf of Alaska",
     lat: 57.9667, lon: -134.935, latDisplay: "57.97°N", lonDisplay: "134.94°W",
@@ -3549,7 +3549,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452336", waterTempId: "9452336",
+    id: "9452336", waterTempId: "9452210",
     name: "Lincoln Island", slug: "lincoln-island",
     state: "alaska", city: "Lincoln Island, AK", region: "Gulf of Alaska",
     lat: 58.4983, lon: -134.965, latDisplay: "58.50°N", lonDisplay: "134.97°W",
@@ -3571,7 +3571,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452346", waterTempId: "9452346",
+    id: "9452346", waterTempId: "9452210",
     name: "Cove Point, Berner's Bay", slug: "cove-point-berners-bay",
     state: "alaska", city: "Cove Point, Berner's Bay, AK", region: "Gulf of Alaska",
     lat: 58.7517, lon: -135.028, latDisplay: "58.75°N", lonDisplay: "135.03°W",
@@ -3593,7 +3593,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452368", waterTempId: "9452368",
+    id: "9452368", waterTempId: "9452210",
     name: "Swanson Harbor", slug: "swanson-harbor",
     state: "alaska", city: "Swanson Harbor, AK", region: "Gulf of Alaska",
     lat: 58.215, lon: -135.127, latDisplay: "58.22°N", lonDisplay: "135.13°W",
@@ -3615,7 +3615,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452386", waterTempId: "9452386",
+    id: "9452386", waterTempId: "9452210",
     name: "Tenakee Springs, Tenakee Inlet", slug: "tenakee-springs-tenakee-inlet",
     state: "alaska", city: "Tenakee Springs, Tenakee Inlet, AK", region: "Gulf of Alaska",
     lat: 57.77930555555555, lon: -135.2194722222222, latDisplay: "57.78°N", lonDisplay: "135.22°W",
@@ -3637,7 +3637,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452391", waterTempId: "9452391",
+    id: "9452391", waterTempId: "9452210",
     name: "William Henry Bay", slug: "william-henry-bay",
     state: "alaska", city: "William Henry Bay, AK", region: "Gulf of Alaska",
     lat: 58.7133, lon: -135.232, latDisplay: "58.71°N", lonDisplay: "135.23°W",
@@ -3681,7 +3681,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452421", waterTempId: "9452421",
+    id: "9452421", waterTempId: "9452400",
     name: "Chilkat Inlet", slug: "chilkat-inlet",
     state: "alaska", city: "Chilkat Inlet, AK", region: "Gulf of Alaska",
     lat: 59.17, lon: -135.4, latDisplay: "59.17°N", lonDisplay: "135.40°W",
@@ -3703,7 +3703,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452434", waterTempId: "9452434",
+    id: "9452434", waterTempId: "9452400",
     name: "Taiyasanka Harbor, Taiya Inlet", slug: "taiyasanka-harbor-taiya-inlet",
     state: "alaska", city: "Taiyasanka Harbor, Taiya Inlet, AK", region: "Gulf of Alaska",
     lat: 59.3017, lon: -135.428, latDisplay: "59.30°N", lonDisplay: "135.43°W",
@@ -3725,7 +3725,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452435", waterTempId: "9452435",
+    id: "9452435", waterTempId: "9452400",
     name: "Haines Inlet", slug: "haines-inlet",
     state: "alaska", city: "Haines Inlet, AK", region: "Gulf of Alaska",
     lat: 59.23, lon: -135.433, latDisplay: "59.23°N", lonDisplay: "135.43°W",
@@ -3747,7 +3747,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452437", waterTempId: "9452437",
+    id: "9452437", waterTempId: "9452634",
     name: "Excursion Inlet Entrance", slug: "excursion-inlet-entrance",
     state: "alaska", city: "Excursion Inlet Entrance, AK", region: "Gulf of Alaska",
     lat: 58.4167, lon: -135.447, latDisplay: "58.42°N", lonDisplay: "135.45°W",
@@ -3769,7 +3769,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452438", waterTempId: "9452438",
+    id: "9452438", waterTempId: "9452634",
     name: "Hoonah, Port Fredrick", slug: "hoonah-port-fredrick",
     state: "alaska", city: "Hoonah, Port Fredrick, AK", region: "Gulf of Alaska",
     lat: 58.10755555555556, lon: -135.4441944444444, latDisplay: "58.11°N", lonDisplay: "135.44°W",
@@ -3791,7 +3791,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452447", waterTempId: "9452447",
+    id: "9452447", waterTempId: "9452634",
     name: "Excursion Inlet, North End", slug: "excursion-inlet-north-end",
     state: "alaska", city: "Excursion Inlet, North End, AK", region: "Gulf of Alaska",
     lat: 58.4967, lon: -135.488, latDisplay: "58.50°N", lonDisplay: "135.49°W",
@@ -3813,7 +3813,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452516", waterTempId: "9452516",
+    id: "9452516", waterTempId: "9452634",
     name: "Point Adolphus", slug: "point-adolphus",
     state: "alaska", city: "Point Adolphus, AK", region: "Gulf of Alaska",
     lat: 58.2867, lon: -135.803, latDisplay: "58.29°N", lonDisplay: "135.80°W",
@@ -3835,7 +3835,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452534", waterTempId: "9452534",
+    id: "9452534", waterTempId: "9452634",
     name: "Bartlett Cove, Glacier Bay", slug: "bartlett-cove-glacier-bay",
     state: "alaska", city: "Bartlett Cove, Glacier Bay, AK", region: "Gulf of Alaska",
     lat: 58.45669937133789, lon: -135.88299560546875, latDisplay: "58.46°N", lonDisplay: "135.88°W",
@@ -3857,7 +3857,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452567", waterTempId: "9452567",
+    id: "9452567", waterTempId: "9452634",
     name: "Mud Bay, Goose Island", slug: "mud-bay-goose-island",
     state: "alaska", city: "Mud Bay, Goose Island, AK", region: "Gulf of Alaska",
     lat: 58.2117, lon: -136.035, latDisplay: "58.21°N", lonDisplay: "136.03°W",
@@ -3879,7 +3879,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452579", waterTempId: "9452579",
+    id: "9452579", waterTempId: "9452634",
     name: "Elbow Passage, Klag Bay", slug: "elbow-passage-klag-bay",
     state: "alaska", city: "Elbow Passage, Klag Bay, AK", region: "Gulf of Alaska",
     lat: 57.6133, lon: -136.087, latDisplay: "57.61°N", lonDisplay: "136.09°W",
@@ -3901,7 +3901,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452583", waterTempId: "9452583",
+    id: "9452583", waterTempId: "9452634",
     name: "Kimshan Cove, Ogden Passage", slug: "kimshan-cove-ogden-passage",
     state: "alaska", city: "Kimshan Cove, Ogden Passage, AK", region: "Gulf of Alaska",
     lat: 57.6867, lon: -136.107, latDisplay: "57.69°N", lonDisplay: "136.11°W",
@@ -3923,7 +3923,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452584", waterTempId: "9452584",
+    id: "9452584", waterTempId: "9452400",
     name: "Muir Inlet", slug: "muir-inlet",
     state: "alaska", city: "Muir Inlet, AK", region: "Gulf of Alaska",
     lat: 58.9133, lon: -136.108, latDisplay: "58.91°N", lonDisplay: "136.11°W",
@@ -3945,7 +3945,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452586", waterTempId: "9452586",
+    id: "9452586", waterTempId: "9452634",
     name: "Willoughby Island", slug: "willoughby-island",
     state: "alaska", city: "Willoughby Island, AK", region: "Gulf of Alaska",
     lat: 58.6083, lon: -136.117, latDisplay: "58.61°N", lonDisplay: "136.12°W",
@@ -3967,7 +3967,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452611", waterTempId: "9452611",
+    id: "9452611", waterTempId: "9452634",
     name: "Pelican Harbor, Lisianski Inlet, AK", slug: "pelican-harbor-lisianski-inlet-ak",
     state: "alaska", city: "Pelican Harbor, Lisianski Inlet, AK, AK", region: "Gulf of Alaska",
     lat: 57.95777777777778, lon: -136.2267777777778, latDisplay: "57.96°N", lonDisplay: "136.23°W",
@@ -3989,7 +3989,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452629", waterTempId: "9452629",
+    id: "9452629", waterTempId: "9452634",
     name: "Inian Cove, North Inian Pass", slug: "inian-cove-north-inian-pass",
     state: "alaska", city: "Inian Cove, North Inian Pass, AK", region: "Gulf of Alaska",
     lat: 58.2633, lon: -136.325, latDisplay: "58.26°N", lonDisplay: "136.32°W",
@@ -4011,7 +4011,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452632", waterTempId: "9452632",
+    id: "9452632", waterTempId: "9452400",
     name: "Wachusett Inlet, Glacier Bay", slug: "wachusett-inlet-glacier-bay",
     state: "alaska", city: "Wachusett Inlet, Glacier Bay, AK", region: "Gulf of Alaska",
     lat: 58.9467, lon: -136.333, latDisplay: "58.95°N", lonDisplay: "136.33°W",
@@ -4033,7 +4033,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452633", waterTempId: "9452633",
+    id: "9452633", waterTempId: "9452634",
     name: "Miner Island", slug: "miner-island",
     state: "alaska", city: "Miner Island, AK", region: "Gulf of Alaska",
     lat: 58.01, lon: -136.342, latDisplay: "58.01°N", lonDisplay: "136.34°W",
@@ -4077,7 +4077,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452649", waterTempId: "9452649",
+    id: "9452649", waterTempId: "9452634",
     name: "Canoe Cove, North Pass", slug: "canoe-cove-north-pass",
     state: "alaska", city: "Canoe Cove, North Pass, AK", region: "Gulf of Alaska",
     lat: 57.8467, lon: -136.422, latDisplay: "57.85°N", lonDisplay: "136.42°W",
@@ -4099,7 +4099,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452671", waterTempId: "9452671",
+    id: "9452671", waterTempId: "9452634",
     name: "Takanis Bay", slug: "takanis-bay",
     state: "alaska", city: "Takanis Bay, AK", region: "Gulf of Alaska",
     lat: 57.9283, lon: -136.52, latDisplay: "57.93°N", lonDisplay: "136.52°W",
@@ -4121,7 +4121,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452672", waterTempId: "9452672",
+    id: "9452672", waterTempId: "9452634",
     name: "Surge Bay", slug: "surge-bay",
     state: "alaska", city: "Surge Bay, AK", region: "Gulf of Alaska",
     lat: 58.0183, lon: -136.528, latDisplay: "58.02°N", lonDisplay: "136.53°W",
@@ -4143,7 +4143,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452682", waterTempId: "9452682",
+    id: "9452682", waterTempId: "9452634",
     name: "Composite Island", slug: "composite-island",
     state: "alaska", city: "Composite Island, AK", region: "Gulf of Alaska",
     lat: 58.8883, lon: -136.573, latDisplay: "58.89°N", lonDisplay: "136.57°W",
@@ -4165,7 +4165,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452704", waterTempId: "9452704",
+    id: "9452704", waterTempId: "9452634",
     name: "Graves Harbor", slug: "graves-harbor",
     state: "alaska", city: "Graves Harbor, AK", region: "Gulf of Alaska",
     lat: 58.2767, lon: -136.678, latDisplay: "58.28°N", lonDisplay: "136.68°W",
@@ -4187,7 +4187,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452747", waterTempId: "9452747",
+    id: "9452747", waterTempId: "9452634",
     name: "Dixon Harbor", slug: "dixon-harbor",
     state: "alaska", city: "Dixon Harbor, AK", region: "Gulf of Alaska",
     lat: 58.3833, lon: -136.867, latDisplay: "58.38°N", lonDisplay: "136.87°W",
@@ -4209,7 +4209,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452749", waterTempId: "9452749",
+    id: "9452749", waterTempId: "9452634",
     name: "Tarr Inlet, Glacier Bay", slug: "tarr-inlet-glacier-bay",
     state: "alaska", city: "Tarr Inlet, Glacier Bay, AK", region: "Gulf of Alaska",
     lat: 58.96477777777778, lon: -136.8775833333333, latDisplay: "58.96°N", lonDisplay: "136.88°W",
@@ -4231,7 +4231,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452928", waterTempId: "9452928",
+    id: "9452928", waterTempId: "9452634",
     name: "Lituya Bay, 2 miles inside entrance", slug: "lituya-bay-2-miles-inside-entrance",
     state: "alaska", city: "Lituya Bay, 2 miles inside entrance, AK", region: "Gulf of Alaska",
     lat: 58.6167, lon: -137.65, latDisplay: "58.62°N", lonDisplay: "137.65°W",
@@ -4253,7 +4253,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9453208", waterTempId: "9453208",
+    id: "9453208", waterTempId: "9453220",
     name: "Redfield Cove, Yakutat Bay", slug: "redfield-cove-yakutat-bay",
     state: "alaska", city: "Redfield Cove, Yakutat Bay, AK", region: "Gulf of Alaska",
     lat: 59.6117, lon: -139.58, latDisplay: "59.61°N", lonDisplay: "139.58°W",
@@ -4275,7 +4275,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9453210", waterTempId: "9453210",
+    id: "9453210", waterTempId: "9453220",
     name: "Point Latouche, Yakutat Bay", slug: "point-latouche-yakutat-bay",
     state: "alaska", city: "Point Latouche, Yakutat Bay, AK", region: "Gulf of Alaska",
     lat: 59.9033, lon: -139.627, latDisplay: "59.90°N", lonDisplay: "139.63°W",
@@ -4297,7 +4297,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9453215", waterTempId: "9453215",
+    id: "9453215", waterTempId: "9453220",
     name: "Johnstone Passage, Yakutat Bay", slug: "johnstone-passage-yakutat-bay",
     state: "alaska", city: "Johnstone Passage, Yakutat Bay, AK", region: "Gulf of Alaska",
     lat: 59.5817, lon: -139.702, latDisplay: "59.58°N", lonDisplay: "139.70°W",
@@ -4341,7 +4341,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9453431", waterTempId: "9453431",
+    id: "9453431", waterTempId: "9453220",
     name: "Tyndall Glacier, Icy Bay", slug: "tyndall-glacier-icy-bay",
     state: "alaska", city: "Tyndall Glacier, Icy Bay, AK", region: "Gulf of Alaska",
     lat: 60.07830047607422, lon: -141.27499389648438, latDisplay: "60.08°N", lonDisplay: "141.27°W",
@@ -4363,7 +4363,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9453443", waterTempId: "9453443",
+    id: "9453443", waterTempId: "9453220",
     name: "Moraine Bay, Icy Bay", slug: "moraine-bay-icy-bay",
     state: "alaska", city: "Moraine Bay, Icy Bay, AK", region: "Gulf of Alaska",
     lat: 59.93000030517578, lon: -141.36300659179688, latDisplay: "59.93°N", lonDisplay: "141.36°W",
@@ -4385,7 +4385,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9453456", waterTempId: "9453456",
+    id: "9453456", waterTempId: "9453220",
     name: "Icy Bay", slug: "icy-bay",
     state: "alaska", city: "Icy Bay, AK", region: "Gulf of Alaska",
     lat: 59.885, lon: -141.457, latDisplay: "59.88°N", lonDisplay: "141.46°W",
@@ -4429,7 +4429,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454124", waterTempId: "9454124",
+    id: "9454124", waterTempId: "9454050",
     name: "Sheep Bay", slug: "sheep-bay",
     state: "alaska", city: "Sheep Bay, AK", region: "Gulf of Alaska",
     lat: 60.67189025878906, lon: -145.99217224121094, latDisplay: "60.67°N", lonDisplay: "145.99°W",
@@ -4451,7 +4451,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454125", waterTempId: "9454125",
+    id: "9454125", waterTempId: "9454050",
     name: "Shag Rock", slug: "shag-rock",
     state: "alaska", city: "Shag Rock, AK", region: "Gulf of Alaska",
     lat: 60.465, lon: -145.988, latDisplay: "60.47°N", lonDisplay: "145.99°W",
@@ -4473,7 +4473,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454153", waterTempId: "9454153",
+    id: "9454153", waterTempId: "9454050",
     name: "Gravina River", slug: "gravina-river",
     state: "alaska", city: "Gravina River, AK", region: "Gulf of Alaska",
     lat: 60.766700744628906, lon: -146.0845947265625, latDisplay: "60.77°N", lonDisplay: "146.08°W",
@@ -4495,7 +4495,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454157", waterTempId: "9454157",
+    id: "9454157", waterTempId: "9454050",
     name: "Comfort Cove, Port Gravina", slug: "comfort-cove-port-gravina",
     state: "alaska", city: "Comfort Cove, Port Gravina, AK", region: "Gulf of Alaska",
     lat: 60.71, lon: -146.085, latDisplay: "60.71°N", lonDisplay: "146.09°W",
@@ -4517,7 +4517,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454224", waterTempId: "9454224",
+    id: "9454224", waterTempId: "9454050",
     name: "Middleton Island (north end)", slug: "middleton-island-north-end",
     state: "alaska", city: "Middleton Island (north end), AK", region: "Gulf of Alaska",
     lat: 59.4617, lon: -146.31, latDisplay: "59.46°N", lonDisplay: "146.31°W",
@@ -4561,7 +4561,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454296", waterTempId: "9454296",
+    id: "9454296", waterTempId: "9454240",
     name: "Landlocked Bay, Port Fidalgo", slug: "landlocked-bay-port-fidalgo",
     state: "alaska", city: "Landlocked Bay, Port Fidalgo, AK", region: "Gulf of Alaska",
     lat: 60.8533, lon: -146.535, latDisplay: "60.85°N", lonDisplay: "146.53°W",
@@ -4583,7 +4583,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454309", waterTempId: "9454309",
+    id: "9454309", waterTempId: "9454240",
     name: "Jack Bay", slug: "jack-bay",
     state: "alaska", city: "Jack Bay, AK", region: "Gulf of Alaska",
     lat: 61.04, lon: -146.615, latDisplay: "61.04°N", lonDisplay: "146.62°W",
@@ -4605,7 +4605,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454319", waterTempId: "9454319",
+    id: "9454319", waterTempId: "9454050",
     name: "Johnstone Point", slug: "johnstone-point",
     state: "alaska", city: "Johnstone Point, AK", region: "Gulf of Alaska",
     lat: 60.4817, lon: -146.61, latDisplay: "60.48°N", lonDisplay: "146.61°W",
@@ -4627,7 +4627,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454329", waterTempId: "9454329",
+    id: "9454329", waterTempId: "9454050",
     name: "Cape Hinchinbrook", slug: "cape-hinchinbrook",
     state: "alaska", city: "Cape Hinchinbrook, AK", region: "Gulf of Alaska",
     lat: 60.23830032348633, lon: -146.6479949951172, latDisplay: "60.24°N", lonDisplay: "146.65°W",
@@ -4649,7 +4649,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454363", waterTempId: "9454363",
+    id: "9454363", waterTempId: "9454240",
     name: "Rocky Point", slug: "rocky-point",
     state: "alaska", city: "Rocky Point, AK", region: "Gulf of Alaska",
     lat: 60.94670104980469, lon: -146.7550048828125, latDisplay: "60.95°N", lonDisplay: "146.76°W",
@@ -4671,7 +4671,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454374", waterTempId: "9454374",
+    id: "9454374", waterTempId: "9454240",
     name: "Busby Island", slug: "busby-island",
     state: "alaska", city: "Busby Island, AK", region: "Gulf of Alaska",
     lat: 60.8983, lon: -146.782, latDisplay: "60.90°N", lonDisplay: "146.78°W",
@@ -4693,7 +4693,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454507", waterTempId: "9454507",
+    id: "9454507", waterTempId: "9454240",
     name: "Jackson Cove, Glacier Island", slug: "jackson-cove-glacier-island",
     state: "alaska", city: "Jackson Cove, Glacier Island, AK", region: "Gulf of Alaska",
     lat: 60.88, lon: -147.223, latDisplay: "60.88°N", lonDisplay: "147.22°W",
@@ -4715,7 +4715,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454511", waterTempId: "9454511",
+    id: "9454511", waterTempId: "9454050",
     name: "Port Chalmers", slug: "port-chalmers",
     state: "alaska", city: "Port Chalmers, AK", region: "Gulf of Alaska",
     lat: 60.2418, lon: -147.249, latDisplay: "60.24°N", lonDisplay: "147.25°W",
@@ -4737,7 +4737,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454561", waterTempId: "9454561",
+    id: "9454561", waterTempId: "9454050",
     name: "Perch Point", slug: "perch-point",
     state: "alaska", city: "Perch Point, AK", region: "Gulf of Alaska",
     lat: 60.1267, lon: -147.395, latDisplay: "60.13°N", lonDisplay: "147.40°W",
@@ -4759,7 +4759,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454562", waterTempId: "9454562",
+    id: "9454562", waterTempId: "9454050",
     name: "Wooded Islands", slug: "wooded-islands",
     state: "alaska", city: "Wooded Islands, AK", region: "Gulf of Alaska",
     lat: 59.875, lon: -147.403, latDisplay: "59.88°N", lonDisplay: "147.40°W",
@@ -4781,7 +4781,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454563", waterTempId: "9454563",
+    id: "9454563", waterTempId: "9454240",
     name: "Naked Island, McPherson Passage", slug: "naked-island-mcpherson-passage",
     state: "alaska", city: "Naked Island, McPherson Passage, AK", region: "Gulf of Alaska",
     lat: 60.6833, lon: -147.388, latDisplay: "60.68°N", lonDisplay: "147.39°W",
@@ -4803,7 +4803,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454564", waterTempId: "9454564",
+    id: "9454564", waterTempId: "9454050",
     name: "Seal Island", slug: "seal-island",
     state: "alaska", city: "Seal Island, AK", region: "Gulf of Alaska",
     lat: 60.425, lon: -147.41, latDisplay: "60.42°N", lonDisplay: "147.41°W",
@@ -4825,7 +4825,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454573", waterTempId: "9454573",
+    id: "9454573", waterTempId: "9454050",
     name: "Gibbon Anchorage, Green Island", slug: "gibbon-anchorage-green-island",
     state: "alaska", city: "Gibbon Anchorage, Green Island, AK", region: "Gulf of Alaska",
     lat: 60.27, lon: -147.438, latDisplay: "60.27°N", lonDisplay: "147.44°W",
@@ -4847,7 +4847,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454574", waterTempId: "9454574",
+    id: "9454574", waterTempId: "9454050",
     name: "Patton Bay", slug: "patton-bay",
     state: "alaska", city: "Patton Bay, AK", region: "Gulf of Alaska",
     lat: 59.9067, lon: -147.45, latDisplay: "59.91°N", lonDisplay: "147.45°W",
@@ -4869,7 +4869,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454616", waterTempId: "9454616",
+    id: "9454616", waterTempId: "9454050",
     name: "5 miles NE of Point Brazil, Montague Island", slug: "5-miles-ne-of-point-brazil-montague-island",
     state: "alaska", city: "5 miles NE of Point Brazil, Montague Island, AK", region: "Gulf of Alaska",
     lat: 60.025, lon: -147.592, latDisplay: "60.02°N", lonDisplay: "147.59°W",
@@ -4891,7 +4891,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454642", waterTempId: "9454642",
+    id: "9454642", waterTempId: "9454240",
     name: "Louis Bay", slug: "louis-bay",
     state: "alaska", city: "Louis Bay, AK", region: "Gulf of Alaska",
     lat: 60.4617, lon: -147.672, latDisplay: "60.46°N", lonDisplay: "147.67°W",
@@ -4913,7 +4913,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454652", waterTempId: "9454652",
+    id: "9454652", waterTempId: "9454050",
     name: "Bay of Isles, South Arm", slug: "bay-of-isles-south-arm",
     state: "alaska", city: "Bay of Isles, South Arm, AK", region: "Gulf of Alaska",
     lat: 60.3667, lon: -147.7, latDisplay: "60.37°N", lonDisplay: "147.70°W",
@@ -4935,7 +4935,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454662", waterTempId: "9454662",
+    id: "9454662", waterTempId: "9454050",
     name: "Snug Harbor, Knight Island", slug: "snug-harbor-knight-island",
     state: "alaska", city: "Snug Harbor, Knight Island, AK", region: "Gulf of Alaska",
     lat: 60.25, lon: -147.717, latDisplay: "60.25°N", lonDisplay: "147.72°W",
@@ -4957,7 +4957,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454671", waterTempId: "9454671",
+    id: "9454671", waterTempId: "9454050",
     name: "Point Helen", slug: "point-helen",
     state: "alaska", city: "Point Helen, AK", region: "Gulf of Alaska",
     lat: 60.1533, lon: -147.767, latDisplay: "60.15°N", lonDisplay: "147.77°W",
@@ -4979,7 +4979,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454672", waterTempId: "9454672",
+    id: "9454672", waterTempId: "9454240",
     name: "College Fiord", slug: "college-fiord",
     state: "alaska", city: "College Fiord, AK", region: "Gulf of Alaska",
     lat: 61.2057991027832, lon: -147.7613983154297, latDisplay: "61.21°N", lonDisplay: "147.76°W",
@@ -5001,7 +5001,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454673", waterTempId: "9454673",
+    id: "9454673", waterTempId: "9454050",
     name: "Port Audrey", slug: "port-audrey",
     state: "alaska", city: "Port Audrey, AK", region: "Gulf of Alaska",
     lat: 60.3433, lon: -147.768, latDisplay: "60.34°N", lonDisplay: "147.77°W",
@@ -5023,7 +5023,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454674", waterTempId: "9454674",
+    id: "9454674", waterTempId: "9454050",
     name: "Macleod Harbor", slug: "macleod-harbor",
     state: "alaska", city: "Macleod Harbor, AK", region: "Gulf of Alaska",
     lat: 59.88999938964844, lon: -147.7949981689453, latDisplay: "59.89°N", lonDisplay: "147.79°W",
@@ -5045,7 +5045,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454691", waterTempId: "9454691",
+    id: "9454691", waterTempId: "9454240",
     name: "Herring Point", slug: "herring-point",
     state: "alaska", city: "Herring Point, AK", region: "Gulf of Alaska",
     lat: 60.475, lon: -147.792, latDisplay: "60.48°N", lonDisplay: "147.79°W",
@@ -5067,7 +5067,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454713", waterTempId: "9454713",
+    id: "9454713", waterTempId: "9454050",
     name: "Latouche, Latouche Island", slug: "latouche-latouche-island",
     state: "alaska", city: "Latouche, Latouche Island, AK", region: "Gulf of Alaska",
     lat: 60.0533, lon: -147.907, latDisplay: "60.05°N", lonDisplay: "147.91°W",
@@ -5089,7 +5089,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454721", waterTempId: "9454721",
+    id: "9454721", waterTempId: "9454240",
     name: "Perry Island (South Bay)", slug: "perry-island-south-bay",
     state: "alaska", city: "Perry Island (South Bay), AK", region: "Gulf of Alaska",
     lat: 60.6717, lon: -147.932, latDisplay: "60.67°N", lonDisplay: "147.93°W",
@@ -5111,7 +5111,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454735", waterTempId: "9454735",
+    id: "9454735", waterTempId: "9454240",
     name: "Eshamy Bay, Knight Island Passage", slug: "eshamy-bay-knight-island-passage",
     state: "alaska", city: "Eshamy Bay, Knight Island Passage, AK", region: "Gulf of Alaska",
     lat: 60.4483, lon: -147.978, latDisplay: "60.45°N", lonDisplay: "147.98°W",
@@ -5133,7 +5133,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454751", waterTempId: "9454751",
+    id: "9454751", waterTempId: "9454050",
     name: "Guguak", slug: "guguak",
     state: "alaska", city: "Guguak, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.1, lon: -148.038, latDisplay: "60.10°N", lonDisplay: "148.04°W",
@@ -5155,7 +5155,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454755", waterTempId: "9454755",
+    id: "9454755", waterTempId: "9454050",
     name: "Bainbridge Point, Bainbridge Island", slug: "bainbridge-point-bainbridge-island",
     state: "alaska", city: "Bainbridge Point, Bainbridge Island, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.19670104980469, lon: -148.04200744628906, latDisplay: "60.20°N", lonDisplay: "148.04°W",
@@ -5177,7 +5177,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454757", waterTempId: "9454757",
+    id: "9454757", waterTempId: "9454240",
     name: "Eshamy Lagoon", slug: "eshamy-lagoon",
     state: "alaska", city: "Eshamy Lagoon, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.4617, lon: -148.045, latDisplay: "60.46°N", lonDisplay: "148.04°W",
@@ -5199,7 +5199,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454764", waterTempId: "9454764",
+    id: "9454764", waterTempId: "9454050",
     name: "Sawmill Bay, Evans Island", slug: "sawmill-bay-evans-island",
     state: "alaska", city: "Sawmill Bay, Evans Island, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.0517, lon: -148.065, latDisplay: "60.05°N", lonDisplay: "148.06°W",
@@ -5221,7 +5221,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454777", waterTempId: "9454777",
+    id: "9454777", waterTempId: "9454050",
     name: "Chenega Island, southwest end", slug: "chenega-island-southwest-end",
     state: "alaska", city: "Chenega Island, southwest end, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.2833, lon: -148.113, latDisplay: "60.28°N", lonDisplay: "148.11°W",
@@ -5243,7 +5243,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454787", waterTempId: "9454787",
+    id: "9454787", waterTempId: "9454240",
     name: "Chenega Island, Dangerous Passage", slug: "chenega-island-dangerous-passage",
     state: "alaska", city: "Chenega Island, Dangerous Passage, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.33, lon: -148.143, latDisplay: "60.33°N", lonDisplay: "148.14°W",
@@ -5265,7 +5265,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454794", waterTempId: "9454794",
+    id: "9454794", waterTempId: "9454240",
     name: "Applegate Island", slug: "applegate-island",
     state: "alaska", city: "Applegate Island, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.6233, lon: -148.165, latDisplay: "60.62°N", lonDisplay: "148.16°W",
@@ -5287,7 +5287,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454798", waterTempId: "9454798",
+    id: "9454798", waterTempId: "9454240",
     name: "Culross Bay, Wells Passage", slug: "culross-bay-wells-passage",
     state: "alaska", city: "Culross Bay, Wells Passage, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.7417, lon: -148.172, latDisplay: "60.74°N", lonDisplay: "148.17°W",
@@ -5309,7 +5309,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454805", waterTempId: "9454805",
+    id: "9454805", waterTempId: "9454050",
     name: "Hogg Bay, Port Bainbridge", slug: "hogg-bay-port-bainbridge",
     state: "alaska", city: "Hogg Bay, Port Bainbridge, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.0767, lon: -148.195, latDisplay: "60.08°N", lonDisplay: "148.19°W",
@@ -5331,7 +5331,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454814", waterTempId: "9454814",
+    id: "9454814", waterTempId: "9454050",
     name: "Point Elrington, Elrington Island", slug: "point-elrington-elrington-island",
     state: "alaska", city: "Point Elrington, Elrington Island, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.9383, lon: -148.227, latDisplay: "59.94°N", lonDisplay: "148.23°W",
@@ -5353,7 +5353,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454825", waterTempId: "9454825",
+    id: "9454825", waterTempId: "9455920",
     name: "Long Bay Entrance, Culross Passage", slug: "long-bay-entrance-culross-passage",
     state: "alaska", city: "Long Bay Entrance, Culross Passage, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.6917, lon: -148.263, latDisplay: "60.69°N", lonDisplay: "148.26°W",
@@ -5375,7 +5375,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454887", waterTempId: "9454887",
+    id: "9454887", waterTempId: "9455920",
     name: "Kings Bay, Port Nellie Juan", slug: "kings-bay-port-nellie-juan",
     state: "alaska", city: "Kings Bay, Port Nellie Juan, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.5417, lon: -148.46, latDisplay: "60.54°N", lonDisplay: "148.46°W",
@@ -5397,7 +5397,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454949", waterTempId: "9454949",
+    id: "9454949", waterTempId: "9455920",
     name: "Whittier, Passage Canal", slug: "whittier-passage-canal",
     state: "alaska", city: "Whittier, Passage Canal, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.7783, lon: -148.665, latDisplay: "60.78°N", lonDisplay: "148.66°W",
@@ -5419,7 +5419,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455036", waterTempId: "9455036",
+    id: "9455036", waterTempId: "9455920",
     name: "Day Harbor", slug: "day-harbor",
     state: "alaska", city: "Day Harbor, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.01, lon: -149.062, latDisplay: "60.01°N", lonDisplay: "149.06°W",
@@ -5441,7 +5441,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455090", waterTempId: "9455090",
+    id: "9455090", waterTempId: "9455760",
     name: "Seward, Resurrection Bay", slug: "seward-resurrection-bay",
     state: "alaska", city: "Seward, Resurrection Bay, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.1193, lon: -149.4281083333333, latDisplay: "60.12°N", lonDisplay: "149.43°W",
@@ -5463,7 +5463,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455120", waterTempId: "9455120",
+    id: "9455120", waterTempId: "9455500",
     name: "Agnes Cove, Aialik Peninsula", slug: "agnes-cove-aialik-peninsula",
     state: "alaska", city: "Agnes Cove, Aialik Peninsula, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.7733, lon: -149.588, latDisplay: "59.77°N", lonDisplay: "149.59°W",
@@ -5485,7 +5485,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455128", waterTempId: "9455128",
+    id: "9455128", waterTempId: "9455500",
     name: "Bear Cove, Aialik Peninsula", slug: "bear-cove-aialik-peninsula",
     state: "alaska", city: "Bear Cove, Aialik Peninsula, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.8017, lon: -149.615, latDisplay: "59.80°N", lonDisplay: "149.62°W",
@@ -5507,7 +5507,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455145", waterTempId: "9455145",
+    id: "9455145", waterTempId: "9455760",
     name: "Aialik Bay, North end", slug: "aialik-bay-north-end",
     state: "alaska", city: "Aialik Bay, North end, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.9533, lon: -149.715, latDisplay: "59.95°N", lonDisplay: "149.72°W",
@@ -5529,7 +5529,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455146", waterTempId: "9455146",
+    id: "9455146", waterTempId: "9455500",
     name: "Aialik Sill, Aialik Bay", slug: "aialik-sill-aialik-bay",
     state: "alaska", city: "Aialik Sill, Aialik Bay, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.885, lon: -149.718, latDisplay: "59.88°N", lonDisplay: "149.72°W",
@@ -5551,7 +5551,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455151", waterTempId: "9455151",
+    id: "9455151", waterTempId: "9455500",
     name: "Camp Cove, Aialik Bay", slug: "camp-cove-aialik-bay",
     state: "alaska", city: "Camp Cove, Aialik Bay, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.6933, lon: -149.748, latDisplay: "59.69°N", lonDisplay: "149.75°W",
@@ -5573,7 +5573,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455159", waterTempId: "9455159",
+    id: "9455159", waterTempId: "9455500",
     name: "Crater Bay, Harris Bay", slug: "crater-bay-harris-bay",
     state: "alaska", city: "Crater Bay, Harris Bay, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.7133, lon: -149.787, latDisplay: "59.71°N", lonDisplay: "149.79°W",
@@ -5595,7 +5595,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455204", waterTempId: "9455204",
+    id: "9455204", waterTempId: "9455500",
     name: "Upper Northwestern Fiord, Harris Bay", slug: "upper-northwestern-fiord-harris-bay",
     state: "alaska", city: "Upper Northwestern Fiord, Harris Bay, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.79, lon: -150.032, latDisplay: "59.79°N", lonDisplay: "150.03°W",
@@ -5617,7 +5617,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455217", waterTempId: "9455217",
+    id: "9455217", waterTempId: "9455500",
     name: "Two Arm Bay, Harris Bay", slug: "two-arm-bay-harris-bay",
     state: "alaska", city: "Two Arm Bay, Harris Bay, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.6617, lon: -150.108, latDisplay: "59.66°N", lonDisplay: "150.11°W",
@@ -5639,7 +5639,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455249", waterTempId: "9455249",
+    id: "9455249", waterTempId: "9455500",
     name: "Chance Cove (Lagoon)", slug: "chance-cove-lagoon",
     state: "alaska", city: "Chance Cove (Lagoon), AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.4883, lon: -150.312, latDisplay: "59.49°N", lonDisplay: "150.31°W",
@@ -5661,7 +5661,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455258", waterTempId: "9455258",
+    id: "9455258", waterTempId: "9455500",
     name: "McCarty Fiord, Moonlight Bay", slug: "mccarty-fiord-moonlight-bay",
     state: "alaska", city: "McCarty Fiord, Moonlight Bay, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.511600494384766, lon: -150.35519409179688, latDisplay: "59.51°N", lonDisplay: "150.36°W",
@@ -5683,7 +5683,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455304", waterTempId: "9455304",
+    id: "9455304", waterTempId: "9455500",
     name: "Beauty Bay, Nuka Bay", slug: "beauty-bay-nuka-bay",
     state: "alaska", city: "Beauty Bay, Nuka Bay, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.5267, lon: -150.628, latDisplay: "59.53°N", lonDisplay: "150.63°W",
@@ -5705,7 +5705,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455308", waterTempId: "9455308",
+    id: "9455308", waterTempId: "9455500",
     name: "Nuka Passage", slug: "nuka-passage",
     state: "alaska", city: "Nuka Passage, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.4083, lon: -150.667, latDisplay: "59.41°N", lonDisplay: "150.67°W",
@@ -5727,7 +5727,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455347", waterTempId: "9455347",
+    id: "9455347", waterTempId: "9455500",
     name: "Takoma Cove, Port Dick", slug: "takoma-cove-port-dick",
     state: "alaska", city: "Takoma Cove, Port Dick, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.2617, lon: -150.982, latDisplay: "59.26°N", lonDisplay: "150.98°W",
@@ -5749,7 +5749,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455399", waterTempId: "9455399",
+    id: "9455399", waterTempId: "9455500",
     name: "Picnic Harbor, Rocky Bay", slug: "picnic-harbor-rocky-bay",
     state: "alaska", city: "Picnic Harbor, Rocky Bay, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.255, lon: -151.42, latDisplay: "59.26°N", lonDisplay: "151.42°W",
@@ -5771,7 +5771,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455428", waterTempId: "9455428",
+    id: "9455428", waterTempId: "9455500",
     name: "Port Chatham", slug: "port-chatham",
     state: "alaska", city: "Port Chatham, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.2133, lon: -151.728, latDisplay: "59.21°N", lonDisplay: "151.73°W",
@@ -5793,7 +5793,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455437", waterTempId: "9455437",
+    id: "9455437", waterTempId: "9455500",
     name: "Port Graham", slug: "port-graham",
     state: "alaska", city: "Port Graham, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.35, lon: -151.8266666666667, latDisplay: "59.35°N", lonDisplay: "151.83°W",
@@ -5815,7 +5815,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455478", waterTempId: "9455478",
+    id: "9455478", waterTempId: "9455500",
     name: "Ushagat Island, Barren Islands", slug: "ushagat-island-barren-islands",
     state: "alaska", city: "Ushagat Island, Barren Islands, AK", region: "Kodiak Island",
     lat: 58.9467, lon: -152.268, latDisplay: "58.95°N", lonDisplay: "152.27°W",
@@ -5859,7 +5859,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455506", waterTempId: "9455506",
+    id: "9455506", waterTempId: "9455500",
     name: "Tutka Bay,Kachemak Bay", slug: "tutka-baykachemak-bay",
     state: "alaska", city: "Tutka Bay,Kachemak Bay, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.4317, lon: -151.357, latDisplay: "59.43°N", lonDisplay: "151.36°W",
@@ -5881,7 +5881,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455514", waterTempId: "9455514",
+    id: "9455514", waterTempId: "9455500",
     name: "Sadie Cove, Kachemak Bay", slug: "sadie-cove-kachemak-bay",
     state: "alaska", city: "Sadie Cove, Kachemak Bay, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.49, lon: -151.365, latDisplay: "59.49°N", lonDisplay: "151.37°W",
@@ -5903,7 +5903,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455517", waterTempId: "9455517",
+    id: "9455517", waterTempId: "9455500",
     name: "Kasitsna Bay, Kachemak Bay", slug: "kasitsna-bay-kachemak-bay",
     state: "alaska", city: "Kasitsna Bay, Kachemak Bay, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.46830555555555, lon: -151.565, latDisplay: "59.47°N", lonDisplay: "151.56°W",
@@ -5925,7 +5925,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455556", waterTempId: "9455556",
+    id: "9455556", waterTempId: "9455500",
     name: "Halibut Cove, Kachemak Bay", slug: "halibut-cove-kachemak-bay",
     state: "alaska", city: "Halibut Cove, Kachemak Bay, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.5967, lon: -151.22, latDisplay: "59.60°N", lonDisplay: "151.22°W",
@@ -5947,7 +5947,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455558", waterTempId: "9455558",
+    id: "9455558", waterTempId: "9455500",
     name: "Homer, Coal Point, Kachemak Bay", slug: "homer-coal-point-kachemak-bay",
     state: "alaska", city: "Homer, Coal Point, Kachemak Bay, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.60139846801758, lon: -151.4105987548828, latDisplay: "59.60°N", lonDisplay: "151.41°W",
@@ -5969,7 +5969,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455595", waterTempId: "9455595",
+    id: "9455595", waterTempId: "9455500",
     name: "Bear Cove, Kachemak Bay", slug: "bear-cove-kachemak-bay",
     state: "alaska", city: "Bear Cove, Kachemak Bay, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.725, lon: -151.023, latDisplay: "59.73°N", lonDisplay: "151.02°W",
@@ -5991,7 +5991,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455606", waterTempId: "9455606",
+    id: "9455606", waterTempId: "9455500",
     name: "Anchor Point", slug: "anchor-point-9455606",
     state: "alaska", city: "Anchor Point, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.77197222222223, lon: -151.8670277777778, latDisplay: "59.77°N", lonDisplay: "151.87°W",
@@ -6013,7 +6013,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455653", waterTempId: "9455653",
+    id: "9455653", waterTempId: "9455500",
     name: "Ninilchik", slug: "ninilchik",
     state: "alaska", city: "Ninilchik, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.055, lon: -151.682, latDisplay: "60.05°N", lonDisplay: "151.68°W",
@@ -6035,7 +6035,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455711", waterTempId: "9455711",
+    id: "9455711", waterTempId: "9455760",
     name: "Cape Kasilof", slug: "cape-kasilof",
     state: "alaska", city: "Cape Kasilof, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.3367, lon: -151.38, latDisplay: "60.34°N", lonDisplay: "151.38°W",
@@ -6057,7 +6057,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455732", waterTempId: "9455732",
+    id: "9455732", waterTempId: "9455760",
     name: "Kalgin Island (north end),  Cook Inlet", slug: "kalgin-island-north-end-cook-inlet",
     state: "alaska", city: "Kalgin Island (north end),  Cook Inlet, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.51169967651367, lon: -151.95199584960938, latDisplay: "60.51°N", lonDisplay: "151.95°W",
@@ -6079,7 +6079,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455735", waterTempId: "9455735",
+    id: "9455735", waterTempId: "9455760",
     name: "Chinulna Point, Cook Inlet", slug: "chinulna-point-cook-inlet",
     state: "alaska", city: "Chinulna Point, Cook Inlet, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.5033, lon: -151.283, latDisplay: "60.50°N", lonDisplay: "151.28°W",
@@ -6101,7 +6101,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455741", waterTempId: "9455741",
+    id: "9455741", waterTempId: "9455760",
     name: "Drift River Terminal", slug: "drift-river-terminal",
     state: "alaska", city: "Drift River Terminal, AK", region: "Kodiak Island",
     lat: 60.555, lon: -152.133, latDisplay: "60.55°N", lonDisplay: "152.13°W",
@@ -6123,7 +6123,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455742", waterTempId: "9455742",
+    id: "9455742", waterTempId: "9455760",
     name: "Kenai City Pier", slug: "kenai-city-pier",
     state: "alaska", city: "Kenai City Pier, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.545, lon: -151.218, latDisplay: "60.55°N", lonDisplay: "151.22°W",
@@ -6167,7 +6167,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455866", waterTempId: "9455866",
+    id: "9455866", waterTempId: "9455920",
     name: "Point Possession", slug: "point-possession",
     state: "alaska", city: "Point Possession, AK", region: "Cook Inlet / Prince William Sound",
     lat: 61.0367, lon: -150.413, latDisplay: "61.04°N", lonDisplay: "150.41°W",
@@ -6189,7 +6189,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455869", waterTempId: "9455869",
+    id: "9455869", waterTempId: "9455760",
     name: "North Foreland", slug: "north-foreland",
     state: "alaska", city: "North Foreland, AK", region: "Cook Inlet / Prince William Sound",
     lat: 61.04330555555556, lon: -151.163, latDisplay: "61.04°N", lonDisplay: "151.16°W",
@@ -6211,7 +6211,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455912", waterTempId: "9455912",
+    id: "9455912", waterTempId: "9455920",
     name: "Fire Island", slug: "fire-island",
     state: "alaska", city: "Fire Island, AK", region: "Cook Inlet / Prince William Sound",
     lat: 61.1733, lon: -150.213, latDisplay: "61.17°N", lonDisplay: "150.21°W",
@@ -6255,7 +6255,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455934", waterTempId: "9455934",
+    id: "9455934", waterTempId: "9455920",
     name: "Port MacKenzie", slug: "port-mackenzie",
     state: "alaska", city: "Port MacKenzie, AK", region: "Cook Inlet / Prince William Sound",
     lat: 61.2682991027832, lon: -149.91700744628906, latDisplay: "61.27°N", lonDisplay: "149.92°W",
@@ -6277,7 +6277,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455963", waterTempId: "9455963",
+    id: "9455963", waterTempId: "9455920",
     name: "Goose Creek, Knik Arm, Cook Inlet", slug: "goose-creek-knik-arm-cook-inlet",
     state: "alaska", city: "Goose Creek, Knik Arm, Cook Inlet, AK", region: "Cook Inlet / Prince William Sound",
     lat: 61.3933, lon: -149.847, latDisplay: "61.39°N", lonDisplay: "149.85°W",
@@ -6299,7 +6299,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9456173", waterTempId: "9456173",
+    id: "9456173", waterTempId: "9455500",
     name: "Snug Harbor, Chisik Island", slug: "snug-harbor-chisik-island",
     state: "alaska", city: "Snug Harbor, Chisik Island, AK", region: "Kodiak Island",
     lat: 60.10749816894531, lon: -152.58169555664062, latDisplay: "60.11°N", lonDisplay: "152.58°W",
@@ -6321,7 +6321,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9456204", waterTempId: "9456204",
+    id: "9456204", waterTempId: "9455760",
     name: "Tuxedni Channel", slug: "tuxedni-channel",
     state: "alaska", city: "Tuxedni Channel, AK", region: "Kodiak Island",
     lat: 60.1533, lon: -152.635, latDisplay: "60.15°N", lonDisplay: "152.63°W",
@@ -6343,7 +6343,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9456463", waterTempId: "9456463",
+    id: "9456463", waterTempId: "9455500",
     name: "Oil Bay, Kamishak Bay", slug: "oil-bay-kamishak-bay",
     state: "alaska", city: "Oil Bay, Kamishak Bay, AK", region: "Kodiak Island",
     lat: 59.64, lon: -153.262, latDisplay: "59.64°N", lonDisplay: "153.26°W",
@@ -6365,7 +6365,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9456525", waterTempId: "9456525",
+    id: "9456525", waterTempId: "9455500",
     name: "Southwest Iniskin Bay", slug: "southwest-iniskin-bay",
     state: "alaska", city: "Southwest Iniskin Bay, AK", region: "Kodiak Island",
     lat: 59.65169906616211, lon: -153.4680938720703, latDisplay: "59.65°N", lonDisplay: "153.47°W",
@@ -6387,7 +6387,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9456717", waterTempId: "9456717",
+    id: "9456717", waterTempId: "9457292",
     name: "Nukshak Island, Shelikof Strait", slug: "nukshak-island-shelikof-strait",
     state: "alaska", city: "Nukshak Island, Shelikof Strait, AK", region: "Kodiak Island",
     lat: 58.3917, lon: -153.958, latDisplay: "58.39°N", lonDisplay: "153.96°W",
@@ -6409,7 +6409,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9456822", waterTempId: "9456822",
+    id: "9456822", waterTempId: "9455500",
     name: "Nordyke Island, Kamishak Bay", slug: "nordyke-island-kamishak-bay",
     state: "alaska", city: "Nordyke Island, Kamishak Bay, AK", region: "Kodiak Island",
     lat: 59.1783, lon: -154.087, latDisplay: "59.18°N", lonDisplay: "154.09°W",
@@ -6431,7 +6431,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9456835", waterTempId: "9456835",
+    id: "9456835", waterTempId: "9457292",
     name: "Kukak, Kukak Bay", slug: "kukak-kukak-bay",
     state: "alaska", city: "Kukak, Kukak Bay, AK", region: "Kodiak Island",
     lat: 58.3417, lon: -154.117, latDisplay: "58.34°N", lonDisplay: "154.12°W",
@@ -6453,7 +6453,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9456901", waterTempId: "9456901",
+    id: "9456901", waterTempId: "9457292",
     name: "Aguchik Island, Kukak Bay", slug: "aguchik-island-kukak-bay",
     state: "alaska", city: "Aguchik Island, Kukak Bay, AK", region: "Kodiak Island",
     lat: 58.29, lon: -154.27, latDisplay: "58.29°N", lonDisplay: "154.27°W",
@@ -6475,7 +6475,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9456992", waterTempId: "9456992",
+    id: "9456992", waterTempId: "9457292",
     name: "Takli Island, Shelikof Strait", slug: "takli-island-shelikof-strait",
     state: "alaska", city: "Takli Island, Shelikof Strait, AK", region: "Kodiak Island",
     lat: 58.0633, lon: -154.477, latDisplay: "58.06°N", lonDisplay: "154.48°W",
@@ -6497,7 +6497,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457152", waterTempId: "9457152",
+    id: "9457152", waterTempId: "9457292",
     name: "Tonki Bay", slug: "tonki-bay",
     state: "alaska", city: "Tonki Bay, AK", region: "Kodiak Island",
     lat: 58.31669998168945, lon: -152.06700134277344, latDisplay: "58.32°N", lonDisplay: "152.07°W",
@@ -6519,7 +6519,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457201", waterTempId: "9457201",
+    id: "9457201", waterTempId: "9457292",
     name: "Seal Bay", slug: "seal-bay",
     state: "alaska", city: "Seal Bay, AK", region: "Kodiak Island",
     lat: 58.3717, lon: -152.238, latDisplay: "58.37°N", lonDisplay: "152.24°W",
@@ -6541,7 +6541,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457259", waterTempId: "9457259",
+    id: "9457259", waterTempId: "9457292",
     name: "Andreon Bay, Shuyak Island", slug: "andreon-bay-shuyak-island",
     state: "alaska", city: "Andreon Bay, Shuyak Island, AK", region: "Kodiak Island",
     lat: 58.5183, lon: -152.415, latDisplay: "58.52°N", lonDisplay: "152.41°W",
@@ -6563,7 +6563,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457261", waterTempId: "9457261",
+    id: "9457261", waterTempId: "9457292",
     name: "Kodiak, Port of Kodiak", slug: "kodiak-port-of-kodiak",
     state: "alaska", city: "Kodiak, Port of Kodiak, AK", region: "Kodiak Island",
     lat: 57.7833, lon: -152.428, latDisplay: "57.78°N", lonDisplay: "152.43°W",
@@ -6585,7 +6585,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457262", waterTempId: "9457262",
+    id: "9457262", waterTempId: "9457292",
     name: "Spruce Island (north side)", slug: "spruce-island-north-side",
     state: "alaska", city: "Spruce Island (north side), AK", region: "Kodiak Island",
     lat: 57.9383, lon: -152.417, latDisplay: "57.94°N", lonDisplay: "152.42°W",
@@ -6607,7 +6607,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457271", waterTempId: "9457271",
+    id: "9457271", waterTempId: "9457292",
     name: "Perenosa Bay", slug: "perenosa-bay",
     state: "alaska", city: "Perenosa Bay, AK", region: "Kodiak Island",
     lat: 58.3567, lon: -152.448, latDisplay: "58.36°N", lonDisplay: "152.45°W",
@@ -6629,7 +6629,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457283", waterTempId: "9457283",
+    id: "9457283", waterTempId: "9457292",
     name: "Kodiak, St. Paul Harbor", slug: "kodiak-st-paul-harbor",
     state: "alaska", city: "Kodiak, St. Paul Harbor, AK", region: "Kodiak Island",
     lat: 57.745, lon: -152.483, latDisplay: "57.74°N", lonDisplay: "152.48°W",
@@ -6651,7 +6651,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457287", waterTempId: "9457287",
+    id: "9457287", waterTempId: "9457292",
     name: "Ouzinkie, Spruce Island", slug: "ouzinkie-spruce-island",
     state: "alaska", city: "Ouzinkie, Spruce Island, AK", region: "Kodiak Island",
     lat: 57.9217, lon: -152.498, latDisplay: "57.92°N", lonDisplay: "152.50°W",
@@ -6695,7 +6695,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457293", waterTempId: "9457293",
+    id: "9457293", waterTempId: "9457292",
     name: "Carry Inlet, Shuyak Island", slug: "carry-inlet-shuyak-island",
     state: "alaska", city: "Carry Inlet, Shuyak Island, AK", region: "Kodiak Island",
     lat: 58.5867, lon: -152.513, latDisplay: "58.59°N", lonDisplay: "152.51°W",
@@ -6717,7 +6717,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457313", waterTempId: "9457313",
+    id: "9457313", waterTempId: "9457292",
     name: "Port William, Shuyak Island", slug: "port-william-shuyak-island",
     state: "alaska", city: "Port William, Shuyak Island, AK", region: "Kodiak Island",
     lat: 58.4902229309082, lon: -152.58377075195312, latDisplay: "58.49°N", lonDisplay: "152.58°W",
@@ -6739,7 +6739,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457316", waterTempId: "9457316",
+    id: "9457316", waterTempId: "9457292",
     name: "Redfox Bay, Shuyak Strait", slug: "redfox-bay-shuyak-strait",
     state: "alaska", city: "Redfox Bay, Shuyak Strait, AK", region: "Kodiak Island",
     lat: 58.4533, lon: -152.595, latDisplay: "58.45°N", lonDisplay: "152.59°W",
@@ -6761,7 +6761,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457321", waterTempId: "9457321",
+    id: "9457321", waterTempId: "9457292",
     name: "Big Bay, Shuyak Island", slug: "big-bay-shuyak-island",
     state: "alaska", city: "Big Bay, Shuyak Island, AK", region: "Kodiak Island",
     lat: 58.555, lon: -152.613, latDisplay: "58.55°N", lonDisplay: "152.61°W",
@@ -6783,7 +6783,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457351", waterTempId: "9457351",
+    id: "9457351", waterTempId: "9457292",
     name: "Ugak Bay (Saltery Cove)", slug: "ugak-bay-saltery-cove",
     state: "alaska", city: "Ugak Bay (Saltery Cove), AK", region: "Kodiak Island",
     lat: 57.4817, lon: -152.718, latDisplay: "57.48°N", lonDisplay: "152.72°W",
@@ -6805,7 +6805,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457361", waterTempId: "9457361",
+    id: "9457361", waterTempId: "9457292",
     name: "Fox Bay, Whale Island", slug: "fox-bay-whale-island",
     state: "alaska", city: "Fox Bay, Whale Island, AK", region: "Kodiak Island",
     lat: 57.9783, lon: -152.755, latDisplay: "57.98°N", lonDisplay: "152.75°W",
@@ -6827,7 +6827,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457376", waterTempId: "9457376",
+    id: "9457376", waterTempId: "9457292",
     name: "Uzkosti Point", slug: "uzkosti-point",
     state: "alaska", city: "Uzkosti Point, AK", region: "Kodiak Island",
     lat: 57.9283, lon: -152.812, latDisplay: "57.93°N", lonDisplay: "152.81°W",
@@ -6849,7 +6849,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457391", waterTempId: "9457391",
+    id: "9457391", waterTempId: "9457292",
     name: "Port Lions, AK", slug: "port-lions-ak",
     state: "alaska", city: "Port Lions, AK, AK", region: "Kodiak Island",
     lat: 57.87347222222222, lon: -152.8671111111111, latDisplay: "57.87°N", lonDisplay: "152.87°W",
@@ -6871,7 +6871,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457401", waterTempId: "9457401",
+    id: "9457401", waterTempId: "9457292",
     name: "Kizhuyak Bay", slug: "kizhuyak-bay",
     state: "alaska", city: "Kizhuyak Bay, AK", region: "Kodiak Island",
     lat: 57.82, lon: -152.9, latDisplay: "57.82°N", lonDisplay: "152.90°W",
@@ -6893,7 +6893,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457407", waterTempId: "9457407",
+    id: "9457407", waterTempId: "9457292",
     name: "Nachalni Island", slug: "nachalni-island",
     state: "alaska", city: "Nachalni Island, AK", region: "Kodiak Island",
     lat: 57.9783, lon: -152.925, latDisplay: "57.98°N", lonDisplay: "152.93°W",
@@ -6915,7 +6915,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457479", waterTempId: "9457479",
+    id: "9457479", waterTempId: "9457804",
     name: "Port Hobron, Sitkalidak Island", slug: "port-hobron-sitkalidak-island",
     state: "alaska", city: "Port Hobron, Sitkalidak Island, AK", region: "Kodiak Island",
     lat: 57.1633, lon: -153.152, latDisplay: "57.16°N", lonDisplay: "153.15°W",
@@ -6937,7 +6937,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457481", waterTempId: "9457481",
+    id: "9457481", waterTempId: "9457292",
     name: "Dolphin Point, Raspberry Strait", slug: "dolphin-point-raspberry-strait",
     state: "alaska", city: "Dolphin Point, Raspberry Strait, AK", region: "Kodiak Island",
     lat: 58.11, lon: -153.155, latDisplay: "58.11°N", lonDisplay: "153.16°W",
@@ -6959,7 +6959,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457493", waterTempId: "9457493",
+    id: "9457493", waterTempId: "9457292",
     name: "Terror Bay", slug: "terror-bay",
     state: "alaska", city: "Terror Bay, AK", region: "Kodiak Island",
     lat: 57.74402777777778, lon: -153.1954722222222, latDisplay: "57.74°N", lonDisplay: "153.20°W",
@@ -6981,7 +6981,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457527", waterTempId: "9457527",
+    id: "9457527", waterTempId: "9457804",
     name: "Old Harbor", slug: "old-harbor",
     state: "alaska", city: "Old Harbor, AK", region: "Kodiak Island",
     lat: 57.20277777777778, lon: -153.3038888888889, latDisplay: "57.20°N", lonDisplay: "153.30°W",
@@ -7003,7 +7003,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457535", waterTempId: "9457535",
+    id: "9457535", waterTempId: "9457292",
     name: "West Raspberry Island", slug: "west-raspberry-island",
     state: "alaska", city: "West Raspberry Island, AK", region: "Kodiak Island",
     lat: 58.10716666666666, lon: -153.3401111111111, latDisplay: "58.11°N", lonDisplay: "153.34°W",
@@ -7025,7 +7025,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457634", waterTempId: "9457634",
+    id: "9457634", waterTempId: "9457804",
     name: "Japanese Bay", slug: "japanese-bay",
     state: "alaska", city: "Japanese Bay, AK", region: "Kodiak Island",
     lat: 56.96, lon: -153.687, latDisplay: "56.96°N", lonDisplay: "153.69°W",
@@ -7047,7 +7047,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457648", waterTempId: "9457648",
+    id: "9457648", waterTempId: "9457292",
     name: "Zachar Bay", slug: "zachar-bay",
     state: "alaska", city: "Zachar Bay, AK", region: "Kodiak Island",
     lat: 57.5483, lon: -153.735, latDisplay: "57.55°N", lonDisplay: "153.74°W",
@@ -7069,7 +7069,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457671", waterTempId: "9457671",
+    id: "9457671", waterTempId: "9457804",
     name: "Mining Camp", slug: "mining-camp",
     state: "alaska", city: "Mining Camp, AK", region: "Kodiak Island",
     lat: 57.46, lon: -153.817, latDisplay: "57.46°N", lonDisplay: "153.82°W",
@@ -7091,7 +7091,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457724", waterTempId: "9457724",
+    id: "9457724", waterTempId: "9457804",
     name: "Larsen Bay", slug: "larsen-bay",
     state: "alaska", city: "Larsen Bay, AK", region: "Kodiak Island",
     lat: 57.5333, lon: -153.99, latDisplay: "57.53°N", lonDisplay: "153.99°W",
@@ -7113,7 +7113,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457773", waterTempId: "9457773",
+    id: "9457773", waterTempId: "9457804",
     name: "Moser Bay (Trap Point)", slug: "moser-bay-trap-point",
     state: "alaska", city: "Moser Bay (Trap Point), AK", region: "Kodiak Island",
     lat: 57.0017, lon: -154.148, latDisplay: "57.00°N", lonDisplay: "154.15°W",
@@ -7135,7 +7135,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457798", waterTempId: "9457798",
+    id: "9457798", waterTempId: "9457804",
     name: "Olga Bay (A. P. A. Cannery)", slug: "olga-bay-a-p-a-cannery",
     state: "alaska", city: "Olga Bay (A. P. A. Cannery), AK", region: "Kodiak Island",
     lat: 57.1617, lon: -154.228, latDisplay: "57.16°N", lonDisplay: "154.23°W",
@@ -7179,7 +7179,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9458209", waterTempId: "9458209",
+    id: "9458209", waterTempId: "9457804",
     name: "Puale Bay", slug: "puale-bay",
     state: "alaska", city: "Puale Bay, AK", region: "Kodiak Island",
     lat: 57.7067, lon: -155.393, latDisplay: "57.71°N", lonDisplay: "155.39°W",
@@ -7201,7 +7201,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9458293", waterTempId: "9458293",
+    id: "9458293", waterTempId: "9457804",
     name: "Chirikof Island", slug: "chirikof-island",
     state: "alaska", city: "Chirikof Island, AK", region: "Kodiak Island",
     lat: 55.8083, lon: -155.74, latDisplay: "55.81°N", lonDisplay: "155.74°W",
@@ -7223,7 +7223,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9458365", waterTempId: "9458365",
+    id: "9458365", waterTempId: "9457804",
     name: "Kanatak Lagoon, Portage Bay", slug: "kanatak-lagoon-portage-bay",
     state: "alaska", city: "Kanatak Lagoon, Portage Bay, AK", region: "Kodiak Island",
     lat: 57.52000045776367, lon: -156.052001953125, latDisplay: "57.52°N", lonDisplay: "156.05°W",
@@ -7245,7 +7245,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9458519", waterTempId: "9458519",
+    id: "9458519", waterTempId: "9457804",
     name: "Chowiet Island, Semidi Island", slug: "chowiet-island-semidi-island",
     state: "alaska", city: "Chowiet Island, Semidi Island, AK", region: "Kodiak Island",
     lat: 56.0517, lon: -156.698, latDisplay: "56.05°N", lonDisplay: "156.70°W",
@@ -7267,7 +7267,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9458762", waterTempId: "9458762",
+    id: "9458762", waterTempId: "9463502",
     name: "Unavikshak Island", slug: "unavikshak-island",
     state: "alaska", city: "Unavikshak Island, AK", region: "Western Alaska / Aleutians",
     lat: 56.4917, lon: -157.74, latDisplay: "56.49°N", lonDisplay: "157.74°W",
@@ -7289,7 +7289,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9458779", waterTempId: "9458779",
+    id: "9458779", waterTempId: "9463502",
     name: "Nakchamik Island", slug: "nakchamik-island",
     state: "alaska", city: "Nakchamik Island, AK", region: "Western Alaska / Aleutians",
     lat: 56.3517, lon: -157.812, latDisplay: "56.35°N", lonDisplay: "157.81°W",
@@ -7311,7 +7311,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9458819", waterTempId: "9458819",
+    id: "9458819", waterTempId: "9463502",
     name: "Kujulik Bay (North Shore)", slug: "kujulik-bay-north-shore",
     state: "alaska", city: "Kujulik Bay (North Shore), AK", region: "Western Alaska / Aleutians",
     lat: 56.6133, lon: -157.983, latDisplay: "56.61°N", lonDisplay: "157.98°W",
@@ -7333,7 +7333,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9458849", waterTempId: "9458849",
+    id: "9458849", waterTempId: "9463502",
     name: "Chankliut Island", slug: "chankliut-island",
     state: "alaska", city: "Chankliut Island, AK", region: "Western Alaska / Aleutians",
     lat: 56.1467, lon: -158.107, latDisplay: "56.15°N", lonDisplay: "158.11°W",
@@ -7355,7 +7355,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9458907", waterTempId: "9458907",
+    id: "9458907", waterTempId: "9463502",
     name: "Castle Bay, Northwest Arm", slug: "castle-bay-northwest-arm",
     state: "alaska", city: "Castle Bay, Northwest Arm, AK", region: "Western Alaska / Aleutians",
     lat: 56.2317, lon: -158.347, latDisplay: "56.23°N", lonDisplay: "158.35°W",
@@ -7377,7 +7377,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9458917", waterTempId: "9458917",
+    id: "9458917", waterTempId: "9463502",
     name: "Chignik, Anchorage Bay", slug: "chignik-anchorage-bay",
     state: "alaska", city: "Chignik, Anchorage Bay, AK", region: "Western Alaska / Aleutians",
     lat: 56.2967, lon: -158.4, latDisplay: "56.30°N", lonDisplay: "158.40°W",
@@ -7399,7 +7399,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9458964", waterTempId: "9458964",
+    id: "9458964", waterTempId: "9463502",
     name: "Hump Island, Kuiukta Bay", slug: "hump-island-kuiukta-bay",
     state: "alaska", city: "Hump Island, Kuiukta Bay, AK", region: "Western Alaska / Aleutians",
     lat: 56.1133, lon: -158.598, latDisplay: "56.11°N", lonDisplay: "158.60°W",
@@ -7421,7 +7421,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9459016", waterTempId: "9459016",
+    id: "9459016", waterTempId: "9463502",
     name: "Mitrofania Island", slug: "mitrofania-island",
     state: "alaska", city: "Mitrofania Island, AK", region: "Western Alaska / Aleutians",
     lat: 55.89, lon: -158.82, latDisplay: "55.89°N", lonDisplay: "158.82°W",
@@ -7443,7 +7443,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9459085", waterTempId: "9459085",
+    id: "9459085", waterTempId: "9463502",
     name: "Chiachi Island (east side)", slug: "chiachi-island-east-side",
     state: "alaska", city: "Chiachi Island (east side), AK", region: "Western Alaska / Aleutians",
     lat: 55.8433, lon: -159.105, latDisplay: "55.84°N", lonDisplay: "159.10°W",
@@ -7465,7 +7465,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9459145", waterTempId: "9459145",
+    id: "9459145", waterTempId: "9463502",
     name: "Kupreanof Harbor, Paul Island", slug: "kupreanof-harbor-paul-island",
     state: "alaska", city: "Kupreanof Harbor, Paul Island, AK", region: "Western Alaska / Aleutians",
     lat: 55.79, lon: -159.35, latDisplay: "55.79°N", lonDisplay: "159.35°W",
@@ -7487,7 +7487,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9459163", waterTempId: "9459163",
+    id: "9459163", waterTempId: "9459450",
     name: "Herendeen Island, Shumagin Islands", slug: "herendeen-island-shumagin-islands",
     state: "alaska", city: "Herendeen Island, Shumagin Islands, AK", region: "Western Alaska / Aleutians",
     lat: 55.06555555555556, lon: -159.4186666666667, latDisplay: "55.07°N", lonDisplay: "159.42°W",
@@ -7509,7 +7509,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9459181", waterTempId: "9459181",
+    id: "9459181", waterTempId: "9463502",
     name: "Ivanof Bay", slug: "ivanof-bay",
     state: "alaska", city: "Ivanof Bay, AK", region: "Western Alaska / Aleutians",
     lat: 55.90011215209961, lon: -159.4912567138672, latDisplay: "55.90°N", lonDisplay: "159.49°W",
@@ -7531,7 +7531,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9459251", waterTempId: "9459251",
+    id: "9459251", waterTempId: "9459450",
     name: "Bird Island", slug: "bird-island",
     state: "alaska", city: "Bird Island, AK", region: "Western Alaska / Aleutians",
     lat: 54.83522222222222, lon: -159.7595555555556, latDisplay: "54.84°N", lonDisplay: "159.76°W",
@@ -7553,7 +7553,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9459281", waterTempId: "9459281",
+    id: "9459281", waterTempId: "9463502",
     name: "Dent Point, Stepovak Bay", slug: "dent-point-stepovak-bay",
     state: "alaska", city: "Dent Point, Stepovak Bay, AK", region: "Western Alaska / Aleutians",
     lat: 55.7833, lon: -159.88, latDisplay: "55.78°N", lonDisplay: "159.88°W",
@@ -7575,7 +7575,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9459311", waterTempId: "9459311",
+    id: "9459311", waterTempId: "9459450",
     name: "Sanborn Harbor, Nagai Island", slug: "sanborn-harbor-nagai-island",
     state: "alaska", city: "Sanborn Harbor, Nagai Island, AK", region: "Western Alaska / Aleutians",
     lat: 55.155, lon: -159.995, latDisplay: "55.16°N", lonDisplay: "160.00°W",
@@ -7597,7 +7597,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9459398", waterTempId: "9459398",
+    id: "9459398", waterTempId: "9459450",
     name: "Pirate Cove, Popof Island", slug: "pirate-cove-popof-island",
     state: "alaska", city: "Pirate Cove, Popof Island, AK", region: "Western Alaska / Aleutians",
     lat: 55.3617, lon: -160.36, latDisplay: "55.36°N", lonDisplay: "160.36°W",
@@ -7641,7 +7641,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9459464", waterTempId: "9459464",
+    id: "9459464", waterTempId: "9459450",
     name: "Albatross Anchorage, Balboa Bay", slug: "albatross-anchorage-balboa-bay",
     state: "alaska", city: "Albatross Anchorage, Balboa Bay, AK", region: "Western Alaska / Aleutians",
     lat: 55.59, lon: -160.613, latDisplay: "55.59°N", lonDisplay: "160.61°W",
@@ -7663,7 +7663,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9459465", waterTempId: "9459465",
+    id: "9459465", waterTempId: "9459450",
     name: "Zachary Bay, Unga Island", slug: "zachary-bay-unga-island",
     state: "alaska", city: "Zachary Bay, Unga Island, AK", region: "Western Alaska / Aleutians",
     lat: 55.334999084472656, lon: -160.61700439453125, latDisplay: "55.33°N", lonDisplay: "160.62°W",
@@ -7685,7 +7685,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9459522", waterTempId: "9459522",
+    id: "9459522", waterTempId: "9459450",
     name: "Beaver Bay", slug: "beaver-bay",
     state: "alaska", city: "Beaver Bay, AK", region: "Western Alaska / Aleutians",
     lat: 55.4733, lon: -160.84, latDisplay: "55.47°N", lonDisplay: "160.84°W",
@@ -7707,7 +7707,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9459643", waterTempId: "9459643",
+    id: "9459643", waterTempId: "9459450",
     name: "Seal Cape, Coal Bay", slug: "seal-cape-coal-bay",
     state: "alaska", city: "Seal Cape, Coal Bay, AK", region: "Western Alaska / Aleutians",
     lat: 55.365, lon: -161.325, latDisplay: "55.37°N", lonDisplay: "161.32°W",
@@ -7729,7 +7729,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9459696", waterTempId: "9459696",
+    id: "9459696", waterTempId: "9459881",
     name: "Ukolnoi Island", slug: "ukolnoi-island",
     state: "alaska", city: "Ukolnoi Island, AK", region: "Western Alaska / Aleutians",
     lat: 55.2583, lon: -161.537, latDisplay: "55.26°N", lonDisplay: "161.54°W",
@@ -7751,7 +7751,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9459758", waterTempId: "9459758",
+    id: "9459758", waterTempId: "9459881",
     name: "Dolgoi Harbor, Dolgoi Island", slug: "dolgoi-harbor-dolgoi-island",
     state: "alaska", city: "Dolgoi Harbor, Dolgoi Island, AK", region: "Western Alaska / Aleutians",
     lat: 55.121700286865234, lon: -161.79200744628906, latDisplay: "55.12°N", lonDisplay: "161.79°W",
@@ -7795,7 +7795,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9459895", waterTempId: "9459895",
+    id: "9459895", waterTempId: "9459881",
     name: "Lenard Harbor, Cold Bay", slug: "lenard-harbor-cold-bay",
     state: "alaska", city: "Lenard Harbor, Cold Bay, AK", region: "Western Alaska / Aleutians",
     lat: 55.1183, lon: -162.378, latDisplay: "55.12°N", lonDisplay: "162.38°W",
@@ -7817,7 +7817,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9459939", waterTempId: "9459939",
+    id: "9459939", waterTempId: "9459881",
     name: "Peterson Bay", slug: "peterson-bay",
     state: "alaska", city: "Peterson Bay, AK", region: "Western Alaska / Aleutians",
     lat: 54.3933, lon: -162.637, latDisplay: "54.39°N", lonDisplay: "162.64°W",
@@ -7839,7 +7839,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9459949", waterTempId: "9459949",
+    id: "9459949", waterTempId: "9459881",
     name: "Cold Bay", slug: "cold-bay",
     state: "alaska", city: "Cold Bay, AK", region: "Western Alaska / Aleutians",
     lat: 55.2083, lon: -162.698, latDisplay: "55.21°N", lonDisplay: "162.70°W",
@@ -7861,7 +7861,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9459968", waterTempId: "9459968",
+    id: "9459968", waterTempId: "9459881",
     name: "Sanak Harbor", slug: "sanak-harbor",
     state: "alaska", city: "Sanak Harbor, AK", region: "Western Alaska / Aleutians",
     lat: 54.4817, lon: -162.812, latDisplay: "54.48°N", lonDisplay: "162.81°W",
@@ -7883,7 +7883,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9460150", waterTempId: "9460150",
+    id: "9460150", waterTempId: "9461380",
     name: "MASSACRE BAY", slug: "massacre-bay",
     state: "alaska", city: "MASSACRE BAY, AK", region: "Southeast Alaska",
     lat: 52.84000015258789, lon: 173.19500732421875, latDisplay: "52.84°N", lonDisplay: "173.20°E",
@@ -7905,7 +7905,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9461081", waterTempId: "9461081",
+    id: "9461081", waterTempId: "9461380",
     name: "Ogliuga Island (east coast)", slug: "ogliuga-island-east-coast",
     state: "alaska", city: "Ogliuga Island (east coast), AK", region: "Western Alaska / Aleutians",
     lat: 51.6033, lon: -178.617, latDisplay: "51.60°N", lonDisplay: "178.62°W",
@@ -7927,7 +7927,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9461132", waterTempId: "9461132",
+    id: "9461132", waterTempId: "9461380",
     name: "Lash Bay", slug: "lash-bay",
     state: "alaska", city: "Lash Bay, AK", region: "Western Alaska / Aleutians",
     lat: 51.6717, lon: -178.045, latDisplay: "51.67°N", lonDisplay: "178.04°W",
@@ -7949,7 +7949,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9461138", waterTempId: "9461138",
+    id: "9461138", waterTempId: "9461380",
     name: "Tanaga Bay", slug: "tanaga-bay",
     state: "alaska", city: "Tanaga Bay, AK", region: "Western Alaska / Aleutians",
     lat: 51.7183, lon: -177.997, latDisplay: "51.72°N", lonDisplay: "178.00°W",
@@ -7971,7 +7971,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9461162", waterTempId: "9461162",
+    id: "9461162", waterTempId: "9461380",
     name: "Hot Springs Bay", slug: "hot-springs-bay",
     state: "alaska", city: "Hot Springs Bay, AK", region: "Western Alaska / Aleutians",
     lat: 51.7783, lon: -177.8, latDisplay: "51.78°N", lonDisplay: "177.80°W",
@@ -7993,7 +7993,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9461183", waterTempId: "9461183",
+    id: "9461183", waterTempId: "9461380",
     name: "Cape Chunu", slug: "cape-chunu",
     state: "alaska", city: "Cape Chunu, AK", region: "Western Alaska / Aleutians",
     lat: 51.665, lon: -177.637, latDisplay: "51.66°N", lonDisplay: "177.64°W",
@@ -8015,7 +8015,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9461264", waterTempId: "9461264",
+    id: "9461264", waterTempId: "9461380",
     name: "Kanaga Bay", slug: "kanaga-bay",
     state: "alaska", city: "Kanaga Bay, AK", region: "Western Alaska / Aleutians",
     lat: 51.7183, lon: -177.2, latDisplay: "51.72°N", lonDisplay: "177.20°W",
@@ -8037,7 +8037,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9461276", waterTempId: "9461276",
+    id: "9461276", waterTempId: "9461380",
     name: "Cape Chlanak", slug: "cape-chlanak",
     state: "alaska", city: "Cape Chlanak, AK", region: "Western Alaska / Aleutians",
     lat: 51.71, lon: -177.145, latDisplay: "51.71°N", lonDisplay: "177.15°W",
@@ -8059,7 +8059,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9461292", waterTempId: "9461292",
+    id: "9461292", waterTempId: "9461380",
     name: "Shoal Point", slug: "shoal-point",
     state: "alaska", city: "Shoal Point, AK", region: "Western Alaska / Aleutians",
     lat: 51.87, lon: -177.068, latDisplay: "51.87°N", lonDisplay: "177.07°W",
@@ -8081,7 +8081,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9461337", waterTempId: "9461337",
+    id: "9461337", waterTempId: "9461380",
     name: "Bay of Waterfalls", slug: "bay-of-waterfalls",
     state: "alaska", city: "Bay of Waterfalls, AK", region: "Western Alaska / Aleutians",
     lat: 51.6417, lon: -176.825, latDisplay: "51.64°N", lonDisplay: "176.82°W",
@@ -8103,7 +8103,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9461341", waterTempId: "9461341",
+    id: "9461341", waterTempId: "9461380",
     name: "Unalga Bight", slug: "unalga-bight",
     state: "alaska", city: "Unalga Bight, AK", region: "Western Alaska / Aleutians",
     lat: 51.78, lon: -176.807, latDisplay: "51.78°N", lonDisplay: "176.81°W",
@@ -8147,7 +8147,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9461391", waterTempId: "9461391",
+    id: "9461391", waterTempId: "9461380",
     name: "Boot Bay", slug: "boot-bay",
     state: "alaska", city: "Boot Bay, AK", region: "Western Alaska / Aleutians",
     lat: 51.7133, lon: -176.53, latDisplay: "51.71°N", lonDisplay: "176.53°W",
@@ -8169,7 +8169,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9461406", waterTempId: "9461406",
+    id: "9461406", waterTempId: "9461380",
     name: "Adak Bight", slug: "adak-bight",
     state: "alaska", city: "Adak Bight, AK", region: "Western Alaska / Aleutians",
     lat: 51.77, lon: -176.435, latDisplay: "51.77°N", lonDisplay: "176.44°W",
@@ -8191,7 +8191,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9461411", waterTempId: "9461411",
+    id: "9461411", waterTempId: "9461380",
     name: "Laska Cove, Kagalaska Island", slug: "laska-cove-kagalaska-island",
     state: "alaska", city: "Laska Cove, Kagalaska Island, AK", region: "Western Alaska / Aleutians",
     lat: 51.825, lon: -176.402, latDisplay: "51.83°N", lonDisplay: "176.40°W",
@@ -8213,7 +8213,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9461453", waterTempId: "9461453",
+    id: "9461453", waterTempId: "9461380",
     name: "Sand Bay, Great Sitkin Island", slug: "sand-bay-great-sitkin-island",
     state: "alaska", city: "Sand Bay, Great Sitkin Island, AK", region: "Western Alaska / Aleutians",
     lat: 51.9733, lon: -176.085, latDisplay: "51.97°N", lonDisplay: "176.09°W",
@@ -8235,7 +8235,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9461467", waterTempId: "9461467",
+    id: "9461467", waterTempId: "9461380",
     name: "Bugle Point, Great Sitkin Island", slug: "bugle-point-great-sitkin-island",
     state: "alaska", city: "Bugle Point, Great Sitkin Island, AK", region: "Western Alaska / Aleutians",
     lat: 52.0383, lon: -175.98, latDisplay: "52.04°N", lonDisplay: "175.98°W",
@@ -8257,7 +8257,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9461519", waterTempId: "9461519",
+    id: "9461519", waterTempId: "9461380",
     name: "Fenimore Pass", slug: "fenimore-pass",
     state: "alaska", city: "Fenimore Pass, AK", region: "Western Alaska / Aleutians",
     lat: 51.96, lon: -175.588, latDisplay: "51.96°N", lonDisplay: "175.59°W",
@@ -8279,7 +8279,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9461555", waterTempId: "9461555",
+    id: "9461555", waterTempId: "9461710",
     name: "Atka Pass, east end", slug: "atka-pass-east-end",
     state: "alaska", city: "Atka Pass, east end, AK", region: "Western Alaska / Aleutians",
     lat: 52.0067, lon: -175.32, latDisplay: "52.01°N", lonDisplay: "175.32°W",
@@ -8301,7 +8301,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9461582", waterTempId: "9461582",
+    id: "9461582", waterTempId: "9461710",
     name: "Bechevin Bay", slug: "bechevin-bay",
     state: "alaska", city: "Bechevin Bay, AK", region: "Western Alaska / Aleutians",
     lat: 52.0367, lon: -175.115, latDisplay: "52.04°N", lonDisplay: "175.12°W",
@@ -8323,7 +8323,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9461656", waterTempId: "9461656",
+    id: "9461656", waterTempId: "9461710",
     name: "Explorer Bay", slug: "explorer-bay",
     state: "alaska", city: "Explorer Bay, AK", region: "Western Alaska / Aleutians",
     lat: 52.0733, lon: -174.568, latDisplay: "52.07°N", lonDisplay: "174.57°W",
@@ -8345,7 +8345,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9461667", waterTempId: "9461667",
+    id: "9461667", waterTempId: "9461710",
     name: "Sagchudak Island", slug: "sagchudak-island",
     state: "alaska", city: "Sagchudak Island, AK", region: "Western Alaska / Aleutians",
     lat: 52.0267, lon: -174.48, latDisplay: "52.03°N", lonDisplay: "174.48°W",
@@ -8367,7 +8367,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9461693", waterTempId: "9461693",
+    id: "9461693", waterTempId: "9461710",
     name: "Martin Harbor, Korovin Bay", slug: "martin-harbor-korovin-bay",
     state: "alaska", city: "Martin Harbor, Korovin Bay, AK", region: "Western Alaska / Aleutians",
     lat: 52.2267, lon: -174.292, latDisplay: "52.23°N", lonDisplay: "174.29°W",
@@ -8389,7 +8389,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9461704", waterTempId: "9461704",
+    id: "9461704", waterTempId: "9461710",
     name: "Cape Utalug (4 miles west of)", slug: "cape-utalug-4-miles-west-of",
     state: "alaska", city: "Cape Utalug (4 miles west of), AK", region: "Western Alaska / Aleutians",
     lat: 52.1183, lon: -174.207, latDisplay: "52.12°N", lonDisplay: "174.21°W",
@@ -8433,7 +8433,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9461945", waterTempId: "9461945",
+    id: "9461945", waterTempId: "9461710",
     name: "Finch Cove, Seguam Island", slug: "finch-cove-seguam-island",
     state: "alaska", city: "Finch Cove, Seguam Island, AK", region: "Western Alaska / Aleutians",
     lat: 52.3917, lon: -172.405, latDisplay: "52.39°N", lonDisplay: "172.41°W",
@@ -8455,7 +8455,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462144", waterTempId: "9462144",
+    id: "9462144", waterTempId: "9461710",
     name: "North side", slug: "north-side",
     state: "alaska", city: "North side, AK", region: "Western Alaska / Aleutians",
     lat: 52.6817, lon: -170.707, latDisplay: "52.68°N", lonDisplay: "170.71°W",
@@ -8477,7 +8477,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462161", waterTempId: "9462161",
+    id: "9462161", waterTempId: "9461710",
     name: "East Cove", slug: "east-cove",
     state: "alaska", city: "East Cove, AK", region: "Western Alaska / Aleutians",
     lat: 52.6533, lon: -170.563, latDisplay: "52.65°N", lonDisplay: "170.56°W",
@@ -8499,7 +8499,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462239", waterTempId: "9462239",
+    id: "9462239", waterTempId: "9462620",
     name: "Applegate Cove, Chuginadak Island", slug: "applegate-cove-chuginadak-island",
     state: "alaska", city: "Applegate Cove, Chuginadak Island, AK", region: "Western Alaska / Aleutians",
     lat: 52.8617, lon: -169.862, latDisplay: "52.86°N", lonDisplay: "169.86°W",
@@ -8521,7 +8521,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462317", waterTempId: "9462317",
+    id: "9462317", waterTempId: "9462620",
     name: "Adugak Island", slug: "adugak-island",
     state: "alaska", city: "Adugak Island, AK", region: "Western Alaska / Aleutians",
     lat: 52.9117, lon: -169.165, latDisplay: "52.91°N", lonDisplay: "169.16°W",
@@ -8543,7 +8543,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462331", waterTempId: "9462331",
+    id: "9462331", waterTempId: "9462620",
     name: "Cape Sagak", slug: "cape-sagak",
     state: "alaska", city: "Cape Sagak, AK", region: "Western Alaska / Aleutians",
     lat: 52.8417, lon: -169.043, latDisplay: "52.84°N", lonDisplay: "169.04°W",
@@ -8565,7 +8565,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462354", waterTempId: "9462354",
+    id: "9462354", waterTempId: "9462620",
     name: "Okee Bay", slug: "okee-bay",
     state: "alaska", city: "Okee Bay, AK", region: "Western Alaska / Aleutians",
     lat: 53.0167, lon: -168.835, latDisplay: "53.02°N", lonDisplay: "168.84°W",
@@ -8587,7 +8587,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462367", waterTempId: "9462367",
+    id: "9462367", waterTempId: "9462620",
     name: "Driftwood Bay", slug: "driftwood-bay",
     state: "alaska", city: "Driftwood Bay, AK", region: "Western Alaska / Aleutians",
     lat: 52.9583, lon: -168.72, latDisplay: "52.96°N", lonDisplay: "168.72°W",
@@ -8609,7 +8609,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462398", waterTempId: "9462398",
+    id: "9462398", waterTempId: "9462620",
     name: "Kigul Island", slug: "kigul-island",
     state: "alaska", city: "Kigul Island, AK", region: "Western Alaska / Aleutians",
     lat: 53.045, lon: -168.442, latDisplay: "53.05°N", lonDisplay: "168.44°W",
@@ -8631,7 +8631,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462408", waterTempId: "9462408",
+    id: "9462408", waterTempId: "9462620",
     name: "Inanudak Bay", slug: "inanudak-bay",
     state: "alaska", city: "Inanudak Bay, AK", region: "Western Alaska / Aleutians",
     lat: 53.2967, lon: -168.352, latDisplay: "53.30°N", lonDisplay: "168.35°W",
@@ -8653,7 +8653,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462444", waterTempId: "9462444",
+    id: "9462444", waterTempId: "9462620",
     name: "Bogoslof Island", slug: "bogoslof-island",
     state: "alaska", city: "Bogoslof Island, AK", region: "Western Alaska / Aleutians",
     lat: 53.93, lon: -168.033, latDisplay: "53.93°N", lonDisplay: "168.03°W",
@@ -8675,7 +8675,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462450", waterTempId: "9462450",
+    id: "9462450", waterTempId: "9462620",
     name: "Nikolski", slug: "nikolski",
     state: "alaska", city: "Nikolski, AK", region: "Western Alaska / Aleutians",
     lat: 52.94061, lon: -168.8713055557675, latDisplay: "52.94°N", lonDisplay: "168.87°W",
@@ -8697,7 +8697,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462465", waterTempId: "9462465",
+    id: "9462465", waterTempId: "9462620",
     name: "Otter Point", slug: "otter-point",
     state: "alaska", city: "Otter Point, AK", region: "Western Alaska / Aleutians",
     lat: 53.3967, lon: -167.843, latDisplay: "53.40°N", lonDisplay: "167.84°W",
@@ -8719,7 +8719,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462501", waterTempId: "9462501",
+    id: "9462501", waterTempId: "9462620",
     name: "Chernofski Harbor", slug: "chernofski-harbor",
     state: "alaska", city: "Chernofski Harbor, AK", region: "Western Alaska / Aleutians",
     lat: 53.395, lon: -167.533, latDisplay: "53.40°N", lonDisplay: "167.53°W",
@@ -8741,7 +8741,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462554", waterTempId: "9462554",
+    id: "9462554", waterTempId: "9462620",
     name: "Skan Bay", slug: "skan-bay",
     state: "alaska", city: "Skan Bay, AK", region: "Western Alaska / Aleutians",
     lat: 53.61, lon: -167.045, latDisplay: "53.61°N", lonDisplay: "167.04°W",
@@ -8763,7 +8763,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462557", waterTempId: "9462557",
+    id: "9462557", waterTempId: "9462620",
     name: "Kuliliak Bay", slug: "kuliliak-bay",
     state: "alaska", city: "Kuliliak Bay, AK", region: "Western Alaska / Aleutians",
     lat: 53.4617, lon: -167.02, latDisplay: "53.46°N", lonDisplay: "167.02°W",
@@ -8785,7 +8785,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462573", waterTempId: "9462573",
+    id: "9462573", waterTempId: "9462620",
     name: "Raven Bay", slug: "raven-bay",
     state: "alaska", city: "Raven Bay, AK", region: "Western Alaska / Aleutians",
     lat: 53.475, lon: -166.873, latDisplay: "53.48°N", lonDisplay: "166.87°W",
@@ -8807,7 +8807,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462578", waterTempId: "9462578",
+    id: "9462578", waterTempId: "9462620",
     name: "Anderson Bay", slug: "anderson-bay",
     state: "alaska", city: "Anderson Bay, AK", region: "Western Alaska / Aleutians",
     lat: 53.6783, lon: -166.832, latDisplay: "53.68°N", lonDisplay: "166.83°W",
@@ -8829,7 +8829,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462582", waterTempId: "9462582",
+    id: "9462582", waterTempId: "9462620",
     name: "Usof Bay", slug: "usof-bay",
     state: "alaska", city: "Usof Bay, AK", region: "Western Alaska / Aleutians",
     lat: 53.515, lon: -166.79, latDisplay: "53.52°N", lonDisplay: "166.79°W",
@@ -8851,7 +8851,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462606", waterTempId: "9462606",
+    id: "9462606", waterTempId: "9462620",
     name: "Kisselen Bay, Beaver Inlet", slug: "kisselen-bay-beaver-inlet",
     state: "alaska", city: "Kisselen Bay, Beaver Inlet, AK", region: "Western Alaska / Aleutians",
     lat: 53.7133, lon: -166.572, latDisplay: "53.71°N", lonDisplay: "166.57°W",
@@ -8873,7 +8873,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462611", waterTempId: "9462611",
+    id: "9462611", waterTempId: "9462620",
     name: "Dutch Harbor, Amaknak Island", slug: "dutch-harbor-amaknak-island",
     state: "alaska", city: "Dutch Harbor, Amaknak Island, AK", region: "Western Alaska / Aleutians",
     lat: 53.8917, lon: -166.537, latDisplay: "53.89°N", lonDisplay: "166.54°W",
@@ -8917,7 +8917,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462637", waterTempId: "9462637",
+    id: "9462637", waterTempId: "9462620",
     name: "Udagak Strait", slug: "udagak-strait",
     state: "alaska", city: "Udagak Strait, AK", region: "Western Alaska / Aleutians",
     lat: 53.7367, lon: -166.295, latDisplay: "53.74°N", lonDisplay: "166.29°W",
@@ -8939,7 +8939,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462641", waterTempId: "9462641",
+    id: "9462641", waterTempId: "9462620",
     name: "English Bay", slug: "english-bay",
     state: "alaska", city: "English Bay, AK", region: "Western Alaska / Aleutians",
     lat: 53.925, lon: -166.257, latDisplay: "53.92°N", lonDisplay: "166.26°W",
@@ -8961,7 +8961,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462645", waterTempId: "9462645",
+    id: "9462645", waterTempId: "9462620",
     name: "Udamat Bay, Sedanka Island", slug: "udamat-bay-sedanka-island",
     state: "alaska", city: "Udamat Bay, Sedanka Island, AK", region: "Western Alaska / Aleutians",
     lat: 53.82891666666667, lon: -166.21625, latDisplay: "53.83°N", lonDisplay: "166.22°W",
@@ -8983,7 +8983,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462662", waterTempId: "9462662",
+    id: "9462662", waterTempId: "9462620",
     name: "Reef Bight, Akutan Island", slug: "reef-bight-akutan-island",
     state: "alaska", city: "Reef Bight, Akutan Island, AK", region: "Western Alaska / Aleutians",
     lat: 54.13072222222223, lon: -166.0993333333333, latDisplay: "54.13°N", lonDisplay: "166.10°W",
@@ -9005,7 +9005,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462676", waterTempId: "9462676",
+    id: "9462676", waterTempId: "9462620",
     name: "Broad Bight, Akutan Island", slug: "broad-bight-akutan-island",
     state: "alaska", city: "Broad Bight, Akutan Island, AK", region: "Western Alaska / Aleutians",
     lat: 54.06458333333333, lon: -165.9370555555556, latDisplay: "54.06°N", lonDisplay: "165.94°W",
@@ -9027,7 +9027,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462691", waterTempId: "9462691",
+    id: "9462691", waterTempId: "9462620",
     name: "Akutan Harbor, Akutan Island", slug: "akutan-harbor-akutan-island",
     state: "alaska", city: "Akutan Harbor, Akutan Island, AK", region: "Western Alaska / Aleutians",
     lat: 54.1283, lon: -165.808, latDisplay: "54.13°N", lonDisplay: "165.81°W",
@@ -9049,7 +9049,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462694", waterTempId: "9462694",
+    id: "9462694", waterTempId: "9462620",
     name: "Akutan, Akutan Island", slug: "akutan-akutan-island",
     state: "alaska", city: "Akutan, Akutan Island, AK", region: "Western Alaska / Aleutians",
     lat: 54.13327777777778, lon: -165.7773055555556, latDisplay: "54.13°N", lonDisplay: "165.78°W",
@@ -9071,7 +9071,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462705", waterTempId: "9462705",
+    id: "9462705", waterTempId: "9462620",
     name: "Green Bight, Akutan Island", slug: "green-bight-akutan-island",
     state: "alaska", city: "Green Bight, Akutan Island, AK", region: "Western Alaska / Aleutians",
     lat: 54.11027777777778, lon: -165.6613888888889, latDisplay: "54.11°N", lonDisplay: "165.66°W",
@@ -9093,7 +9093,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462711", waterTempId: "9462711",
+    id: "9462711", waterTempId: "9462620",
     name: "Surf Bay, Akutan Bay", slug: "surf-bay-akutan-bay",
     state: "alaska", city: "Surf Bay, Akutan Bay, AK", region: "Western Alaska / Aleutians",
     lat: 54.15083333333333, lon: -165.615, latDisplay: "54.15°N", lonDisplay: "165.62°W",
@@ -9115,7 +9115,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462719", waterTempId: "9462719",
+    id: "9462719", waterTempId: "9462620",
     name: "Akun Cove, Akun Island", slug: "akun-cove-akun-island",
     state: "alaska", city: "Akun Cove, Akun Island, AK", region: "Western Alaska / Aleutians",
     lat: 54.2333, lon: -165.533, latDisplay: "54.23°N", lonDisplay: "165.53°W",
@@ -9137,7 +9137,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462721", waterTempId: "9462721",
+    id: "9462721", waterTempId: "9462620",
     name: "Trident Bay, Akun Island", slug: "trident-bay-akun-island",
     state: "alaska", city: "Trident Bay, Akun Island, AK", region: "Western Alaska / Aleutians",
     lat: 54.14, lon: -165.527, latDisplay: "54.14°N", lonDisplay: "165.53°W",
@@ -9159,7 +9159,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462723", waterTempId: "9462723",
+    id: "9462723", waterTempId: "9462620",
     name: "Rootok Island", slug: "rootok-island",
     state: "alaska", city: "Rootok Island, AK", region: "Western Alaska / Aleutians",
     lat: 54.05222222222222, lon: -165.5141666666667, latDisplay: "54.05°N", lonDisplay: "165.51°W",
@@ -9181,7 +9181,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462782", waterTempId: "9462782",
+    id: "9462782", waterTempId: "9462620",
     name: "Tigalda Bay, Tigalda Island", slug: "tigalda-bay-tigalda-island",
     state: "alaska", city: "Tigalda Bay, Tigalda Island, AK", region: "Western Alaska / Aleutians",
     lat: 54.12, lon: -164.977, latDisplay: "54.12°N", lonDisplay: "164.98°W",
@@ -9203,7 +9203,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462786", waterTempId: "9462786",
+    id: "9462786", waterTempId: "9462620",
     name: "SE Tigalda Island, Pacific Ocean", slug: "se-tigalda-island-pacific-ocean",
     state: "alaska", city: "SE Tigalda Island, Pacific Ocean, AK", region: "Western Alaska / Aleutians",
     lat: 54.10180555555556, lon: -164.9415833333333, latDisplay: "54.10°N", lonDisplay: "164.94°W",
@@ -9225,7 +9225,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462787", waterTempId: "9462787",
+    id: "9462787", waterTempId: "9462620",
     name: "Cape Sarichef", slug: "cape-sarichef",
     state: "alaska", city: "Cape Sarichef, AK", region: "Western Alaska / Aleutians",
     lat: 54.6, lon: -164.928, latDisplay: "54.60°N", lonDisplay: "164.93°W",
@@ -9247,7 +9247,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462808", waterTempId: "9462808",
+    id: "9462808", waterTempId: "9462620",
     name: "Scotch Cap", slug: "scotch-cap",
     state: "alaska", city: "Scotch Cap, AK", region: "Western Alaska / Aleutians",
     lat: 54.39363888888889, lon: -164.7457222222222, latDisplay: "54.39°N", lonDisplay: "164.75°W",
@@ -9269,7 +9269,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462838", waterTempId: "9462838",
+    id: "9462838", waterTempId: "9459881",
     name: "Cape Mordvinof", slug: "cape-mordvinof",
     state: "alaska", city: "Cape Mordvinof, AK", region: "Western Alaska / Aleutians",
     lat: 54.9283, lon: -164.467, latDisplay: "54.93°N", lonDisplay: "164.47°W",
@@ -9291,7 +9291,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462941", waterTempId: "9462941",
+    id: "9462941", waterTempId: "9459881",
     name: "Cape Chunak, AK", slug: "cape-chunak-ak",
     state: "alaska", city: "Cape Chunak, AK, AK", region: "Western Alaska / Aleutians",
     lat: 55.06427777777778, lon: -163.5341666666667, latDisplay: "55.06°N", lonDisplay: "163.53°W",
@@ -9313,7 +9313,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462944", waterTempId: "9462944",
+    id: "9462944", waterTempId: "9459881",
     name: "St. Catherine Cove", slug: "st-catherine-cove",
     state: "alaska", city: "St. Catherine Cove, AK", region: "Western Alaska / Aleutians",
     lat: 55.01, lon: -163.507, latDisplay: "55.01°N", lonDisplay: "163.51°W",
@@ -9335,7 +9335,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462948", waterTempId: "9462948",
+    id: "9462948", waterTempId: "9459881",
     name: "Neumans Cove, Unimak Island", slug: "neumans-cove-unimak-island",
     state: "alaska", city: "Neumans Cove, Unimak Island, AK", region: "Western Alaska / Aleutians",
     lat: 54.9667, lon: -163.44, latDisplay: "54.97°N", lonDisplay: "163.44°W",
@@ -9357,7 +9357,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462955", waterTempId: "9462955",
+    id: "9462955", waterTempId: "9459881",
     name: "False Pass, Isanotski Strait", slug: "false-pass-isanotski-strait",
     state: "alaska", city: "False Pass, Isanotski Strait, AK", region: "Western Alaska / Aleutians",
     lat: 54.8583, lon: -163.407, latDisplay: "54.86°N", lonDisplay: "163.41°W",
@@ -9379,7 +9379,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462961", waterTempId: "9462961",
+    id: "9462961", waterTempId: "9459881",
     name: "Isanotski Strait Entrance, Ikatan Bay", slug: "isanotski-strait-entrance-ikatan-bay",
     state: "alaska", city: "Isanotski Strait Entrance, Ikatan Bay, AK", region: "Western Alaska / Aleutians",
     lat: 54.77844444444445, lon: -163.3642777777778, latDisplay: "54.78°N", lonDisplay: "163.36°W",
@@ -9401,7 +9401,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462971", waterTempId: "9462971",
+    id: "9462971", waterTempId: "9459881",
     name: "Dora Harbor", slug: "dora-harbor",
     state: "alaska", city: "Dora Harbor, AK", region: "Western Alaska / Aleutians",
     lat: 54.71, lon: -163.267, latDisplay: "54.71°N", lonDisplay: "163.27°W",
@@ -9423,7 +9423,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462987", waterTempId: "9462987",
+    id: "9462987", waterTempId: "9459881",
     name: "Amak Island", slug: "amak-island",
     state: "alaska", city: "Amak Island, AK", region: "Western Alaska / Aleutians",
     lat: 55.4133, lon: -163.115, latDisplay: "55.41°N", lonDisplay: "163.12°W",
@@ -9445,7 +9445,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9463058", waterTempId: "9463058",
+    id: "9463058", waterTempId: "9459881",
     name: "Grant Point, Izembek Lagoon", slug: "grant-point-izembek-lagoon",
     state: "alaska", city: "Grant Point, Izembek Lagoon, AK", region: "Western Alaska / Aleutians",
     lat: 55.27, lon: -162.9, latDisplay: "55.27°N", lonDisplay: "162.90°W",
@@ -9489,7 +9489,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9463885", waterTempId: "9463885",
+    id: "9463885", waterTempId: "9464212",
     name: "Zapadni Bay, St. George Island", slug: "zapadni-bay-st-george-island",
     state: "alaska", city: "Zapadni Bay, St. George Island, AK", region: "Western Alaska / Aleutians",
     lat: 56.56669998168945, lon: -169.6667022705078, latDisplay: "56.57°N", lonDisplay: "169.67°W",
@@ -9511,7 +9511,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9463888", waterTempId: "9463888",
+    id: "9463888", waterTempId: "9464212",
     name: "St. George, St. George Island", slug: "st-george-st-george-island",
     state: "alaska", city: "St. George, St. George Island, AK", region: "Western Alaska / Aleutians",
     lat: 56.60327777777778, lon: -169.5495555555555, latDisplay: "56.60°N", lonDisplay: "169.55°W",
@@ -9533,7 +9533,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9464075", waterTempId: "9464075",
+    id: "9464075", waterTempId: "9463502",
     name: "Meshik, Port Heiden", slug: "meshik-port-heiden",
     state: "alaska", city: "Meshik, Port Heiden, AK", region: "Western Alaska / Aleutians",
     lat: 56.90829849243164, lon: -158.68490600585938, latDisplay: "56.91°N", lonDisplay: "158.68°W",
@@ -9577,7 +9577,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9464512", waterTempId: "9464512",
+    id: "9464512", waterTempId: "9457804",
     name: "Dago Creek Mouth, Ugashik Bay", slug: "dago-creek-mouth-ugashik-bay",
     state: "alaska", city: "Dago Creek Mouth, Ugashik Bay, AK", region: "Western Alaska / Aleutians",
     lat: 57.61479949951172, lon: -157.60069274902344, latDisplay: "57.61°N", lonDisplay: "157.60°W",
@@ -9599,7 +9599,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9464874", waterTempId: "9464874",
+    id: "9464874", waterTempId: "9457804",
     name: "Egegik, Egegik River", slug: "egegik-egegik-river",
     state: "alaska", city: "Egegik, Egegik River, AK", region: "Western Alaska / Aleutians",
     lat: 58.21670150756836, lon: -157.375, latDisplay: "58.22°N", lonDisplay: "157.38°W",
@@ -9621,7 +9621,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9464881", waterTempId: "9464881",
+    id: "9464881", waterTempId: "9457804",
     name: "Egegik River Ent, Bristol Bay", slug: "egegik-river-ent-bristol-bay",
     state: "alaska", city: "Egegik River Ent, Bristol Bay, AK", region: "Western Alaska / Aleutians",
     lat: 58.2383, lon: -157.5, latDisplay: "58.24°N", lonDisplay: "157.50°W",
@@ -9643,7 +9643,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9464961", waterTempId: "9464961",
+    id: "9464961", waterTempId: "9463502",
     name: "Cape Constantine, Nushagak Penninsula", slug: "cape-constantine-nushagak-penninsula",
     state: "alaska", city: "Cape Constantine, Nushagak Penninsula, AK", region: "Western Alaska / Aleutians",
     lat: 58.52170181274414, lon: -159.15199279785156, latDisplay: "58.52°N", lonDisplay: "159.15°W",
@@ -9665,7 +9665,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465022", waterTempId: "9465022",
+    id: "9465022", waterTempId: "9457804",
     name: "Middle Bluff, Kvichak Bay", slug: "middle-bluff-kvichak-bay",
     state: "alaska", city: "Middle Bluff, Kvichak Bay, AK", region: "Western Alaska / Aleutians",
     lat: 58.4533, lon: -157.5, latDisplay: "58.45°N", lonDisplay: "157.50°W",
@@ -9687,7 +9687,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465056", waterTempId: "9465056",
+    id: "9465056", waterTempId: "9463502",
     name: "Protection Point", slug: "protection-point",
     state: "alaska", city: "Protection Point, AK", region: "Western Alaska / Aleutians",
     lat: 58.5, lon: -158.712, latDisplay: "58.50°N", lonDisplay: "158.71°W",
@@ -9709,7 +9709,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465137", waterTempId: "9465137",
+    id: "9465137", waterTempId: "9463502",
     name: "Cape Peirce, West Side", slug: "cape-peirce-west-side",
     state: "alaska", city: "Cape Peirce, West Side, AK", region: "Western Alaska / Aleutians",
     lat: 58.62670135498047, lon: -161.83700561523438, latDisplay: "58.63°N", lonDisplay: "161.84°W",
@@ -9731,7 +9731,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465149", waterTempId: "9465149",
+    id: "9465149", waterTempId: "9457804",
     name: "King Salmon Airport", slug: "king-salmon-airport",
     state: "alaska", city: "King Salmon Airport, AK", region: "Kodiak Island",
     lat: 58.671695709228516, lon: -156.65699768066406, latDisplay: "58.67°N", lonDisplay: "156.66°W",
@@ -9753,7 +9753,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465174", waterTempId: "9465174",
+    id: "9465174", waterTempId: "9457804",
     name: "Omakstalia Point", slug: "omakstalia-point",
     state: "alaska", city: "Omakstalia Point, AK", region: "Kodiak Island",
     lat: 58.70669937133789, lon: -156.7570037841797, latDisplay: "58.71°N", lonDisplay: "156.76°W",
@@ -9775,7 +9775,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465182", waterTempId: "9465182",
+    id: "9465182", waterTempId: "9463502",
     name: "Black Rock, Walrus Islands", slug: "black-rock-walrus-islands",
     state: "alaska", city: "Black Rock, Walrus Islands, AK", region: "Western Alaska / Aleutians",
     lat: 58.70830154418945, lon: -160.18800354003906, latDisplay: "58.71°N", lonDisplay: "160.19°W",
@@ -9797,7 +9797,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465203", waterTempId: "9465203",
+    id: "9465203", waterTempId: "9457804",
     name: "Naknek, Naknek River", slug: "naknek-naknek-river",
     state: "alaska", city: "Naknek, Naknek River, AK", region: "Kodiak Island",
     lat: 58.73210144042969, lon: -156.98330688476562, latDisplay: "58.73°N", lonDisplay: "156.98°W",
@@ -9819,7 +9819,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465261", waterTempId: "9465261",
+    id: "9465261", waterTempId: "9457804",
     name: "Nushagak Bay (Clarks Point)", slug: "nushagak-bay-clarks-point",
     state: "alaska", city: "Nushagak Bay (Clarks Point), AK", region: "Western Alaska / Aleutians",
     lat: 58.8483, lon: -158.552, latDisplay: "58.85°N", lonDisplay: "158.55°W",
@@ -9841,7 +9841,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465265", waterTempId: "9465265",
+    id: "9465265", waterTempId: "9463502",
     name: "Kulukak Point, Kulukak Bay", slug: "kulukak-point-kulukak-bay",
     state: "alaska", city: "Kulukak Point, Kulukak Bay, AK", region: "Western Alaska / Aleutians",
     lat: 58.84000015258789, lon: -159.64700317382812, latDisplay: "58.84°N", lonDisplay: "159.65°W",
@@ -9863,7 +9863,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465342", waterTempId: "9465342",
+    id: "9465342", waterTempId: "9457804",
     name: "Kvichak", slug: "kvichak",
     state: "alaska", city: "Kvichak, AK", region: "Kodiak Island",
     lat: 58.97, lon: -156.947, latDisplay: "58.97°N", lonDisplay: "156.95°W",
@@ -9885,7 +9885,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465368", waterTempId: "9465368",
+    id: "9465368", waterTempId: "9463502",
     name: "Goodnews Bay entrance", slug: "goodnews-bay-entrance",
     state: "alaska", city: "Goodnews Bay entrance, AK", region: "Western Alaska / Aleutians",
     lat: 59.045, lon: -161.808, latDisplay: "59.05°N", lonDisplay: "161.81°W",
@@ -9907,7 +9907,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465374", waterTempId: "9465374",
+    id: "9465374", waterTempId: "9457804",
     name: "Snag Point", slug: "snag-point",
     state: "alaska", city: "Snag Point, AK", region: "Western Alaska / Aleutians",
     lat: 59.04, lon: -158.447, latDisplay: "59.04°N", lonDisplay: "158.45°W",
@@ -9929,7 +9929,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465396", waterTempId: "9465396",
+    id: "9465396", waterTempId: "9463502",
     name: "Platinum", slug: "platinum",
     state: "alaska", city: "Platinum, AK", region: "Western Alaska / Aleutians",
     lat: 59.0467, lon: -161.818, latDisplay: "59.05°N", lonDisplay: "161.82°W",
@@ -9951,7 +9951,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465419", waterTempId: "9465419",
+    id: "9465419", waterTempId: "9457804",
     name: "Levelock", slug: "levelock",
     state: "alaska", city: "Levelock, AK", region: "Kodiak Island",
     lat: 59.11330032348633, lon: -156.83200073242188, latDisplay: "59.11°N", lonDisplay: "156.83°W",
@@ -9973,7 +9973,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465438", waterTempId: "9465438",
+    id: "9465438", waterTempId: "9463502",
     name: "Goodnews Bay, ANVSA", slug: "goodnews-bay-anvsa",
     state: "alaska", city: "Goodnews Bay, ANVSA, AK", region: "Western Alaska / Aleutians",
     lat: 59.11439895629883, lon: -161.5843963623047, latDisplay: "59.11°N", lonDisplay: "161.58°W",
@@ -9995,7 +9995,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465601", waterTempId: "9465601",
+    id: "9465601", waterTempId: "9463502",
     name: "Carter Bay, Kuskokwim Bay", slug: "carter-bay-kuskokwim-bay",
     state: "alaska", city: "Carter Bay, Kuskokwim Bay, AK", region: "Western Alaska / Aleutians",
     lat: 59.37801666666667, lon: -162.0293333333333, latDisplay: "59.38°N", lonDisplay: "162.03°W",
@@ -10017,7 +10017,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465831", waterTempId: "9465831",
+    id: "9465831", waterTempId: "9463502",
     name: "Quinhagak (Kwinak), Kanektok River", slug: "quinhagak-kwinak-kanektok-river",
     state: "alaska", city: "Quinhagak (Kwinak), Kanektok River, AK", region: "Western Alaska / Aleutians",
     lat: 59.75055277777778, lon: -161.9154361111111, latDisplay: "59.75°N", lonDisplay: "161.92°W",
@@ -10039,7 +10039,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465951", waterTempId: "9465951",
+    id: "9465951", waterTempId: "9468333",
     name: "Kipnuk, Kugkaktlik River", slug: "kipnuk-kugkaktlik-river",
     state: "alaska", city: "Kipnuk, Kugkaktlik River, AK", region: "Western Alaska / Aleutians",
     lat: 59.943199157714844, lon: -164.04339599609375, latDisplay: "59.94°N", lonDisplay: "164.04°W",
@@ -10061,7 +10061,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9466057", waterTempId: "9466057",
+    id: "9466057", waterTempId: "9468333",
     name: "Popokamute (Kokokamute), Kuskokwim River", slug: "popokamute-kokokamute-kuskokwim-river",
     state: "alaska", city: "Popokamute (Kokokamute), Kuskokwim River, AK", region: "Western Alaska / Aleutians",
     lat: 60.12327777777778, lon: -162.5003611111111, latDisplay: "60.12°N", lonDisplay: "162.50°W",
@@ -10083,7 +10083,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9466079", waterTempId: "9466079",
+    id: "9466079", waterTempId: "9468333",
     name: "Apokak Creek entrance", slug: "apokak-creek-entrance",
     state: "alaska", city: "Apokak Creek entrance, AK", region: "Western Alaska / Aleutians",
     lat: 60.1367, lon: -162.158, latDisplay: "60.14°N", lonDisplay: "162.16°W",
@@ -10105,7 +10105,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9466084", waterTempId: "9466084",
+    id: "9466084", waterTempId: "9468333",
     name: "Chefornak, Kinia River", slug: "chefornak-kinia-river",
     state: "alaska", city: "Chefornak, Kinia River, AK", region: "Western Alaska / Aleutians",
     lat: 60.159400939941406, lon: -164.27259826660156, latDisplay: "60.16°N", lonDisplay: "164.27°W",
@@ -10127,7 +10127,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9466153", waterTempId: "9466153",
+    id: "9466153", waterTempId: "9468333",
     name: "Helmick Point, southeast of", slug: "helmick-point-southeast-of",
     state: "alaska", city: "Helmick Point, southeast of, AK", region: "Western Alaska / Aleutians",
     lat: 60.270301818847656, lon: -162.4102020263672, latDisplay: "60.27°N", lonDisplay: "162.41°W",
@@ -10149,7 +10149,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9466197", waterTempId: "9466197",
+    id: "9466197", waterTempId: "9468333",
     name: "Tuntutuliak", slug: "tuntutuliak",
     state: "alaska", city: "Tuntutuliak, AK", region: "Western Alaska / Aleutians",
     lat: 60.34149932861328, lon: -162.68600463867188, latDisplay: "60.34°N", lonDisplay: "162.69°W",
@@ -10171,7 +10171,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9466203", waterTempId: "9466203",
+    id: "9466203", waterTempId: "9464212",
     name: "St. Matthew Island", slug: "st-matthew-island",
     state: "alaska", city: "St. Matthew Island, AK", region: "Western Alaska / Aleutians",
     lat: 60.358299255371094, lon: -172.71499633789062, latDisplay: "60.36°N", lonDisplay: "172.71°W",
@@ -10193,7 +10193,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9466217", waterTempId: "9466217",
+    id: "9466217", waterTempId: "9464212",
     name: "Mekoryuk, Mekoryuk River Ent., Nunivak Island", slug: "mekoryuk-mekoryuk-river-ent-nunivak-island",
     state: "alaska", city: "Mekoryuk, Mekoryuk River Ent., Nunivak Island, AK", region: "Western Alaska / Aleutians",
     lat: 60.4167, lon: -166.167, latDisplay: "60.42°N", lonDisplay: "166.17°W",
@@ -10215,7 +10215,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9466298", waterTempId: "9466298",
+    id: "9466298", waterTempId: "9468333",
     name: "Nelson Island, Tooksook Bay", slug: "nelson-island-tooksook-bay",
     state: "alaska", city: "Nelson Island, Tooksook Bay, AK", region: "Western Alaska / Aleutians",
     lat: 60.5167, lon: -165.133, latDisplay: "60.52°N", lonDisplay: "165.13°W",
@@ -10237,7 +10237,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9466328", waterTempId: "9466328",
+    id: "9466328", waterTempId: "9468333",
     name: "Lomavik", slug: "lomavik",
     state: "alaska", city: "Lomavik, AK", region: "Western Alaska / Aleutians",
     lat: 60.554298400878906, lon: -162.29710388183594, latDisplay: "60.55°N", lonDisplay: "162.30°W",
@@ -10259,7 +10259,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9466477", waterTempId: "9466477",
+    id: "9466477", waterTempId: "9468333",
     name: "Bethel", slug: "bethel",
     state: "alaska", city: "Bethel, AK", region: "Western Alaska / Aleutians",
     lat: 60.8, lon: -161.75, latDisplay: "60.80°N", lonDisplay: "161.75°W",
@@ -10281,7 +10281,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9466563", waterTempId: "9466563",
+    id: "9466563", waterTempId: "9468333",
     name: "Newtok, Ningliq River", slug: "newtok-ningliq-river",
     state: "alaska", city: "Newtok, Ningliq River, AK", region: "Western Alaska / Aleutians",
     lat: 60.93450164794922, lon: -164.63870239257812, latDisplay: "60.93°N", lonDisplay: "164.64°W",
@@ -10303,7 +10303,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9466931", waterTempId: "9466931",
+    id: "9466931", waterTempId: "9468756",
     name: "Dall Point", slug: "dall-point",
     state: "alaska", city: "Dall Point, AK", region: "Western Alaska / Aleutians",
     lat: 61.5317, lon: -166.148, latDisplay: "61.53°N", lonDisplay: "166.15°W",
@@ -10325,7 +10325,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9467124", waterTempId: "9467124",
+    id: "9467124", waterTempId: "9468756",
     name: "Kun River, Scammon Bay", slug: "kun-river-scammon-bay",
     state: "alaska", city: "Kun River, Scammon Bay, AK", region: "Western Alaska / Aleutians",
     lat: 61.84170150756836, lon: -165.56700134277344, latDisplay: "61.84°N", lonDisplay: "165.57°W",
@@ -10347,7 +10347,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9467551", waterTempId: "9467551",
+    id: "9467551", waterTempId: "9468756",
     name: "Nunam Iqua (Sheldon Point)", slug: "nunam-iqua-sheldon-point",
     state: "alaska", city: "Nunam Iqua (Sheldon Point), AK", region: "Western Alaska / Aleutians",
     lat: 62.53294444444445, lon: -164.8452777777778, latDisplay: "62.53°N", lonDisplay: "164.85°W",
@@ -10369,7 +10369,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9467645", waterTempId: "9467645",
+    id: "9467645", waterTempId: "9468756",
     name: "Alakanuk, Yukon River", slug: "alakanuk-yukon-river",
     state: "alaska", city: "Alakanuk, Yukon River, AK", region: "Western Alaska / Aleutians",
     lat: 62.687198638916016, lon: -164.66690063476562, latDisplay: "62.69°N", lonDisplay: "164.67°W",
@@ -10391,7 +10391,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9467701", waterTempId: "9467701",
+    id: "9467701", waterTempId: "9468756",
     name: "Emmonak, Kwiguk Pass, Yukon River", slug: "emmonak-kwiguk-pass-yukon-river",
     state: "alaska", city: "Emmonak, Kwiguk Pass, Yukon River, AK", region: "Western Alaska / Aleutians",
     lat: 62.77750015258789, lon: -164.54690551757812, latDisplay: "62.78°N", lonDisplay: "164.55°W",
@@ -10413,7 +10413,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9467861", waterTempId: "9467861",
+    id: "9467861", waterTempId: "9468333",
     name: "Kotlik, Kotlik River", slug: "kotlik-kotlik-river",
     state: "alaska", city: "Kotlik, Kotlik River, AK", region: "Western Alaska / Aleutians",
     lat: 63.037899017333984, lon: -163.52650451660156, latDisplay: "63.04°N", lonDisplay: "163.53°W",
@@ -10435,7 +10435,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9468011", waterTempId: "9468011",
+    id: "9468011", waterTempId: "9468333",
     name: "Pikmiktalik River entrance", slug: "pikmiktalik-river-entrance",
     state: "alaska", city: "Pikmiktalik River entrance, AK", region: "Western Alaska / Aleutians",
     lat: 63.28, lon: -162.602, latDisplay: "63.28°N", lonDisplay: "162.60°W",
@@ -10457,7 +10457,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9468039", waterTempId: "9468039",
+    id: "9468039", waterTempId: "9468756",
     name: "Northeast Cape", slug: "northeast-cape",
     state: "alaska", city: "Northeast Cape, AK", region: "Western Alaska / Aleutians",
     lat: 63.3167, lon: -168.967, latDisplay: "63.32°N", lonDisplay: "168.97°W",
@@ -10479,7 +10479,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9468123", waterTempId: "9468123",
+    id: "9468123", waterTempId: "9468756",
     name: "Fossil River entrance", slug: "fossil-river-entrance",
     state: "alaska", city: "Fossil River entrance, AK", region: "Western Alaska / Aleutians",
     lat: 63.4667, lon: -170.017, latDisplay: "63.47°N", lonDisplay: "170.02°W",
@@ -10501,7 +10501,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9468132", waterTempId: "9468132",
+    id: "9468132", waterTempId: "9468333",
     name: "St. Michael", slug: "st-michael",
     state: "alaska", city: "St. Michael, AK", region: "Western Alaska / Aleutians",
     lat: 63.474998474121094, lon: -162.02699279785156, latDisplay: "63.47°N", lonDisplay: "162.03°W",
@@ -10523,7 +10523,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9468151", waterTempId: "9468151",
+    id: "9468151", waterTempId: "9468333",
     name: "Stebbins, Norton Sound", slug: "stebbins-norton-sound",
     state: "alaska", city: "Stebbins, Norton Sound, AK", region: "Western Alaska / Aleutians",
     lat: 63.525001525878906, lon: -162.29299926757812, latDisplay: "63.53°N", lonDisplay: "162.29°W",
@@ -10545,7 +10545,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9468216", waterTempId: "9468216",
+    id: "9468216", waterTempId: "9468756",
     name: "Niyrakpak Lagoon entrance", slug: "niyrakpak-lagoon-entrance",
     state: "alaska", city: "Niyrakpak Lagoon entrance, AK", region: "Western Alaska / Aleutians",
     lat: 63.62, lon: -171.383, latDisplay: "63.62°N", lonDisplay: "171.38°W",
@@ -10567,7 +10567,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9468226", waterTempId: "9468226",
+    id: "9468226", waterTempId: "9468333",
     name: "North Bay, Stuart Island", slug: "north-bay-stuart-island",
     state: "alaska", city: "North Bay, Stuart Island, AK", region: "Western Alaska / Aleutians",
     lat: 63.6283, lon: -162.517, latDisplay: "63.63°N", lonDisplay: "162.52°W",
@@ -10589,7 +10589,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9468258", waterTempId: "9468258",
+    id: "9468258", waterTempId: "9468756",
     name: "Savoonga", slug: "savoonga",
     state: "alaska", city: "Savoonga, AK", region: "Western Alaska / Aleutians",
     lat: 63.67908333333333, lon: -170.5371111111111, latDisplay: "63.68°N", lonDisplay: "170.54°W",
@@ -10633,7 +10633,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9468691", waterTempId: "9468691",
+    id: "9468691", waterTempId: "9468333",
     name: "Shaktoolik", slug: "shaktoolik",
     state: "alaska", city: "Shaktoolik, AK", region: "Western Alaska / Aleutians",
     lat: 64.38022222222222, lon: -161.2351388888889, latDisplay: "64.38°N", lonDisplay: "161.24°W",
@@ -10677,7 +10677,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9468793", waterTempId: "9468793",
+    id: "9468793", waterTempId: "9468756",
     name: "Golovin, Golovnin Lagoon Entrance", slug: "golovin-golovnin-lagoon-entrance",
     state: "alaska", city: "Golovin, Golovnin Lagoon Entrance, AK", region: "Western Alaska / Aleutians",
     lat: 64.54630279541016, lon: -163.0316925048828, latDisplay: "64.55°N", lonDisplay: "163.03°W",
@@ -10699,7 +10699,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9468841", waterTempId: "9468841",
+    id: "9468841", waterTempId: "9468756",
     name: "Upper Golovnin Lagoon", slug: "upper-golovnin-lagoon",
     state: "alaska", city: "Upper Golovnin Lagoon, AK", region: "Western Alaska / Aleutians",
     lat: 64.62079620361328, lon: -163.1490020751953, latDisplay: "64.62°N", lonDisplay: "163.15°W",
@@ -10721,7 +10721,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9468877", waterTempId: "9468877",
+    id: "9468877", waterTempId: "9468756",
     name: "White Mountain, Niukluk", slug: "white-mountain-niukluk",
     state: "alaska", city: "White Mountain, Niukluk, AK", region: "Western Alaska / Aleutians",
     lat: 64.68113708496094, lon: -163.4119110107422, latDisplay: "64.68°N", lonDisplay: "163.41°W",
@@ -10743,7 +10743,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9469031", waterTempId: "9469031",
+    id: "9469031", waterTempId: "9468333",
     name: "Koyuk, Koyuk Inlet", slug: "koyuk-koyuk-inlet",
     state: "alaska", city: "Koyuk, Koyuk Inlet, AK", region: "Western Alaska / Aleutians",
     lat: 64.93119812011719, lon: -161.1508026123047, latDisplay: "64.93°N", lonDisplay: "161.15°W",
@@ -10765,7 +10765,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9469146", waterTempId: "9469146",
+    id: "9469146", waterTempId: "9468756",
     name: "Umuruk Basin", slug: "umuruk-basin",
     state: "alaska", city: "Umuruk Basin, AK", region: "Western Alaska / Aleutians",
     lat: 65.11840057373047, lon: -165.47210693359375, latDisplay: "65.12°N", lonDisplay: "165.47°W",
@@ -10787,7 +10787,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9469237", waterTempId: "9469237",
+    id: "9469237", waterTempId: "9468756",
     name: "Point Spencer, Port Clarence", slug: "point-spencer-port-clarence",
     state: "alaska", city: "Point Spencer, Port Clarence, AK", region: "Western Alaska / Aleutians",
     lat: 65.2567, lon: -166.847, latDisplay: "65.26°N", lonDisplay: "166.85°W",
@@ -10809,7 +10809,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9469239", waterTempId: "9469239",
+    id: "9469239", waterTempId: "9468756",
     name: "Teller, Port Clarance", slug: "teller-port-clarance",
     state: "alaska", city: "Teller, Port Clarance, AK", region: "Western Alaska / Aleutians",
     lat: 65.2667, lon: -166.353, latDisplay: "65.27°N", lonDisplay: "166.35°W",
@@ -10831,7 +10831,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9469338", waterTempId: "9469338",
+    id: "9469338", waterTempId: "9468756",
     name: "Lost River, Seward Peninsula", slug: "lost-river-seward-peninsula",
     state: "alaska", city: "Lost River, Seward Peninsula, AK", region: "Western Alaska / Aleutians",
     lat: 65.39, lon: -167.145, latDisplay: "65.39°N", lonDisplay: "167.15°W",
@@ -10853,7 +10853,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9469439", waterTempId: "9469439",
+    id: "9469439", waterTempId: "9468756",
     name: "Tin City", slug: "tin-city",
     state: "alaska", city: "Tin City, AK", region: "Western Alaska / Aleutians",
     lat: 65.55833333333334, lon: -167.975, latDisplay: "65.56°N", lonDisplay: "167.97°W",
@@ -10875,7 +10875,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9469677", waterTempId: "9469677",
+    id: "9469677", waterTempId: "9491094",
     name: "Buckland, Buckland river", slug: "buckland-buckland-river",
     state: "alaska", city: "Buckland, Buckland river, AK", region: "Western Alaska / Aleutians",
     lat: 65.97550201416016, lon: -161.125, latDisplay: "65.98°N", lonDisplay: "161.13°W",
@@ -10897,7 +10897,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9469751", waterTempId: "9469751",
+    id: "9469751", waterTempId: "9491094",
     name: "Deering", slug: "deering",
     state: "alaska", city: "Deering, AK", region: "Western Alaska / Aleutians",
     lat: 66.09716666666667, lon: -162.7404722222222, latDisplay: "66.10°N", lonDisplay: "162.74°W",
@@ -10919,7 +10919,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9469833", waterTempId: "9469833",
+    id: "9469833", waterTempId: "9491094",
     name: "GOODHOPE BAY, KOTZEBUE SOUND", slug: "goodhope-bay-kotzebue-sound",
     state: "alaska", city: "GOODHOPE BAY, KOTZEBUE SOUND, AK", region: "Western Alaska / Aleutians",
     lat: 66.23030090332031, lon: -163.9040985107422, latDisplay: "66.23°N", lonDisplay: "163.90°W",
@@ -10941,7 +10941,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9469854", waterTempId: "9469854",
+    id: "9469854", waterTempId: "9491094",
     name: "Shishmaref Inlet", slug: "shishmaref-inlet",
     state: "alaska", city: "Shishmaref Inlet, AK", region: "Western Alaska / Aleutians",
     lat: 66.2633, lon: -166.02, latDisplay: "66.26°N", lonDisplay: "166.02°W",
@@ -10963,7 +10963,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9490096", waterTempId: "9490096",
+    id: "9490096", waterTempId: "9491094",
     name: "CAPE ESPENBERG, KOTZEBUE SOUND", slug: "cape-espenberg-kotzebue-sound",
     state: "alaska", city: "CAPE ESPENBERG, KOTZEBUE SOUND, AK", region: "Western Alaska / Aleutians",
     lat: 66.58569444444444, lon: -164.2508333333333, latDisplay: "66.59°N", lonDisplay: "164.25°W",
@@ -10985,7 +10985,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9490424", waterTempId: "9490424",
+    id: "9490424", waterTempId: "9491094",
     name: "Kotzebue", slug: "kotzebue",
     state: "alaska", city: "Kotzebue, AK", region: "Western Alaska / Aleutians",
     lat: 66.9017, lon: -162.582, latDisplay: "66.90°N", lonDisplay: "162.58°W",
@@ -11007,7 +11007,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9490571", waterTempId: "9490571",
+    id: "9490571", waterTempId: "9491094",
     name: "Cape Krusenstern", slug: "cape-krusenstern",
     state: "alaska", city: "Cape Krusenstern, AK", region: "Western Alaska / Aleutians",
     lat: 67.05419444444445, lon: -163.3212777777778, latDisplay: "67.05°N", lonDisplay: "163.32°W",
@@ -11051,7 +11051,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9491253", waterTempId: "9491253",
+    id: "9491253", waterTempId: "9491094",
     name: "Kivalina", slug: "kivalina",
     state: "alaska", city: "Kivalina, AK", region: "Western Alaska / Aleutians",
     lat: 67.7267, lon: -164.592, latDisplay: "67.73°N", lonDisplay: "164.59°W",
@@ -11073,7 +11073,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9491873", waterTempId: "9491873",
+    id: "9491873", waterTempId: "9491094",
     name: "Point Hope", slug: "point-hope",
     state: "alaska", city: "Point Hope, AK", region: "Western Alaska / Aleutians",
     lat: 68.3417, lon: -166.808, latDisplay: "68.34°N", lonDisplay: "166.81°W",
@@ -11095,7 +11095,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9494212", waterTempId: "9494212",
+    id: "9494212", waterTempId: "9491094",
     name: "Wainwright, Chukchi Sea", slug: "wainwright-chukchi-sea",
     state: "alaska", city: "Wainwright, Chukchi Sea, AK", region: "Western Alaska / Aleutians",
     lat: 70.643798828125, lon: -160.06509399414062, latDisplay: "70.64°N", lonDisplay: "160.07°W",
@@ -11117,7 +11117,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9494935", waterTempId: "9494935",
+    id: "9494935", waterTempId: "9497645",
     name: "Barrow Offshore", slug: "barrow-offshore",
     state: "alaska", city: "Barrow Offshore, AK", region: "Kodiak Island",
     lat: 71.36011111111111, lon: -156.7298611111111, latDisplay: "71.36°N", lonDisplay: "156.73°W",
@@ -11139,7 +11139,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9495048", waterTempId: "9495048",
+    id: "9495048", waterTempId: "9497645",
     name: "Point Barrow", slug: "point-barrow",
     state: "alaska", city: "Point Barrow, AK", region: "Kodiak Island",
     lat: 71.36, lon: -156.353, latDisplay: "71.36°N", lonDisplay: "156.35°W",
@@ -11183,7 +11183,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9499176", waterTempId: "9499176",
+    id: "9499176", waterTempId: "9497645",
     name: "Barter Island", slug: "barter-island",
     state: "alaska", city: "Barter Island, AK", region: "Gulf of Alaska",
     lat: 70.12855555555555, lon: -143.6110277777778, latDisplay: "70.13°N", lonDisplay: "143.61°W",
@@ -11205,7 +11205,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450192", waterTempId: "9450192",
+    id: "9450192", waterTempId: "9450460",
     name: "HIDDEN INLET ENTRANCE, PEARSE INLET", slug: "hidden-inlet-entrance-pearse-inlet",
     state: "alaska", city: "HIDDEN INLET ENTRANCE, PEARSE INLET, AK", region: "Southeast Alaska",
     lat: 54.943695, lon: -130.3358, latDisplay: "54.94°N", lonDisplay: "130.34°W",
@@ -11227,7 +11227,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450251", waterTempId: "9450251",
+    id: "9450251", waterTempId: "9450460",
     name: "Entrance to Windy Cove", slug: "entrance-to-windy-cove",
     state: "alaska", city: "Entrance to Windy Cove, AK", region: "Gulf of Alaska",
     lat: 55.035446, lon: -133.02377, latDisplay: "55.04°N", lonDisplay: "133.02°W",
@@ -11249,7 +11249,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450286", waterTempId: "9450286",
+    id: "9450286", waterTempId: "9450460",
     name: "Dunbar Inlet GPS Tide Buoy", slug: "dunbar-inlet-gps-tide-buoy",
     state: "alaska", city: "Dunbar Inlet GPS Tide Buoy, AK", region: "Southeast Alaska",
     lat: 55.08789, lon: -132.81583, latDisplay: "55.09°N", lonDisplay: "132.82°W",
@@ -11271,7 +11271,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450466", waterTempId: "9450466",
+    id: "9450466", waterTempId: "9450460",
     name: "Mckenzie Inlet", slug: "mckenzie-inlet",
     state: "alaska", city: "Mckenzie Inlet, AK", region: "Southeast Alaska",
     lat: 55.3583, lon: -132.368, latDisplay: "55.36°N", lonDisplay: "132.37°W",
@@ -11293,7 +11293,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450467", waterTempId: "9450467",
+    id: "9450467", waterTempId: "9450460",
     name: "Polk Inlet", slug: "polk-inlet",
     state: "alaska", city: "Polk Inlet, AK", region: "Southeast Alaska",
     lat: 55.3583, lon: -132.485, latDisplay: "55.36°N", lonDisplay: "132.49°W",
@@ -11315,7 +11315,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450618", waterTempId: "9450618",
+    id: "9450618", waterTempId: "9450460",
     name: "Shinaku Inlet", slug: "shinaku-inlet",
     state: "alaska", city: "Shinaku Inlet, AK", region: "Gulf of Alaska",
     lat: 55.59292, lon: -133.152, latDisplay: "55.59°N", lonDisplay: "133.15°W",
@@ -11337,7 +11337,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450642", waterTempId: "9450642",
+    id: "9450642", waterTempId: "9450460",
     name: "Northern Carroll Inlet GPS Tide Buoy", slug: "northern-carroll-inlet-gps-tide-buoy",
     state: "alaska", city: "Northern Carroll Inlet GPS Tide Buoy, AK", region: "Southeast Alaska",
     lat: 55.628887, lon: -131.3627, latDisplay: "55.63°N", lonDisplay: "131.36°W",
@@ -11359,7 +11359,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450695", waterTempId: "9450695",
+    id: "9450695", waterTempId: "9450460",
     name: "HUT POINT, BEHM CANAL", slug: "hut-point-behm-canal",
     state: "alaska", city: "HUT POINT, BEHM CANAL, AK", region: "Southeast Alaska",
     lat: 55.712723, lon: -130.90405, latDisplay: "55.71°N", lonDisplay: "130.90°W",
@@ -11381,7 +11381,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450761", waterTempId: "9450761",
+    id: "9450761", waterTempId: "9450460",
     name: "Vixen Harbor, Earnest Sound", slug: "vixen-harbor-earnest-sound",
     state: "alaska", city: "Vixen Harbor, Earnest Sound, AK", region: "Southeast Alaska",
     lat: 55.79977, lon: -132.16597, latDisplay: "55.80°N", lonDisplay: "132.17°W",
@@ -11403,7 +11403,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9450949", waterTempId: "9450949",
+    id: "9450949", waterTempId: "9450460",
     name: "BURNETTE INLET, ETOLIN ISLAND", slug: "burnette-inlet-etolin-island",
     state: "alaska", city: "BURNETTE INLET, ETOLIN ISLAND, AK", region: "Southeast Alaska",
     lat: 56.0733, lon: -132.478, latDisplay: "56.07°N", lonDisplay: "132.48°W",
@@ -11425,7 +11425,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9451454", waterTempId: "9451454",
+    id: "9451454", waterTempId: "9451600",
     name: "Security Bay GPS Buoy", slug: "security-bay-gps-buoy",
     state: "alaska", city: "Security Bay GPS Buoy, AK", region: "Gulf of Alaska",
     lat: 56.83764, lon: -134.32712, latDisplay: "56.84°N", lonDisplay: "134.33°W",
@@ -11447,7 +11447,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452017", waterTempId: "9452017",
+    id: "9452017", waterTempId: "9452210",
     name: "FORD'S TERROR, STEPHEN'S PASS", slug: "fords-terror-stephens-pass",
     state: "alaska", city: "FORD'S TERROR, STEPHEN'S PASS, AK", region: "Gulf of Alaska",
     lat: 57.68761, lon: -133.1425, latDisplay: "57.69°N", lonDisplay: "133.14°W",
@@ -11469,7 +11469,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452046", waterTempId: "9452046",
+    id: "9452046", waterTempId: "9452210",
     name: "WINDHAM BAY EAST, STEPHENS PASSAGE", slug: "windham-bay-east-stephens-passage",
     state: "alaska", city: "WINDHAM BAY EAST, STEPHENS PASSAGE, AK", region: "Gulf of Alaska",
     lat: 57.5883, lon: -133.407, latDisplay: "57.59°N", lonDisplay: "133.41°W",
@@ -11491,7 +11491,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452069", waterTempId: "9452069",
+    id: "9452069", waterTempId: "9452210",
     name: "TRACY ARM, HOLKHAM BAY", slug: "tracy-arm-holkham-bay",
     state: "alaska", city: "TRACY ARM, HOLKHAM BAY, AK", region: "Gulf of Alaska",
     lat: 57.8067, lon: -133.63, latDisplay: "57.81°N", lonDisplay: "133.63°W",
@@ -11513,7 +11513,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452131", waterTempId: "9452131",
+    id: "9452131", waterTempId: "9452210",
     name: "TAKU INLET (MIDDLE), TAKU RIVER ENTRANCE", slug: "taku-inlet-middle-taku-river-entrance",
     state: "alaska", city: "TAKU INLET (MIDDLE), TAKU RIVER ENTRANCE, AK", region: "Gulf of Alaska",
     lat: 58.3667, lon: -134.052, latDisplay: "58.37°N", lonDisplay: "134.05°W",
@@ -11535,7 +11535,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452141", waterTempId: "9452141",
+    id: "9452141", waterTempId: "9452210",
     name: "ANNEX CREEK ENTRANCE", slug: "annex-creek-entrance",
     state: "alaska", city: "ANNEX CREEK ENTRANCE, AK", region: "Gulf of Alaska",
     lat: 58.3167, lon: -134.1, latDisplay: "58.32°N", lonDisplay: "134.10°W",
@@ -11557,7 +11557,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452184", waterTempId: "9452184",
+    id: "9452184", waterTempId: "9452210",
     name: "OLIVER INLET, PORTAGE", slug: "oliver-inlet-portage",
     state: "alaska", city: "OLIVER INLET, PORTAGE, AK", region: "Gulf of Alaska",
     lat: 58.1083, lon: -134.31, latDisplay: "58.11°N", lonDisplay: "134.31°W",
@@ -11579,7 +11579,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452292", waterTempId: "9452292",
+    id: "9452292", waterTempId: "9452210",
     name: "HAWK INLET", slug: "hawk-inlet",
     state: "alaska", city: "HAWK INLET, AK", region: "Gulf of Alaska",
     lat: 58.1267, lon: -134.758, latDisplay: "58.13°N", lonDisplay: "134.76°W",
@@ -11601,7 +11601,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452377", waterTempId: "9452377",
+    id: "9452377", waterTempId: "9452210",
     name: "St. James Bay", slug: "st-james-bay",
     state: "alaska", city: "St. James Bay, AK", region: "Gulf of Alaska",
     lat: 58.615, lon: -135.163, latDisplay: "58.62°N", lonDisplay: "135.16°W",
@@ -11623,7 +11623,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452378", waterTempId: "9452378",
+    id: "9452378", waterTempId: "9452210",
     name: "Boat Harbor", slug: "boat-harbor",
     state: "alaska", city: "Boat Harbor, AK", region: "Gulf of Alaska",
     lat: 58.6283, lon: -135.165, latDisplay: "58.63°N", lonDisplay: "135.16°W",
@@ -11645,7 +11645,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452542", waterTempId: "9452542",
+    id: "9452542", waterTempId: "9452634",
     name: "Port Gustavus", slug: "port-gustavus",
     state: "alaska", city: "Port Gustavus, AK", region: "Gulf of Alaska",
     lat: 58.3817, lon: -135.918, latDisplay: "58.38°N", lonDisplay: "135.92°W",
@@ -11667,7 +11667,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452569", waterTempId: "9452569",
+    id: "9452569", waterTempId: "9452634",
     name: "LEMESURIER ISLAND (BACKUP)", slug: "lemesurier-island-backup",
     state: "alaska", city: "LEMESURIER ISLAND (BACKUP), AK", region: "Gulf of Alaska",
     lat: 58.3133, lon: -136.037, latDisplay: "58.31°N", lonDisplay: "136.04°W",
@@ -11689,7 +11689,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9452635", waterTempId: "9452635",
+    id: "9452635", waterTempId: "9452634",
     name: "ELFIN COVE, PORT ALTHORP (BACKUP)", slug: "elfin-cove-port-althorp-backup",
     state: "alaska", city: "ELFIN COVE, PORT ALTHORP (BACKUP), AK", region: "Gulf of Alaska",
     lat: 58.1933, lon: -136.343, latDisplay: "58.19°N", lonDisplay: "136.34°W",
@@ -11711,7 +11711,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9453178", waterTempId: "9453178",
+    id: "9453178", waterTempId: "9453220",
     name: "RUSSELL FIORD", slug: "russell-fiord",
     state: "alaska", city: "RUSSELL FIORD, AK", region: "Gulf of Alaska",
     lat: 59.936863, lon: -139.40012, latDisplay: "59.94°N", lonDisplay: "139.40°W",
@@ -11733,7 +11733,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9453196", waterTempId: "9453196",
+    id: "9453196", waterTempId: "9453220",
     name: "DISENCHANTMENT BAY", slug: "disenchantment-bay",
     state: "alaska", city: "DISENCHANTMENT BAY, AK", region: "Gulf of Alaska",
     lat: 60.0467, lon: -139.555, latDisplay: "60.05°N", lonDisplay: "139.56°W",
@@ -11755,7 +11755,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9453444", waterTempId: "9453444",
+    id: "9453444", waterTempId: "9453220",
     name: "Kichyatt Point", slug: "kichyatt-point",
     state: "alaska", city: "Kichyatt Point, AK", region: "Gulf of Alaska",
     lat: 60.0267, lon: -141.367, latDisplay: "60.03°N", lonDisplay: "141.37°W",
@@ -11777,7 +11777,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9453471", waterTempId: "9453471",
+    id: "9453471", waterTempId: "9453220",
     name: "ICY BAY ENTRANCE, ZONING GAUGE B", slug: "icy-bay-entrance-zoning-gauge-b",
     state: "alaska", city: "ICY BAY ENTRANCE, ZONING GAUGE B, AK", region: "Gulf of Alaska",
     lat: 59.8583, lon: -141.655, latDisplay: "59.86°N", lonDisplay: "141.66°W",
@@ -11799,7 +11799,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9453472", waterTempId: "9453472",
+    id: "9453472", waterTempId: "9453220",
     name: "ICY BAY ENTRANCE, ZONING GAUGE A", slug: "icy-bay-entrance-zoning-gauge-a",
     state: "alaska", city: "ICY BAY ENTRANCE, ZONING GAUGE A, AK", region: "Gulf of Alaska",
     lat: 59.8583, lon: -141.663, latDisplay: "59.86°N", lonDisplay: "141.66°W",
@@ -11821,7 +11821,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454328", waterTempId: "9454328",
+    id: "9454328", waterTempId: "9454240",
     name: "VALDEZ NARROWS, T-19", slug: "valdez-narrows-t-19",
     state: "alaska", city: "VALDEZ NARROWS, T-19, AK", region: "Gulf of Alaska",
     lat: 61.0817, lon: -146.668, latDisplay: "61.08°N", lonDisplay: "146.67°W",
@@ -11843,7 +11843,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454381", waterTempId: "9454381",
+    id: "9454381", waterTempId: "9454240",
     name: "BLIGH ISLAND, T-16", slug: "bligh-island-t-16",
     state: "alaska", city: "BLIGH ISLAND, T-16, AK", region: "Gulf of Alaska",
     lat: 60.8067, lon: -146.798, latDisplay: "60.81°N", lonDisplay: "146.80°W",
@@ -11865,7 +11865,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454411", waterTempId: "9454411",
+    id: "9454411", waterTempId: "9454050",
     name: "Zaikof Point", slug: "zaikof-point",
     state: "alaska", city: "Zaikof Point, AK", region: "Gulf of Alaska",
     lat: 60.3083, lon: -146.943, latDisplay: "60.31°N", lonDisplay: "146.94°W",
@@ -11887,7 +11887,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454460", waterTempId: "9454460",
+    id: "9454460", waterTempId: "9454240",
     name: "Columbia Glacier", slug: "columbia-glacier",
     state: "alaska", city: "Columbia Glacier, AK", region: "Gulf of Alaska",
     lat: 61.0233, lon: -147.085, latDisplay: "61.02°N", lonDisplay: "147.09°W",
@@ -11909,7 +11909,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454533", waterTempId: "9454533",
+    id: "9454533", waterTempId: "9454240",
     name: "SMITH IS, NE END", slug: "smith-is-ne-end",
     state: "alaska", city: "SMITH IS, NE END, AK", region: "Gulf of Alaska",
     lat: 60.5317, lon: -147.343, latDisplay: "60.53°N", lonDisplay: "147.34°W",
@@ -11931,7 +11931,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454729", waterTempId: "9454729",
+    id: "9454729", waterTempId: "9454240",
     name: "PT. PERRY, PERRY ISLAND", slug: "pt-perry-perry-island",
     state: "alaska", city: "PT. PERRY, PERRY ISLAND, AK", region: "Gulf of Alaska",
     lat: 60.7533, lon: -147.958, latDisplay: "60.75°N", lonDisplay: "147.96°W",
@@ -11953,7 +11953,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454806", waterTempId: "9454806",
+    id: "9454806", waterTempId: "9455920",
     name: "GRANITE MINE", slug: "granite-mine",
     state: "alaska", city: "GRANITE MINE, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.95, lon: -148.212, latDisplay: "60.95°N", lonDisplay: "148.21°W",
@@ -11975,7 +11975,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454807", waterTempId: "9454807",
+    id: "9454807", waterTempId: "9455920",
     name: "GRANITE MINE (BACKUP)", slug: "granite-mine-backup",
     state: "alaska", city: "GRANITE MINE (BACKUP), AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.95, lon: -148.212, latDisplay: "60.95°N", lonDisplay: "148.21°W",
@@ -11997,7 +11997,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454818", waterTempId: "9454818",
+    id: "9454818", waterTempId: "9455920",
     name: "BLUE FjORD, PORT NELLIE JUAN", slug: "blue-fjord-port-nellie-juan",
     state: "alaska", city: "BLUE FjORD, PORT NELLIE JUAN, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.4917, lon: -148.242, latDisplay: "60.49°N", lonDisplay: "148.24°W",
@@ -12019,7 +12019,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454824", waterTempId: "9454824",
+    id: "9454824", waterTempId: "9455920",
     name: "HARRIMAN FIORD", slug: "harriman-fiord",
     state: "alaska", city: "HARRIMAN FIORD, AK", region: "Cook Inlet / Prince William Sound",
     lat: 61.035, lon: -148.313, latDisplay: "61.03°N", lonDisplay: "148.31°W",
@@ -12041,7 +12041,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454851", waterTempId: "9454851",
+    id: "9454851", waterTempId: "9455920",
     name: "COCHRANE BAY, PR. WILLIAM SOUND", slug: "cochrane-bay-pr-william-sound",
     state: "alaska", city: "COCHRANE BAY, PR. WILLIAM SOUND, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.6633, lon: -148.357, latDisplay: "60.66°N", lonDisplay: "148.36°W",
@@ -12063,7 +12063,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454907", waterTempId: "9454907",
+    id: "9454907", waterTempId: "9455920",
     name: "BLACKSTONE BAY, PR. WILLIAM SOUND", slug: "blackstone-bay-pr-william-sound",
     state: "alaska", city: "BLACKSTONE BAY, PR. WILLIAM SOUND, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.765, lon: -148.523, latDisplay: "60.77°N", lonDisplay: "148.52°W",
@@ -12085,7 +12085,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454948", waterTempId: "9454948",
+    id: "9454948", waterTempId: "9455920",
     name: "WHITTIER (BACKUP)", slug: "whittier-backup",
     state: "alaska", city: "WHITTIER (BACKUP), AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.7783, lon: -148.665, latDisplay: "60.78°N", lonDisplay: "148.66°W",
@@ -12107,7 +12107,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454951", waterTempId: "9454951",
+    id: "9454951", waterTempId: "9455920",
     name: "KINGS BAY INSIDE, PRINCE WILLIAM SOUND", slug: "kings-bay-inside-prince-william-sound",
     state: "alaska", city: "KINGS BAY INSIDE, PRINCE WILLIAM SOUND, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.4567, lon: -148.665, latDisplay: "60.46°N", lonDisplay: "148.66°W",
@@ -12129,7 +12129,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9454952", waterTempId: "9454952",
+    id: "9454952", waterTempId: "9455920",
     name: "SOUTHERN BLACKSTON BAY (INSIDE)", slug: "southern-blackston-bay-inside",
     state: "alaska", city: "SOUTHERN BLACKSTON BAY (INSIDE), AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.6833, lon: -148.673, latDisplay: "60.68°N", lonDisplay: "148.67°W",
@@ -12151,7 +12151,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455178", waterTempId: "9455178",
+    id: "9455178", waterTempId: "9455500",
     name: "Northwest Passage", slug: "northwest-passage",
     state: "alaska", city: "Northwest Passage, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.7483, lon: -149.9, latDisplay: "59.75°N", lonDisplay: "149.90°W",
@@ -12173,7 +12173,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455427", waterTempId: "9455427",
+    id: "9455427", waterTempId: "9455500",
     name: "PERL ISLAND", slug: "perl-island",
     state: "alaska", city: "PERL ISLAND, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.13, lon: -151.697, latDisplay: "59.13°N", lonDisplay: "151.70°W",
@@ -12195,7 +12195,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455557", waterTempId: "9455557",
+    id: "9455557", waterTempId: "9455500",
     name: "HOMER", slug: "homer",
     state: "alaska", city: "HOMER, AK", region: "Cook Inlet / Prince William Sound",
     lat: 59.6033, lon: -151.42, latDisplay: "59.60°N", lonDisplay: "151.42°W",
@@ -12217,7 +12217,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455768", waterTempId: "9455768",
+    id: "9455768", waterTempId: "9455760",
     name: "WEST FORELAND", slug: "west-foreland",
     state: "alaska", city: "WEST FORELAND, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.7133, lon: -151.727, latDisplay: "60.71°N", lonDisplay: "151.73°W",
@@ -12239,7 +12239,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455777", waterTempId: "9455777",
+    id: "9455777", waterTempId: "9455760",
     name: "BOULDER POINT", slug: "boulder-point",
     state: "alaska", city: "BOULDER POINT, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.7767, lon: -151.245, latDisplay: "60.78°N", lonDisplay: "151.25°W",
@@ -12261,7 +12261,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455824", waterTempId: "9455824",
+    id: "9455824", waterTempId: "9455760",
     name: "MOOSE POINT", slug: "moose-point",
     state: "alaska", city: "MOOSE POINT, AK", region: "Cook Inlet / Prince William Sound",
     lat: 60.9633, lon: -150.673, latDisplay: "60.96°N", lonDisplay: "150.67°W",
@@ -12283,7 +12283,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455914", waterTempId: "9455914",
+    id: "9455914", waterTempId: "9455920",
     name: "FIRE ISLAND (BACKUP)", slug: "fire-island-backup",
     state: "alaska", city: "FIRE ISLAND (BACKUP), AK", region: "Cook Inlet / Prince William Sound",
     lat: 61.1733, lon: -150.205, latDisplay: "61.17°N", lonDisplay: "150.21°W",
@@ -12305,7 +12305,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455921", waterTempId: "9455921",
+    id: "9455921", waterTempId: "9455920",
     name: "ANCHORAGE (BACKUP ADR)", slug: "anchorage-backup-adr",
     state: "alaska", city: "ANCHORAGE (BACKUP ADR), AK", region: "Cook Inlet / Prince William Sound",
     lat: 61.2383, lon: -149.888, latDisplay: "61.24°N", lonDisplay: "149.89°W",
@@ -12327,7 +12327,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9455982", waterTempId: "9455982",
+    id: "9455982", waterTempId: "9455920",
     name: "Eklutna", slug: "eklutna",
     state: "alaska", city: "Eklutna, AK", region: "Cook Inlet / Prince William Sound",
     lat: 61.470554, lon: -149.35916, latDisplay: "61.47°N", lonDisplay: "149.36°W",
@@ -12349,7 +12349,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9456993", waterTempId: "9456993",
+    id: "9456993", waterTempId: "9457292",
     name: "TAKLI ISLAND, GAGE B", slug: "takli-island-gage-b",
     state: "alaska", city: "TAKLI ISLAND, GAGE B, AK", region: "Kodiak Island",
     lat: 58.0633, lon: -154.477, latDisplay: "58.06°N", lonDisplay: "154.48°W",
@@ -12371,7 +12371,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457258", waterTempId: "9457258",
+    id: "9457258", waterTempId: "9457292",
     name: "NEAR ISLAND", slug: "near-island",
     state: "alaska", city: "NEAR ISLAND, AK", region: "Kodiak Island",
     lat: 57.775, lon: -152.403, latDisplay: "57.77°N", lonDisplay: "152.40°W",
@@ -12393,7 +12393,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457393", waterTempId: "9457393",
+    id: "9457393", waterTempId: "9457292",
     name: "Dovolno Point, Kizhuyak Bay", slug: "dovolno-point-kizhuyak-bay",
     state: "alaska", city: "Dovolno Point, Kizhuyak Bay, AK", region: "Kodiak Island",
     lat: 57.739445, lon: -152.87473, latDisplay: "57.74°N", lonDisplay: "152.87°W",
@@ -12415,7 +12415,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457512", waterTempId: "9457512",
+    id: "9457512", waterTempId: "9457804",
     name: "Sitkalidak Island GPS Tide Buoy", slug: "sitkalidak-island-gps-tide-buoy",
     state: "alaska", city: "Sitkalidak Island GPS Tide Buoy, AK", region: "Kodiak Island",
     lat: 56.96572, lon: -153.2522, latDisplay: "56.97°N", lonDisplay: "153.25°W",
@@ -12437,7 +12437,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457726", waterTempId: "9457726",
+    id: "9457726", waterTempId: "9457804",
     name: "Geese Island GPS Tide Buoy", slug: "geese-island-gps-tide-buoy",
     state: "alaska", city: "Geese Island GPS Tide Buoy, AK", region: "Kodiak Island",
     lat: 56.594696, lon: -153.99603, latDisplay: "56.59°N", lonDisplay: "154.00°W",
@@ -12459,7 +12459,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9457728", waterTempId: "9457728",
+    id: "9457728", waterTempId: "9457804",
     name: "Uyak", slug: "uyak",
     state: "alaska", city: "Uyak, AK", region: "Kodiak Island",
     lat: 57.635, lon: -154.007, latDisplay: "57.63°N", lonDisplay: "154.01°W",
@@ -12481,7 +12481,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9458471", waterTempId: "9458471",
+    id: "9458471", waterTempId: "9457804",
     name: "Poltava Island", slug: "poltava-island",
     state: "alaska", city: "Poltava Island, AK", region: "Kodiak Island",
     lat: 57.0133, lon: -156.483, latDisplay: "57.01°N", lonDisplay: "156.48°W",
@@ -12503,7 +12503,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9458553", waterTempId: "9458553",
+    id: "9458553", waterTempId: "9457804",
     name: "UQAIUSHAK ISLAND", slug: "uqaiushak-island",
     state: "alaska", city: "UQAIUSHAK ISLAND, AK", region: "Kodiak Island",
     lat: 56.7967, lon: -156.848, latDisplay: "56.80°N", lonDisplay: "156.85°W",
@@ -12525,7 +12525,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9458705", waterTempId: "9458705",
+    id: "9458705", waterTempId: "9457804",
     name: "KUMLIK ISLAND (BACKUP)", slug: "kumlik-island-backup",
     state: "alaska", city: "KUMLIK ISLAND (BACKUP), AK", region: "Western Alaska / Aleutians",
     lat: 56.6167, lon: -157.492, latDisplay: "56.62°N", lonDisplay: "157.49°W",
@@ -12547,7 +12547,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9458716", waterTempId: "9458716",
+    id: "9458716", waterTempId: "9457804",
     name: "ANIAKCHAK BAY", slug: "aniakchak-bay",
     state: "alaska", city: "ANIAKCHAK BAY, AK", region: "Western Alaska / Aleutians",
     lat: 56.75611, lon: -157.493, latDisplay: "56.76°N", lonDisplay: "157.49°W",
@@ -12569,7 +12569,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9458945", waterTempId: "9458945",
+    id: "9458945", waterTempId: "9463502",
     name: "CHIGNIK LAGOON MAIN CHANNEL", slug: "chignik-lagoon-main-channel",
     state: "alaska", city: "CHIGNIK LAGOON MAIN CHANNEL, AK", region: "Western Alaska / Aleutians",
     lat: 56.3233, lon: -158.515, latDisplay: "56.32°N", lonDisplay: "158.51°W",
@@ -12591,7 +12591,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9462621", waterTempId: "9462621",
+    id: "9462621", waterTempId: "9462620",
     name: "UNALASKA (BACKUP)", slug: "unalaska-backup",
     state: "alaska", city: "UNALASKA (BACKUP), AK", region: "Western Alaska / Aleutians",
     lat: 53.88, lon: -166.542, latDisplay: "53.88°N", lonDisplay: "166.54°W",
@@ -12613,7 +12613,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465116", waterTempId: "9465116",
+    id: "9465116", waterTempId: "9463502",
     name: "TWIN ISLAND, BRISTOL BAY", slug: "twin-island-bristol-bay",
     state: "alaska", city: "TWIN ISLAND, BRISTOL BAY, AK", region: "Western Alaska / Aleutians",
     lat: 58.5983, lon: -160.307, latDisplay: "58.60°N", lonDisplay: "160.31°W",
@@ -12635,7 +12635,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465123", waterTempId: "9465123",
+    id: "9465123", waterTempId: "9463502",
     name: "PYRITE POINT, BRISTOL BAY", slug: "pyrite-point-bristol-bay",
     state: "alaska", city: "PYRITE POINT, BRISTOL BAY, AK", region: "Western Alaska / Aleutians",
     lat: 58.62, lon: -161.542, latDisplay: "58.62°N", lonDisplay: "161.54°W",
@@ -12657,7 +12657,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465173", waterTempId: "9465173",
+    id: "9465173", waterTempId: "9463502",
     name: "HIGH ISLAND, BRISTOL BAY", slug: "high-island-bristol-bay",
     state: "alaska", city: "HIGH ISLAND, BRISTOL BAY, AK", region: "Western Alaska / Aleutians",
     lat: 58.7217, lon: -160.427, latDisplay: "58.72°N", lonDisplay: "160.43°W",
@@ -12679,7 +12679,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465283", waterTempId: "9465283",
+    id: "9465283", waterTempId: "9463502",
     name: "NE SIDE SUMMIT ISLAND, TOGIAK BAY A", slug: "ne-side-summit-island-togiak-bay-a",
     state: "alaska", city: "NE SIDE SUMMIT ISLAND, TOGIAK BAY A, AK", region: "Western Alaska / Aleutians",
     lat: 58.8467, lon: -160.21, latDisplay: "58.85°N", lonDisplay: "160.21°W",
@@ -12701,7 +12701,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465358", waterTempId: "9465358",
+    id: "9465358", waterTempId: "9463502",
     name: "WEST SIDE, TOGIAK BAY (BACKUP)", slug: "west-side-togiak-bay-backup",
     state: "alaska", city: "WEST SIDE, TOGIAK BAY (BACKUP), AK", region: "Western Alaska / Aleutians",
     lat: 58.9867, lon: -160.625, latDisplay: "58.99°N", lonDisplay: "160.63°W",
@@ -12723,7 +12723,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465406", waterTempId: "9465406",
+    id: "9465406", waterTempId: "9463502",
     name: "Togiak", slug: "togiak",
     state: "alaska", city: "Togiak, AK", region: "Western Alaska / Aleutians",
     lat: 59.06167, lon: -160.36833, latDisplay: "59.06°N", lonDisplay: "160.37°W",
@@ -12745,7 +12745,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465911", waterTempId: "9465911",
+    id: "9465911", waterTempId: "9463502",
     name: "Kwigillingok", slug: "kwigillingok",
     state: "alaska", city: "Kwigillingok, AK", region: "Western Alaska / Aleutians",
     lat: 59.87975, lon: -163.16637, latDisplay: "59.88°N", lonDisplay: "163.17°W",
@@ -12767,7 +12767,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465953", waterTempId: "9465953",
+    id: "9465953", waterTempId: "9464212",
     name: "Kinak Bay", slug: "kinak-bay",
     state: "alaska", city: "Kinak Bay, AK", region: "Western Alaska / Aleutians",
     lat: 59.94753, lon: -164.21066, latDisplay: "59.95°N", lonDisplay: "164.21°W",
@@ -12789,7 +12789,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9465988", waterTempId: "9465988",
+    id: "9465988", waterTempId: "9464212",
     name: "Cape Corwin GPS Tide Buoy", slug: "cape-corwin-gps-tide-buoy",
     state: "alaska", city: "Cape Corwin GPS Tide Buoy, AK", region: "Western Alaska / Aleutians",
     lat: 60.00464, lon: -165.59097, latDisplay: "60.00°N", lonDisplay: "165.59°W",
@@ -12811,7 +12811,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9466012", waterTempId: "9466012",
+    id: "9466012", waterTempId: "9464212",
     name: "Eastern Nunivak Island", slug: "eastern-nunivak-island",
     state: "alaska", city: "Eastern Nunivak Island, AK", region: "Western Alaska / Aleutians",
     lat: 60.042946, lon: -165.68059, latDisplay: "60.04°N", lonDisplay: "165.68°W",
@@ -12833,7 +12833,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9468261", waterTempId: "9468261",
+    id: "9468261", waterTempId: "9468756",
     name: "Kavalghak Bay, AK", slug: "kavalghak-bay-ak",
     state: "alaska", city: "Kavalghak Bay, AK, AK", region: "Western Alaska / Aleutians",
     lat: 63.68286, lon: -171.7502, latDisplay: "63.68°N", lonDisplay: "171.75°W",
@@ -12855,7 +12855,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9468283", waterTempId: "9468283",
+    id: "9468283", waterTempId: "9468756",
     name: "Akeftapak, St. Lawrence Island", slug: "akeftapak-st-lawrence-island",
     state: "alaska", city: "Akeftapak, St. Lawrence Island, AK", region: "Western Alaska / Aleutians",
     lat: 63.7185, lon: -171.64467, latDisplay: "63.72°N", lonDisplay: "171.64°W",
@@ -12877,7 +12877,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9468863", waterTempId: "9468863",
+    id: "9468863", waterTempId: "9468333",
     name: "ELIM, NORTON BAY", slug: "elim-norton-bay",
     state: "alaska", city: "ELIM, NORTON BAY, AK", region: "Western Alaska / Aleutians",
     lat: 64.6167, lon: -162.248, latDisplay: "64.62°N", lonDisplay: "162.25°W",
@@ -12899,7 +12899,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9469460", waterTempId: "9469460",
+    id: "9469460", waterTempId: "9468756",
     name: "Lopp Lagoon West", slug: "lopp-lagoon-west",
     state: "alaska", city: "Lopp Lagoon West, AK", region: "Western Alaska / Aleutians",
     lat: 65.625, lon: -168.025, latDisplay: "65.63°N", lonDisplay: "168.03°W",
@@ -12921,7 +12921,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9469515", waterTempId: "9469515",
+    id: "9469515", waterTempId: "9468756",
     name: "Outside Lopp Lagoon", slug: "outside-lopp-lagoon",
     state: "alaska", city: "Outside Lopp Lagoon, AK", region: "Western Alaska / Aleutians",
     lat: 65.728806, lon: -168.03214, latDisplay: "65.73°N", lonDisplay: "168.03°W",
@@ -12943,7 +12943,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9469541", waterTempId: "9469541",
+    id: "9469541", waterTempId: "9468756",
     name: "Little Diomede Island", slug: "little-diomede-island",
     state: "alaska", city: "Little Diomede Island, AK", region: "Western Alaska / Aleutians",
     lat: 65.75706, lon: -168.94954, latDisplay: "65.76°N", lonDisplay: "168.95°W",
@@ -12965,7 +12965,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9469626", waterTempId: "9469626",
+    id: "9469626", waterTempId: "9468756",
     name: "Ikpek Lagoon", slug: "ikpek-lagoon",
     state: "alaska", city: "Ikpek Lagoon, AK", region: "Western Alaska / Aleutians",
     lat: 65.8933, lon: -167.273, latDisplay: "65.89°N", lonDisplay: "167.27°W",
@@ -12987,7 +12987,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9469804", waterTempId: "9469804",
+    id: "9469804", waterTempId: "9491094",
     name: "Shishmaref Inlet Inside", slug: "shishmaref-inlet-inside",
     state: "alaska", city: "Shishmaref Inlet Inside, AK", region: "Western Alaska / Aleutians",
     lat: 66.17, lon: -166.207, latDisplay: "66.17°N", lonDisplay: "166.21°W",
@@ -13009,7 +13009,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9469982", waterTempId: "9469982",
+    id: "9469982", waterTempId: "9491094",
     name: "Lagoon at 165 West", slug: "lagoon-at-165-west",
     state: "alaska", city: "Lagoon at 165 West, AK", region: "Western Alaska / Aleutians",
     lat: 66.4617, lon: -165.055, latDisplay: "66.46°N", lonDisplay: "165.06°W",
@@ -13031,7 +13031,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9495832", waterTempId: "9495832",
+    id: "9495832", waterTempId: "9497645",
     name: "DREW POINT, SMITH BAY", slug: "drew-point-smith-bay",
     state: "alaska", city: "DREW POINT, SMITH BAY, AK", region: "Kodiak Island",
     lat: 70.8663, lon: -153.94, latDisplay: "70.87°N", lonDisplay: "153.94°W",
@@ -13053,7 +13053,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9496345", waterTempId: "9496345",
+    id: "9496345", waterTempId: "9497645",
     name: "CAPE HALKETT", slug: "cape-halkett",
     state: "alaska", city: "CAPE HALKETT, AK", region: "Kodiak Island",
     lat: 70.75508, lon: -152.33778, latDisplay: "70.76°N", lonDisplay: "152.34°W",
@@ -13075,7 +13075,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9497147", waterTempId: "9497147",
+    id: "9497147", waterTempId: "9497645",
     name: "OLIKTOK, BEAUFORT SEA", slug: "oliktok-beaufort-sea",
     state: "alaska", city: "OLIKTOK, BEAUFORT SEA, AK", region: "Cook Inlet / Prince William Sound",
     lat: 70.5117, lon: -149.867, latDisplay: "70.51°N", lonDisplay: "149.87°W",
@@ -13097,7 +13097,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9497646", waterTempId: "9497646",
+    id: "9497646", waterTempId: "9497645",
     name: "STP (INSIDE), PRUDHOE BAY", slug: "stp-inside-prudhoe-bay",
     state: "alaska", city: "STP (INSIDE), PRUDHOE BAY, AK", region: "Cook Inlet / Prince William Sound",
     lat: 70.4, lon: -148.527, latDisplay: "70.40°N", lonDisplay: "148.53°W",
@@ -13119,7 +13119,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9497649", waterTempId: "9497649",
+    id: "9497649", waterTempId: "9497645",
     name: "PRUDHOE BAY #2", slug: "prudhoe-bay-2",
     state: "alaska", city: "PRUDHOE BAY #2, AK", region: "Cook Inlet / Prince William Sound",
     lat: 70.3883, lon: -148.51, latDisplay: "70.39°N", lonDisplay: "148.51°W",
@@ -13141,7 +13141,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9497651", waterTempId: "9497651",
+    id: "9497651", waterTempId: "9497645",
     name: "WEST DOCK, PRUDHOE BAY", slug: "west-dock-prudhoe-bay",
     state: "alaska", city: "WEST DOCK, PRUDHOE BAY, AK", region: "Cook Inlet / Prince William Sound",
     lat: 70.3883, lon: -148.502, latDisplay: "70.39°N", lonDisplay: "148.50°W",
@@ -13163,7 +13163,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9498306", waterTempId: "9498306",
+    id: "9498306", waterTempId: "9497645",
     name: "POINT THOMSON, BEAUFORT SEA", slug: "point-thomson-beaufort-sea",
     state: "alaska", city: "POINT THOMSON, BEAUFORT SEA, AK", region: "Gulf of Alaska",
     lat: 70.169136, lon: -146.24939, latDisplay: "70.17°N", lonDisplay: "146.25°W",
@@ -13185,7 +13185,7 @@ export const ALASKA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "9498381", waterTempId: "9498381",
+    id: "9498381", waterTempId: "9497645",
     name: "FLAXMAN ISLAND, ARCTIC", slug: "flaxman-island-arctic",
     state: "alaska", city: "FLAXMAN ISLAND, ARCTIC, AK", region: "Gulf of Alaska",
     lat: 70.185, lon: -146.05, latDisplay: "70.19°N", lonDisplay: "146.05°W",

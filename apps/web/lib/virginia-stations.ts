@@ -7,7 +7,7 @@ export type { StationConfig, NearbyStation, Species }
 
 export const VIRGINIA_STATIONS: StationConfig[] = [
   {
-    id: "8630055", waterTempId: "8630055",
+    id: "8630055", waterTempId: "8570283",
     name: "Franklin City", slug: "franklin-city",
     state: "virginia", city: "Franklin City, VA", region: "Virginia Coast / Eastern Shore",
     lat: 38.0067, lon: -75.3817, latDisplay: "38.01°N", lonDisplay: "75.38°W",
@@ -29,7 +29,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8630111", waterTempId: "8630111",
+    id: "8630111", waterTempId: "8570283",
     name: "Jesters Island", slug: "jesters-island",
     state: "virginia", city: "Jesters Island, VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.9817008972168, lon: -75.30169677734375, latDisplay: "37.98°N", lonDisplay: "75.30°W",
@@ -51,7 +51,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8630194", waterTempId: "8630194",
+    id: "8630194", waterTempId: "8570283",
     name: "Chincoteague Island, Blake Cove", slug: "chincoteague-island-blake-cove",
     state: "virginia", city: "Chincoteague Island, Blake Cove, VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.9517, lon: -75.355, latDisplay: "37.95°N", lonDisplay: "75.36°W",
@@ -73,7 +73,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8630225", waterTempId: "8630225",
+    id: "8630225", waterTempId: "8631044",
     name: "Chincoteague Island, Oyster Bay", slug: "chincoteague-island-oyster-bay",
     state: "virginia", city: "Chincoteague Island, Oyster Bay, VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.9417, lon: -75.3467, latDisplay: "37.94°N", lonDisplay: "75.35°W",
@@ -95,7 +95,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8630229", waterTempId: "8630229",
+    id: "8630229", waterTempId: "8631044",
     name: "Chincoteague Island, Lewis Creek", slug: "chincoteague-island-lewis-creek",
     state: "virginia", city: "Chincoteague Island, Lewis Creek, VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.9383, lon: -75.3733, latDisplay: "37.94°N", lonDisplay: "75.37°W",
@@ -117,7 +117,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8630249", waterTempId: "8630249",
+    id: "8630249", waterTempId: "8631044",
     name: "Chincoteague Island, USCG Station", slug: "chincoteague-island-uscg-station",
     state: "virginia", city: "Chincoteague Island, USCG Station, VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.93170166015625, lon: -75.38330078125, latDisplay: "37.93°N", lonDisplay: "75.38°W",
@@ -139,7 +139,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8630308", waterTempId: "8630308",
+    id: "8630308", waterTempId: "8631044",
     name: "Chincoteague Channel (south end)", slug: "chincoteague-channel-south-end",
     state: "virginia", city: "Chincoteague Channel (south end), VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.9067, lon: -75.405, latDisplay: "37.91°N", lonDisplay: "75.41°W",
@@ -161,7 +161,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8630315", waterTempId: "8630315",
+    id: "8630315", waterTempId: "8631044",
     name: "Southern Chincoteague Island", slug: "southern-chincoteague-island",
     state: "virginia", city: "Southern Chincoteague Island, VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.902400970458984, lon: -75.40789794921875, latDisplay: "37.90°N", lonDisplay: "75.41°W",
@@ -183,7 +183,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8630371", waterTempId: "8630371",
+    id: "8630371", waterTempId: "8631044",
     name: "Wishart Point, Bogues Bay", slug: "wishart-point-bogues-bay",
     state: "virginia", city: "Wishart Point, Bogues Bay, VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.8817, lon: -75.4917, latDisplay: "37.88°N", lonDisplay: "75.49°W",
@@ -205,7 +205,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8630413", waterTempId: "8630413",
+    id: "8630413", waterTempId: "8631044",
     name: "Assateague Beach, Toms Cove", slug: "assateague-beach-toms-cove",
     state: "virginia", city: "Assateague Beach, Toms Cove, VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.865, lon: -75.3683, latDisplay: "37.87°N", lonDisplay: "75.37°W",
@@ -227,7 +227,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8630440", waterTempId: "8630440",
+    id: "8630440", waterTempId: "8631044",
     name: "Wallops Island", slug: "wallops-island",
     state: "virginia", city: "Wallops Island, VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.8417, lon: -75.4783, latDisplay: "37.84°N", lonDisplay: "75.48°W",
@@ -249,7 +249,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8630637", waterTempId: "8630637",
+    id: "8630637", waterTempId: "8631044",
     name: "Gargathy Neck", slug: "gargathy-neck",
     state: "virginia", city: "Gargathy Neck, VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.7767, lon: -75.5617, latDisplay: "37.78°N", lonDisplay: "75.56°W",
@@ -271,7 +271,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8630839", waterTempId: "8630839",
+    id: "8630839", waterTempId: "8631044",
     name: "Folly Creek, Metompkin Inlet", slug: "folly-creek-metompkin-inlet",
     state: "virginia", city: "Folly Creek, Metompkin Inlet, VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.6967, lon: -75.635, latDisplay: "37.70°N", lonDisplay: "75.64°W",
@@ -293,7 +293,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8630901", waterTempId: "8630901",
+    id: "8630901", waterTempId: "8631044",
     name: "Metompkin Inlet", slug: "metompkin-inlet",
     state: "virginia", city: "Metompkin Inlet, VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.6717, lon: -75.595, latDisplay: "37.67°N", lonDisplay: "75.59°W",
@@ -337,7 +337,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8631234", waterTempId: "8631234",
+    id: "8631234", waterTempId: "8631044",
     name: "Revel Creek, Revel Island", slug: "revel-creek-revel-island",
     state: "virginia", city: "Revel Creek, Revel Island, VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.4967, lon: -75.6833, latDisplay: "37.50°N", lonDisplay: "75.68°W",
@@ -359,7 +359,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8631287", waterTempId: "8631287",
+    id: "8631287", waterTempId: "8631044",
     name: "Upshur Neck, south end", slug: "upshur-neck-south-end",
     state: "virginia", city: "Upshur Neck, south end, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.4667, lon: -75.8, latDisplay: "37.47°N", lonDisplay: "75.80°W",
@@ -381,7 +381,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8631411", waterTempId: "8631411",
+    id: "8631411", waterTempId: "8631044",
     name: "Great Machipongo Inlet (inside)", slug: "great-machipongo-inlet-inside",
     state: "virginia", city: "Great Machipongo Inlet (inside), VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.3933, lon: -75.7133, latDisplay: "37.39°N", lonDisplay: "75.71°W",
@@ -403,7 +403,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8631542", waterTempId: "8631542",
+    id: "8631542", waterTempId: "8632200",
     name: "Sand Shoal Inlet (Coast Guard Station)", slug: "sand-shoal-inlet-coast-guard-station",
     state: "virginia", city: "Sand Shoal Inlet (Coast Guard Station), VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.3017, lon: -75.7783, latDisplay: "37.30°N", lonDisplay: "75.78°W",
@@ -425,7 +425,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8631591", waterTempId: "8631591",
+    id: "8631591", waterTempId: "8632200",
     name: "Oyster Harbor", slug: "oyster-harbor",
     state: "virginia", city: "Oyster Harbor, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.2883, lon: -75.925, latDisplay: "37.29°N", lonDisplay: "75.92°W",
@@ -447,7 +447,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8631874", waterTempId: "8631874",
+    id: "8631874", waterTempId: "8632200",
     name: "Smith Island (Coast Guard Station)", slug: "smith-island-coast-guard-station",
     state: "virginia", city: "Smith Island (Coast Guard Station), VA", region: "Virginia Beach / Currituck Sound",
     lat: 37.1233, lon: -75.9117, latDisplay: "37.12°N", lonDisplay: "75.91°W",
@@ -469,7 +469,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8632085", waterTempId: "8632085",
+    id: "8632085", waterTempId: "8632200",
     name: "Fishermans Island", slug: "fishermans-island",
     state: "virginia", city: "Fishermans Island, VA", region: "Virginia Beach / Currituck Sound",
     lat: 37.0967, lon: -75.9833, latDisplay: "37.10°N", lonDisplay: "75.98°W",
@@ -513,7 +513,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8632314", waterTempId: "8632314",
+    id: "8632314", waterTempId: "8632200",
     name: "Old Plantation Light", slug: "old-plantation-light",
     state: "virginia", city: "Old Plantation Light, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.2333, lon: -76.05, latDisplay: "37.23°N", lonDisplay: "76.05°W",
@@ -535,7 +535,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8632366", waterTempId: "8632366",
+    id: "8632366", waterTempId: "8632200",
     name: "Cape Charles Harbor", slug: "cape-charles-harbor",
     state: "virginia", city: "Cape Charles Harbor, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.2633, lon: -76.02, latDisplay: "37.26°N", lonDisplay: "76.02°W",
@@ -557,7 +557,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8632837", waterTempId: "8632837",
+    id: "8632837", waterTempId: "8631044",
     name: "Rappahannock Light", slug: "rappahannock-light",
     state: "virginia", city: "Rappahannock Light, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.538299560546875, lon: -76.01499938964844, latDisplay: "37.54°N", lonDisplay: "76.01°W",
@@ -579,7 +579,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8632869", waterTempId: "8632869",
+    id: "8632869", waterTempId: "8631044",
     name: "Gaskins Point, Occohannock Creek", slug: "gaskins-point-occohannock-creek",
     state: "virginia", city: "Gaskins Point, Occohannock Creek, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.5567, lon: -75.9167, latDisplay: "37.56°N", lonDisplay: "75.92°W",
@@ -601,7 +601,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8633091", waterTempId: "8633091",
+    id: "8633091", waterTempId: "8631044",
     name: "Harborton, Pungoteague Creek", slug: "harborton-pungoteague-creek",
     state: "virginia", city: "Harborton, Pungoteague Creek, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.6667, lon: -75.8333, latDisplay: "37.67°N", lonDisplay: "75.83°W",
@@ -623,7 +623,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8633214", waterTempId: "8633214",
+    id: "8633214", waterTempId: "8631044",
     name: "Onancock, Onancock Creek", slug: "onancock-onancock-creek",
     state: "virginia", city: "Onancock, Onancock Creek, VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.7117, lon: -75.7567, latDisplay: "37.71°N", lonDisplay: "75.76°W",
@@ -645,7 +645,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8633362", waterTempId: "8633362",
+    id: "8633362", waterTempId: "8631044",
     name: "Chesconessex Creek, Schooner Bay", slug: "chesconessex-creek-schooner-bay",
     state: "virginia", city: "Chesconessex Creek, Schooner Bay, VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.7633, lon: -75.7733, latDisplay: "37.76°N", lonDisplay: "75.77°W",
@@ -667,7 +667,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8633451", waterTempId: "8633451",
+    id: "8633451", waterTempId: "8631044",
     name: "Watts Island", slug: "watts-island",
     state: "virginia", city: "Watts Island, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.7983, lon: -75.8967, latDisplay: "37.80°N", lonDisplay: "75.90°W",
@@ -689,7 +689,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8633532", waterTempId: "8633532",
+    id: "8633532", waterTempId: "8631044",
     name: "Tangier Island", slug: "tangier-island",
     state: "virginia", city: "Tangier Island, VA", region: "Upper Chesapeake Bay",
     lat: 37.8283, lon: -75.9933, latDisplay: "37.83°N", lonDisplay: "75.99°W",
@@ -711,7 +711,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8633596", waterTempId: "8633596",
+    id: "8633596", waterTempId: "8631044",
     name: "Guard Shore", slug: "guard-shore",
     state: "virginia", city: "Guard Shore, VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.85, lon: -75.7, latDisplay: "37.85°N", lonDisplay: "75.70°W",
@@ -733,7 +733,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8633604", waterTempId: "8633604",
+    id: "8633604", waterTempId: "8631044",
     name: "Muddy Creek Entrance", slug: "muddy-creek-entrance",
     state: "virginia", city: "Muddy Creek Entrance, VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.855, lon: -75.675, latDisplay: "37.85°N", lonDisplay: "75.67°W",
@@ -755,7 +755,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8633777", waterTempId: "8633777",
+    id: "8633777", waterTempId: "8631044",
     name: "Saxis, Starling Creek", slug: "saxis-starling-creek",
     state: "virginia", city: "Saxis, Starling Creek, VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.92169952392578, lon: -75.72830200195312, latDisplay: "37.92°N", lonDisplay: "75.73°W",
@@ -777,7 +777,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8634214", waterTempId: "8634214",
+    id: "8634214", waterTempId: "8594900",
     name: "Alexandria, Va.", slug: "alexandria-va",
     state: "virginia", city: "Alexandria, Va., VA", region: "Upper Chesapeake Bay",
     lat: 38.805, lon: -77.0383, latDisplay: "38.80°N", lonDisplay: "77.04°W",
@@ -799,7 +799,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8634689", waterTempId: "8634689",
+    id: "8634689", waterTempId: "8635027",
     name: "Quantico, Va.", slug: "quantico-va",
     state: "virginia", city: "Quantico, Va., VA", region: "Upper Chesapeake Bay",
     lat: 38.52, lon: -77.2867, latDisplay: "38.52°N", lonDisplay: "77.29°W",
@@ -821,7 +821,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8634858", waterTempId: "8634858",
+    id: "8634858", waterTempId: "8635027",
     name: "Aquia Creek, Va.", slug: "aquia-creek-va",
     state: "virginia", city: "Aquia Creek, Va., VA", region: "Upper Chesapeake Bay",
     lat: 38.4183, lon: -77.3533, latDisplay: "38.42°N", lonDisplay: "77.35°W",
@@ -843,7 +843,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8634892", waterTempId: "8634892",
+    id: "8634892", waterTempId: "8635027",
     name: "Mathias Point, Va.", slug: "mathias-point-va",
     state: "virginia", city: "Mathias Point, Va., VA", region: "Upper Chesapeake Bay",
     lat: 38.3983, lon: -77.0533, latDisplay: "38.40°N", lonDisplay: "77.05°W",
@@ -887,7 +887,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8635150", waterTempId: "8635150",
+    id: "8635150", waterTempId: "8635027",
     name: "Colonial Beach, Va.", slug: "colonial-beach-va",
     state: "virginia", city: "Colonial Beach, Va., VA", region: "Upper Chesapeake Bay",
     lat: 38.2517, lon: -76.96, latDisplay: "38.25°N", lonDisplay: "76.96°W",
@@ -909,7 +909,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8635154", waterTempId: "8635154",
+    id: "8635154", waterTempId: "8635027",
     name: "Massaponax", slug: "massaponax",
     state: "virginia", city: "Massaponax, VA", region: "Upper Chesapeake Bay",
     lat: 38.255, lon: -77.41, latDisplay: "38.26°N", lonDisplay: "77.41°W",
@@ -931,7 +931,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8635171", waterTempId: "8635171",
+    id: "8635171", waterTempId: "8635027",
     name: "Hopyard Landing", slug: "hopyard-landing",
     state: "virginia", city: "Hopyard Landing, VA", region: "Upper Chesapeake Bay",
     lat: 38.2433, lon: -77.2267, latDisplay: "38.24°N", lonDisplay: "77.23°W",
@@ -953,7 +953,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8635257", waterTempId: "8635257",
+    id: "8635257", waterTempId: "8635027",
     name: "Park Turn", slug: "park-turn",
     state: "virginia", city: "Park Turn, VA", region: "Upper Chesapeake Bay",
     lat: 38.2133, lon: -77.2433, latDisplay: "38.21°N", lonDisplay: "77.24°W",
@@ -975,7 +975,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8635299", waterTempId: "8635299",
+    id: "8635299", waterTempId: "8635027",
     name: "Port Royal", slug: "port-royal",
     state: "virginia", city: "Port Royal, VA", region: "Upper Chesapeake Bay",
     lat: 38.1733, lon: -77.19, latDisplay: "38.17°N", lonDisplay: "77.19°W",
@@ -997,7 +997,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8635409", waterTempId: "8635409",
+    id: "8635409", waterTempId: "8635750",
     name: "Mount Holly, Nomini Creek, Va.", slug: "mount-holly-nomini-creek-va",
     state: "virginia", city: "Mount Holly, Nomini Creek, Va., VA", region: "Upper Chesapeake Bay",
     lat: 38.0983, lon: -76.735, latDisplay: "38.10°N", lonDisplay: "76.73°W",
@@ -1019,7 +1019,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8635485", waterTempId: "8635485",
+    id: "8635485", waterTempId: "8635750",
     name: "Ragged Point, Coles Neck, Va.", slug: "ragged-point-coles-neck-va",
     state: "virginia", city: "Ragged Point, Coles Neck, Va., VA", region: "Upper Chesapeake Bay",
     lat: 38.1417, lon: -76.6133, latDisplay: "38.14°N", lonDisplay: "76.61°W",
@@ -1041,7 +1041,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8635554", waterTempId: "8635554",
+    id: "8635554", waterTempId: "8635027",
     name: "Saunders Wharf", slug: "saunders-wharf",
     state: "virginia", city: "Saunders Wharf, VA", region: "Upper Chesapeake Bay",
     lat: 38.09, lon: -77.0333, latDisplay: "38.09°N", lonDisplay: "77.03°W",
@@ -1063,7 +1063,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8635671", waterTempId: "8635671",
+    id: "8635671", waterTempId: "8635750",
     name: "Kinsale, Yeocomico River, Va.", slug: "kinsale-yeocomico-river-va",
     state: "virginia", city: "Kinsale, Yeocomico River, Va., VA", region: "Upper Chesapeake Bay",
     lat: 38.0317, lon: -76.5767, latDisplay: "38.03°N", lonDisplay: "76.58°W",
@@ -1107,7 +1107,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8635762", waterTempId: "8635762",
+    id: "8635762", waterTempId: "8635750",
     name: "Travis Point, Coan River, Va.", slug: "travis-point-coan-river-va",
     state: "virginia", city: "Travis Point, Coan River, Va., VA", region: "Upper Chesapeake Bay",
     lat: 37.9967, lon: -76.4667, latDisplay: "38.00°N", lonDisplay: "76.47°W",
@@ -1129,7 +1129,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8635881", waterTempId: "8635881",
+    id: "8635881", waterTempId: "8635750",
     name: "Tappahannock", slug: "tappahannock",
     state: "virginia", city: "Tappahannock, VA", region: "Upper Chesapeake Bay",
     lat: 37.93, lon: -76.8567, latDisplay: "37.93°N", lonDisplay: "76.86°W",
@@ -1151,7 +1151,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8635959", waterTempId: "8635959",
+    id: "8635959", waterTempId: "8635750",
     name: "Sunnybank, Little Wicomico River", slug: "sunnybank-little-wicomico-river",
     state: "virginia", city: "Sunnybank, Little Wicomico River, VA", region: "Upper Chesapeake Bay",
     lat: 37.8867, lon: -76.2667, latDisplay: "37.89°N", lonDisplay: "76.27°W",
@@ -1173,7 +1173,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8635985", waterTempId: "8635985",
+    id: "8635985", waterTempId: "8635750",
     name: "Wares Wharf", slug: "wares-wharf",
     state: "virginia", city: "Wares Wharf, VA", region: "Upper Chesapeake Bay",
     lat: 37.8733, lon: -76.7833, latDisplay: "37.87°N", lonDisplay: "76.78°W",
@@ -1195,7 +1195,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8636046", waterTempId: "8636046",
+    id: "8636046", waterTempId: "8635750",
     name: "Glebe Point, Great Wicomico River", slug: "glebe-point-great-wicomico-river",
     state: "virginia", city: "Glebe Point, Great Wicomico River, VA", region: "Upper Chesapeake Bay",
     lat: 37.8467, lon: -76.3683, latDisplay: "37.85°N", lonDisplay: "76.37°W",
@@ -1217,7 +1217,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8636128", waterTempId: "8636128",
+    id: "8636128", waterTempId: "8635750",
     name: "Fleeton Point", slug: "fleeton-point",
     state: "virginia", city: "Fleeton Point, VA", region: "Upper Chesapeake Bay",
     lat: 37.8133, lon: -76.275, latDisplay: "37.81°N", lonDisplay: "76.28°W",
@@ -1239,7 +1239,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8636142", waterTempId: "8636142",
+    id: "8636142", waterTempId: "8635750",
     name: "Great Wicomico River Light", slug: "great-wicomico-river-light",
     state: "virginia", city: "Great Wicomico River Light, VA", region: "Upper Chesapeake Bay",
     lat: 37.805, lon: -76.2683, latDisplay: "37.80°N", lonDisplay: "76.27°W",
@@ -1261,7 +1261,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8636261", waterTempId: "8636261",
+    id: "8636261", waterTempId: "8635750",
     name: "Bayport", slug: "bayport",
     state: "virginia", city: "Bayport, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.755, lon: -76.6733, latDisplay: "37.76°N", lonDisplay: "76.67°W",
@@ -1283,7 +1283,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8636458", waterTempId: "8636458",
+    id: "8636458", waterTempId: "8635750",
     name: "Millenbeck, Corrotoman River", slug: "millenbeck-corrotoman-river",
     state: "virginia", city: "Millenbeck, Corrotoman River, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.6683, lon: -76.4867, latDisplay: "37.67°N", lonDisplay: "76.49°W",
@@ -1305,7 +1305,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8636499", waterTempId: "8636499",
+    id: "8636499", waterTempId: "8635750",
     name: "Wakema (Fraziers Ferry), Mattaponi River", slug: "wakema-fraziers-ferry-mattaponi-river",
     state: "virginia", city: "Wakema (Fraziers Ferry), Mattaponi River, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.65, lon: -76.9, latDisplay: "37.65°N", lonDisplay: "76.90°W",
@@ -1327,7 +1327,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8636522", waterTempId: "8636522",
+    id: "8636522", waterTempId: "8635750",
     name: "Urbanna", slug: "urbanna",
     state: "virginia", city: "Urbanna, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.65, lon: -76.575, latDisplay: "37.65°N", lonDisplay: "76.58°W",
@@ -1349,7 +1349,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8636558", waterTempId: "8636558",
+    id: "8636558", waterTempId: "8635750",
     name: "Northbury", slug: "northbury",
     state: "virginia", city: "Northbury, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.625, lon: -77.1217, latDisplay: "37.63°N", lonDisplay: "77.12°W",
@@ -1371,7 +1371,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8636580", waterTempId: "8636580",
+    id: "8636580", waterTempId: "8635750",
     name: "Windmill Point", slug: "windmill-point",
     state: "virginia", city: "Windmill Point, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.6155, lon: -76.28977777777777, latDisplay: "37.62°N", lonDisplay: "76.29°W",
@@ -1393,7 +1393,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8636623", waterTempId: "8636623",
+    id: "8636623", waterTempId: "8637689",
     name: "Windmill Point Light", slug: "windmill-point-light",
     state: "virginia", city: "Windmill Point Light, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.5967, lon: -76.2367, latDisplay: "37.60°N", lonDisplay: "76.24°W",
@@ -1415,7 +1415,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8636653", waterTempId: "8636653",
+    id: "8636653", waterTempId: "8637689",
     name: "Lester Manor", slug: "lester-manor",
     state: "virginia", city: "Lester Manor, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.5833, lon: -76.99, latDisplay: "37.58°N", lonDisplay: "76.99°W",
@@ -1437,7 +1437,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8636654", waterTempId: "8636654",
+    id: "8636654", waterTempId: "8637689",
     name: "Mill Creek (Grey Point)", slug: "mill-creek-grey-point",
     state: "virginia", city: "Mill Creek (Grey Point), VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.5833, lon: -76.4183, latDisplay: "37.58°N", lonDisplay: "76.42°W",
@@ -1459,7 +1459,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8636735", waterTempId: "8636735",
+    id: "8636735", waterTempId: "8637689",
     name: "Jackson Creek, Deltaville", slug: "jackson-creek-deltaville",
     state: "virginia", city: "Jackson Creek, Deltaville, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.5483, lon: -76.3317, latDisplay: "37.55°N", lonDisplay: "76.33°W",
@@ -1481,7 +1481,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8636769", waterTempId: "8636769",
+    id: "8636769", waterTempId: "8637689",
     name: "West Point", slug: "west-point",
     state: "virginia", city: "West Point, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.535, lon: -76.7933, latDisplay: "37.53°N", lonDisplay: "76.79°W",
@@ -1503,7 +1503,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8636831", waterTempId: "8636831",
+    id: "8636831", waterTempId: "8637689",
     name: "Dixie", slug: "dixie",
     state: "virginia", city: "Dixie, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.5067, lon: -76.4167, latDisplay: "37.51°N", lonDisplay: "76.42°W",
@@ -1525,7 +1525,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8636941", waterTempId: "8636941",
+    id: "8636941", waterTempId: "8637689",
     name: "Richmond Deepwater Terminal, James River", slug: "richmond-deepwater-terminal-james-river",
     state: "virginia", city: "Richmond Deepwater Terminal, James River, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.45955555555555, lon: -77.42077777777777, latDisplay: "37.46°N", lonDisplay: "77.42°W",
@@ -1547,7 +1547,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8636969", waterTempId: "8636969",
+    id: "8636969", waterTempId: "8637689",
     name: "Roane Point", slug: "roane-point",
     state: "virginia", city: "Roane Point, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.4467, lon: -76.7083, latDisplay: "37.45°N", lonDisplay: "76.71°W",
@@ -1569,7 +1569,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8637072", waterTempId: "8637072",
+    id: "8637072", waterTempId: "8637689",
     name: "Belleville", slug: "belleville",
     state: "virginia", city: "Belleville, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.4117, lon: -76.4383, latDisplay: "37.41°N", lonDisplay: "76.44°W",
@@ -1591,7 +1591,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8637144", waterTempId: "8637144",
+    id: "8637144", waterTempId: "8632200",
     name: "Wolf Trap Light", slug: "wolf-trap-light",
     state: "virginia", city: "Wolf Trap Light, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.39, lon: -76.19, latDisplay: "37.39°N", lonDisplay: "76.19°W",
@@ -1613,7 +1613,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8637199", waterTempId: "8637199",
+    id: "8637199", waterTempId: "8637689",
     name: "Mobjack, East River", slug: "mobjack-east-river",
     state: "virginia", city: "Mobjack, East River, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.3733, lon: -76.3467, latDisplay: "37.37°N", lonDisplay: "76.35°W",
@@ -1635,7 +1635,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8637444", waterTempId: "8637444",
+    id: "8637444", waterTempId: "8637689",
     name: "Browns Bay", slug: "browns-bay",
     state: "virginia", city: "Browns Bay, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.3, lon: -76.4, latDisplay: "37.30°N", lonDisplay: "76.40°W",
@@ -1657,7 +1657,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8637472", waterTempId: "8637472",
+    id: "8637472", waterTempId: "8637689",
     name: "Cheatham Annex", slug: "cheatham-annex",
     state: "virginia", city: "Cheatham Annex, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.2917, lon: -76.5867, latDisplay: "37.29°N", lonDisplay: "76.59°W",
@@ -1679,7 +1679,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8637624", waterTempId: "8637624",
+    id: "8637624", waterTempId: "8637689",
     name: "Gloucester Point", slug: "gloucester-point",
     state: "virginia", city: "Gloucester Point, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.2467, lon: -76.5, latDisplay: "37.25°N", lonDisplay: "76.50°W",
@@ -1701,7 +1701,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8637663", waterTempId: "8637663",
+    id: "8637663", waterTempId: "8637689",
     name: "Tue Marshes Light", slug: "tue-marshes-light",
     state: "virginia", city: "Tue Marshes Light, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.235, lon: -76.385, latDisplay: "37.23°N", lonDisplay: "76.39°W",
@@ -1723,7 +1723,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8637686", waterTempId: "8637686",
+    id: "8637686", waterTempId: "8637689",
     name: "Yorktown, Goodwin Neck", slug: "yorktown-goodwin-neck",
     state: "virginia", city: "Yorktown, Goodwin Neck, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.23, lon: -76.4367, latDisplay: "37.23°N", lonDisplay: "76.44°W",
@@ -1767,7 +1767,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8637712", waterTempId: "8637712",
+    id: "8637712", waterTempId: "8637689",
     name: "Jamestown", slug: "jamestown",
     state: "virginia", city: "Jamestown, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.22010040283203, lon: -76.79139709472656, latDisplay: "37.22°N", lonDisplay: "76.79°W",
@@ -1789,7 +1789,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638017", waterTempId: "8638017",
+    id: "8638017", waterTempId: "8637689",
     name: "Fort Eustis (MARAD)", slug: "fort-eustis-marad",
     state: "virginia", city: "Fort Eustis (MARAD), VA", region: "Virginia Beach / Currituck Sound",
     lat: 37.13822222222223, lon: -76.62275, latDisplay: "37.14°N", lonDisplay: "76.62°W",
@@ -1811,7 +1811,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638051", waterTempId: "8638051",
+    id: "8638051", waterTempId: "8638610",
     name: "Messick Point, Back River", slug: "messick-point-back-river",
     state: "virginia", city: "Messick Point, Back River, VA", region: "Virginia Beach / Currituck Sound",
     lat: 37.1083, lon: -76.3183, latDisplay: "37.11°N", lonDisplay: "76.32°W",
@@ -1833,7 +1833,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638288", waterTempId: "8638288",
+    id: "8638288", waterTempId: "8638610",
     name: "Old Point Comfort", slug: "old-point-comfort",
     state: "virginia", city: "Old Point Comfort, VA", region: "Virginia Beach / Currituck Sound",
     lat: 37.0033, lon: -76.315, latDisplay: "37.00°N", lonDisplay: "76.31°W",
@@ -1855,7 +1855,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638339", waterTempId: "8638339",
+    id: "8638339", waterTempId: "8639348",
     name: "Western Branch", slug: "western-branch",
     state: "virginia", city: "Western Branch, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.82322222222222, lon: -76.39911111111111, latDisplay: "36.82°N", lonDisplay: "76.40°W",
@@ -1877,7 +1877,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638379", waterTempId: "8638379",
+    id: "8638379", waterTempId: "8638610",
     name: "Newport News", slug: "newport-news",
     state: "virginia", city: "Newport News, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9733, lon: -76.4333, latDisplay: "36.97°N", lonDisplay: "76.43°W",
@@ -1899,7 +1899,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638401", waterTempId: "8638401",
+    id: "8638401", waterTempId: "8638610",
     name: "Huntington Park", slug: "huntington-park",
     state: "virginia", city: "Huntington Park, VA", region: "Virginia Beach / Currituck Sound",
     lat: 37.0133, lon: -76.4583, latDisplay: "37.01°N", lonDisplay: "76.46°W",
@@ -1921,7 +1921,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638406", waterTempId: "8638406",
+    id: "8638406", waterTempId: "8638610",
     name: "Town Point", slug: "town-point",
     state: "virginia", city: "Town Point, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.8833, lon: -76.5083, latDisplay: "36.88°N", lonDisplay: "76.51°W",
@@ -1943,7 +1943,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638407", waterTempId: "8638407",
+    id: "8638407", waterTempId: "8637689",
     name: "Menchville", slug: "menchville",
     state: "virginia", city: "Menchville, VA", region: "Virginia Beach / Currituck Sound",
     lat: 37.0817, lon: -76.525, latDisplay: "37.08°N", lonDisplay: "76.53°W",
@@ -1965,7 +1965,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638409", waterTempId: "8638409",
+    id: "8638409", waterTempId: "8638610",
     name: "Hollidays Point (Kings Highway bridge)", slug: "hollidays-point-kings-highway-bridge",
     state: "virginia", city: "Hollidays Point (Kings Highway bridge), VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.8383, lon: -76.55, latDisplay: "36.84°N", lonDisplay: "76.55°W",
@@ -1987,7 +1987,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638418", waterTempId: "8638418",
+    id: "8638418", waterTempId: "8638610",
     name: "Smithfield, Pagan River", slug: "smithfield-pagan-river",
     state: "virginia", city: "Smithfield, Pagan River, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9833, lon: -76.63, latDisplay: "36.98°N", lonDisplay: "76.63°W",
@@ -2009,7 +2009,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638421", waterTempId: "8638421",
+    id: "8638421", waterTempId: "8637689",
     name: "Burwell Bay", slug: "burwell-bay",
     state: "virginia", city: "Burwell Bay, VA", region: "Virginia Beach / Currituck Sound",
     lat: 37.0567, lon: -76.6683, latDisplay: "37.06°N", lonDisplay: "76.67°W",
@@ -2031,7 +2031,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638424", waterTempId: "8638424",
+    id: "8638424", waterTempId: "8637689",
     name: "Kingsmill", slug: "kingsmill",
     state: "virginia", city: "Kingsmill, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.22, lon: -76.6633, latDisplay: "37.22°N", lonDisplay: "76.66°W",
@@ -2053,7 +2053,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638433", waterTempId: "8638433",
+    id: "8638433", waterTempId: "8637689",
     name: "Scotland", slug: "scotland",
     state: "virginia", city: "Scotland, VA", region: "Virginia Beach / Currituck Sound",
     lat: 37.185, lon: -76.7833, latDisplay: "37.19°N", lonDisplay: "76.78°W",
@@ -2075,7 +2075,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638441", waterTempId: "8638441",
+    id: "8638441", waterTempId: "8637689",
     name: "Wright Island Landing", slug: "wright-island-landing",
     state: "virginia", city: "Wright Island Landing, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.345, lon: -76.875, latDisplay: "37.34°N", lonDisplay: "76.88°W",
@@ -2097,7 +2097,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638442", waterTempId: "8638442",
+    id: "8638442", waterTempId: "8637689",
     name: "Ferry Point (bridge)", slug: "ferry-point-bridge",
     state: "virginia", city: "Ferry Point (bridge), VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.2633, lon: -76.8767, latDisplay: "37.26°N", lonDisplay: "76.88°W",
@@ -2119,7 +2119,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638445", waterTempId: "8638445",
+    id: "8638445", waterTempId: "8637689",
     name: "Lanexa, Chicahomny River", slug: "lanexa-chicahomny-river",
     state: "virginia", city: "Lanexa, Chicahomny River, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.4033, lon: -76.9117, latDisplay: "37.40°N", lonDisplay: "76.91°W",
@@ -2141,7 +2141,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638449", waterTempId: "8638449",
+    id: "8638449", waterTempId: "8637689",
     name: "Claremont", slug: "claremont",
     state: "virginia", city: "Claremont, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.2317, lon: -76.9483, latDisplay: "37.23°N", lonDisplay: "76.95°W",
@@ -2163,7 +2163,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638450", waterTempId: "8638450",
+    id: "8638450", waterTempId: "8637689",
     name: "Tettington, James River", slug: "tettington-james-river",
     state: "virginia", city: "Tettington, James River, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.24, lon: -76.9433, latDisplay: "37.24°N", lonDisplay: "76.94°W",
@@ -2185,7 +2185,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638455", waterTempId: "8638455",
+    id: "8638455", waterTempId: "8637689",
     name: "Sturgeon Point", slug: "sturgeon-point",
     state: "virginia", city: "Sturgeon Point, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.3067, lon: -77.0067, latDisplay: "37.31°N", lonDisplay: "77.01°W",
@@ -2207,7 +2207,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638464", waterTempId: "8638464",
+    id: "8638464", waterTempId: "8637689",
     name: "Willcox Wharf, Charles City", slug: "willcox-wharf-charles-city",
     state: "virginia", city: "Willcox Wharf, Charles City, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.315, lon: -77.0983, latDisplay: "37.31°N", lonDisplay: "77.10°W",
@@ -2229,7 +2229,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638476", waterTempId: "8638476",
+    id: "8638476", waterTempId: "8637689",
     name: "Jordan Point", slug: "jordan-point",
     state: "virginia", city: "Jordan Point, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.3133, lon: -77.2233, latDisplay: "37.31°N", lonDisplay: "77.22°W",
@@ -2251,7 +2251,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638478", waterTempId: "8638478",
+    id: "8638478", waterTempId: "8637689",
     name: "Haxall", slug: "haxall",
     state: "virginia", city: "Haxall, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.3733, lon: -77.2433, latDisplay: "37.37°N", lonDisplay: "77.24°W",
@@ -2273,7 +2273,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638481", waterTempId: "8638481",
+    id: "8638481", waterTempId: "8637689",
     name: "City Point, Hopewell", slug: "city-point-hopewell",
     state: "virginia", city: "City Point, Hopewell, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.3133, lon: -77.27, latDisplay: "37.31°N", lonDisplay: "77.27°W",
@@ -2295,7 +2295,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638486", waterTempId: "8638486",
+    id: "8638486", waterTempId: "8637689",
     name: "Meadowville", slug: "meadowville",
     state: "virginia", city: "Meadowville, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.3783, lon: -77.3233, latDisplay: "37.38°N", lonDisplay: "77.32°W",
@@ -2317,7 +2317,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638489", waterTempId: "8638489",
+    id: "8638489", waterTempId: "8637689",
     name: "Puddledock, Appomattox River", slug: "puddledock-appomattox-river",
     state: "virginia", city: "Puddledock, Appomattox River, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.2667, lon: -77.3717, latDisplay: "37.27°N", lonDisplay: "77.37°W",
@@ -2339,7 +2339,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638491", waterTempId: "8638491",
+    id: "8638491", waterTempId: "8637689",
     name: "Chester", slug: "chester",
     state: "virginia", city: "Chester, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.3833, lon: -77.3783, latDisplay: "37.38°N", lonDisplay: "77.38°W",
@@ -2361,7 +2361,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638495", waterTempId: "8638495",
+    id: "8638495", waterTempId: "8637689",
     name: "Richmond (river locks)", slug: "richmond-river-locks",
     state: "virginia", city: "Richmond (river locks), VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.525, lon: -77.42, latDisplay: "37.52°N", lonDisplay: "77.42°W",
@@ -2383,7 +2383,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638514", waterTempId: "8638514",
+    id: "8638514", waterTempId: "8638610",
     name: "Pig Point", slug: "pig-point",
     state: "virginia", city: "Pig Point, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9167, lon: -76.435, latDisplay: "36.92°N", lonDisplay: "76.44°W",
@@ -2405,7 +2405,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638596", waterTempId: "8638596",
+    id: "8638596", waterTempId: "8638610",
     name: "Craney Island Light", slug: "craney-island-light",
     state: "virginia", city: "Craney Island Light, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.8917, lon: -76.3383, latDisplay: "36.89°N", lonDisplay: "76.34°W",
@@ -2449,7 +2449,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638654", waterTempId: "8638654",
+    id: "8638654", waterTempId: "8639348",
     name: "Norfolk", slug: "norfolk",
     state: "virginia", city: "Norfolk, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.8517, lon: -76.2983, latDisplay: "36.85°N", lonDisplay: "76.30°W",
@@ -2471,7 +2471,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638660", waterTempId: "8638660",
+    id: "8638660", waterTempId: "8639348",
     name: "Portsmouth, Naval Shipyard", slug: "portsmouth-naval-shipyard",
     state: "virginia", city: "Portsmouth, Naval Shipyard, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.8217, lon: -76.2933, latDisplay: "36.82°N", lonDisplay: "76.29°W",
@@ -2493,7 +2493,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638671", waterTempId: "8638671",
+    id: "8638671", waterTempId: "8638610",
     name: "Lafayette River", slug: "lafayette-river",
     state: "virginia", city: "Lafayette River, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.88422222222222, lon: -76.27585833333333, latDisplay: "36.88°N", lonDisplay: "76.28°W",
@@ -2515,7 +2515,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638776", waterTempId: "8638776",
+    id: "8638776", waterTempId: "8638610",
     name: "Little Creek, NAB", slug: "little-creek-nab",
     state: "virginia", city: "Little Creek, NAB, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9117, lon: -76.175, latDisplay: "36.91°N", lonDisplay: "76.17°W",
@@ -2537,7 +2537,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638854", waterTempId: "8638854",
+    id: "8638854", waterTempId: "8639348",
     name: "Buchanan Creek entrance", slug: "buchanan-creek-entrance",
     state: "virginia", city: "Buchanan Creek entrance, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.8617, lon: -76.115, latDisplay: "36.86°N", lonDisplay: "76.11°W",
@@ -2559,7 +2559,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638863", waterTempId: "8638863",
+    id: "8638863", waterTempId: "8638901",
     name: "CHESAPEAKE BAY BRIDGE TUNNEL", slug: "chesapeake-bay-bridge-tunnel",
     state: "virginia", city: "CHESAPEAKE BAY BRIDGE TUNNEL, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.96670150756836, lon: -76.11329650878906, latDisplay: "36.97°N", lonDisplay: "76.11°W",
@@ -2581,7 +2581,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638867", waterTempId: "8638867",
+    id: "8638867", waterTempId: "8638901",
     name: "Bayville", slug: "bayville",
     state: "virginia", city: "Bayville, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.8933, lon: -76.105, latDisplay: "36.89°N", lonDisplay: "76.11°W",
@@ -2603,7 +2603,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638888", waterTempId: "8638888",
+    id: "8638888", waterTempId: "8638901",
     name: "Lynnhaven Inlet, Virginia Pilots Dock", slug: "lynnhaven-inlet-virginia-pilots-dock",
     state: "virginia", city: "Lynnhaven Inlet, Virginia Pilots Dock, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9067, lon: -76.09, latDisplay: "36.91°N", lonDisplay: "76.09°W",
@@ -2647,7 +2647,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638916", waterTempId: "8638916",
+    id: "8638916", waterTempId: "8638901",
     name: "Long Creek", slug: "long-creek",
     state: "virginia", city: "Long Creek, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9033, lon: -76.07, latDisplay: "36.90°N", lonDisplay: "76.07°W",
@@ -2669,7 +2669,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638922", waterTempId: "8638922",
+    id: "8638922", waterTempId: "8638901",
     name: "Brown Cove", slug: "brown-cove",
     state: "virginia", city: "Brown Cove, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.875, lon: -76.0617, latDisplay: "36.88°N", lonDisplay: "76.06°W",
@@ -2691,7 +2691,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638923", waterTempId: "8638923",
+    id: "8638923", waterTempId: "8638901",
     name: "Broad Bay Canal", slug: "broad-bay-canal",
     state: "virginia", city: "Broad Bay Canal, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9017, lon: -76.0617, latDisplay: "36.90°N", lonDisplay: "76.06°W",
@@ -2713,7 +2713,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638999", waterTempId: "8638999",
+    id: "8638999", waterTempId: "8638901",
     name: "Cape Henry", slug: "cape-henry",
     state: "virginia", city: "Cape Henry, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.93000030517578, lon: -76.00666809082031, latDisplay: "36.93°N", lonDisplay: "76.01°W",
@@ -2735,7 +2735,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8639168", waterTempId: "8639168",
+    id: "8639168", waterTempId: "8638901",
     name: "Virginia Beach", slug: "virginia-beach",
     state: "virginia", city: "Virginia Beach, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.8433, lon: -75.9717, latDisplay: "36.84°N", lonDisplay: "75.97°W",
@@ -2757,7 +2757,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8639207", waterTempId: "8639207",
+    id: "8639207", waterTempId: "8638901",
     name: "Rudee Inlet, interior channel", slug: "rudee-inlet-interior-channel",
     state: "virginia", city: "Rudee Inlet, interior channel, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.8317, lon: -75.9733, latDisplay: "36.83°N", lonDisplay: "75.97°W",
@@ -2779,7 +2779,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8639208", waterTempId: "8639208",
+    id: "8639208", waterTempId: "8638901",
     name: "Rudee Inlet entrance", slug: "rudee-inlet-entrance",
     state: "virginia", city: "Rudee Inlet entrance, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.8317, lon: -75.9683, latDisplay: "36.83°N", lonDisplay: "75.97°W",
@@ -2801,7 +2801,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8639214", waterTempId: "8639214",
+    id: "8639214", waterTempId: "8638901",
     name: "Rudee Heights, Lake Wesley", slug: "rudee-heights-lake-wesley",
     state: "virginia", city: "Rudee Heights, Lake Wesley, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.825, lon: -75.975, latDisplay: "36.83°N", lonDisplay: "75.97°W",
@@ -2823,7 +2823,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8639219", waterTempId: "8639219",
+    id: "8639219", waterTempId: "8638901",
     name: "Lake Rudee, south end", slug: "lake-rudee-south-end",
     state: "virginia", city: "Lake Rudee, south end, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.825, lon: -75.9817, latDisplay: "36.83°N", lonDisplay: "75.98°W",
@@ -2867,7 +2867,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8639414", waterTempId: "8639414",
+    id: "8639414", waterTempId: "8639348",
     name: "Deep Creek Entrance", slug: "deep-creek-entrance",
     state: "virginia", city: "Deep Creek Entrance, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.755, lon: -76.2933, latDisplay: "36.76°N", lonDisplay: "76.29°W",
@@ -2889,7 +2889,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8639428", waterTempId: "8639428",
+    id: "8639428", waterTempId: "8639348",
     name: "Sandbridge", slug: "sandbridge",
     state: "virginia", city: "Sandbridge, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.6917, lon: -75.92, latDisplay: "36.69°N", lonDisplay: "75.92°W",
@@ -2911,7 +2911,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8630316", waterTempId: "8630316",
+    id: "8630316", waterTempId: "8631044",
     name: "HARBOR OF REFUGE, CHINCOTEAGUE", slug: "harbor-of-refuge-chincoteague",
     state: "virginia", city: "HARBOR OF REFUGE, CHINCOTEAGUE, VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.9033, lon: -75.4067, latDisplay: "37.90°N", lonDisplay: "75.41°W",
@@ -2933,7 +2933,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8630441", waterTempId: "8630441",
+    id: "8630441", waterTempId: "8631044",
     name: "WALLOPS ISLAND", slug: "wallops-island-8630441",
     state: "virginia", city: "WALLOPS ISLAND, VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.8417, lon: -75.4783, latDisplay: "37.84°N", lonDisplay: "75.48°W",
@@ -2955,7 +2955,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8631935", waterTempId: "8631935",
+    id: "8631935", waterTempId: "8632200",
     name: "Delmarva GPS Buoy", slug: "delmarva-gps-buoy",
     state: "virginia", city: "Delmarva GPS Buoy, VA", region: "Virginia Coast / Eastern Shore",
     lat: 37.087807, lon: -75.5473, latDisplay: "37.09°N", lonDisplay: "75.55°W",
@@ -2977,7 +2977,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8632201", waterTempId: "8632201",
+    id: "8632201", waterTempId: "8632200",
     name: "KIPTOPEKE BEACH (BACKUP)", slug: "kiptopeke-beach-backup",
     state: "virginia", city: "KIPTOPEKE BEACH (BACKUP), VA", region: "Virginia Beach / Currituck Sound",
     lat: 37.1667, lon: -75.9883, latDisplay: "37.17°N", lonDisplay: "75.99°W",
@@ -2999,7 +2999,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8636581", waterTempId: "8636581",
+    id: "8636581", waterTempId: "8635750",
     name: "WINDMILL POINT (BACKUP)", slug: "windmill-point-backup",
     state: "virginia", city: "WINDMILL POINT (BACKUP), VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.615, lon: -76.3017, latDisplay: "37.62°N", lonDisplay: "76.30°W",
@@ -3021,7 +3021,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8636749", waterTempId: "8636749",
+    id: "8636749", waterTempId: "8637689",
     name: "FISHING BAY", slug: "fishing-bay",
     state: "virginia", city: "FISHING BAY, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.5417, lon: -76.3333, latDisplay: "37.54°N", lonDisplay: "76.33°W",
@@ -3043,7 +3043,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8637289", waterTempId: "8637289",
+    id: "8637289", waterTempId: "8637689",
     name: "NEW POINT", slug: "new-point",
     state: "virginia", city: "NEW POINT, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.3467, lon: -76.2733, latDisplay: "37.35°N", lonDisplay: "76.27°W",
@@ -3065,7 +3065,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8637589", waterTempId: "8637589",
+    id: "8637589", waterTempId: "8637689",
     name: "NEW PT.COMFORT SHOAL, (BACKUP)", slug: "new-ptcomfort-shoal-backup",
     state: "virginia", city: "NEW PT.COMFORT SHOAL, (BACKUP), VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.2567, lon: -76.2217, latDisplay: "37.26°N", lonDisplay: "76.22°W",
@@ -3087,7 +3087,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8637590", waterTempId: "8637590",
+    id: "8637590", waterTempId: "8637689",
     name: "NEW POINT, COMFORT SHOAL", slug: "new-point-comfort-shoal",
     state: "virginia", city: "NEW POINT, COMFORT SHOAL, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.2567, lon: -76.2217, latDisplay: "37.26°N", lonDisplay: "76.22°W",
@@ -3109,7 +3109,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8637722", waterTempId: "8637722",
+    id: "8637722", waterTempId: "8637689",
     name: "York Spit Light", slug: "york-spit-light",
     state: "virginia", city: "York Spit Light, VA", region: "Lower Chesapeake Bay / Hampton Roads",
     lat: 37.21, lon: -76.2533, latDisplay: "37.21°N", lonDisplay: "76.25°W",
@@ -3131,7 +3131,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638864", waterTempId: "8638864",
+    id: "8638864", waterTempId: "8638901",
     name: "EDL GAGE  CHES BAY BR TUNNEL  TEST", slug: "edl-gage-ches-bay-br-tunnel-test",
     state: "virginia", city: "EDL GAGE  CHES BAY BR TUNNEL  TEST, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9667, lon: -76.1133, latDisplay: "36.97°N", lonDisplay: "76.11°W",
@@ -3153,7 +3153,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638865", waterTempId: "8638865",
+    id: "8638865", waterTempId: "8638901",
     name: "CHES. BAY TEST FACILITY", slug: "ches-bay-test-facility",
     state: "virginia", city: "CHES. BAY TEST FACILITY, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9667, lon: -76.1133, latDisplay: "36.97°N", lonDisplay: "76.11°W",
@@ -3175,7 +3175,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638866", waterTempId: "8638866",
+    id: "8638866", waterTempId: "8638901",
     name: "CHES BAY BR TEST FAC (BACKUP)", slug: "ches-bay-br-test-fac-backup",
     state: "virginia", city: "CHES BAY BR TEST FAC (BACKUP), VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9667, lon: -76.1133, latDisplay: "36.97°N", lonDisplay: "76.11°W",
@@ -3197,7 +3197,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638868", waterTempId: "8638868",
+    id: "8638868", waterTempId: "8638901",
     name: "WELL D, CHES BAY BR TUNNEL TEST", slug: "well-d-ches-bay-br-tunnel-test",
     state: "virginia", city: "WELL D, CHES BAY BR TUNNEL TEST, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9667, lon: -76.1133, latDisplay: "36.97°N", lonDisplay: "76.11°W",
@@ -3219,7 +3219,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638869", waterTempId: "8638869",
+    id: "8638869", waterTempId: "8638901",
     name: "WELL J, CHES BAY BR TUNNEL TEST", slug: "well-j-ches-bay-br-tunnel-test",
     state: "virginia", city: "WELL J, CHES BAY BR TUNNEL TEST, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9667, lon: -76.1133, latDisplay: "36.97°N", lonDisplay: "76.11°W",
@@ -3241,7 +3241,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638905", waterTempId: "8638905",
+    id: "8638905", waterTempId: "8638901",
     name: "LYNNHAVEN FISHING PIER", slug: "lynnhaven-fishing-pier",
     state: "virginia", city: "LYNNHAVEN FISHING PIER, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9167, lon: -76.0783, latDisplay: "36.92°N", lonDisplay: "76.08°W",
@@ -3263,7 +3263,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638942", waterTempId: "8638942",
+    id: "8638942", waterTempId: "8638901",
     name: "CARTERS POINT #1", slug: "carters-point-1",
     state: "virginia", city: "CARTERS POINT #1, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.905, lon: -76.0367, latDisplay: "36.91°N", lonDisplay: "76.04°W",
@@ -3285,7 +3285,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638946", waterTempId: "8638946",
+    id: "8638946", waterTempId: "8638901",
     name: "CARTERS POINT #2", slug: "carters-point-2",
     state: "virginia", city: "CARTERS POINT #2, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.9033, lon: -76.0467, latDisplay: "36.90°N", lonDisplay: "76.05°W",
@@ -3307,7 +3307,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638978", waterTempId: "8638978",
+    id: "8638978", waterTempId: "8638901",
     name: "CAVALIER YACHT CLUB,LINKHORN BAY", slug: "cavalier-yacht-clublinkhorn-bay",
     state: "virginia", city: "CAVALIER YACHT CLUB,LINKHORN BAY, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.8683, lon: -76.005, latDisplay: "36.87°N", lonDisplay: "76.00°W",
@@ -3329,7 +3329,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8638979", waterTempId: "8638979",
+    id: "8638979", waterTempId: "8638901",
     name: "Chesapeake Light", slug: "chesapeake-light",
     state: "virginia", city: "Chesapeake Light, VA", region: "Virginia Coast / Eastern Shore",
     lat: 36.905, lon: -75.6967, latDisplay: "36.91°N", lonDisplay: "75.70°W",
@@ -3351,7 +3351,7 @@ export const VIRGINIA_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8639519", waterTempId: "8639519",
+    id: "8639519", waterTempId: "8639348",
     name: "BELLS MILL CREEK", slug: "bells-mill-creek",
     state: "virginia", city: "BELLS MILL CREEK, VA", region: "Virginia Beach / Currituck Sound",
     lat: 36.71, lon: -76.2683, latDisplay: "36.71°N", lonDisplay: "76.27°W",

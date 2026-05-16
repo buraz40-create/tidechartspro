@@ -7,7 +7,7 @@ export type { StationConfig, NearbyStation, Species }
 
 export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   {
-    id: "8440273", waterTempId: "8440273",
+    id: "8440273", waterTempId: "8419870",
     name: "Salisbury Point", slug: "salisbury-point",
     state: "massachusetts", city: "Salisbury Point, MA", region: "Boston Harbor / South Shore",
     lat: 42.8383, lon: -70.9083, latDisplay: "42.84°N", lonDisplay: "70.91°W",
@@ -29,7 +29,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8440369", waterTempId: "8440369",
+    id: "8440369", waterTempId: "8419870",
     name: "Merrimacport", slug: "merrimacport",
     state: "massachusetts", city: "Merrimacport, MA", region: "Boston Harbor / South Shore",
     lat: 42.825, lon: -70.9883, latDisplay: "42.83°N", lonDisplay: "70.99°W",
@@ -51,7 +51,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8440452", waterTempId: "8440452",
+    id: "8440452", waterTempId: "8419870",
     name: "Plum Island, Merrimack River Entrance", slug: "plum-island-merrimack-river-entrance",
     state: "massachusetts", city: "Plum Island, Merrimack River Entrance, MA", region: "Boston Harbor / South Shore",
     lat: 42.8167, lon: -70.82, latDisplay: "42.82°N", lonDisplay: "70.82°W",
@@ -73,7 +73,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8440466", waterTempId: "8440466",
+    id: "8440466", waterTempId: "8419870",
     name: "Newburyport", slug: "newburyport",
     state: "massachusetts", city: "Newburyport, MA", region: "Boston Harbor / South Shore",
     lat: 42.815, lon: -70.8733, latDisplay: "42.81°N", lonDisplay: "70.87°W",
@@ -95,7 +95,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8440889", waterTempId: "8440889",
+    id: "8440889", waterTempId: "8419870",
     name: "Riverside", slug: "riverside",
     state: "massachusetts", city: "Riverside, MA", region: "Boston Harbor / South Shore",
     lat: 42.7633, lon: -71.0767, latDisplay: "42.76°N", lonDisplay: "71.08°W",
@@ -117,7 +117,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8441241", waterTempId: "8441241",
+    id: "8441241", waterTempId: "8419870",
     name: "Plum Island Sound (south end)", slug: "plum-island-sound-south-end",
     state: "massachusetts", city: "Plum Island Sound (south end), MA", region: "Boston Harbor / South Shore",
     lat: 42.71013888888889, lon: -70.78861111111111, latDisplay: "42.71°N", lonDisplay: "70.79°W",
@@ -139,7 +139,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8441551", waterTempId: "8441551",
+    id: "8441551", waterTempId: "8419870",
     name: "Rockport", slug: "rockport",
     state: "massachusetts", city: "Rockport, MA", region: "Boston Harbor / South Shore",
     lat: 42.6583, lon: -70.615, latDisplay: "42.66°N", lonDisplay: "70.61°W",
@@ -161,7 +161,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8441571", waterTempId: "8441571",
+    id: "8441571", waterTempId: "8419870",
     name: "Annisquam, Lobster Cove", slug: "annisquam-lobster-cove",
     state: "massachusetts", city: "Annisquam, Lobster Cove, MA", region: "Boston Harbor / South Shore",
     lat: 42.654998779296875, lon: -70.67669677734375, latDisplay: "42.65°N", lonDisplay: "70.68°W",
@@ -183,7 +183,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8441771", waterTempId: "8441771",
+    id: "8441771", waterTempId: "8419870",
     name: "Essex", slug: "essex",
     state: "massachusetts", city: "Essex, MA", region: "Boston Harbor / South Shore",
     lat: 42.6317, lon: -70.7767, latDisplay: "42.63°N", lonDisplay: "70.78°W",
@@ -205,7 +205,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8441841", waterTempId: "8441841",
+    id: "8441841", waterTempId: "8419870",
     name: "Gloucester Harbor", slug: "gloucester-harbor",
     state: "massachusetts", city: "Gloucester Harbor, MA", region: "Boston Harbor / South Shore",
     lat: 42.61000061035156, lon: -70.66000366210938, latDisplay: "42.61°N", lonDisplay: "70.66°W",
@@ -227,7 +227,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8442417", waterTempId: "8442417",
+    id: "8442417", waterTempId: "8419870",
     name: "Beverly, Beverly Harbor", slug: "beverly-beverly-harbor",
     state: "massachusetts", city: "Beverly, Beverly Harbor, MA", region: "Boston Harbor / South Shore",
     lat: 42.540000915527344, lon: -70.88670349121094, latDisplay: "42.54°N", lonDisplay: "70.89°W",
@@ -249,7 +249,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8442645", waterTempId: "8442645",
+    id: "8442645", waterTempId: "8419870",
     name: "Salem, Salem Harbor", slug: "salem-salem-harbor",
     state: "massachusetts", city: "Salem, Salem Harbor, MA", region: "Boston Harbor / South Shore",
     lat: 42.5233, lon: -70.8767, latDisplay: "42.52°N", lonDisplay: "70.88°W",
@@ -271,7 +271,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8443187", waterTempId: "8443187",
+    id: "8443187", waterTempId: "8419870",
     name: "Lynn, Lynn Harbor", slug: "lynn-lynn-harbor",
     state: "massachusetts", city: "Lynn, Lynn Harbor, MA", region: "Boston Harbor / South Shore",
     lat: 42.4583, lon: -70.9433, latDisplay: "42.46°N", lonDisplay: "70.94°W",
@@ -293,7 +293,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8443662", waterTempId: "8443662",
+    id: "8443662", waterTempId: "8454000",
     name: "Amelia Earhart Dam, Mystic River", slug: "amelia-earhart-dam-mystic-river",
     state: "massachusetts", city: "Amelia Earhart Dam, Mystic River, MA", region: "Buzzards Bay / South Coast",
     lat: 42.395, lon: -71.0767, latDisplay: "42.40°N", lonDisplay: "71.08°W",
@@ -315,7 +315,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8443725", waterTempId: "8443725",
+    id: "8443725", waterTempId: "8454000",
     name: "Chelsea St. Bridge, Chelsea River", slug: "chelsea-st-bridge-chelsea-river",
     state: "massachusetts", city: "Chelsea St. Bridge, Chelsea River, MA", region: "Buzzards Bay / South Coast",
     lat: 42.3867, lon: -71.0233, latDisplay: "42.39°N", lonDisplay: "71.02°W",
@@ -337,7 +337,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8443838", waterTempId: "8443838",
+    id: "8443838", waterTempId: "8454000",
     name: "Charlestown, Charles River entrance", slug: "charlestown-charles-river-entrance",
     state: "massachusetts", city: "Charlestown, Charles River entrance, MA", region: "Buzzards Bay / South Coast",
     lat: 42.3717, lon: -71.055, latDisplay: "42.37°N", lonDisplay: "71.06°W",
@@ -359,7 +359,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8443970", waterTempId: "8443970",
+    id: "8443970", waterTempId: "8454000",
     name: "BOSTON", slug: "boston",
     state: "massachusetts", city: "BOSTON, MA", region: "Buzzards Bay / South Coast",
     lat: 42.35388888888889, lon: -71.05027777777778, latDisplay: "42.35°N", lonDisplay: "71.05°W",
@@ -381,7 +381,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8444012", waterTempId: "8444012",
+    id: "8444012", waterTempId: "8454000",
     name: "Deer Island (south end)", slug: "deer-island-south-end",
     state: "massachusetts", city: "Deer Island (south end), MA", region: "Buzzards Bay / South Coast",
     lat: 42.3483, lon: -70.96, latDisplay: "42.35°N", lonDisplay: "70.96°W",
@@ -403,7 +403,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8444162", waterTempId: "8444162",
+    id: "8444162", waterTempId: "8454000",
     name: "Boston Light", slug: "boston-light",
     state: "massachusetts", city: "Boston Light, MA", region: "Buzzards Bay / South Coast",
     lat: 42.3283, lon: -70.8917, latDisplay: "42.33°N", lonDisplay: "70.89°W",
@@ -425,7 +425,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8444312", waterTempId: "8444312",
+    id: "8444312", waterTempId: "8454000",
     name: "Moon Head", slug: "moon-head",
     state: "massachusetts", city: "Moon Head, MA", region: "Buzzards Bay / South Coast",
     lat: 42.3083, lon: -70.9917, latDisplay: "42.31°N", lonDisplay: "70.99°W",
@@ -447,7 +447,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8444351", waterTempId: "8444351",
+    id: "8444351", waterTempId: "8454000",
     name: "Hull", slug: "hull",
     state: "massachusetts", city: "Hull, MA", region: "Buzzards Bay / South Coast",
     lat: 42.3033, lon: -70.92, latDisplay: "42.30°N", lonDisplay: "70.92°W",
@@ -469,7 +469,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8444488", waterTempId: "8444488",
+    id: "8444488", waterTempId: "8454000",
     name: "Neponset, Neponset River", slug: "neponset-neponset-river",
     state: "massachusetts", city: "Neponset, Neponset River, MA", region: "Buzzards Bay / South Coast",
     lat: 42.285, lon: -71.04, latDisplay: "42.28°N", lonDisplay: "71.04°W",
@@ -491,7 +491,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8444525", waterTempId: "8444525",
+    id: "8444525", waterTempId: "8454000",
     name: "Nut Island, Quincy Bay", slug: "nut-island-quincy-bay",
     state: "massachusetts", city: "Nut Island, Quincy Bay, MA", region: "Buzzards Bay / South Coast",
     lat: 42.28, lon: -70.9533, latDisplay: "42.28°N", lonDisplay: "70.95°W",
@@ -513,7 +513,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8444601", waterTempId: "8444601",
+    id: "8444601", waterTempId: "8447386",
     name: "Nantasket Beach, Weir River", slug: "nantasket-beach-weir-river",
     state: "massachusetts", city: "Nantasket Beach, Weir River, MA", region: "Buzzards Bay / South Coast",
     lat: 42.27, lon: -70.86, latDisplay: "42.27°N", lonDisplay: "70.86°W",
@@ -535,7 +535,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8444662", waterTempId: "8444662",
+    id: "8444662", waterTempId: "8454000",
     name: "Crow Point, Hingham Harbor entrance", slug: "crow-point-hingham-harbor-entrance",
     state: "massachusetts", city: "Crow Point, Hingham Harbor entrance, MA", region: "Buzzards Bay / South Coast",
     lat: 42.2617, lon: -70.8933, latDisplay: "42.26°N", lonDisplay: "70.89°W",
@@ -557,7 +557,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8444762", waterTempId: "8444762",
+    id: "8444762", waterTempId: "8447386",
     name: "Cohasset Harbor (White Head)", slug: "cohasset-harbor-white-head",
     state: "massachusetts", city: "Cohasset Harbor (White Head), MA", region: "Buzzards Bay / South Coast",
     lat: 42.2483, lon: -70.785, latDisplay: "42.25°N", lonDisplay: "70.78°W",
@@ -579,7 +579,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8444775", waterTempId: "8444775",
+    id: "8444775", waterTempId: "8447386",
     name: "Hingham", slug: "hingham",
     state: "massachusetts", city: "Hingham, MA", region: "Buzzards Bay / South Coast",
     lat: 42.2467, lon: -70.885, latDisplay: "42.25°N", lonDisplay: "70.89°W",
@@ -601,7 +601,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8444788", waterTempId: "8444788",
+    id: "8444788", waterTempId: "8454000",
     name: "Weymouth Fore River Bridge", slug: "weymouth-fore-river-bridge",
     state: "massachusetts", city: "Weymouth Fore River Bridge, MA", region: "Buzzards Bay / South Coast",
     lat: 42.2483, lon: -70.9667, latDisplay: "42.25°N", lonDisplay: "70.97°W",
@@ -623,7 +623,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8445138", waterTempId: "8445138",
+    id: "8445138", waterTempId: "8447386",
     name: "Scituate, Scituate Harbor", slug: "scituate-scituate-harbor",
     state: "massachusetts", city: "Scituate, Scituate Harbor, MA", region: "Buzzards Bay / South Coast",
     lat: 42.2017, lon: -70.7267, latDisplay: "42.20°N", lonDisplay: "70.73°W",
@@ -645,7 +645,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8445425", waterTempId: "8445425",
+    id: "8445425", waterTempId: "8447386",
     name: "Damons Point, North River", slug: "damons-point-north-river",
     state: "massachusetts", city: "Damons Point, North River, MA", region: "Buzzards Bay / South Coast",
     lat: 42.16, lon: -70.7333, latDisplay: "42.16°N", lonDisplay: "70.73°W",
@@ -667,7 +667,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8446009", waterTempId: "8446009",
+    id: "8446009", waterTempId: "8447386",
     name: "Brant Rock, Green Harbor River", slug: "brant-rock-green-harbor-river",
     state: "massachusetts", city: "Brant Rock, Green Harbor River, MA", region: "Buzzards Bay / South Coast",
     lat: 42.0833, lon: -70.6467, latDisplay: "42.08°N", lonDisplay: "70.65°W",
@@ -689,7 +689,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8446121", waterTempId: "8446121",
+    id: "8446121", waterTempId: "8447435",
     name: "Provincetown", slug: "provincetown",
     state: "massachusetts", city: "Provincetown, MA", region: "Buzzards Bay / South Coast",
     lat: 42.04959166666666, lon: -70.18215833333333, latDisplay: "42.05°N", lonDisplay: "70.18°W",
@@ -711,7 +711,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8446166", waterTempId: "8446166",
+    id: "8446166", waterTempId: "8447386",
     name: "Duxbury, Duxbury Harbor", slug: "duxbury-duxbury-harbor",
     state: "massachusetts", city: "Duxbury, Duxbury Harbor, MA", region: "Buzzards Bay / South Coast",
     lat: 42.0383, lon: -70.67, latDisplay: "42.04°N", lonDisplay: "70.67°W",
@@ -733,7 +733,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8446493", waterTempId: "8446493",
+    id: "8446493", waterTempId: "8447930",
     name: "Plymouth", slug: "plymouth",
     state: "massachusetts", city: "Plymouth, MA", region: "Cape Cod Bay",
     lat: 41.96, lon: -70.6617, latDisplay: "41.96°N", lonDisplay: "70.66°W",
@@ -755,7 +755,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8446613", waterTempId: "8446613",
+    id: "8446613", waterTempId: "8447435",
     name: "Wellfleet", slug: "wellfleet",
     state: "massachusetts", city: "Wellfleet, MA", region: "Cape Cod Bay",
     lat: 41.93, lon: -70.0417, latDisplay: "41.93°N", lonDisplay: "70.04°W",
@@ -777,7 +777,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447173", waterTempId: "8447173",
+    id: "8447173", waterTempId: "8447930",
     name: "Cape Cod Canal, Sagamore", slug: "cape-cod-canal-sagamore",
     state: "massachusetts", city: "Cape Cod Canal, Sagamore, MA", region: "Cape Cod Bay",
     lat: 41.775, lon: -70.535, latDisplay: "41.77°N", lonDisplay: "70.53°W",
@@ -799,7 +799,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447180", waterTempId: "8447180",
+    id: "8447180", waterTempId: "8447930",
     name: "Sandwich Marina, Cape Cod Canal, east entrance", slug: "sandwich-marina-cape-cod-canal-east-entrance",
     state: "massachusetts", city: "Sandwich Marina, Cape Cod Canal, east entrance, MA", region: "Cape Cod Bay",
     lat: 41.7717, lon: -70.5067, latDisplay: "41.77°N", lonDisplay: "70.51°W",
@@ -821,7 +821,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447191", waterTempId: "8447191",
+    id: "8447191", waterTempId: "8447930",
     name: "Cape Cod Canal, Bournedale", slug: "cape-cod-canal-bournedale",
     state: "massachusetts", city: "Cape Cod Canal, Bournedale, MA", region: "Cape Cod Bay",
     lat: 41.77, lon: -70.5617, latDisplay: "41.77°N", lonDisplay: "70.56°W",
@@ -843,7 +843,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447241", waterTempId: "8447241",
+    id: "8447241", waterTempId: "8447435",
     name: "Sesuit Harbor, East Dennis", slug: "sesuit-harbor-east-dennis",
     state: "massachusetts", city: "Sesuit Harbor, East Dennis, MA", region: "Cape Cod Bay",
     lat: 41.7517, lon: -70.155, latDisplay: "41.75°N", lonDisplay: "70.16°W",
@@ -865,7 +865,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447259", waterTempId: "8447259",
+    id: "8447259", waterTempId: "8447930",
     name: "Cape Cod Canal, Bourne Bridge", slug: "cape-cod-canal-bourne-bridge",
     state: "massachusetts", city: "Cape Cod Canal, Bourne Bridge, MA", region: "Cape Cod Bay",
     lat: 41.745, lon: -70.5933, latDisplay: "41.74°N", lonDisplay: "70.59°W",
@@ -887,7 +887,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447270", waterTempId: "8447270",
+    id: "8447270", waterTempId: "8447930",
     name: "Cape Cod Canal, RR. bridge", slug: "cape-cod-canal-rr-bridge",
     state: "massachusetts", city: "Cape Cod Canal, RR. bridge, MA", region: "Cape Cod Bay",
     lat: 41.7417, lon: -70.6167, latDisplay: "41.74°N", lonDisplay: "70.62°W",
@@ -909,7 +909,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447277", waterTempId: "8447277",
+    id: "8447277", waterTempId: "8447930",
     name: "Onset Beach, Onset Bay", slug: "onset-beach-onset-bay",
     state: "massachusetts", city: "Onset Beach, Onset Bay, MA", region: "Cape Cod Bay",
     lat: 41.7417, lon: -70.6583, latDisplay: "41.74°N", lonDisplay: "70.66°W",
@@ -931,7 +931,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447281", waterTempId: "8447281",
+    id: "8447281", waterTempId: "8447386",
     name: "Steep Brook, Taunton River", slug: "steep-brook-taunton-river",
     state: "massachusetts", city: "Steep Brook, Taunton River, MA", region: "Buzzards Bay / South Coast",
     lat: 41.74, lon: -71.1317, latDisplay: "41.74°N", lonDisplay: "71.13°W",
@@ -953,7 +953,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447291", waterTempId: "8447291",
+    id: "8447291", waterTempId: "8447435",
     name: "Pleasant Bay", slug: "pleasant-bay",
     state: "massachusetts", city: "Pleasant Bay, MA", region: "Cape Cod & Islands",
     lat: 41.7367, lon: -69.9817, latDisplay: "41.74°N", lonDisplay: "69.98°W",
@@ -975,7 +975,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447295", waterTempId: "8447295",
+    id: "8447295", waterTempId: "8447930",
     name: "Gray Gables", slug: "gray-gables",
     state: "massachusetts", city: "Gray Gables, MA", region: "Cape Cod Bay",
     lat: 41.735, lon: -70.6233, latDisplay: "41.73°N", lonDisplay: "70.62°W",
@@ -997,7 +997,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447335", waterTempId: "8447335",
+    id: "8447335", waterTempId: "8447435",
     name: "Barnstable Harbor, Beach Point", slug: "barnstable-harbor-beach-point",
     state: "massachusetts", city: "Barnstable Harbor, Beach Point, MA", region: "Cape Cod Bay",
     lat: 41.7217, lon: -70.285, latDisplay: "41.72°N", lonDisplay: "70.28°W",
@@ -1019,7 +1019,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447355", waterTempId: "8447355",
+    id: "8447355", waterTempId: "8447930",
     name: "Monument Beach", slug: "monument-beach",
     state: "massachusetts", city: "Monument Beach, MA", region: "Cape Cod Bay",
     lat: 41.715, lon: -70.6167, latDisplay: "41.72°N", lonDisplay: "70.62°W",
@@ -1041,7 +1041,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447368", waterTempId: "8447368",
+    id: "8447368", waterTempId: "8447930",
     name: "Great Hill", slug: "great-hill",
     state: "massachusetts", city: "Great Hill, MA", region: "Cape Cod Bay",
     lat: 41.711700439453125, lon: -70.71499633789062, latDisplay: "41.71°N", lonDisplay: "70.71°W",
@@ -1063,7 +1063,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447385", waterTempId: "8447385",
+    id: "8447385", waterTempId: "8447930",
     name: "Marion, Sippican Harbor", slug: "marion-sippican-harbor",
     state: "massachusetts", city: "Marion, Sippican Harbor, MA", region: "Cape Cod Bay",
     lat: 41.705, lon: -70.7617, latDisplay: "41.70°N", lonDisplay: "70.76°W",
@@ -1107,7 +1107,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447416", waterTempId: "8447416",
+    id: "8447416", waterTempId: "8447930",
     name: "Piney Point", slug: "piney-point",
     state: "massachusetts", city: "Piney Point, MA", region: "Cape Cod Bay",
     lat: 41.695, lon: -70.72, latDisplay: "41.70°N", lonDisplay: "70.72°W",
@@ -1151,7 +1151,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447436", waterTempId: "8447436",
+    id: "8447436", waterTempId: "8447435",
     name: "Georges Shoal, Texas Tower", slug: "georges-shoal-texas-tower",
     state: "massachusetts", city: "Georges Shoal, Texas Tower, MA", region: "Cape Cod & Islands",
     lat: 41.6883, lon: -67.76, latDisplay: "41.69°N", lonDisplay: "67.76°W",
@@ -1173,7 +1173,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447495", waterTempId: "8447495",
+    id: "8447495", waterTempId: "8447435",
     name: "Saquatucket Harbor", slug: "saquatucket-harbor",
     state: "massachusetts", city: "Saquatucket Harbor, MA", region: "Cape Cod Bay",
     lat: 41.6683, lon: -70.0567, latDisplay: "41.67°N", lonDisplay: "70.06°W",
@@ -1195,7 +1195,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447504", waterTempId: "8447504",
+    id: "8447504", waterTempId: "8447435",
     name: "South Yarmouth, Bass River", slug: "south-yarmouth-bass-river",
     state: "massachusetts", city: "South Yarmouth, Bass River, MA", region: "Cape Cod Bay",
     lat: 41.665, lon: -70.1833, latDisplay: "41.66°N", lonDisplay: "70.18°W",
@@ -1217,7 +1217,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447505", waterTempId: "8447505",
+    id: "8447505", waterTempId: "8447435",
     name: "Chatham, Stage Harbor", slug: "chatham-stage-harbor",
     state: "massachusetts", city: "Chatham, Stage Harbor, MA", region: "Cape Cod & Islands",
     lat: 41.6667, lon: -69.9667, latDisplay: "41.67°N", lonDisplay: "69.97°W",
@@ -1239,7 +1239,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447506", waterTempId: "8447506",
+    id: "8447506", waterTempId: "8447435",
     name: "Wychmere Harbor", slug: "wychmere-harbor",
     state: "massachusetts", city: "Wychmere Harbor, MA", region: "Cape Cod Bay",
     lat: 41.665000915527344, lon: -70.06500244140625, latDisplay: "41.67°N", lonDisplay: "70.07°W",
@@ -1261,7 +1261,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447525", waterTempId: "8447525",
+    id: "8447525", waterTempId: "8447435",
     name: "Dennisport", slug: "dennisport",
     state: "massachusetts", city: "Dennisport, MA", region: "Cape Cod Bay",
     lat: 41.6583, lon: -70.115, latDisplay: "41.66°N", lonDisplay: "70.11°W",
@@ -1283,7 +1283,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447531", waterTempId: "8447531",
+    id: "8447531", waterTempId: "8447930",
     name: "Mattapoisett, Mattapoisett Harbor", slug: "mattapoisett-mattapoisett-harbor",
     state: "massachusetts", city: "Mattapoisett, Mattapoisett Harbor, MA", region: "Buzzards Bay / South Coast",
     lat: 41.6567, lon: -70.8133, latDisplay: "41.66°N", lonDisplay: "70.81°W",
@@ -1305,7 +1305,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447605", waterTempId: "8447605",
+    id: "8447605", waterTempId: "8447435",
     name: "Hyannis Port", slug: "hyannis-port",
     state: "massachusetts", city: "Hyannis Port, MA", region: "Cape Cod Bay",
     lat: 41.6317, lon: -70.3, latDisplay: "41.63°N", lonDisplay: "70.30°W",
@@ -1327,7 +1327,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447636", waterTempId: "8447636",
+    id: "8447636", waterTempId: "8447386",
     name: "New Bedford Harbor, Marine Terminal", slug: "new-bedford-harbor-marine-terminal",
     state: "massachusetts", city: "New Bedford Harbor, Marine Terminal, MA", region: "Buzzards Bay / South Coast",
     lat: 41.62120056152344, lon: -70.9136962890625, latDisplay: "41.62°N", lonDisplay: "70.91°W",
@@ -1349,7 +1349,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447675", waterTempId: "8447675",
+    id: "8447675", waterTempId: "8447930",
     name: "Cotuit Highlands", slug: "cotuit-highlands",
     state: "massachusetts", city: "Cotuit Highlands, MA", region: "Cape Cod Bay",
     lat: 41.6083, lon: -70.4367, latDisplay: "41.61°N", lonDisplay: "70.44°W",
@@ -1371,7 +1371,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447685", waterTempId: "8447685",
+    id: "8447685", waterTempId: "8447930",
     name: "Chappaquoit Point, West Falmouth Harbor", slug: "chappaquoit-point-west-falmouth-harbor",
     state: "massachusetts", city: "Chappaquoit Point, West Falmouth Harbor, MA", region: "Cape Cod Bay",
     lat: 41.605, lon: -70.6517, latDisplay: "41.60°N", lonDisplay: "70.65°W",
@@ -1393,7 +1393,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447712", waterTempId: "8447712",
+    id: "8447712", waterTempId: "8447930",
     name: "Clarks Point", slug: "clarks-point",
     state: "massachusetts", city: "Clarks Point, MA", region: "Buzzards Bay / South Coast",
     lat: 41.5933, lon: -70.9, latDisplay: "41.59°N", lonDisplay: "70.90°W",
@@ -1415,7 +1415,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447742", waterTempId: "8447742",
+    id: "8447742", waterTempId: "8447930",
     name: "Poponesset Island, Poponesset Bay", slug: "poponesset-island-poponesset-bay",
     state: "massachusetts", city: "Poponesset Island, Poponesset Bay, MA", region: "Cape Cod Bay",
     lat: 41.5867, lon: -70.4633, latDisplay: "41.59°N", lonDisplay: "70.46°W",
@@ -1437,7 +1437,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447791", waterTempId: "8447791",
+    id: "8447791", waterTempId: "8447386",
     name: "Hix Bridge, East Branch", slug: "hix-bridge-east-branch",
     state: "massachusetts", city: "Hix Bridge, East Branch, MA", region: "Buzzards Bay / South Coast",
     lat: 41.57, lon: -71.0733, latDisplay: "41.57°N", lonDisplay: "71.07°W",
@@ -1459,7 +1459,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447842", waterTempId: "8447842",
+    id: "8447842", waterTempId: "8447930",
     name: "Round Hill Point", slug: "round-hill-point",
     state: "massachusetts", city: "Round Hill Point, MA", region: "Buzzards Bay / South Coast",
     lat: 41.5383, lon: -70.9283, latDisplay: "41.54°N", lonDisplay: "70.93°W",
@@ -1481,7 +1481,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447865", waterTempId: "8447865",
+    id: "8447865", waterTempId: "8447930",
     name: "Falmouth Heights", slug: "falmouth-heights",
     state: "massachusetts", city: "Falmouth Heights, MA", region: "Cape Cod Bay",
     lat: 41.545, lon: -70.5933, latDisplay: "41.55°N", lonDisplay: "70.59°W",
@@ -1525,7 +1525,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447939", waterTempId: "8447939",
+    id: "8447939", waterTempId: "8447930",
     name: "Little Harbor", slug: "little-harbor",
     state: "massachusetts", city: "Little Harbor, MA", region: "Cape Cod Bay",
     lat: 41.52, lon: -70.665, latDisplay: "41.52°N", lonDisplay: "70.67°W",
@@ -1547,7 +1547,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447941", waterTempId: "8447941",
+    id: "8447941", waterTempId: "8447930",
     name: "Uncatena Island (south side)", slug: "uncatena-island-south-side",
     state: "massachusetts", city: "Uncatena Island (south side), MA", region: "Cape Cod Bay",
     lat: 41.52, lon: -70.7083, latDisplay: "41.52°N", lonDisplay: "70.71°W",
@@ -1569,7 +1569,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447975", waterTempId: "8447975",
+    id: "8447975", waterTempId: "8452660",
     name: "Westport Harbor", slug: "westport-harbor",
     state: "massachusetts", city: "Westport Harbor, MA", region: "Buzzards Bay / South Coast",
     lat: 41.5083, lon: -71.0933, latDisplay: "41.51°N", lonDisplay: "71.09°W",
@@ -1591,7 +1591,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8448157", waterTempId: "8448157",
+    id: "8448157", waterTempId: "8447930",
     name: "VINEYARD HAVEN, VINEYARD HVN HBR", slug: "vineyard-haven-vineyard-hvn-hbr",
     state: "massachusetts", city: "VINEYARD HAVEN, VINEYARD HVN HBR, MA", region: "Cape Cod Bay",
     lat: 41.4583, lon: -70.6, latDisplay: "41.46°N", lonDisplay: "70.60°W",
@@ -1613,7 +1613,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8448208", waterTempId: "8448208",
+    id: "8448208", waterTempId: "8447930",
     name: "Oak Bluffs", slug: "oak-bluffs",
     state: "massachusetts", city: "Oak Bluffs, MA", region: "Cape Cod Bay",
     lat: 41.4583, lon: -70.555, latDisplay: "41.46°N", lonDisplay: "70.56°W",
@@ -1635,7 +1635,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8448248", waterTempId: "8448248",
+    id: "8448248", waterTempId: "8447930",
     name: "Penikese Island", slug: "penikese-island",
     state: "massachusetts", city: "Penikese Island, MA", region: "Buzzards Bay / South Coast",
     lat: 41.45, lon: -70.9217, latDisplay: "41.45°N", lonDisplay: "70.92°W",
@@ -1657,7 +1657,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8448251", waterTempId: "8448251",
+    id: "8448251", waterTempId: "8447930",
     name: "Quicks Hole, North side", slug: "quicks-hole-north-side",
     state: "massachusetts", city: "Quicks Hole, North side, MA", region: "Buzzards Bay / South Coast",
     lat: 41.4483, lon: -70.8567, latDisplay: "41.45°N", lonDisplay: "70.86°W",
@@ -1679,7 +1679,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8448325", waterTempId: "8448325",
+    id: "8448325", waterTempId: "8447930",
     name: "Cedar Tree Neck", slug: "cedar-tree-neck",
     state: "massachusetts", city: "Cedar Tree Neck, MA", region: "Cape Cod Bay",
     lat: 41.435, lon: -70.6967, latDisplay: "41.44°N", lonDisplay: "70.70°W",
@@ -1701,7 +1701,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8448376", waterTempId: "8448376",
+    id: "8448376", waterTempId: "8447930",
     name: "Cuttyhunk", slug: "cuttyhunk",
     state: "massachusetts", city: "Cuttyhunk, MA", region: "Buzzards Bay / South Coast",
     lat: 41.42499923706055, lon: -70.91670227050781, latDisplay: "41.42°N", lonDisplay: "70.92°W",
@@ -1723,7 +1723,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8448558", waterTempId: "8448558",
+    id: "8448558", waterTempId: "8447930",
     name: "Edgartown", slug: "edgartown",
     state: "massachusetts", city: "Edgartown, MA", region: "Cape Cod Bay",
     lat: 41.3883, lon: -70.5117, latDisplay: "41.39°N", lonDisplay: "70.51°W",
@@ -1745,7 +1745,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8448566", waterTempId: "8448566",
+    id: "8448566", waterTempId: "8449130",
     name: "Great Point", slug: "great-point",
     state: "massachusetts", city: "Great Point, MA", region: "Cape Cod Bay",
     lat: 41.3867, lon: -70.0467, latDisplay: "41.39°N", lonDisplay: "70.05°W",
@@ -1767,7 +1767,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8448683", waterTempId: "8448683",
+    id: "8448683", waterTempId: "8447930",
     name: "Wasque Point, Chappaquiddick Island", slug: "wasque-point-chappaquiddick-island",
     state: "massachusetts", city: "Wasque Point, Chappaquiddick Island, MA", region: "Cape Cod Bay",
     lat: 41.3633, lon: -70.45, latDisplay: "41.36°N", lonDisplay: "70.45°W",
@@ -1789,7 +1789,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8448725", waterTempId: "8448725",
+    id: "8448725", waterTempId: "8447930",
     name: "Menemsha Harbor, MA", slug: "menemsha-harbor-ma",
     state: "massachusetts", city: "Menemsha Harbor, MA, MA", region: "Cape Cod Bay",
     lat: 41.35444444444445, lon: -70.76783333333333, latDisplay: "41.35°N", lonDisplay: "70.77°W",
@@ -1811,7 +1811,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8448733", waterTempId: "8448733",
+    id: "8448733", waterTempId: "8447930",
     name: "Gay Head", slug: "gay-head",
     state: "massachusetts", city: "Gay Head, MA", region: "Buzzards Bay / South Coast",
     lat: 41.3533, lon: -70.83, latDisplay: "41.35°N", lonDisplay: "70.83°W",
@@ -1833,7 +1833,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8448817", waterTempId: "8448817",
+    id: "8448817", waterTempId: "8449130",
     name: "Muskeget Island, north side", slug: "muskeget-island-north-side",
     state: "massachusetts", city: "Muskeget Island, north side, MA", region: "Cape Cod Bay",
     lat: 41.3367, lon: -70.305, latDisplay: "41.34°N", lonDisplay: "70.31°W",
@@ -1855,7 +1855,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8448875", waterTempId: "8448875",
+    id: "8448875", waterTempId: "8447930",
     name: "Martha's Vineyard GPS Buoy", slug: "marthas-vineyard-gps-buoy",
     state: "massachusetts", city: "Martha's Vineyard GPS Buoy, MA", region: "Cape Cod Bay",
     lat: 41.32622222222222, lon: -70.59033333333333, latDisplay: "41.33°N", lonDisplay: "70.59°W",
@@ -1877,7 +1877,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8448942", waterTempId: "8448942",
+    id: "8448942", waterTempId: "8447930",
     name: "Squibnocket Point", slug: "squibnocket-point",
     state: "massachusetts", city: "Squibnocket Point, MA", region: "Cape Cod Bay",
     lat: 41.3117, lon: -70.7683, latDisplay: "41.31°N", lonDisplay: "70.77°W",
@@ -1899,7 +1899,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8449062", waterTempId: "8449062",
+    id: "8449062", waterTempId: "8449130",
     name: "Eel Point", slug: "eel-point",
     state: "massachusetts", city: "Eel Point, MA", region: "Cape Cod Bay",
     lat: 41.2917, lon: -70.2083, latDisplay: "41.29°N", lonDisplay: "70.21°W",
@@ -1943,7 +1943,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8449287", waterTempId: "8449287",
+    id: "8449287", waterTempId: "8447930",
     name: "Nomans Land", slug: "nomans-land",
     state: "massachusetts", city: "Nomans Land, MA", region: "Buzzards Bay / South Coast",
     lat: 41.2617, lon: -70.8183, latDisplay: "41.26°N", lonDisplay: "70.82°W",
@@ -1965,7 +1965,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8447819", waterTempId: "8447819",
+    id: "8447819", waterTempId: "8447435",
     name: "Monomoy Island - East", slug: "monomoy-island-east",
     state: "massachusetts", city: "Monomoy Island - East, MA", region: "Cape Cod & Islands",
     lat: 41.56, lon: -69.99, latDisplay: "41.56°N", lonDisplay: "69.99°W",
@@ -1987,7 +1987,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8448151", waterTempId: "8448151",
+    id: "8448151", waterTempId: "8447930",
     name: "TARPAULIN COVE, NAUSHON IS.", slug: "tarpaulin-cove-naushon-is",
     state: "massachusetts", city: "TARPAULIN COVE, NAUSHON IS., MA", region: "Cape Cod Bay",
     lat: 41.47, lon: -70.76, latDisplay: "41.47°N", lonDisplay: "70.76°W",
@@ -2009,7 +2009,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8448533", waterTempId: "8448533",
+    id: "8448533", waterTempId: "8447930",
     name: "CAPE HIGGON NORTH, VINEYARD SND", slug: "cape-higgon-north-vineyard-snd",
     state: "massachusetts", city: "CAPE HIGGON NORTH, VINEYARD SND, MA", region: "Cape Cod Bay",
     lat: 41.41, lon: -70.7117, latDisplay: "41.41°N", lonDisplay: "70.71°W",
@@ -2031,7 +2031,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8449375", waterTempId: "8449375",
+    id: "8449375", waterTempId: "8449130",
     name: "SURFSIDE, NANTUCKET", slug: "surfside-nantucket",
     state: "massachusetts", city: "SURFSIDE, NANTUCKET, MA", region: "Cape Cod Bay",
     lat: 41.2383, lon: -70.0783, latDisplay: "41.24°N", lonDisplay: "70.08°W",
@@ -2053,7 +2053,7 @@ export const MASSACHUSETTS_STATIONS: StationConfig[] = [
   ],
   },
   {
-    id: "8449383", waterTempId: "8449383",
+    id: "8449383", waterTempId: "8449130",
     name: "COAST GUARD ST, NANTUCKET", slug: "coast-guard-st-nantucket",
     state: "massachusetts", city: "COAST GUARD ST, NANTUCKET, MA", region: "Cape Cod & Islands",
     lat: 41.245, lon: -69.9767, latDisplay: "41.24°N", lonDisplay: "69.98°W",
