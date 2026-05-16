@@ -421,8 +421,7 @@ function drawTideChart(
   // ── teardrop pins for high/low events
   events.forEach(ev => {
     const x  = toX(ev.hour)
-    // Clamp so dot stays inside chart area even when event height is negative
-    const y  = Math.min(PAD.top + ch - 4, toY(ev.height))
+    const y  = toY(ev.height)
     const isHigh = ev.label === 'High'
     const pinColor = isHigh ? t.canvasHighPin : t.canvasLowPin
     const r   = 22      // bubble radius
