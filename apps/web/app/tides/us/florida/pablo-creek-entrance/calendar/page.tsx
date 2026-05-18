@@ -374,7 +374,7 @@ export default function PabloCreekCalendarPage() {
             <a href="/" style={{ fontSize: 16, fontWeight: 600, color: t.text, textDecoration: 'none' }}>
               Tide<span style={{ color: t.accent }}>Charts</span>Pro
             </a>
-            <a href="/tides/florida/pablo-creek-entrance" style={{
+            <a href="/tides/us/florida/pablo-creek-entrance" style={{
               fontSize: 13,
               color: t.textMuted,
               textDecoration: 'none',
@@ -399,9 +399,9 @@ export default function PabloCreekCalendarPage() {
 
         {/* ── Breadcrumb ── */}
         <div style={{ fontSize: 11, color: t.textFaint, marginBottom: 8 }}>
-          <a href="/tides/florida" style={{ color: t.textFaint, textDecoration: 'none' }}>Florida</a>
+          <a href="/tides/us/florida" style={{ color: t.textFaint, textDecoration: 'none' }}>Florida</a>
           <span style={{ margin: '0 6px' }}>/</span>
-          <a href="/tides/florida/pablo-creek-entrance" style={{ color: t.textFaint, textDecoration: 'none' }}>Pablo Creek Entrance</a>
+          <a href="/tides/us/florida/pablo-creek-entrance" style={{ color: t.textFaint, textDecoration: 'none' }}>Pablo Creek Entrance</a>
           <span style={{ margin: '0 6px' }}>/</span>
           <span style={{ color: t.textMuted }}>Tide Calendar</span>
         </div>
@@ -671,7 +671,7 @@ export default function PabloCreekCalendarPage() {
               {NEARBY.map(s => (
                 <a
                   key={s}
-                  href={`/tides/florida/${s.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`}
+                  href={`/tides/us/florida/${s.toLowerCase().replace(/\s+/g, '-').replace(/[^a-z0-9-]/g, '')}`}
                   style={{
                     padding: '6px 14px',
                     background: t.chip,
