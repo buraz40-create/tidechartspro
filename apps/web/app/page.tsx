@@ -154,7 +154,7 @@ const STATE_CHIPS = [
 const FEATURES = [
   { icon: '🌊', title: 'Live tide charts',       desc: 'Real-time water level plotted on predicted curve. See exactly where the tide is right now.' },
   { icon: '🎣', title: 'Fishing score',           desc: 'Daily A–F grade combining tide phase, pressure trend, solunar periods, and water temp.' },
-  { icon: '🐟', title: 'Species bite times',      desc: 'Location-aware guide — what\'s biting today, best windows, hot baits, and regulations.' },
+  { icon: '🐟', title: 'Species bite times',      desc: 'Location-aware guide - what\'s biting today, best windows, hot baits, and regulations.' },
   { icon: '🌙', title: 'Solunar periods',         desc: 'Major and minor feeding periods based on lunar transit, aligned with your local tide.' },
   { icon: '🔴', title: 'Red night vision mode',   desc: 'Preserves your natural night vision while checking tides. Built for serious night anglers.' },
   { icon: '📍', title: 'Fishing map',             desc: 'Tide stations, boat ramps, piers, and marinas on one interactive map.' },
@@ -315,7 +315,7 @@ export default function Home() {
         <p style={{ color: t.textMuted, fontSize: 16, maxWidth: 520, margin: '0 auto 28px', lineHeight: 1.6 }}>
           Real-time tides, solunar periods, species bite times, and fishing forecasts for 3,300+ locations across all US coastal states.
         </p>
-        {/* Search with live dropdown — highlighted to stand out */}
+        {/* Search with live dropdown - highlighted to stand out */}
         <div ref={searchRef} style={{ position: 'relative', maxWidth: 520, margin: '0 auto 20px' }}>
           <div style={{ display: 'flex', borderRadius: 14, overflow: 'hidden', border: `2px solid ${t.accent}`, background: t.surface, boxShadow: `0 0 0 4px ${t.accentFaint}, 0 8px 24px rgba(0,0,0,0.25)`, transition: 'box-shadow 0.15s' }}>
             <button
@@ -340,7 +340,7 @@ export default function Home() {
             </button>
             <input
               type="text"
-              placeholder="Search station, inlet, city — or tap 📍"
+              placeholder="Search station, inlet, city, or tap 📍"
               value={query}
               onChange={e => { setQuery(e.target.value); setGeoResults([]); setDropOpen(true) }}
               onFocus={() => setDropOpen(true)}
@@ -367,7 +367,7 @@ export default function Home() {
             <div style={{ marginTop: 8, fontSize: 12, color: '#ef4444' }}>{geoError}</div>
           )}
 
-          {/* Dropdown results — geo results take priority over search results */}
+          {/* Dropdown results - geo results take priority over search results */}
           {dropOpen && (geoResults.length > 0 || searchResults.length > 0) && (
             <div style={{ position: 'absolute', top: '100%', marginTop: 6, left: 0, right: 0, background: t.surface, border: `1px solid ${t.border}`, borderRadius: 12, zIndex: 500, overflow: 'hidden', boxShadow: '0 8px 24px rgba(0,0,0,0.3)' }}>
               {geoResults.length > 0 && (
@@ -459,7 +459,7 @@ export default function Home() {
       <section style={{ background: t.surface, borderTop: `1px solid ${t.border}` }}>
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '48px 20px' }}>
           <h2 style={{ fontSize: 22, fontWeight: 700, textAlign: 'center', marginBottom: 6 }}>Browse tide charts by state</h2>
-          <p style={{ color: t.textMuted, fontSize: 13, textAlign: 'center', marginBottom: 28 }}>All 23 US coastal states — live tide charts &amp; fishing forecasts</p>
+          <p style={{ color: t.textMuted, fontSize: 13, textAlign: 'center', marginBottom: 28 }}>All 23 US coastal states - live tide charts &amp; fishing forecasts</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: 10 }}>
             {[...STATES].sort((a, b) => a.name.localeCompare(b.name)).map(s => (
               <a key={s.name} href={`/tides/us/${s.slug}`} style={{
@@ -477,7 +477,7 @@ export default function Home() {
       {/* Features */}
       <section style={{ maxWidth: 1200, margin: '0 auto', padding: '56px 20px' }}>
         <h2 style={{ fontSize: 22, fontWeight: 700, textAlign: 'center', marginBottom: 8 }}>Everything you need on the water</h2>
-        <p style={{ color: t.textMuted, textAlign: 'center', fontSize: 14, marginBottom: 36 }}>Built for anglers, by anglers — not just a tide table</p>
+        <p style={{ color: t.textMuted, textAlign: 'center', fontSize: 14, marginBottom: 36 }}>Built for anglers, by anglers - not just a tide table</p>
         <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: 16 }}>
           {FEATURES.map(f => (
             <div key={f.title} style={{ background: t.surface, border: `1px solid ${t.border}`, borderRadius: 12, padding: '20px' }}>
