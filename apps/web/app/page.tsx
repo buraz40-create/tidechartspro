@@ -197,9 +197,10 @@ export default function Home() {
   const [openState, setOpenState] = useState<string | null>(null)
   const [geoStatus, setGeoStatus] = useState<'idle' | 'loading' | 'error'>('idle')
   const [geoError, setGeoError] = useState<string>('')
+  const [geoResults, setGeoResults] = useState<Array<typeof SEARCH_POOL[0] & { distMi: number }>>([])
   const searchRef = useRef<HTMLDivElement>(null)
 
-  const findNearestAndGo = () => {
+  const findNearestAndShow = () => {
     if (!navigator.geolocation) {
       setGeoStatus('error')
       setGeoError('Geolocation not supported by this browser')
@@ -207,26 +208,22 @@ export default function Home() {
     }
     setGeoStatus('loading')
     setGeoError('')
+    setGeoResults([])
     navigator.geolocation.getCurrentPosition(
       pos => {
         const { latitude, longitude } = pos.coords
         const toRad = (d: number) => d * Math.PI / 180
-        let best: typeof SEARCH_POOL[0] | null = null
-        let bestDist = Infinity
-        for (const s of SEARCH_POOL) {
+        const withDist = SEARCH_POOL.map(s => {
           const dLat = toRad(s.lat - latitude)
           const dLon = toRad(s.lon - longitude)
           const a = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(latitude)) * Math.cos(toRad(s.lat)) * Math.sin(dLon / 2) ** 2
-          const dist = 2 * 6371 * Math.asin(Math.sqrt(a))
-          if (dist < bestDist) { bestDist = dist; best = s }
-        }
-        if (best) {
-          const href = best.slug.startsWith('/') ? best.slug : `/tides/us/florida/${best.slug}`
-          window.location.href = href
-        } else {
-          setGeoStatus('error')
-          setGeoError('No nearby station found')
-        }
+          const distKm = 2 * 6371 * Math.asin(Math.sqrt(a))
+          return { ...s, distMi: distKm * 0.621371 }
+        })
+        withDist.sort((a, b) => a.distMi - b.distMi)
+        setGeoResults(withDist.slice(0, 8))
+        setGeoStatus('idle')
+        setDropOpen(true)
       },
       err => {
         setGeoStatus('error')
@@ -318,14 +315,34 @@ export default function Home() {
         <p style={{ color: t.textMuted, fontSize: 16, maxWidth: 520, margin: '0 auto 28px', lineHeight: 1.6 }}>
           Real-time tides, solunar periods, species bite times, and fishing forecasts for 3,300+ locations across all US coastal states.
         </p>
-        {/* Search with live dropdown */}
-        <div ref={searchRef} style={{ position: 'relative', maxWidth: 460, margin: '0 auto 20px' }}>
-          <div style={{ display: 'flex', borderRadius: 12, overflow: 'hidden', border: `1px solid ${dropOpen && searchResults.length ? t.accent : t.border}`, transition: 'border-color 0.15s' }}>
+        {/* Search with live dropdown — highlighted to stand out */}
+        <div ref={searchRef} style={{ position: 'relative', maxWidth: 520, margin: '0 auto 20px' }}>
+          <div style={{ display: 'flex', borderRadius: 14, overflow: 'hidden', border: `2px solid ${t.accent}`, background: t.surface, boxShadow: `0 0 0 4px ${t.accentFaint}, 0 8px 24px rgba(0,0,0,0.25)`, transition: 'box-shadow 0.15s' }}>
+            <button
+              onClick={findNearestAndShow}
+              disabled={geoStatus === 'loading'}
+              title="Find stations near my location"
+              style={{
+                background: t.accentFaint,
+                border: 'none',
+                borderRight: `1px solid ${t.accent}33`,
+                padding: '0 14px',
+                fontSize: 18,
+                cursor: geoStatus === 'loading' ? 'wait' : 'pointer',
+                color: t.accent,
+                display: 'flex',
+                alignItems: 'center',
+                gap: 6,
+                flexShrink: 0,
+              }}
+            >
+              <span>{geoStatus === 'loading' ? '⏳' : '📍'}</span>
+            </button>
             <input
               type="text"
-              placeholder="Search station, inlet, city…"
+              placeholder="Search station, inlet, city — or tap 📍"
               value={query}
-              onChange={e => { setQuery(e.target.value); setDropOpen(true) }}
+              onChange={e => { setQuery(e.target.value); setGeoResults([]); setDropOpen(true) }}
               onFocus={() => setDropOpen(true)}
               onBlur={() => setTimeout(() => setDropOpen(false), 150)}
               onKeyDown={e => {
@@ -334,66 +351,51 @@ export default function Home() {
                   window.location.href = r.slug.startsWith('/') ? r.slug : `/tides/us/florida/${r.slug}`
                 }
               }}
-              style={{ flex: 1, background: t.surface, border: 'none', outline: 'none', padding: '12px 16px', fontSize: 14, color: t.text }}
+              style={{ flex: 1, background: t.surface, border: 'none', outline: 'none', padding: '14px 16px', fontSize: 15, color: t.text }}
             />
             {query && (
               <button onClick={() => { setQuery(''); setDropOpen(false) }} style={{ background: t.surface, border: 'none', padding: '0 12px', color: t.textFaint, cursor: 'pointer', fontSize: 18, lineHeight: 1 }}>×</button>
             )}
             <button
               onClick={() => { if (searchResults.length) { const r = searchResults[0]; window.location.href = r.slug.startsWith('/') ? r.slug : `/tides/us/florida/${r.slug}` } }}
-              style={{ background: t.accent, border: 'none', padding: '12px 20px', fontSize: 14, fontWeight: 600, color: '#fff', cursor: 'pointer', flexShrink: 0 }}
+              style={{ background: t.accent, border: 'none', padding: '14px 22px', fontSize: 14, fontWeight: 700, color: '#fff', cursor: 'pointer', flexShrink: 0 }}
             >
               Search
             </button>
           </div>
-
-          {/* Use my location button */}
-          <button
-            onClick={findNearestAndGo}
-            disabled={geoStatus === 'loading'}
-            style={{
-              marginTop: 10,
-              background: 'transparent',
-              border: `1px solid ${t.border}`,
-              color: t.textMuted,
-              borderRadius: 10,
-              padding: '8px 14px',
-              fontSize: 13,
-              fontWeight: 500,
-              cursor: geoStatus === 'loading' ? 'wait' : 'pointer',
-              display: 'inline-flex',
-              alignItems: 'center',
-              gap: 6,
-              transition: 'border-color 0.15s, color 0.15s',
-            }}
-            onMouseEnter={e => { if (geoStatus !== 'loading') { e.currentTarget.style.borderColor = t.accent; e.currentTarget.style.color = t.accent } }}
-            onMouseLeave={e => { e.currentTarget.style.borderColor = t.border; e.currentTarget.style.color = t.textMuted }}
-          >
-            <span style={{ fontSize: 14 }}>📍</span>
-            {geoStatus === 'loading' ? 'Finding nearest station…' : 'Use my location'}
-          </button>
           {geoError && (
             <div style={{ marginTop: 8, fontSize: 12, color: '#ef4444' }}>{geoError}</div>
           )}
 
-          {/* Dropdown results */}
-          {dropOpen && searchResults.length > 0 && (
-            <div style={{ position: 'absolute', top: '100%', left: 0, right: 0, background: t.surface, border: `1px solid ${t.border}`, borderTop: 'none', borderRadius: '0 0 12px 12px', zIndex: 500, overflow: 'hidden', boxShadow: '0 8px 24px rgba(0,0,0,0.3)' }}>
-              {searchResults.map((r, i) => {
+          {/* Dropdown results — geo results take priority over search results */}
+          {dropOpen && (geoResults.length > 0 || searchResults.length > 0) && (
+            <div style={{ position: 'absolute', top: '100%', marginTop: 6, left: 0, right: 0, background: t.surface, border: `1px solid ${t.border}`, borderRadius: 12, zIndex: 500, overflow: 'hidden', boxShadow: '0 8px 24px rgba(0,0,0,0.3)' }}>
+              {geoResults.length > 0 && (
+                <div style={{ padding: '8px 16px', fontSize: 10, fontWeight: 700, color: t.textFaint, textTransform: 'uppercase', letterSpacing: '0.08em', background: t.surfaceAlt, borderBottom: `1px solid ${t.border}` }}>
+                  📍 Nearest to you
+                </div>
+              )}
+              {(geoResults.length > 0 ? geoResults : searchResults).map((r, i) => {
                 const href = r.slug.startsWith('/') ? r.slug : `/tides/us/florida/${r.slug}`
                 const parts = r.name.split(', ')
                 const abbr = parts[parts.length - 1]
                 const label = parts.slice(0, -1).join(', ')
+                const distMi = 'distMi' in r ? (r as { distMi: number }).distMi : null
                 return (
                   <a
                     key={i}
                     href={href}
-                    style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '10px 16px', textDecoration: 'none', borderTop: i > 0 ? `1px solid ${t.border}` : 'none', transition: 'background 0.1s' }}
+                    style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', padding: '11px 16px', textDecoration: 'none', borderTop: i > 0 ? `1px solid ${t.border}` : 'none', transition: 'background 0.1s' }}
                     onMouseEnter={e => (e.currentTarget.style.background = t.accentFaint)}
                     onMouseLeave={e => (e.currentTarget.style.background = 'transparent')}
                   >
                     <span style={{ fontSize: 13, color: t.text, fontWeight: 500 }}>{label}</span>
-                    <span style={{ fontSize: 11, color: t.accent, fontWeight: 700, flexShrink: 0, marginLeft: 8 }}>{abbr}</span>
+                    <span style={{ display: 'flex', alignItems: 'center', gap: 8, flexShrink: 0, marginLeft: 8 }}>
+                      {distMi !== null && (
+                        <span style={{ fontSize: 11, color: t.textFaint }}>{distMi.toFixed(1)} mi</span>
+                      )}
+                      <span style={{ fontSize: 11, color: t.accent, fontWeight: 700 }}>{abbr}</span>
+                    </span>
                   </a>
                 )
               })}
