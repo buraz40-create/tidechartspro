@@ -263,11 +263,16 @@ function drawTideChart(
   const cw = W - PAD.left - PAD.right
   const ch = H - PAD.top  - PAD.bottom
 
-  // Dynamic Y-axis: scale to actual tide range so pins never clip the top
+  // Dynamic Y-axis: scale to actual tide range so pins never clip the top,
+  // and extend below 0 ft when curve or events dip negative (e.g. Pablo Creek -0.7, Eastport -2.3)
   const maxTide = events.length ? Math.max(...events.map(e => e.height)) : 6
+  const minCurve = curve.length ? Math.min(...curve) : 0
+  const minTide = events.length ? Math.min(...events.map(e => e.height)) : 0
   const maxH    = Math.max(Math.ceil(maxTide + 0.5), Math.ceil(maxTide / 0.65))
+  const minH    = Math.min(0, Math.floor(Math.min(minCurve, minTide) - 0.2))
+  const rangeH  = maxH - minH
   const toX    = (hour: number) => PAD.left + (hour / 24) * cw
-  const toY    = (ht: number)   => PAD.top  + ch - (ht / maxH) * ch
+  const toY    = (ht: number)   => PAD.top  + ch - ((ht - minH) / rangeH) * ch
 
   // ── background
   ctx.fillStyle = t.canvasBg
@@ -288,11 +293,11 @@ function drawTideChart(
     ((sunsetH - sunriseH) / 24) * cw, ch,
   )
 
-  // ── grid lines (height) — step size adapts to dynamic maxH
-  const gridStep = maxH <= 8 ? 1 : maxH <= 14 ? 2 : 3
+  // ── grid lines (height) — step size adapts to dynamic range
+  const gridStep = rangeH <= 8 ? 1 : rangeH <= 14 ? 2 : 3
   ctx.strokeStyle = t.canvasGrid
   ctx.lineWidth   = 0.5
-  for (let h = 0; h <= maxH; h += gridStep) {
+  for (let h = minH; h <= maxH; h += gridStep) {
     const y = toY(h)
     if (y < PAD.top - 2) break
     ctx.beginPath()
@@ -330,8 +335,8 @@ function drawTideChart(
     if (i === 0) ctx.moveTo(x, y)
     else ctx.lineTo(x, y)
   })
-  ctx.lineTo(toX(24), toY(0))
-  ctx.lineTo(toX(0),  toY(0))
+  ctx.lineTo(toX(24), toY(minH))
+  ctx.lineTo(toX(0),  toY(minH))
   ctx.closePath()
   ctx.fillStyle = t.canvasWaterFill
   ctx.fill()
