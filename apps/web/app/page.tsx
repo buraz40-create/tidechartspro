@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useMemo, useRef } from 'react'
+import { useState, useMemo, useRef, useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import type { MapStation } from './HomeMap'
 import { FLORIDA_STATIONS }        from '@/lib/florida-stations'
@@ -70,7 +70,7 @@ const THEMES = {
 
 // Map stations per state (slug = full path for non-FL states)
 const mkPins = (abbr: string, slug: string, arr: typeof FLORIDA_STATIONS): MapStation[] =>
-  arr.map(s => ({ name: `${s.name}, ${abbr}`, lat: s.lat, lon: s.lon, slug: `/tides/${slug}/${s.slug}`, live: true }))
+  arr.map(s => ({ name: `${s.name}, ${abbr}`, lat: s.lat, lon: s.lon, slug: `/tides/us/${slug}/${s.slug}`, live: true }))
 
 const FL_MAP_STATIONS: MapStation[] = FLORIDA_STATIONS.map(s => ({
   name: `${s.name}, FL`, lat: s.lat, lon: s.lon, slug: s.slug, live: true,
@@ -101,11 +101,32 @@ const STATIONS: MapStation[] = [
   ...mkPins('WA', 'washington',     WASHINGTON_STATIONS),
 ]
 
-// AL_MAP_STATIONS kept for the station grid section below
-const AL_MAP_STATIONS = mkPins('AL', 'alabama',     ALABAMA_STATIONS)
-const MS_MAP_STATIONS = mkPins('MS', 'mississippi', MISSISSIPPI_STATIONS)
-const LA_MAP_STATIONS = mkPins('LA', 'louisiana',   LOUISIANA_STATIONS)
-const TX_MAP_STATIONS = mkPins('TX', 'texas',       TEXAS_STATIONS)
+// All state station arrays for the accordion
+const STATE_ACCORDIONS = [
+  { name: 'Alabama',        slug: 'alabama',        sub: 'Mobile Bay, Gulf Shores & Dauphin Island',            stations: mkPins('AL', 'alabama',         ALABAMA_STATIONS),        suffix: 'AL' },
+  { name: 'Alaska',         slug: 'alaska',         sub: 'Southeast Alaska, Cook Inlet & Prince William Sound', stations: mkPins('AK', 'alaska',          ALASKA_STATIONS),         suffix: 'AK' },
+  { name: 'California',     slug: 'california',     sub: 'San Diego, Los Angeles, San Francisco & Eureka',      stations: mkPins('CA', 'california',      CALIFORNIA_STATIONS),     suffix: 'CA' },
+  { name: 'Connecticut',    slug: 'connecticut',    sub: 'Long Island Sound, Thames River & Connecticut River', stations: mkPins('CT', 'connecticut',     CONNECTICUT_STATIONS),    suffix: 'CT' },
+  { name: 'Delaware',       slug: 'delaware',       sub: 'Delaware Bay, Delaware River & Inland Bays',          stations: mkPins('DE', 'delaware',        DELAWARE_STATIONS),       suffix: 'DE' },
+  { name: 'Florida',        slug: 'florida',        sub: 'Atlantic coast, Gulf Coast, Keys & Panhandle',        stations: FL_MAP_STATIONS,                                          suffix: 'FL' },
+  { name: 'Georgia',        slug: 'georgia',        sub: 'Savannah River, Altamaha River & Golden Isles',       stations: mkPins('GA', 'georgia',         GEORGIA_STATIONS),        suffix: 'GA' },
+  { name: 'Hawaii',         slug: 'hawaii',         sub: 'Oahu, Maui, Big Island & Kauai',                      stations: mkPins('HI', 'hawaii',          HAWAII_STATIONS),         suffix: 'HI' },
+  { name: 'Louisiana',      slug: 'louisiana',      sub: 'New Orleans, Grand Isle & Vermilion Bay',             stations: mkPins('LA', 'louisiana',       LOUISIANA_STATIONS),      suffix: 'LA' },
+  { name: 'Maine',          slug: 'maine',          sub: 'Portland, Bar Harbor, Penobscot Bay & Eastport',      stations: mkPins('ME', 'maine',           MAINE_STATIONS),          suffix: 'ME' },
+  { name: 'Maryland',       slug: 'maryland',       sub: 'Chesapeake Bay, Ocean City & Baltimore Harbor',       stations: mkPins('MD', 'maryland',        MARYLAND_STATIONS),       suffix: 'MD' },
+  { name: 'Massachusetts',  slug: 'massachusetts',  sub: 'Boston Harbor, Cape Cod, Nantucket & Cape Ann',       stations: mkPins('MA', 'massachusetts',   MASSACHUSETTS_STATIONS),  suffix: 'MA' },
+  { name: 'Mississippi',    slug: 'mississippi',    sub: 'Mississippi Sound, Biloxi & Gulfport',                stations: mkPins('MS', 'mississippi',     MISSISSIPPI_STATIONS),    suffix: 'MS' },
+  { name: 'New Hampshire',  slug: 'new-hampshire',  sub: 'Great Bay, Hampton Harbor & Piscataqua River',        stations: mkPins('NH', 'new-hampshire',   NEW_HAMPSHIRE_STATIONS),  suffix: 'NH' },
+  { name: 'New Jersey',     slug: 'new-jersey',     sub: 'Jersey Shore, Delaware Bay & New York Harbor',        stations: mkPins('NJ', 'new-jersey',      NEW_JERSEY_STATIONS),     suffix: 'NJ' },
+  { name: 'New York',       slug: 'new-york',       sub: 'Long Island Sound, New York Harbor & Hudson River',   stations: mkPins('NY', 'new-york',        NEW_YORK_STATIONS),       suffix: 'NY' },
+  { name: 'North Carolina', slug: 'north-carolina', sub: 'Outer Banks, Cape Fear & Pamlico Sound',              stations: mkPins('NC', 'north-carolina',  NORTH_CAROLINA_STATIONS), suffix: 'NC' },
+  { name: 'Oregon',         slug: 'oregon',         sub: 'Columbia River, Coos Bay & Tillamook Bay',            stations: mkPins('OR', 'oregon',          OREGON_STATIONS),         suffix: 'OR' },
+  { name: 'Rhode Island',   slug: 'rhode-island',   sub: 'Narragansett Bay, Newport & Providence River',        stations: mkPins('RI', 'rhode-island',    RHODE_ISLAND_STATIONS),   suffix: 'RI' },
+  { name: 'South Carolina', slug: 'south-carolina', sub: 'Charleston Harbor, Myrtle Beach & Port Royal Sound',  stations: mkPins('SC', 'south-carolina',  SOUTH_CAROLINA_STATIONS), suffix: 'SC' },
+  { name: 'Texas',          slug: 'texas',          sub: 'Galveston Bay, Corpus Christi & Lower Laguna Madre',  stations: mkPins('TX', 'texas',           TEXAS_STATIONS),          suffix: 'TX' },
+  { name: 'Virginia',       slug: 'virginia',       sub: 'Chesapeake Bay, Hampton Roads & Virginia Beach',      stations: mkPins('VA', 'virginia',        VIRGINIA_STATIONS),       suffix: 'VA' },
+  { name: 'Washington',     slug: 'washington',     sub: 'Puget Sound, Columbia River & Strait of Juan de Fuca', stations: mkPins('WA', 'washington',     WASHINGTON_STATIONS),     suffix: 'WA' },
+] as const
 
 // Full search pool (all 23 states including AK/HI)
 const SEARCH_POOL = [
@@ -166,11 +187,54 @@ const STATES = [
 ]
 
 export default function Home() {
-  const [mode, setMode]       = useState<'dark' | 'light' | 'red'>('dark')
+  const [mode, setMode] = useState<'dark' | 'light' | 'red'>(() => {
+    if (typeof window !== 'undefined') return (localStorage.getItem('tcpMode') as 'dark' | 'light' | 'red') || 'dark'
+    return 'dark'
+  })
+  useEffect(() => { localStorage.setItem('tcpMode', mode) }, [mode])
   const [query, setQuery]       = useState('')
   const [dropOpen, setDropOpen] = useState(false)
   const [openState, setOpenState] = useState<string | null>(null)
+  const [geoStatus, setGeoStatus] = useState<'idle' | 'loading' | 'error'>('idle')
+  const [geoError, setGeoError] = useState<string>('')
   const searchRef = useRef<HTMLDivElement>(null)
+
+  const findNearestAndGo = () => {
+    if (!navigator.geolocation) {
+      setGeoStatus('error')
+      setGeoError('Geolocation not supported by this browser')
+      return
+    }
+    setGeoStatus('loading')
+    setGeoError('')
+    navigator.geolocation.getCurrentPosition(
+      pos => {
+        const { latitude, longitude } = pos.coords
+        const toRad = (d: number) => d * Math.PI / 180
+        let best: typeof SEARCH_POOL[0] | null = null
+        let bestDist = Infinity
+        for (const s of SEARCH_POOL) {
+          const dLat = toRad(s.lat - latitude)
+          const dLon = toRad(s.lon - longitude)
+          const a = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(latitude)) * Math.cos(toRad(s.lat)) * Math.sin(dLon / 2) ** 2
+          const dist = 2 * 6371 * Math.asin(Math.sqrt(a))
+          if (dist < bestDist) { bestDist = dist; best = s }
+        }
+        if (best) {
+          const href = best.slug.startsWith('/') ? best.slug : `/tides/us/florida/${best.slug}`
+          window.location.href = href
+        } else {
+          setGeoStatus('error')
+          setGeoError('No nearby station found')
+        }
+      },
+      err => {
+        setGeoStatus('error')
+        setGeoError(err.code === err.PERMISSION_DENIED ? 'Location access denied' : 'Could not get your location')
+      },
+      { enableHighAccuracy: false, timeout: 10000, maximumAge: 60000 },
+    )
+  }
 
   const searchResults = useMemo(() => {
     const q = query.trim().toLowerCase()
@@ -267,7 +331,7 @@ export default function Home() {
               onKeyDown={e => {
                 if (e.key === 'Enter' && searchResults.length) {
                   const r = searchResults[0]
-                  window.location.href = r.slug.startsWith('/') ? r.slug : `/tides/florida/${r.slug}`
+                  window.location.href = r.slug.startsWith('/') ? r.slug : `/tides/us/florida/${r.slug}`
                 }
               }}
               style={{ flex: 1, background: t.surface, border: 'none', outline: 'none', padding: '12px 16px', fontSize: 14, color: t.text }}
@@ -276,18 +340,47 @@ export default function Home() {
               <button onClick={() => { setQuery(''); setDropOpen(false) }} style={{ background: t.surface, border: 'none', padding: '0 12px', color: t.textFaint, cursor: 'pointer', fontSize: 18, lineHeight: 1 }}>×</button>
             )}
             <button
-              onClick={() => { if (searchResults.length) { const r = searchResults[0]; window.location.href = r.slug.startsWith('/') ? r.slug : `/tides/florida/${r.slug}` } }}
+              onClick={() => { if (searchResults.length) { const r = searchResults[0]; window.location.href = r.slug.startsWith('/') ? r.slug : `/tides/us/florida/${r.slug}` } }}
               style={{ background: t.accent, border: 'none', padding: '12px 20px', fontSize: 14, fontWeight: 600, color: '#fff', cursor: 'pointer', flexShrink: 0 }}
             >
               Search
             </button>
           </div>
 
+          {/* Use my location button */}
+          <button
+            onClick={findNearestAndGo}
+            disabled={geoStatus === 'loading'}
+            style={{
+              marginTop: 10,
+              background: 'transparent',
+              border: `1px solid ${t.border}`,
+              color: t.textMuted,
+              borderRadius: 10,
+              padding: '8px 14px',
+              fontSize: 13,
+              fontWeight: 500,
+              cursor: geoStatus === 'loading' ? 'wait' : 'pointer',
+              display: 'inline-flex',
+              alignItems: 'center',
+              gap: 6,
+              transition: 'border-color 0.15s, color 0.15s',
+            }}
+            onMouseEnter={e => { if (geoStatus !== 'loading') { e.currentTarget.style.borderColor = t.accent; e.currentTarget.style.color = t.accent } }}
+            onMouseLeave={e => { e.currentTarget.style.borderColor = t.border; e.currentTarget.style.color = t.textMuted }}
+          >
+            <span style={{ fontSize: 14 }}>📍</span>
+            {geoStatus === 'loading' ? 'Finding nearest station…' : 'Use my location'}
+          </button>
+          {geoError && (
+            <div style={{ marginTop: 8, fontSize: 12, color: '#ef4444' }}>{geoError}</div>
+          )}
+
           {/* Dropdown results */}
           {dropOpen && searchResults.length > 0 && (
             <div style={{ position: 'absolute', top: '100%', left: 0, right: 0, background: t.surface, border: `1px solid ${t.border}`, borderTop: 'none', borderRadius: '0 0 12px 12px', zIndex: 500, overflow: 'hidden', boxShadow: '0 8px 24px rgba(0,0,0,0.3)' }}>
               {searchResults.map((r, i) => {
-                const href = r.slug.startsWith('/') ? r.slug : `/tides/florida/${r.slug}`
+                const href = r.slug.startsWith('/') ? r.slug : `/tides/us/florida/${r.slug}`
                 const parts = r.name.split(', ')
                 const abbr = parts[parts.length - 1]
                 const label = parts.slice(0, -1).join(', ')
@@ -310,10 +403,10 @@ export default function Home() {
 
         {/* State chips */}
         <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, justifyContent: 'center', maxWidth: 560, margin: '0 auto' }}>
-          {STATE_CHIPS.map(s => (
+          {[...STATE_CHIPS].sort((a, b) => a.abbr.localeCompare(b.abbr)).map(s => (
             <a
               key={s.abbr}
-              href={`/tides/${s.slug}`}
+              href={`/tides/us/${s.slug}`}
               style={{ background: t.surface, border: `1px solid ${t.border}`, color: t.textMuted, borderRadius: 20, padding: '4px 13px', fontSize: 12, fontWeight: 600, textDecoration: 'none', transition: 'border-color 0.15s, color 0.15s' }}
               onMouseEnter={e => { e.currentTarget.style.borderColor = t.accent; e.currentTarget.style.color = t.accent }}
               onMouseLeave={e => { e.currentTarget.style.borderColor = t.border; e.currentTarget.style.color = t.textMuted }}
@@ -366,8 +459,8 @@ export default function Home() {
           <h2 style={{ fontSize: 22, fontWeight: 700, textAlign: 'center', marginBottom: 6 }}>Browse tide charts by state</h2>
           <p style={{ color: t.textMuted, fontSize: 13, textAlign: 'center', marginBottom: 28 }}>All 23 US coastal states — live tide charts &amp; fishing forecasts</p>
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: 10 }}>
-            {STATES.map(s => (
-              <a key={s.name} href={`/tides/${s.slug}`} style={{
+            {[...STATES].sort((a, b) => a.name.localeCompare(b.name)).map(s => (
+              <a key={s.name} href={`/tides/us/${s.slug}`} style={{
                 display: 'block', background: t.surfaceAlt, border: `1px solid ${t.border}`,
                 borderRadius: 10, padding: '16px', textAlign: 'center', textDecoration: 'none',
               }}>
@@ -399,13 +492,7 @@ export default function Home() {
         <div style={{ maxWidth: 1200, margin: '0 auto', padding: '48px 20px' }}>
           <h2 style={{ fontSize: 22, fontWeight: 700, marginBottom: 6 }}>Explore stations by state</h2>
           <p style={{ color: t.textMuted, fontSize: 13, marginBottom: 24 }}>Click any state to browse all tide chart locations</p>
-          {([
-            { name: 'Florida',     slug: 'florida',     sub: 'Atlantic coast, Gulf Coast, Keys & Panhandle', stations: FL_MAP_STATIONS,  suffix: 'FL' },
-            { name: 'Alabama',     slug: 'alabama',     sub: 'Mobile Bay, Gulf Shores & Dauphin Island',      stations: AL_MAP_STATIONS,  suffix: 'AL' },
-            { name: 'Mississippi', slug: 'mississippi', sub: 'Mississippi Sound, Biloxi & Gulfport',          stations: MS_MAP_STATIONS,  suffix: 'MS' },
-            { name: 'Louisiana',   slug: 'louisiana',   sub: 'New Orleans, Grand Isle & Vermilion Bay',       stations: LA_MAP_STATIONS,  suffix: 'LA' },
-            { name: 'Texas',       slug: 'texas',       sub: 'Galveston Bay, Corpus Christi & Lower Laguna Madre', stations: TX_MAP_STATIONS, suffix: 'TX' },
-          ] as const).map(({ name, slug, sub, stations, suffix }) => (
+          {STATE_ACCORDIONS.map(({ name, slug, sub, stations, suffix }) => (
             <div key={slug} style={{ borderBottom: `1px solid ${t.border}` }}>
               {/* Accordion header */}
               <button
@@ -428,13 +515,13 @@ export default function Home() {
               {openState === slug && (
                 <div style={{ paddingBottom: 24 }}>
                   <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: 12 }}>
-                    <a href={`/tides/${slug}`} style={{ fontSize: 12, color: t.accent, textDecoration: 'none', fontWeight: 600 }}>View full {name} page →</a>
+                    <a href={`/tides/us/${slug}`} style={{ fontSize: 12, color: t.accent, textDecoration: 'none', fontWeight: 600 }}>View full {name} page →</a>
                   </div>
                   <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: 8 }}>
                     {stations.map(s => (
                       <a
                         key={s.slug}
-                        href={s.slug.startsWith('/') ? s.slug : `/tides/florida/${s.slug}`}
+                        href={s.slug.startsWith('/') ? s.slug : `/tides/us/florida/${s.slug}`}
                         style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: t.surface, border: `1px solid ${t.border}`, borderRadius: 8, padding: '10px 14px', textDecoration: 'none' }}
                       >
                         <span style={{ fontSize: 13, fontWeight: 600, color: t.text }}>{s.name.replace(`, ${suffix}`, '')}</span>
