@@ -129,7 +129,7 @@ const THEMES: Record<Mode, Theme> = {
 const STATION = {
   // NOAA identifiers
   id:              '8720218',       // CO-OPS tide station
-  waterTempId:     '8720503',       // CO-OPS water temp station (nearest)
+  waterTempId:     '8720218',       // Mayport (Bar Pilots Dock) - live water temp
   // Identity
   name:            'Pablo Creek Entrance',
   slug:            'pablo-creek-entrance',
