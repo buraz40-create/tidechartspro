@@ -870,7 +870,10 @@ export default function TideLocationPage({ station }: { station: StationConfig }
   const [currentMonth, setCurrentMonth] = useState<Date>(() => {
     const n = new Date(); return new Date(n.getFullYear(), n.getMonth(), 1)
   })
-  const calDays    = generateCalMonth(currentMonth.getFullYear(), currentMonth.getMonth(), station)
+  const calDaysBase = useMemo(
+    () => generateCalMonth(currentMonth.getFullYear(), currentMonth.getMonth(), station),
+    [currentMonth, station],
+  )
   const monthLabel = currentMonth.toLocaleDateString('en-US', { month: 'long', year: 'numeric' })
 
   // ── Selected date (for charts) — useState + native history API ──
@@ -938,7 +941,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
     const fmt    = (d: Date) => `${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`
     const today  = new Date()
     const yest   = new Date(today); yest.setDate(today.getDate() - 1)
-    const plus7  = new Date(today); plus7.setDate(today.getDate() + 7)
+    const plus31 = new Date(today); plus31.setDate(today.getDate() + 31)
 
     // 6-min curve for today
     fetch(`${BASE}?product=predictions&interval=6&begin_date=${fmt(today)}&end_date=${fmt(today)}${COMMON}`)
@@ -956,8 +959,8 @@ export default function TideLocationPage({ station }: { station: StationConfig }
       })
       .catch(() => {})
 
-    // Hilo events yesterday → +7 days (yesterday needed to anchor curve start-of-day)
-    fetch(`${BASE}?product=predictions&interval=hilo&begin_date=${fmt(yest)}&end_date=${fmt(plus7)}${COMMON}`)
+    // Hilo events yesterday to +31 days (yesterday needed to anchor curve start-of-day, +31 to cover 30-day calendar)
+    fetch(`${BASE}?product=predictions&interval=hilo&begin_date=${fmt(yest)}&end_date=${fmt(plus31)}${COMMON}`)
       .then(r => r.json())
       .then((d: { predictions?: {t:string, v:string, type:string}[] }) => {
         const raw = d.predictions
@@ -985,7 +988,35 @@ export default function TideLocationPage({ station }: { station: StationConfig }
     return `${d.getFullYear()}-${p(d.getMonth()+1)}-${p(d.getDate())}`
   }
 
-  // Derived: live 6-min → hilo-interpolated → harmonic fallback
+  // Overlay live NOAA hilo data onto the harmonic calendar so visible tide
+  // events, heights, and coefficient match the real chart for the same day.
+  const calDays = useMemo(() => {
+    if (!liveHilo) return calDaysBase
+    return calDaysBase.map(day => {
+      const evs = liveHilo.get(dateKey(day.date))
+      if (!evs || evs.length < 2) return day
+      const tides = evs
+        .slice()
+        .sort((a, b) => a.hour - b.hour)
+        .map(e => ({ time: e.time, height: e.height, type: e.label === 'High' ? 'high' as const : 'low' as const }))
+      const highs = evs.filter(e => e.label === 'High').map(e => e.height)
+      const lows  = evs.filter(e => e.label === 'Low').map(e => e.height)
+      if (!highs.length || !lows.length) return { ...day, tides }
+      const range = Math.max(...highs) - Math.min(...lows)
+      const coefficient = Math.round(Math.max(20, Math.min(110, (range / 5.5) * 110)))
+      return {
+        ...day,
+        tides,
+        coefficient,
+        coeffLabel: calCoeffLabel(coefficient),
+        coeffColor: calCoeffColor(coefficient),
+        solunarScore: calSolunar(coefficient),
+      }
+    })
+  // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [calDaysBase, liveHilo])
+
+  // Derived: live 6-min to hilo-interpolated to harmonic fallback
   const selDateKey = dateKey(selectedDate)
 
   // Build interpolated curve from hilo events when 6-min data is unavailable
