@@ -3,6 +3,7 @@
 import { useState, useMemo, useRef, useEffect } from 'react'
 import dynamic from 'next/dynamic'
 import type { MapStation } from './HomeMap'
+import TopSpots from './TopSpots'
 import { FLORIDA_STATIONS }        from '@/lib/florida-stations'
 import { ALABAMA_STATIONS }        from '@/lib/alabama-stations'
 import { MISSISSIPPI_STATIONS }    from '@/lib/mississippi-stations'
@@ -70,10 +71,10 @@ const THEMES = {
 
 // Map stations per state (slug = full path for non-FL states)
 const mkPins = (abbr: string, slug: string, arr: typeof FLORIDA_STATIONS): MapStation[] =>
-  arr.map(s => ({ name: `${s.name}, ${abbr}`, lat: s.lat, lon: s.lon, slug: `/tides/us/${slug}/${s.slug}`, live: true }))
+  arr.map(s => ({ name: `${s.name}, ${abbr}`, lat: s.lat, lon: s.lon, slug: `/tides/us/${slug}/${s.slug}`, state: abbr, live: true }))
 
 const FL_MAP_STATIONS: MapStation[] = FLORIDA_STATIONS.map(s => ({
-  name: `${s.name}, FL`, lat: s.lat, lon: s.lon, slug: s.slug, live: true,
+  name: `${s.name}, FL`, lat: s.lat, lon: s.lon, slug: s.slug, state: 'FL', live: true,
 }))
 
 // Continental US stations for home map (AK/HI excluded for performance)
@@ -135,55 +136,41 @@ const SEARCH_POOL = [
   ...mkPins('HI', 'hawaii', HAWAII_STATIONS),
 ]
 
-// State chips for the hero quick-nav
-const STATE_CHIPS = [
-  { abbr: 'FL', slug: 'florida' },        { abbr: 'AL', slug: 'alabama' },
-  { abbr: 'MS', slug: 'mississippi' },    { abbr: 'LA', slug: 'louisiana' },
-  { abbr: 'TX', slug: 'texas' },          { abbr: 'GA', slug: 'georgia' },
-  { abbr: 'SC', slug: 'south-carolina' }, { abbr: 'NC', slug: 'north-carolina' },
-  { abbr: 'VA', slug: 'virginia' },       { abbr: 'MD', slug: 'maryland' },
-  { abbr: 'DE', slug: 'delaware' },       { abbr: 'NJ', slug: 'new-jersey' },
-  { abbr: 'NY', slug: 'new-york' },       { abbr: 'CT', slug: 'connecticut' },
-  { abbr: 'RI', slug: 'rhode-island' },   { abbr: 'MA', slug: 'massachusetts' },
-  { abbr: 'NH', slug: 'new-hampshire' },  { abbr: 'ME', slug: 'maine' },
-  { abbr: 'CA', slug: 'california' },     { abbr: 'OR', slug: 'oregon' },
-  { abbr: 'WA', slug: 'washington' },     { abbr: 'AK', slug: 'alaska' },
-  { abbr: 'HI', slug: 'hawaii' },
-]
 
 const FEATURES = [
-  { icon: '🌊', title: 'Live tide charts',       desc: 'Real-time water level plotted on predicted curve. See exactly where the tide is right now.' },
-  { icon: '🎣', title: 'Fishing score',           desc: 'Daily A–F grade combining tide phase, pressure trend, solunar periods, and water temp.' },
-  { icon: '🐟', title: 'Species bite times',      desc: 'Location-aware guide - what\'s biting today, best windows, hot baits, and regulations.' },
-  { icon: '🌙', title: 'Solunar periods',         desc: 'Major and minor feeding periods based on lunar transit, aligned with your local tide.' },
-  { icon: '🔴', title: 'Red night vision mode',   desc: 'Preserves your natural night vision while checking tides. Built for serious night anglers.' },
-  { icon: '📍', title: 'Fishing map',             desc: 'Tide stations, boat ramps, piers, and marinas on one interactive map.' },
+  { icon: '🌊', title: 'Live tide charts',       color: '#3b82f6', desc: 'Real-time water level plotted on predicted curve. See exactly where the tide is right now.' },
+  { icon: '🎣', title: 'Fishing score',           color: '#10b981', desc: 'Daily A-F grade combining tide phase, pressure trend, solunar periods, and water temp.' },
+  { icon: '🐟', title: 'Species bite times',      color: '#f97316', desc: 'Location-aware guide - what\'s biting today, best windows, hot baits, and regulations.' },
+  { icon: '🌙', title: 'Solunar periods',         color: '#a855f7', desc: 'Major and minor feeding periods based on lunar transit, aligned with your local tide.' },
+  { icon: '🔴', title: 'Red night vision mode',   color: '#ef4444', desc: 'Preserves your natural night vision while checking tides. Built for serious night anglers.' },
+  { icon: '📍', title: 'Fishing map',             color: '#06b6d4', desc: 'Tide stations, boat ramps, piers, and marinas on one interactive map.' },
 ]
 
+// State card metadata - color (matches map clusters), region, count
 const STATES = [
-  { name: 'Florida',        count: `${FLORIDA_STATIONS.length} stations`,        slug: 'florida',        live: true },
-  { name: 'Alabama',        count: `${ALABAMA_STATIONS.length} stations`,        slug: 'alabama',        live: true },
-  { name: 'Mississippi',    count: `${MISSISSIPPI_STATIONS.length} stations`,    slug: 'mississippi',    live: true },
-  { name: 'Louisiana',      count: `${LOUISIANA_STATIONS.length} stations`,      slug: 'louisiana',      live: true },
-  { name: 'Texas',          count: `${TEXAS_STATIONS.length} stations`,          slug: 'texas',          live: true },
-  { name: 'Georgia',        count: `${GEORGIA_STATIONS.length} stations`,        slug: 'georgia',        live: true },
-  { name: 'South Carolina', count: `${SOUTH_CAROLINA_STATIONS.length} stations`, slug: 'south-carolina', live: true },
-  { name: 'North Carolina', count: `${NORTH_CAROLINA_STATIONS.length} stations`, slug: 'north-carolina', live: true },
-  { name: 'Virginia',       count: `${VIRGINIA_STATIONS.length} stations`,       slug: 'virginia',       live: true },
-  { name: 'Maryland',       count: `${MARYLAND_STATIONS.length} stations`,       slug: 'maryland',       live: true },
-  { name: 'Delaware',       count: `${DELAWARE_STATIONS.length} stations`,       slug: 'delaware',       live: true },
-  { name: 'New Jersey',     count: `${NEW_JERSEY_STATIONS.length} stations`,     slug: 'new-jersey',     live: true },
-  { name: 'New York',       count: `${NEW_YORK_STATIONS.length} stations`,       slug: 'new-york',       live: true },
-  { name: 'Connecticut',    count: `${CONNECTICUT_STATIONS.length} stations`,    slug: 'connecticut',    live: true },
-  { name: 'Rhode Island',   count: `${RHODE_ISLAND_STATIONS.length} stations`,   slug: 'rhode-island',   live: true },
-  { name: 'Massachusetts',  count: `${MASSACHUSETTS_STATIONS.length} stations`,  slug: 'massachusetts',  live: true },
-  { name: 'New Hampshire',  count: `${NEW_HAMPSHIRE_STATIONS.length} stations`,  slug: 'new-hampshire',  live: true },
-  { name: 'Maine',          count: `${MAINE_STATIONS.length} stations`,          slug: 'maine',          live: true },
-  { name: 'California',     count: `${CALIFORNIA_STATIONS.length} stations`,     slug: 'california',     live: true },
-  { name: 'Oregon',         count: `${OREGON_STATIONS.length} stations`,         slug: 'oregon',         live: true },
-  { name: 'Washington',     count: `${WASHINGTON_STATIONS.length} stations`,     slug: 'washington',     live: true },
-  { name: 'Alaska',         count: `${ALASKA_STATIONS.length} stations`,         slug: 'alaska',         live: true },
-  { name: 'Hawaii',         count: `${HAWAII_STATIONS.length} stations`,         slug: 'hawaii',         live: true },
+  { name: 'Florida',        code: 'FL', count: FLORIDA_STATIONS.length,        slug: 'florida',        color: '#10b981', region: 'South Atlantic / Gulf' },
+  { name: 'Alabama',        code: 'AL', count: ALABAMA_STATIONS.length,        slug: 'alabama',        color: '#d97706', region: 'Gulf Coast'           },
+  { name: 'Mississippi',    code: 'MS', count: MISSISSIPPI_STATIONS.length,    slug: 'mississippi',    color: '#f59e0b', region: 'Gulf Coast'           },
+  { name: 'Louisiana',      code: 'LA', count: LOUISIANA_STATIONS.length,      slug: 'louisiana',      color: '#ea580c', region: 'Gulf Coast'           },
+  { name: 'Texas',          code: 'TX', count: TEXAS_STATIONS.length,          slug: 'texas',          color: '#dc2626', region: 'Gulf Coast'           },
+  { name: 'Georgia',        code: 'GA', count: GEORGIA_STATIONS.length,        slug: 'georgia',        color: '#059669', region: 'South Atlantic'       },
+  { name: 'South Carolina', code: 'SC', count: SOUTH_CAROLINA_STATIONS.length, slug: 'south-carolina', color: '#0d9488', region: 'South Atlantic'       },
+  { name: 'North Carolina', code: 'NC', count: NORTH_CAROLINA_STATIONS.length, slug: 'north-carolina', color: '#14b8a6', region: 'South Atlantic'       },
+  { name: 'Virginia',       code: 'VA', count: VIRGINIA_STATIONS.length,       slug: 'virginia',       color: '#0ea5e9', region: 'Mid-Atlantic'         },
+  { name: 'Maryland',       code: 'MD', count: MARYLAND_STATIONS.length,       slug: 'maryland',       color: '#0284c7', region: 'Mid-Atlantic'         },
+  { name: 'Delaware',       code: 'DE', count: DELAWARE_STATIONS.length,       slug: 'delaware',       color: '#0369a1', region: 'Mid-Atlantic'         },
+  { name: 'New Jersey',     code: 'NJ', count: NEW_JERSEY_STATIONS.length,     slug: 'new-jersey',     color: '#1d4ed8', region: 'Mid-Atlantic'         },
+  { name: 'New York',       code: 'NY', count: NEW_YORK_STATIONS.length,       slug: 'new-york',       color: '#7c3aed', region: 'Northeast'            },
+  { name: 'Connecticut',    code: 'CT', count: CONNECTICUT_STATIONS.length,    slug: 'connecticut',    color: '#8b5cf6', region: 'Northeast'            },
+  { name: 'Rhode Island',   code: 'RI', count: RHODE_ISLAND_STATIONS.length,   slug: 'rhode-island',   color: '#a855f7', region: 'Northeast'            },
+  { name: 'Massachusetts',  code: 'MA', count: MASSACHUSETTS_STATIONS.length,  slug: 'massachusetts',  color: '#c026d3', region: 'Northeast'            },
+  { name: 'New Hampshire',  code: 'NH', count: NEW_HAMPSHIRE_STATIONS.length,  slug: 'new-hampshire',  color: '#db2777', region: 'Northeast'            },
+  { name: 'Maine',          code: 'ME', count: MAINE_STATIONS.length,          slug: 'maine',          color: '#be185d', region: 'Northeast'            },
+  { name: 'California',     code: 'CA', count: CALIFORNIA_STATIONS.length,     slug: 'california',     color: '#06b6d4', region: 'Pacific Coast'        },
+  { name: 'Oregon',         code: 'OR', count: OREGON_STATIONS.length,         slug: 'oregon',         color: '#0891b2', region: 'Pacific Coast'        },
+  { name: 'Washington',     code: 'WA', count: WASHINGTON_STATIONS.length,     slug: 'washington',     color: '#0e7490', region: 'Pacific Coast'        },
+  { name: 'Alaska',         code: 'AK', count: ALASKA_STATIONS.length,         slug: 'alaska',         color: '#64748b', region: 'Pacific Outpost'      },
+  { name: 'Hawaii',         code: 'HI', count: HAWAII_STATIONS.length,         slug: 'hawaii',         color: '#eab308', region: 'Pacific Outpost'      },
 ]
 
 export default function Home() {
@@ -199,6 +186,54 @@ export default function Home() {
   const [geoError, setGeoError] = useState<string>('')
   const [geoResults, setGeoResults] = useState<Array<typeof SEARCH_POOL[0] & { distMi: number }>>([])
   const searchRef = useRef<HTMLDivElement>(null)
+  const [searchFocused, setSearchFocused] = useState(false)
+
+  // Typewriter placeholder - cycles through example searches when input is empty + unfocused
+  const TYPEWRITER_EXAMPLES = useMemo(() => [
+    'Search Galveston, TX',
+    'Search Mayport, FL',
+    'Search Cape Cod, MA',
+    'Search Newport Beach, CA',
+    'Search Pablo Creek, FL',
+    'Search Outer Banks, NC',
+  ], [])
+  const [typedPlaceholder, setTypedPlaceholder] = useState(TYPEWRITER_EXAMPLES[0])
+  useEffect(() => {
+    if (searchFocused || query) return
+    let exampleIdx = 0
+    let charIdx = TYPEWRITER_EXAMPLES[0].length
+    let phase: 'pausing' | 'deleting' | 'typing' = 'pausing'
+    let timer: ReturnType<typeof setTimeout>
+    const tick = () => {
+      const current = TYPEWRITER_EXAMPLES[exampleIdx]
+      if (phase === 'pausing') {
+        phase = 'deleting'
+        timer = setTimeout(tick, 1400)
+        return
+      }
+      if (phase === 'deleting') {
+        charIdx = Math.max(0, charIdx - 1)
+        setTypedPlaceholder(current.slice(0, charIdx))
+        if (charIdx === 0) {
+          phase = 'typing'
+          exampleIdx = (exampleIdx + 1) % TYPEWRITER_EXAMPLES.length
+        }
+        timer = setTimeout(tick, 30)
+        return
+      }
+      const next = TYPEWRITER_EXAMPLES[exampleIdx]
+      charIdx = Math.min(next.length, charIdx + 1)
+      setTypedPlaceholder(next.slice(0, charIdx))
+      if (charIdx === next.length) {
+        phase = 'pausing'
+        timer = setTimeout(tick, 1800)
+        return
+      }
+      timer = setTimeout(tick, 55)
+    }
+    timer = setTimeout(tick, 1800)
+    return () => clearTimeout(timer)
+  }, [searchFocused, query, TYPEWRITER_EXAMPLES])
 
   const findNearestAndShow = () => {
     if (!navigator.geolocation) {
@@ -315,9 +350,17 @@ export default function Home() {
         <p style={{ color: t.textMuted, fontSize: 16, maxWidth: 520, margin: '0 auto 28px', lineHeight: 1.6 }}>
           Real-time tides, solunar periods, species bite times, and fishing forecasts for 3,300+ locations across all US coastal states.
         </p>
-        {/* Search with live dropdown - highlighted to stand out */}
-        <div ref={searchRef} style={{ position: 'relative', maxWidth: 520, margin: '0 auto 20px' }}>
-          <div style={{ display: 'flex', borderRadius: 14, overflow: 'hidden', border: `2px solid ${t.accent}`, background: t.surface, boxShadow: `0 0 0 4px ${t.accentFaint}, 0 8px 24px rgba(0,0,0,0.25)`, transition: 'box-shadow 0.15s' }}>
+        {/* Search with live dropdown - animated pulse draws attention */}
+        <div
+          ref={searchRef}
+          style={{
+            position: 'relative', maxWidth: 680, margin: '0 auto 20px',
+            // CSS vars consumed by tcp-search-pulse keyframes
+            ['--tcp-accent-glow' as string]: `${t.accent}30`,
+            ['--tcp-accent-glow-soft' as string]: `${t.accent}14`,
+          } as React.CSSProperties}
+        >
+          <div className="tcp-search-pulse" style={{ display: 'flex', borderRadius: 14, overflow: 'hidden', border: `2px solid ${t.accent}`, background: t.surface, transition: 'transform 0.15s' }}>
             <button
               onClick={findNearestAndShow}
               disabled={geoStatus === 'loading'}
@@ -326,8 +369,8 @@ export default function Home() {
                 background: t.accentFaint,
                 border: 'none',
                 borderRight: `1px solid ${t.accent}33`,
-                padding: '0 14px',
-                fontSize: 18,
+                padding: '0 18px',
+                fontSize: 22,
                 cursor: geoStatus === 'loading' ? 'wait' : 'pointer',
                 color: t.accent,
                 display: 'flex',
@@ -340,32 +383,57 @@ export default function Home() {
             </button>
             <input
               type="text"
-              placeholder="Search station, inlet, city, or tap 📍"
+              placeholder={typedPlaceholder + (typedPlaceholder ? '|' : '')}
               value={query}
               onChange={e => { setQuery(e.target.value); setGeoResults([]); setDropOpen(true) }}
-              onFocus={() => setDropOpen(true)}
-              onBlur={() => setTimeout(() => setDropOpen(false), 150)}
+              onFocus={() => { setDropOpen(true); setSearchFocused(true) }}
+              onBlur={() => { setTimeout(() => setDropOpen(false), 150); setSearchFocused(false) }}
               onKeyDown={e => {
                 if (e.key === 'Enter' && searchResults.length) {
                   const r = searchResults[0]
                   window.location.href = r.slug.startsWith('/') ? r.slug : `/tides/us/florida/${r.slug}`
                 }
               }}
-              style={{ flex: 1, background: t.surface, border: 'none', outline: 'none', padding: '14px 16px', fontSize: 15, color: t.text }}
+              style={{ flex: 1, background: t.surface, border: 'none', outline: 'none', padding: '18px 20px', fontSize: 17, color: t.text }}
             />
             {query && (
               <button onClick={() => { setQuery(''); setDropOpen(false) }} style={{ background: t.surface, border: 'none', padding: '0 12px', color: t.textFaint, cursor: 'pointer', fontSize: 18, lineHeight: 1 }}>×</button>
             )}
             <button
               onClick={() => { if (searchResults.length) { const r = searchResults[0]; window.location.href = r.slug.startsWith('/') ? r.slug : `/tides/us/florida/${r.slug}` } }}
-              style={{ background: t.accent, border: 'none', padding: '14px 22px', fontSize: 14, fontWeight: 700, color: '#fff', cursor: 'pointer', flexShrink: 0 }}
+              style={{ background: t.accent, border: 'none', padding: '18px 28px', fontSize: 15, fontWeight: 700, color: '#fff', cursor: 'pointer', flexShrink: 0, whiteSpace: 'nowrap' }}
             >
-              Search
+              See if it&apos;s fishy <span className="tcp-arrow">›</span>
             </button>
           </div>
           {geoError && (
             <div style={{ marginTop: 8, fontSize: 12, color: '#ef4444' }}>{geoError}</div>
           )}
+
+          {/* Try: quick-pick popular stations */}
+          <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'center', gap: 8, marginTop: 14, flexWrap: 'wrap' }}>
+            <span style={{ fontSize: 12, color: t.textFaint, fontWeight: 600 }}>Try:</span>
+            {[
+              { label: 'Galveston, TX',    href: '/tides/us/texas/galveston-bay-entrance-north-jetty' },
+              { label: 'Mayport, FL',      href: '/tides/us/florida/pablo-creek-entrance' },
+              { label: 'Cape Cod, MA',     href: '/tides/us/massachusetts/provincetown' },
+              { label: 'Newport Beach, CA', href: '/tides/us/california/newport-bay-entrance-corona-del-mar' },
+            ].map(c => (
+              <a
+                key={c.label}
+                href={c.href}
+                style={{
+                  background: t.surface, border: `1px solid ${t.border}`, color: t.textMuted,
+                  borderRadius: 999, padding: '6px 14px', fontSize: 12, fontWeight: 600,
+                  textDecoration: 'none', transition: 'all 0.15s', whiteSpace: 'nowrap',
+                }}
+                onMouseEnter={e => { e.currentTarget.style.borderColor = t.accent; e.currentTarget.style.color = t.accent; e.currentTarget.style.background = t.accentFaint }}
+                onMouseLeave={e => { e.currentTarget.style.borderColor = t.border; e.currentTarget.style.color = t.textMuted; e.currentTarget.style.background = t.surface }}
+              >
+                {c.label}
+              </a>
+            ))}
+          </div>
 
           {/* Dropdown results - geo results take priority over search results */}
           {dropOpen && (geoResults.length > 0 || searchResults.length > 0) && (
@@ -403,20 +471,6 @@ export default function Home() {
           )}
         </div>
 
-        {/* State chips */}
-        <div style={{ display: 'flex', flexWrap: 'wrap', gap: 6, justifyContent: 'center', maxWidth: 560, margin: '0 auto' }}>
-          {[...STATE_CHIPS].sort((a, b) => a.abbr.localeCompare(b.abbr)).map(s => (
-            <a
-              key={s.abbr}
-              href={`/tides/us/${s.slug}`}
-              style={{ background: t.surface, border: `1px solid ${t.border}`, color: t.textMuted, borderRadius: 20, padding: '4px 13px', fontSize: 12, fontWeight: 600, textDecoration: 'none', transition: 'border-color 0.15s, color 0.15s' }}
-              onMouseEnter={e => { e.currentTarget.style.borderColor = t.accent; e.currentTarget.style.color = t.accent }}
-              onMouseLeave={e => { e.currentTarget.style.borderColor = t.border; e.currentTarget.style.color = t.textMuted }}
-            >
-              {s.abbr}
-            </a>
-          ))}
-        </div>
       </section>
 
       {/* MAP */}
@@ -425,7 +479,8 @@ export default function Home() {
           borderRadius: 16,
           overflow: 'hidden',
           border: `1px solid ${t.border}`,
-          height: 'clamp(340px, 50vw, 560px)',
+          // Mobile: taller min for usability; desktop: scales with viewport
+          height: 'clamp(420px, 55vh, 600px)',
           boxShadow: '0 4px 32px rgba(0,0,0,0.35)',
         }}>
           <HomeMap stations={STATIONS} mode={mode} />
@@ -438,103 +493,161 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Stats */}
-      <section style={{ borderTop: `1px solid ${t.border}`, borderBottom: `1px solid ${t.border}`, background: t.surface }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '28px 20px', display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(140px, 1fr))', gap: 20, textAlign: 'center' }}>
-          {[
-            { n: '3,300+', l: 'Tide stations' },
-            { n: '6 min',  l: 'Update frequency' },
-            { n: '25+',    l: 'Species tracked' },
-            { n: '23',     l: 'Coastal states' },
-          ].map(s => (
-            <div key={s.l}>
-              <div style={{ fontSize: 24, fontWeight: 700, color: t.accent }}>{s.n}</div>
-              <div style={{ fontSize: 12, color: t.textMuted, marginTop: 4 }}>{s.l}</div>
-            </div>
-          ))}
+      {/* Top fishing spots right now (live) */}
+      <TopSpots t={t} />
+
+      {/* Stats - interactive cards with icons, glow, and animated bars */}
+      <section style={{ borderTop: `1px solid ${t.border}`, borderBottom: `1px solid ${t.border}`, background: t.surface, position: 'relative', overflow: 'hidden' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '40px 20px' }}>
+          <div className="tcp-stat-grid">
+            {[
+              { target: 3300, suffix: '+',     icon: '🌊', label: 'Tide stations',     color: '#3b82f6', live: false },
+              { target: 6,    suffix: ' min',  icon: '⚡', label: 'Update frequency',  color: '#10b981', live: true  },
+              { target: 25,   suffix: '+',     icon: '🐟', label: 'Species tracked',   color: '#f97316', live: false },
+              { target: 23,   suffix: '',      icon: '🗺️', label: 'Coastal states',    color: '#a855f7', live: false },
+            ].map(s => (
+              <AnimatedStat
+                key={s.label}
+                target={s.target}
+                suffix={s.suffix}
+                label={s.label}
+                color={s.color}
+                icon={s.icon}
+                live={s.live}
+                muted={t.textMuted}
+              />
+            ))}
+          </div>
         </div>
       </section>
 
-      {/* Browse by state */}
-      <section style={{ background: t.surface, borderTop: `1px solid ${t.border}` }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '48px 20px' }}>
-          <h2 style={{ fontSize: 22, fontWeight: 700, textAlign: 'center', marginBottom: 6 }}>Browse tide charts by state</h2>
-          <p style={{ color: t.textMuted, fontSize: 13, textAlign: 'center', marginBottom: 28 }}>All 23 US coastal states - live tide charts &amp; fishing forecasts</p>
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(160px, 1fr))', gap: 10 }}>
+      {/* Browse by state - bold watermark cards with wave decoration */}
+      <section style={{ background: t.surface, borderTop: `1px solid ${t.border}`, position: 'relative', overflow: 'hidden' }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '64px 20px 72px', position: 'relative' }}>
+          <h2 style={{ fontSize: 28, fontWeight: 800, textAlign: 'center', marginBottom: 6, letterSpacing: '-0.02em' }}>
+            Pick your <span style={{ color: t.accent }}>coast.</span>
+          </h2>
+          <p style={{ color: t.textMuted, fontSize: 13, textAlign: 'center', marginBottom: 40 }}>23 coastal states · 3,300+ live stations · sorted by region</p>
+          <div className="tcp-state-grid">
             {[...STATES].sort((a, b) => a.name.localeCompare(b.name)).map(s => (
-              <a key={s.name} href={`/tides/us/${s.slug}`} style={{
-                display: 'block', background: t.surfaceAlt, border: `1px solid ${t.border}`,
-                borderRadius: 10, padding: '16px', textAlign: 'center', textDecoration: 'none',
-              }}>
-                <div style={{ fontSize: 14, fontWeight: 600, color: t.text }}>{s.name}</div>
-                <div style={{ fontSize: 11, color: t.accent, marginTop: 4, fontWeight: 600 }}>{s.count}</div>
+              <a
+                key={s.code}
+                href={`/tides/us/${s.slug}`}
+                className="tcp-state-card"
+                style={{
+                  ['--tcp-state-color' as string]: s.color,
+                  ['--tcp-surface' as string]: t.surfaceAlt,
+                } as React.CSSProperties}
+              >
+                {/* Giant watermark state code */}
+                <div className="tcp-state-watermark" aria-hidden>{s.code}</div>
+
+                {/* Card content (over the watermark) */}
+                <div className="tcp-state-content">
+                  <div className="tcp-state-region">{s.region}</div>
+                  <div className="tcp-state-name">{s.name}</div>
+                  <div className="tcp-state-count">
+                    <span className="tcp-state-count-num">{s.count.toLocaleString()}</span>
+                    <span className="tcp-state-count-label">stations</span>
+                  </div>
+                  <div className="tcp-state-arrow">
+                    Browse <span>→</span>
+                  </div>
+                </div>
+
+                {/* Animated wave at the bottom */}
+                <svg className="tcp-state-wave" viewBox="0 0 200 40" preserveAspectRatio="none" aria-hidden>
+                  <path d="M0,20 Q25,5 50,20 T100,20 T150,20 T200,20 V40 H0 Z" fill="currentColor" opacity="0.45" />
+                  <path d="M0,28 Q25,15 50,28 T100,28 T150,28 T200,28 V40 H0 Z" fill="currentColor" opacity="0.85" />
+                </svg>
               </a>
             ))}
           </div>
         </div>
       </section>
 
-      {/* Features */}
-      <section style={{ maxWidth: 1200, margin: '0 auto', padding: '56px 20px' }}>
-        <h2 style={{ fontSize: 22, fontWeight: 700, textAlign: 'center', marginBottom: 8 }}>Everything you need on the water</h2>
-        <p style={{ color: t.textMuted, textAlign: 'center', fontSize: 14, marginBottom: 36 }}>Built for anglers, by anglers - not just a tide table</p>
-        <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(320px, 1fr))', gap: 16 }}>
-          {FEATURES.map(f => (
-            <div key={f.title} style={{ background: t.surface, border: `1px solid ${t.border}`, borderRadius: 12, padding: '20px' }}>
-              <div style={{ fontSize: 26, marginBottom: 10 }}>{f.icon}</div>
-              <div style={{ fontSize: 14, fontWeight: 700, marginBottom: 6 }}>{f.title}</div>
-              <div style={{ fontSize: 13, color: t.textMuted, lineHeight: 1.6 }}>{f.desc}</div>
+      {/* Features - animated icons + scroll reveal */}
+      <section style={{ maxWidth: 1200, margin: '0 auto', padding: '64px 20px' }}>
+        <h2 style={{ fontSize: 28, fontWeight: 800, textAlign: 'center', marginBottom: 8, letterSpacing: '-0.02em' }}>
+          Everything you need <span style={{ color: t.accent }}>on the water.</span>
+        </h2>
+        <p style={{ color: t.textMuted, textAlign: 'center', fontSize: 14, marginBottom: 40 }}>Built for anglers, by anglers - not just a tide table</p>
+        <div className="tcp-feature-grid">
+          {FEATURES.map((f, i) => (
+            <div
+              key={f.title}
+              className="tcp-feature-card tcp-reveal"
+              style={{
+                ['--tcp-feature-color' as string]: f.color,
+                ['--tcp-feature-delay' as string]: `${i * 80}ms`,
+              } as React.CSSProperties}
+            >
+              <div className="tcp-feature-icon">
+                <span aria-hidden>{f.icon}</span>
+              </div>
+              <div className="tcp-feature-title">{f.title}</div>
+              <div className="tcp-feature-desc">{f.desc}</div>
+              <div className="tcp-feature-glow" aria-hidden />
             </div>
           ))}
         </div>
       </section>
 
-      {/* Station accordion */}
-      <section style={{ borderTop: `1px solid ${t.border}` }}>
-        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '48px 20px' }}>
-          <h2 style={{ fontSize: 22, fontWeight: 700, marginBottom: 6 }}>Explore stations by state</h2>
-          <p style={{ color: t.textMuted, fontSize: 13, marginBottom: 24 }}>Click any state to browse all tide chart locations</p>
-          {STATE_ACCORDIONS.map(({ name, slug, sub, stations, suffix }) => (
-            <div key={slug} style={{ borderBottom: `1px solid ${t.border}` }}>
-              {/* Accordion header */}
-              <button
-                onClick={() => setOpenState(openState === slug ? null : slug)}
-                style={{
-                  width: '100%', display: 'flex', alignItems: 'center', justifyContent: 'space-between',
-                  background: 'none', border: 'none', padding: '16px 0', cursor: 'pointer', textAlign: 'left',
-                }}
-              >
-                <div>
-                  <span style={{ fontSize: 15, fontWeight: 700, color: t.text }}>{name} Tide Charts</span>
-                  <span style={{ fontSize: 12, color: t.textMuted, marginLeft: 12 }}>{sub}</span>
+      {/* Station accordion - color-coded by state */}
+      <section style={{ borderTop: `1px solid ${t.border}`, background: t.bg }}>
+        <div style={{ maxWidth: 1200, margin: '0 auto', padding: '64px 20px 72px' }}>
+          <h2 style={{ fontSize: 28, fontWeight: 800, marginBottom: 6, letterSpacing: '-0.02em' }}>
+            Dive in by <span style={{ color: t.accent }}>state.</span>
+          </h2>
+          <p style={{ color: t.textMuted, fontSize: 13, marginBottom: 32 }}>Click any state to browse all tide chart locations</p>
+          <div className="tcp-accordion">
+            {STATE_ACCORDIONS.map(({ name, slug, sub, stations, suffix }) => {
+              const meta = STATES.find(s => s.slug === slug)
+              const color = meta?.color ?? t.accent
+              const isOpen = openState === slug
+              return (
+                <div
+                  key={slug}
+                  className={`tcp-acc-row ${isOpen ? 'tcp-acc-open' : ''}`}
+                  style={{ ['--tcp-state-color' as string]: color } as React.CSSProperties}
+                >
+                  <button
+                    onClick={() => setOpenState(isOpen ? null : slug)}
+                    className="tcp-acc-header"
+                  >
+                    <span className="tcp-acc-mark" aria-hidden>{meta?.code ?? ''}</span>
+                    <span className="tcp-acc-bar" aria-hidden />
+                    <div className="tcp-acc-info">
+                      <span className="tcp-acc-name">{name} <span className="tcp-acc-name-soft">Tide Charts</span></span>
+                      <span className="tcp-acc-sub">{sub}</span>
+                    </div>
+                    <span className="tcp-acc-count">{stations.length} stations</span>
+                    <span className="tcp-acc-chev" aria-hidden>▾</span>
+                  </button>
+                  {isOpen && (
+                    <div className="tcp-acc-body">
+                      <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: 12 }}>
+                        <a href={`/tides/us/${slug}`} style={{ fontSize: 12, color, textDecoration: 'none', fontWeight: 700 }}>View full {name} page →</a>
+                      </div>
+                      <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: 8 }}>
+                        {stations.map(s => (
+                          <a
+                            key={s.slug}
+                            href={s.slug.startsWith('/') ? s.slug : `/tides/us/florida/${s.slug}`}
+                            className="tcp-acc-station"
+                            style={{ ['--tcp-state-color' as string]: color } as React.CSSProperties}
+                          >
+                            <span style={{ fontSize: 13, fontWeight: 600, color: t.text }}>{s.name.replace(`, ${suffix}`, '')}</span>
+                            <span style={{ fontSize: 11, color, fontWeight: 700 }}>→</span>
+                          </a>
+                        ))}
+                      </div>
+                    </div>
+                  )}
                 </div>
-                <div style={{ display: 'flex', alignItems: 'center', gap: 12, flexShrink: 0 }}>
-                  <span style={{ fontSize: 11, color: t.accent, fontWeight: 600 }}>{stations.length} stations</span>
-                  <span style={{ fontSize: 16, color: t.textMuted, transform: openState === slug ? 'rotate(180deg)' : 'none', transition: 'transform 0.2s', display: 'inline-block' }}>▾</span>
-                </div>
-              </button>
-              {/* Expanded grid */}
-              {openState === slug && (
-                <div style={{ paddingBottom: 24 }}>
-                  <div style={{ display: 'flex', justifyContent: 'flex-end', marginBottom: 12 }}>
-                    <a href={`/tides/us/${slug}`} style={{ fontSize: 12, color: t.accent, textDecoration: 'none', fontWeight: 600 }}>View full {name} page →</a>
-                  </div>
-                  <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fill, minmax(220px, 1fr))', gap: 8 }}>
-                    {stations.map(s => (
-                      <a
-                        key={s.slug}
-                        href={s.slug.startsWith('/') ? s.slug : `/tides/us/florida/${s.slug}`}
-                        style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between', background: t.surface, border: `1px solid ${t.border}`, borderRadius: 8, padding: '10px 14px', textDecoration: 'none' }}
-                      >
-                        <span style={{ fontSize: 13, fontWeight: 600, color: t.text }}>{s.name.replace(`, ${suffix}`, '')}</span>
-                        <span style={{ fontSize: 11, color: t.accent, fontWeight: 700 }}>→</span>
-                      </a>
-                    ))}
-                  </div>
-                </div>
-              )}
-            </div>
-          ))}
+              )
+            })}
+          </div>
         </div>
       </section>
 
@@ -559,6 +672,67 @@ export default function Home() {
         </div>
       </footer>
 
+    </div>
+  )
+}
+
+// Interactive stat card - animated counter, icon, glow, progress bar
+function AnimatedStat({
+  target, suffix, label, color, icon, live, muted,
+}: {
+  target: number; suffix: string; label: string;
+  color: string; icon: string; live?: boolean; muted: string;
+}) {
+  const [value, setValue] = useState(0)
+  const [progress, setProgress] = useState(0)
+  const ref = useRef<HTMLDivElement>(null)
+  const startedRef = useRef(false)
+
+  useEffect(() => {
+    if (!ref.current || startedRef.current) return
+    const node = ref.current
+    const observer = new IntersectionObserver(entries => {
+      for (const e of entries) {
+        if (e.isIntersecting && !startedRef.current) {
+          startedRef.current = true
+          const start = performance.now()
+          const duration = 1600
+          let raf = 0
+          const tick = (now: number) => {
+            const t = Math.min(1, (now - start) / duration)
+            const ease = 1 - Math.pow(1 - t, 3)
+            setValue(Math.round(target * ease))
+            setProgress(ease * 100)
+            if (t < 1) raf = requestAnimationFrame(tick)
+          }
+          raf = requestAnimationFrame(tick)
+          observer.disconnect()
+          return () => cancelAnimationFrame(raf)
+        }
+      }
+    }, { threshold: 0.3 })
+    observer.observe(node)
+    return () => observer.disconnect()
+  }, [target])
+
+  const formatted = target >= 1000 ? value.toLocaleString() : String(value)
+  return (
+    <div
+      ref={ref}
+      className="tcp-stat-card"
+      style={{ ['--tcp-stat-color' as string]: color } as React.CSSProperties}
+    >
+      <div className="tcp-stat-icon">
+        <span aria-hidden>{icon}</span>
+        {live && <span className="tcp-stat-live" aria-hidden />}
+      </div>
+      <div className="tcp-stat-num">
+        {formatted}<span className="tcp-stat-suffix">{suffix}</span>
+      </div>
+      <div className="tcp-stat-label" style={{ color: muted }}>{label}</div>
+      <div className="tcp-stat-track">
+        <div className="tcp-stat-fill" style={{ width: `${progress}%` }} />
+      </div>
     </div>
   )
 }
