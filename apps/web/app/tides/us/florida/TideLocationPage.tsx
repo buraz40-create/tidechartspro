@@ -124,7 +124,7 @@ const THEMES: Record<Mode, Theme> = {
   },
 }
 
-// ─── Shared reference epoch for harmonic model ───────────────────────────────
+// ─── Shared reference epoch for moon-phase and solunar calculations ──────────
 const CAL_REF = new Date(2026, 3, 10)
 
 // ─── Static Data ─────────────────────────────────────────────────────────────
@@ -662,28 +662,9 @@ function calDayOfYear(date: Date): number {
   return Math.floor((date.getTime() - new Date(date.getFullYear(),0,0).getTime()) / 86400000)
 }
 
-function calGenerateTides(date: Date, meanRange?: number): CalTide[] {
-  const dayOff = (date.getTime() - CAL_REF.getTime()) / 86400000
-  const M2 = 12.4206
-  const lag = ((dayOff * 0.7176) % M2 + M2) % M2
-  const high1 = (6.70 + lag) % 24
-  const low1  = (0.23 + lag + M2) % 24
-  const high2 = (high1 + M2) % 24
-  const low2  = (low1  + M2) % 24
-  const phase = calMoonPhase(date)
-  const amp   = 2.1 + 0.6 * Math.cos(2 * Math.PI * phase)
-  const hH    = Math.round((2.75 + amp) * 10) / 10
-  const lH    = Math.round(Math.max(0.1, 2.75 - amp*0.85) * 10) / 10
-  const hH2   = Math.round(Math.max(0.5, hH - 0.15 + 0.3*Math.sin(dayOff*0.9)) * 10) / 10
-  const lH2   = Math.round(Math.max(0.1, lH  + 0.1  - 0.1*Math.sin(dayOff*1.1)) * 10) / 10
-  return [
-    { hour: high1, type: 'high' as const, height: hH  },
-    { hour: low1,  type: 'low'  as const, height: lH  },
-    { hour: high2, type: 'high' as const, height: hH2 },
-    { hour: low2,  type: 'low'  as const, height: lH2 },
-  ].sort((a,b) => a.hour - b.hour)
-   .map(e => ({ time: calFmtHour(e.hour), height: e.height, type: e.type }))
-}
+// NOTE: harmonic tide generator was removed - all tide events/curves now come
+// strictly from live NOAA data. If NOAA has no data for a date, that date
+// shows a loading / "no data" state rather than fake tides.
 
 function calCoeff(phase: number, doy: number): number {
   return Math.round(Math.max(20, Math.min(110, 70 + 30*Math.cos(4*Math.PI*phase) + 3*Math.sin(doy*0.7))))
@@ -715,7 +696,7 @@ function generateCalMonth(year: number, month: number, cfg: SunCfg): CalDay[] {
       moonPhase: phase,
       moonEmoji: calMoonEmoji(phase),
       sunrise, sunset,
-      tides:        calGenerateTides(date),
+      tides:        [] as CalTide[],  // populated from live NOAA hilo data in the calDays useMemo overlay
       coefficient:  c,
       coeffLabel:   calCoeffLabel(c),
       coeffColor:   calCoeffColor(c),
@@ -728,26 +709,6 @@ function generateCalMonth(year: number, month: number, cfg: SunCfg): CalDay[] {
 
 // ─── Date-aware helpers ───────────────────────────────────────────────────────
 
-/** Generate 289-point tide curve for any date. */
-function tideCurveForDate(date: Date): number[] {
-  const dayOff = (date.getTime() - CAL_REF.getTime()) / 86400000
-  const M2     = 12.4206
-  const lag    = ((dayOff * 0.7176) % M2 + M2) % M2
-  const phase  = calMoonPhase(date)
-  const amp    = 2.1 + 0.6 * Math.cos(2 * Math.PI * phase)
-  const pts: number[] = []
-  for (let i = 0; i <= 288; i++) {
-    const t  = (i / 288) * 24
-    const ts = t - lag
-    const h  = 2.75 +
-      amp * Math.cos((ts * 2 * Math.PI) / M2) +
-      (amp * 0.167) * Math.cos((ts * 4 * Math.PI) / M2) +
-      0.12 * Math.sin(((t - 3) * 2 * Math.PI) / 24)
-    pts.push(h)
-  }
-  return pts
-}
-
 /** Sunrise/sunset as decimal hours for any date. */
 function sunTimesHoursForDate(date: Date, cfg: SunCfg): { sunrise: number; sunset: number } {
   const doy   = calDayOfYear(date)
@@ -757,17 +718,6 @@ function sunTimesHoursForDate(date: Date, cfg: SunCfg): { sunrise: number; sunse
   const HA    = (Math.acos(Math.max(-1, Math.min(1, cosHA))) * 180) / Math.PI
   const corr  = (cfg.sunMeridian - cfg.sunLon) / 15 + cfg.utcOffset
   return { sunrise: 12 - HA / 15 + corr, sunset: 12 + HA / 15 + corr }
-}
-
-/** Tide events in TIDE_EVENTS format for any date. */
-function tideEventsForDate(date: Date): typeof TIDE_EVENTS {
-  return calGenerateTides(date).map(ct => {
-    const m = ct.time.match(/(\d+):(\d+)\s*(am|pm)/i)!
-    let h   = parseInt(m[1]), mn = parseInt(m[2])
-    if (m[3].toLowerCase() === 'pm' && h !== 12) h += 12
-    if (m[3].toLowerCase() === 'am' && h === 12)  h  = 0
-    return { label: ct.type === 'high' ? 'High' as const : 'Low' as const, time: ct.time, height: ct.height, hour: h + mn / 60 }
-  })
 }
 
 /** Solunar periods for any date (sorted by start hour). */
@@ -785,26 +735,21 @@ function solunarForDate(date: Date): typeof SOLUNAR {
   ].sort((a, b) => a.start - b.start)
 }
 
-/** 7-day fishing forecast starting from a given date. */
+/** 7-day forecast skeleton (date metadata only; tides + weather are merged in from live data). */
 function forecastForDate(startDate: Date) {
-  const WEATHER_ICONS = ['☀️','⛅','☀️','🌧️','⛅','☀️','☀️']
-  const WIND_LIST     = ['SE 8','SE 10','E 7','NE 18','N 12','NE 9','SE 7']
   return Array.from({ length: 7 }, (_, i) => {
-    const d     = new Date(startDate.getFullYear(), startDate.getMonth(), startDate.getDate() + i)
-    const phase = calMoonPhase(d)
-    const coeff = calCoeff(phase, calDayOfYear(d))
-    const score = calCoeffLabel(coeff) === 'very high' ? 'A' : calCoeffLabel(coeff) === 'high' ? 'B+' : calCoeffLabel(coeff) === 'average' ? 'B' : calCoeffLabel(coeff) === 'low' ? 'C' : 'D'
-    const doy   = calDayOfYear(d)
+    const d = new Date(startDate.getFullYear(), startDate.getMonth(), startDate.getDate() + i)
     return {
       day:      d.toLocaleDateString('en-US', { weekday: 'short' }),
       date:     d.toLocaleDateString('en-US', { month: 'short', day: 'numeric' }),
-      score,
-      high:     74 + Math.round(4 * Math.sin(doy * 0.31)),
-      low:      61 + Math.round(3 * Math.sin(doy * 0.21)),
-      icon:     WEATHER_ICONS[i % 7],
-      wind:     WIND_LIST[i % 7],
-      bestTide: calGenerateTides(d).find(t => t.type === 'high')?.time ?? '—',
-      coeff,
+      dateObj:  d,
+      score:    null as string | null,
+      high:     null as number | null,
+      low:      null as number | null,
+      icon:     null as string | null,
+      wind:     null as string | null,
+      bestTide: null as string | null,
+      coeff:    null as number | null,
     }
   })
 }
@@ -923,8 +868,6 @@ export default function TideLocationPage({ station }: { station: StationConfig }
     setCurrentMonth(new Date(selectedDate.getFullYear(), selectedDate.getMonth(), 1))
   }, [selectedDate])
 
-  const harmonicSelCurve   = useMemo(() => tideCurveForDate(selectedDate),   [selectedDate])
-  const harmonicSelEvents  = useMemo(() => tideEventsForDate(selectedDate),  [selectedDate])
   const selSunH    = useMemo(() => sunTimesHoursForDate(selectedDate, station), [selectedDate, station])
   const selSolunar = useMemo(() => solunarForDate(selectedDate),     [selectedDate])
   const selForecastBase = useMemo(() => forecastForDate(selectedDate),   [selectedDate])
@@ -988,7 +931,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
     return `${d.getFullYear()}-${p(d.getMonth()+1)}-${p(d.getDate())}`
   }
 
-  // Overlay live NOAA hilo data onto the harmonic calendar so visible tide
+  // Overlay live NOAA hilo data onto the calendar grid so visible tide
   // events, heights, and coefficient match the real chart for the same day.
   const calDays = useMemo(() => {
     if (!liveHilo) return calDaysBase
@@ -1016,7 +959,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [calDaysBase, liveHilo])
 
-  // Derived: live 6-min to hilo-interpolated to harmonic fallback
+  // Derived: live 6-min predictions, falling back to hilo-interpolated curve
   const selDateKey = dateKey(selectedDate)
 
   // Build interpolated curve from hilo events when 6-min data is unavailable
@@ -1035,20 +978,26 @@ export default function TideLocationPage({ station }: { station: StationConfig }
     return buildCurveFromHilo(all)
   }, [liveHilo, selDateKey, selectedDate])
 
-  const selCurve   = (isViewingToday && liveToday) ? liveToday : (hiloSelCurve ?? harmonicSelCurve)
-  const selEvents  = liveHilo?.get(selDateKey) ?? harmonicSelEvents
+  // Live-data only: null = NOAA still loading or has no data for this date
+  const selCurve: number[] | null = (isViewingToday && liveToday) ? liveToday : (hiloSelCurve ?? null)
+  const selEvents = liveHilo?.get(selDateKey) ?? []
   const selForecast = useMemo(() => {
-    if (!liveHilo) return selForecastBase
     return selForecastBase.map((fd, i) => {
       const d    = new Date(selectedDate.getFullYear(), selectedDate.getMonth(), selectedDate.getDate() + i)
-      const evs  = liveHilo.get(dateKey(d))
-      if (!evs || evs.length < 2) return fd
+      const evs  = liveHilo?.get(dateKey(d))
+      if (!evs || evs.length < 2) return fd  // no NOAA -> stays as nulls; UI renders "—"
       const highs = evs.filter(e => e.label === 'High').map(e => e.height)
       const lows  = evs.filter(e => e.label === 'Low').map(e => e.height)
       if (!highs.length || !lows.length) return fd
       const range = Math.max(...highs) - Math.min(...lows)
       const coeff = Math.round(Math.max(20, Math.min(110, (range / 5.5) * 110)))
-      return { ...fd, score: gradeFromCoeff(coeff), coeff }
+      const bestHigh = evs.find(e => e.label === 'High')
+      return {
+        ...fd,
+        score: gradeFromCoeff(coeff),
+        coeff,
+        bestTide: bestHigh?.time ?? null,
+      }
     })
   // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [selForecastBase, liveHilo])
@@ -1074,10 +1023,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
   }, [])
 
   // ── Today's computed curves (always real-time, regardless of selected date) ──
-  const harmonicTodayCurve   = useMemo(() => tideCurveForDate(new Date()),   [])
-  const harmonicTodayEvents  = useMemo(() => tideEventsForDate(new Date()),  [])
   const todaySolunar = useMemo(() => solunarForDate(new Date()),     [])
-  const harmonicTomorrowEvents = useMemo(() => { const d = new Date(); d.setDate(d.getDate() + 1); return tideEventsForDate(d) }, [])
   const hiloTodayCurve = useMemo(() => {
     const todayKey = dateKey(new Date())
     const todayEvts = liveHilo?.get(todayKey)
@@ -1093,25 +1039,31 @@ export default function TideLocationPage({ station }: { station: StationConfig }
     ]
     return buildCurveFromHilo(all)
   }, [liveHilo])
-  const todayCurve     = liveToday ?? hiloTodayCurve ?? harmonicTodayCurve
-  const todayEvents    = liveHilo?.get(dateKey(new Date())) ?? harmonicTodayEvents
-  const tomorrowEvents = (() => { const d = new Date(); d.setDate(d.getDate()+1); return liveHilo?.get(dateKey(d)) ?? harmonicTomorrowEvents })()
+  // Live NOAA only - null when still loading or unavailable
+  const todayCurve: number[] | null  = liveToday ?? hiloTodayCurve ?? null
+  const todayEvents = liveHilo?.get(dateKey(new Date())) ?? []
+  const tomorrowEvents = (() => { const d = new Date(); d.setDate(d.getDate()+1); return liveHilo?.get(dateKey(d)) ?? [] })()
+  const tideDataLoading = liveHilo === null  // still waiting on NOAA
 
-  // ── Derived tide status ──
+  // ── Derived tide status (null when no live data yet) ──
   const nowHour    = now.getHours() + now.getMinutes() / 60 + now.getSeconds() / 3600
   const curveIdx   = Math.min(288, Math.round((nowHour / 24) * 288))
   const pastIdx    = Math.max(0, curveIdx - 12)   // ~1 hr ago (12 pts = 1 hr)
-  const curHeight  = todayCurve[curveIdx]
-  const pastHeight = todayCurve[pastIdx]
-  const isRising   = curHeight >= pastHeight
-  const ratePerHr  = Math.abs(curHeight - pastHeight)   // ft in last hour
+  const curHeight  = todayCurve ? todayCurve[curveIdx] : null
+  const pastHeight = todayCurve ? todayCurve[pastIdx]  : null
+  const isRising   = curHeight !== null && pastHeight !== null ? curHeight >= pastHeight : null
+  const ratePerHr  = curHeight !== null && pastHeight !== null ? Math.abs(curHeight - pastHeight) : 0
 
-  // Next tide event
-  const nextEvent  = todayEvents.find(e => e.hour > nowHour) ?? { ...tomorrowEvents[0], hour: tomorrowEvents[0].hour + 24 }
-  const minsUntil  = Math.max(0, Math.round((nextEvent.hour - nowHour) * 60))
-  const cntHrs     = Math.floor(minsUntil / 60)
-  const cntMins    = minsUntil % 60
-  const cntStr     = cntHrs > 0 ? `${cntHrs}h ${cntMins}m` : `${cntMins} min`
+  // Next tide event - null when no NOAA data
+  const nextEventToday = todayEvents.find(e => e.hour > nowHour)
+  const nextEventTomorrow = tomorrowEvents[0]
+    ? { ...tomorrowEvents[0], hour: tomorrowEvents[0].hour + 24 }
+    : null
+  const nextEvent  = nextEventToday ?? nextEventTomorrow
+  const minsUntil  = nextEvent ? Math.max(0, Math.round((nextEvent.hour - nowHour) * 60)) : null
+  const cntHrs     = minsUntil !== null ? Math.floor(minsUntil / 60) : 0
+  const cntMins    = minsUntil !== null ? minsUntil % 60 : 0
+  const cntStr     = minsUntil === null ? '—' : (cntHrs > 0 ? `${cntHrs}h ${cntMins}m` : `${cntMins} min`)
 
   // Slack water: within 25 min of a high or low
   const nearSlack  = todayEvents.some(e => Math.abs(e.hour - nowHour) < 0.42)
@@ -1147,7 +1099,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
     const dpr = window.devicePixelRatio || 1
     const { curve, events, sunH, isViewingToday: ivt, solunar } = selDataRef.current
     const nh  = ivt ? (() => { const n = new Date(); return n.getHours() + n.getMinutes()/60 + n.getSeconds()/3600 })() : null
-    if (tideRef.current)  drawTideChart(tideRef.current, t, dpr, curve, events, sunH.sunrise, sunH.sunset, nh, null, solunar)
+    if (tideRef.current && curve) drawTideChart(tideRef.current, t, dpr, curve, events, sunH.sunrise, sunH.sunset, nh, null, solunar)
     if (swellRef.current) drawSwellChart(swellRef.current, t, dpr)
     if (coeffRef.current) drawCoeff30(coeffRef.current, t, dpr)
   }, [t, selCurve, selEvents, selSunH, selSolunar, isViewingToday])
@@ -1157,13 +1109,14 @@ export default function TideLocationPage({ station }: { station: StationConfig }
   const handleTideMouseMove = useCallback((e: React.MouseEvent<HTMLCanvasElement>) => {
     const canvas = tideRef.current
     if (!canvas) return
+    const { curve, events, sunH, isViewingToday: ivt } = selDataRef.current
+    if (!curve) return  // no live data yet - skip hover
     const rect   = canvas.getBoundingClientRect()
     const mx     = e.clientX - rect.left
     const my     = e.clientY - rect.top
     const cw     = rect.width - 48 - 18
     const hour   = Math.max(0, Math.min(24, (mx - 48) / cw * 24))
     const idx    = Math.min(288, Math.round((hour / 24) * 288))
-    const { curve, events, sunH, isViewingToday: ivt } = selDataRef.current
     const height = curve[idx]
     const nh     = ivt ? (() => { const n = new Date(); return n.getHours() + n.getMinutes()/60 + n.getSeconds()/3600 })() : null
     setTooltip({ x: mx, y: my, hour, height })
@@ -1173,6 +1126,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
   const handleTideMouseLeave = useCallback(() => {
     setTooltip(null)
     const { curve, events, sunH, isViewingToday: ivt, solunar } = selDataRef.current
+    if (!curve) return
     const nh = ivt ? (() => { const n = new Date(); return n.getHours() + n.getMinutes()/60 + n.getSeconds()/3600 })() : null
     if (tideRef.current) drawTideChart(tideRef.current, t, window.devicePixelRatio || 1, curve, events, sunH.sunrise, sunH.sunset, nh, null, solunar)
   }, [t])
@@ -1602,15 +1556,21 @@ export default function TideLocationPage({ station }: { station: StationConfig }
                 Tide Now
               </div>
               <div style={{ display: 'flex', alignItems: 'baseline', gap: 6, marginBottom: 4 }}>
-                <span style={{ fontSize: isMobile ? 20 : 28, fontWeight: 800, color: isRising ? t.accent : '#818cf8', lineHeight: 1 }}>
-                  {isRising ? '↑' : '↓'}
-                </span>
-                <span style={{ fontSize: isMobile ? 18 : 22, fontWeight: 800, color: t.text, lineHeight: 1 }}>
-                  {curHeight.toFixed(1)} ft
-                </span>
+                {curHeight !== null ? (
+                  <>
+                    <span style={{ fontSize: isMobile ? 20 : 28, fontWeight: 800, color: isRising ? t.accent : '#818cf8', lineHeight: 1 }}>
+                      {isRising ? '↑' : '↓'}
+                    </span>
+                    <span style={{ fontSize: isMobile ? 18 : 22, fontWeight: 800, color: t.text, lineHeight: 1 }}>
+                      {curHeight.toFixed(1)} ft
+                    </span>
+                  </>
+                ) : (
+                  <span style={{ fontSize: isMobile ? 18 : 22, fontWeight: 800, color: t.textFaint, lineHeight: 1 }}>—</span>
+                )}
               </div>
               <div style={{ fontSize: 12, color: t.textMuted, marginBottom: 10 }}>
-                {isRising ? 'Rising' : 'Falling'} · {ratePerHr.toFixed(1)} ft/hr
+                {curHeight === null ? (tideDataLoading ? 'Loading live tide data…' : 'No data available') : `${isRising ? 'Rising' : 'Falling'} · ${ratePerHr.toFixed(1)} ft/hr`}
               </div>
               {/* Tide speed bar */}
               <div style={{ marginBottom: 4 }}>
@@ -1636,20 +1596,28 @@ export default function TideLocationPage({ station }: { station: StationConfig }
               <div style={{ fontSize: 10, fontWeight: 700, letterSpacing: '0.07em', textTransform: 'uppercase', color: t.textFaint, marginBottom: 8 }}>
                 Next Event
               </div>
-              <div style={{ fontSize: 13, fontWeight: 700, color: nextEvent.label === 'High' ? t.accent : '#818cf8', marginBottom: 4 }}>
-                {nextEvent.label === 'High' ? '▲' : '▼'} {nextEvent.label} Tide
-              </div>
-              <div style={{ fontSize: isMobile ? 20 : 26, fontWeight: 800, color: t.text, lineHeight: 1, marginBottom: 6, fontVariantNumeric: 'tabular-nums' }}>
-                {cntStr}
-              </div>
-              <div style={{ fontSize: 12, color: t.textMuted }}>
-                {nextEvent.height} ft at {nextEvent.time}
-              </div>
-              <div style={{ marginTop: 8, fontSize: 11, color: t.textFaint }}>
-                {nextEvent.label === 'Low'
-                  ? '🎣 Creek mouth action peaks near low'
-                  : '🌿 Marsh edges productive on incoming'}
-              </div>
+              {nextEvent ? (
+                <>
+                  <div style={{ fontSize: 13, fontWeight: 700, color: nextEvent.label === 'High' ? t.accent : '#818cf8', marginBottom: 4 }}>
+                    {nextEvent.label === 'High' ? '▲' : '▼'} {nextEvent.label} Tide
+                  </div>
+                  <div style={{ fontSize: isMobile ? 20 : 26, fontWeight: 800, color: t.text, lineHeight: 1, marginBottom: 6, fontVariantNumeric: 'tabular-nums' }}>
+                    {cntStr}
+                  </div>
+                  <div style={{ fontSize: 12, color: t.textMuted }}>
+                    {nextEvent.height} ft at {nextEvent.time}
+                  </div>
+                  <div style={{ marginTop: 8, fontSize: 11, color: t.textFaint }}>
+                    {nextEvent.label === 'Low'
+                      ? '🎣 Creek mouth action peaks near low'
+                      : '🌿 Marsh edges productive on incoming'}
+                  </div>
+                </>
+              ) : (
+                <div style={{ fontSize: 12, color: t.textMuted, padding: '8px 0' }}>
+                  {tideDataLoading ? 'Loading live tide data…' : 'No tide data available'}
+                </div>
+              )}
             </div>
 
             {/* ③ Best window */}
@@ -1734,7 +1702,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
             <div style={{ display: 'flex', justifyContent: 'space-between', marginBottom: 4 }}>
               <span style={{ fontSize: 10, color: t.textFaint }}>0 ft (MLLW)</span>
               <span style={{ fontSize: 10, color: t.textFaint, fontWeight: 600 }}>
-                Current: {curHeight.toFixed(2)} ft
+                Current: {curHeight !== null ? `${curHeight.toFixed(2)} ft` : '—'}
               </span>
               <span style={{ fontSize: 10, color: t.textFaint }}>6 ft (approx. MHHW)</span>
             </div>
@@ -1742,7 +1710,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
               <div style={{
                 height: '100%',
                 borderRadius: 4,
-                width: `${Math.min(100, (curHeight / 6) * 100)}%`,
+                width: `${curHeight !== null ? Math.min(100, (curHeight / 6) * 100) : 0}%`,
                 background: `linear-gradient(90deg, #818cf8, ${t.accent})`,
                 transition: 'width 1s ease',
               }}/>
@@ -1781,8 +1749,20 @@ export default function TideLocationPage({ station }: { station: StationConfig }
                 ref={tideRef}
                 onMouseMove={handleTideMouseMove}
                 onMouseLeave={handleTideMouseLeave}
-                style={{ width: '100%', height: 340, display: 'block', borderRadius: 6, cursor: 'crosshair' }}
+                style={{ width: '100%', height: 340, display: 'block', borderRadius: 6, cursor: selCurve ? 'crosshair' : 'default' }}
               />
+              {!selCurve && (
+                <div style={{
+                  position: 'absolute', inset: 0,
+                  display: 'flex', alignItems: 'center', justifyContent: 'center',
+                  flexDirection: 'column', gap: 8,
+                  background: t.canvasBg, borderRadius: 6,
+                  color: t.textMuted, fontSize: 13, fontWeight: 500,
+                }}>
+                  <span style={{ fontSize: 24 }}>{tideDataLoading ? '⏳' : '📡'}</span>
+                  {tideDataLoading ? 'Loading live tide data…' : 'No tide data available for this date'}
+                </div>
+              )}
               {tooltip && (
                 <div style={{
                   position: 'absolute',
@@ -1874,9 +1854,10 @@ export default function TideLocationPage({ station }: { station: StationConfig }
                       const windColor   = h.windSpeed >= 20 ? '#ef4444' : h.windSpeed >= 12 ? '#eab308' : '#22c55e'
                       const precipColor = h.precip >= 60 ? '#60a5fa' : h.precip >= 30 ? '#93c5fd' : t.textMuted
                       const tideIdx     = Math.min(288, Math.round((h.hour / 24) * 288))
-                      const tideHt      = selCurve[tideIdx]
-                      const tideRising  = selCurve[tideIdx] >= selCurve[Math.max(0, tideIdx - 12)]
-                      const tideColor   = tideHt >= 3.5 ? t.accent : tideHt >= 2 ? t.textMuted : t.textFaint
+                      const tideHt      = selCurve ? selCurve[tideIdx] : null
+                      const tidePast    = selCurve ? selCurve[Math.max(0, tideIdx - 12)] : null
+                      const tideRising  = tideHt !== null && tidePast !== null ? tideHt >= tidePast : false
+                      const tideColor   = tideHt !== null && tideHt >= 3.5 ? t.accent : tideHt !== null && tideHt >= 2 ? t.textMuted : t.textFaint
                       return (
                         <div key={i} style={{
                           display: 'grid', gridTemplateColumns: '48px 26px 38px 1fr 40px 44px',
@@ -1895,7 +1876,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
                           </div>
                           <div style={{ padding: '6px 3px', fontSize: 11, fontWeight: 600, color: precipColor }}>{h.precip}%</div>
                           <div style={{ padding: '6px 3px', fontSize: 11, fontWeight: 600, color: tideColor }}>
-                            {tideRising ? '▲' : '▼'}{tideHt.toFixed(1)}
+                            {tideHt !== null ? `${tideRising ? '▲' : '▼'}${tideHt.toFixed(1)}` : '—'}
                           </div>
                         </div>
                       )
@@ -1914,9 +1895,10 @@ export default function TideLocationPage({ station }: { station: StationConfig }
                       const windColor   = h.windSpeed >= 20 ? '#ef4444' : h.windSpeed >= 12 ? '#eab308' : '#22c55e'
                       const precipColor = h.precip >= 60 ? '#60a5fa' : h.precip >= 30 ? '#93c5fd' : t.textMuted
                       const tideIdx     = Math.min(288, Math.round((h.hour / 24) * 288))
-                      const tideHt      = selCurve[tideIdx]
-                      const tideRising  = selCurve[tideIdx] >= selCurve[Math.max(0, tideIdx - 12)]
-                      const tideColor   = tideHt >= 3.5 ? t.accent : tideHt >= 2 ? t.textMuted : t.textFaint
+                      const tideHt      = selCurve ? selCurve[tideIdx] : null
+                      const tidePast    = selCurve ? selCurve[Math.max(0, tideIdx - 12)] : null
+                      const tideRising  = tideHt !== null && tidePast !== null ? tideHt >= tidePast : false
+                      const tideColor   = tideHt !== null && tideHt >= 3.5 ? t.accent : tideHt !== null && tideHt >= 2 ? t.textMuted : t.textFaint
                       const solPeriod   = selSolunar.find(s => h.hour >= s.start && h.hour < s.start + s.dur)
                       return (
                         <div key={i} style={{
@@ -1939,7 +1921,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
                           </div>
                           <div style={{ padding: '6px 6px', fontSize: 12, fontWeight: 600, color: precipColor }}>{h.precip}%</div>
                           <div style={{ padding: '6px 6px', fontSize: 12, fontWeight: 600, color: tideColor, display: 'flex', alignItems: 'center', gap: 3 }}>
-                            <span style={{ fontSize: 10 }}>{tideRising ? '▲' : '▼'}</span>{tideHt.toFixed(1)} ft
+                            {tideHt !== null ? (<><span style={{ fontSize: 10 }}>{tideRising ? '▲' : '▼'}</span>{tideHt.toFixed(1)} ft</>) : '—'}
                           </div>
                           <div style={{ padding: '6px 6px', fontSize: 18 }}>
                             {solPeriod ? <span title={`${solPeriod.type} period`}>{solPeriod.type === 'major' ? '🐟🐟' : '🐟'}</span> : <span style={{ color: t.textFaint, fontSize: 12 }}>—</span>}
@@ -1996,7 +1978,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
                         <div style={{ fontSize: 22, marginBottom: 4 }}>{day.icon}</div>
                         <div style={{ fontSize: 12, fontWeight: 700, color: t.text }}>{day.high}°</div>
                         <div style={{ fontSize: 11, color: t.textFaint }}>{day.low ?? '—'}°</div>
-                        {fd && <div style={{ fontSize: 18, fontWeight: 800, color: gradeColor(fd.score, t), marginTop: 4 }}>{fd.score}</div>}
+                        {fd && fd.score && <div style={{ fontSize: 18, fontWeight: 800, color: gradeColor(fd.score, t), marginTop: 4 }}>{fd.score}</div>}
                         <div style={{ fontSize: 9, color: t.textFaint, marginTop: 3 }}>{day.wind}</div>
                         {'precip' in day && day.precip != null && <div style={{ fontSize: 9, color: '#93c5fd', marginTop: 2 }}>💧 {day.precip}%</div>}
                       </div>
@@ -2296,27 +2278,32 @@ export default function TideLocationPage({ station }: { station: StationConfig }
                     <div style={{ fontSize: 11, fontWeight: 600, color: t.textMuted }}>{day.day}</div>
                     <div style={{ fontSize: 9, color: t.textFaint, marginBottom: 5 }}>{day.date}</div>
                     <div style={{ fontSize: 18, marginBottom: 4 }}>{displayIcon}</div>
-                    <div style={{
-                      fontSize: 18, fontWeight: 800,
-                      color: gradeColor(day.score, t),
-                    }}>{day.score}</div>
+                    {day.score ? (
+                      <div style={{ fontSize: 18, fontWeight: 800, color: gradeColor(day.score, t) }}>{day.score}</div>
+                    ) : (
+                      <div style={{ fontSize: 14, fontWeight: 700, color: t.textFaint }}>—</div>
+                    )}
                     <div style={{ fontSize: 10, color: t.textMuted, marginTop: 3 }}>{displayHigh}° / {displayLow ?? day.low}°</div>
                     <div style={{ fontSize: 9, color: t.textFaint, marginTop: 2 }}>{displayWind}</div>
                     {displayPrecip != null && (
                       <div style={{ fontSize: 9, color: '#93c5fd', marginTop: 2 }}>💧 {displayPrecip}%</div>
                     )}
-                    <div style={{
-                      marginTop: 5, height: 3, borderRadius: 2,
-                      background: t.border, overflow: 'hidden',
-                    }}>
-                      <div style={{
-                        height: '100%',
-                        width: `${day.coeff}%`,
-                        background: day.coeff >= 80 ? '#22c55e' : day.coeff >= 65 ? '#84cc16' : '#eab308',
-                        borderRadius: 2,
-                      }}/>
-                    </div>
-                    <div style={{ fontSize: 9, color: t.textFaint, marginTop: 2 }}>CF {day.coeff}</div>
+                    {day.coeff !== null && (
+                      <>
+                        <div style={{
+                          marginTop: 5, height: 3, borderRadius: 2,
+                          background: t.border, overflow: 'hidden',
+                        }}>
+                          <div style={{
+                            height: '100%',
+                            width: `${day.coeff}%`,
+                            background: day.coeff >= 80 ? '#22c55e' : day.coeff >= 65 ? '#84cc16' : '#eab308',
+                            borderRadius: 2,
+                          }}/>
+                        </div>
+                        <div style={{ fontSize: 9, color: t.textFaint, marginTop: 2 }}>CF {day.coeff}</div>
+                      </>
+                    )}
                   </div>
                 )
               })}
