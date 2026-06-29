@@ -940,7 +940,7 @@ export default function TideLocationPage({ station }: { station: StationConfig }
     const pad    = (n: number) => String(n).padStart(2, '0')
     const fmt    = (d: Date) => `${d.getFullYear()}${pad(d.getMonth()+1)}${pad(d.getDate())}`
     const today  = new Date()
-    const yest   = new Date(today); yest.setDate(today.getDate() - 1)
+    const past30 = new Date(today); past30.setDate(today.getDate() - 30)
     const plus31 = new Date(today); plus31.setDate(today.getDate() + 31)
 
     // 6-min curve for today
@@ -959,8 +959,8 @@ export default function TideLocationPage({ station }: { station: StationConfig }
       })
       .catch(() => {})
 
-    // Hilo events yesterday to +31 days (yesterday needed to anchor curve start-of-day, +31 to cover 30-day calendar)
-    fetch(`${BASE}?product=predictions&interval=hilo&begin_date=${fmt(yest)}&end_date=${fmt(plus31)}${COMMON}`)
+    // Hilo events past 30 days to +31 days (covers backward navigation + 30-day calendar)
+    fetch(`${BASE}?product=predictions&interval=hilo&begin_date=${fmt(past30)}&end_date=${fmt(plus31)}${COMMON}`)
       .then(r => r.json())
       .then((d: { predictions?: {t:string, v:string, type:string}[] }) => {
         const raw = d.predictions
