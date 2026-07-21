@@ -57,6 +57,21 @@ body {
   animation: tcp-arrow-nudge 1.5s ease-in-out infinite;
 }
 
+/* Search CTA: full text on desktop, icon-only on narrow phones */
+.tcp-search-cta {
+  padding: 18px 28px;
+  font-size: 15;
+  font-weight: 700;
+}
+.tcp-search-cta-full  { display: inline; }
+.tcp-search-cta-short { display: none; }
+
+@media (max-width: 640px) {
+  .tcp-search-cta { padding: 18px 18px; }
+  .tcp-search-cta-full  { display: none; }
+  .tcp-search-cta-short { display: inline-flex; align-items: center; font-size: 18px; }
+}
+
 /* Pulsing LIVE indicator dot */
 @keyframes tcp-live-pulse {
   0%, 100% { transform: scale(1); opacity: 1; }

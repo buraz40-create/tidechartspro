@@ -401,9 +401,11 @@ export default function Home() {
             )}
             <button
               onClick={() => { if (searchResults.length) { const r = searchResults[0]; window.location.href = r.slug.startsWith('/') ? r.slug : `/tides/us/florida/${r.slug}` } }}
-              style={{ background: t.accent, border: 'none', padding: '18px 28px', fontSize: 15, fontWeight: 700, color: '#fff', cursor: 'pointer', flexShrink: 0, whiteSpace: 'nowrap' }}
+              className="tcp-search-cta"
+              style={{ background: t.accent, border: 'none', color: '#fff', cursor: 'pointer', flexShrink: 0, whiteSpace: 'nowrap' }}
             >
-              See if it&apos;s fishy <span className="tcp-arrow">›</span>
+              <span className="tcp-search-cta-full">See if it&apos;s fishy <span className="tcp-arrow">›</span></span>
+              <span className="tcp-search-cta-short" aria-label="Search">🔍<span className="tcp-arrow" style={{ marginLeft: 4 }}>›</span></span>
             </button>
           </div>
           {geoError && (
@@ -437,7 +439,7 @@ export default function Home() {
 
           {/* Dropdown results - geo results take priority over search results */}
           {dropOpen && (geoResults.length > 0 || searchResults.length > 0) && (
-            <div style={{ position: 'absolute', top: '100%', marginTop: 6, left: 0, right: 0, background: t.surface, border: `1px solid ${t.border}`, borderRadius: 12, zIndex: 500, overflow: 'hidden', boxShadow: '0 8px 24px rgba(0,0,0,0.3)' }}>
+            <div style={{ position: 'absolute', top: '100%', marginTop: 6, left: 0, right: 0, background: t.surface, border: `1px solid ${t.border}`, borderRadius: 12, zIndex: 1500, overflow: 'hidden', boxShadow: '0 8px 24px rgba(0,0,0,0.3)' }}>
               {geoResults.length > 0 && (
                 <div style={{ padding: '8px 16px', fontSize: 10, fontWeight: 700, color: t.textFaint, textTransform: 'uppercase', letterSpacing: '0.08em', background: t.surfaceAlt, borderBottom: `1px solid ${t.border}` }}>
                   📍 Nearest to you
