@@ -25,7 +25,7 @@ export default function PrivacyPage() {
       <div style={{ maxWidth: 800, margin: '0 auto', padding: '48px 20px 80px' }}>
 
         <h1 style={{ fontSize: 32, fontWeight: 700, marginBottom: 8, letterSpacing: '-0.02em' }}>Privacy Policy</h1>
-        <p style={{ color: '#475569', fontSize: 13, marginBottom: 48 }}>Last updated: April 11, 2026</p>
+        <p style={{ color: '#475569', fontSize: 13, marginBottom: 48 }}>Last updated: April 13, 2026</p>
 
         {[
           {
@@ -43,6 +43,18 @@ export default function PrivacyPage() {
           {
             title: 'Google Analytics',
             body: 'We use Google Analytics 4 (GA4) to measure site usage. Google may use this data in accordance with their own privacy policy. You can opt out of Google Analytics tracking by installing the Google Analytics Opt-out Browser Add-on available at tools.google.com/dlpage/gaoptout.',
+          },
+          {
+            title: 'Mobile App (iOS & Android)',
+            body: 'TideChartsPro is available as a mobile app on Android and iOS. The app does not require an account and collects no personally identifiable information. The app may request access to your device\'s location solely to identify nearby tide stations. Location data is used on-device only and is never transmitted to our servers or stored. The app fetches public tide, weather, and station data directly from NOAA APIs. No user data is shared with third parties.',
+          },
+          {
+            title: 'Location Data',
+            body: 'If you grant location permission, the app uses your coordinates to find nearby NOAA tide stations. This data is processed entirely on your device and is not sent to TideChartsPro servers, logged, or retained in any form. You can deny or revoke location permission at any time in your device settings without affecting the core functionality of the app.',
+          },
+          {
+            title: 'Your Data Rights & Deletion',
+            body: 'Since we do not collect or store any personally identifiable information, there is no personal data to delete. Anonymous Google Analytics data can be excluded by using the Google Analytics Opt-out Browser Add-on. To request confirmation that no data is held about you, contact us at privacy@tidechartspro.com and we will respond within 30 days.',
           },
           {
             title: 'Third-Party Data Sources',
@@ -71,7 +83,10 @@ export default function PrivacyPage() {
           </section>
         ))}
 
-        <a href="/" style={{ fontSize: 13, color: '#475569', textDecoration: 'none' }}>← Back to home</a>
+        <div style={{ display: 'flex', gap: 24, flexWrap: 'wrap' }}>
+          <a href="/" style={{ fontSize: 13, color: '#475569', textDecoration: 'none' }}>← Back to home</a>
+          <a href="/terms" style={{ fontSize: 13, color: '#475569', textDecoration: 'none' }}>Terms of Service →</a>
+        </div>
       </div>
     </main>
   )

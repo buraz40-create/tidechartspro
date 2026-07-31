@@ -57,7 +57,7 @@ export default function StateIndexPage({
         const popup = `<div style="font-family:system-ui;font-size:12px;line-height:1.5;min-width:140px">
           <div style="font-weight:700;margin-bottom:2px">${s.name}</div>
           <div style="color:#64748b;font-size:11px;margin-bottom:6px">${s.region}</div>
-          <a href="/tides/${stateSlug}/${s.slug}" style="display:inline-block;background:#3b82f6;color:white;padding:3px 10px;border-radius:6px;text-decoration:none;font-size:11px;font-weight:600">View tides →</a>
+          <a href="/tides/us/${stateSlug}/${s.slug}" style="display:inline-block;background:#3b82f6;color:white;padding:3px 10px;border-radius:6px;text-decoration:none;font-size:11px;font-weight:600">View tides →</a>
         </div>`
 
         L.marker([s.lat, s.lon], { icon }).addTo(map).bindPopup(popup, { maxWidth: 200 })
@@ -247,7 +247,7 @@ export default function StateIndexPage({
 function StationCard({ s, stateSlug, stateAbbr }: { s: StationConfig; stateSlug: string; stateAbbr: string }) {
   return (
     <a
-      href={`/tides/${stateSlug}/${s.slug}`}
+      href={`/tides/us/${stateSlug}/${s.slug}`}
       style={{
         display: 'flex',
         alignItems: 'center',

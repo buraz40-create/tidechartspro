@@ -1,16 +1,16 @@
 import type { Metadata } from 'next'
 import { FLORIDA_STATIONS } from '@/lib/florida-stations'
-import StateIndexPage from '@/app/tides/StateIndexPage'
+import StateIndexPage from '@/app/tides/us/StateIndexPage'
 
 export const metadata: Metadata = {
   title: 'Florida Tide Charts | Tides for Fishing | TideChartsPro',
   description: 'Florida tide charts with live tide levels, tides for fishing, solunar periods and fishing forecasts for every Florida coastal location. Updated every 6 minutes.',
   keywords: ['florida tide chart', 'florida tides for fishing', 'florida tide level chart', 'florida fishing tides', 'tide chart florida'],
-  alternates: { canonical: 'https://tidechartspro.com/tides/florida' },
+  alternates: { canonical: 'https://tidechartspro.com/tides/us/florida' },
   openGraph: {
     title: 'Florida Tide Charts | Tides for Fishing | TideChartsPro',
     description: 'Live tide charts and fishing tides for every Florida coastal location.',
-    url: 'https://tidechartspro.com/tides/florida',
+    url: 'https://tidechartspro.com/tides/us/florida',
     siteName: 'TideChartsPro',
   },
 }
@@ -36,13 +36,13 @@ export default function FloridaTidesIndex() {
           '@type': 'CollectionPage',
           name: 'Florida Tide Charts',
           description: 'Tide charts and fishing tides for all Florida coastal locations.',
-          url: 'https://tidechartspro.com/tides/florida',
+          url: 'https://tidechartspro.com/tides/us/florida',
           breadcrumb: {
             '@type': 'BreadcrumbList',
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home',    item: 'https://tidechartspro.com' },
               { '@type': 'ListItem', position: 2, name: 'Tides',   item: 'https://tidechartspro.com/tides' },
-              { '@type': 'ListItem', position: 3, name: 'Florida', item: 'https://tidechartspro.com/tides/florida' },
+              { '@type': 'ListItem', position: 3, name: 'Florida', item: 'https://tidechartspro.com/tides/us/florida' },
             ],
           },
         })}}

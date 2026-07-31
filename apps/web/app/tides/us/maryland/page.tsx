@@ -1,16 +1,16 @@
 import type { Metadata } from 'next'
 import { MARYLAND_STATIONS } from '@/lib/maryland-stations'
-import StateIndexPage from '@/app/tides/StateIndexPage'
+import StateIndexPage from '@/app/tides/us/StateIndexPage'
 
 export const metadata: Metadata = {
   title: 'Maryland Tide Charts | Tides for Fishing | TideChartsPro',
   description: 'Maryland tide charts with live tide levels, tides for fishing, solunar periods and fishing forecasts. Chesapeake Bay, Annapolis, Baltimore, Potomac River and Ocean City.',
   keywords: ['maryland tide chart', 'maryland tides for fishing', 'maryland fishing tides', 'atlantic coast tide chart'],
-  alternates: { canonical: 'https://tidechartspro.com/tides/maryland' },
+  alternates: { canonical: 'https://tidechartspro.com/tides/us/maryland' },
   openGraph: {
     title: 'Maryland Tide Charts | Tides for Fishing | TideChartsPro',
     description: 'Live tide charts and fishing tides for every Maryland coastal location.',
-    url: 'https://tidechartspro.com/tides/maryland',
+    url: 'https://tidechartspro.com/tides/us/maryland',
     siteName: 'TideChartsPro',
   },
 }
@@ -27,13 +27,13 @@ export default function MarylandTidesIndex() {
           '@type': 'CollectionPage',
           name: 'Maryland Tide Charts',
           description: 'Tide charts and fishing tides for all Maryland coastal locations.',
-          url: 'https://tidechartspro.com/tides/maryland',
+          url: 'https://tidechartspro.com/tides/us/maryland',
           breadcrumb: {
             '@type': 'BreadcrumbList',
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home',             item: 'https://tidechartspro.com' },
               { '@type': 'ListItem', position: 2, name: 'Tides',            item: 'https://tidechartspro.com/tides' },
-              { '@type': 'ListItem', position: 3, name: 'Maryland', item: 'https://tidechartspro.com/tides/maryland' },
+              { '@type': 'ListItem', position: 3, name: 'Maryland', item: 'https://tidechartspro.com/tides/us/maryland' },
             ],
           },
         })}}

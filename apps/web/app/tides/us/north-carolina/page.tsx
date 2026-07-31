@@ -1,16 +1,16 @@
 import type { Metadata } from 'next'
 import { NORTH_CAROLINA_STATIONS } from '@/lib/north-carolina-stations'
-import StateIndexPage from '@/app/tides/StateIndexPage'
+import StateIndexPage from '@/app/tides/us/StateIndexPage'
 
 export const metadata: Metadata = {
   title: 'North Carolina Tide Charts | Tides for Fishing | TideChartsPro',
   description: 'North Carolina tide charts with live tide levels, tides for fishing, solunar periods and fishing forecasts. Outer Banks, Pamlico Sound, Crystal Coast, Cape Fear and Wilmington.',
   keywords: ['north carolina tide chart', 'north carolina tides for fishing', 'north carolina fishing tides', 'atlantic coast tide chart'],
-  alternates: { canonical: 'https://tidechartspro.com/tides/north-carolina' },
+  alternates: { canonical: 'https://tidechartspro.com/tides/us/north-carolina' },
   openGraph: {
     title: 'North Carolina Tide Charts | Tides for Fishing | TideChartsPro',
     description: 'Live tide charts and fishing tides for every North Carolina coastal location.',
-    url: 'https://tidechartspro.com/tides/north-carolina',
+    url: 'https://tidechartspro.com/tides/us/north-carolina',
     siteName: 'TideChartsPro',
   },
 }
@@ -27,13 +27,13 @@ export default function NorthCarolinaTidesIndex() {
           '@type': 'CollectionPage',
           name: 'North Carolina Tide Charts',
           description: 'Tide charts and fishing tides for all North Carolina coastal locations.',
-          url: 'https://tidechartspro.com/tides/north-carolina',
+          url: 'https://tidechartspro.com/tides/us/north-carolina',
           breadcrumb: {
             '@type': 'BreadcrumbList',
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home',             item: 'https://tidechartspro.com' },
               { '@type': 'ListItem', position: 2, name: 'Tides',            item: 'https://tidechartspro.com/tides' },
-              { '@type': 'ListItem', position: 3, name: 'North Carolina', item: 'https://tidechartspro.com/tides/north-carolina' },
+              { '@type': 'ListItem', position: 3, name: 'North Carolina', item: 'https://tidechartspro.com/tides/us/north-carolina' },
             ],
           },
         })}}

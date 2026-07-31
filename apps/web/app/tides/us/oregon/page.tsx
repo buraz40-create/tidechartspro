@@ -1,16 +1,16 @@
 import type { Metadata } from 'next'
 import { OREGON_STATIONS } from '@/lib/oregon-stations'
-import StateIndexPage from '@/app/tides/StateIndexPage'
+import StateIndexPage from '@/app/tides/us/StateIndexPage'
 
 export const metadata: Metadata = {
   title: 'Oregon Tide Charts | Tides for Fishing | TideChartsPro',
   description: 'Oregon tide charts with live tide levels, tides for fishing, solunar periods and fishing forecasts. Astoria, Columbia River, Newport, Coos Bay and the Oregon Coast.',
   keywords: ['oregon tide chart', 'oregon tides for fishing', 'oregon fishing tides', 'pacific coast tide chart'],
-  alternates: { canonical: 'https://tidechartspro.com/tides/oregon' },
+  alternates: { canonical: 'https://tidechartspro.com/tides/us/oregon' },
   openGraph: {
     title: 'Oregon Tide Charts | Tides for Fishing | TideChartsPro',
     description: 'Live tide charts and fishing tides for every Oregon coastal location.',
-    url: 'https://tidechartspro.com/tides/oregon',
+    url: 'https://tidechartspro.com/tides/us/oregon',
     siteName: 'TideChartsPro',
   },
 }
@@ -27,13 +27,13 @@ export default function OregonTidesIndex() {
           '@type': 'CollectionPage',
           name: 'Oregon Tide Charts',
           description: 'Tide charts and fishing tides for all Oregon coastal locations.',
-          url: 'https://tidechartspro.com/tides/oregon',
+          url: 'https://tidechartspro.com/tides/us/oregon',
           breadcrumb: {
             '@type': 'BreadcrumbList',
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home',             item: 'https://tidechartspro.com' },
               { '@type': 'ListItem', position: 2, name: 'Tides',            item: 'https://tidechartspro.com/tides' },
-              { '@type': 'ListItem', position: 3, name: 'Oregon', item: 'https://tidechartspro.com/tides/oregon' },
+              { '@type': 'ListItem', position: 3, name: 'Oregon', item: 'https://tidechartspro.com/tides/us/oregon' },
             ],
           },
         })}}

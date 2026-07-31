@@ -3,11 +3,12 @@ import React, { useState, useMemo, useCallback, useEffect } from 'react'
 import {
   View, Text, TextInput, TouchableOpacity,
   FlatList, ActivityIndicator, StyleSheet, Dimensions,
-  ListRenderItem, BackHandler, ScrollView,
+  ListRenderItem, BackHandler, ScrollView, Alert,
 } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
 import { WebView } from 'react-native-webview'
 import { Ionicons } from '@expo/vector-icons'
+import * as Location from 'expo-location'
 import { useTheme } from '../lib/ThemeContext'
 import { useStation } from '../lib/StationContext'
 import { type Colors } from '../lib/theme'
@@ -114,6 +115,40 @@ export default function HomeScreen({ navigation }: { navigation: any }) {
   const [selectedState, setSelectedState] = useState<typeof COASTAL_STATES[0] | null>(null)
   const [selectedRegion, setSelectedRegion] = useState<string | null>(null)
   const [mapReady, setMapReady]           = useState(false)
+  const [geoLoading, setGeoLoading]       = useState(false)
+  const [geoResults, setGeoResults]       = useState<Array<BStation & { stateCode: string; distMi: number }>>([])
+
+  const findNearestAndShow = useCallback(async () => {
+    setGeoLoading(true)
+    try {
+      const { status } = await Location.requestForegroundPermissionsAsync()
+      if (status !== 'granted') {
+        setGeoLoading(false)
+        Alert.alert('Location access denied', 'Enable location in Settings to find nearby stations.')
+        return
+      }
+      const pos = await Location.getCurrentPositionAsync({ accuracy: Location.Accuracy.Low })
+      const { latitude, longitude } = pos.coords
+      const toRad = (d: number) => d * Math.PI / 180
+      const flat: Array<BStation & { stateCode: string; distMi: number }> = []
+      for (const [code, list] of Object.entries(STATIONS)) {
+        for (const st of list) {
+          const dLat = toRad(st.lat - latitude)
+          const dLon = toRad(st.lon - longitude)
+          const a = Math.sin(dLat / 2) ** 2 + Math.cos(toRad(latitude)) * Math.cos(toRad(st.lat)) * Math.sin(dLon / 2) ** 2
+          const distKm = 2 * 6371 * Math.asin(Math.sqrt(a))
+          flat.push({ ...st, stateCode: code, distMi: distKm * 0.621371 })
+        }
+      }
+      flat.sort((a, b) => a.distMi - b.distMi)
+      setGeoResults(flat.slice(0, 8))
+      setQuery('')
+    } catch {
+      Alert.alert('Could not get your location', 'Make sure GPS is enabled and try again.')
+    } finally {
+      setGeoLoading(false)
+    }
+  }, [])
 
   useEffect(() => {
     const t = setTimeout(() => setMapReady(true), 800)
@@ -159,6 +194,7 @@ export default function HomeScreen({ navigation }: { navigation: any }) {
 
   // Stations for current view
   const displayStations: BStation[] = useMemo(() => {
+    if (geoResults.length) return geoResults
     const q = query.trim().toLowerCase()
     if (q) {
       const all: BStation[] = []
@@ -172,30 +208,34 @@ export default function HomeScreen({ navigation }: { navigation: any }) {
     const list = STATIONS[selectedState.code] ?? []
     const filtered = selectedRegion ? list.filter(st => st.region === selectedRegion) : list
     return [...filtered].sort((a, b) => a.name.localeCompare(b.name))
-  }, [query, selectedState, selectedRegion])
+  }, [query, selectedState, selectedRegion, geoResults])
 
   const stateRegions = useMemo(() => {
     if (!selectedState) return []
     return REGIONS[selectedState.code] ?? []
   }, [selectedState])
 
-  const renderStation: ListRenderItem<BStation> = useCallback(({ item }) => (
+  const renderStation: ListRenderItem<BStation> = useCallback(({ item }) => {
+    const geoItem = item as BStation & { stateCode?: string; distMi?: number }
+    const code = geoItem.stateCode ?? selectedState?.code ?? ''
+    return (
     <TouchableOpacity
       style={s.stationRow}
-      onPress={() => onStationPress(item, selectedState?.code ?? '')}
+      onPress={() => onStationPress(item, code)}
       activeOpacity={0.7}
     >
       <View style={s.stationDot} />
       <View style={{ flex: 1 }}>
         <Text style={s.stationName}>{item.name}</Text>
-        <Text style={s.stationSub}>{item.region}</Text>
+        <Text style={s.stationSub}>{item.region}{geoItem.distMi != null ? ` · ${geoItem.distMi.toFixed(1)} mi away` : ''}</Text>
       </View>
       <Ionicons name="chevron-forward" size={14} color={colors.textFaint} />
     </TouchableOpacity>
-  ), [s, colors, onStationPress, selectedState])
+    )
+  }, [s, colors, onStationPress, selectedState])
 
-  // ── Search results (overlays all views when query is active)
-  const isSearching = query.trim().length > 0
+  // ── Search results (overlays all views when query is active or geo results present)
+  const isSearching = query.trim().length > 0 || geoResults.length > 0
 
   return (
     <SafeAreaView style={s.safe} edges={[]}>
@@ -211,19 +251,24 @@ export default function HomeScreen({ navigation }: { navigation: any }) {
           </TouchableOpacity>
         )}
         <View style={s.searchWrap}>
+          <TouchableOpacity onPress={findNearestAndShow} disabled={geoLoading} style={s.gpsBtn}>
+            {geoLoading
+              ? <ActivityIndicator size="small" color={colors.accent} />
+              : <Ionicons name="locate" size={20} color={colors.accent} />}
+          </TouchableOpacity>
           <Ionicons name="search" size={16} color={colors.textMuted} style={s.searchIcon} />
           <TextInput
             style={s.searchInput}
-            placeholder="Search stations by name…"
+            placeholder="Search or tap 📍 for nearby"
             placeholderTextColor={colors.textMuted}
             value={query}
-            onChangeText={setQuery}
+            onChangeText={t => { setQuery(t); if (geoResults.length) setGeoResults([]) }}
             returnKeyType="search"
             autoCorrect={false}
             autoCapitalize="none"
           />
-          {query.length > 0 && (
-            <TouchableOpacity onPress={() => setQuery('')} style={s.searchClear}>
+          {(query.length > 0 || geoResults.length > 0) && (
+            <TouchableOpacity onPress={() => { setQuery(''); setGeoResults([]) }} style={s.searchClear}>
               <Ionicons name="close-circle" size={16} color={colors.textMuted} />
             </TouchableOpacity>
           )}
@@ -238,8 +283,8 @@ export default function HomeScreen({ navigation }: { navigation: any }) {
           renderItem={renderStation}
           ListHeaderComponent={
             <View style={[s.screenHeader, { marginHorizontal: 16 }]}>
-              <Text style={s.screenTitle}>Search results</Text>
-              <Text style={s.screenSub}>{displayStations.length} stations found</Text>
+              <Text style={s.screenTitle}>{geoResults.length ? '📍 Nearest to you' : 'Search results'}</Text>
+              <Text style={s.screenSub}>{displayStations.length} stations {geoResults.length ? 'shown' : 'found'}</Text>
             </View>
           }
           ListEmptyComponent={
@@ -403,6 +448,7 @@ const makeStyles = (colors: Colors) => StyleSheet.create({
     shadowColor: colors.accent, shadowOffset: { width: 0, height: 0 },
     shadowOpacity: 0.25, shadowRadius: 8, elevation: 4,
   },
+  gpsBtn: { paddingRight: 12, paddingVertical: 4, borderRightWidth: 1, borderRightColor: colors.accent + '33', marginRight: 10 },
   searchIcon:  { marginRight: 10 },
   searchInput: { flex: 1, height: 50, fontSize: 15, color: colors.text, fontWeight: '500' },
   searchClear: { padding: 4 },

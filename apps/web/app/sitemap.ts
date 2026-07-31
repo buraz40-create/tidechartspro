@@ -54,13 +54,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     ] as const
   ).flatMap(([state, stations]) => [
     {
-      url: `https://tidechartspro.com/tides/${state}`,
+      url: `https://tidechartspro.com/tides/us/${state}`,
       lastModified: now,
       changeFrequency: 'weekly' as const,
       priority: 0.8,
     },
     ...stations.map(s => ({
-      url: `https://tidechartspro.com/tides/${state}/${s.slug}`,
+      url: `https://tidechartspro.com/tides/us/${state}/${s.slug}`,
       lastModified: now,
       changeFrequency: 'daily' as const,
       priority: 0.9,
@@ -80,9 +80,15 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'weekly',
       priority: 0.9,
     },
+    {
+      url: 'https://tidechartspro.com/tides/us',
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.9,
+    },
     ...statePages,
     {
-      url: 'https://tidechartspro.com/tides/florida/pablo-creek-entrance/calendar',
+      url: 'https://tidechartspro.com/tides/us/florida/pablo-creek-entrance/calendar',
       lastModified: now,
       changeFrequency: 'daily',
       priority: 0.7,

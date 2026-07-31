@@ -1,16 +1,16 @@
 import type { Metadata } from 'next'
 import { ALABAMA_STATIONS } from '@/lib/alabama-stations'
-import StateIndexPage from '@/app/tides/StateIndexPage'
+import StateIndexPage from '@/app/tides/us/StateIndexPage'
 
 export const metadata: Metadata = {
   title: 'Alabama Tide Charts | Tides for Fishing | TideChartsPro',
   description: 'Alabama tide charts with live tide levels, tides for fishing, solunar periods and fishing forecasts for every Alabama coastal location — Mobile Bay, Gulf Shores, Orange Beach and Dauphin Island.',
   keywords: ['alabama tide chart', 'alabama tides for fishing', 'mobile bay tide chart', 'gulf shores tide chart', 'orange beach tide chart', 'dauphin island tide chart'],
-  alternates: { canonical: 'https://tidechartspro.com/tides/alabama' },
+  alternates: { canonical: 'https://tidechartspro.com/tides/us/alabama' },
   openGraph: {
     title: 'Alabama Tide Charts | Tides for Fishing | TideChartsPro',
     description: 'Live tide charts and fishing tides for every Alabama coastal location.',
-    url: 'https://tidechartspro.com/tides/alabama',
+    url: 'https://tidechartspro.com/tides/us/alabama',
     siteName: 'TideChartsPro',
   },
 }
@@ -27,13 +27,13 @@ export default function AlabamaTidesIndex() {
           '@type': 'CollectionPage',
           name: 'Alabama Tide Charts',
           description: 'Tide charts and fishing tides for all Alabama coastal locations.',
-          url: 'https://tidechartspro.com/tides/alabama',
+          url: 'https://tidechartspro.com/tides/us/alabama',
           breadcrumb: {
             '@type': 'BreadcrumbList',
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home',    item: 'https://tidechartspro.com' },
               { '@type': 'ListItem', position: 2, name: 'Tides',   item: 'https://tidechartspro.com/tides' },
-              { '@type': 'ListItem', position: 3, name: 'Alabama', item: 'https://tidechartspro.com/tides/alabama' },
+              { '@type': 'ListItem', position: 3, name: 'Alabama', item: 'https://tidechartspro.com/tides/us/alabama' },
             ],
           },
         })}}

@@ -13,6 +13,7 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
+  metadataBase: new URL('https://tidechartspro.com'),
   title: "Tide Charts for Fishing | Tides for Fishing | Fishing Tide Charts",
   description: "Tide charts for fishing with live tides, solunar periods, species bite times and fishing forecasts for 3,300+ US coastal locations across all 23 coastal states.",
   keywords: [

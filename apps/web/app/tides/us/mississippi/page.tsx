@@ -1,16 +1,16 @@
 import type { Metadata } from 'next'
 import { MISSISSIPPI_STATIONS } from '@/lib/mississippi-stations'
-import StateIndexPage from '@/app/tides/StateIndexPage'
+import StateIndexPage from '@/app/tides/us/StateIndexPage'
 
 export const metadata: Metadata = {
   title: 'Mississippi Tide Charts | Tides for Fishing | TideChartsPro',
   description: 'Mississippi tide charts with live tide levels, tides for fishing, solunar periods and fishing forecasts — Biloxi, Gulfport, Bay St. Louis and Pascagoula.',
   keywords: ['mississippi tide chart', 'mississippi tides for fishing', 'biloxi tide chart', 'gulfport tide chart', 'pascagoula tide chart'],
-  alternates: { canonical: 'https://tidechartspro.com/tides/mississippi' },
+  alternates: { canonical: 'https://tidechartspro.com/tides/us/mississippi' },
   openGraph: {
     title: 'Mississippi Tide Charts | Tides for Fishing | TideChartsPro',
     description: 'Live tide charts and fishing tides for every Mississippi coastal location.',
-    url: 'https://tidechartspro.com/tides/mississippi',
+    url: 'https://tidechartspro.com/tides/us/mississippi',
     siteName: 'TideChartsPro',
   },
 }
@@ -27,13 +27,13 @@ export default function MississippiTidesIndex() {
           '@type': 'CollectionPage',
           name: 'Mississippi Tide Charts',
           description: 'Tide charts and fishing tides for all Mississippi coastal locations.',
-          url: 'https://tidechartspro.com/tides/mississippi',
+          url: 'https://tidechartspro.com/tides/us/mississippi',
           breadcrumb: {
             '@type': 'BreadcrumbList',
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home',        item: 'https://tidechartspro.com' },
               { '@type': 'ListItem', position: 2, name: 'Tides',       item: 'https://tidechartspro.com/tides' },
-              { '@type': 'ListItem', position: 3, name: 'Mississippi', item: 'https://tidechartspro.com/tides/mississippi' },
+              { '@type': 'ListItem', position: 3, name: 'Mississippi', item: 'https://tidechartspro.com/tides/us/mississippi' },
             ],
           },
         })}}

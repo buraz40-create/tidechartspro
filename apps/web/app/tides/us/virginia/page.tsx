@@ -1,16 +1,16 @@
 import type { Metadata } from 'next'
 import { VIRGINIA_STATIONS } from '@/lib/virginia-stations'
-import StateIndexPage from '@/app/tides/StateIndexPage'
+import StateIndexPage from '@/app/tides/us/StateIndexPage'
 
 export const metadata: Metadata = {
   title: 'Virginia Tide Charts | Tides for Fishing | TideChartsPro',
   description: 'Virginia tide charts with live tide levels, tides for fishing, solunar periods and fishing forecasts. Chesapeake Bay, Hampton Roads, Virginia Beach and the Eastern Shore.',
   keywords: ['virginia tide chart', 'virginia tides for fishing', 'virginia fishing tides', 'atlantic coast tide chart'],
-  alternates: { canonical: 'https://tidechartspro.com/tides/virginia' },
+  alternates: { canonical: 'https://tidechartspro.com/tides/us/virginia' },
   openGraph: {
     title: 'Virginia Tide Charts | Tides for Fishing | TideChartsPro',
     description: 'Live tide charts and fishing tides for every Virginia coastal location.',
-    url: 'https://tidechartspro.com/tides/virginia',
+    url: 'https://tidechartspro.com/tides/us/virginia',
     siteName: 'TideChartsPro',
   },
 }
@@ -27,13 +27,13 @@ export default function VirginiaTidesIndex() {
           '@type': 'CollectionPage',
           name: 'Virginia Tide Charts',
           description: 'Tide charts and fishing tides for all Virginia coastal locations.',
-          url: 'https://tidechartspro.com/tides/virginia',
+          url: 'https://tidechartspro.com/tides/us/virginia',
           breadcrumb: {
             '@type': 'BreadcrumbList',
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home',             item: 'https://tidechartspro.com' },
               { '@type': 'ListItem', position: 2, name: 'Tides',            item: 'https://tidechartspro.com/tides' },
-              { '@type': 'ListItem', position: 3, name: 'Virginia', item: 'https://tidechartspro.com/tides/virginia' },
+              { '@type': 'ListItem', position: 3, name: 'Virginia', item: 'https://tidechartspro.com/tides/us/virginia' },
             ],
           },
         })}}

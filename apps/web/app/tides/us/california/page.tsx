@@ -1,16 +1,16 @@
 import type { Metadata } from 'next'
 import { CALIFORNIA_STATIONS } from '@/lib/california-stations'
-import StateIndexPage from '@/app/tides/StateIndexPage'
+import StateIndexPage from '@/app/tides/us/StateIndexPage'
 
 export const metadata: Metadata = {
   title: 'California Tide Charts | Tides for Fishing | TideChartsPro',
   description: 'California tide charts with live tide levels, tides for fishing, solunar periods and fishing forecasts. San Diego, Los Angeles, San Francisco Bay, Monterey and the North Coast.',
   keywords: ['california tide chart', 'california tides for fishing', 'california fishing tides', 'pacific coast tide chart'],
-  alternates: { canonical: 'https://tidechartspro.com/tides/california' },
+  alternates: { canonical: 'https://tidechartspro.com/tides/us/california' },
   openGraph: {
     title: 'California Tide Charts | Tides for Fishing | TideChartsPro',
     description: 'Live tide charts and fishing tides for every California coastal location.',
-    url: 'https://tidechartspro.com/tides/california',
+    url: 'https://tidechartspro.com/tides/us/california',
     siteName: 'TideChartsPro',
   },
 }
@@ -27,13 +27,13 @@ export default function CaliforniaTidesIndex() {
           '@type': 'CollectionPage',
           name: 'California Tide Charts',
           description: 'Tide charts and fishing tides for all California coastal locations.',
-          url: 'https://tidechartspro.com/tides/california',
+          url: 'https://tidechartspro.com/tides/us/california',
           breadcrumb: {
             '@type': 'BreadcrumbList',
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home',             item: 'https://tidechartspro.com' },
               { '@type': 'ListItem', position: 2, name: 'Tides',            item: 'https://tidechartspro.com/tides' },
-              { '@type': 'ListItem', position: 3, name: 'California', item: 'https://tidechartspro.com/tides/california' },
+              { '@type': 'ListItem', position: 3, name: 'California', item: 'https://tidechartspro.com/tides/us/california' },
             ],
           },
         })}}

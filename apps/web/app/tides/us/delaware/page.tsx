@@ -1,16 +1,16 @@
 import type { Metadata } from 'next'
 import { DELAWARE_STATIONS } from '@/lib/delaware-stations'
-import StateIndexPage from '@/app/tides/StateIndexPage'
+import StateIndexPage from '@/app/tides/us/StateIndexPage'
 
 export const metadata: Metadata = {
   title: 'Delaware Tide Charts | Tides for Fishing | TideChartsPro',
   description: 'Delaware tide charts with live tide levels, tides for fishing, solunar periods and fishing forecasts. Delaware Bay, Lewes, Rehoboth Beach and the Delaware Seashore.',
   keywords: ['delaware tide chart', 'delaware tides for fishing', 'delaware fishing tides', 'atlantic coast tide chart'],
-  alternates: { canonical: 'https://tidechartspro.com/tides/delaware' },
+  alternates: { canonical: 'https://tidechartspro.com/tides/us/delaware' },
   openGraph: {
     title: 'Delaware Tide Charts | Tides for Fishing | TideChartsPro',
     description: 'Live tide charts and fishing tides for every Delaware coastal location.',
-    url: 'https://tidechartspro.com/tides/delaware',
+    url: 'https://tidechartspro.com/tides/us/delaware',
     siteName: 'TideChartsPro',
   },
 }
@@ -27,13 +27,13 @@ export default function DelawareTidesIndex() {
           '@type': 'CollectionPage',
           name: 'Delaware Tide Charts',
           description: 'Tide charts and fishing tides for all Delaware coastal locations.',
-          url: 'https://tidechartspro.com/tides/delaware',
+          url: 'https://tidechartspro.com/tides/us/delaware',
           breadcrumb: {
             '@type': 'BreadcrumbList',
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home',             item: 'https://tidechartspro.com' },
               { '@type': 'ListItem', position: 2, name: 'Tides',            item: 'https://tidechartspro.com/tides' },
-              { '@type': 'ListItem', position: 3, name: 'Delaware', item: 'https://tidechartspro.com/tides/delaware' },
+              { '@type': 'ListItem', position: 3, name: 'Delaware', item: 'https://tidechartspro.com/tides/us/delaware' },
             ],
           },
         })}}

@@ -1,16 +1,16 @@
 import type { Metadata } from 'next'
 import { MAINE_STATIONS } from '@/lib/maine-stations'
-import StateIndexPage from '@/app/tides/StateIndexPage'
+import StateIndexPage from '@/app/tides/us/StateIndexPage'
 
 export const metadata: Metadata = {
   title: 'Maine Tide Charts | Tides for Fishing | TideChartsPro',
   description: 'Maine tide charts with live tide levels, tides for fishing, solunar periods and fishing forecasts. Portland, Casco Bay, Midcoast Maine, Acadia and Downeast Maine.',
   keywords: ['maine tide chart', 'maine tides for fishing', 'maine fishing tides', 'atlantic coast tide chart'],
-  alternates: { canonical: 'https://tidechartspro.com/tides/maine' },
+  alternates: { canonical: 'https://tidechartspro.com/tides/us/maine' },
   openGraph: {
     title: 'Maine Tide Charts | Tides for Fishing | TideChartsPro',
     description: 'Live tide charts and fishing tides for every Maine coastal location.',
-    url: 'https://tidechartspro.com/tides/maine',
+    url: 'https://tidechartspro.com/tides/us/maine',
     siteName: 'TideChartsPro',
   },
 }
@@ -27,13 +27,13 @@ export default function MaineTidesIndex() {
           '@type': 'CollectionPage',
           name: 'Maine Tide Charts',
           description: 'Tide charts and fishing tides for all Maine coastal locations.',
-          url: 'https://tidechartspro.com/tides/maine',
+          url: 'https://tidechartspro.com/tides/us/maine',
           breadcrumb: {
             '@type': 'BreadcrumbList',
             itemListElement: [
               { '@type': 'ListItem', position: 1, name: 'Home',             item: 'https://tidechartspro.com' },
               { '@type': 'ListItem', position: 2, name: 'Tides',            item: 'https://tidechartspro.com/tides' },
-              { '@type': 'ListItem', position: 3, name: 'Maine', item: 'https://tidechartspro.com/tides/maine' },
+              { '@type': 'ListItem', position: 3, name: 'Maine', item: 'https://tidechartspro.com/tides/us/maine' },
             ],
           },
         })}}
