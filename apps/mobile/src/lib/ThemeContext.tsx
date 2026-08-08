@@ -8,13 +8,13 @@ interface ThemeContextValue {
 }
 
 const ThemeContext = createContext<ThemeContextValue>({
-  mode: 'dark',
-  colors: THEMES.dark,
+  mode: 'light',
+  colors: THEMES.light,
   setMode: () => {},
 })
 
 export function ThemeProvider({ children }: { children: React.ReactNode }) {
-  const [mode, setMode] = useState<ThemeMode>('dark')
+  const [mode, setMode] = useState<ThemeMode>('light')
   return (
     <ThemeContext.Provider value={{ mode, colors: THEMES[mode], setMode }}>
       {children}

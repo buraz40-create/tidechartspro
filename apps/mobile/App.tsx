@@ -13,6 +13,7 @@ import SolunarScreen from './src/screens/SolunarScreen'
 import CalendarScreen from './src/screens/CalendarScreen'
 import { ThemeProvider, useTheme } from './src/lib/ThemeContext'
 import { StationProvider } from './src/lib/StationContext'
+import Logo from './src/components/Logo'
 
 // ── Error boundary ────────────────────────────────────────────────────────────
 class ErrorBoundary extends React.Component<
@@ -83,10 +84,7 @@ function AppShell() {
       {/* ── App header ─────────────────────────────────────── */}
       <SafeAreaView edges={['top']} style={{ backgroundColor: colors.bg, borderBottomWidth: 1, borderBottomColor: colors.border }}>
         <View style={{ flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between', paddingHorizontal: 16, paddingVertical: 8 }}>
-          <Image
-            source={LOGOS[mode]}
-            style={{ height: 44, width: 182, resizeMode: 'contain' }}
-          />
+          <Logo height={30} />
           <View style={{ flexDirection: 'row', gap: 6 }}>
             {modeConfig.map(m => (
               <TouchableOpacity

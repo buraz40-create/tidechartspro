@@ -5,7 +5,7 @@ const DEFAULT_STATION: StationType = {
   name: 'Pablo Creek Entrance',
   city: 'Jacksonville, FL',
   noaaId:      '8720232',
-  waterTempId: '8720503',
+  waterTempId: '8720218',
   lat: 30.3953,
   lon: -81.4316,
   meanRange: 4.6,

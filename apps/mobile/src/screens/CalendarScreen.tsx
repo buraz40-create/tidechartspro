@@ -235,7 +235,7 @@ export default function CalendarScreen() {
           </View>
 
           {tidesLoading && (
-            <Text style={{ fontSize: 10, color: colors.textFaint, marginBottom: 6 }}>
+            <Text style={{ fontSize: 11.5, color: colors.textMuted, marginBottom: 6 }}>
               Loading live NOAA tide predictions…
             </Text>
           )}
@@ -245,10 +245,10 @@ export default function CalendarScreen() {
               <View style={s.tblHeader}>
                 <Text style={[s.tblHdr, { width: 46 }]}>DAY</Text>
                 <Text style={[s.tblHdr, { width: 66 }]}>SUNRISE{'\n'}SUNSET</Text>
-                <Text style={[s.tblHdr, { width: 56 }]}>1ST TIDE</Text>
-                <Text style={[s.tblHdr, { width: 56 }]}>2ND TIDE</Text>
-                <Text style={[s.tblHdr, { width: 56 }]}>3RD TIDE</Text>
-                <Text style={[s.tblHdr, { width: 56 }]}>4TH TIDE</Text>
+                <Text style={[s.tblHdr, { width: 64 }]}>1ST TIDE</Text>
+                <Text style={[s.tblHdr, { width: 64 }]}>2ND TIDE</Text>
+                <Text style={[s.tblHdr, { width: 64 }]}>3RD TIDE</Text>
+                <Text style={[s.tblHdr, { width: 64 }]}>4TH TIDE</Text>
                 <Text style={[s.tblHdr, { width: 58 }]}>COEFF</Text>
                 <Text style={[s.tblHdr, { width: 38 }]}>SOL</Text>
               </View>
@@ -287,13 +287,13 @@ export default function CalendarScreen() {
                       const tides = liveTides?.get(dk) ?? day.tides
                       return Array.from({ length: 4 }, (_, ti) => {
                         const t = tides[ti]
-                        if (!t) return <View key={ti} style={[s.tblCell, { width: 56 }]} />
+                        if (!t) return <View key={ti} style={[s.tblCell, { width: 64 }]} />
                         return (
-                          <View key={ti} style={[s.tblCell, { width: 56 }]}>
-                            <Text style={[s.tblTideTime, { color: t.type === 'H' ? colors.tide : '#818cf8' }]}>
+                          <View key={ti} style={[s.tblCell, { width: 64 }]}>
+                            <Text style={[s.tblTideTime, { color: t.type === 'H' ? colors.tide : '#6B75DA' }]}>
                               {t.time}
                             </Text>
-                            <Text style={[s.tblTideHt, { color: t.type === 'H' ? colors.tide : '#818cf8' }]}>
+                            <Text style={[s.tblTideHt, { color: t.type === 'H' ? colors.tide : '#6B75DA' }]}>
                               {t.type === 'H' ? '▲' : '▼'} {t.height} ft
                             </Text>
                           </View>
@@ -313,7 +313,7 @@ export default function CalendarScreen() {
                         {'🐟'.repeat(day.solMajor)}
                       </Text>
                       {day.solMinor > 0 && (
-                        <Text style={[s.tblSol, { opacity: 0.45, fontSize: 9 }]}>
+                        <Text style={[s.tblSol, { opacity: 0.45, fontSize: 11 }]}>
                           {'🐟'.repeat(day.solMinor)}
                         </Text>
                       )}
@@ -466,7 +466,7 @@ const makeStyles = (colors: Colors) => StyleSheet.create({
   pageTitle: { fontSize: 22, fontWeight: '800', color: colors.text },
   pageSub:   { fontSize: 12, color: colors.textMuted, marginTop: 2 },
 
-  card:       { backgroundColor: colors.surface, borderRadius: 18, padding: 16, borderWidth: 1, borderColor: colors.border },
+  card:       { backgroundColor: colors.surface, borderRadius: 20, padding: 16, shadowColor: '#0F5A50', shadowOpacity: 0.10, shadowRadius: 18, shadowOffset: { width: 0, height: 8 }, elevation: 2 },
   cardHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 },
   cardTitle:  { fontSize: 15, fontWeight: '700', color: colors.text },
   cardChip:   { fontSize: 10, color: colors.textMuted, borderWidth: 1, borderColor: colors.border, borderRadius: 6, paddingHorizontal: 7, paddingVertical: 2 },
@@ -475,22 +475,47 @@ const makeStyles = (colors: Colors) => StyleSheet.create({
   navBtn:     { padding: 6 },
   monthTitle: { fontSize: 16, fontWeight: '700', color: colors.text },
 
+  // Day rows (vertical, color-coded)
+  tideLegend:    { flexDirection: 'row', alignItems: 'center', gap: 12, marginBottom: 12, marginTop: 2 },
+  legItem:       { flexDirection: 'row', alignItems: 'center', gap: 4 },
+  legArrow:      { fontSize: 11, fontWeight: '800' },
+  legText:       { fontSize: 11.5, color: colors.textMuted, fontWeight: '600' },
+  legUnit:       { fontSize: 11, color: colors.textFaint, marginLeft: 'auto' as const },
+  dayRow:        { backgroundColor: colors.surfaceAlt, borderRadius: 14, padding: 12, marginBottom: 8, borderWidth: 1, borderColor: 'transparent' },
+  dayRowToday:   { backgroundColor: colors.accentFaint, borderColor: colors.accent + '66' },
+  dayRowSelected:{ borderColor: colors.accent + '66' },
+  dayTop:        { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 9 },
+  dayLeft:       { flexDirection: 'row', alignItems: 'center', gap: 11, flex: 1 },
+  dayNum:        { fontSize: 24, fontWeight: '800', color: colors.text, minWidth: 30 },
+  dayName:       { fontSize: 13, fontWeight: '700', color: colors.text },
+  daySun:        { fontSize: 11.5, color: colors.textMuted, marginTop: 2 },
+  dayRight:      { flexDirection: 'row', alignItems: 'center', gap: 9 },
+  daySol:        { fontSize: 13 },
+  coeffBadge:    { alignItems: 'center', borderRadius: 11, borderWidth: 1, paddingHorizontal: 10, paddingVertical: 4, minWidth: 50 },
+  coeffNum:      { fontSize: 17, fontWeight: '800', lineHeight: 19 },
+  coeffLbl:      { fontSize: 8.5, fontWeight: '800', letterSpacing: 0.3, textTransform: 'uppercase' as const },
+  tideChips:     { flexDirection: 'row', flexWrap: 'wrap', gap: 7 },
+  tideChip:      { flexDirection: 'row', alignItems: 'center', gap: 4, borderRadius: 10, paddingHorizontal: 9, paddingVertical: 5 },
+  tideChipArrow: { fontSize: 10, fontWeight: '800' },
+  tideChipTime:  { fontSize: 12.5, fontWeight: '700', color: colors.text },
+  tideChipHt:    { fontSize: 12.5, fontWeight: '800' },
+
   // Table
   tblHeader:    { flexDirection: 'row', paddingVertical: 6, borderBottomWidth: 1, borderBottomColor: colors.border, marginBottom: 2 },
-  tblHdr:       { fontSize: 8, fontWeight: '700', color: colors.textFaint, letterSpacing: 0.5, textTransform: 'uppercase' as const },
-  tblRow:       { flexDirection: 'row', alignItems: 'center', paddingVertical: 8, borderRadius: 4, marginBottom: 1 },
-  tblCell:      { paddingHorizontal: 4, justifyContent: 'center' as const },
-  tblDayNum:    { fontSize: 14, fontWeight: '800', color: colors.text, lineHeight: 17 },
-  tblDayName:   { fontSize: 9, color: colors.textFaint },
-  tblSunRise:   { fontSize: 10, color: '#fbbf24', lineHeight: 14 },
-  tblSunSet:    { fontSize: 10, color: '#818cf8', lineHeight: 14 },
-  tblTideTime:  { fontSize: 11, fontWeight: '700', lineHeight: 14 },
-  tblTideHt:    { fontSize: 9, lineHeight: 13, opacity: 0.8 },
+  tblHdr:       { fontSize: 10, fontWeight: '700', color: colors.textFaint, letterSpacing: 0.5, textTransform: 'uppercase' as const },
+  tblRow:       { flexDirection: 'row', alignItems: 'flex-start', paddingVertical: 10, borderRadius: 4, marginBottom: 1 },
+  tblCell:      { paddingHorizontal: 4, justifyContent: 'flex-start' as const },
+  tblDayNum:    { fontSize: 16, fontWeight: '800', color: colors.text, lineHeight: 19 },
+  tblDayName:   { fontSize: 10.5, color: colors.textFaint },
+  tblSunRise:   { fontSize: 11.5, color: '#e59a1a', lineHeight: 15 },
+  tblSunSet:    { fontSize: 11.5, color: '#6d78e0', lineHeight: 15 },
+  tblTideTime:  { fontSize: 12.5, fontWeight: '700', lineHeight: 15 },
+  tblTideHt:    { fontSize: 10.5, lineHeight: 14, opacity: 0.85 },
   tblCoeff:     { fontSize: 18, fontWeight: '800', lineHeight: 22 },
   tblCoeffBadge:{ borderRadius: 4, paddingHorizontal: 4, paddingVertical: 1, alignSelf: 'flex-start' as const, marginTop: 1 },
-  tblCoeffLabel:{ fontSize: 7, fontWeight: '700', letterSpacing: 0.3 },
-  tblSol:       { fontSize: 11, lineHeight: 14 },
-  tblMoon:      { fontSize: 10, lineHeight: 13 },
+  tblCoeffLabel:{ fontSize: 9, fontWeight: '700', letterSpacing: 0.3 },
+  tblSol:       { fontSize: 13, lineHeight: 16 },
+  tblMoon:      { fontSize: 12, lineHeight: 15 },
 
   // Spark bars
   sparkRow:    { flexDirection: 'row', alignItems: 'flex-end', gap: 1, height: 48, marginBottom: 10 },
@@ -498,30 +523,30 @@ const makeStyles = (colors: Colors) => StyleSheet.create({
   sparkLegend: { flexDirection: 'row', gap: 12, flexWrap: 'wrap' },
   legendItem:  { flexDirection: 'row', alignItems: 'center', gap: 4 },
   legendDot:   { width: 8, height: 8, borderRadius: 4 },
-  legendText:  { fontSize: 10, color: colors.textMuted },
+  legendText:  { fontSize: 11.5, color: colors.textMuted },
 
   // Detail panel
   detailRow:     { flexDirection: 'row', gap: 10, marginBottom: 14 },
   detailBox:     { flex: 1, backgroundColor: colors.surfaceAlt, borderRadius: 10, padding: 10, alignItems: 'center' },
-  detailLabel:   { fontSize: 9, fontWeight: '700', color: colors.textFaint, letterSpacing: 1, marginBottom: 4 },
-  detailSubLabel:{ fontSize: 8, fontWeight: '700', letterSpacing: 0.3 },
+  detailLabel:   { fontSize: 10.5, fontWeight: '700', color: colors.textFaint, letterSpacing: 1, marginBottom: 4 },
+  detailSubLabel:{ fontSize: 9.5, fontWeight: '700', letterSpacing: 0.3 },
   detailMoon:    { fontSize: 24 },
   detailVal:     { fontSize: 22, fontWeight: '800' },
   detailSun:     { fontSize: 11, color: colors.textMuted, lineHeight: 16 },
 
   // Grid calendar
   gridWeekRow:      { flexDirection: 'row', marginBottom: 4 },
-  gridWeekHdr:      { fontSize: 10, fontWeight: '700', color: colors.textFaint, textAlign: 'center' as const, paddingVertical: 4 },
+  gridWeekHdr:      { fontSize: 11.5, fontWeight: '700', color: colors.textFaint, textAlign: 'center' as const, paddingVertical: 4 },
   gridBody:         { flexDirection: 'row', flexWrap: 'wrap' as const },
   gridCell:         { alignItems: 'center' as const, paddingVertical: 6, borderRadius: 8 },
   gridCellToday:    { backgroundColor: colors.accentFaint, borderWidth: 1, borderColor: colors.accent + '60' },
   gridCellSelected: { backgroundColor: colors.surfaceAlt },
-  gridDayNum:       { fontSize: 13, fontWeight: '700', color: colors.text, lineHeight: 16 },
-  gridMoon:         { fontSize: 11, lineHeight: 14 },
+  gridDayNum:       { fontSize: 15, fontWeight: '700', color: colors.text, lineHeight: 18 },
+  gridMoon:         { fontSize: 13, lineHeight: 16 },
   gridDot:          { width: 5, height: 5, borderRadius: 3, marginTop: 2 },
 
   // Tide boxes — time BIG, height small
-  tidesSectionTitle: { fontSize: 9, fontWeight: '700', color: colors.textFaint, letterSpacing: 1, marginBottom: 8 },
+  tidesSectionTitle: { fontSize: 10.5, fontWeight: '700', color: colors.textFaint, letterSpacing: 1, marginBottom: 8 },
   tidesGrid:    { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
   tideBox:      { flex: 1, flexBasis: '45%', borderRadius: 10, padding: 10, borderWidth: 1 },
   tideType:     { fontSize: 10, fontWeight: '700', letterSpacing: 0.5, marginBottom: 4 },

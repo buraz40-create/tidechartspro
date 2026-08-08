@@ -127,7 +127,21 @@ export default function HomeScreen({ navigation }: { navigation: any }) {
         Alert.alert('Location access denied', 'Enable location in Settings to find nearby stations.')
         return
       }
-      const pos = await Location.getCurrentPositionAsync({ accuracy: Location.Accuracy.Low })
+      // Fast path: a recent cached fix returns almost instantly. Only fall back
+      // to a fresh fix if there's none — and race it against a timeout so the
+      // button can never hang forever waiting on GPS.
+      let pos = await Location.getLastKnownPositionAsync({ maxAge: 10 * 60_000 })
+      if (!pos) {
+        pos = await Promise.race([
+          Location.getCurrentPositionAsync({ accuracy: Location.Accuracy.Low }),
+          new Promise<null>(resolve => setTimeout(() => resolve(null), 9000)),
+        ]) as Location.LocationObject | null
+      }
+      if (!pos) {
+        setGeoLoading(false)
+        Alert.alert('Location is taking too long', 'Try again with a clearer signal, or search by state instead.')
+        return
+      }
       const { latitude, longitude } = pos.coords
       const toRad = (d: number) => d * Math.PI / 180
       const flat: Array<BStation & { stateCode: string; distMi: number }> = []
@@ -443,17 +457,16 @@ const makeStyles = (colors: Colors) => StyleSheet.create({
 
   searchWrap: {
     flexDirection: 'row', alignItems: 'center',
-    backgroundColor: colors.surface, borderRadius: 14, borderWidth: 2,
-    borderColor: colors.accent, paddingHorizontal: 14,
-    shadowColor: colors.accent, shadowOffset: { width: 0, height: 0 },
-    shadowOpacity: 0.25, shadowRadius: 8, elevation: 4,
+    backgroundColor: colors.surface, borderRadius: 16, paddingHorizontal: 14,
+    shadowColor: '#0F5A50', shadowOffset: { width: 0, height: 6 },
+    shadowOpacity: 0.12, shadowRadius: 14, elevation: 3,
   },
   gpsBtn: { paddingRight: 12, paddingVertical: 4, borderRightWidth: 1, borderRightColor: colors.accent + '33', marginRight: 10 },
   searchIcon:  { marginRight: 10 },
   searchInput: { flex: 1, height: 50, fontSize: 15, color: colors.text, fontWeight: '500' },
   searchClear: { padding: 4 },
 
-  mapCard:   { backgroundColor: colors.surface, borderRadius: 16, padding: 16, marginBottom: 16, borderWidth: 1, borderColor: colors.border },
+  mapCard:   { backgroundColor: colors.surface, borderRadius: 20, padding: 16, marginBottom: 18, shadowColor: '#0F5A50', shadowOpacity: 0.10, shadowRadius: 18, shadowOffset: { width: 0, height: 8 }, elevation: 2 },
   cardTitle: { fontSize: 15, fontWeight: '700', color: colors.text, marginBottom: 2 },
   cardSub:   { fontSize: 11, color: colors.textMuted },
   mapWrap:   { borderRadius: 12, overflow: 'hidden', marginTop: 8, height: 200 },
@@ -464,8 +477,8 @@ const makeStyles = (colors: Colors) => StyleSheet.create({
   stateGrid: { flexDirection: 'row', flexWrap: 'wrap', gap: 8 },
   stateCard: {
     width: (W - 32 - 24) / 4,
-    backgroundColor: colors.surface, borderRadius: 12, borderWidth: 1,
-    borderColor: colors.border, padding: 10, alignItems: 'center',
+    backgroundColor: colors.surface, borderRadius: 14, padding: 10, alignItems: 'center',
+    shadowColor: '#0F5A50', shadowOpacity: 0.07, shadowRadius: 8, shadowOffset: { width: 0, height: 3 }, elevation: 1,
   },
   stateEmoji: { fontSize: 18, marginBottom: 2 },
   stateCode:  { fontSize: 14, fontWeight: '800', color: colors.text },
@@ -478,8 +491,8 @@ const makeStyles = (colors: Colors) => StyleSheet.create({
 
   regionCard: {
     flexDirection: 'row', alignItems: 'center', justifyContent: 'space-between',
-    backgroundColor: colors.surface, borderRadius: 14, borderWidth: 1,
-    borderColor: colors.border, padding: 16, marginBottom: 10,
+    backgroundColor: colors.surface, borderRadius: 16, padding: 16, marginBottom: 10,
+    shadowColor: '#0F5A50', shadowOpacity: 0.09, shadowRadius: 12, shadowOffset: { width: 0, height: 5 }, elevation: 2,
   },
   regionCardLeft:  { flexDirection: 'row', alignItems: 'center', gap: 14 },
   regionCardIcon:  { fontSize: 28 },
@@ -491,9 +504,10 @@ const makeStyles = (colors: Colors) => StyleSheet.create({
 
   stationRow: {
     flexDirection: 'row', alignItems: 'center', gap: 12,
-    paddingVertical: 11, paddingHorizontal: 16,
-    borderBottomWidth: 1, borderBottomColor: colors.border,
-    backgroundColor: colors.bg,
+    paddingVertical: 13, paddingHorizontal: 14,
+    marginHorizontal: 16, marginBottom: 8, borderRadius: 14,
+    backgroundColor: colors.surface,
+    shadowColor: '#0F5A50', shadowOpacity: 0.07, shadowRadius: 8, shadowOffset: { width: 0, height: 3 }, elevation: 1,
   },
   stationDot:  { width: 8, height: 8, borderRadius: 4, backgroundColor: colors.accent, flexShrink: 0 },
   stationName: { fontSize: 13, fontWeight: '600', color: colors.text },

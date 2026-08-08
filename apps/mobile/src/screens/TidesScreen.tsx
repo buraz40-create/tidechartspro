@@ -19,6 +19,8 @@ import { grade, type Colors } from '../lib/theme'
 import { useTheme } from '../lib/ThemeContext'
 import { useStation } from '../lib/StationContext'
 import { STATIONS } from '../data/stations'
+import { tempStationFor } from '../data/tempStations'
+import { speciesFor } from '../data/stationSpecies'
 
 const W = Dimensions.get('window').width
 
@@ -37,11 +39,18 @@ const DEFAULT_STATION: StationType = {
   name: 'Pablo Creek Entrance',
   city: 'Jacksonville, FL',
   noaaId:      '8720232',
-  waterTempId: '8720503',
+  waterTempId: '8720218',
   lat: 30.3953,
   lon: -81.4316,
   meanRange: 4.6,
   species: ['Redfish', 'Flounder', 'Speckled Trout', 'Sheepshead', 'Black Drum'],
+}
+
+const STATE_NAMES: Record<string, string> = {
+  ME: 'Maine', NH: 'New Hampshire', MA: 'Massachusetts', RI: 'Rhode Island', CT: 'Connecticut',
+  NY: 'New York', NJ: 'New Jersey', DE: 'Delaware', MD: 'Maryland', VA: 'Virginia', NC: 'North Carolina',
+  SC: 'South Carolina', GA: 'Georgia', FL: 'Florida', AL: 'Alabama', MS: 'Mississippi', LA: 'Louisiana',
+  TX: 'Texas', CA: 'California', OR: 'Oregon', WA: 'Washington', AK: 'Alaska', HI: 'Hawaii',
 }
 
 // Build a smooth 5-min tide curve from hi/lo events using cosine interpolation.
@@ -141,50 +150,102 @@ const SPECIES_DATA = [
   },
 ]
 
+function validCoord(lat: unknown, lon: unknown): boolean {
+  return typeof lat === 'number' && typeof lon === 'number'
+    && isFinite(lat) && isFinite(lon)
+    && Math.abs(lat) <= 90 && Math.abs(lon) <= 180
+    && !(lat === 0 && lon === 0)
+}
+
 function buildMapHtml(station: StationType, nearby: Array<{ dist: string; station: StationType }>): string {
-  const nearbyJs = nearby.map(e => {
-    const payload = JSON.stringify({ name: e.station.name, noaaId: e.station.noaaId, waterTempId: e.station.waterTempId, lat: e.station.lat, lon: e.station.lon, city: e.station.city, meanRange: e.station.meanRange, species: e.station.species })
-    const escapedPayload = JSON.stringify(payload).replace(/'/g, "\\'")
-    return (
-      `(function(){` +
-      `var m=L.circleMarker([${e.station.lat},${e.station.lon}],{radius:8,color:'#2563eb',fillColor:'#3b82f6',fillOpacity:0.75,weight:2}).addTo(map);` +
-      `m.bindPopup('<div class="pu-title">${e.station.name}</div><div class="pu-sub">${e.dist} away</div>' +` +
-      `'<button class="pu-btn" onclick="window.ReactNativeWebView&&window.ReactNativeWebView.postMessage(' + ${escapedPayload} + ')">📍 Load This Station</button>');` +
-      `})()`
-    )
-  }).join('\n')
-  const allLats = [station.lat, ...nearby.map(e => e.station.lat)]
-  const allLons = [station.lon, ...nearby.map(e => e.station.lon)]
-  const sw = `[${Math.min(...allLats) - 0.02},${Math.min(...allLons) - 0.02}]`
-  const ne = `[${Math.max(...allLats) + 0.02},${Math.max(...allLons) + 0.02}]`
+  const stationValid = validCoord(station.lat, station.lon)
+
+  const markers = nearby
+    .filter(e => validCoord(e.station.lat, e.station.lon))
+    .map(e => ({
+      lat: e.station.lat, lon: e.station.lon,
+      title: e.station.name, sub: `${e.dist} away`,
+      payload: {
+        name: e.station.name, noaaId: e.station.noaaId, waterTempId: e.station.waterTempId,
+        lat: e.station.lat, lon: e.station.lon, city: e.station.city,
+        meanRange: e.station.meanRange, species: e.station.species,
+      },
+    }))
+
+  const lats = [...(stationValid ? [station.lat] : []), ...markers.map(m => m.lat)]
+  const lons = [...(stationValid ? [station.lon] : []), ...markers.map(m => m.lon)]
+
+  const data = {
+    station: stationValid ? { lat: station.lat, lon: station.lon, title: station.name } : null,
+    markers,
+    bounds: lats.length ? {
+      sw: [Math.min(...lats) - 0.04, Math.min(...lons) - 0.04],
+      ne: [Math.max(...lats) + 0.04, Math.max(...lons) + 0.04],
+    } : null,
+  }
+  // Embed as JSON (safe for apostrophes/quotes in names) and neutralise "<"
+  // so a name containing "</script>" cannot break out of the script tag.
+  const json = JSON.stringify(data).replace(/</g, '\\u003c')
+
   return `<!DOCTYPE html><html><head>
 <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
 <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
 <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 <style>
-  html,body{margin:0;padding:0;}
-  #map{width:100%;height:100vh;}
+  html,body{margin:0;padding:0;height:100%;background:#eef5f3;}
+  #map{position:absolute;top:0;left:0;right:0;bottom:0;}
+  #fallback{position:absolute;inset:0;display:none;align-items:center;justify-content:center;font-family:-apple-system,'Segoe UI',sans-serif;color:#6E8B87;font-size:13px;padding:24px;text-align:center;}
   .leaflet-popup-content-wrapper{background:#fff;color:#1e293b;border-radius:10px;box-shadow:0 2px 12px rgba(0,0,0,0.2);}
   .leaflet-popup-tip{background:#fff;}
   .leaflet-popup-content{margin:10px 14px 12px;}
   .pu-title{font-weight:700;font-size:13px;color:#0f172a;margin-bottom:2px;}
   .pu-sub{font-size:11px;color:#64748b;margin-bottom:8px;}
-  .pu-btn{display:block;width:100%;padding:8px 0;background:#2563eb;color:#fff;border:none;border-radius:7px;font-size:12px;font-weight:700;cursor:pointer;text-align:center;letter-spacing:0.3px;}
-  .pu-btn:active{background:#1d4ed8;}
+  .pu-btn{display:block;width:100%;padding:8px 0;background:#1EA593;color:#fff;border:none;border-radius:7px;font-size:12px;font-weight:700;cursor:pointer;text-align:center;letter-spacing:0.3px;}
+  .pu-btn:active{background:#0F766E;}
   .leaflet-control-zoom{border:none!important;box-shadow:0 2px 8px rgba(0,0,0,0.2)!important;}
   .leaflet-control-zoom a{width:32px!important;height:32px!important;line-height:32px!important;font-size:18px!important;font-weight:700!important;background:#fff!important;color:#1e293b!important;border:none!important;}
   .leaflet-control-zoom a:first-child{border-radius:8px 8px 0 0!important;}
   .leaflet-control-zoom a:last-child{border-radius:0 0 8px 8px!important;}
   .leaflet-control-zoom a:hover{background:#f1f5f9!important;}
 </style>
-</head><body><div id="map"></div><script>
-  var map=L.map('map',{zoomControl:true,attributionControl:true});
+</head><body><div id="map"></div><div id="fallback">Map location unavailable for this station.</div><script>
+(function(){
+  var DATA=null;
+  try { DATA = ${json}; } catch(e) { DATA = null; }
+  function esc(s){ return String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;'); }
+  var hasAny = DATA && (DATA.station || (DATA.markers && DATA.markers.length));
+  if (!hasAny || typeof L === 'undefined') {
+    document.getElementById('map').style.display='none';
+    document.getElementById('fallback').style.display='flex';
+    return;
+  }
+  var map = L.map('map',{zoomControl:true,attributionControl:true});
   L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:18,attribution:'© OSM'}).addTo(map);
-  map.fitBounds([${sw},${ne}],{padding:[20,20]});
-  ${nearbyJs}
-  L.circleMarker([${station.lat},${station.lon}],{radius:11,color:'#1d4ed8',fillColor:'#2563eb',fillOpacity:1,weight:3})
-    .bindPopup('<div class="pu-title">${station.name}</div><div class="pu-sub">📍 Current station</div>')
-    .openPopup().addTo(map);
+  if (DATA.station) { map.setView([DATA.station.lat,DATA.station.lon],11); }
+  else if (DATA.bounds) { try { map.fitBounds([DATA.bounds.sw, DATA.bounds.ne],{padding:[20,20],maxZoom:12}); } catch(e) {} }
+
+  (DATA.markers||[]).forEach(function(mk){
+    var m = L.circleMarker([mk.lat, mk.lon], {radius:8,color:'#0F766E',fillColor:'#37D0BC',fillOpacity:0.85,weight:2}).addTo(map);
+    var html = '<div class="pu-title">'+esc(mk.title)+'</div><div class="pu-sub">'+esc(mk.sub)+'</div>'
+             + '<button class="pu-btn" data-p="'+esc(JSON.stringify(mk.payload))+'">📍 Load This Station</button>';
+    m.bindPopup(html);
+  });
+
+  if (DATA.station) {
+    L.circleMarker([DATA.station.lat, DATA.station.lon], {radius:11,color:'#0F766E',fillColor:'#1EA593',fillOpacity:1,weight:3})
+      .bindPopup('<div class="pu-title">'+esc(DATA.station.title)+'</div><div class="pu-sub">📍 Current station</div>')
+      .openPopup().addTo(map);
+  }
+
+  document.addEventListener('click', function(ev){
+    var b = ev.target && ev.target.closest ? ev.target.closest('.pu-btn') : null;
+    if (b && window.ReactNativeWebView) { window.ReactNativeWebView.postMessage(b.getAttribute('data-p')); }
+  });
+
+  function fixSize(){ try{ map.invalidateSize(true); }catch(e){} }
+  window.addEventListener('load',function(){ setTimeout(fixSize,50); setTimeout(fixSize,400); });
+  setTimeout(fixSize,650);
+})();
 </script></body></html>`
 }
 
@@ -195,6 +256,17 @@ export default function TidesScreen() {
   const { station: contextStation } = useStation()
   const [stationOverride, setStationOverride] = useState<StationType | null>(null)
   const STATION = stationOverride ?? contextStation ?? DEFAULT_STATION
+
+  // Which state this station belongs to (drives the breadcrumb + location pill)
+  const stateName = useMemo(() => {
+    for (const [code, list] of Object.entries(STATIONS)) {
+      if (list.some(st => st.id === STATION.noaaId)) return STATE_NAMES[code] ?? ''
+    }
+    return ''
+  }, [STATION.noaaId])
+
+  // Per-station local species (falls back to the generic list if unmapped)
+  const speciesList = useMemo(() => speciesFor(STATION.noaaId) ?? SPECIES_DATA, [STATION.noaaId])
 
   // Compute 10 nearest stations from all STATIONS data
   const nearbyStations = useMemo((): Array<{ dist: string; station: StationType }> => {
@@ -210,6 +282,15 @@ export default function TidesScreen() {
         station: { name: s.name, city: s.name, noaaId: s.id, waterTempId: s.id, lat: s.lat, lon: s.lon, meanRange: 0, species: [] },
       }))
   }, [STATION.noaaId, STATION.lat, STATION.lon])
+
+  // Map HTML memoized on the station only — without this the whole screen
+  // re-renders every 60s (the `now` clock) and the WebView reloads Leaflet +
+  // OSM tiles from the CDN each time. Keyed on noaaId so it rebuilds only on
+  // an actual station change.
+  const mapSource = useMemo(
+    () => ({ html: buildMapHtml(STATION, nearbyStations) }),
+    [STATION.noaaId, nearbyStations]  // eslint-disable-line react-hooks/exhaustive-deps
+  )
 
   const [now, setNow] = useState(Date.now())
   const [wxHourly,   setWxHourly]   = useState<WxHour[]>([])
@@ -310,12 +391,15 @@ export default function TidesScreen() {
       })
       .catch(() => {})
 
-    // Water temperature
-    fetch(`https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?station=${STATION.waterTempId}&product=water_temperature&time_zone=LST_LDT&interval=h&units=english&application=TideChartsPro&format=json&range=2`)
+    // Water temperature — range=6 tolerates NOAA's reporting delay (range=2 can
+    // come back empty). Use plain index access instead of Array.at() for engine safety.
+    fetch(`https://api.tidesandcurrents.noaa.gov/api/prod/datagetter?station=${tempStationFor(STATION.noaaId, STATION.waterTempId)}&product=water_temperature&time_zone=LST_LDT&interval=h&units=english&application=TideChartsPro&format=json&range=6`)
       .then(r => r.json())
       .then((d: any) => {
-        const last = d.data?.at(-1)
-        if (last?.v) setWaterTemp(`${Math.round(parseFloat(last.v))}°F`)
+        const rows = Array.isArray(d?.data) ? d.data : []
+        const last = rows.length ? rows[rows.length - 1] : null
+        const v = last && last.v != null ? parseFloat(last.v) : NaN
+        if (isFinite(v)) setWaterTemp(`${Math.round(v)}°F`)
       })
       .catch(() => {})
   }, [STATION.noaaId, STATION.waterTempId])
@@ -456,72 +540,70 @@ export default function TidesScreen() {
         showsVerticalScrollIndicator={false}
       >
 
-        {/* ── Website-style header ─────────────────────────── */}
-        <View style={s.pageHeader}>
-          {/* Back button when viewing a nearby station */}
+        {/* ── Gradient hero header ─────────────────────────── */}
+        <LinearGradient
+          colors={[colors.gradFrom, colors.gradTo]}
+          start={{ x: 0, y: 0 }} end={{ x: 1, y: 1 }}
+          style={s.hdr}
+        >
           {stationOverride && (
-            <TouchableOpacity style={s.backBtn} onPress={() => setStationOverride(null)}>
-              <Text style={s.backBtnText}>‹ Back to {DEFAULT_STATION.name}</Text>
+            <TouchableOpacity onPress={() => setStationOverride(null)} style={{ marginBottom: 8, alignSelf: 'flex-start' }}>
+              <Text style={s.hdrBack}>‹ Back to {DEFAULT_STATION.name}</Text>
             </TouchableOpacity>
           )}
-          {/* Breadcrumb */}
-          <Text style={s.breadcrumb}>Florida / {STATION.name}</Text>
+          <Text style={s.crumb}>{stateName || 'US Coast'}</Text>
 
-          {/* Station name + fishing grade */}
-          <View style={s.stationRow}>
+          <View style={s.stRow}>
             <View style={{ flex: 1 }}>
-              <Text style={s.stationName}>{STATION.name}</Text>
-              <Text style={s.stationCity}>
+              <Text style={s.stName}>{STATION.name}</Text>
+              <Text style={s.stCity}>
                 {STATION.city} · {STATION.lat.toFixed(2)}°N {Math.abs(STATION.lon).toFixed(2)}°W
               </Text>
             </View>
-            <View style={s.headerRight}>
-              <Text style={s.fishingLabel}>TODAY'S FISHING</Text>
-              <Text style={[s.fishingGrade, { color: gradeColor }]}>{letter}</Text>
-              <Text style={[s.fishingConditions, { color: gradeColor }]}>
-                {score >= 80 ? 'excellent' : score >= 65 ? 'good' : score >= 50 ? 'fair' : 'poor'} conditions
-              </Text>
+            <View style={s.grade}>
+              <Text style={s.gradeTop}>FISHING</Text>
+              <Text style={[s.gradeLetter, { color: gradeColor }]}>{letter}</Text>
+              <Text style={s.gradeScore}>{score}/100</Text>
             </View>
           </View>
 
-          {/* Stat cards row — matches website exactly */}
-          <View style={s.statRow}>
-            <View style={[s.statCard, { borderTopColor: colors.tide }]}>
-              <Text style={[s.statCardLabel, { color: colors.tide }]}>▲  NEXT HIGH</Text>
-              <Text style={s.statCardValue}>
-                {nextHigh ? `${fmtTime(nextHigh.time)}  ${nextHigh.height.toFixed(2)} ft` : '—'}
-              </Text>
+          <View style={s.live}>
+            <View>
+              <View style={s.risingPill}>
+                <Text style={s.risingText}>{isRising ? '▲ Rising' : '▼ Falling'}</Text>
+              </View>
+              <Text style={s.liveBig}>{height.toFixed(1)}<Text style={s.liveUnit}> ft</Text></Text>
             </View>
-            <View style={[s.statCard, { borderTopColor: '#818cf8' }]}>
-              <Text style={[s.statCardLabel, { color: '#818cf8' }]}>▼  NEXT LOW</Text>
-              <Text style={s.statCardValue}>
-                {nextLow ? `${fmtTime(nextLow.time)}  ${nextLow.height.toFixed(2)} ft` : '—'}
-              </Text>
-            </View>
-            <View style={[s.statCard, { borderTopColor: '#f97316' }]}>
-              <Text style={[s.statCardLabel, { color: '#f97316' }]}>🌡  WATER TEMP</Text>
-              <Text style={s.statCardValue}>{waterTemp}</Text>
+            <View style={s.liveNext}>
+              <Text style={s.liveNextLab}>Next high</Text>
+              <Text style={s.liveNextVal}>{nextHigh ? `${fmtTime(nextHigh.time)} · ${nextHigh.height.toFixed(1)} ft` : '—'}</Text>
+              <Text style={[s.liveNextLab, { marginTop: 6 }]}>Next low</Text>
+              <Text style={s.liveNextVal}>{nextLow ? `${fmtTime(nextLow.time)} · ${nextLow.height.toFixed(1)} ft` : '—'}</Text>
             </View>
           </View>
-          <View style={s.statRow}>
-            <View style={[s.statCard, { borderTopColor: '#22c55e' }]}>
-              <Text style={[s.statCardLabel, { color: '#22c55e' }]}>↕  TIDAL RANGE</Text>
-              <Text style={s.statCardValue}>{tidalRange}</Text>
-            </View>
-            <View style={[s.statCard, { borderTopColor: '#eab308' }]}>
-              <Text style={[s.statCardLabel, { color: '#eab308' }]}>🐟  SOLUNAR</Text>
-              <Text style={s.statCardValue}>
-                {nextMajor ? `Major ${fmtTime(new Date(nextMajor.start))}` : 'No major today'}
-              </Text>
-            </View>
-            <View style={[s.statCard, { borderTopColor: '#38bdf8' }]}>
-              <Text style={[s.statCardLabel, { color: '#38bdf8' }]}>💨  WIND</Text>
-              <Text style={s.statCardValue}>
-                {wxHourly.length > 0
-                  ? `${wxHourly.find(h => h.hour === Math.floor(nowHour))?.windDir ?? wxHourly[0].windDir} ${wxHourly.find(h => h.hour === Math.floor(nowHour))?.windSpeed ?? wxHourly[0].windSpeed} mph`
-                  : '—'}
-              </Text>
-            </View>
+        </LinearGradient>
+
+        {/* ── Stat grid (2×2) ──────────────────────────────── */}
+        <View style={s.statGrid}>
+          <View style={s.statCell}>
+            <Text style={[s.statLab, { color: colors.tide }]}>🌡  WATER TEMP</Text>
+            <Text style={s.statVal}>{waterTemp ?? '—'}</Text>
+          </View>
+          <View style={s.statCell}>
+            <Text style={[s.statLab, { color: colors.green }]}>↕  TIDAL RANGE</Text>
+            <Text style={s.statVal}>{tidalRange}</Text>
+          </View>
+          <View style={s.statCell}>
+            <Text style={[s.statLab, { color: '#3B9AE0' }]}>💨  WIND</Text>
+            <Text style={s.statVal}>
+              {wxHourly.length > 0
+                ? `${wxHourly.find(h => h.hour === Math.floor(nowHour))?.windDir ?? wxHourly[0].windDir} ${wxHourly.find(h => h.hour === Math.floor(nowHour))?.windSpeed ?? wxHourly[0].windSpeed} mph`
+                : '—'}
+            </Text>
+          </View>
+          <View style={s.statCell}>
+            <Text style={[s.statLab, { color: colors.gold }]}>🐟  SOLUNAR</Text>
+            <Text style={s.statVal}>{nextMajor ? `Major ${fmtTime(new Date(nextMajor.start))}` : 'No major'}</Text>
           </View>
         </View>
 
@@ -550,7 +632,7 @@ export default function TidesScreen() {
             <Text style={s.cardTitle}>Today's Tide Chart</Text>
             <Text style={s.cardChip}>{today.toLocaleDateString('en-US', { weekday: 'short', month: 'short', day: 'numeric' })}</Text>
           </View>
-          <Text style={s.cardSub}>Predicted tides · Pablo Creek Entrance</Text>
+          <Text style={s.cardSub}>Predicted tides · {STATION.name}</Text>
           {points.length > 0 && (
             <View style={{ marginTop: 10 }}>
               <TideChart
@@ -739,7 +821,7 @@ export default function TidesScreen() {
               const countdown = hUntil > 0 ? `in ${hUntil}h ${minUntil}m` : `in ${minUntil}m`
               const progress  = isActive ? Math.min(1, (now - p.start) / (p.end - p.start)) : 0
               return (
-                <View key={i} style={[s.solRow, isActive && { borderColor: col + '60', backgroundColor: col + '0c' }, isPast && { opacity: 0.45 }]}>
+                <View key={i} style={[s.solRow, isActive && { borderColor: col + '60', backgroundColor: col + '0c' }, isPast && { opacity: 0.72 }]}>
                   {/* Left accent bar */}
                   <View style={[s.solRowBar, { backgroundColor: col }]} />
                   <View style={{ flex: 1 }}>
@@ -802,8 +884,8 @@ export default function TidesScreen() {
             </View>
           </View>
           <View style={{ marginTop: 14 }}>
-            {SPECIES_DATA.map((sp, i) => (
-              <View key={i} style={[s.spCard, i < SPECIES_DATA.length - 1 && { marginBottom: 12 }]}>
+            {speciesList.map((sp, i) => (
+              <View key={i} style={[s.spCard, i < speciesList.length - 1 && { marginBottom: 12 }]}>
                 <View style={[s.spBorder, { backgroundColor: sp.tipColor }]} />
                 <View style={{ flex: 1 }}>
                   <View style={s.spNameRow}>
@@ -842,7 +924,7 @@ export default function TidesScreen() {
             </View>
             <View style={s.locPill}>
               <Text style={s.locPillLabel}>STATE</Text>
-              <Text style={s.locPillVal}>Florida</Text>
+              <Text style={s.locPillVal}>{stateName || '—'}</Text>
             </View>
             <View style={[s.locPill, { flex: 1.4 }]}>
               <Text style={s.locPillLabel}>CITY</Text>
@@ -857,7 +939,9 @@ export default function TidesScreen() {
               style={s.mapWebView}
               originWhitelist={['*']}
               javaScriptEnabled
-              source={{ html: buildMapHtml(STATION, nearbyStations) }}
+              domStorageEnabled
+              mixedContentMode="always"
+              source={mapSource}
               scrollEnabled={false}
               onMessage={e => {
                 try {
@@ -866,13 +950,13 @@ export default function TidesScreen() {
                 } catch {}
               }}
             />
-            <TouchableOpacity
-              style={s.mapOpenBtn}
-              onPress={() => Linking.openURL(`https://maps.google.com/?q=${STATION.lat},${STATION.lon}`)}
-            >
-              <Text style={s.mapOpenText}>Open in Maps ↗</Text>
-            </TouchableOpacity>
           </View>
+          <TouchableOpacity
+            style={s.mapOpenBtn}
+            onPress={() => Linking.openURL(`https://maps.google.com/?q=${STATION.lat},${STATION.lon}`)}
+          >
+            <Text style={s.mapOpenText}>Open in Maps ↗</Text>
+          </TouchableOpacity>
 
           {/* Nearby stations */}
           <Text style={s.nearbyTitle}>NEARBY STATIONS</Text>
@@ -903,6 +987,32 @@ const makeStyles = (colors: Colors) => StyleSheet.create({
   scroll:  { flex: 1 },
   content: { padding: 16 },
 
+  // Gradient hero header
+  hdr:         { borderRadius: 24, padding: 18, marginBottom: 14, shadowColor: '#0B5248', shadowOpacity: 0.28, shadowRadius: 20, shadowOffset: { width: 0, height: 10 }, elevation: 5 },
+  hdrBack:     { fontSize: 13, fontWeight: '600', color: '#EAFCF8' },
+  crumb:       { fontSize: 12.5, color: '#CDF3EC', fontWeight: '500', marginBottom: 12 },
+  stRow:       { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'flex-start', gap: 12 },
+  stName:      { fontSize: 23, fontWeight: '700', color: '#ffffff', letterSpacing: -0.3, lineHeight: 27 },
+  stCity:      { fontSize: 12, color: '#C6F1E9', marginTop: 4 },
+  grade:       { backgroundColor: '#ffffff', borderRadius: 18, paddingHorizontal: 14, paddingVertical: 8, alignItems: 'center', minWidth: 70, shadowColor: '#08322C', shadowOpacity: 0.22, shadowRadius: 10, shadowOffset: { width: 0, height: 5 }, elevation: 4 },
+  gradeTop:    { fontSize: 8, fontWeight: '800', letterSpacing: 0.8, color: '#9DB6B1', textTransform: 'uppercase' as const },
+  gradeLetter: { fontSize: 30, fontWeight: '900', lineHeight: 33, marginVertical: 1 },
+  gradeScore:  { fontSize: 10.5, fontWeight: '800', color: '#5B7B76' },
+  live:        { flexDirection: 'row', alignItems: 'flex-end', marginTop: 16, backgroundColor: 'rgba(255,255,255,0.12)', borderWidth: 1, borderColor: 'rgba(255,255,255,0.16)', borderRadius: 16, padding: 14 },
+  risingPill:  { backgroundColor: 'rgba(255,255,255,0.18)', paddingHorizontal: 9, paddingVertical: 3, borderRadius: 999, marginBottom: 6, alignSelf: 'flex-start' as const },
+  risingText:  { fontSize: 12, fontWeight: '600', color: '#EAFCF8' },
+  liveBig:     { fontSize: 32, fontWeight: '700', color: '#ffffff', letterSpacing: -0.5, lineHeight: 34 },
+  liveUnit:    { fontSize: 14, fontWeight: '600', color: '#D3F4EE' },
+  liveNext:    { marginLeft: 'auto', alignItems: 'flex-end' as const },
+  liveNextLab: { fontSize: 10.5, color: '#CDF3EC' },
+  liveNextVal: { fontSize: 13, fontWeight: '700', color: '#ffffff' },
+
+  // Stat grid (2×2)
+  statGrid:    { flexDirection: 'row', flexWrap: 'wrap', gap: 10, marginBottom: 14 },
+  statCell:    { flexBasis: '47%', flexGrow: 1, backgroundColor: colors.surface, borderRadius: 16, padding: 13, shadowColor: '#0F5A50', shadowOpacity: 0.08, shadowRadius: 10, shadowOffset: { width: 0, height: 4 }, elevation: 1 },
+  statLab:     { fontSize: 10, fontWeight: '700', letterSpacing: 0.3, marginBottom: 6, color: colors.textMuted },
+  statVal:     { fontSize: 18, fontWeight: '800', color: colors.text, letterSpacing: -0.3 },
+
   // Back button
   backBtn:      { flexDirection: 'row', alignItems: 'center', marginBottom: 8, alignSelf: 'flex-start' as const },
   backBtnText:  { fontSize: 13, color: colors.accent, fontWeight: '600' },
@@ -932,7 +1042,7 @@ const makeStyles = (colors: Colors) => StyleSheet.create({
   solunarNextText:   { fontSize: 12, color: colors.textMuted, flex: 1 },
 
   // Cards
-  card:       { backgroundColor: colors.surface, borderRadius: 18, padding: 16, borderWidth: 1, borderColor: colors.border, marginBottom: 14 },
+  card:       { backgroundColor: colors.surface, borderRadius: 20, padding: 16, marginBottom: 14, shadowColor: '#0F5A50', shadowOpacity: 0.10, shadowRadius: 18, shadowOffset: { width: 0, height: 8 }, elevation: 2 },
   cardHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 3 },
   cardTitle:  { fontSize: 15, fontWeight: '700', color: colors.text },
   cardChip:   { fontSize: 10, color: colors.textMuted, borderWidth: 1, borderColor: colors.border, borderRadius: 6, paddingHorizontal: 7, paddingVertical: 2 },
@@ -983,7 +1093,7 @@ const makeStyles = (colors: Colors) => StyleSheet.create({
   locPillLabel:   { fontSize: 8, fontWeight: '700', color: colors.textFaint, letterSpacing: 0.5, marginBottom: 3 },
   locPillVal:     { fontSize: 12, fontWeight: '700', color: colors.text },
   mapWrap:    { borderRadius: 12, overflow: 'hidden', marginBottom: 14 },
-  mapWebView: { height: 280, borderRadius: 12 },
+  mapWebView: { height: 300, borderRadius: 12, backgroundColor: '#eef5f3' },
   mapOpenBtn: { alignSelf: 'flex-end' as const, backgroundColor: colors.accent + '20', borderRadius: 8, paddingHorizontal: 14, paddingVertical: 7, borderWidth: 1, borderColor: colors.accent + '60', marginTop: 8 },
   mapOpenText:{ fontSize: 12, color: colors.accent, fontWeight: '700' },
   nearbyTitle:    { fontSize: 9, fontWeight: '700', color: colors.textFaint, letterSpacing: 0.7, marginBottom: 8 },
@@ -1007,11 +1117,11 @@ const makeStyles = (colors: Colors) => StyleSheet.create({
   solBadgeText:    { fontSize: 10, fontWeight: '700' as const, letterSpacing: 0.3 },
   solRowTime:      { fontSize: 13, fontWeight: '700' as const, flex: 1 },
   solRowDur:       { fontSize: 10, color: colors.textFaint },
-  solRowDesc:      { fontSize: 11, color: colors.textMuted, lineHeight: 16 },
+  solRowDesc:      { fontSize: 11.5, color: colors.text, lineHeight: 16 },
   solDot:          { width: 7, height: 7, borderRadius: 4 },
   solStatusText:   { fontSize: 12, fontWeight: '700' as const },
   solProgressTrack:{ height: 5, backgroundColor: colors.border, borderRadius: 3, overflow: 'hidden' as const },
   solProgressFill: { height: 5, borderRadius: 3 },
   solCountdown:    { fontSize: 12, color: colors.textMuted, fontWeight: '600' as const },
-  solPassed:       { fontSize: 11, color: colors.textFaint },
+  solPassed:       { fontSize: 11, color: colors.textMuted, fontWeight: '600' as const },
 })

@@ -53,8 +53,8 @@ function MoonDisc({ illumination, pct }: { illumination: number; pct: number }) 
 
   return (
     <Svg width={112} height={112}>
-      <Circle cx={cx} cy={cy} r={R} fill="#1e293b" />
-      <Path d={d} fill="#facc15" opacity={0.9} />
+      <Circle cx={cx} cy={cy} r={R} fill="#475569" />
+      <Path d={d} fill="#FBBF24" opacity={0.95} />
     </Svg>
   )
 }
@@ -62,52 +62,56 @@ function MoonDisc({ illumination, pct }: { illumination: number; pct: number }) 
 // 24-hr timeline bar
 function Timeline({ periods, nowMs }: { periods: ReturnType<typeof solunarForDate>; nowMs: number }) {
   const { colors } = useTheme()
-  const W = 280, H = 48
+  const [W, setW] = useState(0)
+  const H = 48
   const day = new Date(nowMs); day.setHours(0, 0, 0, 0)
   const dayMs = day.getTime()
-  const endMs = dayMs + 24 * 3600_000
   const toX = (ms: number) => ((ms - dayMs) / (24 * 3600_000)) * W
   const nowX = toX(nowMs)
 
   return (
-    <Svg width={W} height={H}>
-      {/* Background */}
-      <Path d={`M 0 20 L ${W} 20`} stroke={colors.border} strokeWidth={2} />
+    <View style={{ width: '100%' }} onLayout={e => setW(e.nativeEvent.layout.width)}>
+      {W > 0 && (
+        <Svg width={W} height={H}>
+          {/* Background */}
+          <Path d={`M 0 20 L ${W} 20`} stroke={colors.border} strokeWidth={2} />
 
-      {/* Periods */}
-      {periods.map((p, i) => {
-        const x1 = Math.max(0, toX(p.start))
-        const x2 = Math.min(W, toX(p.end))
-        if (x2 < 0 || x1 > W) return null
-        const color = p.type === 'major' ? colors.green : colors.yellow
-        return (
-          <Path
-            key={i}
-            d={`M ${x1} 12 L ${x2} 12 L ${x2} 28 L ${x1} 28 Z`}
-            fill={color}
-            opacity={0.6}
-          />
-        )
-      })}
+          {/* Periods */}
+          {periods.map((p, i) => {
+            const x1 = Math.max(0, toX(p.start))
+            const x2 = Math.min(W, toX(p.end))
+            if (x2 < 0 || x1 > W) return null
+            const color = p.type === 'major' ? colors.green : colors.yellow
+            return (
+              <Path
+                key={i}
+                d={`M ${x1} 12 L ${x2} 12 L ${x2} 28 L ${x1} 28 Z`}
+                fill={color}
+                opacity={0.7}
+              />
+            )
+          })}
 
-      {/* Hour marks */}
-      {[6, 12, 18].map(h => {
-        const x = toX(dayMs + h * 3600_000)
-        return (
-          <React.Fragment key={h}>
-            <Line x1={x} y1={16} x2={x} y2={24} stroke={colors.border} strokeWidth={1} />
-            <SvgText x={x} y={H - 4} textAnchor="middle" fontSize={8} fill={colors.textMuted}>
-              {h === 12 ? '12PM' : h === 6 ? '6AM' : '6PM'}
-            </SvgText>
-          </React.Fragment>
-        )
-      })}
+          {/* Hour marks */}
+          {[6, 12, 18].map(h => {
+            const x = toX(dayMs + h * 3600_000)
+            return (
+              <React.Fragment key={h}>
+                <Line x1={x} y1={16} x2={x} y2={24} stroke={colors.border} strokeWidth={1} />
+                <SvgText x={x} y={H - 4} textAnchor="middle" fontSize={8} fill={colors.textMuted}>
+                  {h === 12 ? '12PM' : h === 6 ? '6AM' : '6PM'}
+                </SvgText>
+              </React.Fragment>
+            )
+          })}
 
-      {/* Now marker */}
-      {nowX >= 0 && nowX <= W && (
-        <Line x1={nowX} y1={8} x2={nowX} y2={32} stroke={colors.accent} strokeWidth={2} />
+          {/* Now marker */}
+          {nowX >= 0 && nowX <= W && (
+            <Line x1={nowX} y1={8} x2={nowX} y2={32} stroke={colors.accent} strokeWidth={2} />
+          )}
+        </Svg>
       )}
-    </Svg>
+    </View>
   )
 }
 
@@ -216,7 +220,7 @@ const makeStyles = (colors: Colors) => StyleSheet.create({
   pageTitle: { fontSize: 22, fontWeight: '800', color: colors.text, marginBottom: 2 },
   pageSub:   { fontSize: 12, color: colors.textMuted, marginBottom: 20 },
 
-  card:     { backgroundColor: colors.surface, borderRadius: 16, padding: 16, marginBottom: 16, borderWidth: 1, borderColor: colors.border },
+  card:     { backgroundColor: colors.surface, borderRadius: 20, padding: 16, marginBottom: 16, shadowColor: '#0F5A50', shadowOpacity: 0.10, shadowRadius: 18, shadowOffset: { width: 0, height: 8 }, elevation: 2 },
   cardTitle:{ fontSize: 15, fontWeight: '700', color: colors.text, marginBottom: 2 },
   cardSub:  { fontSize: 11, color: colors.textMuted, marginBottom: 4 },
 

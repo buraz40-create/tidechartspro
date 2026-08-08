@@ -1,6 +1,7 @@
 import React, { useState, useEffect, useMemo } from 'react'
 import { View, Text, ScrollView, StyleSheet, ActivityIndicator } from 'react-native'
 import { SafeAreaView } from 'react-native-safe-area-context'
+import { WebView } from 'react-native-webview'
 import {
   generateCurve, findExtremes, tidePhase, solunarForDate,
   fmtTime, type TidePoint,
@@ -55,6 +56,105 @@ function fishingScoreForDay(midnightMs: number): number {
   const moonBoost = (moonPct < 0.08 || moonPct > 0.92 || Math.abs(moonPct - 0.5) < 0.08) ? 15 : 0
   return Math.min(100, tideScore + moonBoost)
 }
+
+// Animated precipitation radar + clouds (RainViewer — free, no API key). NOAA-style.
+function buildRadarHtml(lat: number, lon: number): string {
+  return `<!DOCTYPE html><html><head>
+<meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<style>
+  html,body{margin:0;padding:0;height:100%;background:#eef5f3;font-family:-apple-system,'Segoe UI',sans-serif;}
+  #map{position:absolute;top:0;left:0;right:0;bottom:0;}
+  .panel{position:absolute;z-index:1000;background:rgba(255,255,255,0.95);border-radius:12px;box-shadow:0 2px 10px rgba(0,0,0,0.18);}
+  #layers{top:10px;left:10px;display:flex;padding:3px;gap:3px;}
+  #layers button{border:none;background:transparent;font-size:12px;font-weight:700;color:#64748b;padding:6px 13px;border-radius:9px;}
+  #layers button.on{background:#1EA593;color:#fff;}
+  #bar{left:10px;right:10px;bottom:10px;display:flex;flex-direction:column;gap:7px;padding:9px 12px;}
+  #row1{display:flex;align-items:center;gap:10px;}
+  #play{width:34px;height:34px;border:none;border-radius:10px;background:#1EA593;color:#fff;font-size:15px;flex:none;}
+  #slider{flex:1;accent-color:#1EA593;height:22px;}
+  #speed{border:none;background:#DDF3EF;color:#0F766E;font-size:11px;font-weight:800;padding:7px 11px;border-radius:9px;flex:none;min-width:42px;}
+  #time{font-size:12px;font-weight:800;color:#0f172a;text-align:center;letter-spacing:0.2px;}
+  #fallback{position:absolute;inset:0;display:none;align-items:center;justify-content:center;color:#6E8B87;font-size:13px;padding:24px;text-align:center;}
+  .leaflet-control-attribution{font-size:8px;}
+  .leaflet-bar a{width:30px!important;height:30px!important;line-height:30px!important;color:#1e293b!important;}
+</style>
+</head><body><div id="map"></div>
+<div id="layers" class="panel"><button id="bRadar" class="on">Radar</button><button id="bClouds">Clouds</button></div>
+<div id="bar" class="panel">
+  <div id="row1"><button id="play">⏸</button><input id="slider" type="range" min="0" max="0" value="0" step="1"/><button id="speed">1x</button></div>
+  <div id="time">Loading…</div>
+</div>
+<div id="fallback">Radar unavailable on this network.</div>
+<script>
+(function(){
+  if (typeof L === 'undefined'){ document.getElementById('map').style.display='none'; document.getElementById('fallback').style.display='flex'; return; }
+  var map = L.map('map',{zoomControl:false,attributionControl:true,minZoom:4,maxZoom:10}).setView([${lat},${lon}], 7);
+  L.control.zoom({position:'topright'}).addTo(map);
+  L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',{maxZoom:10,attribution:'© OSM · RainViewer'}).addTo(map);
+  L.marker([${lat},${lon}]).addTo(map);
+
+  var host='';
+  var sets={ radar:{frames:[],layers:[],color:'4',opts:'1_1',op:0.65}, clouds:{frames:[],layers:[],color:'0',opts:'0_0',op:0.55} };
+  var mode='radar', idx=0, timer=null, playing=true;
+  var speeds=[{ms:1400,l:'0.5x'},{ms:800,l:'1x'},{ms:400,l:'2x'}], sp=1;
+  var slider=document.getElementById('slider'), timeEl=document.getElementById('time');
+
+  function relTime(f){
+    var t=new Date(f.time*1000);
+    var hhmm=t.toLocaleTimeString([], {hour:'numeric',minute:'2-digit'});
+    var dm=Math.round((f.time*1000-Date.now())/60000);
+    var rel;
+    if(dm===0){ rel='now'; }
+    else if(Math.abs(dm)<60){ rel=(dm<0?'-':'+')+Math.abs(dm)+'m'; }
+    else { var h=Math.floor(Math.abs(dm)/60), m=Math.abs(dm)%60; rel=(dm<0?'-':'+')+h+'h'+(m?(' '+m+'m'):''); }
+    return hhmm+'  ·  '+rel;
+  }
+  function active(){ return sets[mode]; }
+  function show(i){
+    var a=active(); if(!a.layers.length) return;
+    for(var j=0;j<a.layers.length;j++){ a.layers[j].setOpacity(j===i?a.op:0); }
+    idx=i; slider.value=i;
+    timeEl.textContent=(mode==='radar'?'Radar':'Clouds')+'  ·  '+relTime(a.frames[i]);
+  }
+  function step(){ var a=active(); if(a.layers.length) show((idx+1)%a.layers.length); }
+  function play(){ clearInterval(timer); timer=setInterval(step,speeds[sp].ms); }
+  function build(key,frames){
+    var a=sets[key]; a.frames=frames||[];
+    a.layers=a.frames.map(function(f){ return L.tileLayer(host+f.path+'/256/{z}/{x}/{y}/'+a.color+'/'+a.opts+'.png',{opacity:0,zIndex:5,maxZoom:10}).addTo(map); });
+  }
+  function activate(m){
+    var other=m==='radar'?'clouds':'radar';
+    sets[other].layers.forEach(function(l){ l.setOpacity(0); });
+    mode=m;
+    document.getElementById('bRadar').className=m==='radar'?'on':'';
+    document.getElementById('bClouds').className=m==='clouds'?'on':'';
+    var a=active(); slider.max=Math.max(0,a.frames.length-1);
+    if(a.frames.length){ show(a.frames.length-1); } else { timeEl.textContent='No '+m+' data'; }
+    if(playing) play();
+  }
+  fetch('https://api.rainviewer.com/public/weather-maps.json').then(function(r){return r.json();}).then(function(d){
+    host=d.host||'';
+    var past=(d.radar&&d.radar.past)||[], now=(d.radar&&d.radar.nowcast)||[];
+    build('radar', past.concat(now));
+    build('clouds', (d.satellite&&d.satellite.infrared)||[]);
+    activate('radar');
+  }).catch(function(){ timeEl.textContent='Radar unavailable'; });
+
+  document.getElementById('play').addEventListener('click',function(){ playing=!playing; this.textContent=playing?'⏸':'▶'; if(playing) play(); else clearInterval(timer); });
+  document.getElementById('speed').addEventListener('click',function(){ sp=(sp+1)%speeds.length; this.textContent=speeds[sp].l; if(playing) play(); });
+  slider.addEventListener('input',function(){ playing=false; document.getElementById('play').textContent='▶'; clearInterval(timer); show(parseInt(this.value,10)||0); });
+  document.getElementById('bRadar').addEventListener('click',function(){ activate('radar'); });
+  document.getElementById('bClouds').addEventListener('click',function(){ activate('clouds'); });
+
+  function fix(){ try{ map.invalidateSize(true); }catch(e){} }
+  window.addEventListener('load',function(){ setTimeout(fix,60); setTimeout(fix,400); });
+  setTimeout(fix,650);
+})();
+</script></body></html>`
+}
+const RADAR_HTML = buildRadarHtml(LAT, LON)
 
 export default function ForecastScreen() {
   const { colors } = useTheme()
@@ -281,6 +381,25 @@ export default function ForecastScreen() {
           )}
         </View>
 
+        {/* ── Live radar (NOAA-style) ── */}
+        <View style={s.card}>
+          <View style={s.cardHeader}>
+            <Text style={{ fontSize: 15, fontWeight: '700', color: colors.text }}>Live Radar</Text>
+            <Text style={s.cardChip}>RainViewer · live</Text>
+          </View>
+          <View style={s.radarWrap}>
+            <WebView
+              source={{ html: RADAR_HTML }}
+              style={s.radarWebView}
+              originWhitelist={['*']}
+              javaScriptEnabled
+              domStorageEnabled
+              mixedContentMode="always"
+              scrollEnabled={false}
+            />
+          </View>
+        </View>
+
         <View style={{ height: 24 }} />
       </ScrollView>
     </SafeAreaView>
@@ -305,7 +424,9 @@ const makeStyles = (colors: Colors) => StyleSheet.create({
   sectionTitle: { fontSize: 15, fontWeight: '700', color: colors.text, marginBottom: 10 },
 
   // Card
-  card:       { backgroundColor: colors.surface, borderRadius: 18, padding: 16, borderWidth: 1, borderColor: colors.border, marginBottom: 20 },
+  card:       { backgroundColor: colors.surface, borderRadius: 20, padding: 16, marginBottom: 20, shadowColor: '#0F5A50', shadowOpacity: 0.10, shadowRadius: 18, shadowOffset: { width: 0, height: 8 }, elevation: 2 },
+  radarWrap:    { borderRadius: 14, overflow: 'hidden', marginTop: 4, height: 360 },
+  radarWebView: { flex: 1, backgroundColor: '#eef5f3' },
   cardHeader: { flexDirection: 'row', justifyContent: 'space-between', alignItems: 'center', marginBottom: 10 },
   cardTitle:  { fontSize: 15, fontWeight: '700', color: colors.text },
   cardChip:   { fontSize: 10, color: colors.textMuted, borderWidth: 1, borderColor: colors.border, borderRadius: 6, paddingHorizontal: 7, paddingVertical: 2 },
@@ -324,7 +445,7 @@ const makeStyles = (colors: Colors) => StyleSheet.create({
   wxSol:       { width: 30, fontSize: 13, textAlign: 'center' as const },
 
   // 7-day cards
-  dayCard:        { backgroundColor: colors.surface, borderRadius: 16, padding: 16, marginBottom: 12, borderWidth: 1, borderColor: colors.border },
+  dayCard:        { backgroundColor: colors.surface, borderRadius: 18, padding: 16, marginBottom: 12, shadowColor: '#0F5A50', shadowOpacity: 0.09, shadowRadius: 14, shadowOffset: { width: 0, height: 6 }, elevation: 2 },
   dayCardToday:   { borderColor: colors.accent },
   todayBadge:     { position: 'absolute', top: -1, right: 16, backgroundColor: colors.accent, borderBottomLeftRadius: 6, borderBottomRightRadius: 6, paddingHorizontal: 8, paddingVertical: 3 },
   todayBadgeText: { fontSize: 9, fontWeight: '700', color: '#fff', letterSpacing: 1 },
