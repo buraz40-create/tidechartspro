@@ -3,7 +3,7 @@ import { View, Text, Image, TouchableOpacity, ScrollView, StyleSheet } from 'rea
 import { NavigationContainer, DefaultTheme } from '@react-navigation/native'
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs'
 import { StatusBar } from 'expo-status-bar'
-import { SafeAreaProvider, SafeAreaView } from 'react-native-safe-area-context'
+import { SafeAreaProvider, SafeAreaView, useSafeAreaInsets } from 'react-native-safe-area-context'
 import { Ionicons } from '@expo/vector-icons'
 
 import HomeScreen from './src/screens/HomeScreen'
@@ -57,6 +57,7 @@ const Tab = createBottomTabNavigator()
 
 function AppShell() {
   const { mode, colors, setMode } = useTheme()
+  const insets = useSafeAreaInsets()
 
   const navTheme = {
     ...DefaultTheme,
@@ -123,9 +124,9 @@ function AppShell() {
               backgroundColor:  colors.surface,
               borderTopColor:   colors.border,
               borderTopWidth:   1,
-              paddingBottom:    8,
+              paddingBottom:    insets.bottom + 8,
               paddingTop:       6,
-              height:           64,
+              height:           64 + insets.bottom,
             },
             tabBarLabelStyle: { fontSize: 11, fontWeight: '600', marginTop: 2 },
             tabBarIcon: ({ color, size, focused }) => {
