@@ -473,6 +473,37 @@ export default function Home() {
           )}
         </div>
 
+        {/* Android app download */}
+        <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', gap: 8, marginTop: 4 }}>
+          <a
+            href="https://play.google.com/store/apps/details?id=com.tidechartspro.app"
+            target="_blank"
+            rel="noopener noreferrer"
+            style={{
+              display: 'inline-flex', alignItems: 'center', gap: 12,
+              background: mode === 'light' ? '#0f172a' : '#000',
+              color: '#fff', textDecoration: 'none',
+              borderRadius: 12, padding: '10px 22px',
+              border: `1px solid ${mode === 'light' ? t.border : '#2a2a2a'}`,
+              boxShadow: '0 6px 20px rgba(0,0,0,0.28)', transition: 'transform 0.15s',
+            }}
+            onMouseEnter={e => (e.currentTarget.style.transform = 'translateY(-2px)')}
+            onMouseLeave={e => (e.currentTarget.style.transform = 'none')}
+          >
+            <svg width="22" height="24" viewBox="0 0 512 512" aria-hidden>
+              <path fill="#00D0FF" d="M25.7 35.5C20.2 41.3 17 50.4 17 62.2v387.6c0 11.8 3.2 20.9 8.7 26.7l1.3 1.2 217-217v-5.1l-217-217-1.3 1.9z" />
+              <path fill="#00E676" d="M316 333.2l-72.3-72.4v-5.1l72.4-72.4 1.6 1 85.7 48.7c24.5 13.9 24.5 36.7 0 50.6l-85.7 48.7-1.7.9z" />
+              <path fill="#FF3D00" d="M317.6 332.2L243.7 258.3 25.7 476.3c8.1 8.5 21.4 9.6 36.4 1.1l255.5-145.2z" />
+              <path fill="#FFC400" d="M317.6 184.4L62.1 39.3C47.1 30.7 33.8 31.9 25.7 40.4l218 217.9 73.9-73.9z" />
+            </svg>
+            <span style={{ display: 'flex', flexDirection: 'column', lineHeight: 1.15, textAlign: 'left' }}>
+              <span style={{ fontSize: 10, opacity: 0.8, letterSpacing: '0.06em' }}>GET IT ON</span>
+              <span style={{ fontSize: 17, fontWeight: 700 }}>Google Play</span>
+            </span>
+          </a>
+          <span style={{ fontSize: 12, color: t.textFaint, fontWeight: 600 }}>Free Android app · live tides in your pocket</span>
+        </div>
+
       </section>
 
       {/* MAP */}
@@ -665,6 +696,7 @@ export default function Home() {
           <div style={{ display: 'flex', gap: 20 }}>
             {[
               { label: 'Tide Charts', href: '/tides' },
+              { label: 'Android App', href: 'https://play.google.com/store/apps/details?id=com.tidechartspro.app' },
               { label: 'Privacy Policy', href: '/privacy' },
             ].map(l => (
               <a key={l.label} href={l.href} style={{ fontSize: 12, color: t.textFaint, textDecoration: 'none' }}>{l.label}</a>
